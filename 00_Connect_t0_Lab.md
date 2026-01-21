@@ -11,7 +11,7 @@ Welcome to the lab environment 👋 Follow the steps below to connect to your po
 From your terminal or SSH client, run:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-ssh jump@PROVIDED_BY_INSTRUCTOR
+ssh podX@PROVIDED_BY_INSTRUCTOR
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Password:
@@ -20,25 +20,7 @@ Password:
 800-ePlus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-***
 
-#### 2. Connect to your assigned pod
-
-Once you’re logged in to the jump server, connect to your pod. Examples:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-ssh pod1@jump
-ssh pod7@jump
-ssh pod12@jump
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Password for all pods:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ text
-800-ePlus
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
->   ✅ Use the pod number you’ve been assigned (PodXX).
 
 ***
 

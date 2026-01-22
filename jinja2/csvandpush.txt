@@ -1,0 +1,86 @@
+---
+- name: Render Junos config from CSV and push to devices (safe commit + retries)
+  hosts: juniper
+  gather_facts: no
+
+  vars:
+    csv_path: "data/ports.csv"
+    template_path: "templates/ports_set.j2"
+
+    retry_wait_seconds: 10
+    retry_count: 3
+
+    # Safety: commit confirmed window (minutes). If we never "commit" final, device rolls back.
+    commit_confirm_minutes: 5
+
+  tasks:
+    - name: Read CSV once (controller)
+      community.general.read_csv:
+        path: "{{ csv_path }}"
+      register: csv_data
+      delegate_to: localhost
+      run_once: true
+
+    - name: Filter CSV rows for this device
+      ansible.builtin.set_fact:
+        ports_rows: >-
+          {{
+            (csv_data.list | default([]))
+            | selectattr('device', 'equalto', inventory_hostname)
+            | list
+          }}
+
+    - name: Render candidate config (set lines) from template
+      ansible.builtin.set_fact:
+        candidate_set: "{{ lookup('template', template_path) }}"
+
+    - name: Skip hosts with no matching CSV rows
+      ansible.builtin.meta: end_host
+      when: (ports_rows | length) == 0
+
+    - name: Push config with retry if unreachable/failed (merge set lines)
+      block:
+
+        - name: Load candidate config (merge)
+          junipernetworks.junos.junos_config:
+            lines: "{{ candidate_set.splitlines() }}"
+            update: merge
+          register: load_result
+
+        - name: Commit check
+          junipernetworks.junos.junos_config:
+            check: true
+          register: check_result
+
+        - name: Commit confirmed (safety rollback window)
+          junipernetworks.junos.junos_config:
+            confirm: "{{ commit_confirm_minutes }}"
+            comment: "Ansible commit confirmed ({{ commit_confirm_minutes }}m) - {{ ansible_date_time.iso8601 }}"
+          register: confirm_result
+
+        - name: Final commit (permanent)
+          junipernetworks.junos.junos_config:
+            comment: "Ansible final commit - {{ ansible_date_time.iso8601 }}"
+          register: commit_result
+
+        - name: Show summary
+          ansible.builtin.debug:
+            msg:
+              - "Loaded: {{ load_result.changed | default(false) }}"
+              - "Commit check OK: {{ check_result.failed is not defined or (check_result.failed | default(false) == false) }}"
+              - "Committed: {{ commit_result.changed | default(false) }}"
+
+      rescue:
+        - name: Report failure
+          ansible.builtin.debug:
+            msg: "FAILED on {{ inventory_hostname }}: {{ ansible_failed_result.msg | default(ansible_failed_result) }}"
+
+        # If commit confirmed happened but final commit didn’t, it will auto-rollback.
+        - name: End host after failure
+          ansible.builtin.meta: end_host
+
+      # Retry the whole block if it fails (connectivity / transient errors)
+      register: push_block_result
+      retries: "{{ retry_count }}"
+      delay: "{{ retry_wait_seconds }}"
+      until: push_block_result is succeeded

@@ -42,7 +42,7 @@ By the end of this lab, you will be able to:
 * You can successfully ping your lab hosts:
 
   ```bash
-  cd "to yuor working dir"
+  
   ansible -i inventory routers -m ping
   ```
 

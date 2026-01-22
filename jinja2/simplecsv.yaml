@@ -1,0 +1,47 @@
+---
+- name: Push Junos config rendered from CSV (simple)
+  hosts: juniper
+  gather_facts: no
+  connection: ansible.netcommon.network_cli
+
+  vars:
+    csv_path: "data/ports.csv"
+    template_path: "templates/ports_set.j2"
+    retries_count: 3
+    retry_delay: 10
+    confirm_minutes: 5
+
+  tasks:
+    - name: Read CSV once
+      community.general.read_csv:
+        path: "{{ csv_path }}"
+      register: csv_data
+      delegate_to: localhost
+      run_once: true
+
+    - name: Filter rows for this device
+      ansible.builtin.set_fact:
+        ports_rows: "{{ csv_data.list | selectattr('device','equalto',inventory_hostname) | list }}"
+
+    - name: Render candidate config
+      ansible.builtin.set_fact:
+        candidate_set: "{{ lookup('template', template_path) }}"
+
+    - name: Skip if no rows for this device
+      ansible.builtin.meta: end_host
+      when: ports_rows | length == 0
+
+    - name: Load + commit confirmed (retry on failure)
+      junipernetworks.junos.junos_config:
+        lines: "{{ candidate_set.splitlines() }}"
+        update: merge
+        confirm: "{{ confirm_minutes }}"
+        comment: "Ansible commit confirmed {{ confirm_minutes }}m"
+      register: push_result
+      retries: "{{ retries_count }}"
+      delay: "{{ retry_delay }}"
+      until: push_result is succeeded
+
+    - name: Done
+      ansible.builtin.debug:
+        msg: "Pushed to {{ inventory_hostname }} (commit confirmed {{ confirm_minutes }}m)."

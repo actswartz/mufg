@@ -42,7 +42,7 @@ By the end of this lab, you will be able to:
 * You can successfully ping your lab hosts:
 
   ```bash
-  cd ~/dlr/zanswers/gem
+  cd "to yuor working dir"
   ansible -i inventory routers -m ping
   ```
 
@@ -55,8 +55,8 @@ If that works, you’re ready.
 In your working directory (e.g. `~/dlr/zanswers/gem`), create a new folder for this lab:
 
 ```bash
-mkdir -p labs/exceptions
-cd labs/exceptions
+mkdir -p exceptions
+cd exceptions
 ```
 
 You’ll create and run playbooks from this directory, but you’ll still use the **existing inventory** file:

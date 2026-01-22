@@ -88,7 +88,7 @@ Create a file called `01_basic_errors.yml`:
 Run it:
 
 ```bash
-ansible-playbook -i ../../inventory 01_basic_errors.yml
+ansible-playbook -i ../inventory 01_basic_errors.yml
 ```
 
 **Observe:**
@@ -121,7 +121,7 @@ Edit `01_basic_errors.yml` and add a second task and `ignore_errors`:
 Run again:
 
 ```bash
-ansible-playbook -i ../../inventory 01_basic_errors.yml
+ansible-playbook -i ../inventory 01_basic_errors.yml
 ```
 
 **Questions for students:**
@@ -165,7 +165,7 @@ Create `02_failed_when.yml`:
 Run:
 
 ```bash
-ansible-playbook -i ../../inventory 02_failed_when.yml
+ansible-playbook -i ../inventory 02_failed_when.yml
 ```
 
 **Observe:**
@@ -216,7 +216,7 @@ Create `03_block_rescue.yml`:
 Run:
 
 ```bash
-ansible-playbook -i ../../inventory 03_block_rescue.yml
+ansible-playbook -i ../inventory 03_block_rescue.yml
 ```
 
 **Discuss with students:**
@@ -269,7 +269,7 @@ Create `04_block_rescue_practical.yml`:
 Run:
 
 ```bash
-ansible-playbook -i ../../inventory 04_block_rescue_practical.yml
+ansible-playbook -i ../inventory 04_block_rescue_practical.yml
 ```
 
 **Instructor talking points:**
@@ -337,7 +337,7 @@ Create `05_smart_exceptions.yml`:
 Run:
 
 ```bash
-ansible-playbook -i ../../inventory 05_smart_exceptions.yml
+ansible-playbook -i ../inventory 05_smart_exceptions.yml
 ```
 
 **Key idea for students:**

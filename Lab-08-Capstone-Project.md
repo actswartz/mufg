@@ -1,5 +1,9 @@
 <img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
 
+**🚀 Mission Prompt:** The Grand Orchestrator. The finish line. Build a one-button “Super Playbook” that constructs a fully functional, validated network from a blank slate.
+
+---
+
 # Lab 8: Capstone Project 🎓
 
 Congratulations! You have reached the final challenge. The goal of the Capstone Project is to combine everything you've learned into a single, unified "Master Playbook."

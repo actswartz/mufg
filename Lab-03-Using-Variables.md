@@ -1,5 +1,9 @@
 <img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
 
+**🚀 Mission Prompt:** The Dynamic Pod. Stop hard-coding! Use magic variables to make a single playbook that intelligently names every device in your inventory.
+
+---
+
 # Lab 3: Using Variables for Hostnames
 
 This lab introduces **Dynamic Automation**. Instead of hard-coding names into a playbook, we use variables so the same playbook works for every device in your network.

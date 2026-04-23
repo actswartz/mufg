@@ -1,5 +1,9 @@
 <img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
 
+**🚀 Mission Prompt:** Establish First Contact. Your goal is to map your pod and prove you can control your network hardware from the Ubuntu command line using agentless automation.
+
+---
+
 # Lab 1: Setting Up Your Environment & First Commands
 
 Welcome to your first lab! The goal of this exercise is to introduce you to the fundamental concepts of Ansible, establish a connection to your network devices, and run your first commands.

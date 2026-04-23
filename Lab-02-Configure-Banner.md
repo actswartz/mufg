@@ -1,5 +1,9 @@
 <img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
 
+**🚀 Mission Prompt:** Brand the Network. Use the power of Idempotency to enforce a legal warning banner across all devices with zero manual CLI entry.
+
+---
+
 # Lab 2: Configuring Device Banners
 
 In this lab, you will learn how to use specialized **Network Resource Modules** to change the configuration of your routers.

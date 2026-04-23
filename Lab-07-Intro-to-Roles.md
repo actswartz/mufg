@@ -1,5 +1,9 @@
 <img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
 
+**🚀 Mission Prompt:** Professional Architecture. Transition from simple scripts to scalable software by building your first reusable Network Role.
+
+---
+
 # Lab 7: Intro to Ansible Roles
 
 As your automation library grows, your playbooks can become very large and difficult to manage. **Roles** provide a way to break your automation into small, reusable modules.

@@ -1,5 +1,9 @@
 <img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
 
+**🚀 Mission Prompt:** Automate the Intelligence. Use Jinja2 blueprints to deploy a self-healing OSPF mesh across your entire pod in seconds.
+
+---
+
 # Lab 5: Dynamic Routing with OSPF
 
 Now that your interfaces have IPs, it's time to enable routing so the devices can talk to each other across the network.

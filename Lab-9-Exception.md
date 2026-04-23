@@ -1,5 +1,9 @@
 <img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
 
+**🚀 Mission Prompt:** Bulletproof Automation. Make your scripts indestructible. Build logic that catches errors and fails gracefully when the network fights back.
+
+---
+
 # Lab 9: Exception Handling
 
 In the real world, things go wrong. A router might be offline, a command might be misspelled, or a network link might fail. **Exception Handling** allows your playbook to "fail gracefully" instead of just crashing.

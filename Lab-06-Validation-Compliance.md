@@ -1,5 +1,9 @@
 <img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
 
+**🚀 Mission Prompt:** The Auditor. Don’t just push configuration; prove it works. Build a validation script that can detect and report a total network blackout.
+
+---
+
 # Lab 6: Validation and Compliance
 
 Automation isn't just about *configuring* devices; it's also about *verifying* that the network is actually healthy. This is the foundation of **Intent-Based Networking (IBN)**.

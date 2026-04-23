@@ -1,3 +1,5 @@
+<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+
 # Lab 2: Configuring Device Banners
 
 In this lab, you will learn how to use specialized **Network Resource Modules** to change the configuration of your routers.

@@ -1,3 +1,5 @@
+<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+
 # Lab 4: Configuring Interface IP Addresses
 
 In this lab, you will tackle one of the most common networking tasks: configuring IP addresses on physical interfaces using **Resource Modules**.

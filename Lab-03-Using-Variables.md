@@ -1,3 +1,5 @@
+<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+
 # Lab 3: Using Variables for Hostnames
 
 This lab introduces **Dynamic Automation**. Instead of hard-coding names into a playbook, we use variables so the same playbook works for every device in your network.

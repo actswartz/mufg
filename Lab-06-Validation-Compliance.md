@@ -1,3 +1,5 @@
+<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+
 # Lab 6: Validation and Compliance
 
 Automation isn't just about *configuring* devices; it's also about *verifying* that the network is actually healthy. This is the foundation of **Intent-Based Networking (IBN)**.

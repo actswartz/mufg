@@ -1,3 +1,5 @@
+<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+
 # Lab 8: Capstone Project 🎓
 
 Congratulations! You have reached the final challenge. The goal of the Capstone Project is to combine everything you've learned into a single, unified "Master Playbook."

@@ -4,6 +4,9 @@
 
 ---
 
+<img src="images/Lab-05-Routing-Protocols.jpg" width="600" alt="Lab-05-Routing-Protocols">
+
+
 # Lab 5: Dynamic Routing with OSPF
 
 Now that your interfaces have IPs, it's time to enable routing so the devices can talk to each other across the network.

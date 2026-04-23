@@ -4,6 +4,9 @@
 
 ---
 
+<img src="images/Lab-02-Configure-Banner.jpg" width="600" alt="Lab-02-Configure-Banner">
+
+
 # Lab 2: Configuring Device Banners
 
 In this lab, you will learn how to use specialized **Network Resource Modules** to change the configuration of your routers.

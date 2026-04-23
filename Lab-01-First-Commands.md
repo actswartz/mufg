@@ -4,6 +4,9 @@
 
 ---
 
+<img src="images/Lab-01-First-Commands.jpg" width="600" alt="Lab-01-First-Commands">
+
+
 # Lab 1: Setting Up Your Environment & First Commands
 
 Welcome to your first lab! The goal of this exercise is to introduce you to the fundamental concepts of Ansible, establish a connection to your network devices, and run your first commands.

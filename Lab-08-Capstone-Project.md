@@ -4,6 +4,9 @@
 
 ---
 
+<img src="images/Lab-08-Capstone-Project.jpg" width="600" alt="Lab-08-Capstone-Project">
+
+
 # Lab 8: Capstone Project 🎓
 
 Congratulations! You have reached the final challenge. The goal of the Capstone Project is to combine everything you've learned into a single, unified "Master Playbook."

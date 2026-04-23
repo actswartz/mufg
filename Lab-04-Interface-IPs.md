@@ -4,6 +4,9 @@
 
 ---
 
+<img src="images/Lab-04-Interface-IPs.jpg" width="600" alt="Lab-04-Interface-IPs">
+
+
 # Lab 4: Configuring Interface IP Addresses
 
 In this lab, you will tackle one of the most common networking tasks: configuring IP addresses on physical interfaces using **Resource Modules**.

@@ -4,6 +4,9 @@
 
 ---
 
+<img src="images/Lab-9-Exception.jpg" width="600" alt="Lab-9-Exception">
+
+
 # Lab 9: Exception Handling
 
 In the real world, things go wrong. A router might be offline, a command might be misspelled, or a network link might fail. **Exception Handling** allows your playbook to "fail gracefully" instead of just crashing.

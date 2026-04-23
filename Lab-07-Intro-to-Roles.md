@@ -4,6 +4,9 @@
 
 ---
 
+<img src="images/Lab-07-Intro-to-Roles.jpg" width="600" alt="Lab-07-Intro-to-Roles">
+
+
 # Lab 7: Intro to Ansible Roles
 
 As your automation library grows, your playbooks can become very large and difficult to manage. **Roles** provide a way to break your automation into small, reusable modules.

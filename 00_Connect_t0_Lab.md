@@ -1,174 +1,94 @@
-Lab 00
+<img src="images/3r.jpg" width="400" alt="Network Topology">
 
-# Classroom Lab Connection Instructions
+**🚀 Mission Prompt:** Establish your bridgehead. Your goal is to successfully connect to the Lab Server and verify you can reach your Pod's management network.
 
-Welcome to the lab environment 👋 Follow the steps below to connect to your pod and start working.
+---
 
-***
+### 🛠️ How to Connect to a Router
+If you need to verify your work or troubleshoot manually, follow these steps:
+1.  **Requirement:** You must be logged into the Lab Server.
+2.  **Connect via SSH (Replace X with your Pod Number):**
+    *   `ssh admin@S<X>-R1`
+    *   `ssh admin@S<X>-R2`
+    *   `ssh admin@S<X>-R3`
+3.  **Password:** `800-ePlus`
+4.  **Useful Verification Commands:**
+    *   `sh ip int brief`
+    *   `sh run`
 
-#### 1. Connect to the jump server
+---
 
-From your terminal or SSH client, run:
+# Lab 0: Classroom Connection Instructions
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-ssh podX@PROVIDED_BY_INSTRUCTOR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Welcome to the lab environment! 👋 Follow the steps below to connect to your assigned Student User and verify your environment.
 
-Password:
+## 🧠 Core Concept: The Jump Server
+In modern networking, critical infrastructure is rarely exposed directly to the internet. We use a **Jump Server** (or "Bastion Host") as a secure single point of entry. You will log into this Ubuntu server using your assigned **Student Account** (`S1`, `S2`, etc.).
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ text
+---
+
+## Part 1: Connect to the Lab Server
+
+From your terminal or SSH client (Mac Terminal, Windows PowerShell, or PuTTY), run the following command.
+
+```bash
+# Replace XX with your assigned number (e.g., S5)
+ssh S<XX>@LAB_SERVER_IP
+```
+
+**Password:**
+```text
 800-ePlus
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```
 
-***
+---
 
-#### 3. Lab materials
+## Part 2: Your Lab Identity
 
-All lab files and instructions are available here:
+Each student has a unique identity and pod assignment:
+- **Username:** `S1` through `S15`
+- **Password:** `800-ePlus`
+- **Router Prefix:** Your routers start with your username (e.g., `S5-R1`).
 
-🔗 **Labs Repository:** <https://github.com/actswartz/dlr>
+### 🔍 Verification Task
+Once you are logged into the Ubuntu server, verify you can "see" your routers by pinging them by name:
+```bash
+ping -c 3 S<XX>-R1
+```
+*(If the ping fails, notify your instructor immediately.)*
 
-***
+---
 
-## Using SSH from Windows or Mac
+## Part 3: Environment Setup 🏗️
 
-You’ll use an **SSH client** to connect to the lab. SSH (Secure Shell) is a secure way to open a command-line session on a remote system.
+All the workshop materials are pre-cloned for you. 
 
-***
+1. Navigate to the workshop directory:
+   ```bash
+   cd ~/dlr
+   ```
+2. List the files to ensure you see the lab modules:
+   ```bash
+   ls -l
+   ```
 
-### macOS (Mac) Users
+---
 
-Macs already have SSH built in.
+## 📂 Deep Dive: SSH Keys vs Passwords
+In this lab, we use passwords for simplicity. However, in professional environments, we use **SSH Keys** (Public/Private key pairs).
+- **Public Key:** Stored on the router.
+- **Private Key:** Stored only on your machine.
+This is significantly more secure and allows you to log in without typing a password every time.
 
-1.  Open **Terminal**
+---
 
-    -   Press `Command + Space`, type **Terminal**, and press **Enter**.
+## ❓ Knowledge Check
+1. What is the name of your assigned student user account?
+2. What is the command used to log into the Lab Server?
+3. Why do we use a Jump Server in a professional network?
 
-2.  At the prompt, run:
+---
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-ssh jump@PROVIDED_BY_INSTRUCTOR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-3.  When asked **“Are you sure you want to continue connecting (yes/no)?”**
-
-    -   Type `yes` and press **Enter** (you only see this the first time).
-
-4.  Enter the password:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ text
-800-ePlus
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-5.  Once you’re on the jump server, connect to your pod:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-ssh podXX@jump
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Replace `XX` with your pod number (for example, `pod3`).
-
-***
-
-### Windows Users
-
-You have a few options. Any of these is fine:
-
-#### Option A – Built-in SSH (Windows 10/11)
-
-1.  Open **Windows Terminal**, **PowerShell**, or **Command Prompt**:
-
-    -   Press `Windows key`, type **PowerShell** or **Windows Terminal**, and press **Enter**.
-
-2.  Run:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-ssh jump@PROVIDED_BY_INSTRUCTOR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-3.  If you see a message about the host key and **“Are you sure you want to continue connecting (yes/no)?”**, type `yes` and press **Enter**.
-
-4.  Enter the password:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ text
-800-ePlus
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-5.  Then connect to your pod:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-ssh podXX@jump
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-***
-
-#### Option B – Using a GUI SSH Client (PuTTY, Termius, etc.)
-
-If you prefer a graphical tool:
-
-**Popular choices:**
-
--   **PuTTY** – Free, classic Windows SSH client
-
--   **Termius** – Available on Windows, Mac, Linux, iOS, Android
-
-**Example with PuTTY:**
-
-1.  Download and install **PuTTY** (search for “PuTTY download” in your browser).
-
-2.  Open **PuTTY**.
-
-3.  In **Host Name (or IP address)**, enter:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ text
-jump@PROVIDED_BY_INSTRUCTOR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-or just
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ text
-PROVIDED_BY_INSTRUCTOR
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-(and set **Username** to `jump` later if prompted).
-
-4.  Click **Open**.
-
-5.  When the terminal window appears, log in:
-
-    -   Username: `jump`
-
-    -   Password: `800-ePlus`
-
-6.  Once on the jump server, type:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
-ssh podXX@jump
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-and use the same password:
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ text
-800-ePlus
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-***
-
-### Tips & Troubleshooting
-
--   **Copy/Paste:**
-
-    -   Mac Terminal: copy normally, paste with `Command + V`.
-
-    -   Windows PowerShell/Terminal: copy normally, paste with `Ctrl + V`.
-
--   **Typos:** If you get “Permission denied” or “connection closed,” double-check:
-
-    -   Username (`jump`, `pod1`, `pod2`, etc.)
-
-    -   Address (`PROVIDED_BY_INSTRUCTOR` from your instructor)
-
-    -   Password (`800-ePlus`)
-
--   If you still can’t connect, take a screenshot or copy the error message and let your instructor know.
-
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the connection process, check out this tutorial:
+[https://www.youtube.com/watch?v=346pNooH_N0](https://www.youtube.com/watch?v=346pNooH_N0)

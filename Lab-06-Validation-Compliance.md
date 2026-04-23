@@ -1,5 +1,22 @@
 <img src="images/3r.jpg" width="400" alt="Network Topology">
 
+---
+
+### 🛠️ How to Connect to a Router
+If you need to verify your work or troubleshoot manually, follow these steps:
+1.  **Requirement:** You must be logged into the Lab Server.
+2.  **Connect via SSH (Replace X with your Pod Number):**
+    *   
+    *   
+    *   
+3.  **Password:** 
+4.  **Useful Verification Commands:**
+    *   
+    *   
+
+---
+
+
 **🚀 Mission Prompt:** The Auditor. Don’t just push configuration; prove it works. Build a validation script that can detect and report a total network blackout.
 
 ---

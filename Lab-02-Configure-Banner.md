@@ -1,5 +1,22 @@
 <img src="images/3r.jpg" width="400" alt="Network Topology">
 
+---
+
+### 🛠️ How to Connect to a Router
+If you need to verify your work or troubleshoot manually, follow these steps:
+1.  **Requirement:** You must be logged into the Lab Server.
+2.  **Connect via SSH (Replace X with your Pod Number):**
+    *   
+    *   
+    *   
+3.  **Password:** 
+4.  **Useful Verification Commands:**
+    *   
+    *   
+
+---
+
+
 **🚀 Mission Prompt:** Brand the Network. Use the power of Idempotency to enforce a legal warning banner across all devices with zero manual CLI entry.
 
 ---

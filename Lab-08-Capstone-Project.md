@@ -1,5 +1,22 @@
 <img src="images/3r.jpg" width="400" alt="Network Topology">
 
+---
+
+### 🛠️ How to Connect to a Router
+If you need to verify your work or troubleshoot manually, follow these steps:
+1.  **Requirement:** You must be logged into the Lab Server.
+2.  **Connect via SSH (Replace X with your Pod Number):**
+    *   
+    *   
+    *   
+3.  **Password:** 
+4.  **Useful Verification Commands:**
+    *   
+    *   
+
+---
+
+
 **🚀 Mission Prompt:** The Grand Orchestrator. The finish line. Build a one-button “Super Playbook” that constructs a fully functional, validated network from a blank slate.
 
 ---

@@ -1,0 +1,8 @@
+---
+- name: Lab 5 - OSPF Configuration
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: Generate and Apply OSPF Config
+      cisco.ios.ios_config:
+        src: templates/ospf_config.j2

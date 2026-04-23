@@ -1,0 +1,3 @@
+# base_config role defaults
+banner_text: "Configured via Ansible Role"
+enable_snmp: false

@@ -1,0 +1,24 @@
+---
+- name: Lab 6 - Validation
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: Wait for OSPF Convergence
+      pause:
+        seconds: 10
+
+    - name: Check OSPF Neighbors
+      cisco.ios.ios_command:
+        commands: "show ip ospf neighbor"
+      register: ospf_neighbors
+
+    - name: Display OSPF Neighbors for Debug
+      debug:
+        var: ospf_neighbors.stdout[0]
+
+    - name: Assert OSPF has Neighbors
+      assert:
+        that:
+          - "ospf_neighbors.stdout[0] | regex_search('[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+')"
+        fail_msg: "No OSPF neighbors found! Check connectivity and configuration."
+        success_msg: "OSPF neighbors verified."

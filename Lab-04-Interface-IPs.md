@@ -67,7 +67,7 @@ The `host_vars` directory is a special folder that Ansible automatically checks.
         description: Link to R2
     ```
 
-3.  Next, create the file `r2.yml` (for your Arista router) with its variables. Launch or reopen it with nano:
+3.  Next, create the file `r2.yml` (for your Cisco router) with its variables. Launch or reopen it with nano:
 
     ```bash
     nano host_vars/r2.yml
@@ -88,7 +88,7 @@ The `host_vars` directory is a special folder that Ansible automatically checks.
         description: Link to R3
     ```
 
-4.  Finally, create the file `r3.yml` (for your Juniper router). Launch or reopen it with nano:
+4.  Finally, create the file `r3.yml` (for your Cisco router). Launch or reopen it with nano:
 
     ```bash
     nano host_vars/r3.yml
@@ -154,18 +154,18 @@ Now we will build a playbook that reads the data from our `host_vars` files and 
           - no shutdown
       loop: "{{ interfaces }}"
 
-    - name: Configure Arista Loopback Interface
+    - name: Configure Cisco Loopback Interface
       when: "'arista' in group_names"
-      arista.eos.eos_config:
+      cisco.ios.ios_config:
         parents: "interface {{ loopback_interface }}"
         lines:
           - description System Loopback
           - ip address {{ loopback_ip }}
           - no shutdown
 
-    - name: Configure Arista Physical Interfaces
+    - name: Configure Cisco Physical Interfaces
       when: "'arista' in group_names"
-      arista.eos.eos_config:
+      cisco.ios.ios_config:
         parents: "interface {{ item.name }}"
         lines:
           - description {{ item.description }}
@@ -173,15 +173,15 @@ Now we will build a playbook that reads the data from our `host_vars` files and 
           - no shutdown
       loop: "{{ interfaces }}"
 
-    - name: Configure Juniper Loopback Interface
-      when: ansible_network_os == 'junipernetworks.junos.junos'
-      junipernetworks.junos.junos_config:
+    - name: Configure Cisco Loopback Interface
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_config:
         lines:
           - set interfaces {{ loopback_interface }} unit 0 family inet address {{ loopback_ip }}
 
-    - name: Configure Juniper Physical Interfaces
-      when: ansible_network_os == 'junipernetworks.junos.junos'
-      junipernetworks.junos.junos_config:
+    - name: Configure Cisco Physical Interfaces
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_config:
         lines:
           - set interfaces {{ item.name }} description "{{ item.description }}"
           - set interfaces {{ item.name }} unit 0 family inet address {{ item.ip }}
@@ -193,26 +193,26 @@ Now we will build a playbook that reads the data from our `host_vars` files and 
 *   **Vendor-specific modules**: We use the `ios_config`, `eos_config`, and `junos_config` modules so we can send the native CLI commands required for each platform. Interface modules are version-specific and can be finicky in simulator environments, whereas the config modules work consistently by pushing the exact text commands. The Cisco tasks use the `ansible.utils.ipaddr` filter to split the prefix (`10.1.1.1/32`) into an IP address and dotted-decimal mask (e.g., `255.255.255.0`) because the IOS IOL images in this class require that syntax.
 *   **`loop: "{{ interfaces }}"`**: This is a **loop**. The task will run once for each item in the `interfaces` list (which we defined in our `host_vars` files).
 *   **`item` variable**: Inside a loop, Ansible puts the current item into a special variable called `item`. So, `{{ item.name }}` refers to the `name` key of the current interface dictionary in the list.
-*   **Juniper Logical Unit**: Notice that for the Juniper loopback, we added `.0` to the name (`lo0.0`). Junos requires IP addresses to be configured on logical "units" of an interface.
+*   **Cisco Logical Unit**: Notice that for the Cisco loopback, we added `.0` to the name (`lo0.0`). Junos requires IP addresses to be configured on logical "units" of an interface.
 
 ### Run and Verify
 
 1.  Execute the playbook.
 
     ```bash
-    ansible-playbook -i inventory configure_interfaces.yml
+    ansible-playbook -i inventory.yml configure_interfaces.yml
     ```
 2.  Verify the configurations using ad-hoc commands.
 
     ```bash
     # Check Cisco interfaces
-    ansible cisco -i inventory -m cisco.ios.ios_command -a "commands='show ip interface brief'"
+    ansible cisco -i inventory.yml -m cisco.ios.ios_command -a "commands='show ip interface brief'"
 
-    # Check Arista interfaces
-    ansible arista -i inventory -m arista.eos.eos_command -a "commands='show ip interface brief'"
+    # Check Cisco interfaces
+    ansible arista -i inventory.yml -m cisco.ios.ios_command -a "commands='show ip interface brief'"
 
-    # Check Juniper interfaces
-    ansible juniper -i inventory -m junipernetworks.junos.junos_command -a "commands='show interfaces terse'"
+    # Check Cisco interfaces
+    ansible juniper -i inventory.yml -m cisco.ios.ios_command -a "commands='show interfaces terse'"
     ```
 
 ## Conclusion

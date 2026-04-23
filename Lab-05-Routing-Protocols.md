@@ -19,7 +19,7 @@ The goal is to enable R1, R2, and R3 to all be able to `ping` each other's loopb
 
 Just as we did for interfaces, we will store our OSPF configuration data in our `host_vars` files. This keeps our playbook clean and our device-specific data logically organized.
 
-Cisco and Arista configure OSPF by specifying which networks to advertise. Juniper configures OSPF by specifying which interfaces should participate. Our `host_vars` will reflect this difference.
+Cisco and Cisco configure OSPF by specifying which networks to advertise. Cisco configures OSPF by specifying which interfaces should participate. Our `host_vars` will reflect this difference.
 
 ### Task: Add OSPF variables to your `host_vars` files
 
@@ -76,8 +76,8 @@ Cisco and Arista configure OSPF by specifying which networks to advertise. Junip
 
 ### Explanation of the New Variables
 
-*   **For Cisco/Arista**, we define a `process_id`, a `router_id` (typically the loopback IP), and a list of `networks` to advertise using the classic `network <prefix> <wildcard-mask> area <area-id>` command format.
-*   **For Juniper**, we define the `area` and a simple list of `interfaces` that should run OSPF.
+*   **For Cisco/Cisco**, we define a `process_id`, a `router_id` (typically the loopback IP), and a list of `networks` to advertise using the classic `network <prefix> <wildcard-mask> area <area-id>` command format.
+*   **For Cisco**, we define the `area` and a simple list of `interfaces` that should run OSPF.
 
 ---
 
@@ -110,7 +110,7 @@ Using templates keeps the commands tidy and lets you reuse the same logic across
     {% endfor %}
     ```
 
-3.  Create the Arista EOS template.
+3.  Create the Cisco EOS template.
 
     ```bash
     nano templates/ospf_eos.j2
@@ -125,7 +125,7 @@ Using templates keeps the commands tidy and lets you reuse the same logic across
     {% endfor %}
     ```
 
-4.  Create the Juniper template.
+4.  Create the Cisco template.
 
     ```bash
     nano templates/ospf_junos.j2
@@ -160,13 +160,13 @@ These templates pull data from the `ospf` dictionary in each device's `host_vars
       when: "'cisco' in group_names"
       cisco.ios.ios_config:
         lines: "{{ lookup('template', 'templates/ospf_ios.j2') }}"
-    - name: Configure OSPF on Arista EOS
+    - name: Configure OSPF on Cisco EOS
       when: "'arista' in group_names"
-      arista.eos.eos_config:
+      cisco.ios.ios_config:
         lines: "{{ lookup('template', 'templates/ospf_eos.j2') }}"
-    - name: Configure OSPF on Juniper Devices
-      when: ansible_network_os == 'junipernetworks.junos.junos'
-      junipernetworks.junos.junos_config:
+    - name: Configure OSPF on Cisco Devices
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_config:
         lines: "{{ lookup('template', 'templates/ospf_junos.j2') }}"
     - name: Debug OSPF vars
       debug:
@@ -177,28 +177,28 @@ These templates pull data from the `ospf` dictionary in each device's `host_vars
 ### Explanation of the Playbook
 
 *   **Jinja2 templates (`src:`)**: Each vendor task points to a template that renders the full set of commands using the data from `host_vars`. This keeps the playbook short and easy to read while still generating vendor-correct syntax.
-*   **Vendor-specific config modules**: We still rely on `cisco.ios.ios_config`, `arista.eos.eos_config`, and `junos_config` so the rendered text is applied using the right transport (network_cli for Cisco/Arista and NETCONF for Junos).
+*   **Vendor-specific config modules**: We still rely on `cisco.ios.ios_config`, `cisco.ios.ios_config`, and `junos_config` so the rendered text is applied using the right transport (network_cli for Cisco/Cisco and NETCONF for Junos).
 
 ### Run and Verify
 
 1.  From your `gem` directory (where `inventory` lives), execute the playbook. If you are elsewhere, include the full inventory path with `-i /path/to/gem/inventory`.
 
     ```bash
-    ansible-playbook -i inventory configure_ospf.yml
+    ansible-playbook -i inventory.yml configure_ospf.yml
     ```
 
 2.  After the playbook finishes, the most important verification is to check if OSPF neighbor relationships have formed.
 
     ```bash
-    # Check neighbors on R2 (Arista), which should see both R1 and R3
-    ansible r2 -i inventory -m arista.eos.eos_command -a "commands='show ip ospf neighbor'"
+    # Check neighbors on R2 (Cisco), which should see both R1 and R3
+    ansible r2 -i inventory.yml -m cisco.ios.ios_command -a "commands='show ip ospf neighbor'"
     ```
     You should see output indicating that R2 has formed a `FULL` adjacency with its neighbors.
 
 3.  Finally, check the routing table on R1 to see if it has learned the route to R3's loopback address via OSPF.
 
     ```bash
-    ansible r1 -i inventory -m cisco.ios.ios_command -a "commands='show ip route 10.1.3.3'"
+    ansible r1 -i inventory.yml -m cisco.ios.ios_command -a "commands='show ip route 10.1.3.3'"
     ```
     You should see a route learned via OSPF, with a next-hop pointing to R2's IP address (`10.1.12.2`).
 

@@ -1,0 +1,8 @@
+---
+- name: Lab 1 - Display Specific Facts
+  hosts: routers
+  gather_facts: true
+  tasks:
+    - name: Display Hostname and Serial Number
+      debug:
+        msg: "The hostname is {{ ansible_net_hostname }} and the version is {{ ansible_net_version }}"

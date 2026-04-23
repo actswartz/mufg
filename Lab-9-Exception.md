@@ -43,7 +43,7 @@ By the end of this lab, you will be able to:
 
   ```bash
   
-  ansible -i inventory routers -m ping
+  ansible -i inventory.yml routers -m ping
   ```
 
 If that works, you’re ready.

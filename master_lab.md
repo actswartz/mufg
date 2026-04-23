@@ -1,6 +1,6 @@
 ````markdown
 # Multi-Vendor Ansible Lab Book  
-_Cisco IOS • Arista EOS • Juniper vMX_
+_Cisco IOS • Cisco EOS • Cisco vMX_
 
 ---
 
@@ -9,13 +9,13 @@ _Cisco IOS • Arista EOS • Juniper vMX_
 Each pod has **three virtual devices**:
 
 - **R1 – Cisco IOS router** (virtual)
-- **R2 – Arista EOS switch/router** (virtual)
-- **R3 – Juniper vMX router** (virtual)
+- **R2 – Cisco EOS switch/router** (virtual)
+- **R3 – Cisco vMX router** (virtual)
 
 All pods use the same logical topology:
 
 ```text
-R1 (Cisco IOS)  ───  R2 (Arista EOS)  ───  R3 (Juniper vMX)
+R1 (Cisco IOS)  ───  R2 (Cisco EOS)  ───  R3 (Cisco vMX)
 ````
 
 There is **no direct link** between R1 and R3.
@@ -48,9 +48,9 @@ Examples:
   * R3: `10.222.1.51`
 * Pod 7:
 
-  * R1: `10.222.1.17`
-  * R2: `10.222.1.37`
-  * R3: `10.222.1.57`
+  * R1: `172.20.20.x`
+  * R2: `172.20.20.x`
+  * R3: `172.20.20.x`
 
 Your instructor will give you a **Pod Management Addressing Guide** with these values.
 
@@ -136,7 +136,7 @@ Your tree should look like:
 In this lab, you will:
 
 * Log into each router using SSH.
-* Confirm the device types (Cisco / Arista / Juniper).
+* Confirm the device types (Cisco / Cisco / Cisco).
 * Capture basic information and draw your pod’s topology.
 
 ### Tasks
@@ -165,12 +165,12 @@ In this lab, you will:
    * `show version`
    * `show ip interface brief`
 
-   On **R2 (Arista EOS)**:
+   On **R2 (Cisco EOS)**:
 
    * `show version`
    * `show ip interface brief`
 
-   On **R3 (Juniper vMX)**:
+   On **R3 (Cisco vMX)**:
 
    * `show version`
    * `show interfaces terse`
@@ -180,13 +180,13 @@ In this lab, you will:
    In your notes, draw:
 
    ```text
-   R1 (Cisco)  ───  R2 (Arista)  ───  R3 (Juniper)
+   R1 (Cisco)  ───  R2 (Cisco)  ───  R3 (Cisco)
    ```
 
    Label:
 
    * Device names (R1, R2, R3)
-   * Platform (Cisco / Arista / Juniper)
+   * Platform (Cisco / Cisco / Cisco)
    * Management IP address for each (from the guide)
 
 5. **Log Out**
@@ -240,7 +240,7 @@ All pods use the **same 10.1.x.x addresses** for these links.
    show ip interface brief
    ```
 
-2. **Configure R2 (Arista EOS)**
+2. **Configure R2 (Cisco EOS)**
 
    On R2:
 
@@ -260,7 +260,7 @@ All pods use the **same 10.1.x.x addresses** for these links.
    show ip interface brief
    ```
 
-3. **Configure R3 (Juniper vMX)**
+3. **Configure R3 (Cisco vMX)**
 
    On R3:
 
@@ -317,23 +317,23 @@ For pod N:
    write memory
    ```
 
-2. **Configure R2 (Arista EOS)**
+2. **Configure R2 (Cisco EOS)**
 
    ```text
    configure
    hostname R2-PODN
    banner login
-   *** Welcome to R2-PODN (Arista EOS) ***
+   *** Welcome to R2-PODN (Cisco EOS) ***
    end
    write memory
    ```
 
-3. **Configure R3 (Juniper vMX)**
+3. **Configure R3 (Cisco vMX)**
 
    ```text
    configure
    set system host-name R3-PODN
-   set system login message "*** Welcome to R3-PODN (Juniper vMX) ***"
+   set system login message "*** Welcome to R3-PODN (Cisco vMX) ***"
    commit
    ```
 
@@ -353,7 +353,7 @@ For pod N:
 You will:
 
 * Confirm your `students/` workspace
-* Create an inventory file
+* Create an inventory.yml file
 * Configure group variables for each vendor
 * Run a simple Ansible connectivity test
 
@@ -415,7 +415,7 @@ You will:
    ansible_user: admin
    ansible_password: 800-ePlus
    ansible_connection: httpapi
-   ansible_network_os: arista.eos.eos
+   ansible_network_os: cisco.ios.ios
    ansible_httpapi_use_ssl: true
    ansible_httpapi_validate_certs: false
    ```
@@ -426,7 +426,7 @@ You will:
    ansible_user: admin
    ansible_password: 800-ePlus
    ansible_connection: netconf
-   ansible_network_os: junipernetworks.junos.junos
+   ansible_network_os: cisco.ios.ios
    ```
 
 4. **Create a Basic Test Playbook**
@@ -451,10 +451,10 @@ You will:
 5. **Run the Test**
 
    ```bash
-   ansible-playbook -i inventory.yml test-connect.yml
+   ansible-playbook -i inventory.yml.yml test-connect.yml
    ```
 
-   Confirm you see output from Cisco, Arista, and Juniper.
+   Confirm you see output from three Cisco IOL.
 
 ---
 
@@ -566,37 +566,37 @@ You will:
          cisco.ios.ios_config:
            src: rendered/{{ inventory_hostname }}-baseline.cfg
 
-   - name: Apply baseline to Arista devices
+   - name: Apply baseline to Cisco devices
      hosts: arista
      gather_facts: no
      tasks:
-       - name: Render Arista baseline config
+       - name: Render Cisco baseline config
          template:
            src: templates/arista_baseline.j2
            dest: rendered/{{ inventory_hostname }}-baseline.cfg
 
-       - name: Push Arista baseline config
-         arista.eos.eos_config:
+       - name: Push Cisco baseline config
+         cisco.ios.ios_config:
            src: rendered/{{ inventory_hostname }}-baseline.cfg
 
-   - name: Apply baseline to Juniper devices
+   - name: Apply baseline to Cisco devices
      hosts: juniper
      gather_facts: no
      tasks:
-       - name: Render Juniper baseline config
+       - name: Render Cisco baseline config
          template:
            src: templates/juniper_baseline.j2
            dest: rendered/{{ inventory_hostname }}-baseline.cfg
 
-       - name: Push Juniper baseline config
-         junipernetworks.junos.junos_config:
+       - name: Push Cisco baseline config
+         cisco.ios.ios_config:
            src: rendered/{{ inventory_hostname }}-baseline.cfg
    ```
 
 5. **Run & Verify**
 
    ```bash
-   ansible-playbook -i inventory.yml baseline.yml
+   ansible-playbook -i inventory.yml.yml baseline.yml
    ```
 
    Then, on each device, verify hostname, NTP servers, and timezone.
@@ -635,13 +635,13 @@ Use Ansible to collect **device information** and save it as “profiles”.
 2. **Run the Playbook**
 
    ```bash
-   ansible-playbook -i inventory.yml facts.yml
+   ansible-playbook -i inventory.yml.yml facts.yml
    ```
 
 3. **Review Profiles**
 
    * Look in `profiles/`.
-   * Compare version outputs across Cisco, Arista, and Juniper.
+   * Compare version outputs across three Cisco IOL.
 
 ---
 
@@ -700,23 +700,23 @@ Use Ansible to ensure descriptions are set on your transit interfaces.
            parents: interface {{ item.name }}
          loop: "{{ interfaces }}"
 
-   - name: Configure interface descriptions on Arista
+   - name: Configure interface descriptions on Cisco
      hosts: arista
      gather_facts: no
      tasks:
-       - name: Set Arista interface descriptions
-         arista.eos.eos_config:
+       - name: Set Cisco interface descriptions
+         cisco.ios.ios_config:
            lines:
              - description {{ item.description }}
            parents: interface {{ item.name }}
          loop: "{{ interfaces }}"
 
-   - name: Configure interface descriptions on Juniper
+   - name: Configure interface descriptions on Cisco
      hosts: juniper
      gather_facts: no
      tasks:
-       - name: Set Juniper interface descriptions
-         junipernetworks.junos.junos_config:
+       - name: Set Cisco interface descriptions
+         cisco.ios.ios_config:
            lines:
              - set interfaces {{ item.name }} description "{{ item.description }}"
          loop: "{{ interfaces }}"
@@ -725,8 +725,8 @@ Use Ansible to ensure descriptions are set on your transit interfaces.
 3. **Run Twice**
 
    ```bash
-   ansible-playbook -i inventory.yml interfaces.yml
-   ansible-playbook -i inventory.yml interfaces.yml
+   ansible-playbook -i inventory.yml.yml interfaces.yml
+   ansible-playbook -i inventory.yml.yml interfaces.yml
    ```
 
    * First run: expect `changed` for some tasks.
@@ -783,12 +783,12 @@ We will use the **same addresses in every pod**:
              - ip route {{ item.prefix }} {{ item.next_hop }}
          loop: "{{ static_routes | default([]) }}"
 
-   - name: Configure static routes on Juniper
+   - name: Configure static routes on Cisco
      hosts: juniper
      gather_facts: no
      tasks:
-       - name: Set static routes on Juniper
-         junipernetworks.junos.junos_config:
+       - name: Set static routes on Cisco
+         cisco.ios.ios_config:
            lines:
              - set routing-options static route {{ item.prefix }} next-hop {{ item.next_hop }}
          loop: "{{ static_routes | default([]) }}"
@@ -797,7 +797,7 @@ We will use the **same addresses in every pod**:
 3. **Run and Test**
 
    ```bash
-   ansible-playbook -i inventory.yml static_routes.yml
+   ansible-playbook -i inventory.yml.yml static_routes.yml
    ```
 
    * From **R1**, ping `10.1.3.3`
@@ -862,16 +862,16 @@ You’ll use a `pod_id` variable and simple formulas to generate:
 
 ---
 
-# Lab 11 – VLANs & L2 on Arista (Optional)
+# Lab 11 – VLANs & L2 on Cisco (Optional)
 
 ### Overview
 
-Use Ansible to manage VLANs and L2 interfaces on R2 (Arista EOS).
+Use Ansible to manage VLANs and L2 interfaces on R2 (Cisco EOS).
 
 ### High-Level Tasks
 
 1. Define VLANs and port assignments in `host_vars/r2-podN.yml`.
-2. Use `arista.eos.eos_vlans` and `arista.eos.eos_interfaces` in `vlans.yml`.
+2. Use `cisco.ios.ios_vlans` and `cisco.ios.ios_interfaces` in `vlans.yml`.
 3. Verify VLANs with `show vlan` and interface switchport status.
 
 ---
@@ -886,8 +886,8 @@ Treat network configs as artifacts and back them up regularly.
 
 1. Create `backup.yml`:
 
-   * Run `show running-config` on Cisco/Arista.
-   * Run `show configuration | display set` on Juniper.
+   * Run `show running-config` on Cisco/Cisco.
+   * Run `show configuration | display set` on Cisco.
    * Save outputs under `backups/<date>/<inventory_hostname>.cfg`.
 2. Run the playbook and inspect the backups directory.
 

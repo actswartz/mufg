@@ -1,0 +1,10 @@
+---
+- name: Test Lab 2 - Configure Banner
+  hosts: student1
+  gather_facts: false
+  tasks:
+    - name: Configure MOTD Banner
+      cisco.ios.ios_banner:
+        banner: motd
+        text: "Welcome to Student 1's Router - Authorized Access Only!"
+        state: present

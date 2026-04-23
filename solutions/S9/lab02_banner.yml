@@ -1,0 +1,10 @@
+---
+- name: Lab 2 - Configure Banner
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: Configure MOTD Banner
+      cisco.ios.ios_banner:
+        banner: motd
+        text: "Welcome to Student 1's Cisco IOL Pod - Authorized Access Only!"
+        state: present

@@ -1,0 +1,12 @@
+---
+- name: Configure Hostname
+  cisco.ios.ios_hostname:
+    config:
+      hostname: "{{ inventory_hostname }}"
+    state: merged
+
+- name: Configure Banner
+  cisco.ios.ios_banner:
+    banner: motd
+    text: "{{ banner_text }}"
+    state: present

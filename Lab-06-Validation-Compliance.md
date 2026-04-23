@@ -61,14 +61,14 @@ This playbook will use no configuration modules. It is purely for reading and ch
         fail_msg: "An OSPF neighbor is not FULL on {{ inventory_hostname }}!"
         success_msg: "OSPF neighbors are FULL on {{ inventory_hostname }}."
 
-    - name: 1. CHECK OSPF NEIGHBORS (Arista EOS)
+    - name: 1. CHECK OSPF NEIGHBORS (Cisco EOS)
       when: "'arista' in group_names"
-      arista.eos.eos_command:
+      cisco.ios.ios_command:
         commands:
           - show ip ospf neighbor
       register: r_arista_ospf_neighbors
 
-    - name: 1. VALIDATE OSPF NEIGHBORS (Arista EOS)
+    - name: 1. VALIDATE OSPF NEIGHBORS (Cisco EOS)
       when: "'arista' in group_names"
       ansible.builtin.assert:
         that:
@@ -76,14 +76,14 @@ This playbook will use no configuration modules. It is purely for reading and ch
         fail_msg: "An OSPF neighbor is not FULL on {{ inventory_hostname }}!"
         success_msg: "OSPF neighbors are FULL on {{ inventory_hostname }}."
 
-    - name: 1. CHECK OSPF NEIGHBORS (Juniper)
-      when: ansible_network_os == 'junipernetworks.junos.junos'
-      junipernetworks.junos.junos_command:
+    - name: 1. CHECK OSPF NEIGHBORS (Cisco)
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_command:
         commands:
           - show ospf neighbor
       register: r_junos_ospf_neighbors
 
-    - name: 1. VALIDATE OSPF NEIGHBORS (Juniper)
+    - name: 1. VALIDATE OSPF NEIGHBORS (Cisco)
       when: r_junos_ospf_neighbors.stdout is defined
       ansible.builtin.assert:
         that:
@@ -121,14 +121,14 @@ This playbook will use no configuration modules. It is purely for reading and ch
         fail_msg: "NTP server {{ ntp_server }} is not configured on {{ inventory_hostname }}!"
         success_msg: "NTP server is correctly configured on {{ inventory_hostname }}."
 
-    - name: 3. CHECK NTP COMPLIANCE (Arista)
+    - name: 3. CHECK NTP COMPLIANCE (Cisco)
       when: "'arista' in group_names"
-      arista.eos.eos_command:
+      cisco.ios.ios_command:
         commands:
           - show running-config | include ntp
       register: r_arista_ntp_config
 
-    - name: 3. VALIDATE NTP COMPLIANCE (Arista)
+    - name: 3. VALIDATE NTP COMPLIANCE (Cisco)
       when: "'arista' in group_names"
       ansible.builtin.assert:
         that:
@@ -136,15 +136,15 @@ This playbook will use no configuration modules. It is purely for reading and ch
         fail_msg: "NTP server {{ ntp_server }} is not configured on {{ inventory_hostname }}!"
         success_msg: "NTP server is correctly configured on {{ inventory_hostname }}."
 
-    - name: 3. CHECK NTP COMPLIANCE (Juniper)
-      when: ansible_network_os == 'junipernetworks.junos.junos'
-      junipernetworks.junos.junos_command:
+    - name: 3. CHECK NTP COMPLIANCE (Cisco)
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_command:
         commands:
           - show configuration system ntp
       register: r_ntp_config_junos
 
-    - name: 3. VALIDATE NTP COMPLIANCE (Juniper)
-      when: ansible_network_os == 'junipernetworks.junos.junos'
+    - name: 3. VALIDATE NTP COMPLIANCE (Cisco)
+      when: ansible_network_os == 'cisco.ios.ios'
       ansible.builtin.assert:
         that:
           - "ntp_server in (r_ntp_config_junos.stdout[0] | default(''))"
@@ -157,19 +157,19 @@ This playbook will use no configuration modules. It is purely for reading and ch
 *   **`register:` variables**: Each vendor-specific command saves its output into a register (e.g., `r_cisco_ospf_neighbors`, `r_arista_ntp_config`). This keeps the results separate so later tasks on the same host can safely reference the data without being overwritten by tasks for other platforms.
 *   **`when:` statements**: Every command/assert pair is guarded with a `when` so it only runs on the appropriate devices. This avoids unnecessary connections and ensures the register variables exist before we reference them.
 *   **`ansible.builtin.assert`**: This module checks the conditions you list in the `that:` block. If any condition is false, the entire playbook fails for that host. This is exactly what we want for a validation test! The expressions inside `that:` are already Jinja, so do **not** wrap them in `{{ }}`. Use concatenation like `' ' ~ ...` when you need to build strings, as shown in the route validation task.
-*   **Connection handling**: Leave `connection` unset in the play so that each host uses the value from `inventory`. Cisco/Arista will use `network_cli` while Juniper keeps `netconf`, which is required for the Junos modules.
+*   **Connection handling**: Leave `connection` unset in the play so that each host uses the value from `inventory`. Cisco/Cisco will use `network_cli` while Cisco keeps `netconf`, which is required for the Junos modules.
 *   **NTP prerequisite**: These compliance checks assume each router was previously configured with the Lab 3 NTP server (`130.126.24.24`). If you haven't run your `base_config`/Lab 3 playbooks recently, reapply them (or manually configure `ntp server 130.126.24.24`) before running this validation playbook.
 *   `fail_msg` / `success_msg`: These make the output of the playbook very easy to read, telling you exactly what passed or failed.
 *   **Filters (`| ipaddr('address')`, `| default('')`)**:
     *   `ipaddr('address')` is a filter that extracts just the IP address from a prefix (e.g., `10.222.201.3/32` -> `10.222.201.3`).
     *   `default('')` is another safety mechanism. If the `stdout` doesn't exist, it provides an empty string instead of causing an error.
 
-### Note:  the Arista device actually has two neighbors. 
+### Note:  the Cisco device actually has two neighbors. 
 We are only checking if the word "FULL" shows up in standard out.
  a more accurate way to check would be, but we have not covered all of these topics.
  ```yaml
 ---
-- name: 1. VALIDATE OSPF NEIGHBORS (Arista EOS)
+- name: 1. VALIDATE OSPF NEIGHBORS (Cisco EOS)
   when: "'arista' in group_names"
   vars: { ospf_not_full: "{{ r_arista_ospf_neighbors.stdout | reject('search','FULL') | list }}" }
   ansible.builtin.assert:
@@ -188,7 +188,7 @@ We are only checking if the word "FULL" shows up in standard out.
 1.  Execute your new validation playbook.
 
     ```bash
-    ansible-playbook -i inventory validate_network.yml
+    ansible-playbook -i inventory.yml validate_network.yml
     ```
     If everything is working correctly, you should see the `success_msg` for every assertion, and the play should complete successfully.
 
@@ -199,14 +199,14 @@ A test is only useful if you know it will fail when something is wrong. Let's ca
 1.  Use an ad-hoc command to shut down the OSPF-enabled interface on R1.
 
     ```bash
-    ansible r1 -i inventory -m cisco.ios.ios_config -a "parents='interface Ethernet0/0' lines='shutdown'"
+    ansible r1 -i inventory.yml -m cisco.ios.ios_config -a "parents='interface Ethernet0/0' lines='shutdown'"
     ```
 
 2.  Wait about a minute for the OSPF adjacency to time out.
 3.  Run the validation playbook again.
 
     ```bash
-    ansible-playbook -i inventory validate_network.yml
+    ansible-playbook -i inventory.yml validate_network.yml
     ```
 
 This time, the playbook should fail on R1 and R2. You will see your custom `fail_msg` printed in the output, clearly stating that the OSPF neighbor is not `FULL`. The route validation on R1 will also fail.
@@ -214,7 +214,7 @@ This time, the playbook should fail on R1 and R2. You will see your custom `fail
 4.  **Don't forget to bring the interface back up!**
 
     ```bash
-    ansible r1 -i inventory -m cisco.ios.ios_config -a "parents='interface Ethernet0/0' lines='no shutdown'"
+    ansible r1 -i inventory.yml -m cisco.ios.ios_config -a "parents='interface Ethernet0/0' lines='no shutdown'"
     ```
     Run the validation playbook one more time to confirm everything returns to a passing state.
 

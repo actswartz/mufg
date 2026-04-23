@@ -25,7 +25,7 @@ This makes automation safe and predictable. You can run your playbooks over and 
 
 ## Part 1: The Banner Configuration Playbook 🪧
 
-Our goal is to set a consistent MOTD banner on all three of our devices. Each device type (Cisco, Arista, Juniper) requires a slightly different set of commands to do this, so we will use vendor-specific modules.
+Our goal is to set a consistent MOTD banner on all three of our devices. Each device type (Cisco, Cisco, Cisco) requires a slightly different set of commands to do this, so we will use vendor-specific modules.
 
 ### Task: Create the `configure_banner.yml` Playbook
 
@@ -52,25 +52,25 @@ Our goal is to set a consistent MOTD banner on all three of our devices. Each de
           This device is managed by Ansible.
         state: present
 
-- name: Configure Banner on Arista EOS Devices
+- name: Configure Banner on Cisco EOS Devices
   hosts: arista
   gather_facts: false
 
   tasks:
     - name: Set the MOTD banner
-      arista.eos.eos_banner:
+      cisco.ios.ios_banner:
         banner: motd
         text: |
           This device is managed by Ansible.
         state: present
 
-- name: Configure Banner on Juniper Junos Devices
+- name: Configure Banner on Cisco Junos Devices
   hosts: juniper
   gather_facts: false
 
   tasks:
     - name: Set the MOTD banner
-      junipernetworks.junos.junos_config:
+      cisco.ios.ios_config:
         lines:
           - "set system login message \"This device is managed by Ansible.\""
 ```
@@ -79,18 +79,18 @@ Our goal is to set a consistent MOTD banner on all three of our devices. Each de
 
 *   **Three Plays:** We are using three separate plays, targeting the `cisco`, `arista`, and `juniper` groups respectively. This is a clear way to run different tasks for different device types.
 *   **`cisco.ios.ios_banner`**: This banner-specific module handles the special Cisco syntax automatically (no need to manage delimiters like `banner motd c ... c`). We simply supply the banner type (`motd`) and the text, and the module takes care of the rest.
-*   **`arista.eos.eos_banner`**: Similar to the IOS banner module, this handles EOS banner syntax without you having to worry about delimiters or prompts.
-*   **`junipernetworks.junos.junos_config`**: The Juniper module is similar, but it uses Junos's `set`-style syntax. Note the escaped quotes (`\" \"`) around the message, which Junos requires when spaces are present.
+*   **`cisco.ios.ios_banner`**: Similar to the IOS banner module, this handles EOS banner syntax without you having to worry about delimiters or prompts.
+*   **`cisco.ios.ios_config`**: The Cisco module is similar, but it uses Junos's `set`-style syntax. Note the escaped quotes (`\" \"`) around the message, which Junos requires when spaces are present.
 
 ### Run and Verify the Banner Playbook
 
 1.  Execute the playbook from your terminal.
 
     ```bash
-    ansible-playbook -i inventory configure_banner.yml
+    ansible-playbook -i inventory.yml configure_banner.yml
     ```
 
 2.  The first run should report `changed` for each device. Running it again should show `ok`, proving the playbook is idempotent.
 3.  Verify on the devices:
-    *   Cisco/Arista: reconnect via SSH and confirm the MOTD banner displays before the prompt.
-    *   Juniper: run `show system login message` to view the configured banner if it does not appear on login.
+    *   Cisco/Cisco: reconnect via SSH and confirm the MOTD banner displays before the prompt.
+    *   Cisco: run `show system login message` to view the configured banner if it does not appear on login.

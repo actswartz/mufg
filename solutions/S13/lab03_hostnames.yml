@@ -1,0 +1,10 @@
+---
+- name: Lab 3 - Using Variables (Hostname)
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: Configure Hostnames
+      cisco.ios.ios_hostname:
+        config:
+          hostname: "{{ inventory_hostname }}"
+        state: merged

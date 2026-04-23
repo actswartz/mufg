@@ -1,0 +1,6 @@
+---
+- name: Lab 7/8 - Role and Capstone
+  hosts: routers
+  gather_facts: false
+  roles:
+    - base_config

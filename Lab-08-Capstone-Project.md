@@ -150,7 +150,7 @@ You are now ready to run your zero-touch provisioning and validation workflow.
 1.  Execute your new master playbook.
 
     ```bash
-    ansible-playbook -i inventory provision_and_validate.yml
+    ansible-playbook -i inventory.yml provision_and_validate.yml
     ```
 
 2.  Watch the execution. Ansible will first work through all the tasks in your three roles, applying the full configuration to the pod. Then, without any manual intervention, it will immediately begin running the validation tasks.

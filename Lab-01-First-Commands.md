@@ -4,9 +4,9 @@ Welcome to your first lab! The goal of this exercise is to introduce you to the 
 
 ## Objectives 🎯
 
-*   Understand and create an Ansible inventory file.
+*   Understand and create an Ansible inventory.yml file.
 *   Learn what an Ansible ad-hoc command is and how to use one.
-*   Verify connectivity to your Cisco, Arista, and Juniper devices.
+*   Verify connectivity to your three Cisco IOL devices.
 *   Gather information ("facts") from your devices using Ansible.
 *   Write and run your very first Ansible Playbook to display specific facts.
 
@@ -25,31 +25,30 @@ For this lab, your three devices have already been pre-configured with:
 
 ---
 Management IP Address
-|       | Cisco       | Arista      | Juniper      |
-|-------|-------------|-------------|--------------|
-|       | R1 - E1/1   | R2 - E5     | R3 - ge0/0/4 |
-| Pod1  | 10.222.1.11 | 10.222.1.31 | 10.222.1.51  |
-| Pod2  | 10.222.1.12 | 10.222.1.32 | 10.222.1.52  |
-| Pod3  | 10.222.1.13 | 10.222.1.33 | 10.222.1.53  |
-| Pod4  | 10.222.1.14 | 10.222.1.34 | 10.222.1.54  |
-| Pod5  | 10.222.1.15 | 10.222.1.35 | 10.222.1.55  |
-| Pod6  | 10.222.1.16 | 10.222.1.36 | 10.222.1.56  |
-| Pod7  | 10.222.1.17 | 10.222.1.37 | 10.222.1.57  |
-| Pod8  | 10.222.1.18 | 10.222.1.38 | 10.222.1.58  |
-| Pod9  | 10.222.1.19 | 10.222.1.39 | 10.222.1.59  |
-| Pod10 | 10.222.1.20 | 10.222.1.40 | 10.222.1.60  |
-| Pod11 | 10.222.1.21 | 10.222.1.41 | 10.222.1.61  |
-| Pod12 | 10.222.1.22 | 10.222.1.42 | 10.222.1.62  |
-| Pod13 | 10.222.1.23 | 10.222.1.43 | 10.222.1.63  |
-| Pod14 | 10.222.1.24 | 10.222.1.44 | 10.222.1.64  |
-| Pod15 | 10.222.1.25 | 10.222.1.45 | 10.222.1.65  |
+|       | Router 1    | Router 2    | Router 3    |
+|-------|-------------|-------------|-------------|
+| Pod1  | 172.20.20.2 | 172.20.20.3 | 172.20.20.4 |
+| Pod2  | 172.20.20.5 | 172.20.20.6 | 172.20.20.7 |
+| Pod3  | 172.20.20.8 | 172.20.20.9 | 172.20.20.10 |
+| Pod4  | 172.20.20.11| 172.20.20.12| 172.20.20.13 |
+| Pod5  | 172.20.20.14| 172.20.20.15| 172.20.20.16 |
+| Pod6  | 172.20.20.17| 172.20.20.18| 172.20.20.19 |
+| Pod7  | 172.20.20.20| 172.20.20.21| 172.20.20.22 |
+| Pod8  | 172.20.20.23| 172.20.20.24| 172.20.20.25 |
+| Pod9  | 172.20.20.26| 172.20.20.27| 172.20.20.28 |
+| Pod10 | 172.20.20.29| 172.20.20.30| 172.20.20.31 |
+| Pod11 | 172.20.20.32| 172.20.20.33| 172.20.20.34 |
+| Pod12 | 172.20.20.35| 172.20.20.36| 172.20.20.37 |
+| Pod13 | 172.20.20.38| 172.20.20.39| 172.20.20.40 |
+| Pod14 | 172.20.20.41| 172.20.20.42| 172.20.20.43 |
+| Pod15 | 172.20.20.44| 172.20.20.45| 172.20.20.46 |
 
 
 ---
 
 ## Part 1: Create Your Ansible Inventory 🗂️
 
-The first step in any Ansible project is to tell Ansible what devices it should manage. You do this with an **inventory file**. This file is a simple text document that lists the IP addresses or hostnames of your managed nodes.
+The first step in any Ansible project is to tell Ansible what devices it should manage. You do this with an **inventory.yml file**. This file is a simple text document that lists the IP addresses or hostnames of your managed nodes.
 
 ### Task: Create the `inventory` file
 
@@ -58,29 +57,48 @@ The first step in any Ansible project is to tell Ansible what devices it should 
 3.  Use nano to create or re-edit the file at any time:
 
 ```bash
-nano inventory
-```
+nano inventory.yml
+```yaml
+all:
+  vars:
+    ansible_user: admin
+    ansible_ssh_pass: 800-ePlus
+    ansible_connection: ansible.netcommon.network_cli
+    ansible_network_os: cisco.ios.ios
+    ansible_become: yes
+    ansible_become_method: enable
+    ansible_become_pass: 800-ePlus
+    ansible_ssh_extra_args: '-o StrictHostKeyChecking=no'
+    ansible_network_cli_ssh_type: libssh
 
-4.  Copy and paste the following text into your `inventory` file. **You must replace the placeholder IPs (`x.x.x.x`)** with the actual Management IPs for your specific pod devices. You can find these in the table above.
-5.  Edit the IP address placeholders so they match your pod.
-6.  To Exit Type CTRL+X then hit Y and press ENTER to save
-
+  children:
+    routers:
+      hosts:
+        S1-R1:
+          ansible_host: 172.20.20.2
+          l3_interfaces:
+            - { name: Ethernet0/0, ipv4: [{ address: 172.20.20.2/24 }] }
+            - { name: Ethernet0/1, ipv4: [{ address: 12.12.12.1/24 }] }
+            - { name: Ethernet0/3, ipv4: [{ address: 13.13.13.1/24 }] }
+        S1-R2:
+          ansible_host: 172.20.20.3
+          l3_interfaces:
+            - { name: Ethernet0/0, ipv4: [{ address: 172.20.20.3/24 }] }
+            - { name: Ethernet0/1, ipv4: [{ address: 12.12.12.2/24 }] }
+            - { name: Ethernet0/2, ipv4: [{ address: 23.23.23.2/24 }] }
+        S1-R3:
+          ansible_host: 172.20.20.4
+          l3_interfaces:
+            - { name: Ethernet0/0, ipv4: [{ address: 172.20.20.4/24 }] }
+            - { name: Ethernet0/2, ipv4: [{ address: 23.23.23.3/24 }] }
+            - { name: Ethernet0/3, ipv4: [{ address: 13.13.13.3/24 }] }
 ```ini
 [all:vars]
 ansible_user=admin
 ansible_password=800-ePlus
 ansible_connection=network_cli
 
-[cisco]
-r1 ansible_host=10.222.1.17
-
-[arista]
-r2 ansible_host=10.222.1.37
-
-[juniper]
-r3 ansible_host=10.222.1.57
-
-[routers:children]
+[routers]
 cisco
 arista
 juniper
@@ -92,27 +110,21 @@ ansible_network_cli_ssh_type=paramiko
 ansible_command_timeout=120
 
 [arista:vars]
-ansible_network_os=arista.eos.eos
+ansible_network_os=cisco.ios.ios
 ansible_connection=ansible.netcommon.network_cli
 ansible_become=true
 ansible_become_method=enable
 ansible_become_password=800-ePlus
 
 [juniper:vars]
-ansible_network_os=junipernetworks.junos.junos
+ansible_network_os=cisco.ios.ios
 ansible_connection=ansible.netcommon.netconf
-ansible_port=830
+
 ```
 
 ### Explanation of the Inventory File
 
-*   **`[cisco]`, `[arista]`, `[juniper]`**: These are **groups**. Grouping lets you run commands against specific sets of devices. We have named our routers `r1`, `r2`, and `r3` for easy reference.
-*   `ansible_host=x.x.x.x`: This variable assigns the management IP address to our device alias (`r1`, `r2`, `r3`).
-*   **`[all:vars]`**: This section defines variables that apply to **all** hosts in the inventory. We've set the `ansible_user`, `ansible_password`, and defined the connection type as `network_cli`, which is essential for network devices.
-*   **`[cisco:vars]`**: This section defines variables that only apply to the `cisco` group.
-*   `ansible_network_os`: This is a critical variable. It tells Ansible what kind of device it's talking to, so it can use the correct commands.
-*   **`[juniper:vars]`**: Along with `ansible_network_os`, we override the connection settings for Junos devices to use NETCONF (`ansible_connection=ansible.netcommon.netconf`) on TCP port 830, which is required by Juniper fact-gathering modules.
-*   **`[routers:children]`**: This creates a new group called `routers` that contains other groups. It's a convenient way to target all of your network devices at once.
+*   **`[routers]`**: This creates a new group called `routers` that contains other groups. It's a convenient way to target all of your network devices at once.
 
 
 
@@ -127,7 +139,7 @@ Let's send our first command. We will use the `ping` module, which is a simple t
 1.  From your terminal, run the following command.
 
 ```bash
-ansible routers -i inventory -m ping
+ansible routers -i inventory.yml -m ping
 ```
 
 2.  You should see a **GREEN** success message for each of your three devices.
@@ -161,7 +173,7 @@ r3 | SUCCESS => {
 
 *   `ansible`: The command-line tool for running ad-hoc commands.
 *   `routers`: The group of hosts from our inventory we want to target.
-*   `-i inventory`: Specifies the path to our inventory file.
+*   `-i inventory.yml`: Specifies the path to our inventory.yml file.
 *   `-m ping`: Specifies the module to run. The `ping` module returns a `pong` on success.
 
 **If you see a RED error message**, double-check the IP addresses, username, and password in your `inventory` file.
@@ -216,14 +228,14 @@ nano gather_facts.yml
 *   `{{ inventory_hostname }}` and `{{ ansible_facts.net_version }}`: These are **variables**. The double curly braces `{{ }}` tell Ansible to replace the placeholder with the value of the variable.
     *   `inventory_hostname` is the name of the device the task is currently running on (e.g., `r1`).
     *   `ansible_facts.net_version` is one of the many facts that was collected by the `gather_facts` module.
-    *   **Juniper prerequisite:** the `junipernetworks.junos.junos_facts` module requires the `xmltodict` Python library on your control node. If you see errors about `xmltodict` missing, install it in your Ansible virtual environment with `pip install xmltodict` and rerun the playbook.
+    *   **Cisco prerequisite:** the `cisco.ios.ios_facts` module requires the `xmltodict` Python library on your control node. If you see errors about `xmltodict` missing, install it in your Ansible virtual environment with `pip install xmltodict` and rerun the playbook.
 
 ### Run the Playbook
 
 1.  From your terminal, execute the playbook with the `ansible-playbook` command.
 
 ```bash
-ansible-playbook -i inventory gather_facts.yml
+ansible-playbook -i inventory.yml gather_facts.yml
 ```
 
 2.  You should see output for each task. The final task will give you a clean, readable message for each device.

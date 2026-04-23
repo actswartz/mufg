@@ -1,0 +1,103 @@
+# Master Inventory for 15 Students
+[all:vars]
+ansible_user=admin
+ansible_ssh_pass=800-ePlus
+ansible_become_pass=800-ePlus
+ansible_connection=ansible.netcommon.network_cli
+ansible_network_os=cisco.ios.ios
+ansible_become=yes
+ansible_become_method=enable
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
+ansible_network_cli_ssh_type=libssh
+
+[student1]
+S1-R1 ansible_host=172.20.20.2
+S1-R2 ansible_host=172.20.20.3
+S1-R3 ansible_host=172.20.20.4
+
+[student2]
+S2-R1 ansible_host=172.20.20.5
+S2-R2 ansible_host=172.20.20.6
+S2-R3 ansible_host=172.20.20.7
+
+[student3]
+S3-R1 ansible_host=172.20.20.8
+S3-R2 ansible_host=172.20.20.9
+S3-R3 ansible_host=172.20.20.10
+
+[student4]
+S4-R1 ansible_host=172.20.20.11
+S4-R2 ansible_host=172.20.20.12
+S4-R3 ansible_host=172.20.20.13
+
+[student5]
+S5-R1 ansible_host=172.20.20.14
+S5-R2 ansible_host=172.20.20.15
+S5-R3 ansible_host=172.20.20.16
+
+[student6]
+S6-R1 ansible_host=172.20.20.17
+S6-R2 ansible_host=172.20.20.18
+S6-R3 ansible_host=172.20.20.19
+
+[student7]
+S7-R1 ansible_host=172.20.20.20
+S7-R2 ansible_host=172.20.20.21
+S7-R3 ansible_host=172.20.20.22
+
+[student8]
+S8-R1 ansible_host=172.20.20.23
+S8-R2 ansible_host=172.20.20.24
+S8-R3 ansible_host=172.20.20.25
+
+[student9]
+S9-R1 ansible_host=172.20.20.26
+S9-R2 ansible_host=172.20.20.27
+S9-R3 ansible_host=172.20.20.28
+
+[student10]
+S10-R1 ansible_host=172.20.20.29
+S10-R2 ansible_host=172.20.20.30
+S10-R3 ansible_host=172.20.20.31
+
+[student11]
+S11-R1 ansible_host=172.20.20.32
+S11-R2 ansible_host=172.20.20.33
+S11-R3 ansible_host=172.20.20.34
+
+[student12]
+S12-R1 ansible_host=172.20.20.35
+S12-R2 ansible_host=172.20.20.36
+S12-R3 ansible_host=172.20.20.37
+
+[student13]
+S13-R1 ansible_host=172.20.20.38
+S13-R2 ansible_host=172.20.20.39
+S13-R3 ansible_host=172.20.20.40
+
+[student14]
+S14-R1 ansible_host=172.20.20.41
+S14-R2 ansible_host=172.20.20.42
+S14-R3 ansible_host=172.20.20.43
+
+[student15]
+S15-R1 ansible_host=172.20.20.44
+S15-R2 ansible_host=172.20.20.45
+S15-R3 ansible_host=172.20.20.46
+
+[routers:children]
+student1
+student2
+student3
+student4
+student5
+student6
+student7
+student8
+student9
+student10
+student11
+student12
+student13
+student14
+student15

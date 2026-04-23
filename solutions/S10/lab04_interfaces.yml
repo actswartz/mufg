@@ -1,0 +1,22 @@
+---
+- name: Lab 4 - Interface IPs
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: Configure IP Addresses
+      cisco.ios.ios_l3_interfaces:
+        config: "{{ l3_interfaces }}"
+        state: merged
+
+    - name: Ensure Interfaces are Up
+      cisco.ios.ios_interfaces:
+        config:
+          - name: Ethernet0/0
+            enabled: true
+          - name: Ethernet0/1
+            enabled: true
+          - name: Ethernet0/2
+            enabled: true
+          - name: Ethernet0/3
+            enabled: true
+        state: merged

@@ -85,15 +85,15 @@ Our goal is to move the logic from `configure_hostnames.yml` and `configure_syst
         config:
           hostname: "{{ inventory_hostname }}"
 
-    - name: Set Hostname | Arista EOS
-      when: ansible_network_os == 'arista.eos.eos'
-      arista.eos.eos_hostname:
+    - name: Set Hostname | Cisco EOS
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_hostname:
         config:
           hostname: "{{ inventory_hostname }}"
 
-    - name: Set Hostname | Juniper Junos
-      when: ansible_network_os == 'junipernetworks.junos.junos'
-      junipernetworks.junos.junos_hostname:
+    - name: Set Hostname | Cisco Junos
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_hostname:
         config:
           hostname: "{{ inventory_hostname }}"
 
@@ -106,17 +106,17 @@ Our goal is to move the logic from `configure_hostnames.yml` and `configure_syst
           - ip name-server {{ dns_server }}
           - ntp server {{ ntp_server }}
 
-    - name: Set System Settings | Arista EOS
-      when: ansible_network_os == 'arista.eos.eos'
-      arista.eos.eos_config:
+    - name: Set System Settings | Cisco EOS
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_config:
         lines:
           - ip domain-name {{ domain_name }}
           - ip name-server {{ dns_server }}
           - ntp server {{ ntp_server }}
 
-    - name: Set System Settings | Juniper Junos
-      when: ansible_network_os == 'junipernetworks.junos.junos'
-      junipernetworks.junos.junos_config:
+    - name: Set System Settings | Cisco Junos
+      when: ansible_network_os == 'cisco.ios.ios'
+      cisco.ios.ios_config:
         lines:
           - set system domain-name {{ domain_name }}
           - set system name-server {{ dns_server }}
@@ -162,7 +162,7 @@ That's it! The `roles:` keyword tells Ansible to find the role named `base_confi
 1.  Execute your new top-level playbook.
 
     ```bash
-    ansible-playbook -i inventory site.yml
+    ansible-playbook -i inventory.yml site.yml
     ```
 2.  The output will look exactly the same as when you ran the Lab 3 playbooks individually. However, your project is now far more organized and scalable. If you wanted to add interface or OSPF configuration, you could create new roles for them (`interfaces`, `ospf`) and simply add them to the list in `site.yml`.
 

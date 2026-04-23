@@ -19,13 +19,6 @@ Think of a **Role** as a "plugin" for your automation. If you write a great role
     ansible-galaxy init roles/base_config
     ```
 
-### 🔍 Breakdown of the Role Folders:
-When you run the command above, Ansible creates several folders. 
-- **`tasks/`**: This is where your playbook logic lives (`main.yml`).
-- **`defaults/`**: This is where you store default variables that the role needs.
-- **`templates/`**: This is where you put your `.j2` files.
-- **`vars/`**: Higher priority variables (harder to override than defaults).
-
 ---
 
 ## Task 2: Build the `base_config` Role 🛠️
@@ -57,7 +50,7 @@ Create `lab07_08_roles.yml`:
   hosts: routers
   gather_facts: false
   roles:
-    - base_config  # This tells Ansible to look in roles/base_config/tasks/main.yml
+    - base_config  # This tells Ansible to look in roles/base_config and run tasks/main.yml
 ```
 
 ### 🔍 The Power of Abstraction
@@ -72,6 +65,22 @@ Run the playbook:
 ```bash
 ansible-playbook -i inventory.yml lab07_08_roles.yml
 ```
+
+---
+
+## 📂 Deep Dive: The Role Directory Structure
+When you run `ansible-galaxy init`, Ansible creates a specific set of folders. Understanding these is key to becoming an Ansible expert.
+
+| Directory | Purpose | Use Case |
+| :--- | :--- | :--- |
+| **`tasks/`** | **The Engine.** Contains the main list of steps the role will take. | `main.yml` here holds your `ios_config` or `ios_banner` tasks. |
+| **`handlers/`** | **The Response.** Contains tasks that only run when "notified" by another task. | Use this to restart a service or clear a counter only *after* a config change. |
+| **`defaults/`** | **Safe Variables.** The lowest priority variables for the role. | Set `banner_text: "Welcome"` here. Users can easily override this in their playbook. |
+| **`vars/`** | **Locked Variables.** High priority variables that should rarely change. | Technical constants or specific internal settings that shouldn't be touched. |
+| **`files/`** | **Static Assets.** Contains files that need to be copied to the target. | A script or a pre-made license file you want to upload to the router. |
+| **`templates/`** | **Dynamic Assets.** Contains `.j2` Jinja2 files. | Your `ospf_config.j2` would live here in a production OSPF role. |
+| **`meta/`** | **The Blueprint.** Contains data *about* the role itself. | Define dependencies here (e.g., "This role needs the `vlan` role to run first"). |
+| **`README.md`** | **The Manual.** Documentation for other humans. | Explains what the role does, what variables it needs, and who wrote it. |
 
 ---
 

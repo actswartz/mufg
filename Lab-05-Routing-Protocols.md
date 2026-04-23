@@ -1,4 +1,4 @@
-<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+<img src="images/3r.jpg" width="400" alt="Network Topology">
 
 **🚀 Mission Prompt:** Automate the Intelligence. Use Jinja2 blueprints to deploy a self-healing OSPF mesh across your entire pod in seconds.
 

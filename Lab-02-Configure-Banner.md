@@ -1,4 +1,4 @@
-<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+<img src="images/3r.jpg" width="400" alt="Network Topology">
 
 **🚀 Mission Prompt:** Brand the Network. Use the power of Idempotency to enforce a legal warning banner across all devices with zero manual CLI entry.
 

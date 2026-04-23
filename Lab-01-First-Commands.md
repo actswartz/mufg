@@ -1,4 +1,4 @@
-<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+<img src="images/3r.jpg" width="400" alt="Network Topology">
 
 **🚀 Mission Prompt:** Establish First Contact. Your goal is to map your pod and prove you can control your network hardware from the Ubuntu command line using agentless automation.
 

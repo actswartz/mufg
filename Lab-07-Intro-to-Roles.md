@@ -1,4 +1,4 @@
-<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+<img src="images/3r.jpg" width="400" alt="Network Topology">
 
 **🚀 Mission Prompt:** Professional Architecture. Transition from simple scripts to scalable software by building your first reusable Network Role.
 

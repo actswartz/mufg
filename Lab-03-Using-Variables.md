@@ -1,4 +1,4 @@
-<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+<img src="images/3r.jpg" width="400" alt="Network Topology">
 
 **🚀 Mission Prompt:** The Dynamic Pod. Stop hard-coding! Use magic variables to make a single playbook that intelligently names every device in your inventory.
 

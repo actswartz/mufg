@@ -1,4 +1,4 @@
-<img src="images/3 router triangle.jpeg" width="400" alt="Network Topology">
+<img src="images/3r.jpg" width="400" alt="Network Topology">
 
 **🚀 Mission Prompt:** Bulletproof Automation. Make your scripts indestructible. Build logic that catches errors and fails gracefully when the network fights back.
 

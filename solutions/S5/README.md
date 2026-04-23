@@ -1,4 +1,21 @@
-# DLR Cisco Automation Course: Core Concepts
+# DLR Cisco Automation Lab Guide
+
+![Topology](../../images/zztopo.jpg)
+
+## Lab Overview
+| Lab | Topic | Preview |
+| :--- | :--- | :--- |
+| **01** | First Commands | ![Lab 01](../../images/Lab-01-First-Commands.jpg) |
+| **02** | Configure Banner | ![Lab 02](../../images/Lab-02-Configure-Banner.jpg) |
+| **03** | Variables | ![Lab 03](../../images/Lab-03-Using-Variables.jpg) |
+| **04** | Interfaces | ![Lab 04](../../images/Lab-04-Interface-IPs.jpg) |
+| **05** | Routing | ![Lab 05](../../images/Lab-05-Routing-Protocols.jpg) |
+| **06** | Validation | ![Lab 06](../../images/Lab-06-Validation-Compliance.jpg) |
+| **07** | Roles | ![Lab 07](../../images/Lab-07-Intro-to-Roles.jpg) |
+| **08** | Capstone | ![Lab 08](../../images/Lab-08-Capstone-Project.jpg) |
+| **09** | Exceptions | ![Lab 09](../../images/Lab-9-Exception.jpg) |
+
+---
 
 This lab environment provides a hands-on journey through automating Cisco IOS devices using Ansible. Below are the core concepts covered in this curriculum:
 

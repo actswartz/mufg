@@ -70,3 +70,10 @@ You might see some playbooks use `ignore_errors: yes`.
 1.  Which section runs only when a task fails?
 2.  Which section runs every single time, even if there is an error?
 3.  Why is exception handling important for a network with 1,000 devices?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=rWl-f8y4V6I](https://www.youtube.com/watch?v=rWl-f8y4V6I)

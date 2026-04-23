@@ -76,3 +76,10 @@ Professional developers use the **hyphen (`-`)** inside tags to control this:
 1.  What is the file extension for a Jinja2 template?
 2.  Why did we exclude `Ethernet0/0` from the OSPF configuration?
 3.  What is the difference between a variable (`{{ }}`) and a loop (`{% %}`) in Jinja2?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=j9tVfEIsYms](https://www.youtube.com/watch?v=j9tVfEIsYms)

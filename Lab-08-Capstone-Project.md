@@ -79,3 +79,10 @@ Understanding this allows you to set "Safe Defaults" in a role while still allow
 1.  What is the benefit of using `import_tasks` instead of copying and pasting code?
 2.  In what order does Ansible execute roles and tasks in a playbook?
 3.  How does a Master Playbook relate to a "Push-Button" deployment strategy?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=E-9X03A9K_s](https://www.youtube.com/watch?v=E-9X03A9K_s)

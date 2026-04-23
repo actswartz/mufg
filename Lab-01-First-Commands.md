@@ -104,3 +104,10 @@ YAML (YAML Ain't Markup Language) is the language of Ansible. It is sensitive to
 1.  **Agentless** means you don't need to install software on the router. (True/False)
 2.  Which file tells Ansible the IP addresses of your devices?
 3.  What is the purpose of the `debug` module?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=346pNooH_N0](https://www.youtube.com/watch?v=346pNooH_N0)

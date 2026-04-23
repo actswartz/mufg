@@ -57,3 +57,10 @@ Professional engineers often "dry-run" their changes before applying them to a l
 1.  If a playbook says `changed=0`, did it fail? (Yes/No)
 2.  What is the difference between an "Imperative" command and a "Declarative" task?
 3.  Why is "Idempotency" useful when updating 500 routers at once?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=j9_t_p1p8-k](https://www.youtube.com/watch?v=j9_t_p1p8-k)

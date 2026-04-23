@@ -86,3 +86,10 @@ Resource modules are powerful because they have multiple "States" that determine
 1.  What is the purpose of the `l3_interfaces` variable?
 2.  Why do we need a separate task for `enabled: true`?
 3.  What command would you run on the Cisco CLI to verify the IPs were applied?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=GAnO0V6j5Cg](https://www.youtube.com/watch?v=GAnO0V6j5Cg)

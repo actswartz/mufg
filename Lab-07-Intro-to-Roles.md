@@ -88,3 +88,10 @@ When you run `ansible-galaxy init`, Ansible creates a specific set of folders. U
 1.  What command creates the boilerplate folder structure for a role?
 2.  Which folder inside a role contains the `main.yml` file with your tasks?
 3.  Why is it better to use a role instead of a 500-line single playbook?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=K3HOnVfU_P8](https://www.youtube.com/watch?v=K3HOnVfU_P8)

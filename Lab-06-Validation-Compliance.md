@@ -89,3 +89,10 @@ Regex is a language for searching text. In this lab, we used:
 1.  What does the `register` keyword do?
 2.  What is a Regular Expression (Regex) used for in this lab?
 3.  Why is it important to verify the "Operational State" after making a change?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=8mG5W_Q-V6k](https://www.youtube.com/watch?v=8mG5W_Q-V6k)

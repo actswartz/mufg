@@ -58,3 +58,10 @@ Filters allow you to enforce naming standards (like "all hostnames must be lower
 1.  What does the "DRY" principle stand for?
 2.  What would happen if you forgot the `{{ }}` around a variable name in a playbook?
 3.  Where does the value for `inventory_hostname` come from?
+
+
+---
+
+## 📺 Video Tutorial: Watch & Learn
+For a visual walkthrough of the concepts in this lab, check out this helpful tutorial:
+[https://www.youtube.com/watch?v=RIsV6oD-Iio](https://www.youtube.com/watch?v=RIsV6oD-Iio)

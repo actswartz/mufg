@@ -1,220 +1,31 @@
-# Lab 4: Configuring Interface IP Addresses with Variables
+# Lab 4: Configuring Interface IP Addresses
 
-So far, we have worked with variables defined directly inside the playbook. For values that are different for every single device, like IP addresses, managing them in the playbook becomes messy.
+In this lab, we use the `l3_interfaces` data from your inventory to configure all interfaces and ensure they are active.
 
-In this lab, you will learn to use **`host_vars`**, Ansible's standard method for managing device-specific variables. You will use `host_vars` to define the IP addresses for your router interfaces and then write a playbook to apply that configuration.
-
-![Lab Topology](images/topo.jpg)
-
-## Objectives 🎯
-
-*   Understand how to use `host_vars` to manage device-specific variables.
-*   Structure complex data, like a list of interfaces, within a YAML file.
-*   Write a playbook that configures loopback and physical interfaces using your `host_vars` data.
-*   Learn to loop through a list of items within a playbook.
-
-## Pre-Lab Reading: Your IP Address Schema
-
-In every pod, the data-plane addressing is identical:
-
-* R1 Lo0: `10.1.1.1/32`
-
-* R2 Lo0: `10.1.2.2/32`
-
-* R3 Lo0: `10.1.3.3/32`
-
-* R1 E0/0 – R2 Eth1: `10.1.12.0/24`
-
-  * R1: `10.1.12.1/24`
-  * R2: `10.1.12.2/24`
-
-* R2 Eth2 – R3 ge-0/0/2: `10.1.23.0/24`
-
-  * R2: `10.1.23.2/24`
-  * R3: `10.1.23.3/24`
-
-Only the **management IP addresses** (used by Ansible to connect to the devices) differ between pods; the data-plane and loopback addresses you configure in this lab are the same in every pod.
-
----
-
-## Part 1: Creating `host_vars` Files 📁
-
-The `host_vars` directory is a special folder that Ansible automatically checks. When you create a file inside it named after a host in your inventory (e.g., `r1.yml`), all the variables in that file are automatically applied to that host.
-
-### Task: Create the `host_vars` directory and files
-
-1.  In your `gem` directory, create a new directory named `host_vars`.
-
-    ```bash
-    mkdir host_vars
-    ```
-
-2.  Inside the `host_vars` directory, create a file named `r1.yml` (for your Cisco router) and add the following content. Launch or reopen it with nano:
-
-    ```bash
-    nano host_vars/r1.yml
-    ```
-
-    **File: `host_vars/r1.yml`**
-    ```yaml
-    ---
-    loopback_interface: Loopback0
-    loopback_ip: 10.1.1.1/32
-
-    interfaces:
-      - name: Ethernet0/0
-        ip: 10.1.12.1/24
-        description: Link to R2
-    ```
-
-3.  Next, create the file `r2.yml` (for your Cisco router) with its variables. Launch or reopen it with nano:
-
-    ```bash
-    nano host_vars/r2.yml
-    ```
-
-    **File: `host_vars/r2.yml`**
-    ```yaml
-    ---
-    loopback_interface: Loopback0
-    loopback_ip: 10.1.2.2/32
-
-    interfaces:
-      - name: Ethernet1
-        ip: 10.1.12.2/24
-        description: Link to R1
-      - name: Ethernet2
-        ip: 10.1.23.2/24
-        description: Link to R3
-    ```
-
-4.  Finally, create the file `r3.yml` (for your Cisco router). Launch or reopen it with nano:
-
-    ```bash
-    nano host_vars/r3.yml
-    ```
-
-    **File: `host_vars/r3.yml`**
-    ```yaml
-    ---
-    loopback_interface: lo0
-    loopback_ip: 10.1.3.3/32
-
-    interfaces:
-      - name: ge-0/0/2
-        ip: 10.1.23.3/24
-        description: Link to R2
-    ```
-
-### Explanation of the `host_vars` Files
-
-*   We have created three files, one for each router. Ansible will automatically load the variables from `r1.yml` when it runs tasks on the host `r1`.
-*   `interfaces:` is a **list** of **dictionaries**. This is a powerful way to structure data. Each item in the list represents an interface and has key-value pairs for its `name`, `ip`, and `description`.
-
----
-
-## Part 2: The Interface Configuration Playbook 🔌
-
-Now we will build a playbook that reads the data from our `host_vars` files and uses it to configure the interfaces. This playbook will use more advanced, vendor-specific `*_interfaces` modules for robust configuration.
-
-### Task: Create the `configure_interfaces.yml` playbook
-
-1.  In your `gem` directory, create a new file named `configure_interfaces.yml`.
-2.  Launch or reopen the file with nano:
-
-    ```bash
-    nano configure_interfaces.yml
-    ```
-
-3.  Copy and paste the following YAML into the file.
+## Task: Create the `lab04_interfaces.yml` Playbook
 
 ```yaml
 ---
-- name: Configure Device Interfaces
+- name: Lab 4 - Interface IPs
   hosts: routers
   gather_facts: false
-
   tasks:
-    - name: Configure Cisco Loopback Interface
-      when: "'cisco' in group_names"
-      cisco.ios.ios_config:
-        parents: "interface {{ loopback_interface }}"
-        lines:
-          - description System Loopback
-          - ip address {{ loopback_ip | ansible.utils.ipaddr('address') }} {{ loopback_ip | ansible.utils.ipaddr('netmask') }}
-          - no shutdown
+    - name: Configure IP Addresses
+      cisco.ios.ios_l3_interfaces:
+        config: "{{ l3_interfaces }}"
+        state: merged
 
-    - name: Configure Cisco Physical Interfaces
-      when: "'cisco' in group_names"
-      cisco.ios.ios_config:
-        parents: "interface {{ item.name }}"
-        lines:
-          - description {{ item.description }}
-          - ip address {{ item.ip | ansible.utils.ipaddr('address') }} {{ item.ip | ansible.utils.ipaddr('netmask') }}
-          - no shutdown
-      loop: "{{ interfaces }}"
-
-    - name: Configure Cisco Loopback Interface
-      when: "'arista' in group_names"
-      cisco.ios.ios_config:
-        parents: "interface {{ loopback_interface }}"
-        lines:
-          - description System Loopback
-          - ip address {{ loopback_ip }}
-          - no shutdown
-
-    - name: Configure Cisco Physical Interfaces
-      when: "'arista' in group_names"
-      cisco.ios.ios_config:
-        parents: "interface {{ item.name }}"
-        lines:
-          - description {{ item.description }}
-          - ip address {{ item.ip }}
-          - no shutdown
-      loop: "{{ interfaces }}"
-
-    - name: Configure Cisco Loopback Interface
-      when: ansible_network_os == 'cisco.ios.ios'
-      cisco.ios.ios_config:
-        lines:
-          - set interfaces {{ loopback_interface }} unit 0 family inet address {{ loopback_ip }}
-
-    - name: Configure Cisco Physical Interfaces
-      when: ansible_network_os == 'cisco.ios.ios'
-      cisco.ios.ios_config:
-        lines:
-          - set interfaces {{ item.name }} description "{{ item.description }}"
-          - set interfaces {{ item.name }} unit 0 family inet address {{ item.ip }}
-      loop: "{{ interfaces }}"
+    - name: Ensure Interfaces are Up
+      cisco.ios.ios_interfaces:
+        config:
+          - { name: Ethernet0/0, enabled: true }
+          - { name: Ethernet0/1, enabled: true }
+          - { name: Ethernet0/2, enabled: true }
+          - { name: Ethernet0/3, enabled: true }
+        state: merged
 ```
 
-### Explanation of the Playbook
-
-*   **Vendor-specific modules**: We use the `ios_config`, `eos_config`, and `junos_config` modules so we can send the native CLI commands required for each platform. Interface modules are version-specific and can be finicky in simulator environments, whereas the config modules work consistently by pushing the exact text commands. The Cisco tasks use the `ansible.utils.ipaddr` filter to split the prefix (`10.1.1.1/32`) into an IP address and dotted-decimal mask (e.g., `255.255.255.0`) because the IOS IOL images in this class require that syntax.
-*   **`loop: "{{ interfaces }}"`**: This is a **loop**. The task will run once for each item in the `interfaces` list (which we defined in our `host_vars` files).
-*   **`item` variable**: Inside a loop, Ansible puts the current item into a special variable called `item`. So, `{{ item.name }}` refers to the `name` key of the current interface dictionary in the list.
-*   **Cisco Logical Unit**: Notice that for the Cisco loopback, we added `.0` to the name (`lo0.0`). Junos requires IP addresses to be configured on logical "units" of an interface.
-
-### Run and Verify
-
-1.  Execute the playbook.
-
-    ```bash
-    ansible-playbook -i inventory.yml configure_interfaces.yml
-    ```
-2.  Verify the configurations using ad-hoc commands.
-
-    ```bash
-    # Check Cisco interfaces
-    ansible cisco -i inventory.yml -m cisco.ios.ios_command -a "commands='show ip interface brief'"
-
-    # Check Cisco interfaces
-    ansible arista -i inventory.yml -m cisco.ios.ios_command -a "commands='show ip interface brief'"
-
-    # Check Cisco interfaces
-    ansible juniper -i inventory.yml -m cisco.ios.ios_command -a "commands='show interfaces terse'"
-    ```
-
-## Conclusion
-
-You've taken a major step forward in managing network automation. By separating your data (`host_vars`) from your logic (`playbook`), you have created a scalable, easy-to-read, and easy-to-maintain automation workflow. This is a core principle of modern infrastructure-as-code.
+Run the playbook:
+```bash
+ansible-playbook -i inventory.yml lab04_interfaces.yml
+```

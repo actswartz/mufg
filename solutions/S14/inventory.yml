@@ -14,7 +14,7 @@ all:
   children:
     routers:
       hosts:
-        S14-R1:
+        S14-R1-Fred-Flintstone:
           ansible_host: 172.20.20.41
           l3_interfaces:
             - { name: Ethernet0/0, ipv4: [{ address: 172.20.20.41/24 }] }

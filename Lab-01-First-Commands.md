@@ -8,6 +8,8 @@ Ansible is an **agentless** automation tool.
 - **Managed Nodes:** Your pod's three Cisco IOL routers. 
 Ansible connects to these routers over **SSH**, executes a task, and then disconnects. It doesn't require any software to be installed on the routers themselves.
 
+---
+
 ## Part 1: Create Your Ansible Inventory 🗂️
 
 The **Inventory** is a file that tells Ansible *who* to talk to and *how* to authenticate. We use **YAML** format because it is human-readable and structured.
@@ -19,15 +21,13 @@ The **Inventory** is a file that tells Ansible *who* to talk to and *how* to aut
 ```yaml
 all:
   vars:
-    # Connection settings for all devices
     ansible_user: admin
     ansible_ssh_pass: 800-ePlus
+    ansible_become_pass: 800-ePlus
     ansible_connection: ansible.netcommon.network_cli
     ansible_network_os: cisco.ios.ios
     ansible_become: yes
     ansible_become_method: enable
-    ansible_become_pass: 800-ePlus
-    # Security flags to ensure smooth lab connectivity
     ansible_ssh_extra_args: '-o StrictHostKeyChecking=no -o PreferredAuthentications=password -o PubkeyAuthentication=no'
     ansible_network_cli_ssh_type: libssh
 
@@ -44,42 +44,51 @@ all:
 *   **`network_cli`**: A specialized connection type for network devices that don't run Linux.
 *   **`libssh`**: The high-performance SSH library we use to talk to IOL.
 
+### 💡 Industry Pro-Tip: SSH Host Keys
+In a production environment, we usually verify "Host Keys" to ensure we aren't being attacked. However, in a lab environment where routers are constantly rebuilt, we use `StrictHostKeyChecking=no` to skip this verification and avoid errors.
+
+---
+
 ## Part 2: Ad-Hoc Commands 🛰️
 
 An **Ad-Hoc command** is a one-liner used for quick tasks.
 
 ### 1. The Ping Test
-This isn't a "network ping" (ICMP). It's an **Ansible Ping**, which verifies that Ansible can log into the device and execute Python code (or scripts).
 ```bash
 ansible routers -i inventory.yml -m ping
 ```
+**Educational Note:** This isn't an ICMP "network ping". This test checks if Ansible can:
+1. Reach the IP.
+2. Log in with the password.
+3. Verify the environment is ready for commands.
 
-### 2. Gathering Facts
-Managed nodes have a lot of data (model, version, serial number). The `ios_facts` module collects this automatically.
-```bash
-ansible routers -i inventory.yml -m cisco.ios.ios_facts
-```
+---
 
 ## Part 3: Your First Playbook 📜
-
-A **Playbook** is a file where you record your automation steps so you can run them repeatedly.
 
 Create `lab01_facts.yml`:
 ```yaml
 ---
 - name: Lab 1 - Display Specific Facts
   hosts: routers
-  gather_facts: true  # This triggers the automatic collection of device data
+  gather_facts: true
   tasks:
     - name: Display Hostname and Version
       debug:
         msg: "The hostname is {{ ansible_net_hostname }} and the version is {{ ansible_net_version }}"
 ```
 
-### 🔍 Why use `debug`?
-The `debug` module is like a `print()` statement in programming. It is used to show information on your screen during the playbook run. Here, we are printing **Variables** (`{{ ... }}`) that Ansible gathered for us.
+### 🔍 Why use `gather_facts: true`?
+When this is enabled, Ansible automatically logs into the router and runs a series of "show" commands to learn everything about the device (serial number, model, OS version). This data is stored in memory as **Facts**.
 
 Run it:
 ```bash
 ansible-playbook -i inventory.yml lab01_facts.yml
 ```
+
+---
+
+## ❓ Knowledge Check
+1.  **Agentless** means you don't need to install software on the router. (True/False)
+2.  Which file tells Ansible the IP addresses of your devices?
+3.  What is the purpose of the `debug` module?

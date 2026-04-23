@@ -6,7 +6,9 @@ In this lab, you will learn how to use specialized **Network Resource Modules** 
 One of Ansible's most important features is **Idempotency**. 
 - If you run a playbook and the change is needed, Ansible makes the change (`changed=1`).
 - If you run it again and the configuration is already correct, Ansible does nothing (`ok=1`).
-This ensures your automation is safe to run multiple times.
+This ensures your automation is safe to run multiple times without causing accidental restarts or duplicates.
+
+---
 
 ## Task: Create the `lab02_banner.yml` Playbook
 
@@ -24,13 +26,22 @@ This ensures your automation is safe to run multiple times.
 ```
 
 ### 🔍 Breakdown of the Module:
-*   **`cisco.ios.ios_banner`**: A specific module for managing Cisco banners.
-*   **`banner: motd`**: Specifies we are changing the "Message of the Day".
-*   **`state: present`**: This is **Declarative**. We are telling Ansible "I want this banner to exist," not "Run the command to add a banner." If it's already there, Ansible won't touch it.
+*   **`state: present`**: This is **Declarative Programming**. 
+    - **Imperative:** "Run the command `banner motd ...`"
+    - **Declarative:** "I want the banner to be present."
+    Ansible figures out the commands needed to make your wish a reality.
+
+### 💡 Industry Pro-Tip: The Login Banner
+In the real world, banners aren't just for welcome messages. They are legal requirements. Many organizations use them to warn unauthorized users that their activity is being monitored, which is often required to prosecute hackers.
 
 Run the playbook:
 ```bash
 ansible-playbook -i inventory.yml lab02_banner.yml
 ```
 
-**Challenge:** Change the text and run it again. Notice the output says "changed". Run it a third time without changing the text and notice it says "ok".
+---
+
+## ❓ Knowledge Check
+1.  If a playbook says `changed=0`, did it fail? (Yes/No)
+2.  What is the difference between an "Imperative" command and a "Declarative" task?
+3.  Why is "Idempotency" useful when updating 500 routers at once?

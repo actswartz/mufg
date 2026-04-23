@@ -70,6 +70,18 @@ ansible-playbook -i inventory.yml lab04_interfaces.yml
 
 ---
 
+## 📂 Deep Dive: Resource Module States
+Resource modules are powerful because they have multiple "States" that determine how they behave.
+
+| State | Action |
+| :--- | :--- |
+| **`merged`** | **(Add Only)** Adds your configuration to the router without touching anything else. (The safest option). |
+| **`replaced`** | **(Update)** If an interface exists but has a different IP, it replaces it. It doesn't touch other interfaces. |
+| **`overridden`** | **(Clean Slate)** Makes the router look *exactly* like your YAML. Any interface not in your YAML will be wiped clean. |
+| **`deleted`** | **(Remove)** Removes the IP configuration from the interfaces listed in your YAML. |
+
+---
+
 ## ❓ Knowledge Check
 1.  What is the purpose of the `l3_interfaces` variable?
 2.  Why do we need a separate task for `enabled: true`?

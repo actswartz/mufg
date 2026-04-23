@@ -73,6 +73,18 @@ In advanced environments, if this validation fails, the system can automatically
 
 ---
 
+## 📂 Deep Dive: Regular Expressions (Regex)
+Regex is a language for searching text. In this lab, we used:
+`[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+`
+
+- **`[0-9]`**: Matches any number between 0 and 9.
+- **`+`**: Matches "one or more" of the previous item.
+- **`\.`**: Matches a literal period (we use the backslash because a normal period matches *anything* in Regex).
+
+**Pro-Tip:** You can test your Regex patterns at [regex101.com](https://regex101.com). It is the #1 tool for network automation engineers!
+
+---
+
 ## ❓ Knowledge Check
 1.  What does the `register` keyword do?
 2.  What is a Regular Expression (Regex) used for in this lab?

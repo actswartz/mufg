@@ -41,6 +41,19 @@ ansible-playbook -i inventory.yml lab03_hostnames.yml
 
 ---
 
+## 📂 Deep Dive: Variable Filters
+You can transform variables on the fly using **Filters** (pipes).
+
+| Filter | Usage | Result Example |
+| :--- | :--- | :--- |
+| **`upper`** | `{{ inventory_hostname | upper }}` | `s1-r1` becomes `S1-R1` |
+| **`lower`** | `{{ inventory_hostname | lower }}` | `S1-R1` becomes `s1-r1` |
+| **`default`** | `{{ my_var | default('Router') }}` | Uses 'Router' if the variable is missing. |
+
+Filters allow you to enforce naming standards (like "all hostnames must be lowercase") even if the inventory has typos.
+
+---
+
 ## ❓ Knowledge Check
 1.  What does the "DRY" principle stand for?
 2.  What would happen if you forgot the `{{ }}` around a variable name in a playbook?

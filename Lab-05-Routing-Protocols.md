@@ -60,6 +60,18 @@ ansible-playbook -i inventory.yml lab05_ospf.yml
 
 ---
 
+## 📂 Deep Dive: Whitespace Control
+Jinja2 can sometimes leave accidental blank lines in your configuration, which can cause errors on a Cisco router.
+
+Professional developers use the **hyphen (`-`)** inside tags to control this:
+- **`{%-`**: Removes whitespace *before* the block.
+- **`-%}`**: Removes whitespace *after* the block.
+
+**Example:**
+`{%- for net in networks -%}` will generate a clean list without any extra carriage returns.
+
+---
+
 ## ❓ Knowledge Check
 1.  What is the file extension for a Jinja2 template?
 2.  Why did we exclude `Ethernet0/0` from the OSPF configuration?

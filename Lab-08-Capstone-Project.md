@@ -61,6 +61,20 @@ If the "Validation" section at the end passes with **GREEN** messages, you have 
 
 ---
 
+## 📂 Deep Dive: Variable Precedence
+Ansible can store variables in many places (Inventory, Playbooks, Roles, Command line). But what happens if the same variable is defined in two places?
+
+Ansible follows a strict **Precedence Hierarchy** (simplified):
+1.  **Extra Vars (`-e` flag):** Always wins.
+2.  **Playbook Variables:** High priority.
+3.  **Role Variables:** Medium priority.
+4.  **Inventory Variables:** Low priority.
+5.  **Role Defaults:** Lowest priority (always loses).
+
+Understanding this allows you to set "Safe Defaults" in a role while still allowing specific pods to "Override" them in the inventory.
+
+---
+
 ## ❓ Knowledge Check
 1.  What is the benefit of using `import_tasks` instead of copying and pasting code?
 2.  In what order does Ansible execute roles and tasks in a playbook?

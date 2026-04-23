@@ -9,7 +9,7 @@ Professional automation must be resilient. It should be able to detect an error,
 
 ## 🧠 Core Concept: Block, Rescue, Always
 - **`block`**: The tasks you *want* to run.
-- **`rescue`**: Tasks that run *only if* something in the block fails.
+- **`rescue`**: Tasks that run *only if* something in the block fails. (Like "Error Handling").
 - **`always`**: Tasks that run no matter what happens (success or failure).
 
 ---
@@ -53,6 +53,16 @@ Run the playbook:
 ```bash
 ansible-playbook -i inventory.yml lab09_exceptions.yml
 ```
+
+---
+
+## 📂 Deep Dive: `ignore_errors` vs `rescue`
+You might see some playbooks use `ignore_errors: yes`.
+
+| Feature | Behavior | Use Case |
+| :--- | :--- | :--- |
+| **`ignore_errors`** | Keeps going no matter what. The failure is ignored and forgotten. | Quick tests or non-critical cleanup. |
+| **`block/rescue`** | Stops the current task but runs a **specific alternative task** to handle the problem. | **Production standard.** Use this when you need to log an error, send an alert, or try a "Plan B." |
 
 ---
 

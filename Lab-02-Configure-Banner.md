@@ -41,6 +41,18 @@ ansible-playbook -i inventory.yml lab02_banner.yml
 
 ---
 
+## 📂 Deep Dive: Check Mode & Diff Mode
+Professional engineers often "dry-run" their changes before applying them to a live network.
+
+| Feature | Flag | Purpose |
+| :--- | :--- | :--- |
+| **Check Mode** | `--check` | Tells Ansible to "pretend" to run the tasks. It shows what *would* change without actually touching the router. |
+| **Diff Mode** | `--diff` | Shows you the "Before and After" text. You will see exactly what lines of config are being added or removed. |
+
+**Try it!** Run `ansible-playbook -i inventory.yml lab02_banner.yml --check --diff` and see the detailed report.
+
+---
+
 ## ❓ Knowledge Check
 1.  If a playbook says `changed=0`, did it fail? (Yes/No)
 2.  What is the difference between an "Imperative" command and a "Declarative" task?

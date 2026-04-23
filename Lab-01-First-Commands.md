@@ -88,6 +88,18 @@ ansible-playbook -i inventory.yml lab01_facts.yml
 
 ---
 
+## 📂 Deep Dive: YAML Syntax Rules
+YAML (YAML Ain't Markup Language) is the language of Ansible. It is sensitive to formatting, so follow these rules:
+
+| Rule | Description | Example |
+| :--- | :--- | :--- |
+| **Indentation** | Use **spaces**, never tabs. Indentation levels indicate hierarchy. | `vars:` is indented under `all:` |
+| **Colons** | Must be followed by a space when defining a value. | `key: value` (Correct) vs `key:value` (Wrong) |
+| **Dashes** | Represent a list item. | `- name: Task Name` |
+| **Booleans** | Case-insensitive values for true/false. | `yes`, `true`, `no`, `false` are all valid. |
+
+---
+
 ## ❓ Knowledge Check
 1.  **Agentless** means you don't need to install software on the router. (True/False)
 2.  Which file tells Ansible the IP addresses of your devices?

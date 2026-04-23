@@ -981,3 +981,11 @@ Design and implement a small automation solution that builds, configures, and va
 
 ```
 ```
+
+## 🗺️ Network Topology Diagram
+
+### Visual Diagram (Mermaid)
+
+
+### ASCII Reference
+

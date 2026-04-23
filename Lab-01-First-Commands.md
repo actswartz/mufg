@@ -10,13 +10,53 @@ Ansible connects to these routers over **SSH**, executes a task, and then discon
 
 ---
 
+## 🗺️ Network Topology: Your Student Pod
+
+Each student is assigned a "Pod" of three Cisco IOL routers connected in a triangle. 
+
+### Visual Diagram (Mermaid)
+```mermaid
+graph TD
+    R1["<b>S1-R1</b><br/>Loopback: 1.1.1.1<br/>Mgmt: 172.20.20.2"]
+    R2["<b>S1-R2</b><br/>Loopback: 2.2.2.2<br/>Mgmt: 172.20.20.3"]
+    R3["<b>S1-R3</b><br/>Loopback: 3.3.3.3<br/>Mgmt: 172.20.20.4"]
+
+    R1 -- "e0/1 (.1) <br/> 12.12.12.0/24 <br/> e0/1 (.2)" --- R2
+    R2 -- "e0/2 (.2) <br/> 23.23.23.0/24 <br/> e0/2 (.3)" --- R3
+    R3 -- "e0/3 (.3) <br/> 13.13.13.0/24 <br/> e0/3 (.1)" --- R1
+```
+
+### ASCII Reference
+```text
+                    +-----------------------+
+                    |        S1-R1          |
+                    |   Loopback: 1.1.1.1   |
+                    |   Mgmt: 172.20.20.2   |
+                    +-----------------------+
+                    /e0/1 (.1)     \e0/3 (.1)
+                   /                \
+      12.12.12.0/24                  \ 13.13.13.0/24
+                 /                    \
+    e0/1 (.2)   /                      \  e0/3 (.3)
++-----------------------+          +-----------------------+
+|        S1-R2          |          |        S1-R3          |
+|   Loopback: 2.2.2.2   | e0/2 (.2)|   Loopback: 3.3.3.3   |
+|   Mgmt: 172.20.20.3   +----------+   Mgmt: 172.20.20.4   |
++-----------------------+    ^     +-----------------------+
+                             |
+                       23.23.23.0/24
+                         e0/2 (.3)
+```
+
+---
+
 ## Part 1: Create Your Ansible Inventory 🗂️
 
 The **Inventory** is a file that tells Ansible *who* to talk to and *how* to authenticate. We use **YAML** format because it is human-readable and structured.
 
 1. Create a directory called 'gem': `mkdir gem && cd gem`
 2. Create your inventory file: `nano inventory.yml`
-3. Paste the following (replace IPs with your specific pod IPs):
+3. Paste the following (replace IPs with your specific pod IPs from the diagram above):
 
 ```yaml
 all:
@@ -28,6 +68,7 @@ all:
     ansible_network_os: cisco.ios.ios
     ansible_become: yes
     ansible_become_method: enable
+    ansible_become_pass: 800-ePlus
     ansible_ssh_extra_args: '-o StrictHostKeyChecking=no -o PreferredAuthentications=password -o PubkeyAuthentication=no'
     ansible_network_cli_ssh_type: libssh
 

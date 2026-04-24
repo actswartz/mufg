@@ -70,7 +70,7 @@ It ensures you are always running the latest version of your playbooks.
 
 ### Step-by-Step:
 1.  Click **Projects** -> **Add**.
-2.  **Name:** `DLR Workshop Code`
+2.  **Name:** `AAP Workshop Code`
 3.  **Organization:** Select your `Org-SX`.
 4.  **Source Control Type:** **Git**.
 5.  **Source Control URL:** `https://github.com/actswartz/dlr`
@@ -103,12 +103,18 @@ A definition that ties your code, targets, and login together into a single exec
 1.  Click **Templates** -> **Add** -> **Add Job Template**.
 2.  **Name:** `01 - Gather Cisco Facts`
 3.  **Inventory:** `Student Pod Inventory`.
-4.  **Project:** `DLR Workshop Code`.
+4.  **Project:** `AAP Workshop Code`.
 5.  **Playbook:** `lab01_facts.yml`.
 6.  **Credentials:** `Cisco Router Login`.
 7.  Click **Save** -> **Launch**.
 
 ---
 
-## 📂 Deep Dive: The Principle of Least Privilege
-By switching from `S1` (System Admin) to `S1-user` (Org Admin), you are practicing a core security standard. If you make a mistake now, you can only break things inside your own organization. You cannot accidentally delete another student's routers or crash the entire server. This is how professional automation environments are managed.
+## 📂 Deep Dive: The Anatomy of a Job Launch
+When you click that blue **Launch** button, a complex chain of events happens behind the scenes in the AWX "Control Plane." First, AWX creates a temporary environment called an **Execution Environment (EE)**. This is a lightweight Linux container that contains only the specific Python libraries and Ansible collections needed to talk to your Cisco hardware. This isolation is crucial because it prevents one job from "infecting" another with conflicting library versions.
+
+Once the EE is running, AWX performs a **Handshake** with your secrets. It securely pulls your router password from the encrypted database and "injects" it into the environment as an environment variable or a temporary file. This is why you never see the password in the job logs—AWX is shielding that sensitive data from being recorded in the standard output.
+
+Next, AWX performs a **Project Update** (if you enabled it). It reaches out to GitHub to see if your `lab01_facts.yml` file has changed. If it has, it performs a `git pull` to ensure your automation is up-to-date. Finally, it starts the `ansible-playbook` command, targeting only the routers in your specific inventory. All of this orchestration happens in less than a second before the first task even begins.
+
+Finally, consider the **Audit Trail**. Because you are now logged in as `SX-user`, every single character of output from this job is recorded and tied to your name. In a professional SOC (Security Operations Center), this is how engineers prove that a configuration change was authorized. You aren't just running a script; you are creating a permanent record of network maintenance that can be reviewed months or years later.

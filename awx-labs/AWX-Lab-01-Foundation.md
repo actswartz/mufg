@@ -1,121 +1,114 @@
-# AWX Lab 1: The Enterprise Foundation (Credentials & Projects)
+# AWX Lab 1: The Enterprise Foundation (Tenant Setup & First Job)
 
-Welcome to your first AWX lab! 🏢 Up until now, you've been running Ansible from a "CLI" (Command Line Interface). While powerful, CLI automation is hard to share with a team. **AWX** provides a central platform where automation can be scheduled, secured, and audited.
+Welcome to AWX! 🏢 In this first lab, you will act as a **System Administrator** to build your own private "Sandbox" (Organization). Then, you will switch to a daily user account to run your first automated job.
 
 ---
 
-## 🧠 Core Concept: The AWX "Legos"
-To run a job in AWX, you need four pieces to click together:
-1.  **Inventory:** Which routers am I talking to?
-2.  **Credential:** What is the username and password?
-3.  **Project:** Where is my Ansible code (GitHub)?
-4.  **Job Template:** The "Start Button" that ties the other three together.
+## 🧠 Core Concept: The Isolated Tenant
+AWX is a **multi-tenant** platform. This means many different teams can use the same server without seeing each other's work. 
+- **Organization:** Your private "folder" on the server.
+- **Organization Admin:** A user who has full control over an Organization but cannot touch global server settings.
+
+---
+
+## Part 0: Creating Your Command Center (Tenant Setup) 🏗️
+
+### 📖 What is an Organization?
+An **Organization** is the highest level of grouping in AWX. It is a secure container that holds its own Inventories, Projects, and Users.
+
+### 🎯 What is the Purpose?
+The purpose is **Isolation**. By creating your own Org, you ensure that your automation doesn't collide with other students. You can use identical names for your templates, and your job history remains private.
+
+### Step-by-Step (As System Admin):
+1.  Login to AWX as your assigned student account (e.g., `S1`).
+2.  Click **Organizations** in the left menu -> Click **Add**.
+3.  **Name:** `Org-SX` (Replace `X` with your student number, e.g., `Org-S5`).
+4.  Click **Save**.
+5.  Click **Users** in the left menu -> Click **Add**.
+6.  **Username:** `SX-user` (e.g., `S5-user`).
+7.  **Password:** `800-ePlus`
+8.  **Organization:** Select your new `Org-SX`.
+9.  Click **Save**.
+
+### Granting "Org Admin" Powers:
+1.  Go back to **Organizations** -> Click on your `Org-SX`.
+2.  Click the **Access** tab at the top -> Click **Add**.
+3.  Select your new user: `SX-user`. Click **Next**.
+4.  **Role:** Select **Organization Admin**.
+5.  Click **Save**.
+
+**🛑 STOP & SWITCH:** Log out of AWX. Log back in as your new account: **`SX-user`**. You will now complete all future labs using this account.
 
 ---
 
 ## Part 1: Storing Secrets (Credentials) 🔐
 
 ### 📖 What is a Credential?
-A **Credential** is a secure, encrypted container within AWX that stores authentication data, such as passwords, SSH private keys, or API tokens.
+A **Credential** is a secure, encrypted container within AWX that stores sensitive authentication data.
 
 ### 🎯 What is the Purpose?
-The purpose of a Credential is to allow AWX to log into your routers automatically while keeping the passwords hidden from human eyes. Instead of typing a password into a text file, you "attach" the credential to a job, and AWX handles the handshake securely.
+It allows AWX to log into your routers automatically while keeping the passwords hidden from human eyes.
 
-### Step-by-Step:
-1.  In the AWX left-hand menu, click **Credentials**.
-2.  Click the **Add** button.
-3.  **Name:** `Cisco Router Login`
-4.  **Credential Type:** Click the magnifying glass and select **Machine**.
-    > **💡 Bonus Note:** "Machine" is the most common type. It tells AWX: "Use these details to SSH into a computer or router."
-5.  **Username:** `admin`
-6.  **Password:** `800-ePlus`
-7.  **Become Method:** `enable` (standard for Cisco).
-8.  **Become Password:** `800-ePlus`
-9.  Click **Save**.
+### Step-by-Step (As SX-user):
+1.  Click **Credentials** -> **Add**.
+2.  **Name:** `Cisco Router Login`
+3.  **Organization:** Select your `Org-SX`.
+4.  **Credential Type:** **Machine**.
+5.  **Username:** `admin` | **Password:** `800-ePlus`
+6.  **Become Method:** `enable` | **Become Password:** `800-ePlus`
+7.  Click **Save**.
 
 ---
 
 ## Part 2: Connecting to the Code (Projects) 📦
 
 ### 📖 What is a Project?
-A **Project** is a logical link between AWX and a Source Control Management (SCM) system, most commonly a **GitHub** repository.
+A **Project** is a logical link between AWX and your **GitHub** repository.
 
 ### 🎯 What is the Purpose?
-The purpose of a Project is to act as your "Source of Truth." Rather than manually uploading scripts, AWX "syncs" with GitHub to pull the latest versions of your playbooks. This ensures that every team member is always running the most up-to-date code.
+It ensures you are always running the latest version of your playbooks.
 
 ### Step-by-Step:
-1.  Click **Projects** in the left menu.
-2.  Click **Add**.
-3.  **Name:** `DLR Workshop Code`
-4.  **Source Control Type:** Select **Git**.
+1.  Click **Projects** -> **Add**.
+2.  **Name:** `DLR Workshop Code`
+3.  **Organization:** Select your `Org-SX`.
+4.  **Source Control Type:** **Git**.
 5.  **Source Control URL:** `https://github.com/actswartz/dlr`
-6.  **Source Control Update Options:** Check the box **"Clean"** and **"Delete on Update"**.
-    > **💡 Bonus Note:** These options ensure that if you delete a file in GitHub, it also gets deleted in AWX. It keeps your code perfectly synced.
-7.  Click **Save**.
-8.  Wait for the status circle to turn **Green** (Successful).
+6.  Click **Save**. Wait for the status to turn **Green**.
 
 ---
 
 ## Part 3: Defining the Target (Inventory) 🗂️
 
 ### 📖 What is an Inventory?
-An **Inventory** in AWX is a database collection of **Hosts** (your routers) and **Groups** (how you organize them).
-
-### 🎯 What is the Purpose?
-The purpose of an Inventory is to tell AWX exactly which devices should be targeted by your automation. It also allows you to store specific "Variables" for each device (like their unique IP addresses) so that one playbook can behave differently on each host.
+A collection of **Hosts** (your routers) and their specific data.
 
 ### Step-by-Step:
-1.  Click **Inventories** in the left menu.
-2.  Click **Add** -> **Add Inventory**.
-3.  **Name:** `Student Pod Inventory`
-4.  Click **Save**.
-5.  Now click the **Hosts** tab at the top of the screen.
-6.  Click **Add** -> **Add New Host**.
-7.  **Name:** `S1-R1` (Replace with your router name).
-8.  **Variables:** In the YAML box, paste:
-    ```yaml
-    ansible_host: 172.20.20.2
-    ```
-    *(Repeat this for R2 and R3 with their respective IPs).*
+1.  Click **Inventories** -> **Add** -> **Add Inventory**.
+2.  **Name:** `Student Pod Inventory` | **Organization:** `Org-SX`.
+3.  Click **Save**.
+4.  Click the **Hosts** tab -> **Add** -> **Add New Host**.
+5.  **Name:** `SX-R1` (e.g., `S5-R1`).
+6.  **Variables:** In the YAML box, paste: `ansible_host: 172.20.20.X` (Use your router IP).
+7.  *Repeat for R2 and R3.*
 
 ---
 
 ## Part 4: The Start Button (Job Template) 🚀
 
 ### 📖 What is a Job Template?
-A **Job Template** is a definition that combines a **Project** (the code), an **Inventory** (the target), and a **Credential** (the login) into a single executable unit.
-
-### 🎯 What is the Purpose?
-The purpose of a Job Template is to create a "Push-Button" experience. Instead of remembering complex CLI commands, a user can simply click the "Launch" button on a template. It standardizes how automation is run, ensuring that everyone uses the same settings every time.
+A definition that ties your code, targets, and login together into a single executable unit.
 
 ### Step-by-Step:
-1.  Click **Templates** in the left menu.
-2.  Click **Add** -> **Add Job Template**.
-3.  **Name:** `01 - Gather Cisco Facts`
-4.  **Inventory:** Select `Student Pod Inventory`.
-5.  **Project:** Select `DLR Workshop Code`.
-6.  **Execution Environment:** Select the default (usually `AWX EE`).
-    > **💡 Bonus Note:** An "Execution Environment" is a mini-container that has all the Cisco modules pre-installed so you don't have to worry about Python libraries.
-7.  **Playbook:** Click the dropdown and select `lab01_facts.yml`.
-8.  **Credentials:** Click the magnifying glass and select your `Cisco Router Login`.
-9.  Click **Save**.
+1.  Click **Templates** -> **Add** -> **Add Job Template**.
+2.  **Name:** `01 - Gather Cisco Facts`
+3.  **Inventory:** `Student Pod Inventory`.
+4.  **Project:** `DLR Workshop Code`.
+5.  **Playbook:** `lab01_facts.yml`.
+6.  **Credentials:** `Cisco Router Login`.
+7.  Click **Save** -> **Launch**.
 
 ---
 
-## Part 5: Launch! 🎆
-
-1.  Click the blue **Launch** button.
-2.  AWX will open a "Job Result" screen. You can watch the Ansible output in real-time as if you were in the terminal.
-3.  Verify that the output shows the hostname and version of your routers.
-
----
-
-## ❓ Knowledge Check
-1.  Why is it better to store passwords in AWX than in an `inventory.yml` file?
-2.  What does a **Project** in AWX represent?
-3.  Which "Lego" piece acts as the "Start Button" for automation?
-
----
-
-## 📂 Deep Dive: The SCM Sync
-SCM stands for **Source Control Management**. When you clicked "Save" on your Project, AWX ran a background job called a **Project Sync**. It performed a `git pull` into a special hidden folder on the server. Every time you run a job, AWX can be configured to "Update Revision on Launch," ensuring you are always running the absolute latest version of your code.
+## 📂 Deep Dive: The Principle of Least Privilege
+By switching from `S1` (System Admin) to `S1-user` (Org Admin), you are practicing a core security standard. If you make a mistake now, you can only break things inside your own organization. You cannot accidentally delete another student's routers or crash the entire server. This is how professional automation environments are managed.

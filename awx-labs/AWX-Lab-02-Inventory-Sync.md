@@ -21,7 +21,10 @@ The purpose is to automate the discovery of your routers. If you add a new route
 1.  In the left menu, click **Inventories**.
 2.  Click on your **Student Pod Inventory**.
 3.  Click the **Sources** tab at the top -> Click **Add**.
-4.  **Name:** `Git Inventory Source`
+4.  **Name:** 
+    ```text
+    Git Inventory Source
+    ```
 5.  **Source:** Select **Sourced from a Project**.
 6.  **Project:** Select **AAP Workshop Code**.
     > **💡 Bonus Note:** Notice we are selecting the project you created in Lab 1. AWX is now looking *inside* that project folder for your inventory data.
@@ -44,7 +47,7 @@ The purpose is to refresh the platform's knowledge. Syncing is what turns a text
 1.  On the **Sources** screen, click the **Sync All** (or circular arrow 🔄) button.
 2.  Wait for the status circle to turn **Green** (Successful).
 3.  Now click the **Hosts** tab at the top of the Inventory screen.
-    > **🧠 Pro-Tip:** You should now see your routers (e.g., S1-R1, S1-R2, S1-R3) appear automatically!
+    > **拋 Pro-Tip:** You should now see your routers (e.g., S1-R1, S1-R2, S1-R3) appear automatically!
 
 ---
 
@@ -59,7 +62,12 @@ They allow you to use one "Generic" playbook for your entire company. The playbo
 ### Step-by-Step:
 1.  Click on the name of one of your newly synced hosts (e.g., **SX-R1**).
 2.  Look at the **Variables** box.
-3.  You should see the YAML data from your CLI labs. AWX has successfully "ingested" your technical data!
+3.  You should see the YAML data from your CLI labs. It should look similar to this:
+    ```yaml
+    ansible_host: 172.20.20.X
+    ansible_network_os: cisco.ios.ios
+    ```
+4.  AWX has successfully "ingested" your technical data!
 
 ---
 
@@ -67,7 +75,10 @@ They allow you to use one "Generic" playbook for your entire company. The playbo
 
 ### Step-by-Step:
 1.  Click **Templates** -> **Add** -> **Add Job Template**.
-2.  **Name:** `02 - Configure Interface IPs`
+2.  **Name:** 
+    ```text
+    02 - Configure Interface IPs
+    ```
 3.  **Inventory:** `Student Pod Inventory`.
 4.  **Project:** `AAP Workshop Code`.
 5.  **Playbook:** `lab04_interfaces.yml`.

@@ -22,10 +22,10 @@ The purpose is **Isolation**. By creating your own Org, you ensure that your aut
 ### Step-by-Step (As System Admin):
 1.  Login to AWX as your assigned student account (e.g., `S1`).
 2.  Click **Organizations** in the left menu -> Click **Add**.
-3.  **Name:** `Org-SX` (Replace `X` with your student number, e.g., `Org-S5`).
+3.  **Name:** `Org-SX` (Replace `X` with your student number, e.g., `Org-S1`)
 4.  Click **Save**.
 5.  Click **Users** in the left menu -> Click **Add**.
-6.  **Username:** `SX-user` (e.g., `S5-user`).
+6.  **Username:** `SX-user` (e.g., `S1-user`)
 7.  **Password:** `800-ePlus`
 8.  **Organization:** Select your new `Org-SX`.
 9.  Click **Save**.
@@ -34,7 +34,7 @@ The purpose is **Isolation**. By creating your own Org, you ensure that your aut
 1.  Go back to **Organizations** -> Click on your `Org-SX`.
 2.  Click the **Access** tab at the top -> Click **Add**.
 3.  Select your new user: `SX-user`. Click **Next**.
-4.  **Role:** Select **Organization Admin**.
+4.  **Role:** Select `Organization Admin`.
 5.  Click **Save**.
 
 **🛑 STOP & SWITCH:** Log out of AWX. Log back in as your new account: **`SX-user`**. You will now complete all future labs using this account.
@@ -51,12 +51,26 @@ It allows AWX to log into your routers automatically while keeping the passwords
 
 ### Step-by-Step (As SX-user):
 1.  Click **Credentials** -> **Add**.
-2.  **Name:** `Cisco Router Login`
+2.  **Name:** 
+    ```text
+    Cisco Router Login
+    ```
 3.  **Organization:** Select your `Org-SX`.
-4.  **Credential Type:** **Machine**.
-5.  **Username:** `admin` | **Password:** `800-ePlus`
-6.  **Become Method:** `enable` | **Become Password:** `800-ePlus`
-7.  Click **Save**.
+4.  **Credential Type:** `Machine`.
+5.  **Username:** 
+    ```text
+    admin
+    ```
+6.  **Password:** 
+    ```text
+    800-ePlus
+    ```
+7.  **Become Method:** `enable`
+8.  **Become Password:** 
+    ```text
+    800-ePlus
+    ```
+9.  Click **Save**.
 
 ---
 
@@ -70,10 +84,16 @@ It ensures you are always running the latest version of your playbooks.
 
 ### Step-by-Step:
 1.  Click **Projects** -> **Add**.
-2.  **Name:** `AAP Workshop Code`
+2.  **Name:** 
+    ```text
+    AAP Workshop Code
+    ```
 3.  **Organization:** Select your `Org-SX`.
-4.  **Source Control Type:** **Git**.
-5.  **Source Control URL:** `https://github.com/actswartz/mufg`
+4.  **Source Control Type:** `Git`.
+5.  **Source Control URL:** 
+    ```text
+    https://github.com/actswartz/mufg
+    ```
 6.  Click **Save**. Wait for the status to turn **Green**.
 
 ---
@@ -103,14 +123,28 @@ ansible_host: 172.20.20.44
 
 ### Step-by-Step:
 1.  Click **Inventories** -> **Add** -> **Add Inventory**.
-2.  **Name:** `Student Pod Inventory` | **Organization:** `Org-SX`.
-3.  Click **Save**.
-4.  Click the **Groups** tab -> **Add**.
-5.  **Name:** `routers`. Click **Save**.
-6.  Click the **Hosts** tab -> **Add** -> **Add New Host**.
-7.  **Name:** `R1`.
-8.  **Variables:** In the YAML box, paste: `ansible_host: 172.20.20.X` (Replace X with your specific R1 IP).
-9.  *Repeat for R2 and R3.* (e.g., R2: `172.20.20.45`, R3: `172.20.20.46`)
+2.  **Name:** 
+    ```text
+    Student Pod Inventory
+    ```
+3.  **Organization:** `Org-SX`.
+4.  Click **Save**.
+5.  Click the **Groups** tab -> **Add**.
+6.  **Name:** 
+    ```text
+    routers
+    ```
+7.  Click **Save**.
+8.  Click the **Hosts** tab -> **Add** -> **Add New Host**.
+9.  **Name:** 
+    ```text
+    R1
+    ```
+10. **Variables:** In the YAML box, paste your IP (Replace `X` with your specific R1 IP):
+    ```yaml
+    ansible_host: 172.20.20.X
+    ```
+11. *Repeat for R2 and R3.* (e.g., R2: `172.20.20.45`, R3: `172.20.20.46`)
 
 ---
 
@@ -121,10 +155,16 @@ A **Job Template** is the "blueprints" or "execution definition" that orchestrat
 
 ### Step-by-Step:
 1.  Click **Templates** -> **Add** -> **Add Job Template**.
-2.  **Name:** `01 - Gather Cisco Facts`
+2.  **Name:** 
+    ```text
+    01 - Gather Cisco Facts
+    ```
 3.  **Inventory:** `Student Pod Inventory`.
 4.  **Project:** `AAP Workshop Code`.
-5.  **Playbook:** `lab01_facts.yml`.
+5.  **Playbook:** 
+    ```text
+    lab01_facts.yml
+    ```
 6.  **Credentials:** `Cisco Router Login`.
 7.  Click **Save -> Launch**.
 

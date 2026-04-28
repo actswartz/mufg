@@ -1,0 +1,9 @@
+---
+- name: Test module resolution
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Try to resolve ios_banner
+      debug:
+        msg: "Module cisco.ios.ios_banner is available"
+      when: lookup('ansible.builtin.config', 'COLLECTIONS_PATHS')

@@ -73,7 +73,7 @@ It ensures you are always running the latest version of your playbooks.
 2.  **Name:** `AAP Workshop Code`
 3.  **Organization:** Select your `Org-SX`.
 4.  **Source Control Type:** **Git**.
-5.  **Source Control URL:** `https://github.com/actswartz/dlr`
+5.  **Source Control URL:** `https://github.com/actswartz/mufg`
 6.  Click **Save**. Wait for the status to turn **Green**.
 
 ---

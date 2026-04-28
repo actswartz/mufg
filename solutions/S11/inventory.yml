@@ -6,7 +6,7 @@ all:
     ansible_become_pass: 800-ePlus
     ansible_connection: ansible.netcommon.network_cli
     ansible_network_os: cisco.ios.ios
-    ansible_become: yes
+    ansible_become: true
     ansible_become_method: enable
     ansible_ssh_extra_args: '-o StrictHostKeyChecking=no -o PreferredAuthentications=password -o PubkeyAuthentication=no'
     ansible_network_cli_ssh_type: libssh

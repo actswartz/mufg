@@ -28,12 +28,19 @@ If you need to verify your work or troubleshoot manually, follow these steps:
 
 In this lab, you will tackle one of the most common networking tasks: configuring IP addresses on physical interfaces using **Resource Modules**.
 
-## 🧠 Core Concept: Data vs Logic
-As your automation grows, you want to keep your **Technical Data** (like IP addresses) separate from your **Automation Logic** (the playbook).
-- **Data:** Stored in your `inventory.yml`. This changes per student and per router.
-- **Logic:** Stored in your `lab04_interfaces.yml`. This remains the same for everyone.
+## 📖 What is Data/Logic Separation?
+Data/Logic Separation is an architectural pattern where the technical values (Data) are kept in different files than the automation code (Logic). In this lab, your `inventory.yml` acts as the "Database" containing specific IP addresses and interface names, while your playbook acts as the "Engine" that knows how to apply those values. This separation is what allows automation to scale from a single pod to an entire global data center.
 
-This separation allows you to scale. If you add a new router, you only update the data file, not the code.
+## 🎯 What is the Purpose?
+The purpose is **abstraction and portability**. By separating data from logic, you can hand your playbook to a colleague, and it will work perfectly in their environment as long as they provide their own inventory data. It also simplifies troubleshooting; if an IP is wrong, you know to check the data file. If the command syntax is wrong, you check the logic file. This modularity is essential for managing complex infrastructure without creating "spaghetti code."
+
+---
+
+## 📖 What are Resource Module States?
+Resource Module States (like `merged`, `replaced`, `overridden`, and `deleted`) are the controls that determine how Ansible interacts with a device's current configuration. Unlike a simple CLI command that just "pushes" text, these states allow you to define the *strategy* for configuration management. For example, `merged` safely adds new config, while `overridden` wipes the device clean and forces it to match your YAML exactly.
+
+## 🎯 What is the Purpose?
+The purpose is **precision and safety**. Different network tasks require different levels of control. When you are adding a new description, `merged` is perfect because it won't break existing settings. However, when you are performing a security audit or a complete device refresh, `overridden` ensures that no "illegal" or "ghost" configurations are left behind on the router. Understanding these states is the difference between a beginner who just runs commands and an expert who manages network state.
 
 ---
 

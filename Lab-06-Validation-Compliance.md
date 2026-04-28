@@ -28,11 +28,19 @@ If you need to verify your work or troubleshoot manually, follow these steps:
 
 Automation isn't just about *configuring* devices; it's also about *verifying* that the network is actually healthy. This is the foundation of **Intent-Based Networking (IBN)**.
 
-## 🧠 Core Concept: Operational State
-- **Configuration:** What you *told* the router to do.
-- **Operational State:** What the router is *actually* doing.
+## 📖 What is Operational State?
+Operational State is the "real-time truth" of a networking device. While **Configuration** represents the intent (what you want the device to do), the **Operational State** represents the actual performance and connectivity (what the device is actually doing). For example, you might configure an interface with an IP address, but the operational state tells you if the cable is plugged in, if the light is green, and if traffic is actually flowing.
 
-In this lab, we check if OSPF has successfully found its neighbors. If it hasn't, your network is broken, even if your configuration is "perfect."
+## 🎯 What is the Purpose?
+The purpose is **Intent-Based Validation**. Automation that only pushes configuration is incomplete and potentially dangerous. By verifying the operational state (such as checking OSPF neighbor tables or BGP peering status), you confirm that your configuration achieved its intended goal. This closing of the loop—configuring, then verifying—is what transforms simple scripts into a robust, "self-aware" automation framework that can detect failures before they affect users.
+
+---
+
+## 📖 What is an Assertion?
+An Assertion is a logical test within an Ansible playbook that evaluates a specific condition to see if it is true or false. It acts as an automated "Pass/Fail" gate. If the condition is met (e.g., "OSPF neighbor count > 0"), the playbook continues. If the condition fails, the playbook immediately stops and raises a critical alert.
+
+## 🎯 What is the Purpose?
+The purpose of assertions is **Automated Quality Assurance**. In a manual network change, an engineer might forget to verify the routing table after a change. Assertions force this verification to happen every single time, without exception. They provide immediate feedback during a rollout, allowing you to stop a deployment instantly if a single device fails its health check, thereby preventing a minor issue from becoming a network-wide outage.
 
 ---
 

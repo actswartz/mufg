@@ -11,7 +11,12 @@ def yaml_to_ini(yaml_file, ini_file):
         if 'all' in data and 'vars' in data['all']:
             f.write("[all:vars]\n")
             for k, v in data['all']['vars'].items():
-                f.write(f"{k}={v}\n")
+                if isinstance(v, bool):
+                    v = 'yes' if v else 'no'
+                val = str(v)
+                if ' ' in val:
+                    val = f"'{val}'"
+                f.write(f"{k}={val}\n")
             f.write("\n")
 
         # Process children
@@ -24,10 +29,15 @@ def yaml_to_ini(yaml_file, ini_file):
                         if host_vars:
                             for k, v in host_vars.items():
                                 if isinstance(v, (list, dict)):
-                                    v_str = json.dumps(v)
+                                    v_str = json.dumps(v, separators=(',', ':'))
                                     line += f" {k}='{v_str}'"
                                 else:
-                                    line += f" {k}={v}"
+                                    if isinstance(v, bool):
+                                        v = 'yes' if v else 'no'
+                                    val = str(v)
+                                    if ' ' in val:
+                                        val = f"'{val}'"
+                                    line += f"{k}={val}" if line.endswith(' ') else f" {k}={val}"
                         f.write(line + "\n")
                 f.write("\n")
 

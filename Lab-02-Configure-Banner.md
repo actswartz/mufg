@@ -28,11 +28,11 @@ If you need to verify your work or troubleshoot manually, follow these steps:
 
 In this lab, you will learn how to use specialized **Network Resource Modules** to change the configuration of your routers.
 
-## 🧠 Core Concept: Idempotency
-One of Ansible's most important features is **Idempotency**. 
-- If you run a playbook and the change is needed, Ansible makes the change (`changed=1`).
-- If you run it again and the configuration is already correct, Ansible does nothing (`ok=1`).
-This ensures your automation is safe to run multiple times without causing accidental restarts or duplicates.
+## 📖 What is Idempotency?
+Idempotency is a foundational principle of modern automation and Infrastructure as Code (IaC). In the context of Ansible, it means that a task is designed to achieve a specific "end state" rather than just executing a command. When Ansible runs a module, it first checks the current state of the device. If the device already matches the desired configuration (e.g., the banner is already correct), Ansible reports "OK" and takes no action. If the device does not match, Ansible calculates the necessary commands to bring it into compliance and reports "Changed." This ensures that running the same playbook multiple times is always safe and predictable.
+
+## 🎯 What is the Purpose?
+The purpose of idempotency is safety and efficiency at scale. In traditional network management, running a configuration script twice might result in duplicate commands, errors, or unnecessary reboots. With idempotency, you can confidently run a playbook against 500 routers knowing that only the devices that *need* the change will be touched. This "declarative" approach reduces the risk of human error and ensures that your network stays in its intended state without creating "configuration drift."
 
 ---
 

@@ -8,5 +8,5 @@
 - name: Configure Banner
   cisco.ios.ios_banner:
     banner: motd
-    text: "{{ banner_text }}"
+    text: "{{ base_config_banner_text }}"
     state: present

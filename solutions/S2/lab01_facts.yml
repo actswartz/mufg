@@ -4,5 +4,5 @@
   gather_facts: true
   tasks:
     - name: Display Hostname and Serial Number
-      debug:
+      ansible.builtin.debug:
         msg: "The hostname is {{ ansible_net_hostname }} and the version is {{ ansible_net_version }}"

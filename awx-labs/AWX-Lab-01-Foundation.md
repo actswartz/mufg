@@ -83,28 +83,34 @@ It ensures you are always running the latest version of your playbooks.
 ### 📖 What is an Inventory?
 An **Inventory** is a structured collection of **Hosts** (the servers, routers, or switches you want to automate) and the specific metadata or variables associated with them. In AWX, inventories go beyond just a list of IP addresses; they allow you to group devices by function, location, or environment (e.g., "production" vs "staging"). You can define variables at the group level (shared by many hosts) or the individual host level. This allows Ansible to make intelligent decisions, such as applying a specific configuration only to Arista switches in the Dallas data center while ignoring Cisco routers in New York.
 
-**Example Inventory (YAML Format):**
+**Example of what the Groups should look like:**
 ```yaml
+---
 all:
   children:
     routers:
       hosts:
-        SX-R1:
-          ansible_host: 172.20.20.2
-        SX-R2:
-          ansible_host: 172.20.20.3
-        SX-R3:
-          ansible_host: 172.20.20.4
+        R1:
+        R2:
+        R3:
+```
+
+**Example of what the individual Host Variables should look like:**
+When you click on a specific host (like R1), you define its unique IP address in the Variables box:
+```yaml
+ansible_host: 172.20.20.44
 ```
 
 ### Step-by-Step:
 1.  Click **Inventories** -> **Add** -> **Add Inventory**.
 2.  **Name:** `Student Pod Inventory` | **Organization:** `Org-SX`.
 3.  Click **Save**.
-4.  Click the **Hosts** tab -> **Add** -> **Add New Host**.
-5.  **Name:** `SX-R1` (e.g., `S5-R1`).
-6.  **Variables:** In the YAML box, paste: `ansible_host: 172.20.20.X` (Use your router IP).
-7.  *Repeat for R2 and R3.*
+4.  Click the **Groups** tab -> **Add**.
+5.  **Name:** `routers`. Click **Save**.
+6.  Click the **Hosts** tab -> **Add** -> **Add New Host**.
+7.  **Name:** `R1`.
+8.  **Variables:** In the YAML box, paste: `ansible_host: 172.20.20.X` (Replace X with your specific R1 IP).
+9.  *Repeat for R2 and R3.* (e.g., R2: `172.20.20.45`, R3: `172.20.20.46`)
 
 ---
 

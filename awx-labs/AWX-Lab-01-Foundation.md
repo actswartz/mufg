@@ -121,6 +121,11 @@ When you click on a specific host (like R1), you define its unique IP address in
 ansible_host: 172.20.20.44
 ```
 
+**Reference IP List:**
+R1: 172.20.20.44
+R2: 172.20.20.45
+R3: 172.20.20.46
+
 ### Step-by-Step:
 1.  Click **Inventories** -> **Add** -> **Add Inventory**.
 2.  **Name:** 

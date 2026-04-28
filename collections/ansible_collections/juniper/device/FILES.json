@@ -1,0 +1,3897 @@
+{
+ "files": [
+  {
+   "name": ".",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "version.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "896a48c78997780ec7911a68df2248975f54854c7cc494989e5fdc37064e1f45",
+   "format": 1
+  },
+  {
+   "name": "requirements.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3f1e50a415a3a7cd6a68d5960d3c403730223d33cdfb23828db61a7de48e027",
+   "format": 1
+  },
+  {
+   "name": "plugins",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/netconf",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/netconf/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/netconf/junos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0748873fbfd215ae3a28d9c12bc28cba70f3b2892afb054ac3f1935250663900",
+   "format": 1
+  },
+  {
+   "name": "plugins/connection",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/connection/pyez.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a021c22fda2c455da044b8c75235f5281c00d65db80331c6553beac62927d87a",
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/juniper_junos_doc.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "059e46b9f98f342f70953f22fd2d8c0392a3d18752fe3d6e10b518cbd602e916",
+   "format": 1
+  },
+  {
+   "name": "plugins/doc_fragments/junos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5294623e923b47674ea7fcfafc3b51a847e7e87942ee4169e5067aef5be13bb1",
+   "format": 1
+  },
+  {
+   "name": "plugins/terminal",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/terminal/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/terminal/junos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7a753a93aab66c8d3aa61ffbc0a3cffa9a4c19b60b04e281fffd4a028ee025e5",
+   "format": 1
+  },
+  {
+   "name": "plugins/README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b816e1e03b03745558632e5d8b4cdf08a3b2289d125357fb12e273b87b77450",
+   "format": 1
+  },
+  {
+   "name": "plugins/action",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/action/interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/routing_options.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/logging.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/jsnapy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/system.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/bgp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/security_policies.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/ntp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/command.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/static_routes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/ospf_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/logging_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/file_copy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/junos_banner.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/bgp_address_family.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/acl_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/lag_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/netconf.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/srx_cluster.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/pmtud.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/routing_instances.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/junos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/prefix_lists.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/l3_intefaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/l2_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/junos_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/security_policies_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/rpc.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/junos_command.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/lacp_intefaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/lldp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/juniper_junos_common_action.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/junos_facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b901f2f84bd6e0fa9a82e1b6b757874bc59c00ebaed9f54da05abe88e77ce6a3",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/lacp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/table.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/extract_data.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8374e2f97ae84637cee136faa3dec47ff096bb25cbc16d11eb7f63a397a7b4a",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/ospfv2.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/lldp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/snmp_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/ospfv3.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/software.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/hostname.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/ping.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a563f77e832486e74b54a17f4970779b867ddea316c118f159f79b4b89eaf59",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/acls.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/action/security_zones.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eacef4302b9f3f4fcecb224438b66e0832ea06c1fde40a0fae5dbd1fa3073f61",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/configuration.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "94a460d9b75bcbc633afb98c0c2972a4da171d9a65dd4d31cc06490e5c0bf2c4",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lldp_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lldp_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lldp_interfaces/lldp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d4c3fb4c7e5529408ab53d828e750aa2014f968d9fc5476bf8a1d2c1c4917d0c",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/vlans",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/vlans/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/vlans/vlans.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "947aab3a7c23843404f6e0e9124feacc85f09b372bc192821f8277385469d115",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_policies",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_policies/security_policies.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5ae2f505fab35b7bac248e3ba12e5409698d17e971ed5e1ceeea60c2c0517b1f",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_policies/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lldp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lldp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lldp_global/lldp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6bb1fe2044a44a649306273efbcf4da9b37bd392de098cd727cef37cbd1cfedd",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/routing_instances",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/routing_instances/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/routing_instances/routing_instances.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1801e39b9f81f3eabe8ff9ae50be68593e2a3bb40d31659eb8b23f710882b23c",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_zones",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_zones/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_zones/security_zones.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73b35bfa288e77fb362ccbd3a0f48bbe06c63288c81cfc4a8b796a671f5d9c5e",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/routing_options",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/routing_options/routing_options.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c7c1cd6fd486aef6c8c2da86baa477398212ea110ccffd699f62fef27d835589",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/routing_options/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/static_routes",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/static_routes/static_routes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cb05d85e8b2b77b98053e40b55e9b485d1677c067db66b5131330022ffac433f",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/static_routes/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/l2_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/l2_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/l2_interfaces/l2_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8f9029a319031d222071170409d59127261688e56d337795f682a60cf5fad3b3",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/acls",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/acls/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/acls/acls.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9b56e7a11d5727034ec559794f5d224a39eb600f1335544cc0aff536941dd5d3",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/snmp_server",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/snmp_server/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/snmp_server/snmp_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f553c84240d752b6aa11e09e9a2beec80da8561f4a8abc5e1ea176b42946ab38",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/bgp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/bgp_global/bgp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "aeb7a5b25e71cd3ca2b58dd86fbdbf6b1ac61f45b8f39dba42f394d436c6c9de",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/bgp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lacp",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lacp/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lacp/lacp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9f96b633fb03bba879b1d39ac1b22b1d77d3579bb30d389b826febb7dbbf121d",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/logging_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/logging_global/logging_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "908d1b0d0e7daf8e2af72ce0fd69fb092ce52f9d774b06ce68c5f3b160c67c87",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/logging_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lacp_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lacp_interfaces/lacp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "79ca41e083ccf719831c4228910df1c236499404d9b61acc51b91b57e7994732",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lacp_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lag_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lag_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/lag_interfaces/lag_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8635da4738716c0727037432c07d887a9e25711debffc0ebf3579dfa5783af70",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/prefix_lists",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/prefix_lists/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/prefix_lists/prefix_lists.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "053b4fe961f87a638241a035f1b0726417656db6aca1b7b8aa3dc3209ef50291",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ntp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ntp_global/ntp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "82d2eaded12a72c8a64862ff83f94715b5d940bd4f6051ad3cd8ab79ddce77b6",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ntp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/hostname",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/hostname/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/hostname/hostname.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d914fc1acbf841fe7ddf1a6add7a18475d12bb01f1170dfab83893a50967c3fb",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospf_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospf_interfaces/ospf_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0ab5f16e164d6f60aecb6df2e09211d36b225e3e030b2e4f012b2bcbdb3f97ef",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospf_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/acl_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/acl_interfaces/acl_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "63b5951307f573ef1db89cb8e5cc837f2ef9d1f1ae24ca067500657a68981cb4",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/acl_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/bgp_address_family",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/bgp_address_family/bgp_address_family.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "521e4d092e32118bfb119bae7de4751e80eee1df9847fbccbb67cbc91063fa46",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/bgp_address_family/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/l3_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/l3_interfaces/l3_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ca64f7205e17a59ee530d5d5cd8c6bbfa238afe4948ffeb2399605d6b72b4ae3",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/l3_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospfv3",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospfv3/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospfv3/ospfv3.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f60c72f6f30cb5ee7e27f58649635916574818f05565ab61cd9414b86d404f1",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/interfaces/interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "46cf6f41b8c1073f83768534ebc666044b48bdc5d2d23b4d8884f278755d0167",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospfv2",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospfv2/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/ospfv2/ospfv2.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c1f8e6723149e1960c6837ecdcac9757c22c44be1f74f13ca4523dfd026ed25",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_policies_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_policies_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/config/security_policies_global/security_policies_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "439a9912fc729098ec0a64ee90911809d42ba009814464dda2fcf9390c7e214f",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/utils",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/utils/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/utils/utils.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "eb4c48a4951c6672cf8477c6b2953b7db79ca13207fe450fff06ab754080278a",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/junos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "601f3146a98848d7acb795387f1f8541fd48d2bcca060e1eacfa07e3e36e9a04",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lldp_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lldp_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lldp_interfaces/lldp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "401c26d38a8a470e9946bb6c743196681ecc97054feca043af0744f69343d27a",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/vlans",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/vlans/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/vlans/vlans.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fccebb67c15266353af3b4b8438c50452a76246a84847561429f68bb299f48df",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_policies",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_policies/security_policies.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4da59c067f1b71ae1e75503d98915d568b8f798a7da1cf4136f3065a674df9c3",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_policies/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lldp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lldp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lldp_global/lldp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f501b9cddefef6a0be35a982dc1f49d0f6721ed06e71a16a369dac9eff0593f9",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/routing_instances",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/routing_instances/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/routing_instances/routing_instances.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "68b902dda1b221f891a03b633324ae3f404ac0aac251bcaee97aac1d3763fffb",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_zones",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_zones/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_zones/security_zones.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b74961352f230df3c0fc3d1c8d031fe4f9abb6e5182620c22955fabe0afcba6c",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/routing_options",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/routing_options/routing_options.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24b6905c1d2720142bfa1f3643afd9d1087640fea46b7bd2a9ecb847fe2bf2be",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/routing_options/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/static_routes",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/static_routes/static_routes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "981e24f69455e6598b73620e9a3a46a6a38e92cd5d249650586641d26338cca1",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/static_routes/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/l2_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/l2_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/l2_interfaces/l2_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "efbd8b98fa5da8778f43d3a6d3cc0c014fe93b2f7880f4114b794e351cba2b9b",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/acls",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/acls/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/acls/acls.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7101b7be0a51fe637423985da6fb810432950ad33eea1c42e389ea0f409c1f65",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/snmp_server",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/snmp_server/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/snmp_server/snmp_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f1987ea2bf63d532ac4f194ffe2df4eeb2c2eec4856b9b9bc27741c47a539e6b",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/bgp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/bgp_global/bgp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "007454b80cb74ab2649da400a2096b3d7567334823f989f4a9267ea946268ca3",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/bgp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lacp",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lacp/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lacp/lacp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c909e98e4992fdc470732fff7e71016766edfcaa01a46de20712dd4d5a12050f",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/logging_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/logging_global/logging_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "15ed3daf016f8c316e016dfce6a3059984820e84861c5a50b2cd7251cc2a4ed0",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/logging_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lacp_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lacp_interfaces/lacp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8c0c308e2b451d3f2b8ab8ba9e44b6bb4909e08c454f6b06fa2ebe55a375b8ad",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lacp_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lag_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lag_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/lag_interfaces/lag_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1cc0ecb41093ed2f4f557854167c5cc542b13c2b50fb952a1076273c59fcfb69",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/prefix_lists",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/prefix_lists/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/prefix_lists/prefix_lists.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b8ab0bb2961d97dac8d7d9e947058528e9d31dcad8ec210c6d0e63ecb0cd428c",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ntp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ntp_global/ntp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "12e3d79c93c5e06f1899a710cd482f30e269d389b5b3a8676d9b4dcae23b2dfb",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ntp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/hostname",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/hostname/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/hostname/hostname.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc0972c01a77f54216305610589d3bd2c2be035084c2a895859ce83b80fc016b",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospf_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospf_interfaces/ospf_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "27e83e48f119c26a0650d59424b48d594f948c6fc63de6d05eca17c388ffe2f4",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospf_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/facts",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/facts/facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "588316eb871e9a00db5269adf4d4f67ca2cf467e0699eeef0844e75b40de6953",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/facts/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/acl_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/acl_interfaces/acl_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "266f490e5364e72650ae56a41c325229066f28066854701e46093ab87648de51",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/acl_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/bgp_address_family",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/bgp_address_family/bgp_address_family.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "631e77bbb41f6bbb34bef7e0a1635413911fd4744a595060296f861dc63d2864",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/bgp_address_family/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/l3_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/l3_interfaces/l3_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8d540d1b57aa31baa60bcd085241bd60468b23ee9abe38f2db9b4bc1fa185847",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/l3_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospfv3",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospfv3/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospfv3/ospfv3.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6f6baae6c8d0cd7a42d175f8237a94d49bbc748da8f39fe30d78db52e4bce753",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/interfaces/interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0afa05ec549bc39da1392a7432968c280a626e0da14e12a0e27e07098a6ed32d",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospfv2",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospfv2/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/ospfv2/ospfv2.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "70cfa5de84015312181c262d5edb88f08881b404e3b7f4e2b3865eecb7d90f3f",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_policies_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_policies_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/argspec/security_policies_global/security_policies_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e29761490c30f4dd7fbbec8289646e48ab9c4758811ef365d02b749b9599e289",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lldp_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lldp_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lldp_interfaces/lldp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4c4a66b589cd8b70b0647ce340c9fa5195ea114c57792654f99eb44456dc70a5",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "54c00ebb6b535761261cec6907cc38acc1cac92c2a5d46827fcd9c3263a68664",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/vlans",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/vlans/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/vlans/vlans.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "94ac0b7b4eac78709bd190adcd052a862d48c5707df2ec913a6ad676d6da30e5",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_policies",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_policies/security_policies.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "88c41bdcd17b576b8db4271a354130bef5efe484c658a0b2a6c6ae8127ecc018",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_policies/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lldp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lldp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lldp_global/lldp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "86b3a9c12db7169da73b173bea6847f719a7bb493c61271be94c23f5adacb4f4",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/routing_instances",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/routing_instances/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/routing_instances/routing_instances.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "265316c0a65d3baf2a30fe12d91ae03687840a24c58f941d3db9746b633ba480",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_zones",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_zones/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_zones/security_zones.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5cf1b7fa53b4818994861918a6ddd935eb12711a7e8b42853cfe9ffb41756ed2",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/routing_options",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/routing_options/routing_options.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "48d5a5bf67c5f44b46191b289a8be49952f33d01b229aa8df8793f5b11f05dbc",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/routing_options/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/static_routes",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/static_routes/static_routes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5df78297fcb2fd2bdd57a5d737996fcf48226bc13a3ca155235e30e62d2f77d8",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/static_routes/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/l2_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/l2_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/l2_interfaces/l2_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac3ed7bb54d48d223ab0d8f466ec59c0778bb70a6ec6d3bf7a77aeab8b768e53",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/acls",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/acls/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/acls/acls.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9e81af91f0b5bcca9167c0fe1848b529d055d381feff4f3dab95ba1adcca8317",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/snmp_server",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/snmp_server/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/snmp_server/snmp_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cbef7c0fd41c4d3ceff007567ed8ae1386e224805d278f249a0334bd869b0cd9",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/bgp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/bgp_global/bgp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f32dd28857fbfb6e4e3db18d0160f833efb806a026b5f66232afe151a1b126ba",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/bgp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/legacy",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/legacy/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/legacy/base.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "237cdd1c64173babc469c7c14bb5736616e86a583d8ac9a725c5e1380c90765b",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lacp",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lacp/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lacp/lacp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3b03be0562fdfea8f01c3c8495bdc4d7915bae670ea2cd73650fd99569c4f999",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/logging_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/logging_global/logging_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "399e2892f6f95e84e9885348f7ef689e13300fe123f216009cb69688eac7d307",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/logging_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lacp_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lacp_interfaces/lacp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b483e5e0bcf965d6efa0233a7581aa9e29225e1006bdd1eff661a25eed6bcf47",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lacp_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lag_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lag_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/lag_interfaces/lag_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "241eaab207cbd96480c1382645e54e7286a6ae6aa3af466355345f77bb58f4f7",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/prefix_lists",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/prefix_lists/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/prefix_lists/prefix_lists.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8e335d2e5ae72f64fd2b7e83e5571e264bcfafcf3da03de1cefc447cbbf006a2",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ntp_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ntp_global/ntp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bceff175c053eaff6a6a1ad0732f0c7092f9e2fcad4e90c4c8f6dcc428b2896b",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ntp_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/hostname",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/hostname/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/hostname/hostname.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5db69f45ad7a5ff88a5ed8acd078ed30800af6c38bbfaa261d23225a7aa3f5fe",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospf_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospf_interfaces/ospf_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a1d04794523c791b0e1fe9fb06f58df6c666177899665372d3f7fe19ced45d73",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospf_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/acl_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/acl_interfaces/acl_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "25912dd5dbb321f784cf45858217c77d5af4e354957fca7c83645f54c27c7e4a",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/acl_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/bgp_address_family",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/bgp_address_family/bgp_address_family.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "df51d15046220c43a20efc63df8b092605cc5dd5a6bfebf9a65892c858e78d74",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/bgp_address_family/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/l3_interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/l3_interfaces/l3_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1f7762f6ec87505356efa93156e2d6bb02e557f5c06b31ea16d7eff25298fc50",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/l3_interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospfv3",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospfv3/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospfv3/ospfv3.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b1411ade5e022e3d3e1fb33b66318b42d248ce4a4d0e831dca5dcbca73b2fc95",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/interfaces",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/interfaces/interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9c50307a9fbf08d66df293a510eb9b742d36e79f935c14b44b926a0e3eae10cc",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/interfaces/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospfv2",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospfv2/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/ospfv2/ospfv2.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "80b343c3b86eb449584112e1f1efceabb70c1215779ec31359912fd4749101df",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_policies_global",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_policies_global/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/network/junos/facts/security_policies_global/security_policies_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ee826ecea42fdf67c049773fec871033e0a8b51334e5a5a114fd345f7cfe70de",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/juniper_junos_common.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0fcd930b90ef33e87f528c8e552ffffe5a5dbc652b8d474f54320148983f40f3",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/netconf_tbr",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/netconf_tbr/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/netconf_tbr/junos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a1ce39c6f6b512773ee941b94edfde7db6b89275fe4edf89dd5d5bcebf12d501",
+   "format": 1
+  },
+  {
+   "name": "plugins/module_utils/netconf_tbr/exceptions.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "62e93e7f07f7c83cb670c8979c727f5208c61305d22fcdc0e82b57d0336a94b3",
+   "format": 1
+  },
+  {
+   "name": "plugins/callback",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/callback/jsnapy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f54f67273a1ccfca6ed3321c0384b1addc48ec21a39de16cfe229a7aa1fd5dc2",
+   "format": 1
+  },
+  {
+   "name": "plugins/cliconf",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/cliconf/__init__.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/cliconf/junos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4852fb7d85e4de7c21e54c0001c9c12d7dd5176214e5c026b1bdc509235bab4f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/_tbrdevice_hostname.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24325ef7d6039b068165a64a1bb378fcd55870ed045f078fdccc20206045c274",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_routing_options.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c8ee06c820e1162af77c29349fac9c39067454f5bde38a37f0c777435ae7037",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/jsnapy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e9c652a5156789fbdf464c5ae8bc11820eb6998f3212abcac563f847a4e287b6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6a03b47377f82f2501e421a6755d5db6970216e8647b3198d19d61a98aa5d6e4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_l2_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "090904cef08fe1096f7c43f14d5ff1f96315a48faf90898fa66020fcb0607883",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_security_policies.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dda9f5282c89de16b8e001db9f4866b6a1984ca6e05b07c44dc7f5336631799b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/system.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "16a414731c0bf6b2ad930bceff9ddbdd38ceb752c2d2972f5c3f7ab753c5b26c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_lacp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3bea6b0637b5bb4a5472dca4f0fb79f994ad43df04cdff79e870a6f78c3ae203",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/command.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "67aeb4a8a2250a32d4367d0ed6415e0ecb5403d45c293f3cb98ae0b264fecca3",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f58d53c54ac7c1e8f19891e8c348a97b11b612ec028b66e6769a6e1b886ed1db",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_ospf_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7c019311f215849f2e7245384997a888cbd1b0099eedb1dc8267eaa8cd678c88",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_user.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "75cfdbd451e6e894c8cac7e3864a69ef4703c6c2bf1df6d779d268068ef41c6b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/file_copy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e734864c2d880c3427bd5ed749403167d7e07b63502666c1061abfc8ccc81521",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_prefix_lists.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "07c202aa265dbb84d8088d2eb000b818588f3817a7a6bc1942abd99edc03e55d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_banner.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3820091a06f8c91c8fee749d47465ea728b30635b6607220d5a78c0ab7487def",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_ospfv3.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d2a64e7ba5f8139101e108488c85b52b70564e58c48768c2e04b248864e6cdc",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_vrf.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a896199cbe6442205f5ffaed6dc0dc37310e5736210f9ca533b72fb7a7efbbdf",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_bgp_address_family.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "60f5f04901ecff3b09980cdb90da52ad18e5f7dc0b8c785962eb40ca8a4b5c39",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_vlans.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1656abbdf5cbf68571b40af556a3b7fed338883236a978dadefa6b7ef63af51c",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/srx_cluster.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dc4a4cdb2ac4576c4f3ffaebf3b627e53c105fa107b518ddcc96a0fa69631a9f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_routing_instances.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9a21257ad85cb1e07ea52a796047c3854fee7c1653513e538a1d6d533622ee36",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/pmtud.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fa01e65105836af47b67b2d7788c57d220d55cd748c60d3698f61990b9feaae7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b0a39e16915e6510dca7eabea287ba53f89854bf7f76b5225591efe76dcd952f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_security_zones.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "629bccae1405b713548a4200cbad66bac7c7ad03ebfd52c300598d36fd8f0d56",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_ospfv2.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2c9231f1fcc89f2c6f7e19522874579f687a48f2903d3b8d8a3a879974937751",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/tbrdevice_facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "806db0f9d1f722857c23e9501d82b16425a184d30a94cd329490898ec46f4903",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_config.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5915153309967d1b092ad37e3c22431c421e7db3bea5ee56fb5b4435e16e0450",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_scp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d0e87e05ca9d13a94bba6b6acbaaa200a6833d07660fc8034aec459c199fe3af",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "082b12657911b9e0a0664cb1984ac9d820912ec1d6e7be2f5924eae2d270304d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/rpc.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b6b4022ffb59225f7be51a3fc6d25aef480bcc5d370cefbee482bc04e68bb54b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_command.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d66acf19d421766c56165bfc4638a67d8fac784764ac51d1bd59da5737f4240",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_bgp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fbea7a03c99f2951c20d7d7f2c23eb371e6aae1dd33dc939004ba1e033f42c91",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bc5aebd13561d2b0a0435877c4da6dbc2a0353630941348745d065afb8768bd5",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_lldp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "098a4d86ad9b7d0bb8ac244aa2841d4793fbbffc5332c6724951733ade4453f0",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_ntp_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0370c7be6efcba425dd3136ec6cbb245faa7b76947c90ae51a11bb180f609499",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_package.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4f33a08b1fe25e01b7d447293a558b0b9e7cb81574742ff3175b0afcbde91da1",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_hostname.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "87820b1ca04254a71bc636e5d59c5a0cab2b0721a9ab87b5de885691b5c96ab6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_lacp.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "841f09807ddc3fbce5131fcec874f98a38bfbfb9511c298dd792fae8e09dcb35",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_system.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c62c4e3bc1542fd0b296a60d4c8d7588a8f9e6bbab6b5f7993081b04b2d3cfa6",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_logging_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "030c955aeb885dc00f2d5f2cda00b56bb10a987e884cc6d969cf4dcf64c939a7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_static_routes.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e7c2cb0232e893f29c1b5b2e27ef027b4aa05ad089b8a623a691d79c100ecf6d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/table.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c347165a92bff2bc72ce706f75778f74b90b9b5fa0a9737e126e883e8efa6fbd",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_acls.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "4fe1665b2b39d19cf439edeaba7add3eff039ffc6d1799f3be923cf2c95d439f",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_snmp_server.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2021c410ae2bc16718762ee0483f1506fea328c5007ae9d0ea652634acf507b9",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_lldp_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "41526ab4a12ae4b5f743405c44f6bbe19f69057e9de2e747ef659501d328dda4",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_ping.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7478b008aebb3159df57f9905c42435c9d7a897d9663ab791e00646799d5af1d",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_netconf.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ad133e6c702586c064ff98e9bdca1f738be8441d0436ad13789882cc9374408b",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_acl_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d64b144d41403d197851534015004efdf0d49fac57668e2a60a2a8ec1c043f40",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_security_policies_global.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8eda99af5398deecab6a656e3bb58b347db80c5a11e39347e6c4250997daa69e",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_lag_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f04c06aa3a6ec7eaa8891bc361bf481f879383a0b40e7dfdaa44fbdb6ef12814",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/software.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "292fac46612a59d3c2809dd21e84cf88d97f8cce7df0a03ccce380e7e1a504d2",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_rpc.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d00bd22bd86a86864b8617e392ac8039b2ac40ccbf784d9a113d520c8507d823",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/ping.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "be47403e90dc13d63d53e799eb49e8a8f9bb9398d0639fe832499d1b1c60ebcc",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/junos_l3_interfaces.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "43afa2c5da4d3d1f32644a5960700756b5b51015bd1c8f11a57b88a5d771d51f",
+   "format": 1
+  },
+  {
+   "name": "tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/unit",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/unit/test_command.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3d1701a0ae4c621c5899a1c4aabdb187db8d351a8ebdf3f471fa5ba2cd563689",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/test_system.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7fd4e2745858d72513a0964c329dd52b4d846204f5faaf57ffd66e8cf54b129c",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/test_facts.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dcbbb2eab60cf05f431664a090bcea70cf0ca1b5de9e668215c89e069f72cef9",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/test_ping.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "f4c19df30dbc3301b2e3d15dc4660ca826c986b1541c839328575ecc89b7e6fc",
+   "format": 1
+  },
+  {
+   "name": "tests/unit/test_file_copy.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5395d2f8af0e4b9dfc654c3feea3a86f35ec52907a1c450479a786868ce6f501",
+   "format": 1
+  },
+  {
+   "name": "tests/integration",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7d5119351eaabdcd5698c02d7c469e24ab06e26051aebe640efaf477690fc79",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/tests/common/table.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2e7b9c658919e0750e8e6157737e91a4f4613264e256a7026d300e13cf76afba",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_table/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7d5119351eaabdcd5698c02d7c469e24ab06e26051aebe640efaf477690fc79",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/tests/common/pmtud.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c05ece15f5e222a8d73d404f4351dd5bf3211c8b3004073ac69d46b7d0b4d9e8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_pmtud/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7d5119351eaabdcd5698c02d7c469e24ab06e26051aebe640efaf477690fc79",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/tests/common/facts.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e1fcd46e73af33c92fa29e4538b1886f06087187345a14d5cab78a120a33a16a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_facts/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7d5119351eaabdcd5698c02d7c469e24ab06e26051aebe640efaf477690fc79",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/tests/common/config.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "13e6f92caca7d222bab9a135387bdf81ca51f527f1c89ec9c69fa47463b0b506",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_config/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/prepare_junos_tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/prepare_junos_tests/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/prepare_junos_tests/tasks/prepare.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c39c9779b4b4dbac96b40d96846d69921911c85db9090e3e950ce44451002daf",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/prepare_junos_tests/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8893cac7b99500ebfe79f20e4944144677404e0d3816991427c7a55add78d10",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/prepare_junos_tests/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/prepare_junos_tests/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "851860fe2ed1258710d7fcf89ac5b7d8c3c87755e89ca56fdd79bea022eb2b92",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7d5119351eaabdcd5698c02d7c469e24ab06e26051aebe640efaf477690fc79",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/tests/common/rpc.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "728195792a548b06d8c463c9747bddb7aced823cb33373a74f076696508caead",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_rpc/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b3a3e324e77f44c32a9df8261ed3156273e402868a8cecc6821a53f37c416cc5",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/tests/common/file.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a481df45d08d4152f42a46df383beb6fb89fdb34e34c1e4c14a4648c75176fa2",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_file/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7d5119351eaabdcd5698c02d7c469e24ab06e26051aebe640efaf477690fc79",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/tests/common/command.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "99ed509f2d5167b7e6456caa2c5f81f3552c2e5bb2c840151021620090c06bc2",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_command/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7d5119351eaabdcd5698c02d7c469e24ab06e26051aebe640efaf477690fc79",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/tests/common/ping.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6759b4b6f86b06dce322043579d735f854d1d71c67c835dac7ca1919139e710e",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_ping/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/tasks/pyez.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3ba90a13e534945c396f9bb588398f7522a0389711a7b3181af81cf262af5e07",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/tasks/local.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c34ce19617b73095f425914e975af490263dc54f07321ec5e9a796135ad48779",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d7d5119351eaabdcd5698c02d7c469e24ab06e26051aebe640efaf477690fc79",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/tests",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/tests/common",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/tests/common/system.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "2515f0a5cb0069612d75a6a826877602032fd50b5c4650a56708e149f77e948d",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "9bc68ec01fd23c20e3b8b8c51a032ab8839e7bb710a457f32a3627c9dd7f8591",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/junos_system/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "665288590cd4226da42511817f09ccdfc92df36c9621583cd2c82919af295c5a",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/target-prefixes.network",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e3f98508805af0da212b0fd104e964e875cc1964a31ed0e264fad016ac56f037",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/inventory.networking",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3c8580941984fdd8bc29586d7953c5736fa95875419d860acab6a55ad61a53f3",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.18.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "853171bb7d86f70717448fc44b3061b7b2f2e08c777dd7928f8c4260b7c0b733",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.19.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "853171bb7d86f70717448fc44b3061b7b2f2e08c777dd7928f8c4260b7c0b733",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.17.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "853171bb7d86f70717448fc44b3061b7b2f2e08c777dd7928f8c4260b7c0b733",
+   "format": 1
+  },
+  {
+   "name": "tests/sanity/ignore-2.16.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "853171bb7d86f70717448fc44b3061b7b2f2e08c777dd7928f8c4260b7c0b733",
+   "format": 1
+  },
+  {
+   "name": "tests/config.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "71ff5426485cc74b3c360a0941dc40661ef17ffc8983435481f55f9f4143ae4f",
+   "format": 1
+  },
+  {
+   "name": "meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "meta/runtime.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "8dff927b5002457b4ff7e4db995e0872f1cd296117a5920988c9c37756946ad4",
+   "format": 1
+  },
+  {
+   "name": "docs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/facts.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3a86d390856eed40cb1bc3c6403eecc0be7741aef8d1290265a0b014e34ec41c",
+   "format": 1
+  },
+  {
+   "name": "docs/ansible2rst.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3010d2043155adfbba7d02d88539d6fc5e5a06a24ff53784a34a8765653cf3c5",
+   "format": 1
+  },
+  {
+   "name": "docs/rst.j2",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7d27df0dfeb1b2aa3a8d8b7207b25ccf4f7e03ba1594a3b4bafaaf6bdfaa3c58",
+   "format": 1
+  },
+  {
+   "name": "docs/jsnapy.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "3aae2f92a27d8c1b5b19ade44ca6eb31fd12802263bfcd5ef07b5890064d4e13",
+   "format": 1
+  },
+  {
+   "name": "docs/Makefile",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a4cb333b8b98b69aa60943e8a0f48152865848a8dc7ffde68a1f7d62e55680eb",
+   "format": 1
+  },
+  {
+   "name": "docs/conf.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8170ba2898c46c593a9cd4746c89d9e82558e66c947a01372d19d7cf6536ab3",
+   "format": 1
+  },
+  {
+   "name": "docs/config.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "566b88bae695cb8e6ba06e7ae433c6ac1fa6938261b0d3730cebb43bf2c74279",
+   "format": 1
+  },
+  {
+   "name": "docs/system.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c8dd9663c4e9f4a486299e0dd5134dbf62935aa77976ba594fae3ecb132cc450",
+   "format": 1
+  },
+  {
+   "name": "docs/docreq.txt",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "b18a3a8f603600c4e589d771f0a355f159cfdf1b47b39730d68ebdb22539611e",
+   "format": 1
+  },
+  {
+   "name": "docs/_static",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/_static/juniper-junos-modules.css",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cf2234764268218356dd3b4166615163d1bc03197c9fd0c1dd3de5bfa7cef5d2",
+   "format": 1
+  },
+  {
+   "name": "docs/_static/juniper.png",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac9fd1b21c4c714496603ecad6adf2921c4e7b5391a519d46c327b20567fd0e9",
+   "format": 1
+  },
+  {
+   "name": "docs/ping.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5a4fa75c32eb18854e51ffc4a67575fc51625fb96f7244d0ee3f2d39031aaec1",
+   "format": 1
+  },
+  {
+   "name": "docs/command.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "fa15fc79f3c227c80fe2f1d4f220bf86ac9d76db1da81ca1d33c9d7cd8797445",
+   "format": 1
+  },
+  {
+   "name": "docs/pmtud.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "26de6c2c446e71dbc63665af2fd5c8747f540cc830f686519cd00f868edb4471",
+   "format": 1
+  },
+  {
+   "name": "docs/table.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "a8ad04f3777bc60275c723931f62d6d580b8ec415db9de27b6ff9f9d007e6412",
+   "format": 1
+  },
+  {
+   "name": "docs/software.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c16523c25a1d8daba48c72b4651f4778e78649de05eb6b4c675d53412601671d",
+   "format": 1
+  },
+  {
+   "name": "docs/.readthedocs.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "36291e1dbb50c942c3e0c9c1cc5e1d782df2928c90da0b9ae03770828a74b3a1",
+   "format": 1
+  },
+  {
+   "name": "docs/srx_cluster.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6bc8100ab3b764da15269b25a2ad204f84c57d9e8aee266b76713ac320ae7749",
+   "format": 1
+  },
+  {
+   "name": "docs/file_copy.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "6d30bbbe443d5f63513ce6c9fd830c7d099579e4977c5528d4932fbfa9046473",
+   "format": 1
+  },
+  {
+   "name": "docs/rpc.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "bd102d02316e425e9510e54653234656b9c3dac0c48ea1f7062f90f6d4c396e9",
+   "format": 1
+  },
+  {
+   "name": "changelogs",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "changelogs/config.yaml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d5e7a588f2316d43dd14315074bfbac48fdda6b86af5018964e21f6ff8daf04b",
+   "format": 1
+  },
+  {
+   "name": "README.md",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "efb4872813916519d8837a3acdebd8ebeee6da18b1ae4306b916b1522c730a54",
+   "format": 1
+  },
+  {
+   "name": ".ansible-lint",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dec3f9356cdb90375cf1f9f5d4bfa9ed80e8f8c4ccd524b9418383a021d3610c",
+   "format": 1
+  },
+  {
+   "name": "CHANGELOG.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "86105d73a9e36efaf6f8d21229bc424644e5eb14231a401de946210a45d9b804",
+   "format": 1
+  }
+ ],
+ "format": 1
+}

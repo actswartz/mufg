@@ -1,0 +1,8 @@
+download_url: https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/artifacts/juniper-device-2.0.1.tar.gz
+format_version: 1.0.0
+name: device
+namespace: juniper
+server: https://galaxy.ansible.com/api/
+signatures: []
+version: 2.0.1
+version_url: /api/v3/plugin/ansible/content/published/collections/index/juniper/device/versions/2.0.1/

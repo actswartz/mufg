@@ -1,0 +1,23 @@
+objects:
+  role: {}
+plugins:
+  become: {}
+  cache: {}
+  callback: {}
+  cliconf:
+    junos:
+      description: Use junos cliconf to run command on Juniper Junos OS platform
+      name: junos
+      version_added: 1.0.0
+  connection: {}
+  filter: {}
+  httpapi: {}
+  inventory: {}
+  lookup: {}
+  module: {}
+  netconf: {}
+  shell: {}
+  strategy: {}
+  test: {}
+  vars: {}
+version: 11.1.1

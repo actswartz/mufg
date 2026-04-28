@@ -1,0 +1,36 @@
+{
+ "collection_info": {
+  "namespace": "juniper",
+  "name": "device",
+  "version": "2.0.1",
+  "authors": [
+   "Juniper Networks <jnpr-community-netdev@juniper.net>"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "juniper",
+   "junos",
+   "networking"
+  ],
+  "description": "set of Ansible modules that perform specific operational and configuration tasks on devices running Junos OS.",
+  "license": [
+   "Apache-2.0"
+  ],
+  "license_file": null,
+  "dependencies": {
+   "ansible.netcommon": ">=8.1.0"
+  },
+  "repository": "https://github.com/Juniper/ansible-junos-stdlib",
+  "documentation": "https://ansible-juniper-collection.readthedocs.io/",
+  "homepage": "https://github.com/Juniper/ansible-junos-stdlib",
+  "issues": "https://github.com/Juniper/ansible-junos-stdlib/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "2cda4593cc6b0b0b7581fdeb98321859ca10db19c81af2811a7b21b2987dac6a",
+  "format": 1
+ },
+ "format": 1
+}

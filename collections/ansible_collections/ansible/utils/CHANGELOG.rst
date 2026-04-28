@@ -4,6 +4,77 @@ Ansible Utils Collection Release Notes
 
 .. contents:: Topics
 
+v6.0.2
+======
+
+Bugfixes
+--------
+
+- cidr_merge - Fix filter failing when used inside a Jinja2 macro called with ``with context`` by unwrapping Ansible lazy template lists before validation.
+- cli_parse - Honor ttp_results.results flat_list in TTP parser so output is a single-level list instead of double-wrapped (https://github.com/ansible-collections/ansible.utils/issues/402).
+- ipaddress_utils - Support Python 3.14+ by using the public ``version`` attribute instead of the removed private ``_version`` on ``ipaddress`` network objects (bpo-118710).
+- update_fact - Use task_vars at top-level instead of the deprecated ``vars`` key for compatibility with ansible-core 2.24 (ansible/ansible issue
+
+v6.0.1
+======
+
+Bugfixes
+--------
+
+- Add a cleanup step that removes empty {} and [] values from lists in keep_keys_from_dict_n_list()
+
+Documentation Changes
+---------------------
+
+- Fix the description of the reduce_on_network filter.
+- Fix the module name in ipmath filter.
+
+v6.0.0
+======
+
+Release Summary
+---------------
+
+With this release, the minimum required version of `ansible-core` for this collection is `2.16.0`. The last version known to be compatible with `ansible-core` versions below `2.16` is v5.1.2.
+
+Major Changes
+-------------
+
+- Bumping `requires_ansible` to `>=2.16.0`, since previous ansible-core versions are EoL now.
+
+v5.1.2
+======
+
+Bugfixes
+--------
+
+- keep_keys - Fixes keep_keys filter to retain the entire node when a key match occurs, rather than just the leaf node values.
+
+v5.1.1
+======
+
+Bugfixes
+--------
+
+- keep_keys - Fixes issue where all keys are removed when data is passed in as a dict.
+
+v5.1.0
+======
+
+Minor Changes
+-------------
+
+- Allows the cli_parse module to find parser.template_path inside roles or collections when a path relative to the role/collection directory is provided.
+- Fix cli_parse module to require a connection.
+- Previously, the ansible.utils.ipcut filter only supported IPv6 addresses, leading to confusing error messages when used with IPv4 addresses. This fix ensures that the filter now appropriately handles both IPv4 and IPv6 addresses.
+- Removed conditional check for deprecated ansible.netcommon.cli_parse from ansible.utils.cli_parse
+- The from_xml filter returns a python dictionary instead of a json string.
+
+Documentation Changes
+---------------------
+
+- Add a wildcard mask/hostmask documentation to ipaddr filter doc page to obtain an IP address's wildcard mask/hostmask.
+
 v5.0.0
 ======
 

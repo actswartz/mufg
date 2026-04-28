@@ -1,4 +1,3 @@
-#
 # -*- coding: utf-8 -*-
 # Copyright 2021 Red Hat
 # GNU General Public License v3.0+
@@ -31,37 +30,34 @@ def _raise_error(msg):
 def keep_keys_from_dict_n_list(data, target, matching_parameter):
     if isinstance(data, list):
         list_data = [keep_keys_from_dict_n_list(each, target, matching_parameter) for each in data]
-        return list_data
+        return [r for r in list_data if r not in ([], {}, None)]
     if isinstance(data, dict):
         keep = {}
         for k, val in data.items():
-            for key in target:
-                match = None
-                if not isinstance(val, (list, dict)):
-                    if matching_parameter == "regex":
-                        match = re.match(key, k)
-                        if match:
-                            keep[k] = val
-                    elif matching_parameter == "starts_with":
-                        if k.startswith(key):
-                            keep[k], match = val, True
-                    elif matching_parameter == "ends_with":
-                        if k.endswith(key):
-                            keep[k], match = val, True
-                    else:
-                        if k == key:
-                            keep[k], match = val, True
-                else:
-                    list_data = keep_keys_from_dict_n_list(val, target, matching_parameter)
-                    if isinstance(list_data, list) and not match:
-                        list_data = [r for r in list_data if r not in ([], {})]
-                        if all(isinstance(s, str) for s in list_data):
-                            continue
-                    if list_data in ([], {}):
-                        continue
-                    keep[k] = list_data
+            key_matches = any(
+                (
+                    k == t
+                    if matching_parameter == "equality"
+                    else (
+                        (re.match(t, k) is not None)
+                        if matching_parameter == "regex"
+                        else (
+                            k.startswith(t)
+                            if matching_parameter == "starts_with"
+                            else k.endswith(t)
+                        )
+                    )
+                )
+                for t in target
+            )
+            if key_matches:
+                keep[k] = val
+            elif isinstance(val, (list, dict)):
+                nested_keep = keep_keys_from_dict_n_list(val, target, matching_parameter)
+                if nested_keep not in ([], {}, None):
+                    keep[k] = nested_keep
         return keep
-    return data
+    return None
 
 
 def keep_keys(data, target, matching_parameter="equality"):

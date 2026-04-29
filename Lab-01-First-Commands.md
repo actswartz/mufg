@@ -96,7 +96,7 @@ all:
     ansible_become_method: enable
     ansible_become_pass: 800-ePlus
     ansible_ssh_extra_args: '-o StrictHostKeyChecking=no -o PreferredAuthentications=password -o PubkeyAuthentication=no'
-    ansible_network_cli_ssh_type: libssh
+    ansible_network_cli_ssh_type: paramiko
 
   children:
     routers:
@@ -109,7 +109,7 @@ all:
 ### 🔍 Breakdown of Inventory Variables:
 *   **`ansible_network_os`**: Tells Ansible to use Cisco IOS logic.
 *   **`network_cli`**: A specialized connection type for network devices that don't run Linux.
-*   **`libssh`**: The high-performance SSH library we use to talk to IOL.
+*   **`paramiko`**: The standard Python SSH library used to talk to Cisco devices.
 
 ### 💡 Industry Pro-Tip: SSH Host Keys
 In a production environment, we usually verify "Host Keys" to ensure we aren't being attacked. However, in a lab environment where routers are constantly rebuilt, we use `StrictHostKeyChecking=no` to skip this verification and avoid errors.

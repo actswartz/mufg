@@ -6,23 +6,21 @@
 If you need to verify your work or troubleshoot manually, follow these steps:
 1.  **Requirement:** You must be logged into the Lab Server.
 2.  **Connect via SSH (Replace X with your Pod Number):**
-    *   
-    *   
-    *   
-3.  **Password:** 
+    *   **R1:** `ssh admin@172.20.20.2`
+    *   **R2:** `ssh admin@172.20.20.3`
+    *   **R3:** `ssh admin@172.20.20.4`
+3.  **Password:** `800-ePlus`
 4.  **Useful Verification Commands:**
-    *   
-    *   
+    *   `show run | include banner`
+    *   `show ip interface brief`
 
 ---
-
 
 **🚀 Mission Prompt:** Brand the Network. Use the power of Idempotency to enforce a legal warning banner across all devices with zero manual CLI entry.
 
 ---
 
 <img src="images/Lab-02-Configure-Banner.jpg" width="600" alt="Lab-02-Configure-Banner">
-
 
 # Lab 2: Configuring Device Banners
 
@@ -47,7 +45,7 @@ The purpose of idempotency is safety and efficiency at scale. In traditional net
     - name: Set Message of the Day
       cisco.ios.ios_banner:
         banner: motd
-        text: "Welcome to Student Pod Router - Authorized Access Only!"
+        text: "Welcome to S<student_id> Router - Authorized Access Only!"
         state: present
 ```
 
@@ -60,10 +58,12 @@ The purpose of idempotency is safety and efficiency at scale. In traditional net
 ### 💡 Industry Pro-Tip: The Login Banner
 In the real world, banners aren't just for welcome messages. They are legal requirements. Many organizations use them to warn unauthorized users that their activity is being monitored, which is often required to prosecute hackers.
 
-Run the playbook:
+**Run the playbook:**
 ```bash
 ansible-playbook -i inventory.yml lab02_banner.yml
 ```
+
+**✅ Success Criteria:** The playbook finishes with `changed=3` on the first run, and `changed=0` on the second run (demonstrating idempotency).
 
 ---
 
@@ -75,7 +75,12 @@ Professional engineers often "dry-run" their changes before applying them to a l
 | **Check Mode** | `--check` | Tells Ansible to "pretend" to run the tasks. It shows what *would* change without actually touching the router. |
 | **Diff Mode** | `--diff` | Shows you the "Before and After" text. You will see exactly what lines of config are being added or removed. |
 
-**Try it!** Run `ansible-playbook -i inventory.yml lab02_banner.yml --check --diff` and see the detailed report.
+**Try it!** Run the following and observe the detailed report:
+```bash
+ansible-playbook -i inventory.yml lab02_banner.yml --check --diff
+```
+
+**✅ Success Criteria:** You can see the `+` and `-` signs in the output showing exactly what text would be modified.
 
 ---
 
@@ -83,7 +88,6 @@ Professional engineers often "dry-run" their changes before applying them to a l
 1.  If a playbook says `changed=0`, did it fail? (Yes/No)
 2.  What is the difference between an "Imperative" command and a "Declarative" task?
 3.  Why is "Idempotency" useful when updating 500 routers at once?
-
 
 ---
 

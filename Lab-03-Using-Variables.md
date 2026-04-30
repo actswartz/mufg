@@ -6,23 +6,21 @@
 If you need to verify your work or troubleshoot manually, follow these steps:
 1.  **Requirement:** You must be logged into the Lab Server.
 2.  **Connect via SSH (Replace X with your Pod Number):**
-    *   
-    *   
-    *   
-3.  **Password:** 
+    *   **R1:** `ssh admin@172.20.20.2`
+    *   **R2:** `ssh admin@172.20.20.3`
+    *   **R3:** `ssh admin@172.20.20.4`
+3.  **Password:** `800-ePlus`
 4.  **Useful Verification Commands:**
-    *   
-    *   
+    *   `show running-config | include hostname`
+    *   `show ip interface brief`
 
 ---
-
 
 **🚀 Mission Prompt:** The Dynamic Pod. Stop hard-coding! Use magic variables to make a single playbook that intelligently names every device in your inventory.
 
 ---
 
 <img src="images/Lab-03-Using-Variables.jpg" width="600" alt="Lab-03-Using-Variables">
-
 
 # Lab 3: Using Variables for Hostnames
 
@@ -42,6 +40,8 @@ Magic variables are built-in pieces of data that Ansible automatically discovers
 ## 🎯 What is the Purpose?
 The purpose of magic variables is **context awareness**. They allow your playbooks to make intelligent decisions based on where they are running. For example, by using `inventory_hostname`, a single task can automatically apply a unique configuration to every router in your network without you having to hard-code a single name. Magic variables act as the "connective tissue" that allows your automation logic to interact dynamically with your inventory structure.
 
+---
+
 ## Task: Create the `lab03_hostnames.yml` Playbook
 
 ```yaml
@@ -59,15 +59,17 @@ The purpose of magic variables is **context awareness**. They allow your playboo
 
 ### 🔍 Deep Dive: The Curly Braces `{{ ... }}`
 In Ansible, whenever you see double curly braces, it means **"Variable substitution happens here."**
-Ansible looks up the value of `inventory_hostname` and replaces the braces with the actual name (like `S1-R1`) before sending the command to the router.
+Ansible looks up the value of `inventory_hostname` and replaces the braces with the actual name (like `S<student_id>-R1`) before sending the command to the router.
 
 ### 💡 Industry Pro-Tip: Naming Conventions
 Standardizing hostnames is the first step in network management. A good hostname often includes the site code, device type, and rack number (e.g., `NY-CORE-SW01`). Automation ensures these names are applied perfectly every time.
 
-Run the playbook:
+**Run the playbook:**
 ```bash
 ansible-playbook -i inventory.yml lab03_hostnames.yml
 ```
+
+**✅ Success Criteria:** Your routers now have hostnames that match their inventory names (e.g., R1's prompt changes from `Router#` to `S1-R1#`).
 
 ---
 
@@ -88,7 +90,6 @@ Filters allow you to enforce naming standards (like "all hostnames must be lower
 1.  What does the "DRY" principle stand for?
 2.  What would happen if you forgot the `{{ }}` around a variable name in a playbook?
 3.  Where does the value for `inventory_hostname` come from?
-
 
 ---
 

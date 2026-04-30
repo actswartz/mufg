@@ -6,23 +6,21 @@
 If you need to verify your work or troubleshoot manually, follow these steps:
 1.  **Requirement:** You must be logged into the Lab Server.
 2.  **Connect via SSH (Replace X with your Pod Number):**
-    *   
-    *   
-    *   
-3.  **Password:** 
+    *   **R1:** `ssh admin@172.20.20.2`
+    *   **R2:** `ssh admin@172.20.20.3`
+    *   **R3:** `ssh admin@172.20.20.4`
+3.  **Password:** `800-ePlus`
 4.  **Useful Verification Commands:**
-    *   
-    *   
+    *   `show ip ospf neighbor`
+    *   `show ip route ospf`
 
 ---
-
 
 **🚀 Mission Prompt:** Automate the Intelligence. Use Jinja2 blueprints to deploy a self-healing OSPF mesh across your entire pod in seconds.
 
 ---
 
 <img src="images/Lab-05-Routing-Protocols.jpg" width="600" alt="Lab-05-Routing-Protocols">
-
 
 # Lab 5: Dynamic Routing with OSPF
 
@@ -67,6 +65,8 @@ router ospf 1
 *   **Loops (`{% for ... %}`)**: Allows you to repeat a command for every item in a list (like OSPF networks).
 *   **Conditionals (`{% if ... %}`)**: Allows you to skip certain items. Here, we skip `Ethernet0/0` because we don't want to run OSPF on our management network.
 
+**✅ Success Criteria:** You have a valid Jinja2 template saved in the `templates` directory.
+
 ---
 
 ## Task 2: Create the `lab05_ospf.yml` Playbook
@@ -82,16 +82,12 @@ router ospf 1
         src: templates/ospf_config.j2
 ```
 
-### 🔍 Why use `src`?
-When you use `src:`, Ansible performs the "Rendering" on your Ubuntu machine, and then pushes the resulting text to the router. This is much faster than running 20 individual commands one-by-one.
-
-### 💡 Industry Pro-Tip: Dynamic Routing vs Static
-In a large network, we never use static routes if we can avoid it. Dynamic protocols like OSPF allow the network to "self-heal." If a link breaks, OSPF automatically finds a new path. By automating OSPF, you ensure your network is resilient from day one.
-
-Run the playbook:
+**Run the playbook:**
 ```bash
 ansible-playbook -i inventory.yml lab05_ospf.yml
 ```
+
+**✅ Success Criteria:** The playbook applies the configuration. You can verify OSPF neighborship with `show ip ospf neighbor`.
 
 ---
 
@@ -111,7 +107,6 @@ Professional developers use the **hyphen (`-`)** inside tags to control this:
 1.  What is the file extension for a Jinja2 template?
 2.  Why did we exclude `Ethernet0/0` from the OSPF configuration?
 3.  What is the difference between a variable (`{{ }}`) and a loop (`{% %}`) in Jinja2?
-
 
 ---
 

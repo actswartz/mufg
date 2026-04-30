@@ -1454,3 +1454,9 @@
 2026-04-30T18:35:01.979391+00:00 p4-xr1 systemd[1]: logrotate.service: Succeeded.
 2026-04-30T18:35:01.979475+00:00 p4-xr1 systemd[1]: Started Rotate log files.
 2026-04-30T18:35:01.979475+00:00 p4-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T18:41:01.187208+00:00 p4-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T18:41:01.187208+00:00 p4-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T18:41:01.212061+00:00 p4-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T18:41:01.212061+00:00 p4-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T18:41:01.212221+00:00 p4-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T18:41:01.212221+00:00 p4-xr1 systemd[1]: Started Rotate log files.

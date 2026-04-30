@@ -1744,3 +1744,9 @@
 2026-04-30T18:38:27.949185+00:00 p5-xr1 kernel: [1545597.689153] cni0: port 10(veth7924acec) entered forwarding state
 2026-04-30T18:40:01.098200+00:00 p5-xr1 CROND[151405]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
 2026-04-30T18:40:01.098853+00:00 p5-xr1 CROND[151406]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
+2026-04-30T18:41:01.146759+00:00 p5-xr1 CROND[153724]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
+2026-04-30T18:41:01.148146+00:00 p5-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T18:41:01.163943+00:00 p5-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T18:41:01.164145+00:00 p5-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T18:42:41.049187+00:00 p5-xr1 kernel: [1545850.775670] cni0: port 10(veth9b269707) entered disabled state
+2026-04-30T18:43:01.155069+00:00 p5-xr1 CROND[153804]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)

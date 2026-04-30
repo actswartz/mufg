@@ -6,23 +6,21 @@
 If you need to verify your work or troubleshoot manually, follow these steps:
 1.  **Requirement:** You must be logged into the Lab Server.
 2.  **Connect via SSH (Replace X with your Pod Number):**
-    *   
-    *   
-    *   
-3.  **Password:** 
+    *   **R1:** `ssh admin@172.20.20.2`
+    *   **R2:** `ssh admin@172.20.20.3`
+    *   **R3:** `ssh admin@172.20.20.4`
+3.  **Password:** `800-ePlus`
 4.  **Useful Verification Commands:**
-    *   
-    *   
+    *   `show ip interface brief`
+    *   `show running-config interface Ethernet0/1`
 
 ---
-
 
 **🚀 Mission Prompt:** Activate the Data Plane. Translate your inventory’s IP schema into a living network, ensuring every interface is alive, configured, and talking.
 
 ---
 
 <img src="images/Lab-04-Interface-IPs.jpg" width="600" alt="Lab-04-Interface-IPs">
-
 
 # Lab 4: Configuring Interface IP Addresses
 
@@ -55,13 +53,15 @@ The `l3_interfaces` variable is a **List of Dictionaries**.
 - `ipv4` is nested inside because an interface can have multiple addresses.
 
 ```yaml
-        S1-R1:
+        S<student_id>-R1:
           ansible_host: 172.20.20.2
           l3_interfaces:
             - { name: Ethernet0/0, ipv4: [{ address: 172.20.20.2/24 }] }
             - { name: Ethernet0/1, ipv4: [{ address: 12.12.12.1/24 }] }
             - { name: Ethernet0/3, ipv4: [{ address: 13.13.13.1/24 }] }
 ```
+
+**✅ Success Criteria:** Your `inventory.yml` is updated with the correct interface data for all three routers in your pod.
 
 ---
 
@@ -93,13 +93,12 @@ The `l3_interfaces` variable is a **List of Dictionaries**.
 2.  **`cisco.ios.ios_interfaces`**: This manages Layer 2/Physical settings.
     - **`enabled: true`**: This is the Ansible way of saying `no shutdown`. 
 
-### 💡 Industry Pro-Tip: Admin Down
-In virtual labs like IOL, interfaces are **shutdown** by default. Even if you configure an IP address, the interface will stay "red" (down) until you explicitly enable it. Always include an "Enable Interfaces" task in your base deployment.
-
-Run the playbook:
+**Run the playbook:**
 ```bash
 ansible-playbook -i inventory.yml lab04_interfaces.yml
 ```
+
+**✅ Success Criteria:** The playbook finishes successfully, and you can ping between routers or verify the IPs with `show ip interface brief`.
 
 ---
 
@@ -119,7 +118,6 @@ Resource modules are powerful because they have multiple "States" that determine
 1.  What is the purpose of the `l3_interfaces` variable?
 2.  Why do we need a separate task for `enabled: true`?
 3.  What command would you run on the Cisco CLI to verify the IPs were applied?
-
 
 ---
 

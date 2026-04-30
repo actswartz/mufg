@@ -6,23 +6,21 @@
 If you need to verify your work or troubleshoot manually, follow these steps:
 1.  **Requirement:** You must be logged into the Lab Server.
 2.  **Connect via SSH (Replace X with your Pod Number):**
-    *   
-    *   
-    *   
-3.  **Password:** 
+    *   **R1:** `ssh admin@172.20.20.2`
+    *   **R2:** `ssh admin@172.20.20.3`
+    *   **R3:** `ssh admin@172.20.20.4`
+3.  **Password:** `800-ePlus`
 4.  **Useful Verification Commands:**
-    *   
-    *   
+    *   `show ip ospf neighbor`
+    *   `show ip interface brief`
 
 ---
-
 
 **🚀 Mission Prompt:** The Auditor. Don’t just push configuration; prove it works. Build a validation script that can detect and report a total network blackout.
 
 ---
 
 <img src="images/Lab-06-Validation-Compliance.jpg" width="600" alt="Lab-06-Validation-Compliance">
-
 
 # Lab 6: Validation and Compliance
 
@@ -75,6 +73,13 @@ The purpose of assertions is **Automated Quality Assurance**. In a manual networ
 2.  **`regex_search`**: This is a **Regular Expression**. We are scanning the text for any string that looks like an IP address (a Neighbor ID). 
 3.  **`assert`**: This is your "Automated Auditor." If the test fails, the playbook stops immediately and alerts you.
 
+**Run the playbook:**
+```bash
+ansible-playbook -i inventory.yml lab06_validation.yml
+```
+
+**✅ Success Criteria:** The playbook finishes with "SUCCESS" message if your OSPF is converged.
+
 ---
 
 ## Part 2: The Isolation Test (Definitive Failure) 🔴
@@ -82,7 +87,7 @@ The purpose of assertions is **Automated Quality Assurance**. In a manual networ
 To prove this works, you must see it fail. 
 
 ### Task: Manually break the network
-Log into your **S1-R1** router via SSH and shut down all peered interfaces:
+Log into your **S<student_id>-R1** router via SSH and shut down all peered interfaces:
 ```bash
 conf t
 interface Ethernet0/1
@@ -105,6 +110,8 @@ You should see a **RED** error message. This is exactly what a network engineer 
 ### 💡 Industry Pro-Tip: Automated Remediation
 In advanced environments, if this validation fails, the system can automatically run **Lab 4** to fix the interfaces without a human ever getting involved!
 
+**✅ Success Criteria:** You have successfully triggered a failure alert, proving your validation script works.
+
 ---
 
 ## 📂 Deep Dive: Regular Expressions (Regex)
@@ -123,7 +130,6 @@ Regex is a language for searching text. In this lab, we used:
 1.  What does the `register` keyword do?
 2.  What is a Regular Expression (Regex) used for in this lab?
 3.  Why is it important to verify the "Operational State" after making a change?
-
 
 ---
 

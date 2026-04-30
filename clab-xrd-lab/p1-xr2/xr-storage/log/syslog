@@ -1721,3 +1721,9 @@
 2026-04-30T18:38:27.945196+00:00 p1-xr2 kernel: [1545597.685623] device veth7924acec entered promiscuous mode
 2026-04-30T18:40:01.081833+00:00 p1-xr2 CROND[151587]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
 2026-04-30T18:40:01.082141+00:00 p1-xr2 CROND[151588]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
+2026-04-30T18:41:01.143099+00:00 p1-xr2 CROND[153759]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
+2026-04-30T18:41:01.144142+00:00 p1-xr2 systemd[1]: Starting Rotate log files...
+2026-04-30T18:41:01.160030+00:00 p1-xr2 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T18:41:01.160247+00:00 p1-xr2 systemd[1]: Started Rotate log files.
+2026-04-30T18:42:22.597210+00:00 p1-xr2 kernel: [1545832.324658] device veth9b269707 entered promiscuous mode
+2026-04-30T18:43:01.151796+00:00 p1-xr2 CROND[153839]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)

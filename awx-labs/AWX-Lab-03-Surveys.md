@@ -43,9 +43,15 @@ The purpose of a Survey is to allow non-technical people to interact with Ansibl
 ### Step-by-Step:
 1.  On the Template details screen, click the **Survey** tab at the top.
 2.  Click the **Add** button.
+<<<<<<< HEAD
 3.  **Question:** `What message would you like to display on the login banner?`
 4.  **Answer Variable Name:** `banner_text`
     > **💡 Bonus Note:** This is the most important field! This name must match the variable name inside your Ansible playbook (`{{ banner_text }}`). 
+=======
+3.  **Question:** 
+4.  **Answer Variable Name:** my_variable
+    > **💡 Bonus Note:** This is the most important field! This name must match the variable name inside your Ansible playbook (). 
+>>>>>>> refs/remotes/origin/main
 5.  **Answer Type:** Select **Textarea** (this allows for multiple lines).
 6.  **Required:** Check the box.
 7.  Click **Save**.

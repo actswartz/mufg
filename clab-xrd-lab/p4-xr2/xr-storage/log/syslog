@@ -1722,3 +1722,6 @@
 2026-04-30T18:35:01.973622+00:00 p4-xr2 systemd[1]: logrotate.service: Succeeded.
 2026-04-30T18:35:01.974643+00:00 p4-xr2 systemd[1]: Started Rotate log files.
 2026-04-30T18:36:01.972890+00:00 p4-xr2 CROND[150890]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
+2026-04-30T18:37:00.433207+00:00 p4-xr2 kernel: [1545510.174648] cni0: port 10(veth631d7abb) entered blocking state
+2026-04-30T18:37:17.625162+00:00 p4-xr2 kernel: [1545527.366739] cni0: port 10(veth631d7abb) entered disabled state
+2026-04-30T18:38:01.984113+00:00 p4-xr2 CROND[150978]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)

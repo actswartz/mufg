@@ -1726,3 +1726,4 @@
 2026-04-30T18:35:01.979475+00:00 p4-xr1 systemd[1]: Started Rotate log files.
 2026-04-30T18:36:01.975806+00:00 p4-xr1 CROND[153491]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
 2026-04-30T18:36:25.317198+00:00 p4-xr1 kernel: [1545475.063456] device vethbd480c26 left promiscuous mode
+2026-04-30T18:38:01.986582+00:00 p4-xr1 CROND[153579]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)

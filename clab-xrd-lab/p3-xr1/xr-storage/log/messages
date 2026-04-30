@@ -77,3 +77,4 @@
 2026-04-30T18:36:13.053178+00:00 p3-xr1 kernel: [1545462.796811] cni0: port 11(veth38279d30) entered disabled state
 2026-04-30T18:36:13.065198+00:00 p3-xr1 kernel: [1545462.811900] device veth38279d30 entered promiscuous mode
 2026-04-30T18:36:13.069339+00:00 p3-xr1 kernel: [1545462.816612] IPv6: ADDRCONF(NETDEV_CHANGE): veth38279d30: link becomes ready
+2026-04-30T18:37:17.633205+00:00 p3-xr1 kernel: [1545527.377396] device veth631d7abb left promiscuous mode

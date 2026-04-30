@@ -1734,3 +1734,4 @@
 2026-04-30T18:35:01.981290+00:00 p3-xr2 systemd[1]: Started Rotate log files.
 2026-04-30T18:36:01.971932+00:00 p3-xr2 CROND[150916]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
 2026-04-30T18:36:13.069166+00:00 p3-xr2 kernel: [1545462.816393] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:38:01.982414+00:00 p3-xr2 CROND[151004]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)

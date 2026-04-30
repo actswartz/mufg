@@ -917,3 +917,4 @@
 2026-04-30T18:35:01.899926+00:00 p3-xr2 CROND[150846]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
 2026-04-30T18:35:01.900286+00:00 p3-xr2 CROND[150847]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
 2026-04-30T18:36:01.971932+00:00 p3-xr2 CROND[150916]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
+2026-04-30T18:38:01.982414+00:00 p3-xr2 CROND[151004]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)

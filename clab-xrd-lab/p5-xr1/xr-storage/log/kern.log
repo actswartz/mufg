@@ -18,3 +18,6 @@
 2026-04-30T18:36:04.057201+00:00 p5-xr1 kernel: [1545453.803893] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 2026-04-30T18:36:04.057219+00:00 p5-xr1 kernel: [1545453.804061] cni0: port 10(vethbd480c26) entered blocking state
 2026-04-30T18:36:04.057220+00:00 p5-xr1 kernel: [1545453.804065] cni0: port 10(vethbd480c26) entered forwarding state
+2026-04-30T18:37:00.433207+00:00 p5-xr1 kernel: [1545510.174729] device veth631d7abb entered promiscuous mode
+2026-04-30T18:37:00.437179+00:00 p5-xr1 kernel: [1545510.178745] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:37:00.437189+00:00 p5-xr1 kernel: [1545510.178898] cni0: port 10(veth631d7abb) entered blocking state

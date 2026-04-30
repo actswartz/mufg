@@ -1730,3 +1730,6 @@
 2026-04-30T18:36:13.053179+00:00 p2-xr2 kernel: [1545462.796803] cni0: port 11(veth38279d30) entered blocking state
 2026-04-30T18:36:31.497180+00:00 p2-xr2 kernel: [1545481.241425] cni0: port 11(veth38279d30) entered disabled state
 2026-04-30T18:36:31.505190+00:00 p2-xr2 kernel: [1545481.251190] device veth38279d30 left promiscuous mode
+2026-04-30T18:37:00.433207+00:00 p2-xr2 kernel: [1545510.174653] cni0: port 10(veth631d7abb) entered disabled state
+2026-04-30T18:37:17.633211+00:00 p2-xr2 kernel: [1545527.377406] cni0: port 10(veth631d7abb) entered disabled state
+2026-04-30T18:38:01.972974+00:00 p2-xr2 CROND[153890]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)

@@ -1,6 +1,11 @@
 # AWX Lab 6: Autonomous Ops (Schedules & Notifications)
 
-Automation is truly powerful when you no longer have to trigger it yourself. In this lab, you as **SX-user** will learn how to make your network self-healing and proactive.
+Automation is truly powerful when you no longer have to trigger it yourself. In this lab, you as **S<student_id>-user** will learn how to make your network self-healing and proactive.
+
+---
+
+## 🧠 Core Concept: Autonomy
+Autonomous operations move beyond manual triggers. By combining schedules and notifications, you create a system that audits itself and alerts you only when human intervention is required.
 
 ---
 
@@ -13,11 +18,14 @@ A **Schedule** is a time-based trigger that tells AWX to run a specific task at 
 The purpose is **"Hands-Free" Operations**. You shouldn't have to manually check if your routers are healthy every morning. By scheduling a validation check, you ensure the network is being audited even while you sleep.
 
 ### Step-by-Step:
-1.  Click **Templates** -> Your **Validation** template.
+1.  Click **Templates** -> Your **01 - Gather Cisco Facts** template.
 2.  Click the **Schedules** tab -> Click **Add**.
-3.  **Name:** .
+3.  **Name:** `Daily Health Audit`
 4.  **Repeat Frequency:** Select **Daily**.
-5.  Click **Save**.
+5.  **Start Time:** Set it for 1 hour from now.
+6.  Click **Save**.
+
+**✅ Success Criteria:** Your template is now set to run automatically every day without any human clicking a button.
 
 ---
 
@@ -31,11 +39,15 @@ The purpose is **Real-Time Awareness**. If an automated health check fails at 3:
 
 ### Step-by-Step:
 1.  Click **Notifications** in the left menu -> Click **Add**.
-2.  **Name:** . **Type:**  (or Email).
-3.  Click **Save**.
-4.  Go to your **Validation Template** -> **Notifications** tab.
-5.  **Toggle the "Failure" switch to ON.**
+2.  **Name:** `Operations Slack Alert`
+3.  **Type:** Select **Slack** (or PagerDuty/Email if configured).
+4.  **Destination:** (Use a placeholder or dummy URL for this lab).
+5.  Click **Save**.
+6.  Go back to **Templates** -> **01 - Gather Cisco Facts** -> **Notifications** tab.
+7.  **Toggle the "Failure" switch to ON.**
     > **💡 Bonus Note:** We only enable "Failure" to avoid "Notification Spam." We only want to be interrupted if there is an actual problem.
+
+**✅ Success Criteria:** AWX is now configured to alert your team immediately if the Gather Facts job fails.
 
 ---
 
@@ -48,9 +60,18 @@ The purpose is **Real-Time Awareness**. If an automated health check fails at 3:
 The purpose is **Self-Healing Infrastructure**. If a human makes a manual mistake on a router (Configuration Drift), the automation detects it and automatically overwrites the mistake with the correct settings.
 
 ### Task: Test the Self-Healing Network
-1.  SSH into your router and manually change the banner to something wrong.
-2.  In AWX, launch your **Complete Pod Build** workflow.
-3.  Watch as AWX detects the difference and automatically restores the correct configuration!
+1.  **Manual Change:** SSH into your router and manually change the banner to something "wrong" or "unauthorized."
+2.  **Manual Trigger:** In AWX, launch your **Complete Pod Build** workflow.
+3.  **Watch the magic:** Watch as AWX detects the difference and automatically restores the correct configuration from your GitHub "Source of Truth"!
+
+**✅ Success Criteria:** You have demonstrated a "Self-Healing" network where the automation corrects manual configuration errors.
+
+---
+
+## ❓ Knowledge Check
+1.  What is "Configuration Drift"?
+2.  Why do we usually only enable notifications for **Failure**?
+3.  What is the difference between Automation and Autonomy?
 
 ---
 

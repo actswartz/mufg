@@ -1724,3 +1724,4 @@
 2026-04-30T18:36:01.910779+00:00 p1-xr1 CROND[151282]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
 2026-04-30T18:36:13.069956+00:00 p1-xr1 kernel: [1545462.816721] cni0: port 11(veth38279d30) entered blocking state
 2026-04-30T18:36:13.069966+00:00 p1-xr1 kernel: [1545462.816726] cni0: port 11(veth38279d30) entered forwarding state
+2026-04-30T18:38:01.934960+00:00 p1-xr1 CROND[151371]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)

@@ -28,11 +28,11 @@ Before these ports become active, you must log into each container via Docker co
 
 1. `docker exec -it clab-xrd-lab-<node_name> xr`
 2. Configure the following:
-   ```ios
-   conf t
-    username clab group root-lr group cisco-support secret 800-ePlus
-    interface MgmtEth0/RP0/CPU0/0
-     ipv4 address <Internal_IP> 255.255.255.0
-     no shut
-    commit
-   ```
+  ```ios
+  conf t
+  username clab group root-lr group cisco-support secret 800-ePlus
+  interface MgmtEth0/RP0/CPU0/0
+   ipv4 address <Internal_IP> 255.255.255.0
+   no shut
+  commit
+  ```

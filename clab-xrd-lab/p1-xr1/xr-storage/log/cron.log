@@ -1,0 +1,7 @@
+2026-04-30T01:11:08.688529+00:00 p1-xr1 crond[425]: (CRON) STARTUP (1.5.5)
+2026-04-30T01:11:08.688534+00:00 p1-xr1 crond[425]: (CRON) INFO (Syslog will be used instead of sendmail.)
+2026-04-30T01:11:08.688537+00:00 p1-xr1 crond[425]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 87% if used.)
+2026-04-30T01:13:01.972894+00:00 p1-xr1 CROND[5712]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T01:15:01.048232+00:00 p1-xr1 CROND[6595]: (root) CMD (/pkg/bin/monitor_coreinfo.sh)
+2026-04-30T01:15:01.048468+00:00 p1-xr1 CROND[6596]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
+2026-04-30T01:15:01.048609+00:00 p1-xr1 CROND[6597]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)

@@ -1,0 +1,277 @@
+2026-04-30 01:11:34,614 UTC   1949 [orch.__main__       :  38] INF: -------------------------------------------------------------------------------
+2026-04-30 01:11:34,615 UTC   1949 [orch.__main__       :  39] INF: Started
+2026-04-30 01:11:37,678 UTC   1949 [orch.disaster_recovery: 658] DEB: RETRY (): 5 attempts with backoffs: [0, 0.5, 0.75, 1.125, 1.6875, 2.53125]
+2026-04-30 01:11:37,879 UTC   1949 [orch.non_cisco_pkgs : 261] DEB: /var/opt/cisco/iosxr/install/rpm_classification.json file not found.
+2026-04-30 01:11:37,891 UTC   1949 [orch.__main__       : 314] INF: Cookie access retry count 0
+2026-04-30 01:11:40,893 UTC   1949 [orch.__main__       : 314] INF: Cookie access retry count 1
+2026-04-30 01:11:43,894 UTC   1949 [orch.__main__       : 510] INF: Creating volatile tmp dir at /var/volatile/tmp/cisco/iosxr/install
+2026-04-30 01:11:43,903 UTC   1949 [orch.reload.sm      : 191] INF: Attempting to connect to shelf manager. rc is 0
+2026-04-30 01:11:43,904 UTC   1949 [orch.features.infra.comms: 445] DEB: Message handling callback function registered for feature: SHELFMGR
+2026-04-30 01:11:43,904 UTC   1949 [orch.features.infra.comms: 470] DEB: Disconnect callback function registered for feature: SHELFMGR
+2026-04-30 01:11:43,905 UTC   1949 [orch.features.infra.comms: 445] DEB: Message handling callback function registered for feature: Security
+2026-04-30 01:11:43,905 UTC   1949 [orch.persist.Persist: 813] INF: Attempting to load previous state data from path /var/opt/cisco/iosxr/install/mirror/feature-db-state
+2026-04-30 01:11:43,905 UTC   1949 [orch.persist.Persist: 819] INF: No state data file PosixPath('/var/opt/cisco/iosxr/install/mirror/feature-db-state') exists
+2026-04-30 01:11:43,906 UTC   1949 [orch.features.infra.ha: 103] DEB: No features holding the lock to restore
+2026-04-30 01:11:43,906 UTC   1949 [orch.alarms         : 107] INF: Initialising FM for process instorch with alarm file install_orch_fm.xml at node: 0/RP0/CPU0
+2026-04-30 01:11:43,929 UTC   1949 [orch.persist.Persist: 813] INF: Attempting to load previous state data from path /var/opt/cisco/iosxr/install/mirror/node_inconsistencies.json
+2026-04-30 01:11:43,930 UTC   1949 [orch.persist.Persist: 819] INF: No state data file PosixPath('/var/opt/cisco/iosxr/install/mirror/node_inconsistencies.json') exists
+2026-04-30 01:11:43,993 UTC   1949 [orch.oper.fprint    : 186] INF: Initializing Runtime Fingerprint Cache
+2026-04-30 01:11:44,041 UTC   1949 [orch.config         : 311] DEB: Beginning repository configuration resync
+2026-04-30 01:11:44,042 UTC   1949 [orch.config         : 314] INF: Registering config verifier
+2026-04-30 01:11:44,053 UTC   1949 [orch.config         : 357] DEB: Ending config resync
+2026-04-30 01:11:44,057 UTC   1949 [orch.config         : 104] INF: Error (Failed to get done: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory') when reading startup done path. Treating as if done value=False
+2026-04-30 01:11:44,058 UTC   1949 [orch.config         : 137] DEB: First callback being registered for cfgmgr startup done notifications
+2026-04-30 01:11:44,062 UTC   1949 [orch.config         : 152] DEB: Registering callback function <bound method Verifier._startup_done_cb of <iosxr.install._orch._config.Verifier object at 0x7f3aff3bacd0>> to call once cfgmgr startup is done.
+2026-04-30 01:11:44,062 UTC   1949 [orch.features.infra.comms: 100] INF: Creating Endpoint
+2026-04-30 01:11:44,064 UTC   1949 [orch.features.infra.comms: 135] INF: Publishing endpoint
+2026-04-30 01:11:44,121 UTC   1949 [orch.disaster_recovery: 450] INF: This platform does not have a DR disk
+2026-04-30 01:11:44,122 UTC   1949 [orch.persist.Persist: 813] INF: Attempting to load previous state data from path /var/opt/cisco/iosxr/install/mirror/state
+2026-04-30 01:11:44,122 UTC   1949 [orch.persist.Persist: 819] INF: No state data file PosixPath('/var/opt/cisco/iosxr/install/mirror/state') exists
+2026-04-30 01:11:44,122 UTC   1949 [orch.engine.fsm     : 178] DEB: No legacy state file exists
+2026-04-30 01:11:44,123 UTC   1949 [orch.persist.Persist: 813] INF: Attempting to load previous state data from path /var/opt/cisco/iosxr/install/mirror/orchstate
+2026-04-30 01:11:44,123 UTC   1949 [orch.persist.Persist: 819] INF: No state data file PosixPath('/var/opt/cisco/iosxr/install/mirror/orchstate') exists
+2026-04-30 01:11:44,124 UTC   1949 [orch.engine.fsm     : 200] INF: Resuming with no state record
+2026-04-30 01:11:44,124 UTC   1949 [orch.engine.fsm     :  97] DEB: FSM is starting in state <StateName.IDLE: 0>
+2026-04-30 01:11:44,125 UTC   1949 [orch.engine.fsm(0)  : 329] DEB: Skipping end-of-transaction RPFO handling
+2026-04-30 01:11:44,125 UTC   1949 [orch.engine.fsm(0)  : 356] DEB: Skipping reimage failure resume handling
+2026-04-30 01:11:44,125 UTC   1949 [orch.engine.fsm     : 246] DEB: Skipping 'handle resume' as outside transaction
+2026-04-30 01:11:44,125 UTC   1949 [orch.engine.fsm     : 265] DEB: Skipping 'wait for nodes' as idle outside transaction
+2026-04-30 01:11:44,126 UTC   1949 [orch.features.reimage: 890] DEB: Transaction in progress callback function <bound method Engine.check_transaction_in_progress of <iosxr.install._orch._engine._api.Engine object at 0x7f3aff35aa60>> registered.
+2026-04-30 01:11:44,126 UTC   1949 [orch.alarms         : 205] DEB: Starting FM lib resync
+2026-04-30 01:11:44,126 UTC   1949 [orch.alarms         : 211] DEB: FM lib resync complete
+2026-04-30 01:11:44,126 UTC   1949 [orch.oper.pq        :4649] DEB: Creating show version cache after oper module request
+2026-04-30 01:11:44,157 UTC   1949 [orch.__main__       : 652] DEB: Going active
+2026-04-30 01:11:44,158 UTC   1949 [orch.__main__       :  58] DEB: Entering event loop
+2026-04-30 01:11:44,160 UTC   1949 [orch.inv            : 192] DEB: Adding node 0/RP0/CPU0 to the inventory
+2026-04-30 01:11:44,160 UTC   1949 [cmn.cache           : 363] DEB: cache: 7: Invalidating the pending results (count: 0)
+2026-04-30 01:11:44,160 UTC   1949 [cmn.cache           : 392] DEB: cache: 7: Invalidating the results for members: 
+2026-04-30 01:11:44,161 UTC   1949 [cmn.cache           : 363] DEB: cache: 8: Invalidating the pending results (count: 0)
+2026-04-30 01:11:44,161 UTC   1949 [cmn.cache           : 392] DEB: cache: 8: Invalidating the results for members: 
+2026-04-30 01:11:44,161 UTC   1949 [orch.engine.monitor : 251] DEB: Node 0/RP0/CPU0 added, adding callbacks
+2026-04-30 01:11:44,161 UTC   1949 [orch.engine.monitor : 274] DEB: Not reporting node available event for 0/RP0/CPU0
+2026-04-30 01:11:44,162 UTC   1949 [orch.engine.monitor : 208] DEB: Registering callbacks for node 0/RP0/CPU0
+2026-04-30 01:11:44,163 UTC   1949 [orch.features.infra.comms: 195] INF: Finished publishing endpoint, exception None
+2026-04-30 01:11:44,164 UTC   1949 [orch.oper.pq        :4792] INF: Base gISO build metadata file does not exist.
+2026-04-30 01:11:44,165 UTC   1949 [orch.oper.pq        : 391] DEB: No <OperationType.ATOMIC: 2> operation in progress
+2026-04-30 01:11:44,165 UTC   1949 [orch.oper.pq        : 778] DEB: No active pkgs record.  Falling back to using installed packages
+2026-04-30 01:11:44,165 UTC   1949 [pkgmgr.locks        : 125] DEB: _QueueItem('list', in_progress=False) is being added to the empty queue
+2026-04-30 01:11:44,166 UTC   1949 [cmn.dnf.Query       : 501] DEB: Not adding NNS to cmd: ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'list', '-y', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh', '--', 'installed']
+2026-04-30 01:11:44,167 UTC   1949 [cmn.dnf.Query       : 351] DEB: [6897] ==================================================
+2026-04-30 01:11:44,167 UTC   1949 [cmn.dnf.Query       : 352] INF: [6897] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'list', '-y', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh', '--', 'installed']
+2026-04-30 01:11:44,203 UTC   1949 [cmn.dnf.Query       : 379] DEB: [6897] Subprocess PID: 2301
+2026-04-30 01:11:44,203 UTC   1949 [cmn.subprocs.readers: 125] DEB: [6897] Add reader (268)
+2026-04-30 01:11:44,204 UTC   1949 [orch.repo.historical: 239] INF: Not creating initial rollback point as rollback is disabled
+2026-04-30 01:11:44,205 UTC   1949 [cmn.lock            : 138] DEB: Intra-process lock (oper_iso): Attempting to acquire from unmount_isos_that_might_be_mounted
+2026-04-30 01:11:44,205 UTC   1949 [cmn.lock            : 156] DEB: Intra-process lock (oper_iso): Acquired from unmount_isos_that_might_be_mounted. _QueueItem('unmount_isos_that_might_be_mounted', in_progress=False, cancelled=False) is being added to the empty queue
+2026-04-30 01:11:44,205 UTC   1949 [cmn.lock            : 187] DEB: Intra-process lock (oper_iso): Starting the future _QueueItem('unmount_isos_that_might_be_mounted', in_progress=True, cancelled=False)
+2026-04-30 01:11:44,206 UTC   1949 [cmn.iso.mounts      : 157] INF: Unmounting ISO at '/mnt/cisco/iosxr/install/oper_iso'
+2026-04-30 01:11:44,238 UTC   1949 [cmn.lock            : 191] DEB: Intra-process lock (oper_iso): The future _QueueItem('unmount_isos_that_might_be_mounted', in_progress=True, cancelled=False) has completed
+2026-04-30 01:11:44,238 UTC   1949 [cmn.lock            : 103] DEB: Intra-process lock (oper_iso): Released
+2026-04-30 01:11:44,238 UTC   1949 [cmn.lock            : 138] DEB: Intra-process lock (action): Attempting to acquire from unmount_any_previously_mounted_iso
+2026-04-30 01:11:44,239 UTC   1949 [cmn.lock            : 156] DEB: Intra-process lock (action): Acquired from unmount_any_previously_mounted_iso. _QueueItem('unmount_any_previously_mounted_iso', in_progress=False, cancelled=False) is being added to the empty queue
+2026-04-30 01:11:44,239 UTC   1949 [cmn.lock            : 187] DEB: Intra-process lock (action): Starting the future _QueueItem('unmount_any_previously_mounted_iso', in_progress=True, cancelled=False)
+2026-04-30 01:11:44,239 UTC   1949 [cmn.iso.mounts      : 157] INF: Unmounting ISO at '/mnt/cisco/iosxr/install/action'
+2026-04-30 01:11:44,240 UTC   1949 [cmn.lock            : 191] DEB: Intra-process lock (action): The future _QueueItem('unmount_any_previously_mounted_iso', in_progress=True, cancelled=False) has completed
+2026-04-30 01:11:44,269 UTC   1949 [cmn.lock            : 103] DEB: Intra-process lock (action): Released
+2026-04-30 01:11:44,270 UTC   1949 [comms.Orch          : 336] INF: Received AGENT_HELLO unsolicited message from 0/RP0/CPU0
+2026-04-30 01:11:44,271 UTC   1949 [orch.inv            : 344] DEB: Node with ID 0/RP0/CPU0 and PID XRd-CP-C-01 says hello
+2026-04-30 01:11:44,271 UTC   1949 [orch.inv            : 378] DEB: Invoking hello callback "<class 'iosxr.install._orch._oper._pkgs.PkgQuery'>:openconfig-cache-regenerate:0/RP0/CPU0" for node 0/RP0/CPU0
+2026-04-30 01:11:44,271 UTC   1949 [orch.oper.pq        :2701] DEB: Openconfig cache regenerate post node hello for node 0/RP0/CPU0
+2026-04-30 01:11:44,272 UTC   1949 [cmn.cache           : 430] DEB: cache: 6: Invalidating the result for member: _CacheKey(fn=<bound method PkgQuery._ocplat_get_packages_inner of <iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>>, args=(<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs={'node': '0_RP0_CPU0'})
+2026-04-30 01:11:44,273 UTC   1949 [orch.inv            : 378] DEB: Invoking hello callback "<class 'iosxr.install._orch._engine._monitor.NodeMonitor'>:0/RP0/CPU0" for node 0/RP0/CPU0
+2026-04-30 01:11:44,273 UTC   1949 [orch.engine.monitor : 338] DEB: Received hello message from node 0/RP0/CPU0 with ip 172.0.0.1
+2026-04-30 01:11:44,274 UTC   1949 [orch.consistency    : 505] INF: Node 0/RP0/CPU0 is the active RP. Removing it from the node inconsistencies file, if present.
+2026-04-30 01:11:44,274 UTC   1949 [orch.consistency    : 458] DEB: Reimage reason for node 0/RP0/CPU0 is None
+2026-04-30 01:11:44,274 UTC   1949 [orch.consistency    : 473] DEB: Node 0/RP0/CPU0 is consistent.
+2026-04-30 01:11:44,274 UTC   1949 [orch.consistency    : 728] INF: Node 0/RP0/CPU0 has op-in-progress marker file: False, packaging operation in progress: False - ok
+2026-04-30 01:11:44,289 UTC   1949 [cmn.cache           : 758] DEB: cache: 6: Nothing waiting on <function PkgQuery._ocplat_get_packages_inner at 0x7f3b140c2d30>(args: (<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs: {'node': '0_RP0_CPU0'})
+2026-04-30 01:11:44,290 UTC   1949 [cmn.cache           : 470] DEB: cache: 6: Calling <function PkgQuery._ocplat_get_packages_inner at 0x7f3b140c2d30>
+2026-04-30 01:11:44,290 UTC   1949 [orch.oper.pq        : 391] DEB: No <OperationType.TRANSACTION: 1> operation in progress
+2026-04-30 01:11:44,290 UTC   1949 [orch.oper.pq        : 825] DEB: No committed pkgs record.  Falling back to using installed packages
+2026-04-30 01:11:44,290 UTC   1949 [orch.oper.pq        :2105] DEB: Received request for package query <PkgQueryType.INSTALLED: 2>, with inputs []
+2026-04-30 01:11:44,291 UTC   1949 [orch.aggr._Request  :1422] DEB: Request id 0xdbf119a300000001: Sending <MsgCategory.PKG_QUERY: 19> message to 1 nodes: Confirmed: [Node(0/RP0/CPU0)]. Unconfirmed: []. Timeout: 120
+2026-04-30 01:11:44,291 UTC   1949 [comms.Orch          : 160] INF: Sending PKG_QUERY request message (to nodes [Node(0/RP0/CPU0)]): {"category": 19, "msg_type": 1, "error": null, "msg_data": {"query": 2, "inputs": [], "dnf_queue_timeout": 300, "get_security_data": false, "check_owner_sigs": false, "category": 19}, "req_id": "0xdbf119a300000001", "nodes": ["0/RP0/CPU0"], "warnings": null}
+2026-04-30 01:11:44,297 UTC   1949 [orch.reload.sm      : 383] DEB: connect_cb invoked with status 0
+2026-04-30 01:11:44,299 UTC   1949 [orch.reload         : 352] INF: Connect callback from Shelf Manager. Status 0
+2026-04-30 01:11:44,299 UTC   1949 [orch.reload         : 354] INF: Connected to Shelf Manager.
+2026-04-30 01:11:45,403 UTC   1949 [cmn.subprocs.readers: 189] DEB: [6897] __anext__(): Remove reader (268)
+2026-04-30 01:11:45,404 UTC   1949 [cmn.dnf.Query       : 218] DEB: [6897] Finished reading output
+2026-04-30 01:11:45,404 UTC   1949 [cmn.dnf.Query       : 466] INF: [6897] Subprocess completed successfully
+2026-04-30 01:11:45,404 UTC   1949 [cmn.dnf.Query       : 267] DEB: [6897] Removing operation
+2026-04-30 01:11:45,405 UTC   1949 [cmn.subprocs.readers: 349] DEB: [6897] Stopped
+2026-04-30 01:11:45,405 UTC   1949 [cmn.dnf.Query       : 270] DEB: [6897] Stopped stdout reader
+2026-04-30 01:11:45,405 UTC   1949 [cmn.dnf.Query       : 292] DEB: [6897] Waiting for clean up
+2026-04-30 01:11:45,405 UTC   1949 [cmn.dnf.Query       : 297] DEB: [6897] Cleaned up
+2026-04-30 01:11:45,422 UTC   1949 [cmn.dnf.Query       : 581] INF: [6897] Subprocess exited with success
+2026-04-30 01:11:45,429 UTC   1949 [cmn.dnf.Query       : 830] DEB: [dead(6897)] Query complete, with output:
+2026-04-30 01:11:45,429 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='acl', Version='2.2.53', Release='r0.33.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,429 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='at', Version='3.1.23', Release='r0.39.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,430 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='attr', Version='2.4.48', Release='r0.33.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,430 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='audit', Version='2.8.5', Release='r0.41.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,430 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='augeas-lenses', Version='1.12.0', Release='r0.41.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,430 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='base-files', Version='3.0.14', Release='r89.15', Epoch='0', Architecture='xr_s_x86', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,431 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='base-passwd', Version='3.5.29', Release='r0.33.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,431 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='base-passwd-update', Version='3.5.29', Release='r0.33.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,440 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='bash', Version='5.0', Release='r0.33.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,440 UTC   1949 [cmn.dnf.Query       : 837] DEB: [dead(6897)]   PkgDetails(Name='bash-completion', Version='2.10', Release='r0.33.147.0', Epoch='0', Architecture='corei7_64', Summary=None, Repository='@iosxr_install_internal', Cached=None, Size=None, Description=None, License=None, ProvidesMatches=[], Active=None, Committed=None, Pkgmgr=None, URL=None, XRMandatory=None, XROptional=None, XRPackage=None, GPGKeyID=None, InstallFingerprint='0', RunTimeFingerprint='0', RunTimeTimestamp=0)
+2026-04-30 01:11:45,441 UTC   1949 [cmn.dnf.Query       : 839] DEB: [dead(6897)]  ...truncated...
+2026-04-30 01:11:45,453 UTC   1949 [cmn.dnf.Query       : 292] DEB: [dead(6897)] Waiting for clean up elsewhere
+2026-04-30 01:11:45,454 UTC   1949 [cmn.dnf.Query       : 297] DEB: [dead(6897)] Cleaned up elsewhere
+2026-04-30 01:11:45,455 UTC   1949 [pkgmgr.locks        :  98] DEB: No next future
+2026-04-30 01:11:45,455 UTC   1949 [orch.oper.pq        : 975] INF: Filtering disabled packages path: None
+2026-04-30 01:11:45,520 UTC   1949 [pkgmgr.locks        : 125] DEB: _QueueItem('Retrieve build info', in_progress=False) is being added to the empty queue
+2026-04-30 01:11:45,521 UTC   1949 [pkgmgr.rpm.cmds     : 472] DEB: cmd: ['rpm', '-qa', '--queryformat', '%{name}-%|epoch?{%{epoch}}:{0}|:%{version}-%{release}.%{arch}`%{packager}`%{buildhost}`%{buildtime}\n'], userid: iosxr
+2026-04-30 01:11:45,522 UTC   1949 [cmn.subprocs.exec   : 351] DEB: [BDA7] ==================================================
+2026-04-30 01:11:45,522 UTC   1949 [cmn.subprocs.exec   : 352] INF: [BDA7] Running ['rpm', '-qa', '--queryformat', '%{name}-%|epoch?{%{epoch}}:{0}|:%{version}-%{release}.%{arch}`%{packager}`%{buildhost}`%{buildtime}\n'] as user iosxr
+2026-04-30 01:11:45,679 UTC   1949 [cmn.subprocs.exec   : 379] DEB: [BDA7] Subprocess PID: 2359
+2026-04-30 01:11:45,682 UTC   1949 [cmn.subprocs.readers: 125] DEB: [BDA7] Add reader (268)
+2026-04-30 01:11:45,693 UTC   1949 [cmn.subprocs.readers: 125] DEB: [BDA7] Add reader (276)
+2026-04-30 01:11:51,274 UTC   1949 [comms.Orch          : 306] INF: Received PKG_QUERY response message to request 0xdbf119a300000001 from 0/RP0/CPU0: b'{"category": 19, "msg_type": 2, "error": null, "msg_data": {"dnf_output": [{"Name": "acl", "Version": "2.2.53", "Release": "r0.33.147.0", "Epoch": "0", "Architecture": "corei7_64", "Summary": null, "Repository": "@iosxr_install_internal", "Cached": null, "Size": null, "Description": null, "License": null, "ProvidesMatches": [], "Active": null, "Committed": null, "Pkgmgr": null, "URL": null, "XRMandatory": null, "XROption...
+2026-04-30 01:11:51,327 UTC   1949 [orch.aggr._Request  :1525] DEB: Request id 0xdbf119a300000001: Received response from 0/RP0/CPU0. (1/1)
+2026-04-30 01:11:51,329 UTC   1949 [orch.aggr._Request  :1741] DEB: Cancelling timer on request _Request(comms=<iosxr.install._orch._comms.Orch object at 0x7f3afff9f6d0>, id='0xdbf119a300000001', nodes=[Node(0/RP0/CPU0)], category=<MsgCategory.PKG_QUERY: 19>
+2026-04-30 01:11:51,330 UTC   1949 [cmn.cache           : 758] DEB: cache: 6: Nothing waiting on <function PkgQuery._ocplat_get_all_cisco_pkgs at 0x7f3b140c2e50>(args: (<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs: {})
+2026-04-30 01:11:51,330 UTC   1949 [cmn.cache           : 470] DEB: cache: 6: Calling <function PkgQuery._ocplat_get_all_cisco_pkgs at 0x7f3b140c2e50>
+2026-04-30 01:11:51,331 UTC   1949 [dnf_repoquery       : 260] DEB: Preparing to run: What Provides; pkgs: [], args: ('--whatprovides', 'cisco-iosxr', '--all')
+2026-04-30 01:11:51,331 UTC   1949 [pkgmgr.locks        : 128] DEB: _QueueItem('repoquery', in_progress=False) is being added to the queue deque([_QueueItem('Retrieve build info', in_progress=True)])
+2026-04-30 01:11:51,949 UTC   1949 [orch.features.infra.comms: 187] DEB: Client Connection(id=139891362640576) connected
+2026-04-30 01:11:51,950 UTC   1949 [orch.features.infra.comms: 348] INF: Hello from conn Connection(id=139891362640576): id SHELFMGR
+2026-04-30 01:11:51,950 UTC   1949 [orch.features.infra.comms: 272] DEB: sending resync msg to Connection(id=139891362640576): id FeatureID.SHELFMGR, lock None
+2026-04-30 01:11:52,869 UTC   1949 [cmn.subprocs.readers: 189] DEB: [BDA7] __anext__(): Remove reader (276)
+2026-04-30 01:11:52,869 UTC   1949 [cmn.subprocs.exec   : 218] DEB: [BDA7] Finished reading output
+2026-04-30 01:11:52,869 UTC   1949 [cmn.subprocs.readers: 189] DEB: [BDA7] __anext__(): Remove reader (268)
+2026-04-30 01:11:52,870 UTC   1949 [cmn.subprocs.exec   : 218] DEB: [BDA7] Finished reading output
+2026-04-30 01:11:52,870 UTC   1949 [cmn.subprocs.exec   : 466] INF: [BDA7] Subprocess completed successfully
+2026-04-30 01:11:52,870 UTC   1949 [cmn.subprocs.exec   : 267] DEB: [BDA7] Removing operation
+2026-04-30 01:11:52,871 UTC   1949 [cmn.subprocs.readers: 349] DEB: [BDA7] Stopped
+2026-04-30 01:11:52,871 UTC   1949 [cmn.subprocs.exec   : 270] DEB: [BDA7] Stopped stdout reader
+2026-04-30 01:11:52,871 UTC   1949 [cmn.subprocs.readers: 349] DEB: [BDA7] Stopped
+2026-04-30 01:11:52,871 UTC   1949 [cmn.subprocs.exec   : 274] DEB: [BDA7] Stopped stderr reader
+2026-04-30 01:11:52,889 UTC   1949 [cmn.subprocs.exec   : 292] DEB: [BDA7] Waiting for clean up
+2026-04-30 01:11:52,889 UTC   1949 [cmn.subprocs.exec   : 297] DEB: [BDA7] Cleaned up
+2026-04-30 01:11:52,895 UTC   1949 [pkgmgr.locks        : 103] DEB: The next future, _QueueItem('repoquery', in_progress=True), has been unblocked. The queue is now: deque([_QueueItem('repoquery', in_progress=True)])
+2026-04-30 01:11:53,863 UTC   1949 [orch.oper.pq        :4856] DEB: New show version EDM cache created
+2026-04-30 01:11:53,864 UTC   1949 [dnf_repoquery       : 314] DEB: Starting dnf repoquery operation, cmd: ['--whatprovides', 'cisco-iosxr', '--all'] []
+2026-04-30 01:11:53,886 UTC   1949 [dnf_repoquery       : 501] DEB: Not adding NNS to cmd: ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr', '--all', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh']
+2026-04-30 01:11:53,887 UTC   1949 [dnf_repoquery       : 351] DEB: [D908] ==================================================
+2026-04-30 01:11:53,887 UTC   1949 [dnf_repoquery       : 352] INF: [D908] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr', '--all', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh']
+2026-04-30 01:11:53,940 UTC   1949 [dnf_repoquery       : 379] DEB: [D908] Subprocess PID: 3154
+2026-04-30 01:11:53,941 UTC   1949 [cmn.subprocs.readers: 125] DEB: [D908] Add reader (268)
+2026-04-30 01:12:00,272 UTC   1949 [cmn.subprocs.readers: 189] DEB: [D908] __anext__(): Remove reader (268)
+2026-04-30 01:12:00,272 UTC   1949 [dnf_repoquery       : 218] DEB: [D908] Finished reading output
+2026-04-30 01:12:00,273 UTC   1949 [dnf_repoquery       : 466] INF: [D908] Subprocess completed successfully
+2026-04-30 01:12:00,273 UTC   1949 [dnf_repoquery       : 267] DEB: [D908] Removing operation
+2026-04-30 01:12:00,273 UTC   1949 [cmn.subprocs.readers: 349] DEB: [D908] Stopped
+2026-04-30 01:12:00,295 UTC   1949 [dnf_repoquery       : 270] DEB: [D908] Stopped stdout reader
+2026-04-30 01:12:00,295 UTC   1949 [dnf_repoquery       : 292] DEB: [D908] Waiting for clean up
+2026-04-30 01:12:00,295 UTC   1949 [dnf_repoquery       : 297] DEB: [D908] Cleaned up
+2026-04-30 01:12:00,297 UTC   1949 [dnf_repoquery       : 581] INF: [D908] Subprocess exited with success
+2026-04-30 01:12:00,297 UTC   1949 [dnf_repoquery       : 201] INF: [dead(D908)] Add repos ({'iosxr_install_internal'}) to inaccessible repos (set()). Context: Parser
+2026-04-30 01:12:00,298 UTC   1949 [dnf_repoquery       : 292] DEB: [dead(D908)] Waiting for clean up elsewhere
+2026-04-30 01:12:00,298 UTC   1949 [dnf_repoquery       : 297] DEB: [dead(D908)] Cleaned up elsewhere
+2026-04-30 01:12:00,298 UTC   1949 [pkgmgr.locks        :  98] DEB: No next future
+2026-04-30 01:12:00,298 UTC   1949 [dnf_repoquery       : 347] DEB: [dead(D908)] Finished repoquery with output: set()
+2026-04-30 01:12:00,314 UTC   1949 [dnf_repoquery       : 201] INF: Add repos ({'iosxr_install_internal'}) to inaccessible repos (set()). Context: Creation
+2026-04-30 01:12:00,314 UTC   1949 [dnf_repoquery       : 260] DEB: Preparing to run: What Provides; pkgs: [], args: ('--whatprovides', 'cisco-iosxr-user-installable', '--all')
+2026-04-30 01:12:00,315 UTC   1949 [pkgmgr.locks        : 125] DEB: _QueueItem('repoquery', in_progress=False) is being added to the empty queue
+2026-04-30 01:12:00,315 UTC   1949 [dnf_repoquery       : 314] DEB: Starting dnf repoquery operation, cmd: ['--whatprovides', 'cisco-iosxr-user-installable', '--all'] []
+2026-04-30 01:12:00,316 UTC   1949 [dnf_repoquery       : 501] DEB: Not adding NNS to cmd: ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr-user-installable', '--all', '--disablerepo=*', '--no-wrap', '--refresh']
+2026-04-30 01:12:00,316 UTC   1949 [dnf_repoquery       : 351] DEB: [7CA9] ==================================================
+2026-04-30 01:12:00,316 UTC   1949 [dnf_repoquery       : 352] INF: [7CA9] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr-user-installable', '--all', '--disablerepo=*', '--no-wrap', '--refresh']
+2026-04-30 01:12:00,388 UTC   1949 [dnf_repoquery       : 379] DEB: [7CA9] Subprocess PID: 3776
+2026-04-30 01:12:00,389 UTC   1949 [cmn.subprocs.readers: 125] DEB: [7CA9] Add reader (268)
+2026-04-30 01:12:03,938 UTC   1949 [cmn.subprocs.readers: 189] DEB: [7CA9] __anext__(): Remove reader (268)
+2026-04-30 01:12:03,939 UTC   1949 [dnf_repoquery       : 218] DEB: [7CA9] Finished reading output
+2026-04-30 01:12:03,939 UTC   1949 [dnf_repoquery       : 466] INF: [7CA9] Subprocess completed successfully
+2026-04-30 01:12:03,939 UTC   1949 [dnf_repoquery       : 267] DEB: [7CA9] Removing operation
+2026-04-30 01:12:03,940 UTC   1949 [cmn.subprocs.readers: 349] DEB: [7CA9] Stopped
+2026-04-30 01:12:03,940 UTC   1949 [dnf_repoquery       : 270] DEB: [7CA9] Stopped stdout reader
+2026-04-30 01:12:03,940 UTC   1949 [dnf_repoquery       : 292] DEB: [7CA9] Waiting for clean up
+2026-04-30 01:12:03,940 UTC   1949 [dnf_repoquery       : 297] DEB: [7CA9] Cleaned up
+2026-04-30 01:12:03,944 UTC   1949 [dnf_repoquery       : 581] INF: [7CA9] Subprocess exited with success
+2026-04-30 01:12:03,945 UTC   1949 [dnf_repoquery       : 292] DEB: [dead(7CA9)] Waiting for clean up elsewhere
+2026-04-30 01:12:03,945 UTC   1949 [dnf_repoquery       : 297] DEB: [dead(7CA9)] Cleaned up elsewhere
+2026-04-30 01:12:03,980 UTC   1949 [pkgmgr.locks        :  98] DEB: No next future
+2026-04-30 01:12:03,980 UTC   1949 [dnf_repoquery       : 347] DEB: [dead(7CA9)] Finished repoquery with output: set()
+2026-04-30 01:12:03,981 UTC   1949 [orch.repo.pkg_utils :1076] DEB: All cisco pkgs: set()
+2026-04-30 01:12:03,981 UTC   1949 [orch.repo.pkg_utils :1077] DEB: User installable cisco pkgs: set()
+2026-04-30 01:12:03,981 UTC   1949 [cmn.cache           : 498] DEB: cache: 6: Caching result (set(), set()) for <function PkgQuery._ocplat_get_all_cisco_pkgs at 0x7f3b140c2e50>(args: (<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs: {})
+2026-04-30 01:12:03,981 UTC   1949 [cmn.cache           : 248] DEB: cache: 6: Creating cached result for fn: <function PkgQuery._ocplat_get_all_cisco_pkgs at 0x7f3b140c2e50>, args: (<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs: {}: (set(), set())
+2026-04-30 01:12:03,982 UTC   1949 [cmn.cache           : 758] DEB: cache: 6: Nothing waiting on <function PkgQuery._ocplat_get_xr_mandatory_pkgs at 0x7f3b140c2f70>(args: (<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs: {})
+2026-04-30 01:12:03,982 UTC   1949 [cmn.cache           : 470] DEB: cache: 6: Calling <function PkgQuery._ocplat_get_xr_mandatory_pkgs at 0x7f3b140c2f70>
+2026-04-30 01:12:03,982 UTC   1949 [dnf_repoquery       : 260] DEB: Preparing to run: Dependencies - requirements; pkgs: ['xr-foundation-*'], args: ('--requires', '--resolve')
+2026-04-30 01:12:03,983 UTC   1949 [pkgmgr.locks        : 125] DEB: _QueueItem('repoquery', in_progress=False) is being added to the empty queue
+2026-04-30 01:12:03,983 UTC   1949 [dnf_repoquery       : 314] DEB: Starting dnf repoquery operation, cmd: ['--requires', '--resolve', '--installed'] ['xr-foundation-*']
+2026-04-30 01:12:03,984 UTC   1949 [dnf_repoquery       : 501] DEB: Not adding NNS to cmd: ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--requires', '--resolve', '--installed', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'xr-foundation-*']
+2026-04-30 01:12:04,002 UTC   1949 [dnf_repoquery       : 351] DEB: [B8C6] ==================================================
+2026-04-30 01:12:04,003 UTC   1949 [dnf_repoquery       : 352] INF: [B8C6] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--requires', '--resolve', '--installed', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'xr-foundation-*']
+2026-04-30 01:12:04,101 UTC   1949 [dnf_repoquery       : 379] DEB: [B8C6] Subprocess PID: 3988
+2026-04-30 01:12:04,102 UTC   1949 [cmn.subprocs.readers: 125] DEB: [B8C6] Add reader (268)
+2026-04-30 01:12:09,203 UTC   1949 [cmn.subprocs.readers: 189] DEB: [B8C6] __anext__(): Remove reader (268)
+2026-04-30 01:12:09,203 UTC   1949 [dnf_repoquery       : 218] DEB: [B8C6] Finished reading output
+2026-04-30 01:12:09,204 UTC   1949 [dnf_repoquery       : 466] INF: [B8C6] Subprocess completed successfully
+2026-04-30 01:12:09,204 UTC   1949 [dnf_repoquery       : 267] DEB: [B8C6] Removing operation
+2026-04-30 01:12:09,207 UTC   1949 [cmn.subprocs.readers: 349] DEB: [B8C6] Stopped
+2026-04-30 01:12:09,207 UTC   1949 [dnf_repoquery       : 270] DEB: [B8C6] Stopped stdout reader
+2026-04-30 01:12:09,207 UTC   1949 [dnf_repoquery       : 292] DEB: [B8C6] Waiting for clean up
+2026-04-30 01:12:09,207 UTC   1949 [dnf_repoquery       : 297] DEB: [B8C6] Cleaned up
+2026-04-30 01:12:09,209 UTC   1949 [dnf_repoquery       : 581] INF: [B8C6] Subprocess exited with success
+2026-04-30 01:12:09,210 UTC   1949 [dnf_repoquery       : 292] DEB: [dead(B8C6)] Waiting for clean up elsewhere
+2026-04-30 01:12:09,210 UTC   1949 [dnf_repoquery       : 297] DEB: [dead(B8C6)] Cleaned up elsewhere
+2026-04-30 01:12:09,219 UTC   1949 [pkgmgr.locks        :  98] DEB: No next future
+2026-04-30 01:12:09,219 UTC   1949 [dnf_repoquery       : 347] DEB: [dead(B8C6)] Finished repoquery with output: {PkgID(name='xr-apphosting', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-gil', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-bng-stubs', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-tunnel-ip', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-dhcp', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-linuxsecurity', ...
+2026-04-30 01:12:09,221 UTC   1949 [dnf_repoquery       : 260] DEB: Preparing to run: Dependencies - names; pkgs: ['xr-foundation-*'], args: ()
+2026-04-30 01:12:09,221 UTC   1949 [pkgmgr.locks        : 125] DEB: _QueueItem('repoquery', in_progress=False) is being added to the empty queue
+2026-04-30 01:12:09,221 UTC   1949 [dnf_repoquery       : 314] DEB: Starting dnf repoquery operation, cmd: ['--installed'] ['xr-foundation-*']
+2026-04-30 01:12:09,227 UTC   1949 [dnf_repoquery       : 501] DEB: Not adding NNS to cmd: ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--installed', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'xr-foundation-*']
+2026-04-30 01:12:09,227 UTC   1949 [dnf_repoquery       : 351] DEB: [C2FA] ==================================================
+2026-04-30 01:12:09,227 UTC   1949 [dnf_repoquery       : 352] INF: [C2FA] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--installed', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'xr-foundation-*']
+2026-04-30 01:12:09,272 UTC   1949 [dnf_repoquery       : 379] DEB: [C2FA] Subprocess PID: 4406
+2026-04-30 01:12:09,277 UTC   1949 [cmn.subprocs.readers: 125] DEB: [C2FA] Add reader (268)
+2026-04-30 01:12:12,449 UTC   1949 [cmn.subprocs.readers: 189] DEB: [C2FA] __anext__(): Remove reader (268)
+2026-04-30 01:12:12,449 UTC   1949 [dnf_repoquery       : 218] DEB: [C2FA] Finished reading output
+2026-04-30 01:12:12,450 UTC   1949 [dnf_repoquery       : 466] INF: [C2FA] Subprocess completed successfully
+2026-04-30 01:12:12,450 UTC   1949 [dnf_repoquery       : 267] DEB: [C2FA] Removing operation
+2026-04-30 01:12:12,450 UTC   1949 [cmn.subprocs.readers: 349] DEB: [C2FA] Stopped
+2026-04-30 01:12:12,451 UTC   1949 [dnf_repoquery       : 270] DEB: [C2FA] Stopped stdout reader
+2026-04-30 01:12:12,451 UTC   1949 [dnf_repoquery       : 292] DEB: [C2FA] Waiting for clean up
+2026-04-30 01:12:12,451 UTC   1949 [dnf_repoquery       : 297] DEB: [C2FA] Cleaned up
+2026-04-30 01:12:12,453 UTC   1949 [dnf_repoquery       : 581] INF: [C2FA] Subprocess exited with success
+2026-04-30 01:12:12,454 UTC   1949 [pkgmgr.locks        :  98] DEB: No next future
+2026-04-30 01:12:12,454 UTC   1949 [dnf_repoquery       : 347] DEB: [dead(C2FA)] Finished repoquery with output: {PkgID(name='xr-foundation-xrd-control-plane', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0')}
+2026-04-30 01:12:12,454 UTC   1949 [cmn.cache           : 498] DEB: cache: 6: Caching result {PkgID(name='xr-apphosting', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-gil', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-bng-stubs', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-tunnel-ip', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-dhcp', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-linuxsecurity', arch='x...
+2026-04-30 01:12:12,459 UTC   1949 [cmn.cache           : 248] DEB: cache: 6: Creating cached result for fn: <function PkgQuery._ocplat_get_xr_mandatory_pkgs at 0x7f3b140c2f70>, args: (<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs: {}: {PkgID(name='xr-apphosting', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-gil', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-bng-stubs', arch='x86_64', version='25.2.1v1.0.0', release='1', epoch='0'), PkgID(name='xr-tunnel-ip', arch='x86_64'...
+2026-04-30 01:12:12,460 UTC   1949 [pkgmgr.rpm.cmds     : 472] DEB: cmd: ['rpm', '--showrc'], userid: iosxr
+2026-04-30 01:12:12,469 UTC   1949 [cmn.subprocs.exec   : 351] DEB: [51CC] ==================================================
+2026-04-30 01:12:12,469 UTC   1949 [cmn.subprocs.exec   : 352] INF: [51CC] Running ['rpm', '--showrc'] as user iosxr
+2026-04-30 01:12:12,482 UTC   1949 [cmn.subprocs.exec   : 379] DEB: [51CC] Subprocess PID: 4611
+2026-04-30 01:12:12,483 UTC   1949 [cmn.subprocs.readers: 125] DEB: [51CC] Add reader (268)
+2026-04-30 01:12:12,483 UTC   1949 [cmn.subprocs.readers: 125] DEB: [51CC] Add reader (281)
+2026-04-30 01:12:12,528 UTC   1949 [cmn.subprocs.readers: 189] DEB: [51CC] __anext__(): Remove reader (281)
+2026-04-30 01:12:12,528 UTC   1949 [cmn.subprocs.exec   : 218] DEB: [51CC] Finished reading output
+2026-04-30 01:12:12,529 UTC   1949 [cmn.subprocs.readers: 189] DEB: [51CC] __anext__(): Remove reader (268)
+2026-04-30 01:12:12,529 UTC   1949 [cmn.subprocs.exec   : 218] DEB: [51CC] Finished reading output
+2026-04-30 01:12:12,529 UTC   1949 [cmn.subprocs.exec   : 466] INF: [51CC] Subprocess completed successfully
+2026-04-30 01:12:12,530 UTC   1949 [cmn.subprocs.exec   : 267] DEB: [51CC] Removing operation
+2026-04-30 01:12:12,530 UTC   1949 [cmn.subprocs.readers: 349] DEB: [51CC] Stopped
+2026-04-30 01:12:12,530 UTC   1949 [cmn.subprocs.exec   : 270] DEB: [51CC] Stopped stdout reader
+2026-04-30 01:12:12,531 UTC   1949 [cmn.subprocs.readers: 349] DEB: [51CC] Stopped
+2026-04-30 01:12:12,531 UTC   1949 [cmn.subprocs.exec   : 274] DEB: [51CC] Stopped stderr reader
+2026-04-30 01:12:12,531 UTC   1949 [cmn.subprocs.exec   : 292] DEB: [51CC] Waiting for clean up
+2026-04-30 01:12:12,531 UTC   1949 [cmn.subprocs.exec   : 297] DEB: [51CC] Cleaned up
+2026-04-30 01:12:12,534 UTC   1949 [orch.repo.pkg_utils : 480] DEB: Compatible architectures are: {'noarch', 'wrlsdk_x86', 'x86_64', 'xr_s_x86', 'corei7_64'}
+2026-04-30 01:12:12,564 UTC   1949 [cmn.cache           : 498] DEB: cache: 6: Caching result {} for <function PkgQuery._ocplat_get_packages_inner at 0x7f3b140c2d30>(args: (<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs: {'node': '0_RP0_CPU0'})
+2026-04-30 01:12:12,564 UTC   1949 [cmn.cache           : 248] DEB: cache: 6: Creating cached result for fn: <function PkgQuery._ocplat_get_packages_inner at 0x7f3b140c2d30>, args: (<iosxr.install._orch._oper._pkgs.PkgQuery object at 0x7f3afffb3cd0>,), kwargs: {'node': '0_RP0_CPU0'}: {}
+2026-04-30 01:12:13,567 UTC   1949 [orch.config         : 104] INF: Error (Failed to get done: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory') when reading startup done path. Treating as if done value=False
+2026-04-30 01:12:13,567 UTC   1949 [orch.oper.fprint    : 208] INF: Final band of processes ready, waiting for cfgmgr done notification
+2026-04-30 01:12:13,567 UTC   1949 [orch.config         : 152] DEB: Registering callback function <bound method Cache._cfgmgr_startup_done_cb of <iosxr.install._orch._oper._fingerprint.Cache object at 0x7f3aff3a6700>> to call once cfgmgr startup is done.
+2026-04-30 01:12:23,814 UTC   1949 [orch.config         : 166] DEB: cfgmgr startup ntfn: incoming event is <Event(name='done',event=3,type=1,oldval=None,newval=1,seq=1,item=1/1)>
+2026-04-30 01:12:23,816 UTC   1949 [orch.config         : 172] INF: Received notification for cfgmgr startup done, calling 2 registered callbacks
+2026-04-30 01:12:23,816 UTC   1949 [orch.oper.fprint    : 223] INF: Cfgmgr startup done
+2026-04-30 01:12:23,820 UTC   1949 [orch.oper.fprint    : 253] INF: Fingerprints not enabled, not generating cache
+2026-04-30 01:12:23,821 UTC   1949 [orch.oper.fprint    :1106] INF: Changing fingerprint cache status from None to <_InternalCacheStatus.UP_TO_DATE: 0>
+2026-04-30 01:12:23,821 UTC   1949 [orch.oper.fprint    : 264] INF: Marking startup of fingerprint cache as done
+2026-04-30 01:12:23,821 UTC   1949 [orch.config         : 366] DEB: Cfgmgr startup done, config resync will be performed
+2026-04-30 01:12:23,822 UTC   1949 [orch.config         : 385] INF: Cleaned up /var/opt/cisco/iosxr/install/giso_cfg_marker
+2026-04-30 01:12:23,822 UTC   1949 [orch.config         : 385] INF: Cleaned up /var/xr/config/config/running/alternate_cfg/giso.cfg
+2026-04-30 01:12:23,822 UTC   1949 [orch.repo.user      :  82] DEB: There are 0 stale IDs: 
+2026-04-30 01:12:23,823 UTC   1949 [orch.config         : 403] DEB: Repository configuration resync complete

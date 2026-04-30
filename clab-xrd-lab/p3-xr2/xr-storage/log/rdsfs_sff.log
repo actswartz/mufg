@@ -1,0 +1,39 @@
+ifindex_server : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/etc dir:/misc/config/snmp/ mnt_pt_came:/etc/snmp/
+ifindex_server : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/snmp/ mnt_pt:/etc/snmp
+ifindex_server : rdsfs_mount:135 returing rdsfs rc:0
+locald_DLRSC : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/aaa dir:/misc/config/aaa/__lr__/ mnt_pt_came:/aaa/__lr__/
+locald_DLRSC : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/aaa/__lr__/ mnt_pt:/aaa/__lr__
+locald_DLRSC : rdsfs_mount:135 returing rdsfs rc:0
+cfgmgr-rp : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/cfs/cfg dir:/misc/config/config/running/alternate_cfg mnt_pt_came:/cfs/cfg/alt_cfg
+cfgmgr-rp : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/config/running/alternate_cfg mnt_pt:/cfs/cfg/alt_cfg
+cfgmgr-rp : rdsfs_mount:135 returing rdsfs rc:0
+cepki : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/etc dir:/disk0:/crypto/ mnt_pt_came:/etc/secure/
+cepki : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/disk0:/crypto/ mnt_pt:/etc/secure
+cepki : rdsfs_mount:135 returing rdsfs rc:0
+cepki : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/etc dir:/misc/config/cepki/ mnt_pt_came:/etc/cepki/
+cepki : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/cepki/ mnt_pt:/etc/cepki
+cepki : rdsfs_mount:135 returing rdsfs rc:0
+cepki : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/etc dir:/misc/config/crypto_tam/ mnt_pt_came:/etc/crypto_tam/
+cepki : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/crypto_tam/ mnt_pt:/etc/crypto_tam
+cepki : rdsfs_mount:135 returing rdsfs rc:0
+eem_policy_dir : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/etc dir:/misc/config/eem_rdsfs mnt_pt_came:/etc/eem_rdsfs
+eem_policy_dir : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/eem_rdsfs mnt_pt:/etc/eem_rdsfs
+eem_policy_dir : rdsfs_mount:135 returing rdsfs rc:0
+smartlicserver : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/etc dir:/misc/disk1/.sppdc_new mnt_pt_came:/etc/sl
+smartlicserver : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/disk1/.sppdc_new mnt_pt:/etc/sl
+smartlicserver : rdsfs_mount:135 returing rdsfs rc:0
+cfgmgr-rp : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/cfs/cfg dir:/misc/config/config/lr mnt_pt_came:/cfs/cfg/lr
+cfgmgr-rp : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/config/lr mnt_pt:/cfs/cfg/lr
+cfgmgr-rp : rdsfs_mount:135 returing rdsfs rc:0
+cfgmgr-rp : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/cfs/cfg dir:/misc/config/config/running/alternate_cfg mnt_pt_came:/cfs/cfg/alt_cfg
+cfgmgr-rp : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/config/running/alternate_cfg mnt_pt:/cfs/cfg/alt_cfg
+cfgmgr-rp : rdsfs_mount:135 returing rdsfs rc:0
+plat_sl_client : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/etc dir:/misc/disk1/.sppdc_new mnt_pt_came:/etc/sl
+plat_sl_client : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/disk1/.sppdc_new mnt_pt:/etc/sl
+plat_sl_client : rdsfs_mount:135 returing rdsfs rc:0
+ssh_conf_proxy : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/mnt/rdsfs dir:/misc/config/ciscossh/ mnt_pt_came:/mnt/rdsfs/ciscossh/
+ssh_conf_proxy : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/ciscossh/ mnt_pt:/mnt/rdsfs/ciscossh
+ssh_conf_proxy : rdsfs_mount:135 returing rdsfs rc:0
+emsd : rdsfs_mount:97 creating rdsfs mkdir for mnt_pt:/mnt/rdsfs/ems dir:/misc/config/ems/gnsi/ mnt_pt_came:/mnt/rdsfs/ems/gnsi/
+emsd : rdsfs_mount:120 creating rdsfs softlink ln -sfT dir:/misc/config/ems/gnsi/ mnt_pt:/mnt/rdsfs/ems/gnsi
+emsd : rdsfs_mount:135 returing rdsfs rc:0

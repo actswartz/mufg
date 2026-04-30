@@ -1,0 +1,7 @@
+01:10:56.749099 none[307] commands/toolcontext.c:393  Logging initialised at Thu Apr 30 01:10:56 2026
+01:10:56.749424 none[307] commands/toolcontext.c:583  Set umask from 0022 to 0077
+01:10:56.757269 vgchange[307] device_mapper/libdm-file.c:46  Creating directory "/run/lock/lvm"
+01:11:00.165691 vgchange[307] toollib.c:2288  No volume groups found.
+01:11:25.348576 none[1046] commands/toolcontext.c:393  Logging initialised at Thu Apr 30 01:11:25 2026
+01:11:25.349279 none[1046] commands/toolcontext.c:583  Set umask from 0022 to 0077
+01:11:25.368689 vgcfgbackup[1046] toollib.c:2288  No volume groups found.

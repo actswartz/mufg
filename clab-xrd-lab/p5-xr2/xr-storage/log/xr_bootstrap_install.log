@@ -1,0 +1,10 @@
+2025-06-15 11:48:04.747 UTC: xrinstall: Performing preparation prior to installing RPMs
+2025-06-15 11:48:04.968 UTC: xrinstall: Found card-PID package: xr-identifier-xrd-cp-c-01
+2025-06-15 11:48:04.972 UTC: xrinstall: Preparing IMA labeling environment
+2025-06-15 11:48:11.864 UTC: xrinstall: Installing RPMs
+2025-06-15 11:49:04.460 UTC: xrinstall: Performing post-install scripts after installing 3P RPMs
+2025-06-15 11:49:04.464 UTC: xrinstall: Running post-install scripts
+2025-06-15 11:58:48.488 UTC: xrinstall: Installing RPMs
+2025-06-15 11:58:58.365 UTC: xrinstall: Running XR post-install scripts
+enabling systemd service xr_startup
+Created symlink /mnt/disk/etc/systemd/system/ios-xr.target.requires/xr_startup.service → /etc/systemd/system/xr_startup.service.

@@ -1,0 +1,4 @@
+2026-04-30T01:11:31.417238+00:00 p5-xr1 kernel: [1482784.044177] device Gi0-0-0-0 entered promiscuous mode
+2026-04-30T01:11:32.956003+00:00 p5-xr1 kernel: [1482785.584584] device eth0 entered promiscuous mode
+2026-04-30T01:11:32.965192+00:00 p5-xr1 kernel: [1482785.593929] device Gi0-0-0-0 entered promiscuous mode
+2026-04-30T01:11:34.801246+00:00 p5-xr1 kernel: [1482787.426999] device eth0 entered promiscuous mode

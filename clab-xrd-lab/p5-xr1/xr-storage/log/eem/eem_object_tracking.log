@@ -1,0 +1,12 @@
+04/30 01:12:03.043 -781223040 gedl_publisher_register: 1866 In register publisher !! gedl_publisher_register: 04/30 01:12:03.043 -781223040 gedl_aipc_init: 1297 In gedl_aipc_init : publisher_name: OBJECT_TRACKING evm: 0x55fed01e5230 
+04/30 01:12:03.045 -781223040 gedl_publisher_register: 1904 gedl_publisher_register: initialize thread
+04/30 01:12:03.069 -781223040 gedl_send_ipc_cb: 993 gedl_send_ipc_cb: got IPC_NOTIFY_CONNECT - GED lib conn 1 
+04/30 01:12:03.069 -781223040 gedl_send_ipc_cb: 1011 calling publisher register for OBJECT_TRACKING 
+04/30 01:12:03.069 -781223040 gedl_aipc_send_publisher_register: 1758 gedl_aipc_send_publisher_register: msg_size 120 numEvents 1 
+04/30 01:12:03.069 -781223040 gedl_aipc_send_publisher_register: 1803 sending FH_GENERIC_MSG_REGISTER_PUBLISHER (OBJECT_TRACKING) to GED  
+04/30 01:12:03.071 -781223040 gedl_send_ipc_cb: 1023 gedl_send_ipc_cb: send register passed:0 publisher OBJECT_TRACKING 
+04/30 01:12:03.071 -781223040 gedl_send_ipc_cb: 1040 stateful event on ged restart OBJECT_TRACKING 
+04/30 01:12:03.071 -781223040 gedl_event_query_ged_restart: 795 event query on GED restart gedl_event_query_ged_restart 
+04/30 01:12:04.252 -781223040 gedl_send_ipc_cb: 1211 gedl_send_ipc_cb:got IPC_NOTIFY_INPUT_WAITING - GED lib conn 1 
+04/30 01:12:04.252 -781223040 gedl_process_msg_from_ged: 735 rcved FH_EVENT_RESYNC_END from GED specid 0 event 371  
+04/30 01:12:04.252 -781223040 gedl_process_msg_from_ged: 744 Event type is FH_EVENT_GENERIC_FIRST, Will call resync end callback for all sub event types

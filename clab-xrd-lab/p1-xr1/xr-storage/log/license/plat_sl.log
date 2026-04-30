@@ -1,0 +1,54 @@
+2026-04-30 01:12:04.964530 Sync: create_directory():160, directory: /misc/disk1/.sppdc created
+2026-04-30 01:12:04.967648 Sync: create_directory():160, directory: /misc/disk1/.sppdc_new created
+2026-04-30 01:12:04.967748 Sync: ROLE_PRIMARY. setting master flags
+2026-04-30 01:12:04.967762 Sync: Entering plat_sl_mount for mounting /misc/disk1/.sppdc_new
+2026-04-30 01:12:09.451952 FCM Variant is FCM 1.0 
+2026-04-30 01:12:09.483383 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:09.483525 Sync: ROLE_PRIMARY. setting master flags
+2026-04-30 01:12:09.483538 Sync: Entering plat_sl_mount for mounting /misc/disk1/.sppdc_new
+2026-04-30 01:12:09.908585 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:09.908610 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:09.908643 SIAERROR: Failed to open file /etc/sl/platinfo.data rc=2
+2026-04-30 01:12:09.908654 SIALOG: Setting first start time.
+2026-04-30 01:12:09.908667 SIALOG: Locked by thread 140292380514048
+2026-04-30 01:12:09.908732 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:09.908790 SIALOG: Wrote 6
+2026-04-30 01:12:26.721829 FCM Variant is FCM 1.0 
+2026-04-30 01:12:26.722710 SIALOG: Entering plat_sl_update_upgrade_license_status
+2026-04-30 01:12:26.722733 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:26.722813 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:26.722825 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:26.722942 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 6
+2026-04-30 01:12:26.722975 SIALOG: Updating the upgrade license status.
+2026-04-30 01:12:26.722986 SIALOG: Locked by thread 140292364171008
+2026-04-30 01:12:26.723051 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:26.723105 SIALOG: Wrote 8
+2026-04-30 01:12:26.723205 SIALOG: Entering plat_sl_update_node_deactivation_status
+2026-04-30 01:12:26.723219 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:26.723281 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:26.723292 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:26.723310 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 8
+2026-04-30 01:12:26.723326 SIALOG: Updating the Node Deactivation status.
+2026-04-30 01:12:26.723335 SIALOG: Locked by thread 140292364171008
+2026-04-30 01:12:26.723390 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:26.723427 SIALOG: Wrote 10
+2026-04-30 01:12:26.724491 SIALOG: Entering plat_sl_update_validate_collection_time_in_ts
+2026-04-30 01:12:26.724511 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:26.724576 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:26.724588 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:26.724607 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 10
+2026-04-30 01:12:26.724623 SIALOG: No sia reason 
+2026-04-30 01:12:26.724632 SIALOG: Updating collection time
+2026-04-30 01:12:26.724639 SIALOG: Locked by thread 140292364171008
+2026-04-30 01:12:26.724699 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:26.724740 SIALOG: Wrote 16
+2026-04-30 01:12:26.726623 SIALOG: Entering plat_sl_get_ooc_status_from_ts
+2026-04-30 01:12:26.726709 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:26.726720 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:26.726776 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:12:26.726785 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:12:26.726806 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 16
+2026-04-30 01:12:26.726839 SIALOG: Reading mdata file /etc/sl/platinfo.data size 16 16
+2026-04-30 01:12:26.726861 SIALOG: Upgrade license field exist
+2026-04-30 01:12:26.726871 SIALOG: SL node deactivation field exists
+2026-04-30 01:12:26.726878 SIALOG: is_node_deactivated = 0

@@ -1,0 +1,552 @@
+{
+  "name": "xrd-lab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "xrd-mgmt",
+        "bridge": "br-1248e05007e5",
+        "ipv4-subnet": "172.30.30.0/24",
+        "ipv4-gw": "172.30.30.1",
+        "ipv6-gw": "fe80::42:7aff:fe57:4c96",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOJ3tKFSSQUMMyqaWf9X6e5uxlZ7zjrYqZmKQAW8YUze"],
+  "nodes": {
+    "p1-xr1": {
+      "index": "0",
+      "shortname": "p1-xr1",
+      "longname": "clab-xrd-lab-p1-xr1",
+      "fqdn": "p1-xr1.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p1-xr1",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.11",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p1-xr1",
+        "clab-node-longname": "clab-xrd-lab-p1-xr1",
+        "clab-node-name": "p1-xr1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31011,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31011,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p1-xr2": {
+      "index": "1",
+      "shortname": "p1-xr2",
+      "longname": "clab-xrd-lab-p1-xr2",
+      "fqdn": "p1-xr2.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p1-xr2",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p1-xr2",
+        "clab-node-longname": "clab-xrd-lab-p1-xr2",
+        "clab-node-name": "p1-xr2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31012,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31012,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p2-xr1": {
+      "index": "2",
+      "shortname": "p2-xr1",
+      "longname": "clab-xrd-lab-p2-xr1",
+      "fqdn": "p2-xr1.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p2-xr1",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.21",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p2-xr1",
+        "clab-node-longname": "clab-xrd-lab-p2-xr1",
+        "clab-node-name": "p2-xr1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31021,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31021,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p2-xr2": {
+      "index": "3",
+      "shortname": "p2-xr2",
+      "longname": "clab-xrd-lab-p2-xr2",
+      "fqdn": "p2-xr2.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p2-xr2",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.22",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p2-xr2",
+        "clab-node-longname": "clab-xrd-lab-p2-xr2",
+        "clab-node-name": "p2-xr2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31022,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31022,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p3-xr1": {
+      "index": "4",
+      "shortname": "p3-xr1",
+      "longname": "clab-xrd-lab-p3-xr1",
+      "fqdn": "p3-xr1.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p3-xr1",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.31",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p3-xr1",
+        "clab-node-longname": "clab-xrd-lab-p3-xr1",
+        "clab-node-name": "p3-xr1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31031,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31031,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p3-xr2": {
+      "index": "5",
+      "shortname": "p3-xr2",
+      "longname": "clab-xrd-lab-p3-xr2",
+      "fqdn": "p3-xr2.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p3-xr2",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.32",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p3-xr2",
+        "clab-node-longname": "clab-xrd-lab-p3-xr2",
+        "clab-node-name": "p3-xr2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31032,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31032,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p4-xr1": {
+      "index": "6",
+      "shortname": "p4-xr1",
+      "longname": "clab-xrd-lab-p4-xr1",
+      "fqdn": "p4-xr1.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p4-xr1",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.41",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p4-xr1",
+        "clab-node-longname": "clab-xrd-lab-p4-xr1",
+        "clab-node-name": "p4-xr1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31041,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31041,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p4-xr2": {
+      "index": "7",
+      "shortname": "p4-xr2",
+      "longname": "clab-xrd-lab-p4-xr2",
+      "fqdn": "p4-xr2.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p4-xr2",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.42",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p4-xr2",
+        "clab-node-longname": "clab-xrd-lab-p4-xr2",
+        "clab-node-name": "p4-xr2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31042,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31042,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p5-xr1": {
+      "index": "8",
+      "shortname": "p5-xr1",
+      "longname": "clab-xrd-lab-p5-xr1",
+      "fqdn": "p5-xr1.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p5-xr1",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.51",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p5-xr1",
+        "clab-node-longname": "clab-xrd-lab-p5-xr1",
+        "clab-node-name": "p5-xr1",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31051,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31051,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "p5-xr2": {
+      "index": "9",
+      "shortname": "p5-xr2",
+      "longname": "clab-xrd-lab-p5-xr2",
+      "fqdn": "p5-xr2.xrd-lab.io",
+      "group": "",
+      "labdir": "/root/dlr/clab-xrd-lab/p5-xr2",
+      "kind": "cisco_xrd",
+      "image": "sbezverk/xrd-control-plane:25.2.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.30.30.52",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-git-branch": "main",
+        "clab-git-hash": "6245d0d",
+        "clab-mgmt-net-bridge": "br-1248e05007e5",
+        "clab-node-group": "",
+        "clab-node-kind": "cisco_xrd",
+        "clab-node-lab-dir": "/root/dlr/clab-xrd-lab/p5-xr2",
+        "clab-node-longname": "clab-xrd-lab-p5-xr2",
+        "clab-node-name": "p5-xr2",
+        "clab-node-type": "",
+        "clab-owner": "root",
+        "clab-topo-file": "/root/dlr/xrd_lab.clab.yml",
+        "containerlab": "xrd-lab"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "0.0.0.0",
+          "host-port": 31052,
+          "port": 22,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "::",
+          "host-port": 31052,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "p1-xr1",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:30:94:6c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p1-xr2",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:2e:ae:e6",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p2-xr1",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:0d:7e:91",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p2-xr2",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:26:42:8c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p3-xr1",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:44:1d:2a",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p3-xr2",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:a6:47:fe",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p4-xr1",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:17:1a:98",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p4-xr2",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:f0:df:d1",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "p5-xr1",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:41:1c:27",
+          "peer": "z"
+        },
+        "z": {
+          "node": "p5-xr2",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:6d:9b:79",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

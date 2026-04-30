@@ -1,0 +1,8 @@
+'2026-04-30 01:12:11,377 INFO oper.init MADE IT TO OPER INIT'
+'2026-04-30 01:12:11,463 INFO oper.exec Beginning execution registration...'
+'2026-04-30 01:12:11,541 DEBUG script_db Script DB directory /run/lock/script-mgmt not present. Creating'
+'2026-04-30 01:12:11,690 INFO oper.exec Execution registration complete'
+'2026-04-30 01:12:11,690 INFO oper.status Beginning status registration...'
+'2026-04-30 01:12:11,714 INFO oper.status Complete status registration'
+'2026-04-30 01:12:11,714 INFO oper.edm Beginning ScriptMgmtEdm registration...'
+'2026-04-30 01:12:11,736 INFO oper.edm Complete ScriptMgmtEdm registration'

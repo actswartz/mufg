@@ -1,0 +1,266 @@
+01:11:08 Current date: 2026-04-30T01:11:08+0000
+01:11:08 lr_download: Target: file:///etc/dnf/dnf.conf (-)
+01:11:08 Selecting mirror for: file:///etc/dnf/dnf.conf
+01:11:08 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:08 lr_download: Downloading started
+01:11:08 Transfer finished: file:///etc/dnf/dnf.conf (Effective url: file:///etc/dnf/dnf.conf)
+01:11:36 Current date: 2026-04-30T01:11:36+0000
+01:11:37 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:37 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:37 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:37 lr_download: Downloading started
+01:11:37 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:37 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:37 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:37 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:37 lr_download: Downloading started
+01:11:37 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:37 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:37 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:37 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:37 lr_download: Downloading started
+01:11:37 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:37 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:37 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:37 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:37 lr_download: Downloading started
+01:11:37 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:37 Current date: 2026-04-30T01:11:37+0000
+01:11:37 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:37 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:37 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:37 lr_download: Downloading started
+01:11:37 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:37 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:37 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:37 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:37 lr_download: Downloading started
+01:11:37 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:37 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:37 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:37 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:37 lr_download: Downloading started
+01:11:37 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:37 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:37 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:37 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:37 lr_download: Downloading started
+01:11:37 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:38 Current date: 2026-04-30T01:11:38+0000
+01:11:38 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:38 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:38 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:38 lr_download: Downloading started
+01:11:38 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:38 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:38 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:38 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:38 lr_download: Downloading started
+01:11:38 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:38 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:38 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:38 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:38 lr_download: Downloading started
+01:11:38 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:38 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:38 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:38 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:38 lr_download: Downloading started
+01:11:38 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:38 Current date: 2026-04-30T01:11:38+0000
+01:11:38 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:38 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:38 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:38 lr_download: Downloading started
+01:11:38 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:38 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:38 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:38 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:38 lr_download: Downloading started
+01:11:38 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:38 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:38 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:38 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:38 lr_download: Downloading started
+01:11:38 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:38 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:38 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:38 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:38 lr_download: Downloading started
+01:11:38 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:39 Current date: 2026-04-30T01:11:39+0000
+01:11:39 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:39 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:39 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:39 lr_download: Downloading started
+01:11:39 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:39 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:39 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:39 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:39 lr_download: Downloading started
+01:11:39 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:39 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:39 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:39 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:39 lr_download: Downloading started
+01:11:39 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:39 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:39 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:39 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:39 lr_download: Downloading started
+01:11:39 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:40 Current date: 2026-04-30T01:11:40+0000
+01:11:40 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:40 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:40 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:40 lr_download: Downloading started
+01:11:40 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:40 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:40 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:40 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:40 lr_download: Downloading started
+01:11:40 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:40 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:40 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:40 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:40 lr_download: Downloading started
+01:11:40 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:40 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:40 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:40 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:40 lr_download: Downloading started
+01:11:40 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:40 Current date: 2026-04-30T01:11:40+0000
+01:11:41 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:41 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:41 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:41 lr_download: Downloading started
+01:11:41 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:41 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:41 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:41 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:41 lr_download: Downloading started
+01:11:41 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:41 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:41 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:41 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:41 lr_download: Downloading started
+01:11:41 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:41 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:41 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:41 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:41 lr_download: Downloading started
+01:11:41 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:44 Current date: 2026-04-30T01:11:44+0000
+01:11:44 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:44 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:44 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:44 lr_download: Downloading started
+01:11:44 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:44 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:44 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:44 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:44 lr_download: Downloading started
+01:11:44 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:44 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:44 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:44 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:44 lr_download: Downloading started
+01:11:44 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:44 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:44 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:44 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:44 lr_download: Downloading started
+01:11:44 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:45 lr_handle_perform: Using dir: /var/volatile/cache/dnf/iosxr_install_internal-f956ac62537bd733
+01:11:45 lr_handle_perform: Using own SIGINT handler
+01:11:45 lr_handle_prepare_internal_mirrorlist: Preparing internal mirrorlist
+01:11:45 lr_handle_prepare_internal_mirrorlist: Finalizing internal mirrorlist
+01:11:45 lr_handle_prepare_internal_mirrorlist: Finalizing mirrors reported via LRI_MIRRORS
+01:11:45 lr_handle_perform: Downloading/Locating yum repo
+01:11:45 lr_yum_use_local: Locating repo..
+01:11:45 lr_yum_use_local_load_base: open(/var/volatile/cache/dnf/iosxr_install_internal-f956ac62537bd733/repodata/repomd.xml): No such file or directory
+01:11:45 lr_handle_perform: Restoring an old SIGINT handler
+01:11:45 lr_handle_perform: Using dir: /tmp/dnf-piwk0s_y
+01:11:45 lr_handle_perform: Using own SIGINT handler
+01:11:45 lr_handle_prepare_internal_mirrorlist: Preparing internal mirrorlist
+01:11:45 lr_handle_prepare_internal_mirrorlist: Finalizing internal mirrorlist
+01:11:45 lr_handle_prepare_internal_mirrorlist: Finalizing mirrors reported via LRI_MIRRORS
+01:11:45 lr_handle_perform: Downloading/Locating yum repo
+01:11:45 lr_yum_download_remote: Downloading/Copying repo..
+01:11:45 lr_yum_download_repomd: Downloading repomd.xml via mirrorlist
+01:11:45 lr_download: Target: repodata/repomd.xml (-)
+01:11:45 lr_prepare_lrmirrors: Preparing internal mirror list for handle id: 0x55f0e8f125d0
+01:11:45 lr_prepare_lrmirrors: Mirror: file:///var/opt/cisco/iosxr/install/mirror/iosxr_install_internal_repo
+01:11:45 Selecting mirror for: repodata/repomd.xml
+01:11:45 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 10): Operation not supported
+01:11:45 lr_download: Downloading started
+01:11:45 Transfer finished: repodata/repomd.xml (Effective url: file:///var/opt/cisco/iosxr/install/mirror/iosxr_install_internal_repo/repodata/repomd.xml)
+01:11:45 check_transfer_statuses: Ignore error - Try another mirror
+01:11:45 Selecting mirror for: repodata/repomd.xml
+01:11:45 select_suitable_mirror: All mirrors were tried without success
+01:11:45 lr_yum_download_repomd: repomd.xml download was unsuccessful
+01:11:45 lr_handle_perform: Restoring an old SIGINT handler
+01:11:50 Current date: 2026-04-30T01:11:50+0000
+01:11:50 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:50 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:50 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:50 lr_download: Downloading started
+01:11:50 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:50 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:50 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:50 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:50 lr_download: Downloading started
+01:11:50 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:50 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:50 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:50 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:50 lr_download: Downloading started
+01:11:50 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:50 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:50 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:50 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:50 lr_download: Downloading started
+01:11:50 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:52 Current date: 2026-04-30T01:11:52+0000
+01:11:52 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:52 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:52 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:52 lr_download: Downloading started
+01:11:52 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:52 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:52 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:52 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:52 lr_download: Downloading started
+01:11:52 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:52 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:52 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:52 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:52 lr_download: Downloading started
+01:11:52 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:52 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:52 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:52 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:52 lr_download: Downloading started
+01:11:52 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)
+01:11:57 Current date: 2026-04-30T01:11:57+0000
+01:11:57 lr_download: Target: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (-)
+01:11:57 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch
+01:11:57 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:57 lr_download: Downloading started
+01:11:57 Transfer finished: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch (Effective url: file:///etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch)
+01:11:57 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (-)
+01:11:57 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo
+01:11:57 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:57 lr_download: Downloading started
+01:11:57 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/iosxr_install_internal.repo)
+01:11:57 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (-)
+01:11:57 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo
+01:11:57 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:57 lr_download: Downloading started
+01:11:57 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/owner_install_internal.repo)
+01:11:57 lr_download: Target: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (-)
+01:11:57 Selecting mirror for: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo
+01:11:57 add_librepo_xattr: Cannot set xattr user.Librepo.DownloadInProgress (fd: 9): Operation not supported
+01:11:57 lr_download: Downloading started
+01:11:57 Transfer finished: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo (Effective url: file:///etc/opt/cisco/iosxr/install/.repos/partner_install_internal.repo)

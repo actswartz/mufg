@@ -1,0 +1,18 @@
+2026-04-30T01:10:57.479460+00:00 p2-xr2 lvm[308]: Logging initialised at Thu Apr 30 01:10:55 2026
+2026-04-30T01:10:57.479492+00:00 p2-xr2 lvm[308]: Set umask from 0022 to 0077
+2026-04-30T01:10:57.479500+00:00 p2-xr2 lvm[308]: Creating directory "/run/lock/lvm"
+2026-04-30T01:10:57.479647+00:00 p2-xr2 lvm[308]: No volume groups found.
+2026-04-30T01:10:57.472055+00:00 p2-xr2 rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2002.0]
+2026-04-30T01:10:57.472139+00:00 p2-xr2 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="438" x-info="https://www.rsyslog.com"] start
+2026-04-30T01:11:25.072543+00:00 p2-xr2 lvm[1086]: Logging initialised at Thu Apr 30 01:11:25 2026
+2026-04-30T01:11:25.074332+00:00 p2-xr2 lvm[1086]: Set umask from 0022 to 0077
+2026-04-30T01:11:25.103626+00:00 p2-xr2 lvm[1086]: No volume groups found.
+2026-04-30T01:11:25.157845+00:00 p2-xr2 xr_file_monitor-[info]: File monitoring started. Unable to create DR [/mnt/dr_part] archive & backup folders!
+2026-04-30T01:11:25.162654+00:00 p2-xr2 xr_file_monitor-[info]: Checking for stale password lock files
+2026-04-30T01:11:28.024845+00:00 p2-xr2 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="438" x-info="https://www.rsyslog.com"] exiting on signal 15.
+2026-04-30T01:11:28.033493+00:00 p2-xr2 rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2002.0]
+2026-04-30T01:11:28.033566+00:00 p2-xr2 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="1522" x-info="https://www.rsyslog.com"] start
+2026-04-30T01:12:18.027307+00:00 p2-xr2 sshd: (sshd): Socket created, sockfd = 3
+2026-04-30T01:12:18.027527+00:00 p2-xr2 sshd: (sshd): Successfully connected to server, sockfd = 3
+2026-04-30T01:12:19.060763+00:00 p2-xr2 sshd: (sshd): Socket created, sockfd = 3
+2026-04-30T01:12:19.060934+00:00 p2-xr2 sshd: (sshd): Successfully connected to server, sockfd = 3

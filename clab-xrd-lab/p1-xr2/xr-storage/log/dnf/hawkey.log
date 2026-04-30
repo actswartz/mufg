@@ -1,0 +1,27 @@
+INFO Apr-30 01:11:22 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:22 fetching rpmdb
+INFO Apr-30 01:11:38 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:38 fetching rpmdb
+INFO Apr-30 01:11:38 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:38 fetching rpmdb
+INFO Apr-30 01:11:39 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:39 fetching rpmdb
+INFO Apr-30 01:11:40 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:40 fetching rpmdb
+INFO Apr-30 01:11:41 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:41 fetching rpmdb
+INFO Apr-30 01:11:44 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:44 fetching rpmdb
+INFO Apr-30 01:11:44 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:46 fetching rpmdb
+INFO Apr-30 01:11:58 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:11:58 fetching rpmdb
+INFO Apr-30 01:11:59 Downloading: file:///var/opt/cisco/iosxr/install/mirror/iosxr_install_internal_repo/repodata/repomd.xml
+INFO Apr-30 01:11:59 Error during transfer: Curl error (37): Couldn't read a file:// file for file:///var/opt/cisco/iosxr/install/mirror/iosxr_install_internal_repo/repodata/repomd.xml [Couldn't open file /var/opt/cisco/iosxr/install/mirror/iosxr_install_internal_repo/repodata/repomd.xml]
+INFO Apr-30 01:11:59 Error while downloading: Cannot download repodata/repomd.xml: All mirrors were tried
+INFO Apr-30 01:12:03 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:12:03 fetching rpmdb
+INFO Apr-30 01:12:06 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:12:06 fetching rpmdb
+INFO Apr-30 01:12:11 === Started libdnf-0.11.1 ===
+DEBUG Apr-30 01:12:11 fetching rpmdb

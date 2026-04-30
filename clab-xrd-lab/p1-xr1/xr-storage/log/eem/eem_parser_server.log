@@ -1,0 +1,11 @@
+04/30 01:11:33.693 -1640303424 gedl_publisher_register: 1866 In register publisher !! gedl_publisher_register: 04/30 01:11:33.693 -1640303424 gedl_aipc_init: 1297 In gedl_aipc_init : publisher_name: parser evm: (nil) 
+04/30 01:11:33.710 -1640303424 gedl_publisher_register: 1904 gedl_publisher_register: initialize thread
+04/30 01:12:03.074 -1652316416 gedl_send_ipc_cb: 993 gedl_send_ipc_cb: got IPC_NOTIFY_CONNECT - GED lib conn 0 
+04/30 01:12:03.074 -1652316416 gedl_send_ipc_cb: 1011 calling publisher register for parser 
+04/30 01:12:03.074 -1652316416 gedl_aipc_send_publisher_register: 1758 gedl_aipc_send_publisher_register: msg_size 120 numEvents 1 
+04/30 01:12:03.075 -1652316416 gedl_aipc_send_publisher_register: 1803 sending FH_GENERIC_MSG_REGISTER_PUBLISHER (parser) to GED  
+04/30 01:12:03.075 -1652316416 gedl_send_ipc_cb: 1023 gedl_send_ipc_cb: send register passed:0 publisher parser 
+04/30 01:12:03.075 -1652316416 gedl_send_ipc_cb: 1046 unstateful event on ged restart parser 
+04/30 01:12:04.598 -1652316416 gedl_send_ipc_cb: 1211 gedl_send_ipc_cb:got IPC_NOTIFY_INPUT_WAITING - GED lib conn 0 
+04/30 01:12:04.598 -1652316416 gedl_process_msg_from_ged: 735 rcved FH_EVENT_RESYNC_END from GED specid 0 event 371  
+04/30 01:12:04.598 -1652316416 gedl_process_msg_from_ged: 744 Event type is FH_EVENT_GENERIC_FIRST, Will call resync end callback for all sub event types

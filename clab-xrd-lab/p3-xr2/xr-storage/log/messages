@@ -1,0 +1,20 @@
+2026-04-30T01:10:57.264406+00:00 p3-xr2 lvm[307]: Logging initialised at Thu Apr 30 01:10:54 2026
+2026-04-30T01:10:57.264438+00:00 p3-xr2 lvm[307]: Set umask from 0022 to 0077
+2026-04-30T01:10:57.264446+00:00 p3-xr2 lvm[307]: Creating directory "/run/lock/lvm"
+2026-04-30T01:10:57.264541+00:00 p3-xr2 lvm[307]: No volume groups found.
+2026-04-30T01:10:57.274332+00:00 p3-xr2 rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2002.0]
+2026-04-30T01:10:57.274610+00:00 p3-xr2 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="437" x-info="https://www.rsyslog.com"] start
+2026-04-30T01:11:25.004157+00:00 p3-xr2 lvm[1085]: Logging initialised at Thu Apr 30 01:11:24 2026
+2026-04-30T01:11:25.004799+00:00 p3-xr2 lvm[1085]: Set umask from 0022 to 0077
+2026-04-30T01:11:25.026859+00:00 p3-xr2 lvm[1085]: No volume groups found.
+2026-04-30T01:11:25.123112+00:00 p3-xr2 xr_file_monitor-[info]: File monitoring started. Unable to create DR [/mnt/dr_part] archive & backup folders!
+2026-04-30T01:11:25.125876+00:00 p3-xr2 xr_file_monitor-[info]: Checking for stale password lock files
+2026-04-30T01:11:27.552162+00:00 p3-xr2 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="437" x-info="https://www.rsyslog.com"] exiting on signal 15.
+2026-04-30T01:11:27.618844+00:00 p3-xr2 rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2002.0]
+2026-04-30T01:11:27.618945+00:00 p3-xr2 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="1521" x-info="https://www.rsyslog.com"] start
+2026-04-30T01:11:31.457200+00:00 p3-xr2 kernel: [1482784.083181] device eth0 entered promiscuous mode
+2026-04-30T01:11:32.285238+00:00 p3-xr2 kernel: [1482784.910960] device Gi0-0-0-0 entered promiscuous mode
+2026-04-30T01:12:06.008741+00:00 p3-xr2 sshd: (sshd): Socket created, sockfd = 3
+2026-04-30T01:12:06.008943+00:00 p3-xr2 sshd: (sshd): Successfully connected to server, sockfd = 3
+2026-04-30T01:12:07.011148+00:00 p3-xr2 sshd: (sshd): Socket created, sockfd = 3
+2026-04-30T01:12:07.011250+00:00 p3-xr2 sshd: (sshd): Successfully connected to server, sockfd = 3

@@ -1,0 +1,14 @@
+2026-04-30 01:12:04,384   3359 [__main__     ] INF: -------------------------------------------------------------------------------
+2026-04-30 01:12:04,393   3359 [__main__     ] INF: Started
+2026-04-30 01:12:05,050   3359 [__main__     ] DEB: Started edm process
+2026-04-30 01:12:05,050   3359 [Oper         ] DEB: Received bootz request : register bags
+2026-04-30 01:12:05,852   3359 [Oper         ] DEB: Received bootz request: register bag completed success
+2026-04-30 01:12:05,991   3359 [Oper         ] DEB: Received bootz request: done normal edm
+2026-04-30 01:12:06,082   3359 [Oper         ] DEB: Received bootz request: done oc edm
+2026-04-30 01:12:06,083   3359 [__main__     ] DEB: done init oper
+2026-04-30 01:12:06,189   3359 [DeviceInfo   ] INF: standby, Failed to read slot number of RP. Error: 'XRd' detected the 'fatal' condition 'Invalid argument': Invalid argument
+2026-04-30 01:12:06,207   3359 [Config       ] INF: cleanup_and_stop_emsd action to be taken in case of any failure in bootz and emsd integration
+2026-04-30 01:12:06,207   3359 [__main__     ] DEB: done init sync
+2026-04-30 01:12:06,293   3359 [Verifier     ] INF: Verifier setup done
+2026-04-30 01:12:06,294   3359 [__main__     ] DEB: Entering event loop
+2026-04-30 01:12:06,294   3359 [_sync        ] INF: Standby state change: <StandbyState.DOWN: 0>

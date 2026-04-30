@@ -1,0 +1,74 @@
+2026-04-30T01:11:08.668518+00:00 p1-xr2 groupadd[438]: group added to /etc/group: name=iosxr, GID=1000
+2026-04-30T01:11:08.668523+00:00 p1-xr2 groupadd[438]: group added to /etc/gshadow: name=iosxr
+2026-04-30T01:11:08.668528+00:00 p1-xr2 groupadd[438]: new group: name=iosxr, GID=1000
+2026-04-30T01:11:08.668542+00:00 p1-xr2 useradd[444]: new user: name=iosxr, UID=993, GID=1000, home=/home/iosxr, shell=/bin/false, from=none
+2026-04-30T01:11:24.152086+00:00 p1-xr2 sshd[766]: Server listening on 0.0.0.0 port 22.
+2026-04-30T01:11:24.152207+00:00 p1-xr2 sshd[766]: Server listening on :: port 22.
+2026-04-30T01:11:50.268798+00:00 p1-xr2 groupadd[2831]: group added to /etc/group: name=cisco-support, GID=1001
+2026-04-30T01:11:50.270216+00:00 p1-xr2 groupadd[2831]: group added to /etc/gshadow: name=cisco-support
+2026-04-30T01:11:50.280689+00:00 p1-xr2 groupadd[2831]: new group: name=cisco-support, GID=1001
+2026-04-30T01:11:50.407408+00:00 p1-xr2 groupadd[2846]: group added to /etc/group: name=maintenance, GID=1002
+2026-04-30T01:11:50.413206+00:00 p1-xr2 groupadd[2846]: group added to /etc/gshadow: name=maintenance
+2026-04-30T01:11:50.429281+00:00 p1-xr2 groupadd[2846]: new group: name=maintenance, GID=1002
+2026-04-30T01:11:50.535992+00:00 p1-xr2 groupadd[2866]: group added to /etc/group: name=netadmin, GID=1003
+2026-04-30T01:11:50.538963+00:00 p1-xr2 groupadd[2866]: group added to /etc/gshadow: name=netadmin
+2026-04-30T01:11:50.637925+00:00 p1-xr2 groupadd[2866]: new group: name=netadmin, GID=1003
+2026-04-30T01:11:50.925694+00:00 p1-xr2 groupadd[2887]: group added to /etc/group: name=provisioning, GID=1004
+2026-04-30T01:11:51.055480+00:00 p1-xr2 groupadd[2887]: group added to /etc/gshadow: name=provisioning
+2026-04-30T01:11:51.059210+00:00 p1-xr2 groupadd[2887]: new group: name=provisioning, GID=1004
+2026-04-30T01:11:51.151834+00:00 p1-xr2 groupadd[2920]: group added to /etc/group: name=retrieve, GID=1005
+2026-04-30T01:11:51.208432+00:00 p1-xr2 groupadd[2920]: group added to /etc/gshadow: name=retrieve
+2026-04-30T01:11:51.236145+00:00 p1-xr2 groupadd[2920]: new group: name=retrieve, GID=1005
+2026-04-30T01:11:51.385316+00:00 p1-xr2 groupadd[2942]: group added to /etc/group: name=root-lr, GID=1006
+2026-04-30T01:11:51.397367+00:00 p1-xr2 groupadd[2942]: group added to /etc/gshadow: name=root-lr
+2026-04-30T01:11:51.400671+00:00 p1-xr2 groupadd[2942]: new group: name=root-lr, GID=1006
+2026-04-30T01:11:51.430597+00:00 p1-xr2 groupadd[2950]: group added to /etc/group: name=root-system, GID=1007
+2026-04-30T01:11:51.444678+00:00 p1-xr2 groupadd[2950]: group added to /etc/gshadow: name=root-system
+2026-04-30T01:11:51.467900+00:00 p1-xr2 groupadd[2950]: new group: name=root-system, GID=1007
+2026-04-30T01:11:51.510635+00:00 p1-xr2 groupadd[2958]: group added to /etc/group: name=serviceadmin, GID=1008
+2026-04-30T01:11:51.514226+00:00 p1-xr2 groupadd[2958]: group added to /etc/gshadow: name=serviceadmin
+2026-04-30T01:11:51.528033+00:00 p1-xr2 groupadd[2958]: new group: name=serviceadmin, GID=1008
+2026-04-30T01:11:51.612090+00:00 p1-xr2 groupadd[2970]: group added to /etc/group: name=sysadmin, GID=1009
+2026-04-30T01:11:51.633266+00:00 p1-xr2 groupadd[2970]: group added to /etc/gshadow: name=sysadmin
+2026-04-30T01:11:51.635079+00:00 p1-xr2 groupadd[2970]: new group: name=sysadmin, GID=1009
+2026-04-30T01:11:51.704954+00:00 p1-xr2 groupadd[2978]: group added to /etc/group: name=read-only-tg, GID=1010
+2026-04-30T01:11:51.712502+00:00 p1-xr2 groupadd[2978]: group added to /etc/gshadow: name=read-only-tg
+2026-04-30T01:11:51.714753+00:00 p1-xr2 groupadd[2978]: new group: name=read-only-tg, GID=1010
+2026-04-30T01:12:20.118507+00:00 p1-xr2 useradd[5188]: new group: name=clab, GID=1011
+2026-04-30T01:12:20.118820+00:00 p1-xr2 useradd[5188]: new user: name=clab, UID=1000, GID=1011, home=/home/clab, shell=/bin/sh, from=none
+2026-04-30T01:12:20.278085+00:00 p1-xr2 usermod[5205]: add 'clab' to group 'root-lr'
+2026-04-30T01:12:20.278341+00:00 p1-xr2 usermod[5205]: add 'clab' to shadow group 'root-lr'
+2026-04-30T01:12:20.318350+00:00 p1-xr2 usermod[5214]: add 'clab' to group 'sudo'
+2026-04-30T01:12:20.318745+00:00 p1-xr2 usermod[5214]: add 'clab' to shadow group 'sudo'
+2026-04-30T01:12:20.414142+00:00 p1-xr2 usermod[5230]: add 'clab' to group 'cisco-support'
+2026-04-30T01:12:20.414387+00:00 p1-xr2 usermod[5230]: add 'clab' to shadow group 'cisco-support'
+2026-04-30T01:12:21.732973+00:00 p1-xr2 sshd[5329]: debug1: Set /proc/self/oom_score_adj from 0 to -1000
+2026-04-30T01:12:21.739137+00:00 p1-xr2 sshd[5329]: Sending to syslog proxy : Set /proc/self/oom_score_adj from 0 to -1000
+2026-04-30T01:12:21.739413+00:00 p1-xr2 sshd[5329]: debug1: Bind to port 22 on 0.0.0.0.
+2026-04-30T01:12:21.739546+00:00 p1-xr2 sshd[5329]: Sending to syslog proxy : Bind to port 22 on 0.0.0.0.
+2026-04-30T01:12:21.739707+00:00 p1-xr2 sshd[5329]: Server listening on 0.0.0.0 port 22.
+2026-04-30T01:12:21.739831+00:00 p1-xr2 sshd[5329]: Sending to syslog proxy : Server listening on 0.0.0.0 port 22.
+2026-04-30T01:12:21.740514+00:00 p1-xr2 sshd[5329]: debug1: Bind to port 22 on ::.
+2026-04-30T01:12:21.740656+00:00 p1-xr2 sshd[5329]: Sending to syslog proxy : Bind to port 22 on ::.
+2026-04-30T01:12:21.740816+00:00 p1-xr2 sshd[5329]: Server listening on :: port 22.
+2026-04-30T01:12:21.740944+00:00 p1-xr2 sshd[5329]: Sending to syslog proxy : Server listening on :: port 22.
+2026-04-30T01:12:22.911409+00:00 p1-xr2 sshd[5329]: Received signal 15; terminating.
+2026-04-30T01:12:22.911545+00:00 p1-xr2 sshd[5329]: Sending to syslog proxy : Received signal 15; terminating.
+2026-04-30T01:12:23.070095+00:00 p1-xr2 sshd[5405]: debug1: Set /proc/self/oom_score_adj from 0 to -1000
+2026-04-30T01:12:23.070224+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Set /proc/self/oom_score_adj from 0 to -1000
+2026-04-30T01:12:23.070382+00:00 p1-xr2 sshd[5405]: debug1: Bind to port 830 on 0.0.0.0.
+2026-04-30T01:12:23.070474+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Bind to port 830 on 0.0.0.0.
+2026-04-30T01:12:23.070592+00:00 p1-xr2 sshd[5405]: Server listening on 0.0.0.0 port 830.
+2026-04-30T01:12:23.070674+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Server listening on 0.0.0.0 port 830.
+2026-04-30T01:12:23.071279+00:00 p1-xr2 sshd[5405]: debug1: Bind to port 830 on ::.
+2026-04-30T01:12:23.071370+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Bind to port 830 on ::.
+2026-04-30T01:12:23.071482+00:00 p1-xr2 sshd[5405]: Server listening on :: port 830.
+2026-04-30T01:12:23.071576+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Server listening on :: port 830.
+2026-04-30T01:12:23.071960+00:00 p1-xr2 sshd[5405]: debug1: Bind to port 22 on 0.0.0.0.
+2026-04-30T01:12:23.072038+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Bind to port 22 on 0.0.0.0.
+2026-04-30T01:12:23.072143+00:00 p1-xr2 sshd[5405]: Server listening on 0.0.0.0 port 22.
+2026-04-30T01:12:23.074020+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Server listening on 0.0.0.0 port 22.
+2026-04-30T01:12:23.074452+00:00 p1-xr2 sshd[5405]: debug1: Bind to port 22 on ::.
+2026-04-30T01:12:23.074579+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Bind to port 22 on ::.
+2026-04-30T01:12:23.074724+00:00 p1-xr2 sshd[5405]: Server listening on :: port 22.
+2026-04-30T01:12:23.074839+00:00 p1-xr2 sshd[5405]: Sending to syslog proxy : Server listening on :: port 22.

@@ -1,0 +1,22 @@
+2026-04-30T01:11:07.327057+00:00 p5-xr1 lvm[307]: Logging initialised at Thu Apr 30 01:10:56 2026
+2026-04-30T01:11:07.327074+00:00 p5-xr1 lvm[307]: Set umask from 0022 to 0077
+2026-04-30T01:11:07.327082+00:00 p5-xr1 lvm[307]: Creating directory "/run/lock/lvm"
+2026-04-30T01:11:07.327176+00:00 p5-xr1 lvm[307]: No volume groups found.
+2026-04-30T01:11:07.325490+00:00 p5-xr1 rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2002.0]
+2026-04-30T01:11:07.325672+00:00 p5-xr1 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="426" x-info="https://www.rsyslog.com"] start
+2026-04-30T01:11:25.348865+00:00 p5-xr1 lvm[1046]: Logging initialised at Thu Apr 30 01:11:25 2026
+2026-04-30T01:11:25.349337+00:00 p5-xr1 lvm[1046]: Set umask from 0022 to 0077
+2026-04-30T01:11:25.368913+00:00 p5-xr1 lvm[1046]: No volume groups found.
+2026-04-30T01:11:25.492816+00:00 p5-xr1 xr_file_monitor-[info]: File monitoring started. Unable to create DR [/mnt/dr_part] archive & backup folders!
+2026-04-30T01:11:25.496414+00:00 p5-xr1 xr_file_monitor-[info]: Checking for stale password lock files
+2026-04-30T01:11:27.906877+00:00 p5-xr1 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="426" x-info="https://www.rsyslog.com"] exiting on signal 15.
+2026-04-30T01:11:27.930225+00:00 p5-xr1 rsyslogd: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.2002.0]
+2026-04-30T01:11:27.930296+00:00 p5-xr1 rsyslogd: [origin software="rsyslogd" swVersion="8.2002.0" x-pid="1473" x-info="https://www.rsyslog.com"] start
+2026-04-30T01:11:31.417238+00:00 p5-xr1 kernel: [1482784.044177] device Gi0-0-0-0 entered promiscuous mode
+2026-04-30T01:11:32.956003+00:00 p5-xr1 kernel: [1482785.584584] device eth0 entered promiscuous mode
+2026-04-30T01:11:32.965192+00:00 p5-xr1 kernel: [1482785.593929] device Gi0-0-0-0 entered promiscuous mode
+2026-04-30T01:11:34.801246+00:00 p5-xr1 kernel: [1482787.426999] device eth0 entered promiscuous mode
+2026-04-30T01:12:20.003393+00:00 p5-xr1 sshd: (sshd): Socket created, sockfd = 3
+2026-04-30T01:12:20.005467+00:00 p5-xr1 sshd: (sshd): Successfully connected to server, sockfd = 3
+2026-04-30T01:12:21.289242+00:00 p5-xr1 sshd: (sshd): Socket created, sockfd = 3
+2026-04-30T01:12:21.289486+00:00 p5-xr1 sshd: (sshd): Successfully connected to server, sockfd = 3

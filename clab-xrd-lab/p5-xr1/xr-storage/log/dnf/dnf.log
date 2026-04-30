@@ -1,0 +1,1005 @@
+2026-04-30 01:11:20,148 UTC 596 INFO --- logging initialized ---
+2026-04-30 01:11:20,149 UTC 596 DDEBUG timer: config: 28 ms
+2026-04-30 01:11:20,149 UTC 596 DEBUG DNF version: 2.7.5
+2026-04-30 01:11:20,149 UTC 596 DDEBUG Command: dnf list available --disablerepo=* 
+2026-04-30 01:11:20,149 UTC 596 DDEBUG Installroot: /
+2026-04-30 01:11:20,149 UTC 596 DDEBUG Releasever: 1
+2026-04-30 01:11:20,150 UTC 596 DEBUG cachedir: /var/cache/dnf
+2026-04-30 01:11:20,150 UTC 596 DDEBUG Base command: list
+2026-04-30 01:11:20,150 UTC 596 DDEBUG Extra commands: ['list', 'available', '--disablerepo=*']
+2026-04-30 01:11:20,155 UTC 596 WARNING No repository match: *
+2026-04-30 01:11:20,230 UTC 596 DDEBUG timer: sack setup: 75 ms
+2026-04-30 01:11:20,238 UTC 596 DDEBUG Cleaning up.
+2026-04-30 01:11:38,155 UTC 2320 INFO --- logging initialized ---
+2026-04-30 01:11:38,159 UTC 2320 DDEBUG timer: config: 33 ms
+2026-04-30 01:11:38,230 UTC 2320 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:11:38,231 UTC 2320 DEBUG DNF version: 2.7.5
+2026-04-30 01:11:38,231 UTC 2320 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch history --no-wrap --refresh -- userinstalled 
+2026-04-30 01:11:38,231 UTC 2320 DDEBUG Installroot: /
+2026-04-30 01:11:38,231 UTC 2320 DDEBUG Releasever: 1
+2026-04-30 01:11:38,231 UTC 2320 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:11:38,231 UTC 2320 DDEBUG Base command: history
+2026-04-30 01:11:38,232 UTC 2320 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'history', '--no-wrap', '--refresh', '--', 'userinstalled']
+2026-04-30 01:11:38,329 UTC 2320 DDEBUG timer: sack setup: 71 ms
+2026-04-30 01:11:38,329 UTC 2320 DEBUG Completion plugin: Generating completion cache...
+2026-04-30 01:11:38,338 UTC 2320 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:11:38,468 UTC 2320 DDEBUG Cleaning up.
+2026-04-30 01:11:38,930 UTC 2328 INFO --- logging initialized ---
+2026-04-30 01:11:38,931 UTC 2328 DDEBUG timer: config: 9 ms
+2026-04-30 01:11:38,953 UTC 2328 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:11:38,954 UTC 2328 DEBUG DNF version: 2.7.5
+2026-04-30 01:11:38,954 UTC 2328 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch repoquery --whatprovides cisco-iosxr-user-installable --installed --disablerepo=* --no-wrap --refresh 
+2026-04-30 01:11:38,954 UTC 2328 DDEBUG Installroot: /
+2026-04-30 01:11:38,954 UTC 2328 DDEBUG Releasever: 1
+2026-04-30 01:11:38,954 UTC 2328 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:11:38,954 UTC 2328 DDEBUG Base command: repoquery
+2026-04-30 01:11:38,954 UTC 2328 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr-user-installable', '--installed', '--disablerepo=*', '--no-wrap', '--refresh']
+2026-04-30 01:11:39,027 UTC 2328 DDEBUG timer: sack setup: 57 ms
+2026-04-30 01:11:39,027 UTC 2328 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:11:39,042 UTC 2328 DDEBUG Cleaning up.
+2026-04-30 01:11:39,351 UTC 2330 INFO --- logging initialized ---
+2026-04-30 01:11:39,352 UTC 2330 DDEBUG timer: config: 9 ms
+2026-04-30 01:11:39,376 UTC 2330 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:11:39,377 UTC 2330 DEBUG DNF version: 2.7.5
+2026-04-30 01:11:39,377 UTC 2330 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch mark --no-wrap --refresh -- install xr-lpts-25.2.1v1.0.0-1.x86_64 xr-debug-25.2.1v1.0.0-1.x86_64 xr-fib-25.2.1v1.0.0-1.x86_64 xr-procmgr-25.2.1v1.0.0-1.x86_64 xr-span-25.2.1v1.0.0-1.x86_64 xr-security-25.2.1v1.0.0-1.x86_64 xr-ntp-api-only-25.2.1v1.0.0-1.x86_64 xr-bundles-25.2.1v1.0.0-1.x86_64 xr-ip-mibs-25.2.1v1.0.0-1.x86_64 xr-mandatory-25.2.1v1.0.0-1.x86_64 xr-tmpdir-cleanup-25.2.1v1.0.0-1.x86_64 xr-drivers-common-25.2.1v1.0.0-1.x86_64 xr-qos-25.2.1v1.0.0-1.x86_64 xr-icpe-opt-25.2.1v1.0.0-1.x86_64 xr-cfm-25.2.1v1.0.0-1.x86_64 xr-pird-policymgr-25.2.1v1.0.0-1.x86_64 xr-telemetry-25.2.1v1.0.0-1.x86_64 xr-bcdl-25.2.1v1.0.0-1.x86_64 xr-is-is-25.2.1v1.0.0-1.x86_64 xr-ldp-25.2.1v1.0.0-1.x86_64 xr-cal-pi-25.2.1v1.0.0-1.x86_64 xr-identifier-25.2.1v1.0.0-1.x86_64 xr-ctc-25.2.1v1.0.0-1.x86_64 xr-host-core-25.2.1v1.0.0-1.x86_64 xr-pfi-25.2.1v1.0.0-1.x86_64 xr-install-25.2.1v1.0.0-1.x86_64 xr-spp-25.2.1v1.0.0-1.x86_64 xr-fpd-25.2.1v1.0.0-1.x86_64 xr-foundation-xrd-control-plane-25.2.1v1.0.0-1.x86_64 xr-pm-alarm-25.2.1v1.0.0-1.x86_64 xr-servicelayer-25.2.1v1.0.0-1.x86_64 xr-ztp-25.2.1v1.0.0-1.x86_64 xr-ip-core-25.2.1v1.0.0-1.x86_64 xr-pkt-trace-25.2.1v1.0.0-1.x86_64 xr-core-calv-25.2.1v1.0.0-1.x86_64 xr-eem-25.2.1v1.0.0-1.x86_64 xr-python-25.2.1v1.0.0-1.x86_64 xr-appmgr-25.2.1v1.0.0-1.x86_64 xr-licensing-25.2.1v1.0.0-1.x86_64 xr-observability-25.2.1v1.0.0-1.x86_64 xr-bgputil-25.2.1v1.0.0-1.x86_64 xr-mda-25.2.1v1.0.0-1.x86_64 xr-ip-infra-vrf-25.2.1v1.0.0-1.x86_64 xr-link-oam-25.2.1v1.0.0-1.x86_64 xr-routing-25.2.1v1.0.0-1.x86_64 xr-bng-stubs-25.2.1v1.0.0-1.x86_64 xr-pird-mcast-25.2.1v1.0.0-1.x86_64 xr-bgp-25.2.1v1.0.0-1.x86_64 xr-cofo-25.2.1v1.0.0-1.x86_64 xr-gil-25.2.1v1.0.0-1.x86_64 xr-transports-25.2.1v1.0.0-1.x86_64 xr-vpnmib-25.2.1v1.0.0-1.x86_64 xr-aaa-25.2.1v1.0.0-1.x86_64 xr-infra-sla-25.2.1v1.0.0-1.x86_64 xr-tty-25.2.1v1.0.0-1.x86_64 xr-diskboot-25.2.1v1.0.0-1.x86_64 xr-xrlibcurl-25.2.1v1.0.0-1.x86_64 xr-ema-25.2.1v1.0.0-1.x86_64 xr-pird-25.2.1v1.0.0-1.x86_64 xr-linuxnetworking-25.2.1v1.0.0-1.x86_64 xr-dhcp-25.2.1v1.0.0-1.x86_64 xr-mpls-25.2.1v1.0.0-1.x86_64 xr-spi-core-25.2.1v1.0.0-1.x86_64 xr-spi-hw-api-only-25.2.1v1.0.0-1.x86_64 xr-sr-25.2.1v1.0.0-1.x86_64 xr-perf-meas-25.2.1v1.0.0-1.x86_64 xr-sysdb-25.2.1v1.0.0-1.x86_64 xr-orrspf-25.2.1v1.0.0-1.x86_64 xr-vether-25.2.1v1.0.0-1.x86_64 xr-featurecapability-25.2.1v1.0.0-1.x86_64 xr-p4rt-25.2.1v1.0.0-1.x86_64 xr-perf-meas-client-25.2.1v1.0.0-1.x86_64 xr-rpl-25.2.1v1.0.0-1.x86_64 xr-apphosting-25.2.1v1.0.0-1.x86_64 xr-ospf-25.2.1v1.0.0-1.x86_64 xr-enhancedmanageability-25.2.1v1.0.0-1.x86_64 xr-ip-static-25.2.1v1.0.0-1.x86_64 xr-httpclient-25.2.1v1.0.0-1.x86_64 xr-syslog-25.2.1v1.0.0-1.x86_64 xr-ha-infra-25.2.1v1.0.0-1.x86_64 xr-linuxsecurity-25.2.1v1.0.0-1.x86_64 xr-manageabilityxml-25.2.1v1.0.0-1.x86_64 xr-mpls-oam-25.2.1v1.0.0-1.x86_64 xr-cdp-25.2.1v1.0.0-1.x86_64 xr-ip-apps-25.2.1v1.0.0-1.x86_64 xr-xrd-card-support-25.2.1v1.0.0-1.x86_64 xr-security-tams-25.2.1v1.0.0-1.x86_64 xr-elmi-25.2.1v1.0.0-1.x86_64 xr-acl-25.2.1v1.0.0-1.x86_64 xr-l2snooptransport-25.2.1v1.0.0-1.x86_64 xr-core-25.2.1v1.0.0-1.x86_64 xr-track-25.2.1v1.0.0-1.x86_64 xr-rsvp-te-25.2.1v1.0.0-1.x86_64 xr-mpls-static-25.2.1v1.0.0-1.x86_64 xr-ipc-25.2.1v1.0.0-1.x86_64 xr-cfgmgr-25.2.1v1.0.0-1.x86_64 xr-l2vpn-25.2.1v1.0.0-1.x86_64 xr-icpe-eth-25.2.1v1.0.0-1.x86_64 xr-rip-25.2.1v1.0.0-1.x86_64 xr-mpls-oam-client-25.2.1v1.0.0-1.x86_64 xr-timing-25.2.1v1.0.0-1.x86_64 xr-bfd-25.2.1v1.0.0-1.x86_64 xr-eigrp-25.2.1v1.0.0-1.x86_64 xr-lldp-25.2.1v1.0.0-1.x86_64 xr-os-oe-core-25.2.1v1.0.0-1.x86_64 xr-tunnel-ip-25.2.1v1.0.0-1.x86_64 xr-xmlinfra-25.2.1v1.0.0-1.x86_64 xr-xrd-os-25.2.1v1.0.0-1.x86_64 xr-netflow-stubs-25.2.1v1.0.0-1.x86_64 xr-utils-25.2.1v1.0.0-1.x86_64 xr-stubs-25.2.1v1.0.0-1.x86_64 xr-snmp-25.2.1v1.0.0-1.x86_64 xr-sanitizer-tools-25.2.1v1.0.0-1.x86_64 xr-xrd-control-plane-pd-25.2.1v1.0.0-1.x86_64 xr-stats-25.2.1v1.0.0-1.x86_64 xr-mcast-25.2.1v1.0.0-1.x86_64 
+2026-04-30 01:11:39,377 UTC 2330 DDEBUG Installroot: /
+2026-04-30 01:11:39,377 UTC 2330 DDEBUG Releasever: 1
+2026-04-30 01:11:39,377 UTC 2330 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:11:39,377 UTC 2330 DDEBUG Base command: mark
+2026-04-30 01:11:39,377 UTC 2330 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'mark', '--no-wrap', '--refresh', '--', 'install', 'xr-lpts-25.2.1v1.0.0-1.x86_64', 'xr-debug-25.2.1v1.0.0-1.x86_64', 'xr-fib-25.2.1v1.0.0-1.x86_64', 'xr-procmgr-25.2.1v1.0.0-1.x86_64', 'xr-span-25.2.1v1.0.0-1.x86_64', 'xr-security-25.2.1v1.0.0-1.x86_64', 'xr-ntp-api-only-25.2.1v1.0.0-1.x86_64', 'xr-bundles-25.2.1v1.0.0-1.x86_64', 'xr-ip-mibs-25.2.1v1.0.0-1.x86_64', 'xr-mandatory-25.2.1v1.0.0-1.x86_64', 'xr-tmpdir-cleanup-25.2.1v1.0.0-1.x86_64', 'xr-drivers-common-25.2.1v1.0.0-1.x86_64', 'xr-qos-25.2.1v1.0.0-1.x86_64', 'xr-icpe-opt-25.2.1v1.0.0-1.x86_64', 'xr-cfm-25.2.1v1.0.0-1.x86_64', 'xr-pird-policymgr-25.2.1v1.0.0-1.x86_64', 'xr-telemetry-25.2.1v1.0.0-1.x86_64', 'xr-bcdl-25.2.1v1.0.0-1.x86_64', 'xr-is-is-25.2.1v1.0.0-1.x86_64', 'xr-ldp-25.2.1v1.0.0-1.x86_64', 'xr-cal-pi-25.2.1v1.0.0-1.x86_64', 'xr-identifier-25.2.1v1.0.0-1.x86_64', 'xr-ctc-25.2.1v1.0.0-1.x86_64', 'xr-host-core-25.2.1v1.0.0-1.x86_64', 'xr-pfi-25.2.1v1.0.0-1.x86_64', 'xr-install-25.2.1v1.0.0-1.x86_64', 'xr-spp-25.2.1v1.0.0-1.x86_64', 'xr-fpd-25.2.1v1.0.0-1.x86_64', 'xr-foundation-xrd-control-plane-25.2.1v1.0.0-1.x86_64', 'xr-pm-alarm-25.2.1v1.0.0-1.x86_64', 'xr-servicelayer-25.2.1v1.0.0-1.x86_64', 'xr-ztp-25.2.1v1.0.0-1.x86_64', 'xr-ip-core-25.2.1v1.0.0-1.x86_64', 'xr-pkt-trace-25.2.1v1.0.0-1.x86_64', 'xr-core-calv-25.2.1v1.0.0-1.x86_64', 'xr-eem-25.2.1v1.0.0-1.x86_64', 'xr-python-25.2.1v1.0.0-1.x86_64', 'xr-appmgr-25.2.1v1.0.0-1.x86_64', 'xr-licensing-25.2.1v1.0.0-1.x86_64', 'xr-observability-25.2.1v1.0.0-1.x86_64', 'xr-bgputil-25.2.1v1.0.0-1.x86_64', 'xr-mda-25.2.1v1.0.0-1.x86_64', 'xr-ip-infra-vrf-25.2.1v1.0.0-1.x86_64', 'xr-link-oam-25.2.1v1.0.0-1.x86_64', 'xr-routing-25.2.1v1.0.0-1.x86_64', 'xr-bng-stubs-25.2.1v1.0.0-1.x86_64', 'xr-pird-mcast-25.2.1v1.0.0-1.x86_64', 'xr-bgp-25.2.1v1.0.0-1.x86_64', 'xr-cofo-25.2.1v1.0.0-1.x86_64', 'xr-gil-25.2.1v1.0.0-1.x86_64', 'xr-transports-25.2.1v1.0.0-1.x86_64', 'xr-vpnmib-25.2.1v1.0.0-1.x86_64', 'xr-aaa-25.2.1v1.0.0-1.x86_64', 'xr-infra-sla-25.2.1v1.0.0-1.x86_64', 'xr-tty-25.2.1v1.0.0-1.x86_64', 'xr-diskboot-25.2.1v1.0.0-1.x86_64', 'xr-xrlibcurl-25.2.1v1.0.0-1.x86_64', 'xr-ema-25.2.1v1.0.0-1.x86_64', 'xr-pird-25.2.1v1.0.0-1.x86_64', 'xr-linuxnetworking-25.2.1v1.0.0-1.x86_64', 'xr-dhcp-25.2.1v1.0.0-1.x86_64', 'xr-mpls-25.2.1v1.0.0-1.x86_64', 'xr-spi-core-25.2.1v1.0.0-1.x86_64', 'xr-spi-hw-api-only-25.2.1v1.0.0-1.x86_64', 'xr-sr-25.2.1v1.0.0-1.x86_64', 'xr-perf-meas-25.2.1v1.0.0-1.x86_64', 'xr-sysdb-25.2.1v1.0.0-1.x86_64', 'xr-orrspf-25.2.1v1.0.0-1.x86_64', 'xr-vether-25.2.1v1.0.0-1.x86_64', 'xr-featurecapability-25.2.1v1.0.0-1.x86_64', 'xr-p4rt-25.2.1v1.0.0-1.x86_64', 'xr-perf-meas-client-25.2.1v1.0.0-1.x86_64', 'xr-rpl-25.2.1v1.0.0-1.x86_64', 'xr-apphosting-25.2.1v1.0.0-1.x86_64', 'xr-ospf-25.2.1v1.0.0-1.x86_64', 'xr-enhancedmanageability-25.2.1v1.0.0-1.x86_64', 'xr-ip-static-25.2.1v1.0.0-1.x86_64', 'xr-httpclient-25.2.1v1.0.0-1.x86_64', 'xr-syslog-25.2.1v1.0.0-1.x86_64', 'xr-ha-infra-25.2.1v1.0.0-1.x86_64', 'xr-linuxsecurity-25.2.1v1.0.0-1.x86_64', 'xr-manageabilityxml-25.2.1v1.0.0-1.x86_64', 'xr-mpls-oam-25.2.1v1.0.0-1.x86_64', 'xr-cdp-25.2.1v1.0.0-1.x86_64', 'xr-ip-apps-25.2.1v1.0.0-1.x86_64', 'xr-xrd-card-support-25.2.1v1.0.0-1.x86_64', 'xr-security-tams-25.2.1v1.0.0-1.x86_64', 'xr-elmi-25.2.1v1.0.0-1.x86_64', 'xr-acl-25.2.1v1.0.0-1.x86_64', 'xr-l2snooptransport-25.2.1v1.0.0-1.x86_64', 'xr-core-25.2.1v1.0.0-1.x86_64', 'xr-track-25.2.1v1.0.0-1.x86_64', 'xr-rsvp-te-25.2.1v1.0.0-1.x86_64', 'xr-mpls-static-25.2.1v1.0.0-1.x86_64', 'xr-ipc-25.2.1v1.0.0-1.x86_64', 'xr-cfgmgr-25.2.1v1.0.0-1.x86_64', 'xr-l2vpn-25.2.1v1.0.0-1.x86_64', 'xr-icpe-eth-25.2.1v1.0.0-1.x86_64', 'xr-rip-25.2.1v1.0.0-1.x86_64', 'xr-mpls-oam-client-25.2.1v1.0.0-1.x86_64', 'xr-timing-25.2.1v1.0.0-1.x86_64', 'xr-bfd-25.2.1v1.0.0-1.x86_64', 'xr-eigrp-25.2.1v1.0.0-1.x86_64', 'xr-lldp-25.2.1v1.0.0-1.x86_64', 'xr-os-oe-core-25.2.1v1.0.0-1.x86_64', 'xr-tunnel-ip-25.2.1v1.0.0-1.x86_64', 'xr-xmlinfra-25.2.1v1.0.0-1.x86_64', 'xr-xrd-os-25.2.1v1.0.0-1.x86_64', 'xr-netflow-stubs-25.2.1v1.0.0-1.x86_64', 'xr-utils-25.2.1v1.0.0-1.x86_64', 'xr-stubs-25.2.1v1.0.0-1.x86_64', 'xr-snmp-25.2.1v1.0.0-1.x86_64', 'xr-sanitizer-tools-25.2.1v1.0.0-1.x86_64', 'xr-xrd-control-plane-pd-25.2.1v1.0.0-1.x86_64', 'xr-stats-25.2.1v1.0.0-1.x86_64', 'xr-mcast-25.2.1v1.0.0-1.x86_64']
+2026-04-30 01:11:39,451 UTC 2330 DDEBUG timer: sack setup: 59 ms
+2026-04-30 01:11:39,451 UTC 2330 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:11:39,452 UTC 2330 INFO xr-lpts-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,454 UTC 2330 INFO xr-debug-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,455 UTC 2330 INFO xr-fib-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,455 UTC 2330 INFO xr-procmgr-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,456 UTC 2330 INFO xr-span-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,456 UTC 2330 INFO xr-security-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,457 UTC 2330 INFO xr-ntp-api-only-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,458 UTC 2330 INFO xr-bundles-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,459 UTC 2330 INFO xr-ip-mibs-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,460 UTC 2330 INFO xr-mandatory-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,460 UTC 2330 INFO xr-tmpdir-cleanup-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,461 UTC 2330 INFO xr-drivers-common-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,461 UTC 2330 INFO xr-qos-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,462 UTC 2330 INFO xr-icpe-opt-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,462 UTC 2330 INFO xr-cfm-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,463 UTC 2330 INFO xr-pird-policymgr-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,464 UTC 2330 INFO xr-telemetry-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,464 UTC 2330 INFO xr-bcdl-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,465 UTC 2330 INFO xr-is-is-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,465 UTC 2330 INFO xr-ldp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,466 UTC 2330 INFO xr-cal-pi-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,467 UTC 2330 INFO xr-identifier-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,467 UTC 2330 INFO xr-ctc-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,467 UTC 2330 INFO xr-host-core-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,468 UTC 2330 INFO xr-pfi-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,468 UTC 2330 INFO xr-install-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,468 UTC 2330 INFO xr-spp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,469 UTC 2330 INFO xr-fpd-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,469 UTC 2330 INFO xr-foundation-xrd-control-plane-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,469 UTC 2330 INFO xr-pm-alarm-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,470 UTC 2330 INFO xr-servicelayer-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,471 UTC 2330 INFO xr-ztp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,471 UTC 2330 INFO xr-ip-core-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,472 UTC 2330 INFO xr-pkt-trace-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,472 UTC 2330 INFO xr-core-calv-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,473 UTC 2330 INFO xr-eem-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,474 UTC 2330 INFO xr-python-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,474 UTC 2330 INFO xr-appmgr-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,475 UTC 2330 INFO xr-licensing-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,475 UTC 2330 INFO xr-observability-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,476 UTC 2330 INFO xr-bgputil-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,477 UTC 2330 INFO xr-mda-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,478 UTC 2330 INFO xr-ip-infra-vrf-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,479 UTC 2330 INFO xr-link-oam-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,479 UTC 2330 INFO xr-routing-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,480 UTC 2330 INFO xr-bng-stubs-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,480 UTC 2330 INFO xr-pird-mcast-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,482 UTC 2330 INFO xr-bgp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,483 UTC 2330 INFO xr-cofo-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,484 UTC 2330 INFO xr-gil-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,485 UTC 2330 INFO xr-transports-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,485 UTC 2330 INFO xr-vpnmib-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,486 UTC 2330 INFO xr-aaa-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,486 UTC 2330 INFO xr-infra-sla-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,487 UTC 2330 INFO xr-tty-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,487 UTC 2330 INFO xr-diskboot-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,538 UTC 2330 INFO xr-xrlibcurl-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,538 UTC 2330 INFO xr-ema-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,539 UTC 2330 INFO xr-pird-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,539 UTC 2330 INFO xr-linuxnetworking-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,540 UTC 2330 INFO xr-dhcp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,540 UTC 2330 INFO xr-mpls-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,542 UTC 2330 INFO xr-spi-core-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,542 UTC 2330 INFO xr-spi-hw-api-only-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,543 UTC 2330 INFO xr-sr-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,543 UTC 2330 INFO xr-perf-meas-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,544 UTC 2330 INFO xr-sysdb-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,564 UTC 2330 INFO xr-orrspf-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,574 UTC 2330 INFO xr-vether-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,602 UTC 2330 INFO xr-featurecapability-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,602 UTC 2330 INFO xr-p4rt-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,603 UTC 2330 INFO xr-perf-meas-client-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,603 UTC 2330 INFO xr-rpl-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,604 UTC 2330 INFO xr-apphosting-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,604 UTC 2330 INFO xr-ospf-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,605 UTC 2330 INFO xr-enhancedmanageability-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,605 UTC 2330 INFO xr-ip-static-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,606 UTC 2330 INFO xr-httpclient-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,606 UTC 2330 INFO xr-syslog-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,607 UTC 2330 INFO xr-ha-infra-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,607 UTC 2330 INFO xr-linuxsecurity-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,608 UTC 2330 INFO xr-manageabilityxml-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,608 UTC 2330 INFO xr-mpls-oam-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,609 UTC 2330 INFO xr-cdp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,609 UTC 2330 INFO xr-ip-apps-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,617 UTC 2330 INFO xr-xrd-card-support-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,619 UTC 2330 INFO xr-security-tams-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,620 UTC 2330 INFO xr-elmi-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,620 UTC 2330 INFO xr-acl-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,621 UTC 2330 INFO xr-l2snooptransport-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,621 UTC 2330 INFO xr-core-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,623 UTC 2330 INFO xr-track-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,624 UTC 2330 INFO xr-rsvp-te-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,624 UTC 2330 INFO xr-mpls-static-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,625 UTC 2330 INFO xr-ipc-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,625 UTC 2330 INFO xr-cfgmgr-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,626 UTC 2330 INFO xr-l2vpn-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,627 UTC 2330 INFO xr-icpe-eth-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,629 UTC 2330 INFO xr-rip-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,629 UTC 2330 INFO xr-mpls-oam-client-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,630 UTC 2330 INFO xr-timing-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,630 UTC 2330 INFO xr-bfd-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,631 UTC 2330 INFO xr-eigrp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,631 UTC 2330 INFO xr-lldp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,632 UTC 2330 INFO xr-os-oe-core-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,641 UTC 2330 INFO xr-tunnel-ip-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,642 UTC 2330 INFO xr-xmlinfra-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,642 UTC 2330 INFO xr-xrd-os-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,643 UTC 2330 INFO xr-netflow-stubs-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,643 UTC 2330 INFO xr-utils-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,644 UTC 2330 INFO xr-stubs-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,644 UTC 2330 INFO xr-snmp-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,645 UTC 2330 INFO xr-sanitizer-tools-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,645 UTC 2330 INFO xr-xrd-control-plane-pd-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,646 UTC 2330 INFO xr-stats-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,647 UTC 2330 INFO xr-mcast-25.2.1v1.0.0-1.x86_64 marked as user installed.
+2026-04-30 01:11:39,647 UTC 2330 DDEBUG Cleaning up.
+2026-04-30 01:11:39,945 UTC 2332 INFO --- logging initialized ---
+2026-04-30 01:11:39,946 UTC 2332 DDEBUG timer: config: 9 ms
+2026-04-30 01:11:39,963 UTC 2332 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:11:39,964 UTC 2332 DEBUG DNF version: 2.7.5
+2026-04-30 01:11:39,965 UTC 2332 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch mark --no-wrap --refresh -- remove libmemusage-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 keyutils-1.6.1-r0.33.147.0.corei7_64 ccore-git-r4.39.147.0.corei7_64 cgroups-pam-plugin-0.41-r0.39.147.0.corei7_64 dhcp-server-4.4.2-r0.39.147.0.corei7_64 python3-selectors2-2.0.2-r1.41.147.0.corei7_64 libprotobuf-lite22-3.11.4-r0.39.147.0.corei7_64 libcap-bin-2.32-r0.39.147.0.corei7_64 libedit0-20191231+3.1-r0.33.147.0.corei7_64 perl-module-zmq-libzmq3-1.19-r0.106.147.0.corei7_64 liblzo2-2-2.10-r0.33.147.0.corei7_64 packagegroup-core-boot-1.0-r17.13.xr_s_x86 thin-provisioning-tools-0.8.5-r0.41.147.0.corei7_64 libsolvext1-0.7.10-r0.56.147.0.corei7_64 libgdbm-bin-1.18.1-r0.33.147.0.corei7_64 perl-module-subs-5.30.1-r0.39.147.0.corei7_64 python3-netserver-3.8.18-r0.13.147.0.corei7_64 lxc-templates-4.0.12+git0+5ba5725cb4-r0.38.147.0.corei7_64 python-asn1crypto-1.3.0-r0.39.147.0.corei7_64 libsodium23-1.0.18-r0.33.147.0.corei7_64 cpp-symlinks-9.5.0-r0.31.147.0.corei7_64 glibc-gconv-ibm850-2.31-r0.31.147.0.corei7_64 perl-module-posix-5.30.1-r0.39.147.0.corei7_64 libc6-pcprofile-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 pam-plugin-stress-1.3.1-r0.39.147.0.corei7_64 perl-module-carp-clan-6.08-r0.39.147.0.corei7_64 grub-editenv-2.04-r0.33.147.0.corei7_64 perl-module-encode-config-5.30.1-r0.39.147.0.corei7_64 python-audio-2.7.18-r0.39.147.0.corei7_64 sqlite3-3:3.31.1-r0.33.147.0.corei7_64 python3-misc-3.8.18-r0.13.147.0.corei7_64 ima-evm-utils-evmctl.static-1.2.1+git0+3eab1f93b6-r0.33.147.0.corei7_64 python-enum34-1.1.6-r0.105.147.0.corei7_64 perl-module-linux-inotify2-2.2-r0.39.147.0.corei7_64 perl-module-utf8-heavy-5.30.1-r0.39.147.0.corei7_64 libprotobuf-compiler-3.11.4-r0.39.147.0.corei7_64 python3-codecs-3.8.18-r0.13.147.0.corei7_64 xr-identifier-xrd-cp-c-01-25.2.1v1.0.0-1.x86_64 perl-module-bytes-5.30.1-r0.39.147.0.corei7_64 python-xmlrpc-2.7.18-r0.39.147.0.corei7_64 perl-module-errno-5.30.1-r0.39.147.0.corei7_64 nftables-0.9.6-r0.41.147.0.corei7_64 util-linux-lsblk-2.35.1-r0.39.147.0.corei7_64 python-lxml-4.4.2-r0.41.147.0.corei7_64 cbt-1.0-r4.101.147.0.corei7_64 util-linux-script-2.35.1-r0.39.147.0.corei7_64 e2fsprogs-resize2fs-1.45.7-r0.31.147.0.corei7_64 rsyslog-8.2002.0-r0.25.147.0.corei7_64 tzdata-2024a-r0.1.147.0.noarch perl-module-list-util-5.30.1-r0.39.147.0.corei7_64 libbfd-2.34-r0.39.147.0.corei7_64 perl-module-io-uncompress-adapter-inflate-5.30.1-r0.39.147.0.corei7_64 python-pip-19.3.1-r0.39.147.0.corei7_64 bash-completion-extra-2.10-r0.33.147.0.corei7_64 librabbitmq4-0.10.0-r0.62.147.0.corei7_64 base-passwd-update-3.5.29-r0.33.147.0.corei7_64 iptables-module-xt-udp-1.8.4-r0.33.147.0.corei7_64 libcgroup-0.41-r0.39.147.0.corei7_64 perl-module-overload-5.30.1-r0.39.147.0.corei7_64 at-3.1.23-r0.39.147.0.corei7_64 perl-module-io-compress-base-common-5.30.1-r0.39.147.0.corei7_64 setserial-2.17-r3.98.147.0.corei7_64 selinux-python-chcat-3.0-r0.41.147.0.corei7_64 perl-5.30.1-r0.39.147.0.corei7_64 libfdisk1-2.35.1-r0.39.147.0.corei7_64 lz4-1:1.9.4-r0.10.147.0.corei7_64 mdadm-4.1-r0.33.147.0.corei7_64 openssl-engines-1.1.1w-r0.7.147.0.corei7_64 python-ipy-1.00-r0.39.147.0.corei7_64 perl-module-overloading-5.30.1-r0.39.147.0.corei7_64 selinux-python-audit2allow-3.0-r0.41.147.0.corei7_64 selinux-python-sepolicy-3.0-r0.41.147.0.corei7_64 python3-six-1.14.0-r0.41.147.0.corei7_64 policycoreutils-setsebool-3.0-r0.41.147.0.corei7_64 e2fsprogs-1.45.7-r0.31.147.0.corei7_64 pam-plugin-access-1.3.1-r0.39.147.0.corei7_64 rsync-3.2.5-r0.33.147.0.corei7_64 libmpfr6-4.0.2-r0.33.147.0.corei7_64 util-linux-nologin-2.35.1-r0.39.147.0.corei7_64 flex-2.6.4-r0.33.147.0.corei7_64 perl-module-utf8-5.30.1-r0.39.147.0.corei7_64 perl-module-encode-mime-name-5.30.1-r0.39.147.0.corei7_64 tzdata-atlantic-2024a-r0.1.147.0.noarch python3-ipy-1.00-r0.41.147.0.corei7_64 libnl-route-3-200-1:3.5.0-r0.33.147.0.corei7_64 util-linux-utmpdump-2.35.1-r0.39.147.0.corei7_64 libstdc++6-9.5.0-r0.31.147.0.corei7_64 python-idle-2.7.18-r0.39.147.0.corei7_64 zstd-1.4.5-r0.33.147.0.corei7_64 python3-pkgutil-3.8.18-r0.13.147.0.corei7_64 perl-module-re-5.30.1-r0.39.147.0.corei7_64 lvm2-2.03.06-r0.59.147.0.corei7_64 expect-5.45.4-r0.39.147.0.corei7_64 util-linux-chrt-2.35.1-r0.39.147.0.corei7_64 libpcap1-1.9.1-r0.33.147.0.corei7_64 curl-7.69.1-r0.40.147.0.corei7_64 nettle-3.5.1-r0.33.147.0.corei7_64 iputils-ping-s20190709-r0.58.147.0.corei7_64 libsemanage-python-3.0-r0.41.147.0.corei7_64 libfl2-2.6.4-r0.33.147.0.corei7_64 python-pickle-2.7.18-r0.39.147.0.corei7_64 util-linux-losetup-2.35.1-r0.39.147.0.corei7_64 ncurses-terminfo-base-6.2-r0.33.147.0.corei7_64 python-six-1.14.0-r0.39.147.0.corei7_64 vim-vimrc-9.0.2190-r0.10.147.0.corei7_64 base-files-3.0.14-r89.15.xr_s_x86 tzdata-pacific-2024a-r0.1.147.0.noarch grub-common-2.04-r0.33.147.0.corei7_64 libevent-2.1-7-2.1.11-r0.39.147.0.corei7_64 python-html-2.7.18-r0.39.147.0.corei7_64 sdparm-1.11-r0.33.147.0.corei7_64 pam-plugin-debug-1.3.1-r0.39.147.0.corei7_64 libdbus-glib-1-2-0.110-r0.56.147.0.corei7_64 python-debugger-2.7.18-r0.39.147.0.corei7_64 efivar-37-r0.33.147.0.corei7_64 perl-module-tie-hash-5.30.1-r0.39.147.0.corei7_64 perl-module-dynaloader-5.30.1-r0.39.147.0.corei7_64 python-sqlite3-2.7.18-r0.39.147.0.corei7_64 openssl-bin-1.1.1w-r0.7.147.0.corei7_64 librepo0-1.11.2-r0.58.147.0.corei7_64 python-mmap-2.7.18-r0.39.147.0.corei7_64 lmsensors-isatools-3.6.0-r0.57.147.0.corei7_64 python3-doctest-3.8.18-r0.13.147.0.corei7_64 libgpg-error-1.37-r0.33.147.0.corei7_64 python-bcrypt-3.1.7-r0.39.147.0.corei7_64 pam-plugin-rhosts-1.3.1-r0.39.147.0.corei7_64 openssh-sftp-server-8.2p1-r0.51.147.0.corei7_64 python3-gpg-1.13.1-r0.41.147.0.corei7_64 util-linux-uuidd-2.35.1-r0.39.147.0.corei7_64 python-image-2.7.18-r0.39.147.0.corei7_64 libxslt-1.1.34-r0.41.147.0.corei7_64 perl-module-encode-5.30.1-r0.39.147.0.corei7_64 tcp-wrappers-7.6-r10.98.147.0.corei7_64 util-linux-renice-2.35.1-r0.39.147.0.corei7_64 dnf-vars-arch-1.0-r0.14.147.0.xr_s_x86 libtic5-6.2-r0.33.147.0.corei7_64 cisco-initscripts-0.1-r0.15.147.0.xr_s_x86 tzdata-posix-2024a-r0.1.147.0.noarch util-linux-mkfs.cramfs-2.35.1-r0.39.147.0.corei7_64 libnl-nf-3-200-1:3.5.0-r0.33.147.0.corei7_64 fuser-23.3-r0.39.147.0.corei7_64 policycoreutils-runinit-3.0-r0.41.147.0.corei7_64 python3-io-3.8.18-r0.13.147.0.corei7_64 iptables-module-xt-addrtype-1.8.4-r0.33.147.0.corei7_64 pam-plugin-umask-1.3.1-r0.39.147.0.corei7_64 python-crypt-2.7.18-r0.39.147.0.corei7_64 perl-module-json-pp-boolean-5.30.1-r0.39.147.0.corei7_64 python-gdbm-2.7.18-r0.39.147.0.corei7_64 perl-module-carp-5.30.1-r0.39.147.0.corei7_64 python-lang-2.7.18-r0.39.147.0.corei7_64 attr-2.4.48-r0.33.147.0.corei7_64 python-runpy-2.7.18-r0.39.147.0.corei7_64 strace-5.5-r0.33.147.0.corei7_64 tunctl-1.5-r0.99.147.0.corei7_64 usleep-1.0-r0.98.147.0.corei7_64 killall-23.3-r0.39.147.0.corei7_64 util-linux-kill-2.35.1-r0.39.147.0.corei7_64 policycoreutils-semodule-3.0-r0.41.147.0.corei7_64 python3-nose-1.3.7-r0.41.147.0.corei7_64 libfastjson4-0.99.8-r0.6.147.0.corei7_64 libpanelw5-6.2-r0.33.147.0.corei7_64 perl-module-encode-alias-5.30.1-r0.39.147.0.corei7_64 systemd-bash-completion-1:244.5-r0.56.147.0.corei7_64 util-linux-blkid-2.35.1-r0.39.147.0.corei7_64 systemd-kernel-install-1:244.5-r0.56.147.0.corei7_64 util-linux-eject-2.35.1-r0.39.147.0.corei7_64 libffi7-3.3-r0.33.147.0.corei7_64 tzdata-misc-2024a-r0.1.147.0.noarch mtd-utils-misc-2.1.3-r0.31.147.0.corei7_64 lmsensors-pwmconfig-3.6.0-r0.57.147.0.corei7_64 openmp-10.0.1-r0.39.147.0.corei7_64 policycoreutils-3.0-r0.41.147.0.corei7_64 perf-5.4.273-r10.12.147.0.xr_s_x86 python3-dev-3.8.18-r0.13.147.0.corei7_64 perl-module-logfile-rotate-1.04-r0.104.147.0.corei7_64 libdw1-0.178-r0.39.147.0.corei7_64 run-postinsts-1.0-r10.25.noarch perl-module-file-spec-5.30.1-r0.39.147.0.corei7_64 libfuse2-2.9.9-r0.33.147.0.corei7_64 python3-prettytable-0.7.2-r0.103.147.0.corei7_64 python-db-2.7.18-r0.39.147.0.corei7_64 perl-module-encode-configlocal-pm-5.30.1-r0.39.147.0.corei7_64 iptables-module-ip6t-snat-1.8.4-r0.33.147.0.corei7_64 perl-module-file-basename-5.30.1-r0.39.147.0.corei7_64 tzdata-arctic-2024a-r0.1.147.0.noarch dmidecode-3.2-r0.83.147.0.corei7_64 tzdata-americas-2024a-r0.1.147.0.noarch python-compile-2.7.18-r0.39.147.0.corei7_64 createrepo-c-0.15.7-r0.58.147.0.corei7_64 libcom-err2-1.45.7-r0.31.147.0.corei7_64 perl-module-file-spec-unix-5.30.1-r0.39.147.0.corei7_64 libpci3-3.6.4-r0.58.147.0.corei7_64 libunistring2-0.9.10-r0.33.147.0.corei7_64 util-linux-setpriv-2.35.1-r0.39.147.0.corei7_64 libgdbm6-1.18.1-r0.33.147.0.corei7_64 python3-numpy-1.17.4-r0.41.147.0.corei7_64 ncurses-tools-6.2-r0.33.147.0.corei7_64 pam-plugin-tally-1.3.1-r0.39.147.0.corei7_64 python3-rpm-1:4.14.2.1-r0.56.147.0.corei7_64 libasm1-0.178-r0.39.147.0.corei7_64 gnupg-2.2.27-r0.40.147.0.corei7_64 time-1.9-r0.33.147.0.corei7_64 sed-4.8-r0.39.147.0.corei7_64 libestr0-0.1.11-r0.6.147.0.corei7_64 libxml2-2.9.10-r0.41.147.0.corei7_64 m4-1.4.18-r0.33.147.0.corei7_64 libuuid1-2.35.1-r0.39.147.0.corei7_64 mtd-utils-ubifs-2.1.3-r0.31.147.0.corei7_64 python-re-2.7.18-r0.39.147.0.corei7_64 quota-4.05-r0.56.147.0.corei7_64 libjitterentropy3-3.4.1-r0.37.147.0.corei7_64 python-curses-2.7.18-r0.39.147.0.corei7_64 python-io-2.7.18-r0.39.147.0.corei7_64 rpmrc-1.0-r0.14.147.0.xr_s_x86 iptables-module-ipt-dnat-1.8.4-r0.33.147.0.corei7_64 db-bin-6.1.38-r1.34.147.0.corei7_64 vim-9.0.2190-r0.10.147.0.corei7_64 libarchive-3.4.2-r0.41.147.0.corei7_64 util-linux-fsck.cramfs-2.35.1-r0.39.147.0.corei7_64 sg3-utils-1.45-r0.33.147.0.corei7_64 update-alternatives-opkg-0.4.2-r0.33.147.0.corei7_64 python3-xmlrpc-3.8.18-r0.13.147.0.corei7_64 python3-sqlite3-3.8.18-r0.13.147.0.corei7_64 python-contextlib-2.7.18-r0.39.147.0.corei7_64 cpp-9.5.0-r0.31.147.0.corei7_64 python-profile-2.7.18-r0.39.147.0.corei7_64 perl-module-parent-5.30.1-r0.39.147.0.corei7_64 python-json-2.7.18-r0.39.147.0.corei7_64 iputils-tftpd-s20190709-r0.58.147.0.corei7_64 dhcp-server-config-4.4.2-r0.39.147.0.corei7_64 pciutils-ids-3.6.4-r0.58.147.0.corei7_64 python3-pydoc-3.8.18-r0.13.147.0.corei7_64 mailx-12.5+5-r0.33.147.0.corei7_64 tzdata-africa-2024a-r0.1.147.0.noarch tzdata-asia-2024a-r0.1.147.0.noarch gzip-1.10-r0.33.147.0.corei7_64 python3-smtpd-3.8.18-r0.13.147.0.corei7_64 which-2.21-r3.98.147.0.corei7_64 perl-module-io-compress-zlib-extra-5.30.1-r0.39.147.0.corei7_64 python3-unixadmin-3.8.18-r0.13.147.0.corei7_64 perl-module-xsloader-5.30.1-r0.39.147.0.corei7_64 python-unixadmin-2.7.18-r0.39.147.0.corei7_64 python-paramiko-2.7.0-r0.39.147.0.corei7_64 python-xmldiff-2.4-r0.39.147.0.corei7_64 openssh-8.2p1-r0.51.147.0.corei7_64 libaio1-0.3.111-r0.33.147.0.corei7_64 inetutils-traceroute-1.9.4-r0.106.147.0.corei7_64 python-stringold-2.7.18-r0.39.147.0.corei7_64 perl-module-scalar-util-5.30.1-r0.39.147.0.corei7_64 perl-module-io-uncompress-gunzip-5.30.1-r0.39.147.0.corei7_64 python-doctest-2.7.18-r0.39.147.0.corei7_64 python-subprocess-2.7.18-r0.39.147.0.corei7_64 iptables-module-xt-tcp-1.8.4-r0.33.147.0.corei7_64 perl-module-fcntl-5.30.1-r0.39.147.0.corei7_64 policycoreutils-secon-3.0-r0.41.147.0.corei7_64 perl-module-compress-raw-zlib-5.30.1-r0.39.147.0.corei7_64 diffutils-3.7-r0.33.147.0.corei7_64 pam-plugin-exec-1.3.1-r0.39.147.0.corei7_64 perl-module-b-5.30.1-r0.39.147.0.corei7_64 makedumpfile-1.6.9-r0.39.147.0.corei7_64 semodule-utils-semodule-expand-3.0-r0.33.147.0.corei7_64 bind-libs-9.11.37-r0.31.147.0.corei7_64 pam-plugin-namespace-1.3.1-r0.39.147.0.corei7_64 perl-module-storable-5.30.1-r0.39.147.0.corei7_64 libatomic1-9.5.0-r0.31.147.0.corei7_64 python-difflib-2.7.18-r0.39.147.0.corei7_64 util-linux-partx-2.35.1-r0.39.147.0.corei7_64 python-mailbox-2.7.18-r0.39.147.0.corei7_64 perl-module-time-hires-5.30.1-r0.39.147.0.corei7_64 python-datetime-2.7.18-r0.39.147.0.corei7_64 libyaml-0-2-0.2.2-r0.33.147.0.corei7_64 libpanel5-6.2-r0.33.147.0.corei7_64 perl-module-common-sense-3.75-r0.39.147.0.corei7_64 perl-module-io-seekable-5.30.1-r0.39.147.0.corei7_64 dnf-bash-completion-2.7.5-r0.155.147.0.corei7_64 python3-asyncio-3.8.18-r0.13.147.0.corei7_64 python-pkgutil-2.7.18-r0.39.147.0.corei7_64 tcpdump-4.9.3-r0.33.147.0.corei7_64 kmod-bash-completion-26-r0.39.147.0.corei7_64 libudrv-0.1-r2.37.147.0.xr_s_x86 python-ecdsa-0.13-r0.39.147.0.corei7_64 pam-plugin-wheel-1.3.1-r0.39.147.0.corei7_64 tzdata-core-2024a-r0.1.147.0.noarch python-syslog-2.7.18-r0.39.147.0.corei7_64 util-linux-pivot-root-2.35.1-r0.39.147.0.corei7_64 iptables-1.8.4-r0.33.147.0.corei7_64 python-pbr-5.4.4-r0.39.147.0.corei7_64 policycoreutils-sestatus-3.0-r0.41.147.0.corei7_64 util-linux-dmesg-2.35.1-r0.39.147.0.corei7_64 libxml2-python-2.9.10-r0.41.147.0.corei7_64 python-terminal-2.7.18-r0.39.147.0.corei7_64 python-robotparser-2.7.18-r0.39.147.0.corei7_64 ncurses-6.2-r0.33.147.0.corei7_64 sudo-lib-1.9.15p5-r0.10.147.0.corei7_64 python-cryptography-2.8-r0.39.147.0.corei7_64 acl-2.2.53-r0.33.147.0.corei7_64 libssl1.1-1.1.1w-r0.7.147.0.corei7_64 tcl-8.6.10-r0.39.147.0.corei7_64 libjson-c4-0.13.1-r0.33.147.0.corei7_64 perl-module-integer-5.30.1-r0.39.147.0.corei7_64 iputils-arping-s20190709-r0.58.147.0.corei7_64 lsof-4.91-r0.39.147.0.corei7_64 perl-module-zmq-constants-1.04-r0.104.147.0.corei7_64 python-fcntl-2.7.18-r0.39.147.0.corei7_64 libcyaml1-1.1.0-r0.33.147.0.corei7_64 libsqlite3-0-3:3.31.1-r0.33.147.0.corei7_64 perl-module-io-compress-gzip-5.30.1-r0.39.147.0.corei7_64 util-linux-hexdump-2.35.1-r0.39.147.0.corei7_64 python-distutils-2.7.18-r0.39.147.0.corei7_64 util-linux-lscpu-2.35.1-r0.39.147.0.corei7_64 python3-numbers-3.8.18-r0.13.147.0.corei7_64 bzip2-1.0.8-r0.33.147.0.corei7_64 less-551-r0.33.147.0.corei7_64 util-linux-mkswap-2.35.1-r0.39.147.0.corei7_64 mtd-utils-2.1.3-r0.31.147.0.corei7_64 pam-plugin-listfile-1.3.1-r0.39.147.0.corei7_64 util-linux-readprofile-2.35.1-r0.39.147.0.corei7_64 efibootmgr-17-r0.33.147.0.corei7_64 perl-module-expect-1.35-r0.39.147.0.corei7_64 python3-plistlib-3.8.18-r0.13.147.0.corei7_64 libnsl2-1.2.0+git0+4a062cf418-r0.33.147.0.corei7_64 tzdata-right-2024a-r0.1.147.0.noarch libcurl4-7.69.1-r0.40.147.0.corei7_64 python3-audio-3.8.18-r0.13.147.0.corei7_64 systemd-1:244.5-r0.56.147.0.corei7_64 perl-module-date-calc-6.4-r0.104.147.0.corei7_64 libprotobuf-c-compiler-1.3.3-r0.91.147.0.corei7_64 python-smtpd-2.7.18-r0.39.147.0.corei7_64 file-5.38-r0.39.147.0.corei7_64 libudev1-1:244.5-r0.56.147.0.corei7_64 python-netserver-2.7.18-r0.39.147.0.corei7_64 perl-module-math-complex-5.30.1-r0.39.147.0.corei7_64 util-linux-runuser-2.35.1-r0.39.147.0.corei7_64 smartmontools-7.1-r0.39.147.0.corei7_64 python-ncclient-0.6.13-r0.41.147.0.corei7_64 python3-defusedxml-0.6.0-r0.10.147.0.corei7_64 util-linux-prlimit-2.35.1-r0.39.147.0.corei7_64 pam-plugin-tally2-1.3.1-r0.39.147.0.corei7_64 perl-module-getopt-std-5.30.1-r0.39.147.0.corei7_64 libuio0-1.0-r2.98.147.0.corei7_64 perl-module-math-bigint-5.30.1-r0.39.147.0.corei7_64 tzdata-europe-2024a-r0.1.147.0.noarch libgomp1-9.5.0-r0.31.147.0.corei7_64 libjansson4-2.13.1-r0.33.147.0.corei7_64 libc6-thread-db-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 semodule-utils-semodule-package-3.0-r0.33.147.0.corei7_64 systemd-initramfs-1:244.5-r0.56.147.0.corei7_64 libsysfs2-2.1.0-r5.98.147.0.corei7_64 bash-completion-2.10-r0.33.147.0.corei7_64 perl-module-json-pp-5.30.1-r0.39.147.0.corei7_64 python-ply-3.11-r0.39.147.0.corei7_64 perl-module-io-compress-base-5.30.1-r0.39.147.0.corei7_64 python-unittest-2.7.18-r0.39.147.0.corei7_64 libseccomp-2.4.3-r0.33.147.0.corei7_64 python3-venv-3.8.18-r0.13.147.0.corei7_64 iputils-ninfod-s20190709-r0.58.147.0.corei7_64 libgcc1-9.5.0-r0.31.147.0.corei7_64 libsegfault-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 rpm-1:4.14.2.1-r0.56.147.0.corei7_64 libbpf0-0.5.0-r0.16.147.0.xr_s_x86 python-math-2.7.18-r0.39.147.0.corei7_64 python-modules-2.7.18-r0.39.147.0.corei7_64 libwrap0-7.6-r10.98.147.0.corei7_64 openssh-sshd-8.2p1-r0.51.147.0.corei7_64 libncurses5-6.2-r0.33.147.0.corei7_64 util-linux-bash-completion-2.35.1-r0.39.147.0.corei7_64 hdparm-9.58-r0.33.147.0.corei7_64 python-networkx-2.2-r0.39.147.0.corei7_64 libgdbm-compat4-1.18.1-r0.33.147.0.corei7_64 libnl-3-200-1:3.5.0-r0.33.147.0.corei7_64 python3-multiprocessing-3.8.18-r0.13.147.0.corei7_64 lmsensors-sensors-3.6.0-r0.57.147.0.corei7_64 python-numbers-2.7.18-r0.39.147.0.corei7_64 vlan-1.9-r0.33.147.0.corei7_64 python-compression-2.7.18-r0.39.147.0.corei7_64 iputils-clockdiff-s20190709-r0.58.147.0.corei7_64 ncurses-terminfo-6.2-r0.33.147.0.corei7_64 util-linux-fdisk-2.35.1-r0.39.147.0.corei7_64 util-linux-findfs-2.35.1-r0.39.147.0.corei7_64 mtd-utils-jffs2-2.1.3-r0.31.147.0.corei7_64 iproute2-5.5.0-r0.39.147.0.corei7_64 tzdata-australia-2024a-r0.1.147.0.noarch libyajl2-2.1.0-r0.98.147.0.corei7_64 python3-compile-3.8.18-r0.13.147.0.corei7_64 util-linux-isosize-2.35.1-r0.39.147.0.corei7_64 libprotobuf-c1-1.3.3-r0.91.147.0.corei7_64 ca-certificates-20241223-r0.5.147.0.noarch perl-module-math-bigint-lib-5.30.1-r0.39.147.0.corei7_64 util-linux-swaponoff-2.35.1-r0.39.147.0.corei7_64 policycoreutils-fixfiles-3.0-r0.41.147.0.corei7_64 ldd-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 perl-module-exporter-5.30.1-r0.39.147.0.corei7_64 libitm1-9.5.0-r0.31.147.0.corei7_64 cracklib-2.9.5-r0.104.147.0.corei7_64 grub-efi-2.04-r0.19.147.0.xr_s_x86 python-pycrypto-2.6.1-r0.97.147.0.corei7_64 gettext-runtime-0.20.1-r0.56.147.0.corei7_64 libaugeas0-1.12.0-r0.41.147.0.corei7_64 python-idna-2.8-r0.39.147.0.corei7_64 libksba8-1.3.5-r0.33.147.0.corei7_64 dhcp-client-4.4.2-r0.39.147.0.corei7_64 perl-module-io-handle-5.30.1-r0.39.147.0.corei7_64 libpopt0-1.16-r3.98.147.0.corei7_64 python-multiprocessing-2.7.18-r0.39.147.0.corei7_64 python3-image-3.8.18-r0.13.147.0.corei7_64 util-linux-blockdev-2.35.1-r0.39.147.0.corei7_64 zeromq-4.3.4-r0.25.147.0.corei7_64 python3-networkx-2.4-r0.41.147.0.corei7_64 openssl-1.1.1w-r0.7.147.0.corei7_64 python3-difflib-3.8.18-r0.13.147.0.corei7_64 python3-xml-3.8.18-r0.13.147.0.corei7_64 libglib-2.0-0-1:2.62.6-r0.56.147.0.corei7_64 libpython2.7-1.0-2.7.18-r0.39.147.0.corei7_64 python-ctypes-2.7.18-r0.39.147.0.corei7_64 util-linux-swapon-2.35.1-r0.39.147.0.corei7_64 perl-module-mro-5.30.1-r0.39.147.0.corei7_64 libsensors5-3.6.0-r0.57.147.0.corei7_64 libidn12-1.35-r0.33.147.0.corei7_64 libtirpc3-1.2.6-r0.33.147.0.corei7_64 grep-3.4-r0.39.147.0.corei7_64 iptables-module-ipt-snat-1.8.4-r0.33.147.0.corei7_64 pam-filter-upperlower-1.3.1-r0.39.147.0.corei7_64 libgnutls30-3.6.14-r0.34.147.0.corei7_64 python3-distutils-3.8.18-r0.13.147.0.corei7_64 python3-crypt-3.8.18-r0.13.147.0.corei7_64 ima-evm-utils-1.2.1+git0+3eab1f93b6-r0.33.147.0.corei7_64 libncursesw5-6.2-r0.33.147.0.corei7_64 selinux-python-semanage-3.0-r0.41.147.0.corei7_64 python3-pickle-3.8.18-r0.13.147.0.corei7_64 librmutil1-1.0-r0.15.147.0.corei7_64 libtcl8.6-0-8.6.10-r0.39.147.0.corei7_64 python-ipaddress-1.0.23-r0.39.147.0.corei7_64 libcheck0-0.14.0-r0.33.147.0.corei7_64 perl-module-math-bigint-calc-5.30.1-r0.39.147.0.corei7_64 python3-mmap-3.8.18-r0.13.147.0.corei7_64 python-core-2.7.18-r0.39.147.0.corei7_64 python3-fcntl-3.8.18-r0.13.147.0.corei7_64 parted-3.3-r0.39.147.0.corei7_64 python-decorator-4.4.1-r0.39.147.0.corei7_64 tzcode-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 dosfstools-4.1-r0.33.147.0.corei7_64 libpcreposix0-8.44-r0.39.147.0.corei7_64 bridge-utils-1.6-r0.33.147.0.corei7_64 libnftnl11-1.1.7-r0.33.147.0.corei7_64 python-textutils-2.7.18-r0.39.147.0.corei7_64 i2c-tools-4.1-r0.33.147.0.corei7_64 bash-5.0-r0.33.147.0.corei7_64 zip-3.0-r2.98.147.0.corei7_64 slang-2.3.2-r0.39.147.0.corei7_64 libavahi-common3-0.7-r0.56.147.0.corei7_64 python3-logging-3.8.18-r0.13.147.0.corei7_64 util-linux-fstrim-2.35.1-r0.39.147.0.corei7_64 perl-module-base-5.30.1-r0.39.147.0.corei7_64 inotify-tools-3.20.2.2-r0.33.147.0.corei7_64 perl-module-io-tty-1.16-r0.39.147.0.corei7_64 perl-module-io-uncompress-base-5.30.1-r0.39.147.0.corei7_64 coreutils-8.31-r0.41.147.0.corei7_64 pam-plugin-timestamp-1.3.1-r0.39.147.0.corei7_64 libusb-1.0-0-1.0.22-r0.56.147.0.corei7_64 python-logging-2.7.18-r0.39.147.0.corei7_64 libtdb1-1.4.3-r0.41.147.0.corei7_64 libsolv1-0.7.10-r0.56.147.0.corei7_64 sysfsutils-2.1.0-r5.98.147.0.corei7_64 python3-email-3.8.18-r0.13.147.0.corei7_64 python-nacl-1.3.0-r0.39.147.0.corei7_64 util-linux-rev-2.35.1-r0.39.147.0.corei7_64 e2fsprogs-tune2fs-1.45.7-r0.31.147.0.corei7_64 perl-module-io-5.30.1-r0.39.147.0.corei7_64 selinux-python-sepolgen-3.0-r0.41.147.0.corei7_64 util-linux-getopt-2.35.1-r0.39.147.0.corei7_64 selinux-sandbox-3.0-r0.39.147.0.corei7_64 sudo-sudo-1.9.15p5-r0.10.147.0.corei7_64 libltdl7-2.4.6-r0.98.147.0.corei7_64 util-linux-wall-2.35.1-r0.39.147.0.corei7_64 python-pkg-resources-42.0.2-r0.39.147.0.corei7_64 iptables-module-ipt-masquerade-1.8.4-r0.33.147.0.corei7_64 python3-compression-3.8.18-r0.13.147.0.corei7_64 python3-mime-3.8.18-r0.13.147.0.corei7_64 unzip-1:6.0-r5.98.147.0.corei7_64 iptables-module-xt-conntrack-1.8.4-r0.33.147.0.corei7_64 perl-module-text-parsewords-5.30.1-r0.39.147.0.corei7_64 python3-html-3.8.18-r0.13.147.0.corei7_64 e2fsprogs-e2fsck-1.45.7-r0.31.147.0.corei7_64 lmsensors-fancontrol-3.6.0-r0.57.147.0.corei7_64 util-linux-fallocate-2.35.1-r0.39.147.0.corei7_64 systemd-analyze-1:244.5-r0.56.147.0.corei7_64 pam-plugin-xauth-1.3.1-r0.39.147.0.corei7_64 python3-decorator-4.4.2-r0.41.147.0.corei7_64 libselinux-python-3.0-r0.41.147.0.corei7_64 python3-datetime-3.8.18-r0.13.147.0.corei7_64 mtools-4.0.23-r0.33.147.0.corei7_64 perl-module-lib-5.30.1-r0.39.147.0.corei7_64 python3-pygpgme-0.3-r0.105.147.0.corei7_64 glibc-gconv-2.31-r0.31.147.0.corei7_64 netbase-2:6.1-r0.33.147.0.corei7_64 util-linux-mountpoint-2.35.1-r0.39.147.0.corei7_64 libdnf1-0.11.1-r0.150.147.0.corei7_64 libassuan0-2.5.3-r0.33.147.0.corei7_64 libsotruss-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 libdevmapper-2.03.06-r0.59.147.0.corei7_64 perl-module-pod-usage-5.30.1-r0.39.147.0.corei7_64 python-email-2.7.18-r0.39.147.0.corei7_64 selinux-python-3.0-r0.41.147.0.corei7_64 pam-plugin-mkhomedir-1.3.1-r0.39.147.0.corei7_64 sysstat-12.2.1-r0.33.147.0.corei7_64 python-zlib-2.7.18-r0.39.147.0.corei7_64 python-mime-2.7.18-r0.39.147.0.corei7_64 libssh2-1-1.9.0-r0.39.147.0.corei7_64 openssh-scp-8.2p1-r0.51.147.0.corei7_64 findutils-4.7.0-r0.39.147.0.corei7_64 util-linux-cfdisk-2.35.1-r0.39.147.0.corei7_64 semodule-utils-semodule-link-3.0-r0.33.147.0.corei7_64 libcrypto1.1-1.1.1w-r0.7.147.0.corei7_64 perl-module-compress-zlib-5.30.1-r0.39.147.0.corei7_64 ethtool-5.4-r0.33.147.0.corei7_64 libmnl0-1.0.4-r0.98.147.0.corei7_64 perl-module-io-compress-gzip-constants-5.30.1-r0.39.147.0.corei7_64 perl-module-math-bigfloat-5.30.1-r0.39.147.0.corei7_64 python-pydoc-2.7.18-r0.39.147.0.corei7_64 util-linux-more-2.35.1-r0.39.147.0.corei7_64 perl-module-feature-5.30.1-r0.39.147.0.corei7_64 python3-pkg-resources-45.2.0-r0.41.147.0.corei7_64 libcares2-1.18.1-r0.25.147.0.corei7_64 e2fsprogs-badblocks-1.45.7-r0.31.147.0.corei7_64 python-shell-2.7.18-r0.39.147.0.corei7_64 libpython3.8-1.0-3.8.18-r0.13.147.0.corei7_64 perl-module-term-cap-5.30.1-r0.39.147.0.corei7_64 dnf-2.7.5-r0.155.147.0.corei7_64 libc6-utils-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 pam-plugin-pwhistory-1.3.1-r0.39.147.0.corei7_64 policycoreutils-genhomedircon-3.0-r0.41.147.0.corei7_64 util-linux-mcookie-2.35.1-r0.39.147.0.corei7_64 sudo-1.9.15p5-r0.10.147.0.corei7_64 logrotate-3.15.1-r0.41.147.0.corei7_64 gflags-2.2.2-r0.84.147.0.corei7_64 util-linux-ipcs-2.35.1-r0.39.147.0.corei7_64 python3-curses-3.8.18-r0.13.147.0.corei7_64 libtalloc-2.3.0-r0.41.147.0.corei7_64 setools-4.3.0-r0.41.147.0.corei7_64 iproute2-ss-5.5.0-r0.39.147.0.corei7_64 perl-module-io-compress-rawdeflate-5.30.1-r0.39.147.0.corei7_64 initscripts-1.0-r155.29.corei7_64 python3-netclient-3.8.18-r0.13.147.0.corei7_64 python-threading-2.7.18-r0.39.147.0.corei7_64 python-tkinter-2.7.18-r0.39.147.0.corei7_64 util-linux-flock-2.35.1-r0.39.147.0.corei7_64 perl-module-bytes-heavy-5.30.1-r0.39.147.0.corei7_64 util-linux-2.35.1-r0.39.147.0.corei7_64 coreutils-stdbuf-8.31-r0.41.147.0.corei7_64 perl-module-cwd-5.30.1-r0.39.147.0.corei7_64 libreadline8-8.0-r0.33.147.0.corei7_64 perl-module-overload-numbers-5.30.1-r0.39.147.0.corei7_64 util-linux-su-2.35.1-r0.39.147.0.corei7_64 libselinux-bin-3.0-r0.39.147.0.corei7_64 libyaml-0-dev-0.2.2-r0.33.147.0.corei7_64 policycoreutils-setfiles-3.0-r0.41.147.0.corei7_64 perl-module-file-glob-5.30.1-r0.39.147.0.corei7_64 vim-common-9.0.2190-r0.10.147.0.corei7_64 pam-plugin-time-1.3.1-r0.39.147.0.corei7_64 mingetty-1.08-r3.98.147.0.corei7_64 libss2-1.45.7-r0.31.147.0.corei7_64 python3-pprint-3.8.18-r0.13.147.0.corei7_64 python-compiler-2.7.18-r0.39.147.0.corei7_64 perl-module-io-compress-adapter-deflate-5.30.1-r0.39.147.0.corei7_64 libidn2-0-2.3.0-r0.33.147.0.corei7_64 tree-1.8.0-r0.33.147.0.corei7_64 pstree-23.3-r0.39.147.0.corei7_64 pam-plugin-echo-1.3.1-r0.39.147.0.corei7_64 python-bsddb-2.7.18-r0.39.147.0.corei7_64 perl-module-getopt-long-5.30.1-r0.39.147.0.corei7_64 udev-hwdb-1:244.5-r0.56.147.0.corei7_64 e2fsprogs-mke2fs-1.45.7-r0.31.147.0.corei7_64 dhcp-libs-4.4.2-r0.39.147.0.corei7_64 libgcrypt-1.8.5-r0.39.147.0.corei7_64 openssh-keygen-8.2p1-r0.51.147.0.corei7_64 grub-bootconf-1.00-r0.14.147.0.xr_s_x86 libcares-utils-1.18.1-r0.25.147.0.corei7_64 python3-syslog-3.8.18-r0.13.147.0.corei7_64 python3-ctypes-3.8.18-r0.13.147.0.corei7_64 selinux-gui-3.0-r0.33.147.0.corei7_64 libcomps0-0.1.15-r0.41.147.0.corei7_64 elfutils-0.178-r0.39.147.0.corei7_64 util-linux-setsid-2.35.1-r0.39.147.0.corei7_64 python-plistlib-2.7.18-r0.39.147.0.corei7_64 gawk-5.0.1-r0.33.147.0.corei7_64 perl-module-file-copy-5.30.1-r0.39.147.0.corei7_64 libhiredis1.0.0-1.0.2-r0.33.147.0.corei7_64 iptables-module-xt-standard-1.8.4-r0.33.147.0.corei7_64 policycoreutils-hll-3.0-r0.41.147.0.corei7_64 python3-shell-3.8.18-r0.13.147.0.corei7_64 db-6.1.38-r1.34.147.0.corei7_64 python3-core-3.8.18-r0.13.147.0.corei7_64 selinux-dbus-3.0-r0.33.147.0.corei7_64 cronie-1.5.5-r0.41.147.0.corei7_64 libelf1-0.178-r0.39.147.0.corei7_64 perl-module-exporter-heavy-5.30.1-r0.39.147.0.corei7_64 pam-plugin-cracklib-1.3.1-r0.39.147.0.corei7_64 python-xml-2.7.18-r0.39.147.0.corei7_64 selinux-python-sepolgen-ifgen-3.0-r0.41.147.0.corei7_64 netcat-0.7.1-r3.98.147.0.corei7_64 binutils-2.34-r0.39.147.0.corei7_64 python3-json-3.8.18-r0.13.147.0.corei7_64 util-linux-logger-2.35.1-r0.39.147.0.corei7_64 lvm2-udevrules-2.03.06-r0.59.147.0.corei7_64 libe2p2-1.45.7-r0.31.147.0.corei7_64 e2fsprogs-dumpe2fs-1.45.7-r0.31.147.0.corei7_64 python3-debugger-3.8.18-r0.13.147.0.corei7_64 systemd-cisco-journald-conf-1:244.5-r0.56.147.0.corei7_64 usbutils-012-r0.57.147.0.corei7_64 util-linux-unshare-2.35.1-r0.39.147.0.corei7_64 cryptsetup-2.3.7-r0.31.147.0.corei7_64 perl-module-encode-encoding-5.30.1-r0.39.147.0.corei7_64 desktop-file-utils-0.24-r0.56.147.0.corei7_64 libticw5-6.2-r0.33.147.0.corei7_64 python-pyasn1-0.4.8-r0.39.147.0.corei7_64 python3-threading-3.8.18-r0.13.147.0.corei7_64 fuse-utils-2.9.9-r0.33.147.0.corei7_64 dpkg-start-stop-1.19.8-r0.31.147.0.corei7_64 libevent-pthreads-2.1-7-2.1.11-r0.39.147.0.corei7_64 perl-module-selectsaver-5.30.1-r0.39.147.0.corei7_64 cryptodev-linux-1.10-r0.33.147.0.corei7_64 dnf-plugins-core-2.1.5+git0+8d1f1758be-r0.111.147.0.corei7_64 iputils-tracepath-s20190709-r0.58.147.0.corei7_64 python3-setuptools-45.2.0-r0.41.147.0.corei7_64 iptables-module-ip6t-masquerade-1.8.4-r0.33.147.0.corei7_64 util-linux-whereis-2.35.1-r0.39.147.0.corei7_64 vmcore-dmesg-2.0.20-r0.43.147.0.corei7_64 libgmp10-6.2.0-r0.33.147.0.corei7_64 util-linux-hwclock-2.35.1-r0.39.147.0.corei7_64 openssl-conf-1.1.1w-r0.7.147.0.corei7_64 libulockmgr1-2.9.9-r0.33.147.0.corei7_64 perl-module-constant-5.30.1-r0.39.147.0.corei7_64 pam-plugin-filter-1.3.1-r0.39.147.0.corei7_64 nvme-cli-1.10.1+git0+1d84d6ae0c-r0.39.147.0.corei7_64 perl-module-b-deparse-5.30.1-r0.39.147.0.corei7_64 python3-pyyaml-5.3.1-r0.41.147.0.corei7_64 perl-module-file-globmapper-5.30.1-r0.39.147.0.corei7_64 util-linux-wipefs-2.35.1-r0.39.147.0.corei7_64 systemd-container-1:244.5-r0.56.147.0.corei7_64 util-linux-mkfs-2.35.1-r0.39.147.0.corei7_64 util-linux-switch-root-2.35.1-r0.39.147.0.corei7_64 libnpth0-1.6-r0.33.147.0.corei7_64 util-linux-last-2.35.1-r0.39.147.0.corei7_64 pam-plugin-localuser-1.3.1-r0.39.147.0.corei7_64 gpgme-1.13.1-r0.41.147.0.corei7_64 python-argparse-2.7.18-r0.39.147.0.corei7_64 iputils-rarpd-s20190709-r0.58.147.0.corei7_64 busybox-1.31.1-r0.44.147.0.corei7_64 libpciaccess0-0.16-r0.33.147.0.corei7_64 perl-module-io-file-5.30.1-r0.39.147.0.corei7_64 python-cffi-1.13.2-r0.39.147.0.corei7_64 librelp0-1.5.0-r0.13.147.0.corei7_64 util-linux-taskset-2.35.1-r0.39.147.0.corei7_64 xz-5.2.4-r0.33.147.0.corei7_64 perl-module-symbol-5.30.1-r0.39.147.0.corei7_64 netcf-0.2.8+git0+2c5d425585-r0.41.147.0.corei7_64 libpng16-16-1.6.37-r0.39.147.0.corei7_64 python-setuptools-42.0.2-r0.39.147.0.corei7_64 pam-plugin-issue-1.3.1-r0.39.147.0.corei7_64 util-linux-nsenter-2.35.1-r0.39.147.0.corei7_64 python3-prctl-1.7+git0+57cd0a7cad-r0.110.147.0.corei7_64 libprotobuf22-3.11.4-r0.39.147.0.corei7_64 libext2fs2-1.45.7-r0.31.147.0.corei7_64 pciutils-3.6.4-r0.58.147.0.corei7_64 python-pprint-2.7.18-r0.39.147.0.corei7_64 lvm2-scripts-2.03.06-r0.59.147.0.corei7_64 libnl-genl-3-200-1:3.5.0-r0.33.147.0.corei7_64 perl-module-io-uncompress-rawinflate-5.30.1-r0.39.147.0.corei7_64 util-linux-swapoff-2.35.1-r0.39.147.0.corei7_64 policycoreutils-loadpolicy-3.0-r0.41.147.0.corei7_64 bind-9.11.37-r0.31.147.0.corei7_64 systemd-compat-units-1.0-r29.90.corei7_64 python-misc-2.7.18-r0.39.147.0.corei7_64 python-hotshot-2.7.18-r0.39.147.0.corei7_64 libavahi-client3-0.7-r0.56.147.0.corei7_64 python3-2to3-3.8.18-r0.13.147.0.corei7_64 python-2to3-2.7.18-r0.39.147.0.corei7_64 sshfs-fuse-3.7.0-r0.59.147.0.corei7_64 util-linux-uuidgen-2.35.1-r0.39.147.0.corei7_64 python3-stringold-3.8.18-r0.13.147.0.corei7_64 tzdata-antarctica-2024a-r0.1.147.0.noarch unionfs-fuse-2.1-r0.33.147.0.corei7_64 grpc-1.24.3-r0.44.147.0.corei7_64 iptables-module-ip6t-dnat-1.8.4-r0.33.147.0.corei7_64 gnupg-gpg-2.2.27-r0.40.147.0.corei7_64 util-linux-rename-2.35.1-r0.39.147.0.corei7_64 libfreetype6-2.10.1-r0.39.147.0.corei7_64 iputils-rdisc-s20190709-r0.58.147.0.corei7_64 openssh-ssh-8.2p1-r0.51.147.0.corei7_64 python3-typing-3.8.18-r0.13.147.0.corei7_64 util-linux-mesg-2.35.1-r0.39.147.0.corei7_64 kexec-2.0.20-r0.43.147.0.corei7_64 python-selectors2-2.0.2-r0.39.147.0.corei7_64 python3-libs-3.8.18-r0.13.147.0.corei7_64 libpcre2-10.34-r0.25.147.0.corei7_64 python3-math-3.8.18-r0.13.147.0.corei7_64 util-linux-findmnt-2.35.1-r0.39.147.0.corei7_64 libtinfo5-6.2-r0.33.147.0.corei7_64 openssl-misc-1.1.1w-r0.7.147.0.corei7_64 cpio-2.13-r0.33.147.0.corei7_64 policycoreutils-newrole-3.0-r0.41.147.0.corei7_64 dnsmasq-2.90-r0.4.147.0.corei7_64 psmisc-23.3-r0.39.147.0.corei7_64 lxc-4.0.12+git0+5ba5725cb4-r0.38.147.0.corei7_64 augeas-lenses-1.12.0-r0.41.147.0.corei7_64 python-pycparser-2.19-r0.39.147.0.corei7_64 python-codecs-2.7.18-r0.39.147.0.corei7_64 net-tools-1.60+26-r0.39.147.0.corei7_64 python-resource-2.7.18-r0.39.147.0.corei7_64 python-netclient-2.7.18-r0.39.147.0.corei7_64 initscripts-functions-1.0-r155.29.corei7_64 perl-module-data-dumper-5.30.1-r0.39.147.0.corei7_64 procps-3.3.16-r0.59.147.0.corei7_64 python3-unittest-3.8.18-r0.13.147.0.corei7_64 libsmartcols1-2.35.1-r0.39.147.0.corei7_64 wget-1.20.3-r0.40.147.0.corei7_64 fuse3-3.9.2-r0.56.147.0.corei7_64 python3-iniparse-0.4-r0.111.147.0.corei7_64 libmpc3-1.1.0-r0.33.147.0.corei7_64 libssp0-9.5.0-r0.31.147.0.corei7_64 libunwind-1.3.1-r0.33.147.0.corei7_64 util-linux-sfdisk-2.35.1-r0.39.147.0.corei7_64 inetutils-telnet-1.9.4-r0.106.147.0.corei7_64 iputils-traceroute6-s20190709-r0.58.147.0.corei7_64 pam-plugin-ftp-1.3.1-r0.39.147.0.corei7_64 tar-1.32-r1.10.147.0.corei7_64 pam-plugin-succeed-if-1.3.1-r0.39.147.0.corei7_64 perl-module-config-heavy-5.30.1-r0.39.147.0.corei7_64 libinotifytools0-3.20.2.2-r0.33.147.0.corei7_64 
+2026-04-30 01:11:39,965 UTC 2332 DDEBUG Installroot: /
+2026-04-30 01:11:39,965 UTC 2332 DDEBUG Releasever: 1
+2026-04-30 01:11:39,965 UTC 2332 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:11:39,965 UTC 2332 DDEBUG Base command: mark
+2026-04-30 01:11:39,965 UTC 2332 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'mark', '--no-wrap', '--refresh', '--', 'remove', 'libmemusage-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64', 'keyutils-1.6.1-r0.33.147.0.corei7_64', 'ccore-git-r4.39.147.0.corei7_64', 'cgroups-pam-plugin-0.41-r0.39.147.0.corei7_64', 'dhcp-server-4.4.2-r0.39.147.0.corei7_64', 'python3-selectors2-2.0.2-r1.41.147.0.corei7_64', 'libprotobuf-lite22-3.11.4-r0.39.147.0.corei7_64', 'libcap-bin-2.32-r0.39.147.0.corei7_64', 'libedit0-20191231+3.1-r0.33.147.0.corei7_64', 'perl-module-zmq-libzmq3-1.19-r0.106.147.0.corei7_64', 'liblzo2-2-2.10-r0.33.147.0.corei7_64', 'packagegroup-core-boot-1.0-r17.13.xr_s_x86', 'thin-provisioning-tools-0.8.5-r0.41.147.0.corei7_64', 'libsolvext1-0.7.10-r0.56.147.0.corei7_64', 'libgdbm-bin-1.18.1-r0.33.147.0.corei7_64', 'perl-module-subs-5.30.1-r0.39.147.0.corei7_64', 'python3-netserver-3.8.18-r0.13.147.0.corei7_64', 'lxc-templates-4.0.12+git0+5ba5725cb4-r0.38.147.0.corei7_64', 'python-asn1crypto-1.3.0-r0.39.147.0.corei7_64', 'libsodium23-1.0.18-r0.33.147.0.corei7_64', 'cpp-symlinks-9.5.0-r0.31.147.0.corei7_64', 'glibc-gconv-ibm850-2.31-r0.31.147.0.corei7_64', 'perl-module-posix-5.30.1-r0.39.147.0.corei7_64', 'libc6-pcprofile-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64', 'pam-plugin-stress-1.3.1-r0.39.147.0.corei7_64', 'perl-module-carp-clan-6.08-r0.39.147.0.corei7_64', 'grub-editenv-2.04-r0.33.147.0.corei7_64', 'perl-module-encode-config-5.30.1-r0.39.147.0.corei7_64', 'python-audio-2.7.18-r0.39.147.0.corei7_64', 'sqlite3-3:3.31.1-r0.33.147.0.corei7_64', 'python3-misc-3.8.18-r0.13.147.0.corei7_64', 'ima-evm-utils-evmctl.static-1.2.1+git0+3eab1f93b6-r0.33.147.0.corei7_64', 'python-enum34-1.1.6-r0.105.147.0.corei7_64', 'perl-module-linux-inotify2-2.2-r0.39.147.0.corei7_64', 'perl-module-utf8-heavy-5.30.1-r0.39.147.0.corei7_64', 'libprotobuf-compiler-3.11.4-r0.39.147.0.corei7_64', 'python3-codecs-3.8.18-r0.13.147.0.corei7_64', 'xr-identifier-xrd-cp-c-01-25.2.1v1.0.0-1.x86_64', 'perl-module-bytes-5.30.1-r0.39.147.0.corei7_64', 'python-xmlrpc-2.7.18-r0.39.147.0.corei7_64', 'perl-module-errno-5.30.1-r0.39.147.0.corei7_64', 'nftables-0.9.6-r0.41.147.0.corei7_64', 'util-linux-lsblk-2.35.1-r0.39.147.0.corei7_64', 'python-lxml-4.4.2-r0.41.147.0.corei7_64', 'cbt-1.0-r4.101.147.0.corei7_64', 'util-linux-script-2.35.1-r0.39.147.0.corei7_64', 'e2fsprogs-resize2fs-1.45.7-r0.31.147.0.corei7_64', 'rsyslog-8.2002.0-r0.25.147.0.corei7_64', 'tzdata-2024a-r0.1.147.0.noarch', 'perl-module-list-util-5.30.1-r0.39.147.0.corei7_64', 'libbfd-2.34-r0.39.147.0.corei7_64', 'perl-module-io-uncompress-adapter-inflate-5.30.1-r0.39.147.0.corei7_64', 'python-pip-19.3.1-r0.39.147.0.corei7_64', 'bash-completion-extra-2.10-r0.33.147.0.corei7_64', 'librabbitmq4-0.10.0-r0.62.147.0.corei7_64', 'base-passwd-update-3.5.29-r0.33.147.0.corei7_64', 'iptables-module-xt-udp-1.8.4-r0.33.147.0.corei7_64', 'libcgroup-0.41-r0.39.147.0.corei7_64', 'perl-module-overload-5.30.1-r0.39.147.0.corei7_64', 'at-3.1.23-r0.39.147.0.corei7_64', 'perl-module-io-compress-base-common-5.30.1-r0.39.147.0.corei7_64', 'setserial-2.17-r3.98.147.0.corei7_64', 'selinux-python-chcat-3.0-r0.41.147.0.corei7_64', 'perl-5.30.1-r0.39.147.0.corei7_64', 'libfdisk1-2.35.1-r0.39.147.0.corei7_64', 'lz4-1:1.9.4-r0.10.147.0.corei7_64', 'mdadm-4.1-r0.33.147.0.corei7_64', 'openssl-engines-1.1.1w-r0.7.147.0.corei7_64', 'python-ipy-1.00-r0.39.147.0.corei7_64', 'perl-module-overloading-5.30.1-r0.39.147.0.corei7_64', 'selinux-python-audit2allow-3.0-r0.41.147.0.corei7_64', 'selinux-python-sepolicy-3.0-r0.41.147.0.corei7_64', 'python3-six-1.14.0-r0.41.147.0.corei7_64', 'policycoreutils-setsebool-3.0-r0.41.147.0.corei7_64', 'e2fsprogs-1.45.7-r0.31.147.0.corei7_64', 'pam-plugin-access-1.3.1-r0.39.147.0.corei7_64', 'rsync-3.2.5-r0.33.147.0.corei7_64', 'libmpfr6-4.0.2-r0.33.147.0.corei7_64', 'util-linux-nologin-2.35.1-r0.39.147.0.corei7_64', 'flex-2.6.4-r0.33.147.0.corei7_64', 'perl-module-utf8-5.30.1-r0.39.147.0.corei7_64', 'perl-module-encode-mime-name-5.30.1-r0.39.147.0.corei7_64', 'tzdata-atlantic-2024a-r0.1.147.0.noarch', 'python3-ipy-1.00-r0.41.147.0.corei7_64', 'libnl-route-3-200-1:3.5.0-r0.33.147.0.corei7_64', 'util-linux-utmpdump-2.35.1-r0.39.147.0.corei7_64', 'libstdc++6-9.5.0-r0.31.147.0.corei7_64', 'python-idle-2.7.18-r0.39.147.0.corei7_64', 'zstd-1.4.5-r0.33.147.0.corei7_64', 'python3-pkgutil-3.8.18-r0.13.147.0.corei7_64', 'perl-module-re-5.30.1-r0.39.147.0.corei7_64', 'lvm2-2.03.06-r0.59.147.0.corei7_64', 'expect-5.45.4-r0.39.147.0.corei7_64', 'util-linux-chrt-2.35.1-r0.39.147.0.corei7_64', 'libpcap1-1.9.1-r0.33.147.0.corei7_64', 'curl-7.69.1-r0.40.147.0.corei7_64', 'nettle-3.5.1-r0.33.147.0.corei7_64', 'iputils-ping-s20190709-r0.58.147.0.corei7_64', 'libsemanage-python-3.0-r0.41.147.0.corei7_64', 'libfl2-2.6.4-r0.33.147.0.corei7_64', 'python-pickle-2.7.18-r0.39.147.0.corei7_64', 'util-linux-losetup-2.35.1-r0.39.147.0.corei7_64', 'ncurses-terminfo-base-6.2-r0.33.147.0.corei7_64', 'python-six-1.14.0-r0.39.147.0.corei7_64', 'vim-vimrc-9.0.2190-r0.10.147.0.corei7_64', 'base-files-3.0.14-r89.15.xr_s_x86', 'tzdata-pacific-2024a-r0.1.147.0.noarch', 'grub-common-2.04-r0.33.147.0.corei7_64', 'libevent-2.1-7-2.1.11-r0.39.147.0.corei7_64', 'python-html-2.7.18-r0.39.147.0.corei7_64', 'sdparm-1.11-r0.33.147.0.corei7_64', 'pam-plugin-debug-1.3.1-r0.39.147.0.corei7_64', 'libdbus-glib-1-2-0.110-r0.56.147.0.corei7_64', 'python-debugger-2.7.18-r0.39.147.0.corei7_64', 'efivar-37-r0.33.147.0.corei7_64', 'perl-module-tie-hash-5.30.1-r0.39.147.0.corei7_64', 'perl-module-dynaloader-5.30.1-r0.39.147.0.corei7_64', 'python-sqlite3-2.7.18-r0.39.147.0.corei7_64', 'openssl-bin-1.1.1w-r0.7.147.0.corei7_64', 'librepo0-1.11.2-r0.58.147.0.corei7_64', 'python-mmap-2.7.18-r0.39.147.0.corei7_64', 'lmsensors-isatools-3.6.0-r0.57.147.0.corei7_64', 'python3-doctest-3.8.18-r0.13.147.0.corei7_64', 'libgpg-error-1.37-r0.33.147.0.corei7_64', 'python-bcrypt-3.1.7-r0.39.147.0.corei7_64', 'pam-plugin-rhosts-1.3.1-r0.39.147.0.corei7_64', 'openssh-sftp-server-8.2p1-r0.51.147.0.corei7_64', 'python3-gpg-1.13.1-r0.41.147.0.corei7_64', 'util-linux-uuidd-2.35.1-r0.39.147.0.corei7_64', 'python-image-2.7.18-r0.39.147.0.corei7_64', 'libxslt-1.1.34-r0.41.147.0.corei7_64', 'perl-module-encode-5.30.1-r0.39.147.0.corei7_64', 'tcp-wrappers-7.6-r10.98.147.0.corei7_64', 'util-linux-renice-2.35.1-r0.39.147.0.corei7_64', 'dnf-vars-arch-1.0-r0.14.147.0.xr_s_x86', 'libtic5-6.2-r0.33.147.0.corei7_64', 'cisco-initscripts-0.1-r0.15.147.0.xr_s_x86', 'tzdata-posix-2024a-r0.1.147.0.noarch', 'util-linux-mkfs.cramfs-2.35.1-r0.39.147.0.corei7_64', 'libnl-nf-3-200-1:3.5.0-r0.33.147.0.corei7_64', 'fuser-23.3-r0.39.147.0.corei7_64', 'policycoreutils-runinit-3.0-r0.41.147.0.corei7_64', 'python3-io-3.8.18-r0.13.147.0.corei7_64', 'iptables-module-xt-addrtype-1.8.4-r0.33.147.0.corei7_64', 'pam-plugin-umask-1.3.1-r0.39.147.0.corei7_64', 'python-crypt-2.7.18-r0.39.147.0.corei7_64', 'perl-module-json-pp-boolean-5.30.1-r0.39.147.0.corei7_64', 'python-gdbm-2.7.18-r0.39.147.0.corei7_64', 'perl-module-carp-5.30.1-r0.39.147.0.corei7_64', 'python-lang-2.7.18-r0.39.147.0.corei7_64', 'attr-2.4.48-r0.33.147.0.corei7_64', 'python-runpy-2.7.18-r0.39.147.0.corei7_64', 'strace-5.5-r0.33.147.0.corei7_64', 'tunctl-1.5-r0.99.147.0.corei7_64', 'usleep-1.0-r0.98.147.0.corei7_64', 'killall-23.3-r0.39.147.0.corei7_64', 'util-linux-kill-2.35.1-r0.39.147.0.corei7_64', 'policycoreutils-semodule-3.0-r0.41.147.0.corei7_64', 'python3-nose-1.3.7-r0.41.147.0.corei7_64', 'libfastjson4-0.99.8-r0.6.147.0.corei7_64', 'libpanelw5-6.2-r0.33.147.0.corei7_64', 'perl-module-encode-alias-5.30.1-r0.39.147.0.corei7_64', 'systemd-bash-completion-1:244.5-r0.56.147.0.corei7_64', 'util-linux-blkid-2.35.1-r0.39.147.0.corei7_64', 'systemd-kernel-install-1:244.5-r0.56.147.0.corei7_64', 'util-linux-eject-2.35.1-r0.39.147.0.corei7_64', 'libffi7-3.3-r0.33.147.0.corei7_64', 'tzdata-misc-2024a-r0.1.147.0.noarch', 'mtd-utils-misc-2.1.3-r0.31.147.0.corei7_64', 'lmsensors-pwmconfig-3.6.0-r0.57.147.0.corei7_64', 'openmp-10.0.1-r0.39.147.0.corei7_64', 'policycoreutils-3.0-r0.41.147.0.corei7_64', 'perf-5.4.273-r10.12.147.0.xr_s_x86', 'python3-dev-3.8.18-r0.13.147.0.corei7_64', 'perl-module-logfile-rotate-1.04-r0.104.147.0.corei7_64', 'libdw1-0.178-r0.39.147.0.corei7_64', 'run-postinsts-1.0-r10.25.noarch', 'perl-module-file-spec-5.30.1-r0.39.147.0.corei7_64', 'libfuse2-2.9.9-r0.33.147.0.corei7_64', 'python3-prettytable-0.7.2-r0.103.147.0.corei7_64', 'python-db-2.7.18-r0.39.147.0.corei7_64', 'perl-module-encode-configlocal-pm-5.30.1-r0.39.147.0.corei7_64', 'iptables-module-ip6t-snat-1.8.4-r0.33.147.0.corei7_64', 'perl-module-file-basename-5.30.1-r0.39.147.0.corei7_64', 'tzdata-arctic-2024a-r0.1.147.0.noarch', 'dmidecode-3.2-r0.83.147.0.corei7_64', 'tzdata-americas-2024a-r0.1.147.0.noarch', 'python-compile-2.7.18-r0.39.147.0.corei7_64', 'createrepo-c-0.15.7-r0.58.147.0.corei7_64', 'libcom-err2-1.45.7-r0.31.147.0.corei7_64', 'perl-module-file-spec-unix-5.30.1-r0.39.147.0.corei7_64', 'libpci3-3.6.4-r0.58.147.0.corei7_64', 'libunistring2-0.9.10-r0.33.147.0.corei7_64', 'util-linux-setpriv-2.35.1-r0.39.147.0.corei7_64', 'libgdbm6-1.18.1-r0.33.147.0.corei7_64', 'python3-numpy-1.17.4-r0.41.147.0.corei7_64', 'ncurses-tools-6.2-r0.33.147.0.corei7_64', 'pam-plugin-tally-1.3.1-r0.39.147.0.corei7_64', 'python3-rpm-1:4.14.2.1-r0.56.147.0.corei7_64', 'libasm1-0.178-r0.39.147.0.corei7_64', 'gnupg-2.2.27-r0.40.147.0.corei7_64', 'time-1.9-r0.33.147.0.corei7_64', 'sed-4.8-r0.39.147.0.corei7_64', 'libestr0-0.1.11-r0.6.147.0.corei7_64', 'libxml2-2.9.10-r0.41.147.0.corei7_64', 'm4-1.4.18-r0.33.147.0.corei7_64', 'libuuid1-2.35.1-r0.39.147.0.corei7_64', 'mtd-utils-ubifs-2.1.3-r0.31.147.0.corei7_64', 'python-re-2.7.18-r0.39.147.0.corei7_64', 'quota-4.05-r0.56.147.0.corei7_64', 'libjitterentropy3-3.4.1-r0.37.147.0.corei7_64', 'python-curses-2.7.18-r0.39.147.0.corei7_64', 'python-io-2.7.18-r0.39.147.0.corei7_64', 'rpmrc-1.0-r0.14.147.0.xr_s_x86', 'iptables-module-ipt-dnat-1.8.4-r0.33.147.0.corei7_64', 'db-bin-6.1.38-r1.34.147.0.corei7_64', 'vim-9.0.2190-r0.10.147.0.corei7_64', 'libarchive-3.4.2-r0.41.147.0.corei7_64', 'util-linux-fsck.cramfs-2.35.1-r0.39.147.0.corei7_64', 'sg3-utils-1.45-r0.33.147.0.corei7_64', 'update-alternatives-opkg-0.4.2-r0.33.147.0.corei7_64', 'python3-xmlrpc-3.8.18-r0.13.147.0.corei7_64', 'python3-sqlite3-3.8.18-r0.13.147.0.corei7_64', 'python-contextlib-2.7.18-r0.39.147.0.corei7_64', 'cpp-9.5.0-r0.31.147.0.corei7_64', 'python-profile-2.7.18-r0.39.147.0.corei7_64', 'perl-module-parent-5.30.1-r0.39.147.0.corei7_64', 'python-json-2.7.18-r0.39.147.0.corei7_64', 'iputils-tftpd-s20190709-r0.58.147.0.corei7_64', 'dhcp-server-config-4.4.2-r0.39.147.0.corei7_64', 'pciutils-ids-3.6.4-r0.58.147.0.corei7_64', 'python3-pydoc-3.8.18-r0.13.147.0.corei7_64', 'mailx-12.5+5-r0.33.147.0.corei7_64', 'tzdata-africa-2024a-r0.1.147.0.noarch', 'tzdata-asia-2024a-r0.1.147.0.noarch', 'gzip-1.10-r0.33.147.0.corei7_64', 'python3-smtpd-3.8.18-r0.13.147.0.corei7_64', 'which-2.21-r3.98.147.0.corei7_64', 'perl-module-io-compress-zlib-extra-5.30.1-r0.39.147.0.corei7_64', 'python3-unixadmin-3.8.18-r0.13.147.0.corei7_64', 'perl-module-xsloader-5.30.1-r0.39.147.0.corei7_64', 'python-unixadmin-2.7.18-r0.39.147.0.corei7_64', 'python-paramiko-2.7.0-r0.39.147.0.corei7_64', 'python-xmldiff-2.4-r0.39.147.0.corei7_64', 'openssh-8.2p1-r0.51.147.0.corei7_64', 'libaio1-0.3.111-r0.33.147.0.corei7_64', 'inetutils-traceroute-1.9.4-r0.106.147.0.corei7_64', 'python-stringold-2.7.18-r0.39.147.0.corei7_64', 'perl-module-scalar-util-5.30.1-r0.39.147.0.corei7_64', 'perl-module-io-uncompress-gunzip-5.30.1-r0.39.147.0.corei7_64', 'python-doctest-2.7.18-r0.39.147.0.corei7_64', 'python-subprocess-2.7.18-r0.39.147.0.corei7_64', 'iptables-module-xt-tcp-1.8.4-r0.33.147.0.corei7_64', 'perl-module-fcntl-5.30.1-r0.39.147.0.corei7_64', 'policycoreutils-secon-3.0-r0.41.147.0.corei7_64', 'perl-module-compress-raw-zlib-5.30.1-r0.39.147.0.corei7_64', 'diffutils-3.7-r0.33.147.0.corei7_64', 'pam-plugin-exec-1.3.1-r0.39.147.0.corei7_64', 'perl-module-b-5.30.1-r0.39.147.0.corei7_64', 'makedumpfile-1.6.9-r0.39.147.0.corei7_64', 'semodule-utils-semodule-expand-3.0-r0.33.147.0.corei7_64', 'bind-libs-9.11.37-r0.31.147.0.corei7_64', 'pam-plugin-namespace-1.3.1-r0.39.147.0.corei7_64', 'perl-module-storable-5.30.1-r0.39.147.0.corei7_64', 'libatomic1-9.5.0-r0.31.147.0.corei7_64', 'python-difflib-2.7.18-r0.39.147.0.corei7_64', 'util-linux-partx-2.35.1-r0.39.147.0.corei7_64', 'python-mailbox-2.7.18-r0.39.147.0.corei7_64', 'perl-module-time-hires-5.30.1-r0.39.147.0.corei7_64', 'python-datetime-2.7.18-r0.39.147.0.corei7_64', 'libyaml-0-2-0.2.2-r0.33.147.0.corei7_64', 'libpanel5-6.2-r0.33.147.0.corei7_64', 'perl-module-common-sense-3.75-r0.39.147.0.corei7_64', 'perl-module-io-seekable-5.30.1-r0.39.147.0.corei7_64', 'dnf-bash-completion-2.7.5-r0.155.147.0.corei7_64', 'python3-asyncio-3.8.18-r0.13.147.0.corei7_64', 'python-pkgutil-2.7.18-r0.39.147.0.corei7_64', 'tcpdump-4.9.3-r0.33.147.0.corei7_64', 'kmod-bash-completion-26-r0.39.147.0.corei7_64', 'libudrv-0.1-r2.37.147.0.xr_s_x86', 'python-ecdsa-0.13-r0.39.147.0.corei7_64', 'pam-plugin-wheel-1.3.1-r0.39.147.0.corei7_64', 'tzdata-core-2024a-r0.1.147.0.noarch', 'python-syslog-2.7.18-r0.39.147.0.corei7_64', 'util-linux-pivot-root-2.35.1-r0.39.147.0.corei7_64', 'iptables-1.8.4-r0.33.147.0.corei7_64', 'python-pbr-5.4.4-r0.39.147.0.corei7_64', 'policycoreutils-sestatus-3.0-r0.41.147.0.corei7_64', 'util-linux-dmesg-2.35.1-r0.39.147.0.corei7_64', 'libxml2-python-2.9.10-r0.41.147.0.corei7_64', 'python-terminal-2.7.18-r0.39.147.0.corei7_64', 'python-robotparser-2.7.18-r0.39.147.0.corei7_64', 'ncurses-6.2-r0.33.147.0.corei7_64', 'sudo-lib-1.9.15p5-r0.10.147.0.corei7_64', 'python-cryptography-2.8-r0.39.147.0.corei7_64', 'acl-2.2.53-r0.33.147.0.corei7_64', 'libssl1.1-1.1.1w-r0.7.147.0.corei7_64', 'tcl-8.6.10-r0.39.147.0.corei7_64', 'libjson-c4-0.13.1-r0.33.147.0.corei7_64', 'perl-module-integer-5.30.1-r0.39.147.0.corei7_64', 'iputils-arping-s20190709-r0.58.147.0.corei7_64', 'lsof-4.91-r0.39.147.0.corei7_64', 'perl-module-zmq-constants-1.04-r0.104.147.0.corei7_64', 'python-fcntl-2.7.18-r0.39.147.0.corei7_64', 'libcyaml1-1.1.0-r0.33.147.0.corei7_64', 'libsqlite3-0-3:3.31.1-r0.33.147.0.corei7_64', 'perl-module-io-compress-gzip-5.30.1-r0.39.147.0.corei7_64', 'util-linux-hexdump-2.35.1-r0.39.147.0.corei7_64', 'python-distutils-2.7.18-r0.39.147.0.corei7_64', 'util-linux-lscpu-2.35.1-r0.39.147.0.corei7_64', 'python3-numbers-3.8.18-r0.13.147.0.corei7_64', 'bzip2-1.0.8-r0.33.147.0.corei7_64', 'less-551-r0.33.147.0.corei7_64', 'util-linux-mkswap-2.35.1-r0.39.147.0.corei7_64', 'mtd-utils-2.1.3-r0.31.147.0.corei7_64', 'pam-plugin-listfile-1.3.1-r0.39.147.0.corei7_64', 'util-linux-readprofile-2.35.1-r0.39.147.0.corei7_64', 'efibootmgr-17-r0.33.147.0.corei7_64', 'perl-module-expect-1.35-r0.39.147.0.corei7_64', 'python3-plistlib-3.8.18-r0.13.147.0.corei7_64', 'libnsl2-1.2.0+git0+4a062cf418-r0.33.147.0.corei7_64', 'tzdata-right-2024a-r0.1.147.0.noarch', 'libcurl4-7.69.1-r0.40.147.0.corei7_64', 'python3-audio-3.8.18-r0.13.147.0.corei7_64', 'systemd-1:244.5-r0.56.147.0.corei7_64', 'perl-module-date-calc-6.4-r0.104.147.0.corei7_64', 'libprotobuf-c-compiler-1.3.3-r0.91.147.0.corei7_64', 'python-smtpd-2.7.18-r0.39.147.0.corei7_64', 'file-5.38-r0.39.147.0.corei7_64', 'libudev1-1:244.5-r0.56.147.0.corei7_64', 'python-netserver-2.7.18-r0.39.147.0.corei7_64', 'perl-module-math-complex-5.30.1-r0.39.147.0.corei7_64', 'util-linux-runuser-2.35.1-r0.39.147.0.corei7_64', 'smartmontools-7.1-r0.39.147.0.corei7_64', 'python-ncclient-0.6.13-r0.41.147.0.corei7_64', 'python3-defusedxml-0.6.0-r0.10.147.0.corei7_64', 'util-linux-prlimit-2.35.1-r0.39.147.0.corei7_64', 'pam-plugin-tally2-1.3.1-r0.39.147.0.corei7_64', 'perl-module-getopt-std-5.30.1-r0.39.147.0.corei7_64', 'libuio0-1.0-r2.98.147.0.corei7_64', 'perl-module-math-bigint-5.30.1-r0.39.147.0.corei7_64', 'tzdata-europe-2024a-r0.1.147.0.noarch', 'libgomp1-9.5.0-r0.31.147.0.corei7_64', 'libjansson4-2.13.1-r0.33.147.0.corei7_64', 'libc6-thread-db-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64', 'semodule-utils-semodule-package-3.0-r0.33.147.0.corei7_64', 'systemd-initramfs-1:244.5-r0.56.147.0.corei7_64', 'libsysfs2-2.1.0-r5.98.147.0.corei7_64', 'bash-completion-2.10-r0.33.147.0.corei7_64', 'perl-module-json-pp-5.30.1-r0.39.147.0.corei7_64', 'python-ply-3.11-r0.39.147.0.corei7_64', 'perl-module-io-compress-base-5.30.1-r0.39.147.0.corei7_64', 'python-unittest-2.7.18-r0.39.147.0.corei7_64', 'libseccomp-2.4.3-r0.33.147.0.corei7_64', 'python3-venv-3.8.18-r0.13.147.0.corei7_64', 'iputils-ninfod-s20190709-r0.58.147.0.corei7_64', 'libgcc1-9.5.0-r0.31.147.0.corei7_64', 'libsegfault-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64', 'rpm-1:4.14.2.1-r0.56.147.0.corei7_64', 'libbpf0-0.5.0-r0.16.147.0.xr_s_x86', 'python-math-2.7.18-r0.39.147.0.corei7_64', 'python-modules-2.7.18-r0.39.147.0.corei7_64', 'libwrap0-7.6-r10.98.147.0.corei7_64', 'openssh-sshd-8.2p1-r0.51.147.0.corei7_64', 'libncurses5-6.2-r0.33.147.0.corei7_64', 'util-linux-bash-completion-2.35.1-r0.39.147.0.corei7_64', 'hdparm-9.58-r0.33.147.0.corei7_64', 'python-networkx-2.2-r0.39.147.0.corei7_64', 'libgdbm-compat4-1.18.1-r0.33.147.0.corei7_64', 'libnl-3-200-1:3.5.0-r0.33.147.0.corei7_64', 'python3-multiprocessing-3.8.18-r0.13.147.0.corei7_64', 'lmsensors-sensors-3.6.0-r0.57.147.0.corei7_64', 'python-numbers-2.7.18-r0.39.147.0.corei7_64', 'vlan-1.9-r0.33.147.0.corei7_64', 'python-compression-2.7.18-r0.39.147.0.corei7_64', 'iputils-clockdiff-s20190709-r0.58.147.0.corei7_64', 'ncurses-terminfo-6.2-r0.33.147.0.corei7_64', 'util-linux-fdisk-2.35.1-r0.39.147.0.corei7_64', 'util-linux-findfs-2.35.1-r0.39.147.0.corei7_64', 'mtd-utils-jffs2-2.1.3-r0.31.147.0.corei7_64', 'iproute2-5.5.0-r0.39.147.0.corei7_64', 'tzdata-australia-2024a-r0.1.147.0.noarch', 'libyajl2-2.1.0-r0.98.147.0.corei7_64', 'python3-compile-3.8.18-r0.13.147.0.corei7_64', 'util-linux-isosize-2.35.1-r0.39.147.0.corei7_64', 'libprotobuf-c1-1.3.3-r0.91.147.0.corei7_64', 'ca-certificates-20241223-r0.5.147.0.noarch', 'perl-module-math-bigint-lib-5.30.1-r0.39.147.0.corei7_64', 'util-linux-swaponoff-2.35.1-r0.39.147.0.corei7_64', 'policycoreutils-fixfiles-3.0-r0.41.147.0.corei7_64', 'ldd-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64', 'perl-module-exporter-5.30.1-r0.39.147.0.corei7_64', 'libitm1-9.5.0-r0.31.147.0.corei7_64', 'cracklib-2.9.5-r0.104.147.0.corei7_64', 'grub-efi-2.04-r0.19.147.0.xr_s_x86', 'python-pycrypto-2.6.1-r0.97.147.0.corei7_64', 'gettext-runtime-0.20.1-r0.56.147.0.corei7_64', 'libaugeas0-1.12.0-r0.41.147.0.corei7_64', 'python-idna-2.8-r0.39.147.0.corei7_64', 'libksba8-1.3.5-r0.33.147.0.corei7_64', 'dhcp-client-4.4.2-r0.39.147.0.corei7_64', 'perl-module-io-handle-5.30.1-r0.39.147.0.corei7_64', 'libpopt0-1.16-r3.98.147.0.corei7_64', 'python-multiprocessing-2.7.18-r0.39.147.0.corei7_64', 'python3-image-3.8.18-r0.13.147.0.corei7_64', 'util-linux-blockdev-2.35.1-r0.39.147.0.corei7_64', 'zeromq-4.3.4-r0.25.147.0.corei7_64', 'python3-networkx-2.4-r0.41.147.0.corei7_64', 'openssl-1.1.1w-r0.7.147.0.corei7_64', 'python3-difflib-3.8.18-r0.13.147.0.corei7_64', 'python3-xml-3.8.18-r0.13.147.0.corei7_64', 'libglib-2.0-0-1:2.62.6-r0.56.147.0.corei7_64', 'libpython2.7-1.0-2.7.18-r0.39.147.0.corei7_64', 'python-ctypes-2.7.18-r0.39.147.0.corei7_64', 'util-linux-swapon-2.35.1-r0.39.147.0.corei7_64', 'perl-module-mro-5.30.1-r0.39.147.0.corei7_64', 'libsensors5-3.6.0-r0.57.147.0.corei7_64', 'libidn12-1.35-r0.33.147.0.corei7_64', 'libtirpc3-1.2.6-r0.33.147.0.corei7_64', 'grep-3.4-r0.39.147.0.corei7_64', 'iptables-module-ipt-snat-1.8.4-r0.33.147.0.corei7_64', 'pam-filter-upperlower-1.3.1-r0.39.147.0.corei7_64', 'libgnutls30-3.6.14-r0.34.147.0.corei7_64', 'python3-distutils-3.8.18-r0.13.147.0.corei7_64', 'python3-crypt-3.8.18-r0.13.147.0.corei7_64', 'ima-evm-utils-1.2.1+git0+3eab1f93b6-r0.33.147.0.corei7_64', 'libncursesw5-6.2-r0.33.147.0.corei7_64', 'selinux-python-semanage-3.0-r0.41.147.0.corei7_64', 'python3-pickle-3.8.18-r0.13.147.0.corei7_64', 'librmutil1-1.0-r0.15.147.0.corei7_64', 'libtcl8.6-0-8.6.10-r0.39.147.0.corei7_64', 'python-ipaddress-1.0.23-r0.39.147.0.corei7_64', 'libcheck0-0.14.0-r0.33.147.0.corei7_64', 'perl-module-math-bigint-calc-5.30.1-r0.39.147.0.corei7_64', 'python3-mmap-3.8.18-r0.13.147.0.corei7_64', 'python-core-2.7.18-r0.39.147.0.corei7_64', 'python3-fcntl-3.8.18-r0.13.147.0.corei7_64', 'parted-3.3-r0.39.147.0.corei7_64', 'python-decorator-4.4.1-r0.39.147.0.corei7_64', 'tzcode-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64', 'dosfstools-4.1-r0.33.147.0.corei7_64', 'libpcreposix0-8.44-r0.39.147.0.corei7_64', 'bridge-utils-1.6-r0.33.147.0.corei7_64', 'libnftnl11-1.1.7-r0.33.147.0.corei7_64', 'python-textutils-2.7.18-r0.39.147.0.corei7_64', 'i2c-tools-4.1-r0.33.147.0.corei7_64', 'bash-5.0-r0.33.147.0.corei7_64', 'zip-3.0-r2.98.147.0.corei7_64', 'slang-2.3.2-r0.39.147.0.corei7_64', 'libavahi-common3-0.7-r0.56.147.0.corei7_64', 'python3-logging-3.8.18-r0.13.147.0.corei7_64', 'util-linux-fstrim-2.35.1-r0.39.147.0.corei7_64', 'perl-module-base-5.30.1-r0.39.147.0.corei7_64', 'inotify-tools-3.20.2.2-r0.33.147.0.corei7_64', 'perl-module-io-tty-1.16-r0.39.147.0.corei7_64', 'perl-module-io-uncompress-base-5.30.1-r0.39.147.0.corei7_64', 'coreutils-8.31-r0.41.147.0.corei7_64', 'pam-plugin-timestamp-1.3.1-r0.39.147.0.corei7_64', 'libusb-1.0-0-1.0.22-r0.56.147.0.corei7_64', 'python-logging-2.7.18-r0.39.147.0.corei7_64', 'libtdb1-1.4.3-r0.41.147.0.corei7_64', 'libsolv1-0.7.10-r0.56.147.0.corei7_64', 'sysfsutils-2.1.0-r5.98.147.0.corei7_64', 'python3-email-3.8.18-r0.13.147.0.corei7_64', 'python-nacl-1.3.0-r0.39.147.0.corei7_64', 'util-linux-rev-2.35.1-r0.39.147.0.corei7_64', 'e2fsprogs-tune2fs-1.45.7-r0.31.147.0.corei7_64', 'perl-module-io-5.30.1-r0.39.147.0.corei7_64', 'selinux-python-sepolgen-3.0-r0.41.147.0.corei7_64', 'util-linux-getopt-2.35.1-r0.39.147.0.corei7_64', 'selinux-sandbox-3.0-r0.39.147.0.corei7_64', 'sudo-sudo-1.9.15p5-r0.10.147.0.corei7_64', 'libltdl7-2.4.6-r0.98.147.0.corei7_64', 'util-linux-wall-2.35.1-r0.39.147.0.corei7_64', 'python-pkg-resources-42.0.2-r0.39.147.0.corei7_64', 'iptables-module-ipt-masquerade-1.8.4-r0.33.147.0.corei7_64', 'python3-compression-3.8.18-r0.13.147.0.corei7_64', 'python3-mime-3.8.18-r0.13.147.0.corei7_64', 'unzip-1:6.0-r5.98.147.0.corei7_64', 'iptables-module-xt-conntrack-1.8.4-r0.33.147.0.corei7_64', 'perl-module-text-parsewords-5.30.1-r0.39.147.0.corei7_64', 'python3-html-3.8.18-r0.13.147.0.corei7_64', 'e2fsprogs-e2fsck-1.45.7-r0.31.147.0.corei7_64', 'lmsensors-fancontrol-3.6.0-r0.57.147.0.corei7_64', 'util-linux-fallocate-2.35.1-r0.39.147.0.corei7_64', 'systemd-analyze-1:244.5-r0.56.147.0.corei7_64', 'pam-plugin-xauth-1.3.1-r0.39.147.0.corei7_64', 'python3-decorator-4.4.2-r0.41.147.0.corei7_64', 'libselinux-python-3.0-r0.41.147.0.corei7_64', 'python3-datetime-3.8.18-r0.13.147.0.corei7_64', 'mtools-4.0.23-r0.33.147.0.corei7_64', 'perl-module-lib-5.30.1-r0.39.147.0.corei7_64', 'python3-pygpgme-0.3-r0.105.147.0.corei7_64', 'glibc-gconv-2.31-r0.31.147.0.corei7_64', 'netbase-2:6.1-r0.33.147.0.corei7_64', 'util-linux-mountpoint-2.35.1-r0.39.147.0.corei7_64', 'libdnf1-0.11.1-r0.150.147.0.corei7_64', 'libassuan0-2.5.3-r0.33.147.0.corei7_64', 'libsotruss-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64', 'libdevmapper-2.03.06-r0.59.147.0.corei7_64', 'perl-module-pod-usage-5.30.1-r0.39.147.0.corei7_64', 'python-email-2.7.18-r0.39.147.0.corei7_64', 'selinux-python-3.0-r0.41.147.0.corei7_64', 'pam-plugin-mkhomedir-1.3.1-r0.39.147.0.corei7_64', 'sysstat-12.2.1-r0.33.147.0.corei7_64', 'python-zlib-2.7.18-r0.39.147.0.corei7_64', 'python-mime-2.7.18-r0.39.147.0.corei7_64', 'libssh2-1-1.9.0-r0.39.147.0.corei7_64', 'openssh-scp-8.2p1-r0.51.147.0.corei7_64', 'findutils-4.7.0-r0.39.147.0.corei7_64', 'util-linux-cfdisk-2.35.1-r0.39.147.0.corei7_64', 'semodule-utils-semodule-link-3.0-r0.33.147.0.corei7_64', 'libcrypto1.1-1.1.1w-r0.7.147.0.corei7_64', 'perl-module-compress-zlib-5.30.1-r0.39.147.0.corei7_64', 'ethtool-5.4-r0.33.147.0.corei7_64', 'libmnl0-1.0.4-r0.98.147.0.corei7_64', 'perl-module-io-compress-gzip-constants-5.30.1-r0.39.147.0.corei7_64', 'perl-module-math-bigfloat-5.30.1-r0.39.147.0.corei7_64', 'python-pydoc-2.7.18-r0.39.147.0.corei7_64', 'util-linux-more-2.35.1-r0.39.147.0.corei7_64', 'perl-module-feature-5.30.1-r0.39.147.0.corei7_64', 'python3-pkg-resources-45.2.0-r0.41.147.0.corei7_64', 'libcares2-1.18.1-r0.25.147.0.corei7_64', 'e2fsprogs-badblocks-1.45.7-r0.31.147.0.corei7_64', 'python-shell-2.7.18-r0.39.147.0.corei7_64', 'libpython3.8-1.0-3.8.18-r0.13.147.0.corei7_64', 'perl-module-term-cap-5.30.1-r0.39.147.0.corei7_64', 'dnf-2.7.5-r0.155.147.0.corei7_64', 'libc6-utils-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64', 'pam-plugin-pwhistory-1.3.1-r0.39.147.0.corei7_64', 'policycoreutils-genhomedircon-3.0-r0.41.147.0.corei7_64', 'util-linux-mcookie-2.35.1-r0.39.147.0.corei7_64', 'sudo-1.9.15p5-r0.10.147.0.corei7_64', 'logrotate-3.15.1-r0.41.147.0.corei7_64', 'gflags-2.2.2-r0.84.147.0.corei7_64', 'util-linux-ipcs-2.35.1-r0.39.147.0.corei7_64', 'python3-curses-3.8.18-r0.13.147.0.corei7_64', 'libtalloc-2.3.0-r0.41.147.0.corei7_64', 'setools-4.3.0-r0.41.147.0.corei7_64', 'iproute2-ss-5.5.0-r0.39.147.0.corei7_64', 'perl-module-io-compress-rawdeflate-5.30.1-r0.39.147.0.corei7_64', 'initscripts-1.0-r155.29.corei7_64', 'python3-netclient-3.8.18-r0.13.147.0.corei7_64', 'python-threading-2.7.18-r0.39.147.0.corei7_64', 'python-tkinter-2.7.18-r0.39.147.0.corei7_64', 'util-linux-flock-2.35.1-r0.39.147.0.corei7_64', 'perl-module-bytes-heavy-5.30.1-r0.39.147.0.corei7_64', 'util-linux-2.35.1-r0.39.147.0.corei7_64', 'coreutils-stdbuf-8.31-r0.41.147.0.corei7_64', 'perl-module-cwd-5.30.1-r0.39.147.0.corei7_64', 'libreadline8-8.0-r0.33.147.0.corei7_64', 'perl-module-overload-numbers-5.30.1-r0.39.147.0.corei7_64', 'util-linux-su-2.35.1-r0.39.147.0.corei7_64', 'libselinux-bin-3.0-r0.39.147.0.corei7_64', 'libyaml-0-dev-0.2.2-r0.33.147.0.corei7_64', 'policycoreutils-setfiles-3.0-r0.41.147.0.corei7_64', 'perl-module-file-glob-5.30.1-r0.39.147.0.corei7_64', 'vim-common-9.0.2190-r0.10.147.0.corei7_64', 'pam-plugin-time-1.3.1-r0.39.147.0.corei7_64', 'mingetty-1.08-r3.98.147.0.corei7_64', 'libss2-1.45.7-r0.31.147.0.corei7_64', 'python3-pprint-3.8.18-r0.13.147.0.corei7_64', 'python-compiler-2.7.18-r0.39.147.0.corei7_64', 'perl-module-io-compress-adapter-deflate-5.30.1-r0.39.147.0.corei7_64', 'libidn2-0-2.3.0-r0.33.147.0.corei7_64', 'tree-1.8.0-r0.33.147.0.corei7_64', 'pstree-23.3-r0.39.147.0.corei7_64', 'pam-plugin-echo-1.3.1-r0.39.147.0.corei7_64', 'python-bsddb-2.7.18-r0.39.147.0.corei7_64', 'perl-module-getopt-long-5.30.1-r0.39.147.0.corei7_64', 'udev-hwdb-1:244.5-r0.56.147.0.corei7_64', 'e2fsprogs-mke2fs-1.45.7-r0.31.147.0.corei7_64', 'dhcp-libs-4.4.2-r0.39.147.0.corei7_64', 'libgcrypt-1.8.5-r0.39.147.0.corei7_64', 'openssh-keygen-8.2p1-r0.51.147.0.corei7_64', 'grub-bootconf-1.00-r0.14.147.0.xr_s_x86', 'libcares-utils-1.18.1-r0.25.147.0.corei7_64', 'python3-syslog-3.8.18-r0.13.147.0.corei7_64', 'python3-ctypes-3.8.18-r0.13.147.0.corei7_64', 'selinux-gui-3.0-r0.33.147.0.corei7_64', 'libcomps0-0.1.15-r0.41.147.0.corei7_64', 'elfutils-0.178-r0.39.147.0.corei7_64', 'util-linux-setsid-2.35.1-r0.39.147.0.corei7_64', 'python-plistlib-2.7.18-r0.39.147.0.corei7_64', 'gawk-5.0.1-r0.33.147.0.corei7_64', 'perl-module-file-copy-5.30.1-r0.39.147.0.corei7_64', 'libhiredis1.0.0-1.0.2-r0.33.147.0.corei7_64', 'iptables-module-xt-standard-1.8.4-r0.33.147.0.corei7_64', 'policycoreutils-hll-3.0-r0.41.147.0.corei7_64', 'python3-shell-3.8.18-r0.13.147.0.corei7_64', 'db-6.1.38-r1.34.147.0.corei7_64', 'python3-core-3.8.18-r0.13.147.0.corei7_64', 'selinux-dbus-3.0-r0.33.147.0.corei7_64', 'cronie-1.5.5-r0.41.147.0.corei7_64', 'libelf1-0.178-r0.39.147.0.corei7_64', 'perl-module-exporter-heavy-5.30.1-r0.39.147.0.corei7_64', 'pam-plugin-cracklib-1.3.1-r0.39.147.0.corei7_64', 'python-xml-2.7.18-r0.39.147.0.corei7_64', 'selinux-python-sepolgen-ifgen-3.0-r0.41.147.0.corei7_64', 'netcat-0.7.1-r3.98.147.0.corei7_64', 'binutils-2.34-r0.39.147.0.corei7_64', 'python3-json-3.8.18-r0.13.147.0.corei7_64', 'util-linux-logger-2.35.1-r0.39.147.0.corei7_64', 'lvm2-udevrules-2.03.06-r0.59.147.0.corei7_64', 'libe2p2-1.45.7-r0.31.147.0.corei7_64', 'e2fsprogs-dumpe2fs-1.45.7-r0.31.147.0.corei7_64', 'python3-debugger-3.8.18-r0.13.147.0.corei7_64', 'systemd-cisco-journald-conf-1:244.5-r0.56.147.0.corei7_64', 'usbutils-012-r0.57.147.0.corei7_64', 'util-linux-unshare-2.35.1-r0.39.147.0.corei7_64', 'cryptsetup-2.3.7-r0.31.147.0.corei7_64', 'perl-module-encode-encoding-5.30.1-r0.39.147.0.corei7_64', 'desktop-file-utils-0.24-r0.56.147.0.corei7_64', 'libticw5-6.2-r0.33.147.0.corei7_64', 'python-pyasn1-0.4.8-r0.39.147.0.corei7_64', 'python3-threading-3.8.18-r0.13.147.0.corei7_64', 'fuse-utils-2.9.9-r0.33.147.0.corei7_64', 'dpkg-start-stop-1.19.8-r0.31.147.0.corei7_64', 'libevent-pthreads-2.1-7-2.1.11-r0.39.147.0.corei7_64', 'perl-module-selectsaver-5.30.1-r0.39.147.0.corei7_64', 'cryptodev-linux-1.10-r0.33.147.0.corei7_64', 'dnf-plugins-core-2.1.5+git0+8d1f1758be-r0.111.147.0.corei7_64', 'iputils-tracepath-s20190709-r0.58.147.0.corei7_64', 'python3-setuptools-45.2.0-r0.41.147.0.corei7_64', 'iptables-module-ip6t-masquerade-1.8.4-r0.33.147.0.corei7_64', 'util-linux-whereis-2.35.1-r0.39.147.0.corei7_64', 'vmcore-dmesg-2.0.20-r0.43.147.0.corei7_64', 'libgmp10-6.2.0-r0.33.147.0.corei7_64', 'util-linux-hwclock-2.35.1-r0.39.147.0.corei7_64', 'openssl-conf-1.1.1w-r0.7.147.0.corei7_64', 'libulockmgr1-2.9.9-r0.33.147.0.corei7_64', 'perl-module-constant-5.30.1-r0.39.147.0.corei7_64', 'pam-plugin-filter-1.3.1-r0.39.147.0.corei7_64', 'nvme-cli-1.10.1+git0+1d84d6ae0c-r0.39.147.0.corei7_64', 'perl-module-b-deparse-5.30.1-r0.39.147.0.corei7_64', 'python3-pyyaml-5.3.1-r0.41.147.0.corei7_64', 'perl-module-file-globmapper-5.30.1-r0.39.147.0.corei7_64', 'util-linux-wipefs-2.35.1-r0.39.147.0.corei7_64', 'systemd-container-1:244.5-r0.56.147.0.corei7_64', 'util-linux-mkfs-2.35.1-r0.39.147.0.corei7_64', 'util-linux-switch-root-2.35.1-r0.39.147.0.corei7_64', 'libnpth0-1.6-r0.33.147.0.corei7_64', 'util-linux-last-2.35.1-r0.39.147.0.corei7_64', 'pam-plugin-localuser-1.3.1-r0.39.147.0.corei7_64', 'gpgme-1.13.1-r0.41.147.0.corei7_64', 'python-argparse-2.7.18-r0.39.147.0.corei7_64', 'iputils-rarpd-s20190709-r0.58.147.0.corei7_64', 'busybox-1.31.1-r0.44.147.0.corei7_64', 'libpciaccess0-0.16-r0.33.147.0.corei7_64', 'perl-module-io-file-5.30.1-r0.39.147.0.corei7_64', 'python-cffi-1.13.2-r0.39.147.0.corei7_64', 'librelp0-1.5.0-r0.13.147.0.corei7_64', 'util-linux-taskset-2.35.1-r0.39.147.0.corei7_64', 'xz-5.2.4-r0.33.147.0.corei7_64', 'perl-module-symbol-5.30.1-r0.39.147.0.corei7_64', 'netcf-0.2.8+git0+2c5d425585-r0.41.147.0.corei7_64', 'libpng16-16-1.6.37-r0.39.147.0.corei7_64', 'python-setuptools-42.0.2-r0.39.147.0.corei7_64', 'pam-plugin-issue-1.3.1-r0.39.147.0.corei7_64', 'util-linux-nsenter-2.35.1-r0.39.147.0.corei7_64', 'python3-prctl-1.7+git0+57cd0a7cad-r0.110.147.0.corei7_64', 'libprotobuf22-3.11.4-r0.39.147.0.corei7_64', 'libext2fs2-1.45.7-r0.31.147.0.corei7_64', 'pciutils-3.6.4-r0.58.147.0.corei7_64', 'python-pprint-2.7.18-r0.39.147.0.corei7_64', 'lvm2-scripts-2.03.06-r0.59.147.0.corei7_64', 'libnl-genl-3-200-1:3.5.0-r0.33.147.0.corei7_64', 'perl-module-io-uncompress-rawinflate-5.30.1-r0.39.147.0.corei7_64', 'util-linux-swapoff-2.35.1-r0.39.147.0.corei7_64', 'policycoreutils-loadpolicy-3.0-r0.41.147.0.corei7_64', 'bind-9.11.37-r0.31.147.0.corei7_64', 'systemd-compat-units-1.0-r29.90.corei7_64', 'python-misc-2.7.18-r0.39.147.0.corei7_64', 'python-hotshot-2.7.18-r0.39.147.0.corei7_64', 'libavahi-client3-0.7-r0.56.147.0.corei7_64', 'python3-2to3-3.8.18-r0.13.147.0.corei7_64', 'python-2to3-2.7.18-r0.39.147.0.corei7_64', 'sshfs-fuse-3.7.0-r0.59.147.0.corei7_64', 'util-linux-uuidgen-2.35.1-r0.39.147.0.corei7_64', 'python3-stringold-3.8.18-r0.13.147.0.corei7_64', 'tzdata-antarctica-2024a-r0.1.147.0.noarch', 'unionfs-fuse-2.1-r0.33.147.0.corei7_64', 'grpc-1.24.3-r0.44.147.0.corei7_64', 'iptables-module-ip6t-dnat-1.8.4-r0.33.147.0.corei7_64', 'gnupg-gpg-2.2.27-r0.40.147.0.corei7_64', 'util-linux-rename-2.35.1-r0.39.147.0.corei7_64', 'libfreetype6-2.10.1-r0.39.147.0.corei7_64', 'iputils-rdisc-s20190709-r0.58.147.0.corei7_64', 'openssh-ssh-8.2p1-r0.51.147.0.corei7_64', 'python3-typing-3.8.18-r0.13.147.0.corei7_64', 'util-linux-mesg-2.35.1-r0.39.147.0.corei7_64', 'kexec-2.0.20-r0.43.147.0.corei7_64', 'python-selectors2-2.0.2-r0.39.147.0.corei7_64', 'python3-libs-3.8.18-r0.13.147.0.corei7_64', 'libpcre2-10.34-r0.25.147.0.corei7_64', 'python3-math-3.8.18-r0.13.147.0.corei7_64', 'util-linux-findmnt-2.35.1-r0.39.147.0.corei7_64', 'libtinfo5-6.2-r0.33.147.0.corei7_64', 'openssl-misc-1.1.1w-r0.7.147.0.corei7_64', 'cpio-2.13-r0.33.147.0.corei7_64', 'policycoreutils-newrole-3.0-r0.41.147.0.corei7_64', 'dnsmasq-2.90-r0.4.147.0.corei7_64', 'psmisc-23.3-r0.39.147.0.corei7_64', 'lxc-4.0.12+git0+5ba5725cb4-r0.38.147.0.corei7_64', 'augeas-lenses-1.12.0-r0.41.147.0.corei7_64', 'python-pycparser-2.19-r0.39.147.0.corei7_64', 'python-codecs-2.7.18-r0.39.147.0.corei7_64', 'net-tools-1.60+26-r0.39.147.0.corei7_64', 'python-resource-2.7.18-r0.39.147.0.corei7_64', 'python-netclient-2.7.18-r0.39.147.0.corei7_64', 'initscripts-functions-1.0-r155.29.corei7_64', 'perl-module-data-dumper-5.30.1-r0.39.147.0.corei7_64', 'procps-3.3.16-r0.59.147.0.corei7_64', 'python3-unittest-3.8.18-r0.13.147.0.corei7_64', 'libsmartcols1-2.35.1-r0.39.147.0.corei7_64', 'wget-1.20.3-r0.40.147.0.corei7_64', 'fuse3-3.9.2-r0.56.147.0.corei7_64', 'python3-iniparse-0.4-r0.111.147.0.corei7_64', 'libmpc3-1.1.0-r0.33.147.0.corei7_64', 'libssp0-9.5.0-r0.31.147.0.corei7_64', 'libunwind-1.3.1-r0.33.147.0.corei7_64', 'util-linux-sfdisk-2.35.1-r0.39.147.0.corei7_64', 'inetutils-telnet-1.9.4-r0.106.147.0.corei7_64', 'iputils-traceroute6-s20190709-r0.58.147.0.corei7_64', 'pam-plugin-ftp-1.3.1-r0.39.147.0.corei7_64', 'tar-1.32-r1.10.147.0.corei7_64', 'pam-plugin-succeed-if-1.3.1-r0.39.147.0.corei7_64', 'perl-module-config-heavy-5.30.1-r0.39.147.0.corei7_64', 'libinotifytools0-3.20.2.2-r0.33.147.0.corei7_64']
+2026-04-30 01:11:40,025 UTC 2332 DDEBUG timer: sack setup: 50 ms
+2026-04-30 01:11:40,025 UTC 2332 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:11:40,026 UTC 2332 INFO libmemusage-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,026 UTC 2332 INFO keyutils-1.6.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,027 UTC 2332 INFO ccore-git-r4.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,028 UTC 2332 INFO cgroups-pam-plugin-0.41-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,028 UTC 2332 INFO dhcp-server-4.4.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,029 UTC 2332 INFO python3-selectors2-2.0.2-r1.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,030 UTC 2332 INFO libprotobuf-lite22-3.11.4-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,030 UTC 2332 INFO libcap-bin-2.32-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,031 UTC 2332 INFO libedit0-20191231+3.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,031 UTC 2332 INFO perl-module-zmq-libzmq3-1.19-r0.106.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,032 UTC 2332 INFO liblzo2-2-2.10-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,032 UTC 2332 INFO packagegroup-core-boot-1.0-r17.13.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,035 UTC 2332 INFO thin-provisioning-tools-0.8.5-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,035 UTC 2332 INFO libsolvext1-0.7.10-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,036 UTC 2332 INFO libgdbm-bin-1.18.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,036 UTC 2332 INFO perl-module-subs-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,037 UTC 2332 INFO python3-netserver-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,037 UTC 2332 INFO lxc-templates-4.0.12+git0+5ba5725cb4-r0.38.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,038 UTC 2332 INFO python-asn1crypto-1.3.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,038 UTC 2332 INFO libsodium23-1.0.18-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,038 UTC 2332 INFO cpp-symlinks-9.5.0-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,039 UTC 2332 INFO glibc-gconv-ibm850-2.31-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,039 UTC 2332 INFO perl-module-posix-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,040 UTC 2332 INFO libc6-pcprofile-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,040 UTC 2332 INFO pam-plugin-stress-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,045 UTC 2332 INFO perl-module-carp-clan-6.08-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,045 UTC 2332 INFO grub-editenv-2.04-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,046 UTC 2332 INFO perl-module-encode-config-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,046 UTC 2332 INFO python-audio-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,047 UTC 2332 INFO sqlite3-3:3.31.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,047 UTC 2332 INFO python3-misc-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,048 UTC 2332 INFO ima-evm-utils-evmctl.static-1.2.1+git0+3eab1f93b6-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,048 UTC 2332 INFO python-enum34-1.1.6-r0.105.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,049 UTC 2332 INFO perl-module-linux-inotify2-2.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,050 UTC 2332 INFO perl-module-utf8-heavy-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,051 UTC 2332 INFO libprotobuf-compiler-3.11.4-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,051 UTC 2332 INFO python3-codecs-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,052 UTC 2332 INFO xr-identifier-xrd-cp-c-01-25.2.1v1.0.0-1.x86_64 unmarked as user installed.
+2026-04-30 01:11:40,052 UTC 2332 INFO perl-module-bytes-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,053 UTC 2332 INFO python-xmlrpc-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,053 UTC 2332 INFO perl-module-errno-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,054 UTC 2332 INFO nftables-0.9.6-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,054 UTC 2332 INFO util-linux-lsblk-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,055 UTC 2332 INFO python-lxml-4.4.2-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,055 UTC 2332 INFO cbt-1.0-r4.101.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,056 UTC 2332 INFO util-linux-script-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,056 UTC 2332 INFO e2fsprogs-resize2fs-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,057 UTC 2332 INFO rsyslog-8.2002.0-r0.25.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,058 UTC 2332 INFO tzdata-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,059 UTC 2332 INFO perl-module-list-util-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,060 UTC 2332 INFO libbfd-2.34-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,060 UTC 2332 INFO perl-module-io-uncompress-adapter-inflate-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,061 UTC 2332 INFO python-pip-19.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,063 UTC 2332 INFO bash-completion-extra-2.10-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,064 UTC 2332 INFO librabbitmq4-0.10.0-r0.62.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,064 UTC 2332 INFO base-passwd-update-3.5.29-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,065 UTC 2332 INFO iptables-module-xt-udp-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,065 UTC 2332 INFO libcgroup-0.41-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,066 UTC 2332 INFO perl-module-overload-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,066 UTC 2332 INFO at-3.1.23-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,067 UTC 2332 INFO perl-module-io-compress-base-common-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,067 UTC 2332 INFO setserial-2.17-r3.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,068 UTC 2332 INFO selinux-python-chcat-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,068 UTC 2332 INFO perl-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,069 UTC 2332 INFO libfdisk1-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,069 UTC 2332 INFO lz4-1:1.9.4-r0.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,070 UTC 2332 INFO mdadm-4.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,070 UTC 2332 INFO openssl-engines-1.1.1w-r0.7.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,071 UTC 2332 INFO python-ipy-1.00-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,071 UTC 2332 INFO perl-module-overloading-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,072 UTC 2332 INFO selinux-python-audit2allow-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,072 UTC 2332 INFO selinux-python-sepolicy-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,073 UTC 2332 INFO python3-six-1.14.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,073 UTC 2332 INFO policycoreutils-setsebool-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,074 UTC 2332 INFO e2fsprogs-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,074 UTC 2332 INFO pam-plugin-access-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,075 UTC 2332 INFO rsync-3.2.5-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,075 UTC 2332 INFO libmpfr6-4.0.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,076 UTC 2332 INFO util-linux-nologin-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,077 UTC 2332 INFO flex-2.6.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,078 UTC 2332 INFO perl-module-utf8-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,079 UTC 2332 INFO perl-module-encode-mime-name-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,080 UTC 2332 INFO tzdata-atlantic-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,080 UTC 2332 INFO python3-ipy-1.00-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,081 UTC 2332 INFO libnl-route-3-200-1:3.5.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,081 UTC 2332 INFO util-linux-utmpdump-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,082 UTC 2332 INFO libstdc++6-9.5.0-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,082 UTC 2332 INFO python-idle-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,083 UTC 2332 INFO zstd-1.4.5-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,083 UTC 2332 INFO python3-pkgutil-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,123 UTC 2332 INFO perl-module-re-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,124 UTC 2332 INFO lvm2-2.03.06-r0.59.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,124 UTC 2332 INFO expect-5.45.4-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,125 UTC 2332 INFO util-linux-chrt-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,125 UTC 2332 INFO libpcap1-1.9.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,125 UTC 2332 INFO curl-7.69.1-r0.40.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,126 UTC 2332 INFO nettle-3.5.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,126 UTC 2332 INFO iputils-ping-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,127 UTC 2332 INFO libsemanage-python-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,127 UTC 2332 INFO libfl2-2.6.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,128 UTC 2332 INFO python-pickle-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,130 UTC 2332 INFO util-linux-losetup-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,131 UTC 2332 INFO ncurses-terminfo-base-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,131 UTC 2332 INFO python-six-1.14.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,152 UTC 2332 INFO vim-vimrc-9.0.2190-r0.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,172 UTC 2332 INFO base-files-3.0.14-r89.15.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,173 UTC 2332 INFO tzdata-pacific-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,173 UTC 2332 INFO grub-common-2.04-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,174 UTC 2332 INFO libevent-2.1-7-2.1.11-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,174 UTC 2332 INFO python-html-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,175 UTC 2332 INFO sdparm-1.11-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,175 UTC 2332 INFO pam-plugin-debug-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,176 UTC 2332 INFO libdbus-glib-1-2-0.110-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,176 UTC 2332 INFO python-debugger-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,177 UTC 2332 INFO efivar-37-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,177 UTC 2332 INFO perl-module-tie-hash-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,178 UTC 2332 INFO perl-module-dynaloader-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,178 UTC 2332 INFO python-sqlite3-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,179 UTC 2332 INFO openssl-bin-1.1.1w-r0.7.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,179 UTC 2332 INFO librepo0-1.11.2-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,180 UTC 2332 INFO python-mmap-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,180 UTC 2332 INFO lmsensors-isatools-3.6.0-r0.57.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,180 UTC 2332 INFO python3-doctest-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,181 UTC 2332 INFO libgpg-error-1.37-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,181 UTC 2332 INFO python-bcrypt-3.1.7-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,182 UTC 2332 INFO pam-plugin-rhosts-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,182 UTC 2332 INFO openssh-sftp-server-8.2p1-r0.51.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,183 UTC 2332 INFO python3-gpg-1.13.1-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,183 UTC 2332 INFO util-linux-uuidd-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,184 UTC 2332 INFO python-image-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,184 UTC 2332 INFO libxslt-1.1.34-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,185 UTC 2332 INFO perl-module-encode-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,185 UTC 2332 INFO tcp-wrappers-7.6-r10.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,186 UTC 2332 INFO util-linux-renice-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,186 UTC 2332 INFO dnf-vars-arch-1.0-r0.14.147.0.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,187 UTC 2332 INFO libtic5-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,187 UTC 2332 INFO cisco-initscripts-0.1-r0.15.147.0.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,189 UTC 2332 INFO tzdata-posix-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,190 UTC 2332 INFO util-linux-mkfs.cramfs-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,190 UTC 2332 INFO libnl-nf-3-200-1:3.5.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,191 UTC 2332 INFO fuser-23.3-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,191 UTC 2332 INFO policycoreutils-runinit-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,195 UTC 2332 INFO python3-io-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,196 UTC 2332 INFO iptables-module-xt-addrtype-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,198 UTC 2332 INFO pam-plugin-umask-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,199 UTC 2332 INFO python-crypt-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,200 UTC 2332 INFO perl-module-json-pp-boolean-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,200 UTC 2332 INFO python-gdbm-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,201 UTC 2332 INFO perl-module-carp-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,203 UTC 2332 INFO python-lang-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,205 UTC 2332 INFO attr-2.4.48-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,206 UTC 2332 INFO python-runpy-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,207 UTC 2332 INFO strace-5.5-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,217 UTC 2332 INFO tunctl-1.5-r0.99.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,221 UTC 2332 INFO usleep-1.0-r0.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,222 UTC 2332 INFO killall-23.3-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,222 UTC 2332 INFO util-linux-kill-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,223 UTC 2332 INFO policycoreutils-semodule-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,223 UTC 2332 INFO python3-nose-1.3.7-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,230 UTC 2332 INFO libfastjson4-0.99.8-r0.6.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,231 UTC 2332 INFO libpanelw5-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,231 UTC 2332 INFO perl-module-encode-alias-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,232 UTC 2332 INFO systemd-bash-completion-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,233 UTC 2332 INFO util-linux-blkid-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,235 UTC 2332 INFO systemd-kernel-install-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,235 UTC 2332 INFO util-linux-eject-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,236 UTC 2332 INFO libffi7-3.3-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,236 UTC 2332 INFO tzdata-misc-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,237 UTC 2332 INFO mtd-utils-misc-2.1.3-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,237 UTC 2332 INFO lmsensors-pwmconfig-3.6.0-r0.57.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,238 UTC 2332 INFO openmp-10.0.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,238 UTC 2332 INFO policycoreutils-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,239 UTC 2332 INFO perf-5.4.273-r10.12.147.0.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,239 UTC 2332 INFO python3-dev-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,240 UTC 2332 INFO perl-module-logfile-rotate-1.04-r0.104.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,240 UTC 2332 INFO libdw1-0.178-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,243 UTC 2332 INFO run-postinsts-1.0-r10.25.noarch unmarked as user installed.
+2026-04-30 01:11:40,243 UTC 2332 INFO perl-module-file-spec-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,244 UTC 2332 INFO libfuse2-2.9.9-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,244 UTC 2332 INFO python3-prettytable-0.7.2-r0.103.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,245 UTC 2332 INFO python-db-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,245 UTC 2332 INFO perl-module-encode-configlocal-pm-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,246 UTC 2332 INFO iptables-module-ip6t-snat-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,246 UTC 2332 INFO perl-module-file-basename-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,247 UTC 2332 INFO tzdata-arctic-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,247 UTC 2332 INFO dmidecode-3.2-r0.83.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,248 UTC 2332 INFO tzdata-americas-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,248 UTC 2332 INFO python-compile-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,249 UTC 2332 INFO createrepo-c-0.15.7-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,249 UTC 2332 INFO libcom-err2-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,250 UTC 2332 INFO perl-module-file-spec-unix-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,251 UTC 2332 INFO libpci3-3.6.4-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,251 UTC 2332 INFO libunistring2-0.9.10-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,253 UTC 2332 INFO util-linux-setpriv-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,253 UTC 2332 INFO libgdbm6-1.18.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,254 UTC 2332 INFO python3-numpy-1.17.4-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,254 UTC 2332 INFO ncurses-tools-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,255 UTC 2332 INFO pam-plugin-tally-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,255 UTC 2332 INFO python3-rpm-1:4.14.2.1-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,256 UTC 2332 INFO libasm1-0.178-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,256 UTC 2332 INFO gnupg-2.2.27-r0.40.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,257 UTC 2332 INFO time-1.9-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,257 UTC 2332 INFO sed-4.8-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,258 UTC 2332 INFO libestr0-0.1.11-r0.6.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,260 UTC 2332 INFO libxml2-2.9.10-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,261 UTC 2332 INFO m4-1.4.18-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,261 UTC 2332 INFO libuuid1-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,262 UTC 2332 INFO mtd-utils-ubifs-2.1.3-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,262 UTC 2332 INFO python-re-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,263 UTC 2332 INFO quota-4.05-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,263 UTC 2332 INFO libjitterentropy3-3.4.1-r0.37.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,264 UTC 2332 INFO python-curses-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,264 UTC 2332 INFO python-io-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,267 UTC 2332 INFO rpmrc-1.0-r0.14.147.0.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,268 UTC 2332 INFO iptables-module-ipt-dnat-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,268 UTC 2332 INFO db-bin-6.1.38-r1.34.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,269 UTC 2332 INFO vim-9.0.2190-r0.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,269 UTC 2332 INFO libarchive-3.4.2-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,270 UTC 2332 INFO util-linux-fsck.cramfs-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,270 UTC 2332 INFO sg3-utils-1.45-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,271 UTC 2332 INFO update-alternatives-opkg-0.4.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,271 UTC 2332 INFO python3-xmlrpc-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,272 UTC 2332 INFO python3-sqlite3-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,272 UTC 2332 INFO python-contextlib-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,272 UTC 2332 INFO cpp-9.5.0-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,273 UTC 2332 INFO python-profile-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,274 UTC 2332 INFO perl-module-parent-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,274 UTC 2332 INFO python-json-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,274 UTC 2332 INFO iputils-tftpd-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,275 UTC 2332 INFO dhcp-server-config-4.4.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,275 UTC 2332 INFO pciutils-ids-3.6.4-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,276 UTC 2332 INFO python3-pydoc-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,276 UTC 2332 INFO mailx-12.5+5-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,280 UTC 2332 INFO tzdata-africa-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,281 UTC 2332 INFO tzdata-asia-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,282 UTC 2332 INFO gzip-1.10-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,284 UTC 2332 INFO python3-smtpd-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,285 UTC 2332 INFO which-2.21-r3.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,286 UTC 2332 INFO perl-module-io-compress-zlib-extra-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,287 UTC 2332 INFO python3-unixadmin-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,288 UTC 2332 INFO perl-module-xsloader-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,288 UTC 2332 INFO python-unixadmin-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,290 UTC 2332 INFO python-paramiko-2.7.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,290 UTC 2332 INFO python-xmldiff-2.4-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,291 UTC 2332 INFO openssh-8.2p1-r0.51.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,292 UTC 2332 INFO libaio1-0.3.111-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,292 UTC 2332 INFO inetutils-traceroute-1.9.4-r0.106.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,293 UTC 2332 INFO python-stringold-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,293 UTC 2332 INFO perl-module-scalar-util-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,294 UTC 2332 INFO perl-module-io-uncompress-gunzip-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,295 UTC 2332 INFO python-doctest-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,296 UTC 2332 INFO python-subprocess-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,296 UTC 2332 INFO iptables-module-xt-tcp-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,297 UTC 2332 INFO perl-module-fcntl-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,298 UTC 2332 INFO policycoreutils-secon-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,298 UTC 2332 INFO perl-module-compress-raw-zlib-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,299 UTC 2332 INFO diffutils-3.7-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,299 UTC 2332 INFO pam-plugin-exec-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,300 UTC 2332 INFO perl-module-b-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,300 UTC 2332 INFO makedumpfile-1.6.9-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,301 UTC 2332 INFO semodule-utils-semodule-expand-3.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,301 UTC 2332 INFO bind-libs-9.11.37-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,302 UTC 2332 INFO pam-plugin-namespace-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,302 UTC 2332 INFO perl-module-storable-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,303 UTC 2332 INFO libatomic1-9.5.0-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,303 UTC 2332 INFO python-difflib-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,304 UTC 2332 INFO util-linux-partx-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,304 UTC 2332 INFO python-mailbox-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,305 UTC 2332 INFO perl-module-time-hires-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,305 UTC 2332 INFO python-datetime-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,306 UTC 2332 INFO libyaml-0-2-0.2.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,312 UTC 2332 INFO libpanel5-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,313 UTC 2332 INFO perl-module-common-sense-3.75-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,314 UTC 2332 INFO perl-module-io-seekable-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,314 UTC 2332 INFO dnf-bash-completion-2.7.5-r0.155.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,315 UTC 2332 INFO python3-asyncio-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,316 UTC 2332 INFO python-pkgutil-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,322 UTC 2332 INFO tcpdump-4.9.3-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,323 UTC 2332 INFO kmod-bash-completion-26-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,323 UTC 2332 INFO libudrv-0.1-r2.37.147.0.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,325 UTC 2332 INFO python-ecdsa-0.13-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,326 UTC 2332 INFO pam-plugin-wheel-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,327 UTC 2332 INFO tzdata-core-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,327 UTC 2332 INFO python-syslog-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,328 UTC 2332 INFO util-linux-pivot-root-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,329 UTC 2332 INFO iptables-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,329 UTC 2332 INFO python-pbr-5.4.4-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,330 UTC 2332 INFO policycoreutils-sestatus-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,330 UTC 2332 INFO util-linux-dmesg-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,331 UTC 2332 INFO libxml2-python-2.9.10-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,331 UTC 2332 INFO python-terminal-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,332 UTC 2332 INFO python-robotparser-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,332 UTC 2332 INFO ncurses-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,334 UTC 2332 INFO sudo-lib-1.9.15p5-r0.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,335 UTC 2332 INFO python-cryptography-2.8-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,335 UTC 2332 INFO acl-2.2.53-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,335 UTC 2332 INFO libssl1.1-1.1.1w-r0.7.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,336 UTC 2332 INFO tcl-8.6.10-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,336 UTC 2332 INFO libjson-c4-0.13.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,337 UTC 2332 INFO perl-module-integer-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,337 UTC 2332 INFO iputils-arping-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,338 UTC 2332 INFO lsof-4.91-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,338 UTC 2332 INFO perl-module-zmq-constants-1.04-r0.104.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,338 UTC 2332 INFO python-fcntl-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,339 UTC 2332 INFO libcyaml1-1.1.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,341 UTC 2332 INFO libsqlite3-0-3:3.31.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,341 UTC 2332 INFO perl-module-io-compress-gzip-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,342 UTC 2332 INFO util-linux-hexdump-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,343 UTC 2332 INFO python-distutils-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,343 UTC 2332 INFO util-linux-lscpu-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,344 UTC 2332 INFO python3-numbers-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,344 UTC 2332 INFO bzip2-1.0.8-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,345 UTC 2332 INFO less-551-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,345 UTC 2332 INFO util-linux-mkswap-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,346 UTC 2332 INFO mtd-utils-2.1.3-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,346 UTC 2332 INFO pam-plugin-listfile-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,347 UTC 2332 INFO util-linux-readprofile-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,347 UTC 2332 INFO efibootmgr-17-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,348 UTC 2332 INFO perl-module-expect-1.35-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,348 UTC 2332 INFO python3-plistlib-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,348 UTC 2332 INFO libnsl2-1.2.0+git0+4a062cf418-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,349 UTC 2332 INFO tzdata-right-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,350 UTC 2332 INFO libcurl4-7.69.1-r0.40.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,350 UTC 2332 INFO python3-audio-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,351 UTC 2332 INFO systemd-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,351 UTC 2332 INFO perl-module-date-calc-6.4-r0.104.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,352 UTC 2332 INFO libprotobuf-c-compiler-1.3.3-r0.91.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,352 UTC 2332 INFO python-smtpd-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,353 UTC 2332 INFO file-5.38-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,353 UTC 2332 INFO libudev1-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,355 UTC 2332 INFO python-netserver-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,356 UTC 2332 INFO perl-module-math-complex-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,356 UTC 2332 INFO util-linux-runuser-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,358 UTC 2332 INFO smartmontools-7.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,359 UTC 2332 INFO python-ncclient-0.6.13-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,360 UTC 2332 INFO python3-defusedxml-0.6.0-r0.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,360 UTC 2332 INFO util-linux-prlimit-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,361 UTC 2332 INFO pam-plugin-tally2-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,361 UTC 2332 INFO perl-module-getopt-std-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,362 UTC 2332 INFO libuio0-1.0-r2.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,363 UTC 2332 INFO perl-module-math-bigint-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,363 UTC 2332 INFO tzdata-europe-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,364 UTC 2332 INFO libgomp1-9.5.0-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,364 UTC 2332 INFO libjansson4-2.13.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,365 UTC 2332 INFO libc6-thread-db-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,365 UTC 2332 INFO semodule-utils-semodule-package-3.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,366 UTC 2332 INFO systemd-initramfs-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,366 UTC 2332 INFO libsysfs2-2.1.0-r5.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,367 UTC 2332 INFO bash-completion-2.10-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,367 UTC 2332 INFO perl-module-json-pp-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,368 UTC 2332 INFO python-ply-3.11-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,368 UTC 2332 INFO perl-module-io-compress-base-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,369 UTC 2332 INFO python-unittest-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,369 UTC 2332 INFO libseccomp-2.4.3-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,370 UTC 2332 INFO python3-venv-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,370 UTC 2332 INFO iputils-ninfod-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,371 UTC 2332 INFO libgcc1-9.5.0-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,371 UTC 2332 INFO libsegfault-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,372 UTC 2332 INFO rpm-1:4.14.2.1-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,372 UTC 2332 INFO libbpf0-0.5.0-r0.16.147.0.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,373 UTC 2332 INFO python-math-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,377 UTC 2332 INFO python-modules-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,379 UTC 2332 INFO libwrap0-7.6-r10.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,383 UTC 2332 INFO openssh-sshd-8.2p1-r0.51.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,384 UTC 2332 INFO libncurses5-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,384 UTC 2332 INFO util-linux-bash-completion-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,385 UTC 2332 INFO hdparm-9.58-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,385 UTC 2332 INFO python-networkx-2.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,386 UTC 2332 INFO libgdbm-compat4-1.18.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,386 UTC 2332 INFO libnl-3-200-1:3.5.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,387 UTC 2332 INFO python3-multiprocessing-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,387 UTC 2332 INFO lmsensors-sensors-3.6.0-r0.57.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,388 UTC 2332 INFO python-numbers-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,388 UTC 2332 INFO vlan-1.9-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,389 UTC 2332 INFO python-compression-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,389 UTC 2332 INFO iputils-clockdiff-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,390 UTC 2332 INFO ncurses-terminfo-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,390 UTC 2332 INFO util-linux-fdisk-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,391 UTC 2332 INFO util-linux-findfs-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,393 UTC 2332 INFO mtd-utils-jffs2-2.1.3-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,393 UTC 2332 INFO iproute2-5.5.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,394 UTC 2332 INFO tzdata-australia-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,394 UTC 2332 INFO libyajl2-2.1.0-r0.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,395 UTC 2332 INFO python3-compile-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,396 UTC 2332 INFO util-linux-isosize-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,396 UTC 2332 INFO libprotobuf-c1-1.3.3-r0.91.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,397 UTC 2332 INFO ca-certificates-20241223-r0.5.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,397 UTC 2332 INFO perl-module-math-bigint-lib-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,398 UTC 2332 INFO util-linux-swaponoff-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,398 UTC 2332 INFO policycoreutils-fixfiles-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,399 UTC 2332 INFO ldd-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,400 UTC 2332 INFO perl-module-exporter-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,400 UTC 2332 INFO libitm1-9.5.0-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,401 UTC 2332 INFO cracklib-2.9.5-r0.104.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,402 UTC 2332 INFO grub-efi-2.04-r0.19.147.0.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,402 UTC 2332 INFO python-pycrypto-2.6.1-r0.97.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,403 UTC 2332 INFO gettext-runtime-0.20.1-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,404 UTC 2332 INFO libaugeas0-1.12.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,405 UTC 2332 INFO python-idna-2.8-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,405 UTC 2332 INFO libksba8-1.3.5-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,406 UTC 2332 INFO dhcp-client-4.4.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,406 UTC 2332 INFO perl-module-io-handle-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,407 UTC 2332 INFO libpopt0-1.16-r3.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,407 UTC 2332 INFO python-multiprocessing-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,408 UTC 2332 INFO python3-image-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,408 UTC 2332 INFO util-linux-blockdev-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,409 UTC 2332 INFO zeromq-4.3.4-r0.25.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,413 UTC 2332 INFO python3-networkx-2.4-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,414 UTC 2332 INFO openssl-1.1.1w-r0.7.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,415 UTC 2332 INFO python3-difflib-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,416 UTC 2332 INFO python3-xml-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,417 UTC 2332 INFO libglib-2.0-0-1:2.62.6-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,418 UTC 2332 INFO libpython2.7-1.0-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,419 UTC 2332 INFO python-ctypes-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,420 UTC 2332 INFO util-linux-swapon-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,420 UTC 2332 INFO perl-module-mro-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,421 UTC 2332 INFO libsensors5-3.6.0-r0.57.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,422 UTC 2332 INFO libidn12-1.35-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,423 UTC 2332 INFO libtirpc3-1.2.6-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,424 UTC 2332 INFO grep-3.4-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,425 UTC 2332 INFO iptables-module-ipt-snat-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,426 UTC 2332 INFO pam-filter-upperlower-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,427 UTC 2332 INFO libgnutls30-3.6.14-r0.34.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,428 UTC 2332 INFO python3-distutils-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,428 UTC 2332 INFO python3-crypt-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,429 UTC 2332 INFO ima-evm-utils-1.2.1+git0+3eab1f93b6-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,430 UTC 2332 INFO libncursesw5-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,431 UTC 2332 INFO selinux-python-semanage-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,432 UTC 2332 INFO python3-pickle-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,433 UTC 2332 INFO librmutil1-1.0-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,434 UTC 2332 INFO libtcl8.6-0-8.6.10-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,435 UTC 2332 INFO python-ipaddress-1.0.23-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,436 UTC 2332 INFO libcheck0-0.14.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,437 UTC 2332 INFO perl-module-math-bigint-calc-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,438 UTC 2332 INFO python3-mmap-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,439 UTC 2332 INFO python-core-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,440 UTC 2332 INFO python3-fcntl-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,440 UTC 2332 INFO parted-3.3-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,441 UTC 2332 INFO python-decorator-4.4.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,442 UTC 2332 INFO tzcode-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,443 UTC 2332 INFO dosfstools-4.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,444 UTC 2332 INFO libpcreposix0-8.44-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,445 UTC 2332 INFO bridge-utils-1.6-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,446 UTC 2332 INFO libnftnl11-1.1.7-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,447 UTC 2332 INFO python-textutils-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,448 UTC 2332 INFO i2c-tools-4.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,449 UTC 2332 INFO bash-5.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,450 UTC 2332 INFO zip-3.0-r2.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,451 UTC 2332 INFO slang-2.3.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,452 UTC 2332 INFO libavahi-common3-0.7-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,453 UTC 2332 INFO python3-logging-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,454 UTC 2332 INFO util-linux-fstrim-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,455 UTC 2332 INFO perl-module-base-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,456 UTC 2332 INFO inotify-tools-3.20.2.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,457 UTC 2332 INFO perl-module-io-tty-1.16-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,458 UTC 2332 INFO perl-module-io-uncompress-base-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,459 UTC 2332 INFO coreutils-8.31-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,459 UTC 2332 INFO pam-plugin-timestamp-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,460 UTC 2332 INFO libusb-1.0-0-1.0.22-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,461 UTC 2332 INFO python-logging-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,462 UTC 2332 INFO libtdb1-1.4.3-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,463 UTC 2332 INFO libsolv1-0.7.10-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,464 UTC 2332 INFO sysfsutils-2.1.0-r5.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,465 UTC 2332 INFO python3-email-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,465 UTC 2332 INFO python-nacl-1.3.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,466 UTC 2332 INFO util-linux-rev-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,466 UTC 2332 INFO e2fsprogs-tune2fs-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,467 UTC 2332 INFO perl-module-io-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,467 UTC 2332 INFO selinux-python-sepolgen-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,468 UTC 2332 INFO util-linux-getopt-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,468 UTC 2332 INFO selinux-sandbox-3.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,469 UTC 2332 INFO sudo-sudo-1.9.15p5-r0.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,469 UTC 2332 INFO libltdl7-2.4.6-r0.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,470 UTC 2332 INFO util-linux-wall-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,470 UTC 2332 INFO python-pkg-resources-42.0.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,471 UTC 2332 INFO iptables-module-ipt-masquerade-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,471 UTC 2332 INFO python3-compression-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,472 UTC 2332 INFO python3-mime-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,472 UTC 2332 INFO unzip-1:6.0-r5.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,473 UTC 2332 INFO iptables-module-xt-conntrack-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,473 UTC 2332 INFO perl-module-text-parsewords-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,474 UTC 2332 INFO python3-html-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,474 UTC 2332 INFO e2fsprogs-e2fsck-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,475 UTC 2332 INFO lmsensors-fancontrol-3.6.0-r0.57.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,475 UTC 2332 INFO util-linux-fallocate-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,475 UTC 2332 INFO systemd-analyze-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,476 UTC 2332 INFO pam-plugin-xauth-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,477 UTC 2332 INFO python3-decorator-4.4.2-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,477 UTC 2332 INFO libselinux-python-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,478 UTC 2332 INFO python3-datetime-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,478 UTC 2332 INFO mtools-4.0.23-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,479 UTC 2332 INFO perl-module-lib-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,479 UTC 2332 INFO python3-pygpgme-0.3-r0.105.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,480 UTC 2332 INFO glibc-gconv-2.31-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,480 UTC 2332 INFO netbase-2:6.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,481 UTC 2332 INFO util-linux-mountpoint-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,481 UTC 2332 INFO libdnf1-0.11.1-r0.150.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,482 UTC 2332 INFO libassuan0-2.5.3-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,482 UTC 2332 INFO libsotruss-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,482 UTC 2332 INFO libdevmapper-2.03.06-r0.59.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,483 UTC 2332 INFO perl-module-pod-usage-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,484 UTC 2332 INFO python-email-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,485 UTC 2332 INFO selinux-python-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,486 UTC 2332 INFO pam-plugin-mkhomedir-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,487 UTC 2332 INFO sysstat-12.2.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,487 UTC 2332 INFO python-zlib-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,488 UTC 2332 INFO python-mime-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,489 UTC 2332 INFO libssh2-1-1.9.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,490 UTC 2332 INFO openssh-scp-8.2p1-r0.51.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,491 UTC 2332 INFO findutils-4.7.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,491 UTC 2332 INFO util-linux-cfdisk-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,492 UTC 2332 INFO semodule-utils-semodule-link-3.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,492 UTC 2332 INFO libcrypto1.1-1.1.1w-r0.7.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,494 UTC 2332 INFO perl-module-compress-zlib-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,495 UTC 2332 INFO ethtool-5.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,495 UTC 2332 INFO libmnl0-1.0.4-r0.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,496 UTC 2332 INFO perl-module-io-compress-gzip-constants-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,496 UTC 2332 INFO perl-module-math-bigfloat-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,497 UTC 2332 INFO python-pydoc-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,497 UTC 2332 INFO util-linux-more-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,497 UTC 2332 INFO perl-module-feature-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,498 UTC 2332 INFO python3-pkg-resources-45.2.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,498 UTC 2332 INFO libcares2-1.18.1-r0.25.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,504 UTC 2332 INFO e2fsprogs-badblocks-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,506 UTC 2332 INFO python-shell-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,507 UTC 2332 INFO libpython3.8-1.0-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,508 UTC 2332 INFO perl-module-term-cap-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,508 UTC 2332 INFO dnf-2.7.5-r0.155.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,509 UTC 2332 INFO libc6-utils-2.31+git2+2d4f26e5cf-r0.15.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,511 UTC 2332 INFO pam-plugin-pwhistory-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,512 UTC 2332 INFO policycoreutils-genhomedircon-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,513 UTC 2332 INFO util-linux-mcookie-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,514 UTC 2332 INFO sudo-1.9.15p5-r0.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,515 UTC 2332 INFO logrotate-3.15.1-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,516 UTC 2332 INFO gflags-2.2.2-r0.84.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,517 UTC 2332 INFO util-linux-ipcs-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,518 UTC 2332 INFO python3-curses-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,519 UTC 2332 INFO libtalloc-2.3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,520 UTC 2332 INFO setools-4.3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,521 UTC 2332 INFO iproute2-ss-5.5.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,522 UTC 2332 INFO perl-module-io-compress-rawdeflate-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,523 UTC 2332 INFO initscripts-1.0-r155.29.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,524 UTC 2332 INFO python3-netclient-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,525 UTC 2332 INFO python-threading-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,526 UTC 2332 INFO python-tkinter-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,526 UTC 2332 INFO util-linux-flock-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,527 UTC 2332 INFO perl-module-bytes-heavy-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,528 UTC 2332 INFO util-linux-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,529 UTC 2332 INFO coreutils-stdbuf-8.31-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,530 UTC 2332 INFO perl-module-cwd-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,531 UTC 2332 INFO libreadline8-8.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,532 UTC 2332 INFO perl-module-overload-numbers-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,533 UTC 2332 INFO util-linux-su-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,534 UTC 2332 INFO libselinux-bin-3.0-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,534 UTC 2332 INFO libyaml-0-dev-0.2.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,535 UTC 2332 INFO policycoreutils-setfiles-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,536 UTC 2332 INFO perl-module-file-glob-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,537 UTC 2332 INFO vim-common-9.0.2190-r0.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,539 UTC 2332 INFO pam-plugin-time-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,540 UTC 2332 INFO mingetty-1.08-r3.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,541 UTC 2332 INFO libss2-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,542 UTC 2332 INFO python3-pprint-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,543 UTC 2332 INFO python-compiler-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,544 UTC 2332 INFO perl-module-io-compress-adapter-deflate-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,545 UTC 2332 INFO libidn2-0-2.3.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,546 UTC 2332 INFO tree-1.8.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,547 UTC 2332 INFO pstree-23.3-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,548 UTC 2332 INFO pam-plugin-echo-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,548 UTC 2332 INFO python-bsddb-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,549 UTC 2332 INFO perl-module-getopt-long-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,550 UTC 2332 INFO udev-hwdb-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,551 UTC 2332 INFO e2fsprogs-mke2fs-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,552 UTC 2332 INFO dhcp-libs-4.4.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,553 UTC 2332 INFO libgcrypt-1.8.5-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,554 UTC 2332 INFO openssh-keygen-8.2p1-r0.51.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,555 UTC 2332 INFO grub-bootconf-1.00-r0.14.147.0.xr_s_x86 unmarked as user installed.
+2026-04-30 01:11:40,556 UTC 2332 INFO libcares-utils-1.18.1-r0.25.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,557 UTC 2332 INFO python3-syslog-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,558 UTC 2332 INFO python3-ctypes-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,559 UTC 2332 INFO selinux-gui-3.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,560 UTC 2332 INFO libcomps0-0.1.15-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,561 UTC 2332 INFO elfutils-0.178-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,562 UTC 2332 INFO util-linux-setsid-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,563 UTC 2332 INFO python-plistlib-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,563 UTC 2332 INFO gawk-5.0.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,564 UTC 2332 INFO perl-module-file-copy-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,565 UTC 2332 INFO libhiredis1.0.0-1.0.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,566 UTC 2332 INFO iptables-module-xt-standard-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,567 UTC 2332 INFO policycoreutils-hll-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,568 UTC 2332 INFO python3-shell-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,569 UTC 2332 INFO db-6.1.38-r1.34.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,570 UTC 2332 INFO python3-core-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,571 UTC 2332 INFO selinux-dbus-3.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,572 UTC 2332 INFO cronie-1.5.5-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,572 UTC 2332 INFO libelf1-0.178-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,573 UTC 2332 INFO perl-module-exporter-heavy-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,574 UTC 2332 INFO pam-plugin-cracklib-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,575 UTC 2332 INFO python-xml-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,576 UTC 2332 INFO selinux-python-sepolgen-ifgen-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,577 UTC 2332 INFO netcat-0.7.1-r3.98.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,578 UTC 2332 INFO binutils-2.34-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,579 UTC 2332 INFO python3-json-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,580 UTC 2332 INFO util-linux-logger-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,580 UTC 2332 INFO lvm2-udevrules-2.03.06-r0.59.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,581 UTC 2332 INFO libe2p2-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,582 UTC 2332 INFO e2fsprogs-dumpe2fs-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,583 UTC 2332 INFO python3-debugger-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,584 UTC 2332 INFO systemd-cisco-journald-conf-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,585 UTC 2332 INFO usbutils-012-r0.57.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,586 UTC 2332 INFO util-linux-unshare-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,587 UTC 2332 INFO cryptsetup-2.3.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,588 UTC 2332 INFO perl-module-encode-encoding-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,589 UTC 2332 INFO desktop-file-utils-0.24-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,590 UTC 2332 INFO libticw5-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,590 UTC 2332 INFO python-pyasn1-0.4.8-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,591 UTC 2332 INFO python3-threading-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,592 UTC 2332 INFO fuse-utils-2.9.9-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,593 UTC 2332 INFO dpkg-start-stop-1.19.8-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,594 UTC 2332 INFO libevent-pthreads-2.1-7-2.1.11-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,595 UTC 2332 INFO perl-module-selectsaver-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,596 UTC 2332 INFO cryptodev-linux-1.10-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,597 UTC 2332 INFO dnf-plugins-core-2.1.5+git0+8d1f1758be-r0.111.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,597 UTC 2332 INFO iputils-tracepath-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,598 UTC 2332 INFO python3-setuptools-45.2.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,599 UTC 2332 INFO iptables-module-ip6t-masquerade-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,601 UTC 2332 INFO util-linux-whereis-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,602 UTC 2332 INFO vmcore-dmesg-2.0.20-r0.43.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,603 UTC 2332 INFO libgmp10-6.2.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,603 UTC 2332 INFO util-linux-hwclock-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,604 UTC 2332 INFO openssl-conf-1.1.1w-r0.7.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,605 UTC 2332 INFO libulockmgr1-2.9.9-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,606 UTC 2332 INFO perl-module-constant-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,607 UTC 2332 INFO pam-plugin-filter-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,608 UTC 2332 INFO nvme-cli-1.10.1+git0+1d84d6ae0c-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,609 UTC 2332 INFO perl-module-b-deparse-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,610 UTC 2332 INFO python3-pyyaml-5.3.1-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,611 UTC 2332 INFO perl-module-file-globmapper-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,612 UTC 2332 INFO util-linux-wipefs-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,613 UTC 2332 INFO systemd-container-1:244.5-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,614 UTC 2332 INFO util-linux-mkfs-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,615 UTC 2332 INFO util-linux-switch-root-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,616 UTC 2332 INFO libnpth0-1.6-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,617 UTC 2332 INFO util-linux-last-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,618 UTC 2332 INFO pam-plugin-localuser-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,619 UTC 2332 INFO gpgme-1.13.1-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,620 UTC 2332 INFO python-argparse-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,620 UTC 2332 INFO iputils-rarpd-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,621 UTC 2332 INFO busybox-1.31.1-r0.44.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,622 UTC 2332 INFO libpciaccess0-0.16-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,623 UTC 2332 INFO perl-module-io-file-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,624 UTC 2332 INFO python-cffi-1.13.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,625 UTC 2332 INFO librelp0-1.5.0-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,626 UTC 2332 INFO util-linux-taskset-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,627 UTC 2332 INFO xz-5.2.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,628 UTC 2332 INFO perl-module-symbol-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,629 UTC 2332 INFO netcf-0.2.8+git0+2c5d425585-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,630 UTC 2332 INFO libpng16-16-1.6.37-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,631 UTC 2332 INFO python-setuptools-42.0.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,631 UTC 2332 INFO pam-plugin-issue-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,632 UTC 2332 INFO util-linux-nsenter-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,633 UTC 2332 INFO python3-prctl-1.7+git0+57cd0a7cad-r0.110.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,634 UTC 2332 INFO libprotobuf22-3.11.4-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,635 UTC 2332 INFO libext2fs2-1.45.7-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,636 UTC 2332 INFO pciutils-3.6.4-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,637 UTC 2332 INFO python-pprint-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,638 UTC 2332 INFO lvm2-scripts-2.03.06-r0.59.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,639 UTC 2332 INFO libnl-genl-3-200-1:3.5.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,640 UTC 2332 INFO perl-module-io-uncompress-rawinflate-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,641 UTC 2332 INFO util-linux-swapoff-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,642 UTC 2332 INFO policycoreutils-loadpolicy-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,643 UTC 2332 INFO bind-9.11.37-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,644 UTC 2332 INFO systemd-compat-units-1.0-r29.90.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,645 UTC 2332 INFO python-misc-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,646 UTC 2332 INFO python-hotshot-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,647 UTC 2332 INFO libavahi-client3-0.7-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,648 UTC 2332 INFO python3-2to3-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,648 UTC 2332 INFO python-2to3-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,649 UTC 2332 INFO sshfs-fuse-3.7.0-r0.59.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,650 UTC 2332 INFO util-linux-uuidgen-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,651 UTC 2332 INFO python3-stringold-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,652 UTC 2332 INFO tzdata-antarctica-2024a-r0.1.147.0.noarch unmarked as user installed.
+2026-04-30 01:11:40,653 UTC 2332 INFO unionfs-fuse-2.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,654 UTC 2332 INFO grpc-1.24.3-r0.44.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,655 UTC 2332 INFO iptables-module-ip6t-dnat-1.8.4-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,656 UTC 2332 INFO gnupg-gpg-2.2.27-r0.40.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,657 UTC 2332 INFO util-linux-rename-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,658 UTC 2332 INFO libfreetype6-2.10.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,659 UTC 2332 INFO iputils-rdisc-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,660 UTC 2332 INFO openssh-ssh-8.2p1-r0.51.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,661 UTC 2332 INFO python3-typing-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,662 UTC 2332 INFO util-linux-mesg-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,663 UTC 2332 INFO kexec-2.0.20-r0.43.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,664 UTC 2332 INFO python-selectors2-2.0.2-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,665 UTC 2332 INFO python3-libs-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,666 UTC 2332 INFO libpcre2-10.34-r0.25.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,667 UTC 2332 INFO python3-math-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,668 UTC 2332 INFO util-linux-findmnt-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,669 UTC 2332 INFO libtinfo5-6.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,670 UTC 2332 INFO openssl-misc-1.1.1w-r0.7.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,670 UTC 2332 INFO cpio-2.13-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,671 UTC 2332 INFO policycoreutils-newrole-3.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,672 UTC 2332 INFO dnsmasq-2.90-r0.4.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,673 UTC 2332 INFO psmisc-23.3-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,674 UTC 2332 INFO lxc-4.0.12+git0+5ba5725cb4-r0.38.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,675 UTC 2332 INFO augeas-lenses-1.12.0-r0.41.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,676 UTC 2332 INFO python-pycparser-2.19-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,677 UTC 2332 INFO python-codecs-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,678 UTC 2332 INFO net-tools-1.60+26-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,679 UTC 2332 INFO python-resource-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,680 UTC 2332 INFO python-netclient-2.7.18-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,681 UTC 2332 INFO initscripts-functions-1.0-r155.29.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,682 UTC 2332 INFO perl-module-data-dumper-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,683 UTC 2332 INFO procps-3.3.16-r0.59.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,684 UTC 2332 INFO python3-unittest-3.8.18-r0.13.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,685 UTC 2332 INFO libsmartcols1-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,685 UTC 2332 INFO wget-1.20.3-r0.40.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,686 UTC 2332 INFO fuse3-3.9.2-r0.56.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,687 UTC 2332 INFO python3-iniparse-0.4-r0.111.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,688 UTC 2332 INFO libmpc3-1.1.0-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,689 UTC 2332 INFO libssp0-9.5.0-r0.31.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,690 UTC 2332 INFO libunwind-1.3.1-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,691 UTC 2332 INFO util-linux-sfdisk-2.35.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,692 UTC 2332 INFO inetutils-telnet-1.9.4-r0.106.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,693 UTC 2332 INFO iputils-traceroute6-s20190709-r0.58.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,693 UTC 2332 INFO pam-plugin-ftp-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,694 UTC 2332 INFO tar-1.32-r1.10.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,695 UTC 2332 INFO pam-plugin-succeed-if-1.3.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,696 UTC 2332 INFO perl-module-config-heavy-5.30.1-r0.39.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,697 UTC 2332 INFO libinotifytools0-3.20.2.2-r0.33.147.0.corei7_64 unmarked as user installed.
+2026-04-30 01:11:40,698 UTC 2332 DDEBUG Cleaning up.
+2026-04-30 01:11:41,099 UTC 2334 INFO --- logging initialized ---
+2026-04-30 01:11:41,099 UTC 2334 DDEBUG timer: config: 9 ms
+2026-04-30 01:11:41,123 UTC 2334 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:11:41,123 UTC 2334 DEBUG DNF version: 2.7.5
+2026-04-30 01:11:41,123 UTC 2334 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch list -y --disablerepo=* --no-wrap --refresh -- installed 
+2026-04-30 01:11:41,123 UTC 2334 DDEBUG Installroot: /
+2026-04-30 01:11:41,123 UTC 2334 DDEBUG Releasever: 1
+2026-04-30 01:11:41,124 UTC 2334 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:11:41,124 UTC 2334 DDEBUG Base command: list
+2026-04-30 01:11:41,124 UTC 2334 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'list', '-y', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'installed']
+2026-04-30 01:11:41,182 UTC 2334 DDEBUG timer: sack setup: 49 ms
+2026-04-30 01:11:41,182 UTC 2334 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:11:41,440 UTC 2334 DDEBUG Cleaning up.
+2026-04-30 01:11:46,178 UTC 2347 INFO --- logging initialized ---
+2026-04-30 01:11:46,179 UTC 2347 DDEBUG timer: config: 113 ms
+2026-04-30 01:11:46,269 UTC 2354 INFO --- logging initialized ---
+2026-04-30 01:11:46,337 UTC 2354 DDEBUG timer: config: 175 ms
+2026-04-30 01:11:46,562 UTC 2347 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:11:46,563 UTC 2347 DEBUG DNF version: 2.7.5
+2026-04-30 01:11:46,563 UTC 2347 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch list -y --disablerepo=* --enablerepo=iosxr_install_internal --no-wrap --refresh -- installed 
+2026-04-30 01:11:46,563 UTC 2347 DDEBUG Installroot: /
+2026-04-30 01:11:46,563 UTC 2347 DDEBUG Releasever: 1
+2026-04-30 01:11:46,563 UTC 2347 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:11:46,563 UTC 2347 DDEBUG Base command: list
+2026-04-30 01:11:46,563 UTC 2347 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'list', '-y', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh', '--', 'installed']
+2026-04-30 01:11:46,750 UTC 2354 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:11:46,786 UTC 2354 DEBUG DNF version: 2.7.5
+2026-04-30 01:11:46,786 UTC 2354 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch list -y --disablerepo=* --enablerepo=iosxr_install_internal --no-wrap --refresh -- installed 
+2026-04-30 01:11:46,786 UTC 2354 DDEBUG Installroot: /
+2026-04-30 01:11:46,786 UTC 2354 DDEBUG Releasever: 1
+2026-04-30 01:11:46,786 UTC 2354 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:11:46,797 UTC 2354 DDEBUG Base command: list
+2026-04-30 01:11:46,797 UTC 2354 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'list', '-y', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh', '--', 'installed']
+2026-04-30 01:11:47,109 UTC 2354 INFO Waiting for process with pid 2347 to finish.
+2026-04-30 01:11:47,544 UTC 2347 DDEBUG timer: sack setup: 661 ms
+2026-04-30 01:11:47,544 UTC 2347 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:11:49,437 UTC 2354 DDEBUG timer: sack setup: 2321 ms
+2026-04-30 01:11:49,437 UTC 2354 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:11:50,819 UTC 2347 DDEBUG Cleaning up.
+2026-04-30 01:11:50,912 UTC 2354 DDEBUG Cleaning up.
+2026-04-30 01:12:00,049 UTC 3608 INFO --- logging initialized ---
+2026-04-30 01:12:00,050 UTC 3608 DDEBUG timer: config: 358 ms
+2026-04-30 01:12:00,643 UTC 3608 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:12:00,644 UTC 3608 DEBUG DNF version: 2.7.5
+2026-04-30 01:12:00,644 UTC 3608 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch repoquery --whatprovides cisco-iosxr --all --disablerepo=* --enablerepo=iosxr_install_internal --no-wrap --refresh 
+2026-04-30 01:12:00,644 UTC 3608 DDEBUG Installroot: /
+2026-04-30 01:12:00,644 UTC 3608 DDEBUG Releasever: 1
+2026-04-30 01:12:00,668 UTC 3608 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:12:00,668 UTC 3608 DDEBUG Base command: repoquery
+2026-04-30 01:12:00,668 UTC 3608 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr', '--all', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh']
+2026-04-30 01:12:01,814 UTC 3608 DDEBUG repo: downloading from remote: iosxr_install_internal, _Handle: metalnk: None, mlist: None, urls ['file:///var/opt/cisco/iosxr/install/mirror/iosxr_install_internal_repo'].
+2026-04-30 01:12:01,862 UTC 3608 DEBUG Cannot download 'file:///var/opt/cisco/iosxr/install/mirror/iosxr_install_internal_repo': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried.
+2026-04-30 01:12:01,863 UTC 3608 WARNING Failed to synchronize cache for repo 'iosxr_install_internal', disabling.
+2026-04-30 01:12:01,882 UTC 3608 DDEBUG timer: sack setup: 941 ms
+2026-04-30 01:12:01,882 UTC 3608 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:12:01,940 UTC 3608 DDEBUG Cleaning up.
+2026-04-30 01:12:04,660 UTC 3984 INFO --- logging initialized ---
+2026-04-30 01:12:04,661 UTC 3984 DDEBUG timer: config: 37 ms
+2026-04-30 01:12:04,736 UTC 3984 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:12:04,737 UTC 3984 DEBUG DNF version: 2.7.5
+2026-04-30 01:12:04,737 UTC 3984 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch repoquery --whatprovides cisco-iosxr-user-installable --all --disablerepo=* --no-wrap --refresh 
+2026-04-30 01:12:04,737 UTC 3984 DDEBUG Installroot: /
+2026-04-30 01:12:04,737 UTC 3984 DDEBUG Releasever: 1
+2026-04-30 01:12:04,737 UTC 3984 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:12:04,737 UTC 3984 DDEBUG Base command: repoquery
+2026-04-30 01:12:04,738 UTC 3984 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr-user-installable', '--all', '--disablerepo=*', '--no-wrap', '--refresh']
+2026-04-30 01:12:05,130 UTC 3984 DDEBUG timer: sack setup: 307 ms
+2026-04-30 01:12:05,131 UTC 3984 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:12:05,176 UTC 3984 DDEBUG Cleaning up.
+2026-04-30 01:12:06,125 UTC 4363 INFO --- logging initialized ---
+2026-04-30 01:12:06,126 UTC 4363 DDEBUG timer: config: 42 ms
+2026-04-30 01:12:06,232 UTC 4363 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:12:06,232 UTC 4363 DEBUG DNF version: 2.7.5
+2026-04-30 01:12:06,233 UTC 4363 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch repoquery --requires --resolve --installed --disablerepo=* --no-wrap --refresh -- xr-foundation-* 
+2026-04-30 01:12:06,233 UTC 4363 DDEBUG Installroot: /
+2026-04-30 01:12:06,233 UTC 4363 DDEBUG Releasever: 1
+2026-04-30 01:12:06,233 UTC 4363 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:12:06,233 UTC 4363 DDEBUG Base command: repoquery
+2026-04-30 01:12:06,233 UTC 4363 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--requires', '--resolve', '--installed', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'xr-foundation-*']
+2026-04-30 01:12:06,497 UTC 4363 DDEBUG timer: sack setup: 213 ms
+2026-04-30 01:12:06,497 UTC 4363 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:12:09,514 UTC 4363 DDEBUG Cleaning up.
+2026-04-30 01:12:10,942 UTC 4636 INFO --- logging initialized ---
+2026-04-30 01:12:10,944 UTC 4636 DDEBUG timer: config: 45 ms
+2026-04-30 01:12:11,073 UTC 4636 DEBUG Loaded plugins: builddep, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, leaves, needs-restarting, nowrap, playground, repoclosure, repograph, repomanage, reposync, show-leaves, versionlock
+2026-04-30 01:12:11,073 UTC 4636 DEBUG DNF version: 2.7.5
+2026-04-30 01:12:11,074 UTC 4636 DDEBUG Command: dnf --disableplugin=local -c /etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch repoquery --installed --disablerepo=* --no-wrap --refresh -- xr-foundation-* 
+2026-04-30 01:12:11,074 UTC 4636 DDEBUG Installroot: /
+2026-04-30 01:12:11,074 UTC 4636 DDEBUG Releasever: 1
+2026-04-30 01:12:11,074 UTC 4636 DEBUG cachedir: /var/volatile/cache/dnf
+2026-04-30 01:12:11,074 UTC 4636 DDEBUG Base command: repoquery
+2026-04-30 01:12:11,074 UTC 4636 DDEBUG Extra commands: ['--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--installed', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'xr-foundation-*']
+2026-04-30 01:12:11,752 UTC 4636 DDEBUG timer: sack setup: 555 ms
+2026-04-30 01:12:11,752 UTC 4636 DEBUG Excludes from versionlock plugin were not applied
+2026-04-30 01:12:11,774 UTC 4636 DDEBUG Cleaning up.

@@ -1,0 +1,8 @@
+2026-04-30T01:11:07.327337+00:00 p5-xr1 crond[420]: (CRON) STARTUP (1.5.5)
+2026-04-30T01:11:07.327343+00:00 p5-xr1 crond[420]: (CRON) INFO (Syslog will be used instead of sendmail.)
+2026-04-30T01:11:07.327347+00:00 p5-xr1 crond[420]: (CRON) INFO (RANDOM_DELAY will be scaled with factor 58% if used.)
+2026-04-30T01:13:01.840542+00:00 p5-xr1 CROND[5713]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T01:15:01.916944+00:00 p5-xr1 CROND[6541]: (root) CMD (/pkg/bin/monitor_coreinfo.sh)
+2026-04-30T01:15:01.917212+00:00 p5-xr1 CROND[6542]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
+2026-04-30T01:15:01.917353+00:00 p5-xr1 CROND[6543]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
+2026-04-30T01:16:01.943089+00:00 p5-xr1 CROND[6618]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)

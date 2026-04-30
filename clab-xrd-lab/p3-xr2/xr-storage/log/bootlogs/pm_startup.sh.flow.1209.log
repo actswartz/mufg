@@ -1,0 +1,339 @@
+Logging flow  started at Thu Apr 30 01:11:25 UTC 2026...
++ '[' -f /etc/rc.d/init.d/pd-functions ']'
++ source /etc/rc.d/init.d/pd-functions
+++ PD_FUNCTION_SOURCED=1
+++ '[' -f /pkg/etc/get_card_inst.sh ']'
+++ source /pkg/etc/get_card_inst.sh
++ PROCNAME=/pkg/etc/pm_startup.sh
+++ ps -e
+++ awk '{print $1}'
+++ grep processmgr
++ kill -9
++ export PKG_PATH=/pkg
++ PKG_PATH=/pkg
++ source /pkg/etc/xr_startup_envs.sh
+++ am_i_thinxr
+++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
++++ id -u
+++ '[' 0 = 0 ']'
+++ IS_ROOT=true
+++ declare -F in_xrnns
+++ '[' 1 -eq 0 ']'
+++ am_i_thinxr
+++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
+++ export PKG_PATH=/pkg
+++ PKG_PATH=/pkg
+++ [[ true == true ]]
++++ ulimit -H -n
+++ '[' 8192 -gt 8192 ']'
+++ ulimit -H -n 8192
+++ ulimit -n 8192
+++ ulimit -c 1000000
+++ ulimit -q unlimited
+++ ulimit -s 1024
++++ echo /pkg/sbin:/pkg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ grep /pkg/bin
+++ '[' '!' /pkg/sbin:/pkg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin ']'
++++ echo /pkg/sbin:/pkg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ grep /pkg/sbin
+++ '[' '!' /pkg/sbin:/pkg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin ']'
+++ am_i_thinxr
+++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
+++ export LD_LIBRARY_PATH=/pkg/lib:/pkg/lib/cerrno:/pkg/lib/mib:/pkg/lib/spp_plugins
+++ LD_LIBRARY_PATH=/pkg/lib:/pkg/lib/cerrno:/pkg/lib/mib:/pkg/lib/spp_plugins
+++ am_i_thinxr
+++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
+++ export LD_LIBRARY_PATH=/pkg/lib/override:/pkg/lib:/pkg/lib/cerrno:/pkg/lib/mib:/pkg/lib/spp_plugins:/pkg/thirdparty_lib/lib64:/pkg/thirdparty_lib/lib:/pkg/thirdparty_lib/usr/lib64:/pkg/thirdparty_lib/usr/lib
+++ LD_LIBRARY_PATH=/pkg/lib/override:/pkg/lib:/pkg/lib/cerrno:/pkg/lib/mib:/pkg/lib/spp_plugins:/pkg/thirdparty_lib/lib64:/pkg/thirdparty_lib/lib:/pkg/thirdparty_lib/usr/lib64:/pkg/thirdparty_lib/usr/lib
+++ export 'MODPROBE_OPTIONS=-d /pkg/thirdparty_lib'
+++ MODPROBE_OPTIONS='-d /pkg/thirdparty_lib'
+++ export INSTANCE_ID=1
+++ INSTANCE_ID=1
+++ export ETC_PATH=/pkg/etc
+++ ETC_PATH=/pkg/etc
+++ export BGP_PATH=/pkg/bgp
+++ BGP_PATH=/pkg/bgp
+++ export BOOT_DIR=pkg/boot/boot.d
+++ BOOT_DIR=pkg/boot/boot.d
+++ export BOOT_IOX=1
+++ BOOT_IOX=1
+++ export CONFIGS_PATH=/pkg/configs
+++ CONFIGS_PATH=/pkg/configs
+++ export CONFREG=0
+++ CONFREG=0
+++ export CONNECT_COMMAND=
+++ CONNECT_COMMAND=
+++ export CONNECT_DIR=pkg/boot/connect.d
+++ CONNECT_DIR=pkg/boot/connect.d
+++ export DIR=pkg/boot/boot.d
+++ DIR=pkg/boot/boot.d
+++ export IM_RULES_PATH=/pkg/rules
+++ IM_RULES_PATH=/pkg/rules
+++ export INIT_STARTUP_PATH=/pkg/init.d
+++ INIT_STARTUP_PATH=/pkg/init.d
+++ am_i_thinxr
+++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
+++ export IOX=1
+++ IOX=1
+++ export IOX_DISABLE_STARTUP=0
+++ IOX_DISABLE_STARTUP=0
+++ export IOX_DISABLE_SYSMGR=0
+++ IOX_DISABLE_SYSMGR=0
+++ export IOX_NO_CONFIG=0
+++ IOX_NO_CONFIG=0
+++ export LOADPATH=/pkg
+++ LOADPATH=/pkg
+++ export MIB_LIBRARY_PATH=/pkg/lib/mib
+++ MIB_LIBRARY_PATH=/pkg/lib/mib
+++ export MIB_PATH=/pkg/mib
+++ MIB_PATH=/pkg/mib
+++ export NODE_WATCHER=1
+++ NODE_WATCHER=1
+++ export PARSER_PATH=/pkg/parser
+++ PARSER_PATH=/pkg/parser
+++ export PARTITIONS_PATH=/pkg/partitions
+++ PARTITIONS_PATH=/pkg/partitions
+++ export PLACEMENT_PATH=/pkg/placement
+++ PLACEMENT_PATH=/pkg/placement
+++ export SCHEMA_PATH=schema
+++ SCHEMA_PATH=schema
+++ export STARTUP_PATH=/pkg/startup
+++ STARTUP_PATH=/pkg/startup
+++ export SYSMGR_NODE=
+++ SYSMGR_NODE=
+++ export TTY_UART_DRIVER=libslinux.dll
+++ TTY_UART_DRIVER=libslinux.dll
+++ am_i_thinxr
+++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
++++ id -un
+++ export AAA_USER=root
+++ AAA_USER=root
+++ export PCIE_DEBUG=2
+++ PCIE_DEBUG=2
+++ export MEMDBG_BLACKLIST=fib_mgr:npu_driver:bundlemgr_distrib:optics_driver:optics_driver_0:optics_driver_1:optics_driver_2:optics_driver_3:optics_driver_4:optics_driver_5:optics_driver_6:optics_driver_7
+++ MEMDBG_BLACKLIST=fib_mgr:npu_driver:bundlemgr_distrib:optics_driver:optics_driver_0:optics_driver_1:optics_driver_2:optics_driver_3:optics_driver_4:optics_driver_5:optics_driver_6:optics_driver_7
+++ export LVM_SUPPRESS_FD_WARNINGS=1
+++ LVM_SUPPRESS_FD_WARNINGS=1
+++ export MEMDBG_ENABLE=1
+++ MEMDBG_ENABLE=1
+++ '[' -f /pkg/etc/sanitizer_env.sh ']'
+++ source /pkg/etc/sanitizer_env.sh
++++ for dirname in lsan heap asan ubsan crft
++++ dir=/var/log/lsan
++++ mkdir -p /var/log/lsan
++++ chown iosxr:iosxr /var/log/lsan
++++ for dirname in lsan heap asan ubsan crft
++++ dir=/var/log/heap
++++ mkdir -p /var/log/heap
++++ chown iosxr:iosxr /var/log/heap
++++ for dirname in lsan heap asan ubsan crft
++++ dir=/var/log/asan
++++ mkdir -p /var/log/asan
++++ chown iosxr:iosxr /var/log/asan
++++ for dirname in lsan heap asan ubsan crft
++++ dir=/var/log/ubsan
++++ mkdir -p /var/log/ubsan
++++ chown iosxr:iosxr /var/log/ubsan
++++ for dirname in lsan heap asan ubsan crft
++++ dir=/var/log/crft
++++ mkdir -p /var/log/crft
++++ chown iosxr:iosxr /var/log/crft
++++ export LSAN_OPTIONS=exitcode=0:use_unaligned=1:suppressions=/pkg/etc/lsan_suppressions.txt:leak_check_at_exit=0:fast_unwind_on_malloc=0:log_exe_name=1
++++ LSAN_OPTIONS=exitcode=0:use_unaligned=1:suppressions=/pkg/etc/lsan_suppressions.txt:leak_check_at_exit=0:fast_unwind_on_malloc=0:log_exe_name=1
++++ export LSAN_OPTIONS=exitcode=0:use_unaligned=1:suppressions=/pkg/etc/lsan_suppressions.txt:leak_check_at_exit=0:fast_unwind_on_malloc=0:log_exe_name=1:handle_segv=0:handle_sigbus=0:handle_sigfpe=0
++++ LSAN_OPTIONS=exitcode=0:use_unaligned=1:suppressions=/pkg/etc/lsan_suppressions.txt:leak_check_at_exit=0:fast_unwind_on_malloc=0:log_exe_name=1:handle_segv=0:handle_sigbus=0:handle_sigfpe=0
++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0
++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0
++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64
++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64
++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0
++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0
++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1
++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1
++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1:detect_odr_violation=0
++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1:detect_odr_violation=0
++++ export UBSAN_OPTIONS=log_path=/var/log/ubsan/ubsan.report:log_exe_name=1:print_stacktrace=1
++++ UBSAN_OPTIONS=log_path=/var/log/ubsan/ubsan.report:log_exe_name=1:print_stacktrace=1
+++ am_i_thinxr
+++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
+++ export PYTHONDONTWRITEBYTECODE=1
+++ PYTHONDONTWRITEBYTECODE=1
++ export JOB_ID=51
++ JOB_ID=51
++ . /etc/init.d/calvados_bootstrap.cfg
++ '[' -z '' ']'
++ XR_RLIMIT=300
++ export RLIMIT=300
++ RLIMIT=300
++ counter_file=/dev/shmem/processmgr_respawn_count
++ '[' -f /dev/shmem/processmgr_respawn_count ']'
++ echo 1
++ export RESPAWN_COUNT=1
++ RESPAWN_COUNT=1
++ counter_file=/dev/shmem/processmgr_exit_status
++ '[' -f /dev/shmem/processmgr_exit_status ']'
++ export EXIT_STATUS=0
++ EXIT_STATUS=0
++ mkdir -m 777 -p /var/lib/malloc_stat
++ source /pkg/etc/preload_libs.sh
+++ export LD_PRELOAD=/pkg/lib/libmemdbg.so
+++ LD_PRELOAD=/pkg/lib/libmemdbg.so
++ export MEMDBG_ENABLE=1
++ MEMDBG_ENABLE=1
++ chmod 755 /tmp/set_env_vars
++ source /tmp/set_env_vars
+++ source /pkg/etc/xr_startup_envs.sh
++++ am_i_thinxr
++++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
+++++ id -u
++++ '[' 0 = 0 ']'
++++ IS_ROOT=true
++++ declare -F in_xrnns
++++ '[' 1 -eq 0 ']'
++++ am_i_thinxr
++++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
++++ export PKG_PATH=/pkg
++++ PKG_PATH=/pkg
++++ [[ true == true ]]
+++++ ulimit -H -n
++++ '[' 8192 -gt 8192 ']'
++++ ulimit -H -n 8192
++++ ulimit -n 8192
++++ ulimit -c 1000000
++++ ulimit -q unlimited
++++ ulimit -s 1024
+++++ grep /pkg/bin
+++++ echo /pkg/sbin:/pkg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
++++ '[' '!' /pkg/sbin:/pkg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin ']'
+++++ echo /pkg/sbin:/pkg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+++++ grep /pkg/sbin
++++ '[' '!' /pkg/sbin:/pkg/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin ']'
++++ am_i_thinxr
++++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
++++ export LD_LIBRARY_PATH=/pkg/lib:/pkg/lib/cerrno:/pkg/lib/mib:/pkg/lib/spp_plugins
++++ LD_LIBRARY_PATH=/pkg/lib:/pkg/lib/cerrno:/pkg/lib/mib:/pkg/lib/spp_plugins
++++ am_i_thinxr
++++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
++++ export LD_LIBRARY_PATH=/pkg/lib/override:/pkg/lib:/pkg/lib/cerrno:/pkg/lib/mib:/pkg/lib/spp_plugins:/pkg/thirdparty_lib/lib64:/pkg/thirdparty_lib/lib:/pkg/thirdparty_lib/usr/lib64:/pkg/thirdparty_lib/usr/lib
++++ LD_LIBRARY_PATH=/pkg/lib/override:/pkg/lib:/pkg/lib/cerrno:/pkg/lib/mib:/pkg/lib/spp_plugins:/pkg/thirdparty_lib/lib64:/pkg/thirdparty_lib/lib:/pkg/thirdparty_lib/usr/lib64:/pkg/thirdparty_lib/usr/lib
++++ export 'MODPROBE_OPTIONS=-d /pkg/thirdparty_lib'
++++ MODPROBE_OPTIONS='-d /pkg/thirdparty_lib'
++++ export INSTANCE_ID=1
++++ INSTANCE_ID=1
++++ export ETC_PATH=/pkg/etc
++++ ETC_PATH=/pkg/etc
++++ export BGP_PATH=/pkg/bgp
++++ BGP_PATH=/pkg/bgp
++++ export BOOT_DIR=pkg/boot/boot.d
++++ BOOT_DIR=pkg/boot/boot.d
++++ export BOOT_IOX=1
++++ BOOT_IOX=1
++++ export CONFIGS_PATH=/pkg/configs
++++ CONFIGS_PATH=/pkg/configs
++++ export CONFREG=0
++++ CONFREG=0
++++ export CONNECT_COMMAND=
++++ CONNECT_COMMAND=
++++ export CONNECT_DIR=pkg/boot/connect.d
++++ CONNECT_DIR=pkg/boot/connect.d
++++ export DIR=pkg/boot/boot.d
++++ DIR=pkg/boot/boot.d
++++ export IM_RULES_PATH=/pkg/rules
++++ IM_RULES_PATH=/pkg/rules
++++ export INIT_STARTUP_PATH=/pkg/init.d
++++ INIT_STARTUP_PATH=/pkg/init.d
++++ am_i_thinxr
++++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
++++ export IOX=1
++++ IOX=1
++++ export IOX_DISABLE_STARTUP=0
++++ IOX_DISABLE_STARTUP=0
++++ export IOX_DISABLE_SYSMGR=0
++++ IOX_DISABLE_SYSMGR=0
++++ export IOX_NO_CONFIG=0
++++ IOX_NO_CONFIG=0
++++ export LOADPATH=/pkg
++++ LOADPATH=/pkg
++++ export MIB_LIBRARY_PATH=/pkg/lib/mib
++++ MIB_LIBRARY_PATH=/pkg/lib/mib
++++ export MIB_PATH=/pkg/mib
++++ MIB_PATH=/pkg/mib
++++ export NODE_WATCHER=1
++++ NODE_WATCHER=1
++++ export PARSER_PATH=/pkg/parser
++++ PARSER_PATH=/pkg/parser
++++ export PARTITIONS_PATH=/pkg/partitions
++++ PARTITIONS_PATH=/pkg/partitions
++++ export PLACEMENT_PATH=/pkg/placement
++++ PLACEMENT_PATH=/pkg/placement
++++ export SCHEMA_PATH=schema
++++ SCHEMA_PATH=schema
++++ export STARTUP_PATH=/pkg/startup
++++ STARTUP_PATH=/pkg/startup
++++ export SYSMGR_NODE=
++++ SYSMGR_NODE=
++++ export TTY_UART_DRIVER=libslinux.dll
++++ TTY_UART_DRIVER=libslinux.dll
++++ am_i_thinxr
++++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
+++++ id -un
++++ export AAA_USER=root
++++ AAA_USER=root
++++ export PCIE_DEBUG=2
++++ PCIE_DEBUG=2
++++ export MEMDBG_BLACKLIST=fib_mgr:npu_driver:bundlemgr_distrib:optics_driver:optics_driver_0:optics_driver_1:optics_driver_2:optics_driver_3:optics_driver_4:optics_driver_5:optics_driver_6:optics_driver_7
++++ MEMDBG_BLACKLIST=fib_mgr:npu_driver:bundlemgr_distrib:optics_driver:optics_driver_0:optics_driver_1:optics_driver_2:optics_driver_3:optics_driver_4:optics_driver_5:optics_driver_6:optics_driver_7
++++ export LVM_SUPPRESS_FD_WARNINGS=1
++++ LVM_SUPPRESS_FD_WARNINGS=1
++++ export MEMDBG_ENABLE=1
++++ MEMDBG_ENABLE=1
++++ '[' -f /pkg/etc/sanitizer_env.sh ']'
++++ source /pkg/etc/sanitizer_env.sh
+++++ for dirname in lsan heap asan ubsan crft
+++++ dir=/var/log/lsan
+++++ mkdir -p /var/log/lsan
+++++ chown iosxr:iosxr /var/log/lsan
+++++ for dirname in lsan heap asan ubsan crft
+++++ dir=/var/log/heap
+++++ mkdir -p /var/log/heap
+++++ chown iosxr:iosxr /var/log/heap
+++++ for dirname in lsan heap asan ubsan crft
+++++ dir=/var/log/asan
+++++ mkdir -p /var/log/asan
+++++ chown iosxr:iosxr /var/log/asan
+++++ for dirname in lsan heap asan ubsan crft
+++++ dir=/var/log/ubsan
+++++ mkdir -p /var/log/ubsan
+++++ chown iosxr:iosxr /var/log/ubsan
+++++ for dirname in lsan heap asan ubsan crft
+++++ dir=/var/log/crft
+++++ mkdir -p /var/log/crft
+++++ chown iosxr:iosxr /var/log/crft
+++++ export LSAN_OPTIONS=exitcode=0:use_unaligned=1:suppressions=/pkg/etc/lsan_suppressions.txt:leak_check_at_exit=0:fast_unwind_on_malloc=0:log_exe_name=1
+++++ LSAN_OPTIONS=exitcode=0:use_unaligned=1:suppressions=/pkg/etc/lsan_suppressions.txt:leak_check_at_exit=0:fast_unwind_on_malloc=0:log_exe_name=1
+++++ export LSAN_OPTIONS=exitcode=0:use_unaligned=1:suppressions=/pkg/etc/lsan_suppressions.txt:leak_check_at_exit=0:fast_unwind_on_malloc=0:log_exe_name=1:handle_segv=0:handle_sigbus=0:handle_sigfpe=0
+++++ LSAN_OPTIONS=exitcode=0:use_unaligned=1:suppressions=/pkg/etc/lsan_suppressions.txt:leak_check_at_exit=0:fast_unwind_on_malloc=0:log_exe_name=1:handle_segv=0:handle_sigbus=0:handle_sigfpe=0
+++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0
+++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0
+++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64
+++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64
+++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0
+++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0
+++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1
+++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1
+++++ export ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1:detect_odr_violation=0
+++++ ASAN_OPTIONS=halt_on_error=0:log_path=/var/log/asan/asan.report:log_exe_name=1:allow_addr2line=0:use_mid_memory=1:verify_asan_link_order=0:quarantine_size_mb=16:malloc_context_size=5:max_redzone=64:handle_segv=0:handle_sigbus=0:handle_sigfpe=0:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1:detect_stack_use_after_return=1:detect_stack_use_after_scope=1:detect_leaks=1:detect_odr_violation=0
+++++ export UBSAN_OPTIONS=log_path=/var/log/ubsan/ubsan.report:log_exe_name=1:print_stacktrace=1
+++++ UBSAN_OPTIONS=log_path=/var/log/ubsan/ubsan.report:log_exe_name=1:print_stacktrace=1
++++ am_i_thinxr
++++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
++++ export PYTHONDONTWRITEBYTECODE=1
++++ PYTHONDONTWRITEBYTECODE=1
+++ umask 0
++ am_i_thinxr
++ [[ -e /opt/cisco/thinxr/am_i_thinxr ]]
++ umask 0
++ '[' 1 -eq 1 ']'
++ declare -F pd_notify_xr_pm_started
++ nsenter --net=/var/run/netns/xrnns -- processmgr
++ wait 1310

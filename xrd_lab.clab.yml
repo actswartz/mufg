@@ -1,0 +1,83 @@
+name: xrd-lab
+
+mgmt:
+  network: xrd-mgmt
+  ipv4-subnet: 172.30.30.0/24
+
+topology:
+  kinds:
+    cisco_xrd:
+      image: sbezverk/xrd-control-plane:25.2.1 
+  
+  nodes:
+    # Pod 1
+    p1-xr1:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.11
+      ports:
+        - 31011:22
+    p1-xr2:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.12
+      ports:
+        - 31012:22
+
+    # Pod 2
+    p2-xr1:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.21
+      ports:
+        - 31021:22
+    p2-xr2:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.22
+      ports:
+        - 31022:22
+
+    # Pod 3
+    p3-xr1:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.31
+      ports:
+        - 31031:22
+    p3-xr2:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.32
+      ports:
+        - 31032:22
+
+    # Pod 4
+    p4-xr1:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.41
+      ports:
+        - 31041:22
+    p4-xr2:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.42
+      ports:
+        - 31042:22
+
+    # Pod 5
+    p5-xr1:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.51
+      ports:
+        - 31051:22
+    p5-xr2:
+      kind: cisco_xrd
+      mgmt-ipv4: 172.30.30.52
+      ports:
+        - 31052:22
+
+  links:
+    # Pod 1
+    - endpoints: ["p1-xr1:Gi0-0-0-0", "p1-xr2:Gi0-0-0-0"]
+    # Pod 2
+    - endpoints: ["p2-xr1:Gi0-0-0-0", "p2-xr2:Gi0-0-0-0"]
+    # Pod 3
+    - endpoints: ["p3-xr1:Gi0-0-0-0", "p3-xr2:Gi0-0-0-0"]
+    # Pod 4
+    - endpoints: ["p4-xr1:Gi0-0-0-0", "p4-xr2:Gi0-0-0-0"]
+    # Pod 5
+    - endpoints: ["p5-xr1:Gi0-0-0-0", "p5-xr2:Gi0-0-0-0"]

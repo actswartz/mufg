@@ -1,0 +1,14 @@
+2026-04-30 01:12:08,201   4598 [__main__     ] INF: -------------------------------------------------------------------------------
+2026-04-30 01:12:08,202   4598 [__main__     ] INF: Started
+2026-04-30 01:12:09,264   4598 [__main__     ] DEB: Informing sysmgr proc ready
+2026-04-30 01:12:09,277   4598 [DeviceInfo   ] INF: standby, Failed to read slot number of RP. Error: 'XRd' detected the 'fatal' condition 'Invalid argument': Invalid argument
+2026-04-30 01:12:09,279   4598 [Config       ] INF: cleanup_and_stop_emsd action to be taken in case of any failure in bootz and emsd integration
+2026-04-30 01:12:09,280   4598 [Setup        ] DEB: create dir : /disk0:/ztp/customer/gnsi and /disk0:/ztp/customer/gnsi_bkp
+2026-04-30 01:12:09,281   4598 [__main__     ] INF: ZTP process role is Primary
+2026-04-30 01:12:09,281   4598 [__main__     ] DEB: Successfully Validated input Arguments
+2026-04-30 01:12:09,317   4598 [DeviceInfo   ] INF: standby, Failed to read slot number of RP. Error: 'XRd' detected the 'fatal' condition 'Invalid argument': Invalid argument
+2026-04-30 01:12:09,320   4598 [Config       ] INF: cleanup_and_stop_emsd action to be taken in case of any failure in bootz and emsd integration
+2026-04-30 01:12:09,465   4598 [__main__     ] DEB: Disabling snooping sysdb tuple.
+2026-04-30 01:12:09,471   4598 [__main__     ] INF: ZTP is not configured to start.
+2026-04-30 01:12:09,482   4598 [__main__     ] INF: Exiting SUCCESSFULLY
+2026-04-30 01:12:09,482   4598 [__main__     ] INF: ZTP Exited

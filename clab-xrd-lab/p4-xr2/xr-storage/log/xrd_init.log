@@ -1,0 +1,101 @@
+2026-04-30 01:10:55,644 INFO [xrd_init] Starting up
+[xrd_bootstrap_data_copier] Recursing into '/xr-storage-shadow/config'
+[xrd_bootstrap_data_copier] Recursing into '/xr-storage-shadow/disk1'
+[xrd_bootstrap_data_copier] Recursing into '/xr-storage-shadow/log'
+[xrd_bootstrap_data_copier] Recursing into '/xr-storage-shadow/scratch'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/disk1/nvram' to '/xr-storage/disk1/nvram'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/log/journal' to '/xr-storage/log/journal'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/log/lastlog' to '/xr-storage/log/lastlog'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/log/wtmp' to '/xr-storage/log/wtmp'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/log/xr_bootstrap_boot.log' to '/xr-storage/log/xr_bootstrap_boot.log'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/log/xr_bootstrap_install.log' to '/xr-storage/log/xr_bootstrap_install.log'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/scratch/config' to '/xr-storage/scratch/config'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/scratch/core' to '/xr-storage/scratch/core'
+[xrd_bootstrap_data_copier] Copying '/xr-storage-shadow/scratch/shutdown' to '/xr-storage/scratch/shutdown'
+2026-04-30 01:10:55,653 INFO [xrd_init] Checking kernel version
+2026-04-30 01:10:55,665 INFO [xrd_init] Detected cgroup version 2
+2026-04-30 01:10:55,675 DEBUG [xrd_init] Found cgroup memory limit max from path /sys/fs/cgroup//memory.max
+2026-04-30 01:10:55,684 INFO [xrd_init] Checking env vars
+2026-04-30 01:10:55,698 INFO [xrd_init] Checking capabilities
+2026-04-30 01:10:55,737 INFO [xrd_init] Checking devices
+2026-04-30 01:10:55,741 INFO [xrd_init] Checking /run tmpfs
+2026-04-30 01:10:55,746 INFO [xrd_init] /run not mounted, attempting to mount as tmpfs
+2026-04-30 01:10:55,753 INFO [xrd_init] Checking /proc/sys mounts
+2026-04-30 01:10:55,758 INFO [xrd_init] Create bind mount /proc/sys
+2026-04-30 01:10:55,765 DEBUG [xrd_init] Remounting /proc/sys with options ro
+2026-04-30 01:10:55,782 INFO [xrd_init] Create bind mount /proc/sys/net
+2026-04-30 01:10:55,789 DEBUG [xrd_init] Remounting /proc/sys/net with options rw
+2026-04-30 01:10:55,798 INFO [xrd_init] Create bind mount /proc/sys/fs/mqueue
+2026-04-30 01:10:55,805 DEBUG [xrd_init] Remounting /proc/sys/fs/mqueue with options rw
+2026-04-30 01:10:55,811 INFO [xrd_init] Checking cgroup mounts
+2026-04-30 01:10:55,818 INFO [xrd_init] Checking shared memory size
+2026-04-30 01:10:55,827 INFO [xrd_init] Resizing shared memory to 135068790784
+2026-04-30 01:10:55,842 INFO [xrd_init] ASLR is enabled
+2026-04-30 01:10:55,853 INFO [xrd_init] Checking available memory
+[xrd_inotify_boot_check] Checking enough inotify resource for new XRd instance (resource count 4000)...
+[xrd_inotify_boot_check] Max open file count: soft 1048576, hard 1048576
+[xrd_inotify_boot_check] Inotify check success - proceeding!
+2026-04-30 01:10:56,263 INFO [xrd_init] Launching platform setup
+2026-04-30 01:10:56,457 INFO: [init_platform] Parsing env vars
+2026-04-30 01:10:56,457 DEBUG: [init_platform] All env vars: {'CLAB_LABEL_CLAB_GIT_BRANCH': 'main', 'CLAB_LABEL_CLAB_NODE_TYPE': '', 'no_proxy': 'localhost,127.0.0.1,::1,*.local,172.30.30.0/24,172.30.30.11,172.30.30.12,172.30.30.21,172.30.30.22,172.30.30.31,172.30.30.32,172.30.30.41,172.30.30.42,172.30.30.51,172.30.30.52,p1-xr1,p1-xr2,p2-xr1,p2-xr2,p3-xr1,p3-xr2,p4-xr1,p4-xr2,p5-xr1,p5-xr2', 'HOSTNAME': 'p4-xr2', 'XR_FIRST_BOOT_CONFIG': '/etc/xrd/first-boot.cfg', 'CLAB_LABEL_CLAB_TOPO_FILE': '/root/dlr/xrd_lab.clab.yml', 'PWD': '/', 'CLAB_LABEL_CLAB_NODE_NAME': 'p4-xr2', 'CLAB_LABEL_CLAB_NODE_LAB_DIR': '/root/dlr/clab-xrd-lab/p4-xr2', 'CLAB_LABEL_CLAB_NODE_GROUP': '', 'HOME': '/root', 'CLAB_LABEL_CLAB_NODE_LONGNAME': 'clab-xrd-lab-p4-xr2', 'CLAB_LABEL_CLAB_OWNER': 'root', 'TERM': 'xterm', 'NO_PROXY': 'localhost,127.0.0.1,::1,*.local,172.30.30.0/24,172.30.30.11,172.30.30.12,172.30.30.21,172.30.30.22,172.30.30.31,172.30.30.32,172.30.30.41,172.30.30.42,172.30.30.51,172.30.30.52,p1-xr1,p1-xr2,p2-xr1,p2-xr2,p3-xr1,p3-xr2,p4-xr1,p4-xr2,p5-xr1,p5-xr2', 'XR_EVERY_BOOT_SCRIPT': '/etc/xrd/mgmt_intf_v6_addr.sh', 'SHLVL': '1', 'CLAB_INTFS': '1', 'CLAB_LABEL_CLAB_GIT_HASH': '6245d0d', 'XR_INTERFACES': 'linux:Gi0-0-0-0,xr_name=Gi0/0/0/0;', 'CLAB_LABEL_CONTAINERLAB': 'xrd-lab', 'CLAB_LABEL_CLAB_NODE_KIND': 'cisco_xrd', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'XR_MGMT_INTERFACES': 'linux:eth0,xr_name=Mg0/RP0/CPU0/0,chksum,snoop_v4,snoop_v6', '_': '/opt/cisco/xrd-python/init_platform.py'}
+2026-04-30 01:10:56,457 DEBUG: [init_platform] Parsing env var XR_INTERFACES
+2026-04-30 01:10:56,458 DEBUG: [init_platform] Parsing env var XR_MGMT_INTERFACES
+2026-04-30 01:10:56,458 DEBUG: [init_platform] Parsing env var XR_FIRST_BOOT_CONFIG
+2026-04-30 01:10:56,458 DEBUG: [init_platform] Parsing env var XR_EVERY_BOOT_SCRIPT
+2026-04-30 01:10:56,458 INFO: [init_platform] Performing PI setup
+2026-04-30 01:10:56,458 WARNING: [xrd.boot.check] The kernel socket parameters are insufficient for running XRd in a
+production deployment. They may be used in a lab deployment, but must
+be increased to the required minimums for production deployment.
+Lower values may result at XR IPC loss and unpredictable behavior,
+particularly at higher scale.
+
+The required minimum settings are:
+    net.core.netdev_max_backlog=300000
+    net.core.optmem_max=67108864
+    net.core.rmem_default=67108864
+    net.core.rmem_max=67108864
+    net.core.wmem_default=67108864
+    net.core.wmem_max=67108864
+
+The current host settings are:
+    net.core.rmem_default=212992
+    net.core.rmem_max=212992
+    net.core.wmem_default=212992
+    net.core.wmem_max=212992
+
+Values can be changed by adding e.g.
+'net.core.rmem_default=67108864' to /etc/sysctl.conf or
+in a dedicated conf file under /etc/sysctl.d/.
+Or for a temporary fix, running e.g.:
+  sysctl -w net.core.rmem_default=67108864
+
+2026-04-30 01:10:56,459 DEBUG: [xrd.boot] Using default disk usage limit of 6 GiB
+2026-04-30 01:10:56,459 DEBUG: [xrd.boot] Configured boot config: /etc/xrd/first-boot.cfg
+2026-04-30 01:10:56,459 DEBUG: [xrd.boot] Configured boot script: /etc/xrd/mgmt_intf_v6_addr.sh
+2026-04-30 01:10:56,459 DEBUG: [xrd.boot] ZTP not enabled
+2026-04-30 01:10:56,459 INFO: [init_platform] Performing PD setup
+2026-04-30 01:10:56,459 INFO: [xrd.cgroups] Creating custom cgroups
+2026-04-30 01:10:56,472 INFO: [xrd.cgroups] Determined cgroups version: 2
+2026-04-30 01:10:56,474 DEBUG: [xrd.cgroups] Creating cgroup /sys/fs/cgroup/xrd-cp
+2026-04-30 01:10:56,481 DEBUG: [xrd.cgroups] Creating cgroup /sys/fs/cgroup/xrd-cp/systemd
+2026-04-30 01:10:56,481 INFO: [xrd.cgroups] Moving pid 1 and current pid 270 to the CP cgroup
+2026-04-30 01:10:56,481 DEBUG: [xrd.cgroups] Assigned PID 1 to cgroup /sys/fs/cgroup/xrd-cp/systemd
+2026-04-30 01:10:56,482 DEBUG: [xrd.cgroups] Assigned PID 270 to cgroup /sys/fs/cgroup/xrd-cp/systemd
+2026-04-30 01:10:56,484 DEBUG: [xrd.pd.interfaces] Got XR interface type Gi and r/s/i/p 0/0/0/0 from interface linux:Gi0-0-0-0,xr_name=Gi0/0/0/0
+2026-04-30 01:10:56,484 DEBUG: [xrd.pd.interfaces] Port number 0 parsed from interface linux:Gi0-0-0-0,xr_name=Gi0/0/0/0
+2026-04-30 01:10:56,484 DEBUG: [xrd.pd.interfaces] Creating interface with id: Gi0-0-0-0, xr_name: Gi0/0/0/0, port: 0, chksum: False, snoop_v4: False, snoop_v6: False, snoop_v4_default_route: False, snoop_v6_default_route: False from element linux:Gi0-0-0-0,xr_name=Gi0/0/0/0 in env var XR_INTERFACES
+2026-04-30 01:10:56,485 DEBUG: [xrd.pd.interfaces] Got XR interface type Mg and r/s/i/p 0/RP0/CPU0/0 from interface linux:eth0,xr_name=Mg0/RP0/CPU0/0,chksum,snoop_v4,snoop_v6
+2026-04-30 01:10:56,485 DEBUG: [xrd.pd.interfaces] Port number 0 parsed from interface linux:eth0,xr_name=Mg0/RP0/CPU0/0,chksum,snoop_v4,snoop_v6
+2026-04-30 01:10:56,485 DEBUG: [xrd.pd.interfaces] Creating interface with id: eth0, xr_name: Mg0/RP0/CPU0/0, port: 0, chksum: True, snoop_v4: True, snoop_v6: True, snoop_v4_default_route: False, snoop_v6_default_route: False from element linux:eth0,xr_name=Mg0/RP0/CPU0/0,chksum,snoop_v4,snoop_v6 in env var XR_MGMT_INTERFACES
+2026-04-30 01:10:56,485 DEBUG: [xrd.pd.interfaces] Writing env {'XR_INTERFACES_LEGACY': 'Gi0/0/0/0:Gi0-0-0-0,Mg0/RP0/CPU0/0:eth0', 'XR_SNOOP_V4_INTERFACES': 'Mg0/RP0/CPU0/0', 'XR_SNOOP_V6_INTERFACES': 'Mg0/RP0/CPU0/0', 'XR_SNOOP_V4_DEFAULT_ROUTE_INTERFACES': '', 'XR_SNOOP_V6_DEFAULT_ROUTE_INTERFACES': '', 'XR_CHECKSUM_OFFLOAD_COUNTERACT': 'Mg0/RP0/CPU0/0'} to /var/xr/scratch/.xrd_env.sh
+2026-04-30 01:10:56,486 DEBUG: [init_platform] Saving runtime data before exit
+2026-04-30 01:10:56,486 DEBUG: [xrd] Saving runtime data to /var/cisco/xrd/settings.json
+2026-04-30 01:10:56,519 DEBUG [xrd_init] Loading env /var/xr/scratch/.xrd_env.sh:
+export XR_INTERFACES_LEGACY=Gi0/0/0/0:Gi0-0-0-0,Mg0/RP0/CPU0/0:eth0
+export XR_SNOOP_V4_INTERFACES=Mg0/RP0/CPU0/0
+export XR_SNOOP_V6_INTERFACES=Mg0/RP0/CPU0/0
+export XR_SNOOP_V4_DEFAULT_ROUTE_INTERFACES=
+export XR_SNOOP_V6_DEFAULT_ROUTE_INTERFACES=
+export XR_CHECKSUM_OFFLOAD_COUNTERACT=Mg0/RP0/CPU0/0
+2026-04-30 01:10:56,533 INFO [xrd_init] Starting systemd
+2026-04-30 01:10:56,566 INFO [xrd_init] Detected container virtualisation: docker

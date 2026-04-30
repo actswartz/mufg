@@ -1,0 +1,7 @@
+'2026-04-30 01:12:11,368 INFO script_agent Script agent directory /harddisk:/mirror/script-mgmt/logs not present. Creating'
+'2026-04-30 01:12:11,368 DEBUG script_agent Joining request watcher thread'
+'2026-04-30 01:12:11,369 DEBUG script_agent Monitoring threads did not complete: cannot join thread before it is started'
+'2026-04-30 01:12:11,369 DEBUG script_db Script DB directory /run/lock/script-mgmt not present. Creating'
+'2026-04-30 01:12:11,698 INFO script_agent ScriptAgent: Init Request Queue'
+'2026-04-30 01:12:11,699 DEBUG script_agent Processing request queue'
+'2026-04-30 01:12:11,764 INFO script_agent ScriptAgent: Ready'

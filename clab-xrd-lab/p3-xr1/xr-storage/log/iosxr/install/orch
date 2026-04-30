@@ -1,0 +1,66 @@
+2026-04-30 01:11:34,397 UTC   1964 [orch.__main__       :  38] INF: -------------------------------------------------------------------------------
+2026-04-30 01:11:34,398 UTC   1964 [orch.__main__       :  39] INF: Started
+2026-04-30 01:11:37,825 UTC   1964 [orch.__main__       : 314] INF: Cookie access retry count 0
+2026-04-30 01:11:40,826 UTC   1964 [orch.__main__       : 314] INF: Cookie access retry count 1
+2026-04-30 01:11:43,828 UTC   1964 [orch.__main__       : 510] INF: Creating volatile tmp dir at /var/volatile/tmp/cisco/iosxr/install
+2026-04-30 01:11:43,837 UTC   1964 [orch.reload.sm      : 191] INF: Attempting to connect to shelf manager. rc is 0
+2026-04-30 01:11:43,838 UTC   1964 [orch.persist.Persist: 813] INF: Attempting to load previous state data from path /var/opt/cisco/iosxr/install/mirror/feature-db-state
+2026-04-30 01:11:43,838 UTC   1964 [orch.persist.Persist: 819] INF: No state data file PosixPath('/var/opt/cisco/iosxr/install/mirror/feature-db-state') exists
+2026-04-30 01:11:43,838 UTC   1964 [orch.alarms         : 107] INF: Initialising FM for process instorch with alarm file install_orch_fm.xml at node: 0/RP0/CPU0
+2026-04-30 01:11:43,853 UTC   1964 [orch.persist.Persist: 813] INF: Attempting to load previous state data from path /var/opt/cisco/iosxr/install/mirror/node_inconsistencies.json
+2026-04-30 01:11:43,854 UTC   1964 [orch.persist.Persist: 819] INF: No state data file PosixPath('/var/opt/cisco/iosxr/install/mirror/node_inconsistencies.json') exists
+2026-04-30 01:11:43,915 UTC   1964 [orch.oper.fprint    : 186] INF: Initializing Runtime Fingerprint Cache
+2026-04-30 01:11:43,970 UTC   1964 [orch.config         : 314] INF: Registering config verifier
+2026-04-30 01:11:43,980 UTC   1964 [orch.config         : 104] INF: Error (Failed to get done: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory') when reading startup done path. Treating as if done value=False
+2026-04-30 01:11:43,987 UTC   1964 [orch.features.infra.comms: 100] INF: Creating Endpoint
+2026-04-30 01:11:43,988 UTC   1964 [orch.features.infra.comms: 135] INF: Publishing endpoint
+2026-04-30 01:11:44,021 UTC   1964 [orch.disaster_recovery: 450] INF: This platform does not have a DR disk
+2026-04-30 01:11:44,022 UTC   1964 [orch.persist.Persist: 813] INF: Attempting to load previous state data from path /var/opt/cisco/iosxr/install/mirror/state
+2026-04-30 01:11:44,022 UTC   1964 [orch.persist.Persist: 819] INF: No state data file PosixPath('/var/opt/cisco/iosxr/install/mirror/state') exists
+2026-04-30 01:11:44,023 UTC   1964 [orch.persist.Persist: 813] INF: Attempting to load previous state data from path /var/opt/cisco/iosxr/install/mirror/orchstate
+2026-04-30 01:11:44,023 UTC   1964 [orch.persist.Persist: 819] INF: No state data file PosixPath('/var/opt/cisco/iosxr/install/mirror/orchstate') exists
+2026-04-30 01:11:44,024 UTC   1964 [orch.engine.fsm     : 200] INF: Resuming with no state record
+2026-04-30 01:11:44,077 UTC   1964 [orch.features.infra.comms: 195] INF: Finished publishing endpoint, exception None
+2026-04-30 01:11:44,096 UTC   1964 [orch.oper.pq        :4792] INF: Base gISO build metadata file does not exist.
+2026-04-30 01:11:44,099 UTC   1964 [cmn.dnf.Query       : 352] INF: [9E48] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'list', '-y', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh', '--', 'installed']
+2026-04-30 01:11:44,111 UTC   1964 [orch.repo.historical: 239] INF: Not creating initial rollback point as rollback is disabled
+2026-04-30 01:11:44,112 UTC   1964 [cmn.iso.mounts      : 157] INF: Unmounting ISO at '/mnt/cisco/iosxr/install/oper_iso'
+2026-04-30 01:11:44,114 UTC   1964 [cmn.iso.mounts      : 157] INF: Unmounting ISO at '/mnt/cisco/iosxr/install/action'
+2026-04-30 01:11:44,117 UTC   1964 [orch.reload         : 352] INF: Connect callback from Shelf Manager. Status 0
+2026-04-30 01:11:44,117 UTC   1964 [orch.reload         : 354] INF: Connected to Shelf Manager.
+2026-04-30 01:11:44,146 UTC   1964 [comms.Orch          : 336] INF: Received AGENT_HELLO unsolicited message from 0/RP0/CPU0
+2026-04-30 01:11:44,150 UTC   1964 [orch.consistency    : 505] INF: Node 0/RP0/CPU0 is the active RP. Removing it from the node inconsistencies file, if present.
+2026-04-30 01:11:44,152 UTC   1964 [orch.consistency    : 728] INF: Node 0/RP0/CPU0 has op-in-progress marker file: False, packaging operation in progress: False - ok
+2026-04-30 01:11:44,154 UTC   1964 [comms.Orch          : 160] INF: Sending PKG_QUERY request message (to nodes [Node(0/RP0/CPU0)]): {"category": 19, "msg_type": 1, "error": null, "msg_data": {"query": 2, "inputs": [], "dnf_queue_timeout": 300, "get_security_data": false, "check_owner_sigs": false, "category": 19}, "req_id": "0xdbf1191a00000001", "nodes": ["0/RP0/CPU0"], "warnings": null}
+2026-04-30 01:11:50,236 UTC   1964 [comms.Orch          : 306] INF: Received PKG_QUERY response message to request 0xdbf1191a00000001 from 0/RP0/CPU0: b'{"category": 19, "msg_type": 2, "error": null, "msg_data": {"dnf_output": [{"Name": "acl", "Version": "2.2.53", "Release": "r0.33.147.0", "Epoch": "0", "Architecture": "corei7_64", "Summary": null, "Repository": "@iosxr_install_internal", "Cached": null, "Size": null, "Description": null, "License": null, "ProvidesMatches": [], "Active": null, "Committed": null, "Pkgmgr": null, "URL": null, "XRMandatory": null, "XROption...
+2026-04-30 01:11:50,903 UTC   1964 [cmn.dnf.Query       : 466] INF: [9E48] Subprocess completed successfully
+2026-04-30 01:11:50,915 UTC   1964 [cmn.dnf.Query       : 581] INF: [9E48] Subprocess exited with success
+2026-04-30 01:11:50,929 UTC   1964 [orch.oper.pq        : 975] INF: Filtering disabled packages path: None
+2026-04-30 01:11:51,107 UTC   1964 [dnf_repoquery       : 352] INF: [E96C] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr', '--all', '--disablerepo=*', '--enablerepo=iosxr_install_internal', '--no-wrap', '--refresh']
+2026-04-30 01:11:51,943 UTC   1964 [orch.features.infra.comms: 348] INF: Hello from conn Connection(id=139973340513088): id SHELFMGR
+2026-04-30 01:11:55,024 UTC   1964 [dnf_repoquery       : 466] INF: [E96C] Subprocess completed successfully
+2026-04-30 01:11:55,045 UTC   1964 [dnf_repoquery       : 581] INF: [E96C] Subprocess exited with success
+2026-04-30 01:11:55,046 UTC   1964 [dnf_repoquery       : 201] INF: [dead(E96C)] Add repos ({'iosxr_install_internal'}) to inaccessible repos (set()). Context: Parser
+2026-04-30 01:11:55,054 UTC   1964 [dnf_repoquery       : 201] INF: Add repos ({'iosxr_install_internal'}) to inaccessible repos (set()). Context: Creation
+2026-04-30 01:11:55,072 UTC   1964 [cmn.subprocs.exec   : 352] INF: [F5DE] Running ['rpm', '-qa', '--queryformat', '%{name}-%|epoch?{%{epoch}}:{0}|:%{version}-%{release}.%{arch}`%{packager}`%{buildhost}`%{buildtime}\n'] as user iosxr
+2026-04-30 01:12:05,044 UTC   1964 [cmn.subprocs.exec   : 466] INF: [F5DE] Subprocess completed successfully
+2026-04-30 01:12:05,135 UTC   1964 [dnf_repoquery       : 352] INF: [A95A] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--whatprovides', 'cisco-iosxr-user-installable', '--all', '--disablerepo=*', '--no-wrap', '--refresh']
+2026-04-30 01:12:06,728 UTC   1964 [dnf_repoquery       : 466] INF: [A95A] Subprocess completed successfully
+2026-04-30 01:12:06,733 UTC   1964 [dnf_repoquery       : 581] INF: [A95A] Subprocess exited with success
+2026-04-30 01:12:06,762 UTC   1964 [dnf_repoquery       : 352] INF: [9B00] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--requires', '--resolve', '--installed', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'xr-foundation-*']
+2026-04-30 01:12:12,569 UTC   1964 [orch.config         : 104] INF: Error (Failed to get done: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory') when reading startup done path. Treating as if done value=False
+2026-04-30 01:12:12,569 UTC   1964 [orch.oper.fprint    : 208] INF: Final band of processes ready, waiting for cfgmgr done notification
+2026-04-30 01:12:12,570 UTC   1964 [dnf_repoquery       : 466] INF: [9B00] Subprocess completed successfully
+2026-04-30 01:12:12,573 UTC   1964 [dnf_repoquery       : 581] INF: [9B00] Subprocess exited with success
+2026-04-30 01:12:12,645 UTC   1964 [dnf_repoquery       : 352] INF: [A090] Running ['/usr/bin/python3', '/usr/bin/dnf', '--disableplugin=local', '-c', '/etc/opt/cisco/iosxr/install/dnf/dnf.conf.instorch', 'repoquery', '--installed', '--disablerepo=*', '--no-wrap', '--refresh', '--', 'xr-foundation-*']
+2026-04-30 01:12:14,643 UTC   1964 [dnf_repoquery       : 466] INF: [A090] Subprocess completed successfully
+2026-04-30 01:12:14,649 UTC   1964 [dnf_repoquery       : 581] INF: [A090] Subprocess exited with success
+2026-04-30 01:12:14,659 UTC   1964 [cmn.subprocs.exec   : 352] INF: [6E2B] Running ['rpm', '--showrc'] as user iosxr
+2026-04-30 01:12:14,751 UTC   1964 [cmn.subprocs.exec   : 466] INF: [6E2B] Subprocess completed successfully
+2026-04-30 01:12:23,231 UTC   1964 [orch.config         : 172] INF: Received notification for cfgmgr startup done, calling 2 registered callbacks
+2026-04-30 01:12:23,231 UTC   1964 [orch.oper.fprint    : 223] INF: Cfgmgr startup done
+2026-04-30 01:12:23,232 UTC   1964 [orch.oper.fprint    : 253] INF: Fingerprints not enabled, not generating cache
+2026-04-30 01:12:23,232 UTC   1964 [orch.oper.fprint    :1106] INF: Changing fingerprint cache status from None to <_InternalCacheStatus.UP_TO_DATE: 0>
+2026-04-30 01:12:23,232 UTC   1964 [orch.oper.fprint    : 264] INF: Marking startup of fingerprint cache as done
+2026-04-30 01:12:23,233 UTC   1964 [orch.config         : 385] INF: Cleaned up /var/opt/cisco/iosxr/install/giso_cfg_marker
+2026-04-30 01:12:23,233 UTC   1964 [orch.config         : 385] INF: Cleaned up /var/xr/config/config/running/alternate_cfg/giso.cfg

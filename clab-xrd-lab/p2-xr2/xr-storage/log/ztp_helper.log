@@ -1,0 +1,31 @@
+(Default NS                    ) Thu Apr 30 01:12:20 UTC 2026: (pid  5566) (/pkg/bin/ztp_exec.sh)                  : Applying configuration (XRd applying XR interface IP address config):
++ (Applying configuration) interface Mg 0/RP0/CPU0/0
++ (Applying configuration)  ipv4 address 172.30.30.22/24
++ (Applying configuration)  no shutdown
++ (Applying configuration) !
+(Default NS                    ) Thu Apr 30 01:12:20 UTC 2026: (pid  5566) (/pkg/bin/ztp_exec.sh)                  : + (exec) /pkg/bin/config -p15 -X -f /var/opt/cisco/iosxr/xrd/interface_ip_config.txt -u ZTP -L ZTP -c "XRd applying XR interface IP address config"
+(Default NS                    ) Thu Apr 30 01:12:25 UTC 2026: (pid  5566) (/pkg/bin/ztp_exec.sh)                  : Output of config apply cmd:
+Parsing.
+71 bytes parsed in 1 sec (70)bytes/sec
+Committing..
+Prepared commit in 0 sec
+
+4 items committed in 2 sec (1)items/sec
+Updating.
+Updated Commit database in 1 sec 
+(Default NS                    ) Thu Apr 30 01:12:25 UTC 2026: (pid  5566) (/pkg/bin/ztp_exec.sh)                  : Applying (XRd applying XR interface IP address config) configuration. Done.
+(Default NS                    ) Thu Apr 30 01:12:25 UTC 2026: (pid  5663) (/pkg/bin/ztp_exec.sh)                  : Applying configuration (ZTP):
++ (Applying configuration) interface MgmtEth0/RP0/CPU0/0
++ (Applying configuration)  no ipv6 address
++ (Applying configuration) 
+(Default NS                    ) Thu Apr 30 01:12:25 UTC 2026: (pid  5663) (/pkg/bin/ztp_exec.sh)                  : + (exec) /pkg/bin/config -p15 -X -f /tmp/tmp.1QTujkTDWH -u ZTP -L ZTP -c "ZTP"
+(Default NS                    ) Thu Apr 30 01:12:30 UTC 2026: (pid  5663) (/pkg/bin/ztp_exec.sh)                  : Output of config apply cmd:
+Parsing.
+48 bytes parsed in 1 sec (47)bytes/sec
+Committing..
+Prepared commit in 0 sec
+
+7 items committed in 2 sec (3)items/sec
+Updating.
+Updated Commit database in 1 sec 
+(Default NS                    ) Thu Apr 30 01:12:30 UTC 2026: (pid  5663) (/pkg/bin/ztp_exec.sh)                  : Applying (ZTP) configuration. Done.

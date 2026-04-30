@@ -1,0 +1,428 @@
+2026-04-30T01:11:07.332389+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write 'fq_codel' to 'net/core/default_qdisc', ignoring: No such file or directory
+2026-04-30T01:11:07.332394+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/rmem_max', ignoring: No such file or directory
+2026-04-30T01:11:07.332397+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/wmem_max', ignoring: No such file or directory
+2026-04-30T01:11:07.332401+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/rmem_default', ignoring: No such file or directory
+2026-04-30T01:11:07.332404+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/wmem_default', ignoring: No such file or directory
+2026-04-30T01:11:07.332410+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '300000' to 'net/core/netdev_max_backlog', ignoring: No such file or directory
+2026-04-30T01:11:07.332414+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/optmem_max', ignoring: No such file or directory
+2026-04-30T01:11:07.332418+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '1124736     10000000  67108864' to 'net/ipv4/udp_mem', ignoring: No such file or directory
+2026-04-30T01:11:07.332423+00:00 p3-xr1 systemd[1]: Mounted Huge Pages File System.
+2026-04-30T01:11:07.332427+00:00 p3-xr1 systemd[1]: Mounted FUSE Control File System.
+2026-04-30T01:11:07.332431+00:00 p3-xr1 systemd[1]: Mounted Kernel Configuration File System.
+2026-04-30T01:11:07.332436+00:00 p3-xr1 systemd[1]: Mounted Kernel Debug File System.
+2026-04-30T01:11:07.332440+00:00 p3-xr1 systemd[1]: Mounted Temporary Directory (/tmp).
+2026-04-30T01:11:07.332444+00:00 p3-xr1 systemd[1]: Started Remount Root and Kernel File Systems.
+2026-04-30T01:11:07.332447+00:00 p3-xr1 systemd[1]: Started Apply Kernel Variables.
+2026-04-30T01:11:07.332451+00:00 p3-xr1 systemd[1]: Starting Rebuild Hardware Database...
+2026-04-30T01:11:07.332455+00:00 p3-xr1 systemd[1]: Starting Flush Journal to Persistent Storage...
+2026-04-30T01:11:07.332461+00:00 p3-xr1 systemd[1]: Condition check resulted in Load/Save Random Seed being skipped.
+2026-04-30T01:11:07.332465+00:00 p3-xr1 systemd[1]: Starting Create System Users...
+2026-04-30T01:11:07.332468+00:00 p3-xr1 systemd[1]: Starting Copy selected logs to var/log/old directories...
+2026-04-30T01:11:07.332472+00:00 p3-xr1 systemd-sysusers[315]: Creating group wheel with gid 991.
+2026-04-30T01:11:07.332476+00:00 p3-xr1 systemd-sysusers[315]: Creating group render with gid 990.
+2026-04-30T01:11:07.332480+00:00 p3-xr1 systemd-sysusers[315]: Creating group nobody with gid 989.
+2026-04-30T01:11:07.332483+00:00 p3-xr1 systemd[1]: Started Create System Users.
+2026-04-30T01:11:07.332489+00:00 p3-xr1 systemd[1]: Starting Create Static Device Nodes in /dev...
+2026-04-30T01:11:07.332493+00:00 p3-xr1 systemd-tmpfiles[323]: /etc/tmpfiles.d/00-volatile-restore.conf:11: Line references path below legacy directory /var/run/, updating /var/run/resolv.conf → /run/resolv.conf; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:11:07.332497+00:00 p3-xr1 systemd-tmpfiles[323]: /usr/lib/tmpfiles.d/sshd.conf:16: Line references path below legacy directory /var/run/, updating /var/run/sshd → /run/sshd; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:11:07.332501+00:00 p3-xr1 systemd[1]: Started Create Static Device Nodes in /dev.
+2026-04-30T01:11:07.332505+00:00 p3-xr1 systemd[1]: Started Flush Journal to Persistent Storage.
+2026-04-30T01:11:07.332510+00:00 p3-xr1 systemd[1]: var_log_copier.service: Succeeded.
+2026-04-30T01:11:07.332514+00:00 p3-xr1 systemd[1]: Started Copy selected logs to var/log/old directories.
+2026-04-30T01:11:07.332517+00:00 p3-xr1 systemd[1]: Started udev Coldplug all Devices.
+2026-04-30T01:11:07.332521+00:00 p3-xr1 systemd[1]: Started Rebuild Hardware Database.
+2026-04-30T01:11:07.332525+00:00 p3-xr1 systemd[1]: Starting udev Kernel Device Manager...
+2026-04-30T01:11:07.332529+00:00 p3-xr1 systemd[1]: Started udev Kernel Device Manager.
+2026-04-30T01:11:07.332540+00:00 p3-xr1 systemd[1]: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+2026-04-30T01:11:07.332544+00:00 p3-xr1 systemd[1]: Reached target Local File Systems (Pre).
+2026-04-30T01:11:07.332547+00:00 p3-xr1 systemd[1]: mnt.mount: Directory /mnt to mount over is not empty, mounting anyway.
+2026-04-30T01:11:07.332551+00:00 p3-xr1 systemd[1]: Mounting /mnt...
+2026-04-30T01:11:07.332554+00:00 p3-xr1 systemd[1]: var-volatile.mount: Directory /var/volatile to mount over is not empty, mounting anyway.
+2026-04-30T01:11:07.332562+00:00 p3-xr1 systemd[1]: Mounting /var/volatile...
+2026-04-30T01:11:07.332566+00:00 p3-xr1 systemd[1]: Mounted /mnt.
+2026-04-30T01:11:07.332569+00:00 p3-xr1 systemd[1]: Mounted /var/volatile.
+2026-04-30T01:11:07.332573+00:00 p3-xr1 systemd[1]: Reached target Local File Systems.
+2026-04-30T01:11:07.332576+00:00 p3-xr1 systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+2026-04-30T01:11:07.332581+00:00 p3-xr1 systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+2026-04-30T01:11:07.332587+00:00 p3-xr1 systemd[1]: Starting Create Volatile Files and Directories...
+2026-04-30T01:11:07.332590+00:00 p3-xr1 systemd-udevd[376]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:07.332594+00:00 p3-xr1 systemd-udevd[375]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:07.332597+00:00 p3-xr1 systemd-tmpfiles[414]: /etc/tmpfiles.d/00-volatile-restore.conf:11: Line references path below legacy directory /var/run/, updating /var/run/resolv.conf → /run/resolv.conf; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:11:07.332602+00:00 p3-xr1 systemd-tmpfiles[414]: [/usr/lib/tmpfiles.d/legacy.conf:13] Duplicate line for path "/run/lock", ignoring.
+2026-04-30T01:11:07.332605+00:00 p3-xr1 systemd-tmpfiles[414]: /usr/lib/tmpfiles.d/sshd.conf:16: Line references path below legacy directory /var/run/, updating /var/run/sshd → /run/sshd; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:11:07.332613+00:00 p3-xr1 systemd[1]: Started Create Volatile Files and Directories.
+2026-04-30T01:11:07.332617+00:00 p3-xr1 systemd[1]: Starting Run pending postinsts...
+2026-04-30T01:11:07.332621+00:00 p3-xr1 run-postinsts[417]:  Removing any system startup links for run-postinsts ...
+2026-04-30T01:11:07.332626+00:00 p3-xr1 systemd[1]: Starting Rebuild Journal Catalog...
+2026-04-30T01:11:07.332630+00:00 p3-xr1 systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+2026-04-30T01:11:07.332633+00:00 p3-xr1 systemd[1]: Started Rebuild Journal Catalog.
+2026-04-30T01:11:07.332640+00:00 p3-xr1 systemd[1]: Starting Update is Completed...
+2026-04-30T01:11:07.332644+00:00 p3-xr1 systemd[1]: Started Update UTMP about System Boot/Shutdown.
+2026-04-30T01:11:07.332647+00:00 p3-xr1 systemd[1]: Started Update is Completed.
+2026-04-30T01:11:07.332651+00:00 p3-xr1 systemctl[420]: Removed /etc/systemd/system/sysinit.target.wants/run-postinsts.service.
+2026-04-30T01:11:07.332655+00:00 p3-xr1 systemd[1]: Started Run pending postinsts.
+2026-04-30T01:11:07.332658+00:00 p3-xr1 systemd[1]: Reached target System Initialization.
+2026-04-30T01:11:07.332664+00:00 p3-xr1 systemd[1]: Started Periodic rotation of log files.
+2026-04-30T01:11:07.332668+00:00 p3-xr1 systemd[1]: Started Daily Cleanup of Temporary Directories.
+2026-04-30T01:11:07.332672+00:00 p3-xr1 systemd[1]: Reached target Timers.
+2026-04-30T01:11:07.332675+00:00 p3-xr1 systemd[1]: Listening on D-Bus System Message Bus Socket.
+2026-04-30T01:11:07.332678+00:00 p3-xr1 systemd[1]: Reached target Sockets.
+2026-04-30T01:11:07.332682+00:00 p3-xr1 systemd[1]: Reached target Basic System.
+2026-04-30T01:11:07.332685+00:00 p3-xr1 systemd[1]: Started Job spooling tools.
+2026-04-30T01:11:07.332690+00:00 p3-xr1 systemd[1]: Started Periodic Command Scheduler.
+2026-04-30T01:11:07.332704+00:00 p3-xr1 systemd[1]: Started D-Bus System Message Bus.
+2026-04-30T01:11:07.332707+00:00 p3-xr1 systemd[1]: Started Service for factory reset.
+2026-04-30T01:11:07.332713+00:00 p3-xr1 systemd[1]: Starting IPv6 Packet Filtering Framework...
+2026-04-30T01:11:07.332717+00:00 p3-xr1 systemd[1]: Starting IPv4 Packet Filtering Framework...
+2026-04-30T01:11:07.332721+00:00 p3-xr1 systemd[1]: Condition check resulted in Cisco Process Monitor Service being skipped.
+2026-04-30T01:11:07.332724+00:00 p3-xr1 systemd[1]: Starting Rollback uncommitted netcf network config change transactions...
+2026-04-30T01:11:07.332728+00:00 p3-xr1 netcf-transaction.sh[430]: Running  start: No pending transaction to rollback
+2026-04-30T01:11:07.332732+00:00 p3-xr1 systemd[1]: Starting System Logging Service...
+2026-04-30T01:11:07.332738+00:00 p3-xr1 systemd-udevd[378]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:07.332742+00:00 p3-xr1 systemd-udevd[358]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:07.332746+00:00 p3-xr1 systemd[1]: Starting IOS-XR Setup Non-Root related tasks...
+2026-04-30T01:11:07.332749+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: Checking if iosxr user exists
+2026-04-30T01:11:07.332753+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: iosxr user doesn't exist
+2026-04-30T01:11:07.332756+00:00 p3-xr1 setup_iosxr_user.sh[433]: Checking if /etc/passwd.lock is empty and removing if necessary
+2026-04-30T01:11:07.332762+00:00 p3-xr1 setup_iosxr_user.sh[433]: Checking if /etc/shadow.lock is empty and removing if necessary
+2026-04-30T01:11:07.332765+00:00 p3-xr1 setup_iosxr_user.sh[433]: Checking if /etc/group.lock is empty and removing if necessary
+2026-04-30T01:11:07.332769+00:00 p3-xr1 setup_iosxr_user.sh[433]: Checking if /etc/gshadow.lock is empty and removing if necessary
+2026-04-30T01:11:07.332772+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: Creating group: iosxr
+2026-04-30T01:11:07.332791+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: Creating user: iosxr
+2026-04-30T01:11:07.332798+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: iosxr user / group created
+2026-04-30T01:11:07.332802+00:00 p3-xr1 systemd[1]: Started IOS-XR XRd Core Watcher.
+2026-04-30T01:11:07.332806+00:00 p3-xr1 xrd_corewatcher[456]: Setting up watches.
+2026-04-30T01:11:07.332812+00:00 p3-xr1 xrd_corewatcher[456]: Watches established.
+2026-04-30T01:11:07.332816+00:00 p3-xr1 systemd[1]: Starting OpenSSH Key Generation...
+2026-04-30T01:11:07.332820+00:00 p3-xr1 sshd_check_keys[457]:   generating ssh RSA host key...
+2026-04-30T01:11:07.332824+00:00 p3-xr1 systemd[1]: Started IPv6 Packet Filtering Framework.
+2026-04-30T01:11:07.332828+00:00 p3-xr1 systemd[1]: Started IPv4 Packet Filtering Framework.
+2026-04-30T01:11:07.332832+00:00 p3-xr1 sshd_check_keys[457]:   generating ssh ECDSA host key...
+2026-04-30T01:11:07.332838+00:00 p3-xr1 systemd[1]: Started Rollback uncommitted netcf network config change transactions.
+2026-04-30T01:11:07.332842+00:00 p3-xr1 systemd[1]: Reached target Network (Pre).
+2026-04-30T01:11:07.332845+00:00 p3-xr1 systemd[1]: Reached target Network.
+2026-04-30T01:11:07.332849+00:00 p3-xr1 setup_pts.sh[472]: Thu Apr 30 01:11:04 UTC 2026: change permissions of /dev/pts/ptmx to allow iosxr access
+2026-04-30T01:11:07.332854+00:00 p3-xr1 sshd_check_keys[457]:   generating ssh ED25519 host key...
+2026-04-30T01:11:07.332857+00:00 p3-xr1 systemd[1]: Started Respond to IPv6 Node Information Queries.
+2026-04-30T01:11:07.332863+00:00 p3-xr1 systemd[1]: Started Network Router Discovery Daemon.
+2026-04-30T01:11:07.332867+00:00 p3-xr1 systemd[1]: Starting Permit User Sessions...
+2026-04-30T01:11:07.332871+00:00 p3-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:11:07.332875+00:00 p3-xr1 systemd[1]: Started OpenSSH Key Generation.
+2026-04-30T01:11:07.332879+00:00 p3-xr1 systemd[1]: Started Permit User Sessions.
+2026-04-30T01:11:07.332882+00:00 p3-xr1 systemd[1]: Starting IOS-XR ISO Installation including sshd...
+2026-04-30T01:11:07.332885+00:00 p3-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:11:07.332892+00:00 p3-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:11:07.332896+00:00 p3-xr1 update_seusers.sh[495]: Thu Apr 30 01:11:06 UTC 2026: SELinux is not enabled. Exiting
+2026-04-30T01:11:07.332389+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write 'fq_codel' to 'net/core/default_qdisc', ignoring: No such file or directory
+2026-04-30T01:11:07.332394+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/rmem_max', ignoring: No such file or directory
+2026-04-30T01:11:07.332397+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/wmem_max', ignoring: No such file or directory
+2026-04-30T01:11:07.332401+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/rmem_default', ignoring: No such file or directory
+2026-04-30T01:11:07.332404+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/wmem_default', ignoring: No such file or directory
+2026-04-30T01:11:07.332410+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '300000' to 'net/core/netdev_max_backlog', ignoring: No such file or directory
+2026-04-30T01:11:07.332414+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '67108864' to 'net/core/optmem_max', ignoring: No such file or directory
+2026-04-30T01:11:07.332418+00:00 p3-xr1 systemd-sysctl[310]: Couldn't write '1124736     10000000  67108864' to 'net/ipv4/udp_mem', ignoring: No such file or directory
+2026-04-30T01:11:07.332423+00:00 p3-xr1 systemd[1]: Mounted Huge Pages File System.
+2026-04-30T01:11:07.332427+00:00 p3-xr1 systemd[1]: Mounted FUSE Control File System.
+2026-04-30T01:11:07.332431+00:00 p3-xr1 systemd[1]: Mounted Kernel Configuration File System.
+2026-04-30T01:11:07.332436+00:00 p3-xr1 systemd[1]: Mounted Kernel Debug File System.
+2026-04-30T01:11:07.332440+00:00 p3-xr1 systemd[1]: Mounted Temporary Directory (/tmp).
+2026-04-30T01:11:07.332444+00:00 p3-xr1 systemd[1]: Started Remount Root and Kernel File Systems.
+2026-04-30T01:11:07.332447+00:00 p3-xr1 systemd[1]: Started Apply Kernel Variables.
+2026-04-30T01:11:07.332451+00:00 p3-xr1 systemd[1]: Starting Rebuild Hardware Database...
+2026-04-30T01:11:07.332455+00:00 p3-xr1 systemd[1]: Starting Flush Journal to Persistent Storage...
+2026-04-30T01:11:07.332461+00:00 p3-xr1 systemd[1]: Condition check resulted in Load/Save Random Seed being skipped.
+2026-04-30T01:11:07.332465+00:00 p3-xr1 systemd[1]: Starting Create System Users...
+2026-04-30T01:11:07.332468+00:00 p3-xr1 systemd[1]: Starting Copy selected logs to var/log/old directories...
+2026-04-30T01:11:07.332472+00:00 p3-xr1 systemd-sysusers[315]: Creating group wheel with gid 991.
+2026-04-30T01:11:07.332476+00:00 p3-xr1 systemd-sysusers[315]: Creating group render with gid 990.
+2026-04-30T01:11:07.332480+00:00 p3-xr1 systemd-sysusers[315]: Creating group nobody with gid 989.
+2026-04-30T01:11:07.332483+00:00 p3-xr1 systemd[1]: Started Create System Users.
+2026-04-30T01:11:07.332489+00:00 p3-xr1 systemd[1]: Starting Create Static Device Nodes in /dev...
+2026-04-30T01:11:07.332493+00:00 p3-xr1 systemd-tmpfiles[323]: /etc/tmpfiles.d/00-volatile-restore.conf:11: Line references path below legacy directory /var/run/, updating /var/run/resolv.conf → /run/resolv.conf; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:11:07.332497+00:00 p3-xr1 systemd-tmpfiles[323]: /usr/lib/tmpfiles.d/sshd.conf:16: Line references path below legacy directory /var/run/, updating /var/run/sshd → /run/sshd; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:11:07.332501+00:00 p3-xr1 systemd[1]: Started Create Static Device Nodes in /dev.
+2026-04-30T01:11:07.332505+00:00 p3-xr1 systemd[1]: Started Flush Journal to Persistent Storage.
+2026-04-30T01:11:07.332510+00:00 p3-xr1 systemd[1]: var_log_copier.service: Succeeded.
+2026-04-30T01:11:07.332514+00:00 p3-xr1 systemd[1]: Started Copy selected logs to var/log/old directories.
+2026-04-30T01:11:07.332517+00:00 p3-xr1 systemd[1]: Started udev Coldplug all Devices.
+2026-04-30T01:11:07.332521+00:00 p3-xr1 systemd[1]: Started Rebuild Hardware Database.
+2026-04-30T01:11:07.332525+00:00 p3-xr1 systemd[1]: Starting udev Kernel Device Manager...
+2026-04-30T01:11:07.332529+00:00 p3-xr1 systemd[1]: Started udev Kernel Device Manager.
+2026-04-30T01:11:07.332540+00:00 p3-xr1 systemd[1]: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+2026-04-30T01:11:07.332544+00:00 p3-xr1 systemd[1]: Reached target Local File Systems (Pre).
+2026-04-30T01:11:07.332547+00:00 p3-xr1 systemd[1]: mnt.mount: Directory /mnt to mount over is not empty, mounting anyway.
+2026-04-30T01:11:07.332551+00:00 p3-xr1 systemd[1]: Mounting /mnt...
+2026-04-30T01:11:07.332554+00:00 p3-xr1 systemd[1]: var-volatile.mount: Directory /var/volatile to mount over is not empty, mounting anyway.
+2026-04-30T01:11:07.332562+00:00 p3-xr1 systemd[1]: Mounting /var/volatile...
+2026-04-30T01:11:07.332566+00:00 p3-xr1 systemd[1]: Mounted /mnt.
+2026-04-30T01:11:07.332569+00:00 p3-xr1 systemd[1]: Mounted /var/volatile.
+2026-04-30T01:11:07.332573+00:00 p3-xr1 systemd[1]: Reached target Local File Systems.
+2026-04-30T01:11:07.332576+00:00 p3-xr1 systemd[1]: Condition check resulted in Store a System Token in an EFI Variable being skipped.
+2026-04-30T01:11:07.332581+00:00 p3-xr1 systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+2026-04-30T01:11:07.332587+00:00 p3-xr1 systemd[1]: Starting Create Volatile Files and Directories...
+2026-04-30T01:11:07.332590+00:00 p3-xr1 systemd-udevd[376]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:07.332594+00:00 p3-xr1 systemd-udevd[375]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:07.332597+00:00 p3-xr1 systemd-tmpfiles[414]: /etc/tmpfiles.d/00-volatile-restore.conf:11: Line references path below legacy directory /var/run/, updating /var/run/resolv.conf → /run/resolv.conf; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:11:07.332602+00:00 p3-xr1 systemd-tmpfiles[414]: [/usr/lib/tmpfiles.d/legacy.conf:13] Duplicate line for path "/run/lock", ignoring.
+2026-04-30T01:11:07.332605+00:00 p3-xr1 systemd-tmpfiles[414]: /usr/lib/tmpfiles.d/sshd.conf:16: Line references path below legacy directory /var/run/, updating /var/run/sshd → /run/sshd; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:11:07.332613+00:00 p3-xr1 systemd[1]: Started Create Volatile Files and Directories.
+2026-04-30T01:11:07.332617+00:00 p3-xr1 systemd[1]: Starting Run pending postinsts...
+2026-04-30T01:11:07.332621+00:00 p3-xr1 run-postinsts[417]:  Removing any system startup links for run-postinsts ...
+2026-04-30T01:11:07.332626+00:00 p3-xr1 systemd[1]: Starting Rebuild Journal Catalog...
+2026-04-30T01:11:07.332630+00:00 p3-xr1 systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+2026-04-30T01:11:07.332633+00:00 p3-xr1 systemd[1]: Started Rebuild Journal Catalog.
+2026-04-30T01:11:07.332640+00:00 p3-xr1 systemd[1]: Starting Update is Completed...
+2026-04-30T01:11:07.332644+00:00 p3-xr1 systemd[1]: Started Update UTMP about System Boot/Shutdown.
+2026-04-30T01:11:07.332647+00:00 p3-xr1 systemd[1]: Started Update is Completed.
+2026-04-30T01:11:07.332651+00:00 p3-xr1 systemctl[420]: Removed /etc/systemd/system/sysinit.target.wants/run-postinsts.service.
+2026-04-30T01:11:07.332655+00:00 p3-xr1 systemd[1]: Started Run pending postinsts.
+2026-04-30T01:11:07.332658+00:00 p3-xr1 systemd[1]: Reached target System Initialization.
+2026-04-30T01:11:07.332664+00:00 p3-xr1 systemd[1]: Started Periodic rotation of log files.
+2026-04-30T01:11:07.332668+00:00 p3-xr1 systemd[1]: Started Daily Cleanup of Temporary Directories.
+2026-04-30T01:11:07.332672+00:00 p3-xr1 systemd[1]: Reached target Timers.
+2026-04-30T01:11:07.332675+00:00 p3-xr1 systemd[1]: Listening on D-Bus System Message Bus Socket.
+2026-04-30T01:11:07.332678+00:00 p3-xr1 systemd[1]: Reached target Sockets.
+2026-04-30T01:11:07.332682+00:00 p3-xr1 systemd[1]: Reached target Basic System.
+2026-04-30T01:11:07.332685+00:00 p3-xr1 systemd[1]: Started Job spooling tools.
+2026-04-30T01:11:07.332690+00:00 p3-xr1 systemd[1]: Started Periodic Command Scheduler.
+2026-04-30T01:11:07.332704+00:00 p3-xr1 systemd[1]: Started D-Bus System Message Bus.
+2026-04-30T01:11:07.332707+00:00 p3-xr1 systemd[1]: Started Service for factory reset.
+2026-04-30T01:11:07.332713+00:00 p3-xr1 systemd[1]: Starting IPv6 Packet Filtering Framework...
+2026-04-30T01:11:07.332717+00:00 p3-xr1 systemd[1]: Starting IPv4 Packet Filtering Framework...
+2026-04-30T01:11:07.332721+00:00 p3-xr1 systemd[1]: Condition check resulted in Cisco Process Monitor Service being skipped.
+2026-04-30T01:11:07.332724+00:00 p3-xr1 systemd[1]: Starting Rollback uncommitted netcf network config change transactions...
+2026-04-30T01:11:07.332728+00:00 p3-xr1 netcf-transaction.sh[430]: Running  start: No pending transaction to rollback
+2026-04-30T01:11:07.332732+00:00 p3-xr1 systemd[1]: Starting System Logging Service...
+2026-04-30T01:11:07.332738+00:00 p3-xr1 systemd-udevd[378]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:07.332742+00:00 p3-xr1 systemd-udevd[358]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:07.332746+00:00 p3-xr1 systemd[1]: Starting IOS-XR Setup Non-Root related tasks...
+2026-04-30T01:11:07.332749+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: Checking if iosxr user exists
+2026-04-30T01:11:07.332753+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: iosxr user doesn't exist
+2026-04-30T01:11:07.332756+00:00 p3-xr1 setup_iosxr_user.sh[433]: Checking if /etc/passwd.lock is empty and removing if necessary
+2026-04-30T01:11:07.332762+00:00 p3-xr1 setup_iosxr_user.sh[433]: Checking if /etc/shadow.lock is empty and removing if necessary
+2026-04-30T01:11:07.332765+00:00 p3-xr1 setup_iosxr_user.sh[433]: Checking if /etc/group.lock is empty and removing if necessary
+2026-04-30T01:11:07.332769+00:00 p3-xr1 setup_iosxr_user.sh[433]: Checking if /etc/gshadow.lock is empty and removing if necessary
+2026-04-30T01:11:07.332772+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: Creating group: iosxr
+2026-04-30T01:11:07.332791+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: Creating user: iosxr
+2026-04-30T01:11:07.332798+00:00 p3-xr1 setup_iosxr_user.sh[433]: Thu Apr 30 01:11:03 UTC 2026: iosxr user / group created
+2026-04-30T01:11:07.332802+00:00 p3-xr1 systemd[1]: Started IOS-XR XRd Core Watcher.
+2026-04-30T01:11:07.332806+00:00 p3-xr1 xrd_corewatcher[456]: Setting up watches.
+2026-04-30T01:11:07.332812+00:00 p3-xr1 xrd_corewatcher[456]: Watches established.
+2026-04-30T01:11:07.332816+00:00 p3-xr1 systemd[1]: Starting OpenSSH Key Generation...
+2026-04-30T01:11:07.332820+00:00 p3-xr1 sshd_check_keys[457]:   generating ssh RSA host key...
+2026-04-30T01:11:07.332824+00:00 p3-xr1 systemd[1]: Started IPv6 Packet Filtering Framework.
+2026-04-30T01:11:07.332828+00:00 p3-xr1 systemd[1]: Started IPv4 Packet Filtering Framework.
+2026-04-30T01:11:07.332832+00:00 p3-xr1 sshd_check_keys[457]:   generating ssh ECDSA host key...
+2026-04-30T01:11:07.332838+00:00 p3-xr1 systemd[1]: Started Rollback uncommitted netcf network config change transactions.
+2026-04-30T01:11:07.332842+00:00 p3-xr1 systemd[1]: Reached target Network (Pre).
+2026-04-30T01:11:07.332845+00:00 p3-xr1 systemd[1]: Reached target Network.
+2026-04-30T01:11:07.332849+00:00 p3-xr1 setup_pts.sh[472]: Thu Apr 30 01:11:04 UTC 2026: change permissions of /dev/pts/ptmx to allow iosxr access
+2026-04-30T01:11:07.332854+00:00 p3-xr1 sshd_check_keys[457]:   generating ssh ED25519 host key...
+2026-04-30T01:11:07.332857+00:00 p3-xr1 systemd[1]: Started Respond to IPv6 Node Information Queries.
+2026-04-30T01:11:07.332863+00:00 p3-xr1 systemd[1]: Started Network Router Discovery Daemon.
+2026-04-30T01:11:07.332867+00:00 p3-xr1 systemd[1]: Starting Permit User Sessions...
+2026-04-30T01:11:07.332871+00:00 p3-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:11:07.332875+00:00 p3-xr1 systemd[1]: Started OpenSSH Key Generation.
+2026-04-30T01:11:07.332879+00:00 p3-xr1 systemd[1]: Started Permit User Sessions.
+2026-04-30T01:11:07.332882+00:00 p3-xr1 systemd[1]: Starting IOS-XR ISO Installation including sshd...
+2026-04-30T01:11:07.332885+00:00 p3-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:11:07.332892+00:00 p3-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:11:07.332896+00:00 p3-xr1 update_seusers.sh[495]: Thu Apr 30 01:11:06 UTC 2026: SELinux is not enabled. Exiting
+2026-04-30T01:11:07.356946+00:00 p3-xr1 systemd[1]: xr_setup_nonroot.service: Succeeded.
+2026-04-30T01:11:07.356946+00:00 p3-xr1 systemd[1]: xr_setup_nonroot.service: Succeeded.
+2026-04-30T01:11:07.383443+00:00 p3-xr1 systemd[1]: Started IOS-XR Setup Non-Root related tasks.
+2026-04-30T01:11:07.383443+00:00 p3-xr1 systemd[1]: Started IOS-XR Setup Non-Root related tasks.
+2026-04-30T01:11:07.383555+00:00 p3-xr1 systemd[1]: Started System Logging Service.
+2026-04-30T01:11:07.383555+00:00 p3-xr1 systemd[1]: Started System Logging Service.
+2026-04-30T01:11:07.383733+00:00 p3-xr1 systemd[1]: Reached target Multi-User System.
+2026-04-30T01:11:07.383733+00:00 p3-xr1 systemd[1]: Reached target Multi-User System.
+2026-04-30T01:11:07.564140+00:00 p3-xr1 systemd[1]: Starting Update UTMP about System Runlevel Changes...
+2026-04-30T01:11:07.564140+00:00 p3-xr1 systemd[1]: Starting Update UTMP about System Runlevel Changes...
+2026-04-30T01:11:07.712651+00:00 p3-xr1 systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+2026-04-30T01:11:07.712651+00:00 p3-xr1 systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+2026-04-30T01:11:07.741046+00:00 p3-xr1 systemd[1]: Started Update UTMP about System Runlevel Changes.
+2026-04-30T01:11:07.741046+00:00 p3-xr1 systemd[1]: Started Update UTMP about System Runlevel Changes.
+2026-04-30T01:11:10.379835+00:00 p3-xr1 systemd-udevd[365]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:10.379835+00:00 p3-xr1 systemd-udevd[365]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:10.396969+00:00 p3-xr1 systemd-udevd[358]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:10.396969+00:00 p3-xr1 systemd-udevd[358]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:12.814343+00:00 p3-xr1 systemd-udevd[357]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:12.814343+00:00 p3-xr1 systemd-udevd[357]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:12.814687+00:00 p3-xr1 systemd-udevd[384]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:12.814687+00:00 p3-xr1 systemd-udevd[384]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:20.351709+00:00 p3-xr1 systemd-udevd[357]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:20.351709+00:00 p3-xr1 systemd-udevd[357]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:20.353098+00:00 p3-xr1 systemd-udevd[368]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:20.353098+00:00 p3-xr1 systemd-udevd[368]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:21.218033+00:00 p3-xr1 xrnginstall[612]: 2026-04-30 01:11:21.213 UTC: xrinstall: Setting up dumper and build info files
+2026-04-30T01:11:21.218033+00:00 p3-xr1 xrnginstall[612]: 2026-04-30 01:11:21.213 UTC: xrinstall: Setting up dumper and build info files
+2026-04-30T01:11:21.247407+00:00 p3-xr1 systemd-udevd[388]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:21.247407+00:00 p3-xr1 systemd-udevd[388]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:21.275225+00:00 p3-xr1 systemd-udevd[365]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:21.275225+00:00 p3-xr1 systemd-udevd[365]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:21.520397+00:00 p3-xr1 xrnginstall[674]: 2026-04-30 01:11:21.517 UTC: xrinstall: XR Lineup:  r252x.lu%EFR-00000472913
+2026-04-30T01:11:21.520397+00:00 p3-xr1 xrnginstall[674]: 2026-04-30 01:11:21.517 UTC: xrinstall: XR Lineup:  r252x.lu%EFR-00000472913
+2026-04-30T01:11:21.524653+00:00 p3-xr1 xrnginstall[678]: 2026-04-30 01:11:21.521 UTC: xrinstall: XR Version: 25.2.1
+2026-04-30T01:11:21.524653+00:00 p3-xr1 xrnginstall[678]: 2026-04-30 01:11:21.521 UTC: xrinstall: XR Version: 25.2.1
+2026-04-30T01:11:21.527957+00:00 p3-xr1 xrnginstall[682]: 2026-04-30 01:11:21.525 UTC: xrinstall: Completed set up of dumper and build info files
+2026-04-30T01:11:21.527957+00:00 p3-xr1 xrnginstall[682]: 2026-04-30 01:11:21.525 UTC: xrinstall: Completed set up of dumper and build info files
+2026-04-30T01:11:21.531330+00:00 p3-xr1 xrnginstall[686]: 2026-04-30 01:11:21.529 UTC: xrinstall: Preparing IOS-XR (first boot)
+2026-04-30T01:11:21.531330+00:00 p3-xr1 xrnginstall[686]: 2026-04-30 01:11:21.529 UTC: xrinstall: Preparing IOS-XR (first boot)
+2026-04-30T01:11:21.598540+00:00 p3-xr1 xrnginstall[687]: Setting up confd
+2026-04-30T01:11:21.598540+00:00 p3-xr1 xrnginstall[687]: Setting up confd
+2026-04-30T01:11:21.709690+00:00 p3-xr1 xrnginstall[747]: Generating public/private rsa key pair.
+2026-04-30T01:11:21.709744+00:00 p3-xr1 xrnginstall[747]: Your identification has been saved in /root/.ssh/id_rsa
+2026-04-30T01:11:21.709760+00:00 p3-xr1 xrnginstall[747]: Your public key has been saved in /root/.ssh/id_rsa.pub
+2026-04-30T01:11:21.709790+00:00 p3-xr1 xrnginstall[747]: The key fingerprint is:
+2026-04-30T01:11:21.709821+00:00 p3-xr1 xrnginstall[747]: SHA256:oOSJaa6oKBwOoRIeH8Diu6hB7rJ0FvfwiZOb9TMUXYs root@p3-xr1
+2026-04-30T01:11:21.709845+00:00 p3-xr1 xrnginstall[747]: The key's randomart image is:
+2026-04-30T01:11:21.709871+00:00 p3-xr1 xrnginstall[747]: +---[RSA 2048]----+
+2026-04-30T01:11:21.709904+00:00 p3-xr1 xrnginstall[747]: |.                |
+2026-04-30T01:11:21.709932+00:00 p3-xr1 xrnginstall[747]: |.o           .   |
+2026-04-30T01:11:21.709952+00:00 p3-xr1 xrnginstall[747]: |o . . .   . o .  |
+2026-04-30T01:11:21.709965+00:00 p3-xr1 xrnginstall[747]: |oo * o . . E .   |
+2026-04-30T01:11:21.709982+00:00 p3-xr1 xrnginstall[747]: |o+B.=o  S .      |
+2026-04-30T01:11:21.709997+00:00 p3-xr1 xrnginstall[747]: |** .o * ..       |
+2026-04-30T01:11:21.710015+00:00 p3-xr1 xrnginstall[747]: |Bo+o + =.        |
+2026-04-30T01:11:21.710032+00:00 p3-xr1 xrnginstall[747]: |O*o   = .o       |
+2026-04-30T01:11:21.710047+00:00 p3-xr1 xrnginstall[747]: |%o   o   .o      |
+2026-04-30T01:11:21.710062+00:00 p3-xr1 xrnginstall[747]: +----[SHA256]-----+
+2026-04-30T01:11:21.709690+00:00 p3-xr1 xrnginstall[747]: Generating public/private rsa key pair.
+2026-04-30T01:11:21.709744+00:00 p3-xr1 xrnginstall[747]: Your identification has been saved in /root/.ssh/id_rsa
+2026-04-30T01:11:21.709760+00:00 p3-xr1 xrnginstall[747]: Your public key has been saved in /root/.ssh/id_rsa.pub
+2026-04-30T01:11:21.709790+00:00 p3-xr1 xrnginstall[747]: The key fingerprint is:
+2026-04-30T01:11:21.709821+00:00 p3-xr1 xrnginstall[747]: SHA256:oOSJaa6oKBwOoRIeH8Diu6hB7rJ0FvfwiZOb9TMUXYs root@p3-xr1
+2026-04-30T01:11:21.709845+00:00 p3-xr1 xrnginstall[747]: The key's randomart image is:
+2026-04-30T01:11:21.709871+00:00 p3-xr1 xrnginstall[747]: +---[RSA 2048]----+
+2026-04-30T01:11:21.709904+00:00 p3-xr1 xrnginstall[747]: |.                |
+2026-04-30T01:11:21.709932+00:00 p3-xr1 xrnginstall[747]: |.o           .   |
+2026-04-30T01:11:21.709952+00:00 p3-xr1 xrnginstall[747]: |o . . .   . o .  |
+2026-04-30T01:11:21.709965+00:00 p3-xr1 xrnginstall[747]: |oo * o . . E .   |
+2026-04-30T01:11:21.709982+00:00 p3-xr1 xrnginstall[747]: |o+B.=o  S .      |
+2026-04-30T01:11:21.709997+00:00 p3-xr1 xrnginstall[747]: |** .o * ..       |
+2026-04-30T01:11:21.710015+00:00 p3-xr1 xrnginstall[747]: |Bo+o + =.        |
+2026-04-30T01:11:21.710032+00:00 p3-xr1 xrnginstall[747]: |O*o   = .o       |
+2026-04-30T01:11:21.710047+00:00 p3-xr1 xrnginstall[747]: |%o   o   .o      |
+2026-04-30T01:11:21.710062+00:00 p3-xr1 xrnginstall[747]: +----[SHA256]-----+
+2026-04-30T01:11:21.710930+00:00 p3-xr1 xrnginstall[720]: adding root@host key
+2026-04-30T01:11:21.710930+00:00 p3-xr1 xrnginstall[720]: adding root@host key
+2026-04-30T01:11:21.746451+00:00 p3-xr1 systemd-udevd[384]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:21.746451+00:00 p3-xr1 systemd-udevd[384]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:21.749914+00:00 p3-xr1 systemd-udevd[391]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:21.749914+00:00 p3-xr1 systemd-udevd[391]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:23.175350+00:00 p3-xr1 xrnginstall[780]: 2026-04-30 01:11:23.168 UTC: xrinstall: Owner and partner RPMs disabled
+2026-04-30T01:11:23.175350+00:00 p3-xr1 xrnginstall[780]: 2026-04-30 01:11:23.168 UTC: xrinstall: Owner and partner RPMs disabled
+2026-04-30T01:11:23.181540+00:00 p3-xr1 xrnginstall[784]: 2026-04-30 01:11:23.177 UTC: xrinstall: Cleaning up any temporary repos.
+2026-04-30T01:11:23.181540+00:00 p3-xr1 xrnginstall[784]: 2026-04-30 01:11:23.177 UTC: xrinstall: Cleaning up any temporary repos.
+2026-04-30T01:11:23.194056+00:00 p3-xr1 xrnginstall[790]: 2026-04-30 01:11:23.186 UTC: xrinstall: Checking if rollback cleanup is required
+2026-04-30T01:11:23.194056+00:00 p3-xr1 xrnginstall[790]: 2026-04-30 01:11:23.186 UTC: xrinstall: Checking if rollback cleanup is required
+2026-04-30T01:11:23.207058+00:00 p3-xr1 xrnginstall[795]: 2026-04-30 01:11:23.203 UTC: xrinstall: Finished rollback cleanup stage
+2026-04-30T01:11:23.207058+00:00 p3-xr1 xrnginstall[795]: 2026-04-30 01:11:23.203 UTC: xrinstall: Finished rollback cleanup stage
+2026-04-30T01:11:23.229445+00:00 p3-xr1 xrnginstall[804]: 2026-04-30 01:11:23.223 UTC: xrinstall: Single node: starting XR
+2026-04-30T01:11:23.229445+00:00 p3-xr1 xrnginstall[804]: 2026-04-30 01:11:23.223 UTC: xrinstall: Single node: starting XR
+2026-04-30T01:11:23.252812+00:00 p3-xr1 xrnginstall[813]: 2026-04-30 01:11:23.247 UTC: xrinstall: xrnginstall completed successfully
+2026-04-30T01:11:23.252812+00:00 p3-xr1 xrnginstall[813]: 2026-04-30 01:11:23.247 UTC: xrinstall: xrnginstall completed successfully
+2026-04-30T01:11:23.270468+00:00 p3-xr1 systemd[1]: Started IOS-XR ISO Installation including sshd.
+2026-04-30T01:11:23.270468+00:00 p3-xr1 systemd[1]: Started IOS-XR ISO Installation including sshd.
+2026-04-30T01:11:23.347991+00:00 p3-xr1 systemd[1]: Started Cisco Directory Services.
+2026-04-30T01:11:23.347991+00:00 p3-xr1 systemd[1]: Started Cisco Directory Services.
+2026-04-30T01:11:23.433852+00:00 p3-xr1 ds_startup.sh[834]: start_backing_thread:bind: No such file or directory
+2026-04-30T01:11:23.433852+00:00 p3-xr1 ds_startup.sh[834]: start_backing_thread:bind: No such file or directory
+2026-04-30T01:11:23.445191+00:00 p3-xr1 ds_startup.sh[835]: start_backing_thread:bind: No such file or directory
+2026-04-30T01:11:23.445191+00:00 p3-xr1 ds_startup.sh[835]: start_backing_thread:bind: No such file or directory
+2026-04-30T01:11:23.458758+00:00 p3-xr1 systemd[1]: Starting IOS-XR XRd...
+2026-04-30T01:11:23.458758+00:00 p3-xr1 systemd[1]: Starting IOS-XR XRd...
+2026-04-30T01:11:23.488377+00:00 p3-xr1 xrd-startup[836]: Waiting for linux interfaces: Gi0-0-0-0 eth0
+2026-04-30T01:11:23.488377+00:00 p3-xr1 xrd-startup[836]: Waiting for linux interfaces: Gi0-0-0-0 eth0
+2026-04-30T01:11:23.488657+00:00 p3-xr1 ds_startup.sh[835]: start_backing_thread:bind: No such file or directory
+2026-04-30T01:11:23.488657+00:00 p3-xr1 ds_startup.sh[835]: start_backing_thread:bind: No such file or directory
+2026-04-30T01:11:23.967477+00:00 p3-xr1 systemd-udevd[359]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:23.967477+00:00 p3-xr1 systemd-udevd[359]: console: Failed to process device, ignoring: File exists
+2026-04-30T01:11:23.968024+00:00 p3-xr1 systemd-udevd[372]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:23.968024+00:00 p3-xr1 systemd-udevd[372]: ptmx: Failed to process device, ignoring: File exists
+2026-04-30T01:11:24.345558+00:00 p3-xr1 xrd-startup[874]: No IPv6 address found for interface Mg0/RP0/CPU0/0
+2026-04-30T01:11:24.345558+00:00 p3-xr1 xrd-startup[874]: No IPv6 address found for interface Mg0/RP0/CPU0/0
+2026-04-30T01:11:24.363325+00:00 p3-xr1 xrd-startup[836]: Setting up Gi0-0-0-0 for use by XR...
+2026-04-30T01:11:24.363325+00:00 p3-xr1 xrd-startup[836]: Setting up Gi0-0-0-0 for use by XR...
+2026-04-30T01:11:24.439554+00:00 p3-xr1 xrd-startup[954]: net.ipv6.conf.Gi0-0-0-0.disable_ipv6 = 1
+2026-04-30T01:11:24.439554+00:00 p3-xr1 xrd-startup[954]: net.ipv6.conf.Gi0-0-0-0.disable_ipv6 = 1
+2026-04-30T01:11:24.444886+00:00 p3-xr1 xrd-startup[836]: Setting up eth0 for use by XR...
+2026-04-30T01:11:24.444886+00:00 p3-xr1 xrd-startup[836]: Setting up eth0 for use by XR...
+2026-04-30T01:11:24.448132+00:00 p3-xr1 xrd-startup[959]: net.ipv6.conf.eth0.disable_ipv6 = 1
+2026-04-30T01:11:24.448132+00:00 p3-xr1 xrd-startup[959]: net.ipv6.conf.eth0.disable_ipv6 = 1
+2026-04-30T01:11:24.774655+00:00 p3-xr1 systemd[1]: Started IOS-XR XRd.
+2026-04-30T01:11:24.774655+00:00 p3-xr1 systemd[1]: Started IOS-XR XRd.
+2026-04-30T01:11:24.777600+00:00 p3-xr1 systemd[1]: Starting IOS-XR Reaperd and Process Manager...
+2026-04-30T01:11:24.777600+00:00 p3-xr1 systemd[1]: Starting IOS-XR Reaperd and Process Manager...
+2026-04-30T01:11:25.017939+00:00 p3-xr1 systemd-udevd[352]: Configuration file /lib/udev/rules.d/91-persistent-disk-xr.rules is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-30T01:11:25.017939+00:00 p3-xr1 systemd-udevd[352]: Configuration file /lib/udev/rules.d/91-persistent-disk-xr.rules is marked executable. Please remove executable permission bits. Proceeding anyway.
+2026-04-30T01:11:25.355698+00:00 p3-xr1 xr_startup.sh[982]: /pkg/etc/xr_startup.sh: line 221: /pkg/etc/platform_setup: No such file or directory
+2026-04-30T01:11:25.355698+00:00 p3-xr1 xr_startup.sh[982]: /pkg/etc/xr_startup.sh: line 221: /pkg/etc/platform_setup: No such file or directory
+2026-04-30T01:11:25.619473+00:00 p3-xr1 xr_startup.sh[1087]: sysctl: permission denied on key "kernel.sysrq"
+2026-04-30T01:11:25.619473+00:00 p3-xr1 xr_startup.sh[1087]: sysctl: permission denied on key "kernel.sysrq"
+2026-04-30T01:11:25.626057+00:00 p3-xr1 xr_startup.sh[1090]: sysctl: permission denied on key "vm.max_map_count"
+2026-04-30T01:11:25.626057+00:00 p3-xr1 xr_startup.sh[1090]: sysctl: permission denied on key "vm.max_map_count"
+2026-04-30T01:11:25.643750+00:00 p3-xr1 xr_startup.sh[1095]: Failed to restart auditd.service: Unit auditd.service not found.
+2026-04-30T01:11:25.643750+00:00 p3-xr1 xr_startup.sh[1095]: Failed to restart auditd.service: Unit auditd.service not found.
+2026-04-30T01:11:25.649101+00:00 p3-xr1 systemd[1]: Started IOS-XR Reaperd and Process Manager.
+2026-04-30T01:11:25.649101+00:00 p3-xr1 systemd[1]: Started IOS-XR Reaperd and Process Manager.
+2026-04-30T01:11:25.657727+00:00 p3-xr1 systemd[1]: Reached target XR installation and startup.
+2026-04-30T01:11:25.657727+00:00 p3-xr1 systemd[1]: Reached target XR installation and startup.
+2026-04-30T01:11:25.658065+00:00 p3-xr1 systemd[1]: Startup finished in 29.046s.
+2026-04-30T01:11:25.658065+00:00 p3-xr1 systemd[1]: Startup finished in 29.046s.
+2026-04-30T01:11:27.745900+00:00 p3-xr1 systemd[1]: Reloading.
+2026-04-30T01:11:27.745900+00:00 p3-xr1 systemd[1]: Reloading.
+2026-04-30T01:11:28.239390+00:00 p3-xr1 systemd[1]: Starting MD array monitor...
+2026-04-30T01:11:28.240638+00:00 p3-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:11:28.241046+00:00 p3-xr1 systemd[1462]: mdmonitor.service: Executable /usr/lib/mdadm/mdadm_env.sh missing, skipping: No such file or directory
+2026-04-30T01:11:28.242271+00:00 p3-xr1 systemd[1]: Started MD array monitor.
+2026-04-30T01:11:28.239390+00:00 p3-xr1 systemd[1]: Starting MD array monitor...
+2026-04-30T01:11:28.240638+00:00 p3-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:11:28.241046+00:00 p3-xr1 systemd[1462]: mdmonitor.service: Executable /usr/lib/mdadm/mdadm_env.sh missing, skipping: No such file or directory
+2026-04-30T01:11:28.242271+00:00 p3-xr1 systemd[1]: Started MD array monitor.
+2026-04-30T01:11:28.244940+00:00 p3-xr1 mdadm[1465]: NewArray event detected on md device /dev/md0
+2026-04-30T01:11:28.244940+00:00 p3-xr1 mdadm[1465]: NewArray event detected on md device /dev/md0
+2026-04-30T01:11:28.252225+00:00 p3-xr1 mdadm[1465]: NewArray event detected on md device /dev/md1
+2026-04-30T01:11:28.252225+00:00 p3-xr1 mdadm[1465]: NewArray event detected on md device /dev/md1
+2026-04-30T01:11:28.252453+00:00 p3-xr1 mdadm[1465]: NewArray event detected on md device /dev/md2
+2026-04-30T01:11:28.252453+00:00 p3-xr1 mdadm[1465]: NewArray event detected on md device /dev/md2
+2026-04-30T01:11:28.303518+00:00 p3-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:11:28.303671+00:00 p3-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:11:28.303518+00:00 p3-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:11:28.303671+00:00 p3-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:11:28.457362+00:00 p3-xr1 systemd[1]: Stopping System Logging Service...
+2026-04-30T01:11:28.457362+00:00 p3-xr1 systemd[1]: Stopping System Logging Service...
+2026-04-30T01:11:28.459455+00:00 p3-xr1 systemd[1]: rsyslog.service: Succeeded.
+2026-04-30T01:11:28.459509+00:00 p3-xr1 systemd[1]: Stopped System Logging Service.
+2026-04-30T01:11:28.462989+00:00 p3-xr1 systemd[1]: Starting System Logging Service...
+2026-04-30T01:11:28.459455+00:00 p3-xr1 systemd[1]: rsyslog.service: Succeeded.
+2026-04-30T01:11:28.459509+00:00 p3-xr1 systemd[1]: Stopped System Logging Service.
+2026-04-30T01:11:28.462989+00:00 p3-xr1 systemd[1]: Starting System Logging Service...
+2026-04-30T01:11:28.487275+00:00 p3-xr1 systemd[1]: Started System Logging Service.
+2026-04-30T01:11:28.487275+00:00 p3-xr1 systemd[1]: Started System Logging Service.
+2026-04-30T01:12:15.110990+00:00 p3-xr1 systemd[1]: Reloading.
+2026-04-30T01:12:15.110990+00:00 p3-xr1 systemd[1]: Reloading.
+2026-04-30T01:12:15.610062+00:00 p3-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:12:15.610062+00:00 p3-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:12:15.749193+00:00 p3-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:12:15.749193+00:00 p3-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:12:15.749697+00:00 p3-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:12:15.749697+00:00 p3-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:12:20.862575+00:00 p3-xr1 systemd[1]: Started CiscoSSH sshd service.
+2026-04-30T01:12:20.862575+00:00 p3-xr1 systemd[1]: Started CiscoSSH sshd service.
+2026-04-30T01:12:21.464634+00:00 p3-xr1 systemd[1]: Reloading.
+2026-04-30T01:12:21.464634+00:00 p3-xr1 systemd[1]: Reloading.
+2026-04-30T01:12:21.684392+00:00 p3-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:12:21.684392+00:00 p3-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:12:21.858265+00:00 p3-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:12:21.858265+00:00 p3-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:12:21.858735+00:00 p3-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:12:21.858735+00:00 p3-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:12:22.094107+00:00 p3-xr1 systemd[1]: Stopping CiscoSSH sshd service...
+2026-04-30T01:12:22.094107+00:00 p3-xr1 systemd[1]: Stopping CiscoSSH sshd service...
+2026-04-30T01:12:22.118521+00:00 p3-xr1 systemd[1]: sshd_service_default.service: Succeeded.
+2026-04-30T01:12:22.118521+00:00 p3-xr1 systemd[1]: sshd_service_default.service: Succeeded.
+2026-04-30T01:12:22.118933+00:00 p3-xr1 systemd[1]: Stopped CiscoSSH sshd service.
+2026-04-30T01:12:22.118933+00:00 p3-xr1 systemd[1]: Stopped CiscoSSH sshd service.
+2026-04-30T01:12:22.122769+00:00 p3-xr1 systemd[1]: Started CiscoSSH sshd service.
+2026-04-30T01:12:22.122769+00:00 p3-xr1 systemd[1]: Started CiscoSSH sshd service.

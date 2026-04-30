@@ -1,0 +1,24 @@
+2026-04-30 01:11:19.780 UTC: xrinstall: RPMDB format check succeeded
+2026-04-30 01:11:19.815 UTC: xrinstall: RPMDB detailed info check succeeded
+2026-04-30 01:11:20.285 UTC: xrinstall: RPMDB check via dnf command succeeded
+2026-04-30 01:11:20.290 UTC: xrinstall: Setting up dumper and build info files
+2026-04-30 01:11:20.300 UTC: xrinstall: Platform did not provide watchdog punch function, not punching watchdog for Dumper info file creation
+2026-04-30 01:11:20.362 UTC: xrinstall: Platform did not provide watchdog punch function, not punching watchdog for Dumper info file creation complete
+2026-04-30 01:11:20.383 UTC: xrinstall: Platform did not provide watchdog punch function, not punching watchdog for Getting buildhost information
+2026-04-30 01:11:20.435 UTC: xrinstall: Platform did not provide watchdog punch function, not punching watchdog for Getting version information
+2026-04-30 01:11:20.471 UTC: xrinstall: Platform did not provide watchdog punch function, not punching watchdog for Getting packager information
+2026-04-30 01:11:20.516 UTC: xrinstall: Platform did not provide watchdog punch function, not punching watchdog for Getting lineup information
+2026-04-30 01:11:20.589 UTC: xrinstall: Platform did not provide watchdog punch function, not punching watchdog for Getting build time information
+2026-04-30 01:11:20.636 UTC: xrinstall: Platform did not provide watchdog punch function, not punching watchdog for Build information gathering complete
+2026-04-30 01:11:20.662 UTC: xrinstall: XR Lineup:  r252x.lu%EFR-00000472913
+2026-04-30 01:11:20.681 UTC: xrinstall: XR Version: 25.2.1
+2026-04-30 01:11:20.688 UTC: xrinstall: Completed set up of dumper and build info files
+2026-04-30 01:11:20.699 UTC: xrinstall: Preparing IOS-XR (first boot)
+2026-04-30 01:11:23.236 UTC: xrinstall: Owner and partner RPMs disabled
+2026-04-30 01:11:23.243 UTC: xrinstall: Cleaning up any temporary repos.
+2026-04-30 01:11:23.258 UTC: xrinstall: Checking if rollback cleanup is required
+2026-04-30 01:11:23.266 UTC: xrinstall: Finished rollback cleanup stage
+2026-04-30 01:11:23.270 UTC: xrinstall: Cleaning up disk erase data
+2026-04-30 01:11:23.278 UTC: xrinstall: Single node: starting XR
+2026-04-30 01:11:23.290 UTC: xrinstall: Platform did not provide watchdog notification stop function, not stopping notifications for Diskboot Exit
+2026-04-30 01:11:23.300 UTC: xrinstall: xrnginstall completed successfully

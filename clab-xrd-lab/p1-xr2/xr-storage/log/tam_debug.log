@@ -1,0 +1,2252 @@
+2026-04-30 01:11:27.803494[INFO] tamsvcs_tamm: [1335] TAM NS process started
+2026-04-30 01:11:27.807551[ERR] tamsvcs_tamm: [1335] 
+*
+*
+* Starting tamsvcs_tamm process...
+*
+*
+*
+2026-04-30 01:11:27.807615[INFO] tamsvcs_tamm: [1335] TAM sync is NOT enabled for this platform
+2026-04-30 01:11:27.807624[INFO] tamsvcs_tamm: [1335] TAM entropy is NOT enabled for this platform
+2026-04-30 01:11:27.825230[INFO] tamsvcs_tamm: [1335] Ignoring req to shut process ownershipd which is already down.
+2026-04-30 01:11:27.856084[INFO] tamsvcs_tamm: [1335] Ignoring req to shut process tams_proc which is already down.
+2026-04-30 01:11:27.907732[INFO] tamsvcs_tamm: [1335] Ignoring req to shut process tamd_proc which is already down.
+2026-04-30 01:11:27.908606[INFO] tamsvcs_tamm: [1335] Successfully registered with sysmgr for proc_role change
+2026-04-30 01:11:27.914000[INFO] tamsvcs_tamm: [1335] tams_proc started 1407
+2026-04-30 01:11:27.914049[INFO] tamsvcs_tamm: [1335] Creating TAM:XRD_TAMDB of type:2
+2026-04-30 01:11:27.914063[INFO] tamsvcs_tamm: [1335] Registering device :XRD_TAMDB Type:2 
+2026-04-30 01:11:27.914104[INFO] tamsvcs_tamm: [1407] tams_proc started on 192.0.0.4
+2026-04-30 01:11:28.244895[INFO] tams_proc: [1407] Opened TAMS Client local listener on fd=85
+2026-04-30 01:11:28.244964[INFO] tams_proc: [1407] Opened TAMS Client TCP listener on 192.0.0.4:7000 fd=88
+2026-04-30 01:11:28.244993[INFO] tams_proc: [1407] Opened TAMS Mgmt local listener on fd=89
+2026-04-30 01:11:28.245011[INFO] tams_proc: [1407] Opened TAMS Mgmt TCP listener on 192.0.0.4:7001 fd=94
+2026-04-30 01:11:28.245021[INFO] tams_proc: [1407] Added tams_tamc_local_listener_socket_fd 85 to pfds array pfd_count 1
+2026-04-30 01:11:28.245028[INFO] tams_proc: [1407] Added tams_tamc_tcp_listener_socket_fd 88 to pfds array pfd_count 2
+2026-04-30 01:11:28.245035[INFO] tams_proc: [1407] Added tams_tamm_local_listener_socket_fd 89 to pfds array pfd_count 3
+2026-04-30 01:11:28.245042[INFO] tams_proc: [1407] Added tams_tamm_tcp_listener_socket_fd 94 to pfds array pfd_count 4
+2026-04-30 01:11:28.245049[INFO] tams_proc: [1407] tams_proc Version:ciscotamservices 12.1.0
+2026-04-30 01:11:28.245056[INFO] tams_proc: [1407] tams_proc() Listening on TAMC, TAMM, TAMD sockets...
+2026-04-30 01:11:28.292660[INFO] tams_proc: [1407] cmd type: TAMM_CMD_REGISTER_DEVICE
+2026-04-30 01:11:28.292681[INFO] tams_proc: [1407] trans id: 0x1
+2026-04-30 01:11:28.292690[INFO] tams_proc: [1407] payload len: 42
+2026-04-30 01:11:28.292697[INFO] tams_proc: [1407] Parsing TAMM_CMD_REGISTER_DEVICE Req
+2026-04-30 01:11:28.292708[INFO] tams_proc: [1407] device_type: 2
+2026-04-30 01:11:28.292716[INFO] tams_proc: [1407] opaque_tam_handle: 0
+2026-04-30 01:11:28.292725[INFO] tams_proc: [1407] Parsing TAMM_CMD_REGISTER_DEVICE Req status: TAM_SUCCESS
+2026-04-30 01:11:28.292732[INFO] tams_proc: [1407] Processing TAMM_CMD_REGISTER_DEVICE Req
+2026-04-30 01:11:28.301503[INFO] tams_proc: [1407] tamd_proc_pid = 1450
+2026-04-30 01:11:28.301532[INFO] tams_proc: [1407] INTERNAL CORONA TAG DO NOT COPY: CSCO_CSM_ciscotamservices_12.1.0
+2026-04-30 01:11:28.578680[INFO] tamd_proc: [1450] tamd_proc started for TAM device 'XRD_TAMDB'
+2026-04-30 01:11:28.578734[INFO] tamd_proc: [1450] FIPS mode is 0
+2026-04-30 01:11:28.578777[INFO] tamd_proc: [1450] Opened TAMS Client local listener on fd=111
+2026-04-30 01:11:28.578880[INFO] tamd_proc: [1450] swtam_create_swtam_device - device name - XRD_TAMDB
+2026-04-30 01:11:28.700930[INFO] tamd_proc: [1450] Calculate SW kdf hash
+2026-04-30 01:11:28.823543[INFO] tamd_proc: [1450] Creating new app storage:
+/misc/config/SWTAmRoot/7/XRD_TAMDB-fips-off/6b8c51f9daead575a1c3c2ff4bf65157f501b6a7f12630f8ce4b4a42
+2026-04-30 01:11:28.823645[INFO] tamd_proc: [1450] Added tamd_tams_local_listener_socket_fd 111 to pfds array pfd_count 1
+2026-04-30 01:11:28.823655[INFO] tamd_proc: [1450] tamd_proc: Listening for TAMS requests...
+2026-04-30 01:11:28.825609[INFO] tamd_proc: [1450] 'XRD_TAMDB' device Init...
+2026-04-30 01:11:28.826798[INFO] tams_proc: [1407] Final response received after 145ms. rc=0x1
+2026-04-30 01:11:28.826847[INFO] tams_proc: [1407] Authenticating...
+2026-04-30 01:11:28.826912[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_AUTHENTICATE_DEVICE new time: 24000 total time: 24000
+2026-04-30 01:11:28.826936[INFO] tams_proc: [1407] Device registration: 0x0 TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:28.826965[INFO] tams_proc: [1407] Processing TAMM_CMD_REGISTER_DEVICE Req status: TAM_SUCCESS
+2026-04-30 01:11:28.828353[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_AUTHENTICATE_DEVICE
+2026-04-30 01:11:28.828377[INFO] tamd_proc: [1450] trans id: 0x2
+2026-04-30 01:11:28.828403[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:11:28.828411[INFO] tamd_proc: [1450] Parsing TAMD_CMD_AUTHENTICATE_DEVICE Req
+2026-04-30 01:11:28.828430[INFO] tamd_proc: [1450] Parsing TAMD_CMD_AUTHENTICATE_DEVICE Req status: TAM_SUCCESS
+2026-04-30 01:11:28.828906[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_DEVICE
+2026-04-30 01:11:28.828933[INFO] tamsvcs_tamm: [1335] trans id: 0x1
+2026-04-30 01:11:28.828955[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:28.828962[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:28.828977[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_DEVICE Rsp
+2026-04-30 01:11:28.828985[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_DEVICE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.828992[INFO] tamsvcs_tamm: [1335] Rx ACK in 538ms. Waiting 300000ms for final response...
+2026-04-30 01:11:28.899942[INFO] tamd_proc: [1450] Processing TAMD_CMD_AUTHENTICATE_DEVICE Req status: TAM_SUCCESS
+2026-04-30 01:11:28.901125[INFO] tams_proc: [1407] cmd type: TAMD_CMD_AUTHENTICATE_DEVICE
+2026-04-30 01:11:28.901154[INFO] tams_proc: [1407] trans id: 0x2
+2026-04-30 01:11:28.901163[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:28.901190[INFO] tams_proc: [1407] payload len: 12
+2026-04-30 01:11:28.901206[INFO] tams_proc: [1407] Parsing TAMD_CMD_AUTHENTICATE_DEVICE Rsp
+2026-04-30 01:11:28.901215[INFO] tams_proc: [1407] num_apps: 0
+2026-04-30 01:11:28.901236[INFO] tams_proc: [1407] Parsing TAMD_CMD_AUTHENTICATE_DEVICE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.901245[INFO] tams_proc: [1407] Processing TAMD_CMD_AUTHENTICATE_DEVICE Rsp
+2026-04-30 01:11:28.901261[INFO] tams_proc: [1407] Marking device 'XRD_TAMDB' as authenticated
+2026-04-30 01:11:28.901301[INFO] tams_proc: [1407] Processing TAMD_CMD_AUTHENTICATE_DEVICE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.903204[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_DEVICE
+2026-04-30 01:11:28.903238[INFO] tamsvcs_tamm: [1335] trans id: 0x1
+2026-04-30 01:11:28.903247[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:28.903262[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:28.903269[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_DEVICE Rsp
+2026-04-30 01:11:28.903281[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_DEVICE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.903296[INFO] tamsvcs_tamm: [1335] Final response received. rc=0x1
+2026-04-30 01:11:28.903326[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_DEVICE
+2026-04-30 01:11:28.903344[INFO] tamsvcs_tamm: [1335] trans id: 0x1
+2026-04-30 01:11:28.903351[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:28.903367[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:28.903374[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_DEVICE Rsp
+2026-04-30 01:11:28.903381[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_DEVICE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.903396[INFO] tamsvcs_tamm: [1335] Register device response TAM_SUCCESS
+2026-04-30 01:11:28.904865[INFO] tamsvcs_tamm: [1335] Successfully registered device XRD_TAMDB Type: 2
+2026-04-30 01:11:28.907693[INFO] tams_proc: [1407] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:28.907712[INFO] tams_proc: [1407] trans id: 0x2
+2026-04-30 01:11:28.907720[INFO] tams_proc: [1407] payload len: 97
+2026-04-30 01:11:28.907726[INFO] tams_proc: [1407] Parsing TAMM_CMD_REGISTER_APP Req
+2026-04-30 01:11:28.907734[INFO] tams_proc: [1407] credential_type: 18
+2026-04-30 01:11:28.907741[INFO] tams_proc: [1407] appid: Init
+2026-04-30 01:11:28.907748[INFO] tams_proc: [1407] pw: ***
+2026-04-30 01:11:28.907755[INFO] tams_proc: [1407] persistent_pw: 0
+2026-04-30 01:11:28.907762[INFO] tams_proc: [1407] device_name: XRD_TAMDB
+2026-04-30 01:11:28.907769[INFO] tams_proc: [1407] default_device: 1
+2026-04-30 01:11:28.907775[INFO] tams_proc: [1407] max_sessions: 50
+2026-04-30 01:11:28.907783[INFO] tams_proc: [1407] Parsing TAMM_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:28.907789[INFO] tams_proc: [1407] Processing TAMM_CMD_REGISTER_APP Req
+2026-04-30 01:11:28.911943[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_REGISTER_APP new time: 24000 total time: 24000
+2026-04-30 01:11:28.911973[INFO] tams_proc: [1407] App 'Init' registration in process
+2026-04-30 01:11:28.911980[INFO] tams_proc: [1407] Processing TAMM_CMD_REGISTER_APP Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:28.914185[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:28.914213[INFO] tamsvcs_tamm: [1335] trans id: 0x2
+2026-04-30 01:11:28.914222[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:28.914239[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:28.914246[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:28.914264[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.914271[INFO] tamsvcs_tamm: [1335] Rx ACK in 10ms. Waiting 300000ms for final response...
+2026-04-30 01:11:28.914321[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_REGISTER_APP
+2026-04-30 01:11:28.914347[INFO] tamd_proc: [1450] trans id: 0x4
+2026-04-30 01:11:28.914354[INFO] tamd_proc: [1450] payload len: 67
+2026-04-30 01:11:28.914370[INFO] tamd_proc: [1450] Parsing TAMD_CMD_REGISTER_APP Req
+2026-04-30 01:11:28.914383[INFO] tamd_proc: [1450] Parsing TAMD_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:28.990211[INFO] tamd_proc: [1450] Creating new app storage:
+/misc/config/SWTAmRoot/7/XRD_TAMDB-fips-off/54acb8778221dc34de542615f51f87eb9817796379fa60fb34fe2828
+2026-04-30 01:11:28.990316[INFO] tamd_proc: [1450] Processing TAMD_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:28.993934[INFO] tams_proc: [1407] cmd type: TAMD_CMD_REGISTER_APP
+2026-04-30 01:11:28.993956[INFO] tams_proc: [1407] trans id: 0x4
+2026-04-30 01:11:28.993964[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:28.993970[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:28.993977[INFO] tams_proc: [1407] Parsing TAMD_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:28.993985[INFO] tams_proc: [1407] Parsing TAMD_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.993993[INFO] tams_proc: [1407] Processing TAMD_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:28.994020[INFO] tams_proc: [1407] Processing TAMD_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.995495[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:28.995514[INFO] tamsvcs_tamm: [1335] trans id: 0x2
+2026-04-30 01:11:28.995523[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:28.995529[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:28.995536[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:28.995544[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.995552[INFO] tamsvcs_tamm: [1335] Final response received. rc=0x1
+2026-04-30 01:11:28.995570[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:28.995579[INFO] tamsvcs_tamm: [1335] trans id: 0x2
+2026-04-30 01:11:28.995586[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:28.995593[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:28.995599[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:28.995607[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.996837[INFO] tams_proc: [1407] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:28.996852[INFO] tams_proc: [1407] trans id: 0x3
+2026-04-30 01:11:28.996859[INFO] tams_proc: [1407] payload len: 67
+2026-04-30 01:11:28.996865[INFO] tams_proc: [1407] Parsing TAMM_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:28.996873[INFO] tams_proc: [1407] appid: Init
+2026-04-30 01:11:28.996879[INFO] tams_proc: [1407] device_name: XRD_TAMDB
+2026-04-30 01:11:28.996886[INFO] tams_proc: [1407] perm1: 65535
+2026-04-30 01:11:28.996892[INFO] tams_proc: [1407] perm2: 0
+2026-04-30 01:11:28.996898[INFO] tams_proc: [1407] object_quota: 10485760
+2026-04-30 01:11:28.996905[INFO] tams_proc: [1407] Parsing TAMM_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:28.996912[INFO] tams_proc: [1407] Processing TAMM_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:28.996946[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_APP_SET_ATTR new time: 24000 total time: 24000
+2026-04-30 01:11:28.996959[INFO] tams_proc: [1407] App 'Init' attributes set pending for device 'XRD_TAMDB'
+2026-04-30 01:11:28.996967[INFO] tams_proc: [1407] Processing TAMM_CMD_APP_SET_ATTR Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:28.998061[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:28.998076[INFO] tamsvcs_tamm: [1335] trans id: 0x3
+2026-04-30 01:11:28.998083[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:28.998090[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:28.998096[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:28.998104[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:28.998111[INFO] tamsvcs_tamm: [1335] Rx ACK in 2ms. Waiting 300000ms for final response...
+2026-04-30 01:11:28.998155[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_APP_SET_ATTR
+2026-04-30 01:11:28.998169[INFO] tamd_proc: [1450] trans id: 0x5
+2026-04-30 01:11:28.998176[INFO] tamd_proc: [1450] payload len: 49
+2026-04-30 01:11:28.998185[INFO] tamd_proc: [1450] Parsing TAMD_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:28.998196[INFO] tamd_proc: [1450] Parsing TAMD_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:29.12964Z[INFO] tamd_proc: [1450] App Init perm1 updated to 0xffff
+2026-04-30 01:11:29.12982Z[INFO] tamd_proc: [1450] App Init object_quota updated to 10485760 bytes
+2026-04-30 01:11:29.68166Z[INFO] tamd_proc: [1450] Processing TAMD_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:29.69364Z[INFO] tams_proc: [1407] cmd type: TAMD_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.69395Z[INFO] tams_proc: [1407] trans id: 0x5
+2026-04-30 01:11:29.69413Z[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.69420Z[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.69427Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.69444Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.69450Z[INFO] tams_proc: [1407] Processing TAMD_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.69481Z[INFO] tams_proc: [1407] Processing TAMD_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.70656Z[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.70686Z[INFO] tamsvcs_tamm: [1335] trans id: 0x3
+2026-04-30 01:11:29.70703Z[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.70710Z[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.70726Z[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.70735Z[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.70752Z[INFO] tamsvcs_tamm: [1335] Final response received. rc=0x1
+2026-04-30 01:11:29.70781Z[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.70789Z[INFO] tamsvcs_tamm: [1335] trans id: 0x3
+2026-04-30 01:11:29.70804Z[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.70819Z[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.70833Z[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.70842Z[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.72168Z[INFO] tams_proc: [1407] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:29.72184Z[INFO] tams_proc: [1407] trans id: 0x4
+2026-04-30 01:11:29.72191Z[INFO] tams_proc: [1407] payload len: 99
+2026-04-30 01:11:29.72197Z[INFO] tams_proc: [1407] Parsing TAMM_CMD_REGISTER_APP Req
+2026-04-30 01:11:29.72204Z[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:11:29.72211Z[INFO] tams_proc: [1407] appid: test_tam
+2026-04-30 01:11:29.72217Z[INFO] tams_proc: [1407] pw: ***
+2026-04-30 01:11:29.72223Z[INFO] tams_proc: [1407] persistent_pw: 0
+2026-04-30 01:11:29.72230Z[INFO] tams_proc: [1407] device_name: XRD_TAMDB
+2026-04-30 01:11:29.72236Z[INFO] tams_proc: [1407] default_device: 1
+2026-04-30 01:11:29.72242Z[INFO] tams_proc: [1407] max_sessions: 50
+2026-04-30 01:11:29.72249Z[INFO] tams_proc: [1407] Parsing TAMM_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:29.72257Z[INFO] tams_proc: [1407] Processing TAMM_CMD_REGISTER_APP Req
+2026-04-30 01:11:29.79133Z[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_REGISTER_APP new time: 24000 total time: 24000
+2026-04-30 01:11:29.79177Z[INFO] tams_proc: [1407] App 'test_tam' registration in process
+2026-04-30 01:11:29.79187Z[INFO] tams_proc: [1407] Processing TAMM_CMD_REGISTER_APP Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.80358Z[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_REGISTER_APP
+2026-04-30 01:11:29.80383Z[INFO] tamd_proc: [1450] trans id: 0x6
+2026-04-30 01:11:29.80399Z[INFO] tamd_proc: [1450] payload len: 69
+2026-04-30 01:11:29.80405Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_REGISTER_APP Req
+2026-04-30 01:11:29.80414Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:29.83541Z[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:29.83572Z[INFO] tamsvcs_tamm: [1335] trans id: 0x4
+2026-04-30 01:11:29.83581Z[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.83599Z[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.83605Z[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.83623Z[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.83630Z[INFO] tamsvcs_tamm: [1335] Rx ACK in 13ms. Waiting 300000ms for final response...
+2026-04-30 01:11:29.159881[INFO] tamd_proc: [1450] Creating new app storage:
+/misc/config/SWTAmRoot/7/XRD_TAMDB-fips-off/992bc7eb68ef1fe1c80dba709e3f87d1f1251a01274d060d6a741d76
+2026-04-30 01:11:29.160025[INFO] tamd_proc: [1450] Processing TAMD_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:29.161097[INFO] tams_proc: [1407] cmd type: TAMD_CMD_REGISTER_APP
+2026-04-30 01:11:29.161126[INFO] tams_proc: [1407] trans id: 0x6
+2026-04-30 01:11:29.161143[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.161150[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.161156[INFO] tams_proc: [1407] Parsing TAMD_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.161172[INFO] tams_proc: [1407] Parsing TAMD_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.161179[INFO] tams_proc: [1407] Processing TAMD_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.161208[INFO] tams_proc: [1407] Processing TAMD_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.162352[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:29.162379[INFO] tamsvcs_tamm: [1335] trans id: 0x4
+2026-04-30 01:11:29.162386[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.162401[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.162407[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.162422[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.162431[INFO] tamsvcs_tamm: [1335] Final response received. rc=0x1
+2026-04-30 01:11:29.162457[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:29.162465[INFO] tamsvcs_tamm: [1335] trans id: 0x4
+2026-04-30 01:11:29.162481[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.162487[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.162493[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.162508[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.163924[INFO] tams_proc: [1407] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.163943[INFO] tams_proc: [1407] trans id: 0x5
+2026-04-30 01:11:29.163952[INFO] tams_proc: [1407] payload len: 71
+2026-04-30 01:11:29.163965[INFO] tams_proc: [1407] Parsing TAMM_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:29.163974[INFO] tams_proc: [1407] appid: test_tam
+2026-04-30 01:11:29.163998[INFO] tams_proc: [1407] device_name: XRD_TAMDB
+2026-04-30 01:11:29.164015[INFO] tams_proc: [1407] perm1: 65535
+2026-04-30 01:11:29.164022[INFO] tams_proc: [1407] perm2: 0
+2026-04-30 01:11:29.164028[INFO] tams_proc: [1407] object_quota: 10485760
+2026-04-30 01:11:29.164043[INFO] tams_proc: [1407] Parsing TAMM_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:29.164051[INFO] tams_proc: [1407] Processing TAMM_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:29.164107[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_APP_SET_ATTR new time: 24000 total time: 24000
+2026-04-30 01:11:29.164136[INFO] tams_proc: [1407] App 'test_tam' attributes set pending for device 'XRD_TAMDB'
+2026-04-30 01:11:29.164154[INFO] tams_proc: [1407] Processing TAMM_CMD_APP_SET_ATTR Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.166071[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.166097[INFO] tamsvcs_tamm: [1335] trans id: 0x5
+2026-04-30 01:11:29.166105[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.166121[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.166128[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.166138[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.166150[INFO] tamsvcs_tamm: [1335] Rx ACK in 3ms. Waiting 300000ms for final response...
+2026-04-30 01:11:29.166188[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.166211[INFO] tamd_proc: [1450] trans id: 0x7
+2026-04-30 01:11:29.166219[INFO] tamd_proc: [1450] payload len: 53
+2026-04-30 01:11:29.166238[INFO] tamd_proc: [1450] Parsing TAMD_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:29.166260[INFO] tamd_proc: [1450] Parsing TAMD_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:29.187407[INFO] tamd_proc: [1450] App test_tam perm1 updated to 0xffff
+2026-04-30 01:11:29.187424[INFO] tamd_proc: [1450] App test_tam object_quota updated to 10485760 bytes
+2026-04-30 01:11:29.237568[INFO] tamd_proc: [1450] Processing TAMD_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:29.238635[INFO] tams_proc: [1407] cmd type: TAMD_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.238663[INFO] tams_proc: [1407] trans id: 0x7
+2026-04-30 01:11:29.238671[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.238688[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.238694[INFO] tams_proc: [1407] Parsing TAMD_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.238702[INFO] tams_proc: [1407] Parsing TAMD_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.238719[INFO] tams_proc: [1407] Processing TAMD_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.238748[INFO] tams_proc: [1407] Processing TAMD_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.239950[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.239979[INFO] tamsvcs_tamm: [1335] trans id: 0x5
+2026-04-30 01:11:29.239986[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.240000[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.240006[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.240013[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.240029[INFO] tamsvcs_tamm: [1335] Final response received. rc=0x1
+2026-04-30 01:11:29.240054[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.240061[INFO] tamsvcs_tamm: [1335] trans id: 0x5
+2026-04-30 01:11:29.240067[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.240083[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.240089[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.240095[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.241369[INFO] tams_proc: [1407] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:29.241387[INFO] tams_proc: [1407] trans id: 0x6
+2026-04-30 01:11:29.241396[INFO] tams_proc: [1407] payload len: 99
+2026-04-30 01:11:29.241404[INFO] tams_proc: [1407] Parsing TAMM_CMD_REGISTER_APP Req
+2026-04-30 01:11:29.241414[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:11:29.241421[INFO] tams_proc: [1407] appid: kev_app1
+2026-04-30 01:11:29.241427[INFO] tams_proc: [1407] pw: ***
+2026-04-30 01:11:29.241432[INFO] tams_proc: [1407] persistent_pw: 0
+2026-04-30 01:11:29.241444[INFO] tams_proc: [1407] device_name: XRD_TAMDB
+2026-04-30 01:11:29.241450[INFO] tams_proc: [1407] default_device: 1
+2026-04-30 01:11:29.241455[INFO] tams_proc: [1407] max_sessions: 50
+2026-04-30 01:11:29.241467[INFO] tams_proc: [1407] Parsing TAMM_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:29.241473[INFO] tams_proc: [1407] Processing TAMM_CMD_REGISTER_APP Req
+2026-04-30 01:11:29.243401[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_REGISTER_APP new time: 24000 total time: 24000
+2026-04-30 01:11:29.243439[INFO] tams_proc: [1407] App 'kev_app1' registration in process
+2026-04-30 01:11:29.243448[INFO] tams_proc: [1407] Processing TAMM_CMD_REGISTER_APP Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.244570[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:29.244596[INFO] tamsvcs_tamm: [1335] trans id: 0x6
+2026-04-30 01:11:29.244603[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.244617[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.244623[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.244621[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_REGISTER_APP
+2026-04-30 01:11:29.244631[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.244647[INFO] tamsvcs_tamm: [1335] Rx ACK in 4ms. Waiting 300000ms for final response...
+2026-04-30 01:11:29.244647[INFO] tamd_proc: [1450] trans id: 0x8
+2026-04-30 01:11:29.244656[INFO] tamd_proc: [1450] payload len: 69
+2026-04-30 01:11:29.244672[INFO] tamd_proc: [1450] Parsing TAMD_CMD_REGISTER_APP Req
+2026-04-30 01:11:29.244681[INFO] tamd_proc: [1450] Parsing TAMD_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:29.301999[INFO] tamd_proc: [1450] Creating new app storage:
+/misc/config/SWTAmRoot/7/XRD_TAMDB-fips-off/003c6379fd19187eeb781dad0140ff73f4c1a4622ff6a9e0a1ace14b
+2026-04-30 01:11:29.302117[INFO] tamd_proc: [1450] Processing TAMD_CMD_REGISTER_APP Req status: TAM_SUCCESS
+2026-04-30 01:11:29.303232[INFO] tams_proc: [1407] cmd type: TAMD_CMD_REGISTER_APP
+2026-04-30 01:11:29.303260[INFO] tams_proc: [1407] trans id: 0x8
+2026-04-30 01:11:29.303276[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.303282[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.303288[INFO] tams_proc: [1407] Parsing TAMD_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.303306[INFO] tams_proc: [1407] Parsing TAMD_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.303312[INFO] tams_proc: [1407] Processing TAMD_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.303340[INFO] tams_proc: [1407] Processing TAMD_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.304484[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:29.304509[INFO] tamsvcs_tamm: [1335] trans id: 0x6
+2026-04-30 01:11:29.304516[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.304531[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.304537[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.304544[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.304589[INFO] tamsvcs_tamm: [1335] Final response received. rc=0x1
+2026-04-30 01:11:29.304615[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_REGISTER_APP
+2026-04-30 01:11:29.304622[INFO] tamsvcs_tamm: [1335] trans id: 0x6
+2026-04-30 01:11:29.304628[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.304642[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.304647[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp
+2026-04-30 01:11:29.304654[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_REGISTER_APP Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.306737[INFO] tams_proc: [1407] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.306772[INFO] tams_proc: [1407] trans id: 0x7
+2026-04-30 01:11:29.306783[INFO] tams_proc: [1407] payload len: 71
+2026-04-30 01:11:29.306790[INFO] tams_proc: [1407] Parsing TAMM_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:29.306798[INFO] tams_proc: [1407] appid: kev_app1
+2026-04-30 01:11:29.306807[INFO] tams_proc: [1407] device_name: XRD_TAMDB
+2026-04-30 01:11:29.306813[INFO] tams_proc: [1407] perm1: 65535
+2026-04-30 01:11:29.306819[INFO] tams_proc: [1407] perm2: 0
+2026-04-30 01:11:29.306825[INFO] tams_proc: [1407] object_quota: 10485760
+2026-04-30 01:11:29.306834[INFO] tams_proc: [1407] Parsing TAMM_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:29.306844[INFO] tams_proc: [1407] Processing TAMM_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:29.306902[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_APP_SET_ATTR new time: 24000 total time: 24000
+2026-04-30 01:11:29.306915[INFO] tams_proc: [1407] App 'kev_app1' attributes set pending for device 'XRD_TAMDB'
+2026-04-30 01:11:29.306922[INFO] tams_proc: [1407] Processing TAMM_CMD_APP_SET_ATTR Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.308019[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.308039[INFO] tamsvcs_tamm: [1335] trans id: 0x7
+2026-04-30 01:11:29.308046[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.308052[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.308059[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.308065[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.308072[INFO] tamsvcs_tamm: [1335] Rx ACK in 3ms. Waiting 300000ms for final response...
+2026-04-30 01:11:29.308128[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.308154[INFO] tamd_proc: [1450] trans id: 0x9
+2026-04-30 01:11:29.308164[INFO] tamd_proc: [1450] payload len: 53
+2026-04-30 01:11:29.308175[INFO] tamd_proc: [1450] Parsing TAMD_CMD_APP_SET_ATTR Req
+2026-04-30 01:11:29.308186[INFO] tamd_proc: [1450] Parsing TAMD_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:29.333878[INFO] tamd_proc: [1450] App kev_app1 perm1 updated to 0xffff
+2026-04-30 01:11:29.333896[INFO] tamd_proc: [1450] App kev_app1 object_quota updated to 10485760 bytes
+2026-04-30 01:11:29.356919[INFO] tamd_proc: [1450] Processing TAMD_CMD_APP_SET_ATTR Req status: TAM_SUCCESS
+2026-04-30 01:11:29.357982[INFO] tams_proc: [1407] cmd type: TAMD_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.357999[INFO] tams_proc: [1407] trans id: 0x9
+2026-04-30 01:11:29.358005[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.358008[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.358012[INFO] tams_proc: [1407] Parsing TAMD_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.358017[INFO] tams_proc: [1407] Parsing TAMD_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.358021[INFO] tams_proc: [1407] Processing TAMD_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.358036[INFO] tams_proc: [1407] Processing TAMD_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.359140[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.359156[INFO] tamsvcs_tamm: [1335] trans id: 0x7
+2026-04-30 01:11:29.359163[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.359169[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.359175[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.359182[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.359189[INFO] tamsvcs_tamm: [1335] Final response received. rc=0x1
+2026-04-30 01:11:29.359205[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_APP_SET_ATTR
+2026-04-30 01:11:29.359212[INFO] tamsvcs_tamm: [1335] trans id: 0x7
+2026-04-30 01:11:29.359218[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:29.359223[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:29.359229[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp
+2026-04-30 01:11:29.359236[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_APP_SET_ATTR Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.362586[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:11:29.362603[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:11:29.362609[INFO] tams_proc: [1407] trans id: 0x8
+2026-04-30 01:11:29.362615[INFO] tams_proc: [1407] payload len: 343
+2026-04-30 01:11:29.362620[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:11:29.362637[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:11:29.362644[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.362650[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:11:29.362657[INFO] tams_proc: [1407] app Init number pending sessions = 1 max=5
+2026-04-30 01:11:29.362663[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:11:29.371232[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.384032[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:11:29.384051[INFO] tams_proc: [1407] session id: 0x1
+2026-04-30 01:11:29.384057[INFO] tams_proc: [1407] trans id: 0x9
+2026-04-30 01:11:29.384063[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:11:29.384068[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:11:29.384078[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.384084[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:11:29.384092[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:11:29.384100[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:11:29.384112[INFO] tams_proc: [1407] app Init number sessions = 1 max=50
+2026-04-30 01:11:29.384144[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:11:29.384153[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.385841[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:11:29.385858[INFO] tamd_proc: [1450] trans id: 0xa
+2026-04-30 01:11:29.385864[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:11:29.385871[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:11:29.385881[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:11:29.406806[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:11:29.407902[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:11:29.407920[INFO] tams_proc: [1407] trans id: 0xa
+2026-04-30 01:11:29.407927[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.407933[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.407938[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:11:29.407945[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.407951[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:11:29.407958[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app Init: TAM_SUCCESS
+2026-04-30 01:11:29.407965[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:11:29.407987[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] 21 2E 53 E8 45 D0 B9 7A 96 65 AE 7D 11 6A 2C 6E 7F EE C3 EE F4 B2 25 55 98 03 73 A7 A9 85 7F B3 
+2026-04-30 01:11:29.408013[INFO] tams_proc: [1407] Application Init authentication succeeded!
+2026-04-30 01:11:29.408020[INFO] tams_proc: [1407] Binding of app Init to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:11:29.408028[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.410365[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_DELETE
+2026-04-30 01:11:29.410383[INFO] tams_proc: [1407] session id: 0x1
+2026-04-30 01:11:29.410391[INFO] tams_proc: [1407] trans id: 0xa
+2026-04-30 01:11:29.410398[INFO] tams_proc: [1407] payload len: 88
+2026-04-30 01:11:29.410405[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req
+2026-04-30 01:11:29.410413[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 21 2E 53 E8 45 D0 B9 7A 96 65 AE 7D 11 6A 2C 6E 7F EE C3 EE F4 B2 25 55 98 03 73 A7 A9 85 7F B3 
+2026-04-30 01:11:29.410440[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:11:29.410457[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.410474[INFO] tams_proc: [1407] Object type 0, len : 1
+2026-04-30 01:11:29.410481[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.410488[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.410494[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.410500[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req for device XRD_TAMDB
+2026-04-30 01:11:29.410542[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_DELETE new time: 24000 total time: 24000
+2026-04-30 01:11:29.410555[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.413308[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:29.413325[INFO] tamd_proc: [1450] trans id: 0xb
+2026-04-30 01:11:29.413333[INFO] tamd_proc: [1450] payload len: 76
+2026-04-30 01:11:29.413340[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req
+2026-04-30 01:11:29.413351[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.413359[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.439444[INFO] tamd_proc: [1450] Sending so delete result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.439504[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.441891[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:29.441908[INFO] tams_proc: [1407] trans id: 0xb
+2026-04-30 01:11:29.441916[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:11:29.441923[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.441930[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:29.441938[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.441944[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:29.441965[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.444286[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_CREATE
+2026-04-30 01:11:29.444298[INFO] tams_proc: [1407] session id: 0x1
+2026-04-30 01:11:29.444302[INFO] tams_proc: [1407] trans id: 0xb
+2026-04-30 01:11:29.444306[INFO] tams_proc: [1407] payload len: 148
+2026-04-30 01:11:29.444310[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req
+2026-04-30 01:11:29.444314[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 21 2E 53 E8 45 D0 B9 7A 96 65 AE 7D 11 6A 2C 6E 7F EE C3 EE F4 B2 25 55 98 03 73 A7 A9 85 7F B3 
+2026-04-30 01:11:29.444326[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:11:29.444335[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.444344[INFO] tams_proc: [1407] Object type 1, len : 1
+2026-04-30 01:11:29.444348[INFO] tams_proc: [1407] Memory Flag 2, len : 1
+2026-04-30 01:11:29.444352[INFO] tams_proc: [1407] CSP flag 0, len : 1
+2026-04-30 01:11:29.444355[INFO] tams_proc: [1407] Encryption Flag 1, len : 1
+2026-04-30 01:11:29.444359[INFO] tams_proc: [1407] Import flag 1, len : 1
+2026-04-30 01:11:29.444363[INFO] tams_proc: [1407] Object size 23, len : 4
+2026-04-30 01:11:29.444367[INFO] tams_proc: [1407] Meta data 0x0, len : 4
+2026-04-30 01:11:29.444371[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.444375[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.444379[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.444383[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req for device XRD_TAMDB
+2026-04-30 01:11:29.444410[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_CREATE new time: 24000 total time: 24000
+2026-04-30 01:11:29.444422[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.445789[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:11:29.445803[INFO] tamd_proc: [1450] trans id: 0xc
+2026-04-30 01:11:29.445808[INFO] tamd_proc: [1450] payload len: 133
+2026-04-30 01:11:29.445812[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req
+2026-04-30 01:11:29.445819[INFO] tamd_proc: [1450] object_type(len): 1 1
+2026-04-30 01:11:29.445824[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.445828[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.471166[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 0 - 23 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 971
+2026-04-30 01:11:29.474173[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 23 - 23 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 984
+2026-04-30 01:11:29.509993[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.510052[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.511119[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:11:29.511137[INFO] tams_proc: [1407] trans id: 0xc
+2026-04-30 01:11:29.511144[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.511150[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.511156[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:11:29.511163[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.511169[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:11:29.511177[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:29.511197[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.513532[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_WRITE
+2026-04-30 01:11:29.513548[INFO] tams_proc: [1407] session id: 0x1
+2026-04-30 01:11:29.513554[INFO] tams_proc: [1407] trans id: 0xc
+2026-04-30 01:11:29.513560[INFO] tams_proc: [1407] payload len: 109
+2026-04-30 01:11:29.513565[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req
+2026-04-30 01:11:29.513573[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 21 2E 53 E8 45 D0 B9 7A 96 65 AE 7D 11 6A 2C 6E 7F EE C3 EE F4 B2 25 55 98 03 73 A7 A9 85 7F B3 
+2026-04-30 01:11:29.513595[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:11:29.513612[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.513635[INFO] tams_proc: [1407] Data len : 22
+[INFO] tams_proc: [1407] 53 65 6C 66 20 74 65 73 74 20 64 61 74 61 20 63 6F 6E 74 65 6E 74 
+2026-04-30 01:11:29.513654[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.513660[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.513666[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.513671[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req for device XRD_TAMDB
+2026-04-30 01:11:29.513710[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_WRITE new time: 24000 total time: 24000
+2026-04-30 01:11:29.513729[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.514912[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:11:29.514928[INFO] tamd_proc: [1450] trans id: 0xd
+2026-04-30 01:11:29.514935[INFO] tamd_proc: [1450] payload len: 94
+2026-04-30 01:11:29.514941[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req
+2026-04-30 01:11:29.514953[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.514960[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.660812[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.665711[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.666968[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:11:29.667434[INFO] tams_proc: [1407] trans id: 0xd
+2026-04-30 01:11:29.667620[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.667762[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.667926[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:11:29.668064[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.668201[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:11:29.668392[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:29.669021[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.674892[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:11:29.674915[INFO] tams_proc: [1407] session id: 0x1
+2026-04-30 01:11:29.674922[INFO] tams_proc: [1407] trans id: 0xd
+2026-04-30 01:11:29.674940[INFO] tams_proc: [1407] payload len: 79
+2026-04-30 01:11:29.674946[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:11:29.674953[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 21 2E 53 E8 45 D0 B9 7A 96 65 AE 7D 11 6A 2C 6E 7F EE C3 EE F4 B2 25 55 98 03 73 A7 A9 85 7F B3 
+2026-04-30 01:11:29.674994[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:11:29.675008[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.675034[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:29.675049[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.675056[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.675062[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:11:29.675133[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 24000
+2026-04-30 01:11:29.675158[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:29.676768[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:11:29.676788[INFO] tamd_proc: [1450] trans id: 0xe
+2026-04-30 01:11:29.676797[INFO] tamd_proc: [1450] payload len: 64
+2026-04-30 01:11:29.676804[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:11:29.676815[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.676824[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:29.696363[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.696427[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:29.697491[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:11:29.697509[INFO] tams_proc: [1407] trans id: 0xe
+2026-04-30 01:11:29.697516[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.697523[INFO] tams_proc: [1407] payload len: 30
+2026-04-30 01:11:29.697529[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:11:29.697537[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.697544[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:11:29.697564[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.700983[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_DELETE
+2026-04-30 01:11:29.701001[INFO] tams_proc: [1407] session id: 0x1
+2026-04-30 01:11:29.701009[INFO] tams_proc: [1407] trans id: 0xe
+2026-04-30 01:11:29.701015[INFO] tams_proc: [1407] payload len: 88
+2026-04-30 01:11:29.701021[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req
+2026-04-30 01:11:29.701029[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 21 2E 53 E8 45 D0 B9 7A 96 65 AE 7D 11 6A 2C 6E 7F EE C3 EE F4 B2 25 55 98 03 73 A7 A9 85 7F B3 
+2026-04-30 01:11:29.701050[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:11:29.701066[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.701228[INFO] tams_proc: [1407] Object type 0, len : 1
+2026-04-30 01:11:29.701242[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.701251[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.701258[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.701264[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req for device XRD_TAMDB
+2026-04-30 01:11:29.701307[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_DELETE new time: 24000 total time: 24000
+2026-04-30 01:11:29.701326[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.702789[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:29.702807[INFO] tamd_proc: [1450] trans id: 0xf
+2026-04-30 01:11:29.702815[INFO] tamd_proc: [1450] payload len: 76
+2026-04-30 01:11:29.702822[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req
+2026-04-30 01:11:29.702831[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.702839[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.723330[INFO] tamd_proc: [1450] >>>> store size: 0 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 718
+2026-04-30 01:11:29.742701[INFO] tamd_proc: [1450] Sending so delete result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.742758[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.743825[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:29.743866[INFO] tams_proc: [1407] trans id: 0xf
+2026-04-30 01:11:29.743880[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.743887[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.743894[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:29.743902[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.743909[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:29.743918[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:29.743940[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.746529[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGOUT
+2026-04-30 01:11:29.746548[INFO] tams_proc: [1407] session id: 0x1
+2026-04-30 01:11:29.746556[INFO] tams_proc: [1407] trans id: 0xf
+2026-04-30 01:11:29.746562[INFO] tams_proc: [1407] payload len: 40
+2026-04-30 01:11:29.746568[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req
+2026-04-30 01:11:29.746576[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 21 2E 53 E8 45 D0 B9 7A 96 65 AE 7D 11 6A 2C 6E 7F EE C3 EE F4 B2 25 55 98 03 73 A7 A9 85 7F B3 
+2026-04-30 01:11:29.746597[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:11:29.746604[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.746611[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.746617[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req for device XRD_TAMDB
+2026-04-30 01:11:29.746625[INFO] tams_proc: [1407] Client Notify is not enabled.
+2026-04-30 01:11:29.746635[INFO] tams_proc: [1407] Deleting session 1 status TAM_SUCCESS
+2026-04-30 01:11:29.746641[INFO] tams_proc: [1407] Sending status response: TAM_SUCCESS (0x1)
+2026-04-30 01:11:29.746657[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:11:29.748018[INFO] tamsvcs_tamm: [1335] SELF_TEST  Test for device : XRD_TAMDB App:0 Successful 
+2026-04-30 01:11:29.751306[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:11:29.751323[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:11:29.751330[INFO] tams_proc: [1407] trans id: 0x10
+2026-04-30 01:11:29.751337[INFO] tams_proc: [1407] payload len: 347
+2026-04-30 01:11:29.751343[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:11:29.751362[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:11:29.751369[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.751376[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:11:29.751384[INFO] tams_proc: [1407] app test_tam number pending sessions = 1 max=5
+2026-04-30 01:11:29.751391[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:11:29.762673[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.775736[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:11:29.775753[INFO] tams_proc: [1407] session id: 0x2
+2026-04-30 01:11:29.775760[INFO] tams_proc: [1407] trans id: 0x11
+2026-04-30 01:11:29.775766[INFO] tams_proc: [1407] payload len: 87
+2026-04-30 01:11:29.775772[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:11:29.775783[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.775791[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:11:29.775799[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:11:29.775805[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:11:29.775812[INFO] tams_proc: [1407] app test_tam number sessions = 1 max=50
+2026-04-30 01:11:29.775850[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:11:29.775859[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.777027[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:11:29.777042[INFO] tamd_proc: [1450] trans id: 0x10
+2026-04-30 01:11:29.777049[INFO] tamd_proc: [1450] payload len: 16
+2026-04-30 01:11:29.777056[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:11:29.777064[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:11:29.798942[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:11:29.800698[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:11:29.800715[INFO] tams_proc: [1407] trans id: 0x10
+2026-04-30 01:11:29.800720[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.800724[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.800728[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:11:29.800732[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.800736[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:11:29.800741[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app test_tam: TAM_SUCCESS
+2026-04-30 01:11:29.800747[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:11:29.800761[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] 7F 43 DD 1C 7F E0 72 54 23 70 22 21 C7 8C 5C 29 57 B7 2B 32 0A 6F A4 30 3B 45 03 D2 3B 87 82 DA 
+2026-04-30 01:11:29.800774[INFO] tams_proc: [1407] Application test_tam authentication succeeded!
+2026-04-30 01:11:29.800778[INFO] tams_proc: [1407] Binding of app test_tam to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:11:29.800783[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.803254[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_DELETE
+2026-04-30 01:11:29.803275[INFO] tams_proc: [1407] session id: 0x2
+2026-04-30 01:11:29.803283[INFO] tams_proc: [1407] trans id: 0x12
+2026-04-30 01:11:29.803289[INFO] tams_proc: [1407] payload len: 92
+2026-04-30 01:11:29.803295[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req
+2026-04-30 01:11:29.803303[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 7F 43 DD 1C 7F E0 72 54 23 70 22 21 C7 8C 5C 29 57 B7 2B 32 0A 6F A4 30 3B 45 03 D2 3B 87 82 DA 
+2026-04-30 01:11:29.803325[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 74 65 73 74 5F 74 61 6D 00 
+2026-04-30 01:11:29.803340[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.803358[INFO] tams_proc: [1407] Object type 0, len : 1
+2026-04-30 01:11:29.803365[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.803374[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.803382[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.803388[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req for device XRD_TAMDB
+2026-04-30 01:11:29.803438[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_DELETE new time: 24000 total time: 24000
+2026-04-30 01:11:29.803459[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.804656[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:29.804678[INFO] tamd_proc: [1450] trans id: 0x11
+2026-04-30 01:11:29.804687[INFO] tamd_proc: [1450] payload len: 84
+2026-04-30 01:11:29.804694[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req
+2026-04-30 01:11:29.804702[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.804710[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.825930[INFO] tamd_proc: [1450] Sending so delete result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.825993[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.827054[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:29.827070[INFO] tams_proc: [1407] trans id: 0x11
+2026-04-30 01:11:29.827077[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:11:29.827084[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.827090[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:29.827097[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.827104[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:29.827125[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.832874[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_CREATE
+2026-04-30 01:11:29.832892[INFO] tams_proc: [1407] session id: 0x2
+2026-04-30 01:11:29.832900[INFO] tams_proc: [1407] trans id: 0x13
+2026-04-30 01:11:29.832907[INFO] tams_proc: [1407] payload len: 152
+2026-04-30 01:11:29.832913[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req
+2026-04-30 01:11:29.832921[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 7F 43 DD 1C 7F E0 72 54 23 70 22 21 C7 8C 5C 29 57 B7 2B 32 0A 6F A4 30 3B 45 03 D2 3B 87 82 DA 
+2026-04-30 01:11:29.832943[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 74 65 73 74 5F 74 61 6D 00 
+2026-04-30 01:11:29.832958[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.832976[INFO] tams_proc: [1407] Object type 1, len : 1
+2026-04-30 01:11:29.832983[INFO] tams_proc: [1407] Memory Flag 2, len : 1
+2026-04-30 01:11:29.832990[INFO] tams_proc: [1407] CSP flag 0, len : 1
+2026-04-30 01:11:29.832996[INFO] tams_proc: [1407] Encryption Flag 1, len : 1
+2026-04-30 01:11:29.833003[INFO] tams_proc: [1407] Import flag 1, len : 1
+2026-04-30 01:11:29.833010[INFO] tams_proc: [1407] Object size 23, len : 4
+2026-04-30 01:11:29.833017[INFO] tams_proc: [1407] Meta data 0x0, len : 4
+2026-04-30 01:11:29.833024[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.833032[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.833039[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.833046[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req for device XRD_TAMDB
+2026-04-30 01:11:29.833092[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_CREATE new time: 24000 total time: 24000
+2026-04-30 01:11:29.833110[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.834297[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:11:29.834313[INFO] tamd_proc: [1450] trans id: 0x12
+2026-04-30 01:11:29.834320[INFO] tamd_proc: [1450] payload len: 141
+2026-04-30 01:11:29.834326[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req
+2026-04-30 01:11:29.834335[INFO] tamd_proc: [1450] object_type(len): 1 1
+2026-04-30 01:11:29.834343[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.834351[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.854088[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 0 - 23 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 971
+2026-04-30 01:11:29.855382[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 23 - 23 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 984
+2026-04-30 01:11:29.874944[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.874982[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.876079[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:11:29.876098[INFO] tams_proc: [1407] trans id: 0x12
+2026-04-30 01:11:29.876106[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.876111[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.876117[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:11:29.876124[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.876130[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:11:29.876139[INFO] tams_proc: [1407] appname:test_tam sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:29.876160[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.880445[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_WRITE
+2026-04-30 01:11:29.880462[INFO] tams_proc: [1407] session id: 0x2
+2026-04-30 01:11:29.880469[INFO] tams_proc: [1407] trans id: 0x14
+2026-04-30 01:11:29.880475[INFO] tams_proc: [1407] payload len: 113
+2026-04-30 01:11:29.880481[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req
+2026-04-30 01:11:29.880489[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 7F 43 DD 1C 7F E0 72 54 23 70 22 21 C7 8C 5C 29 57 B7 2B 32 0A 6F A4 30 3B 45 03 D2 3B 87 82 DA 
+2026-04-30 01:11:29.880511[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 74 65 73 74 5F 74 61 6D 00 
+2026-04-30 01:11:29.880525[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.880542[INFO] tams_proc: [1407] Data len : 22
+[INFO] tams_proc: [1407] 53 65 6C 66 20 74 65 73 74 20 64 61 74 61 20 63 6F 6E 74 65 6E 74 
+2026-04-30 01:11:29.880561[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.880568[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.880575[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.880581[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req for device XRD_TAMDB
+2026-04-30 01:11:29.880617[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_WRITE new time: 24000 total time: 24000
+2026-04-30 01:11:29.880633[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.881800[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:11:29.881816[INFO] tamd_proc: [1450] trans id: 0x13
+2026-04-30 01:11:29.881822[INFO] tamd_proc: [1450] payload len: 102
+2026-04-30 01:11:29.881829[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req
+2026-04-30 01:11:29.881838[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.881845[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.901458[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.901515[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.902727[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:11:29.902744[INFO] tams_proc: [1407] trans id: 0x13
+2026-04-30 01:11:29.902753[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.902760[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.902766[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:11:29.902774[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.902780[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:11:29.902790[INFO] tams_proc: [1407] appname:test_tam sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:29.902812[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.905225[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:11:29.905246[INFO] tams_proc: [1407] session id: 0x2
+2026-04-30 01:11:29.905254[INFO] tams_proc: [1407] trans id: 0x15
+2026-04-30 01:11:29.905261[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:11:29.905267[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:11:29.905274[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 7F 43 DD 1C 7F E0 72 54 23 70 22 21 C7 8C 5C 29 57 B7 2B 32 0A 6F A4 30 3B 45 03 D2 3B 87 82 DA 
+2026-04-30 01:11:29.905295[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 74 65 73 74 5F 74 61 6D 00 
+2026-04-30 01:11:29.905312[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.905330[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:29.905337[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.905343[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.905349[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:11:29.905388[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 24000
+2026-04-30 01:11:29.905417[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:29.906540[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:11:29.906556[INFO] tamd_proc: [1450] trans id: 0x14
+2026-04-30 01:11:29.906564[INFO] tamd_proc: [1450] payload len: 72
+2026-04-30 01:11:29.906570[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:11:29.906578[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.906586[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:29.923182[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.923236[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:29.925629[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:11:29.925643[INFO] tams_proc: [1407] trans id: 0x14
+2026-04-30 01:11:29.925647[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.925651[INFO] tams_proc: [1407] payload len: 30
+2026-04-30 01:11:29.925655[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:11:29.925660[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.925664[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:11:29.925679[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.927963[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_DELETE
+2026-04-30 01:11:29.927976[INFO] tams_proc: [1407] session id: 0x2
+2026-04-30 01:11:29.927980[INFO] tams_proc: [1407] trans id: 0x16
+2026-04-30 01:11:29.927984[INFO] tams_proc: [1407] payload len: 92
+2026-04-30 01:11:29.927987[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req
+2026-04-30 01:11:29.927992[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 7F 43 DD 1C 7F E0 72 54 23 70 22 21 C7 8C 5C 29 57 B7 2B 32 0A 6F A4 30 3B 45 03 D2 3B 87 82 DA 
+2026-04-30 01:11:29.928004[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 74 65 73 74 5F 74 61 6D 00 
+2026-04-30 01:11:29.928013[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:29.928022[INFO] tams_proc: [1407] Object type 0, len : 1
+2026-04-30 01:11:29.928027[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.928031[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.928035[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.928038[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req for device XRD_TAMDB
+2026-04-30 01:11:29.928066[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_DELETE new time: 24000 total time: 24000
+2026-04-30 01:11:29.928078[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.929222[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:29.929240[INFO] tamd_proc: [1450] trans id: 0x15
+2026-04-30 01:11:29.929248[INFO] tamd_proc: [1450] payload len: 84
+2026-04-30 01:11:29.929255[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req
+2026-04-30 01:11:29.929264[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:29.929271[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.944596[INFO] tamd_proc: [1450] >>>> store size: 0 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 718
+2026-04-30 01:11:29.960784[INFO] tamd_proc: [1450] Sending so delete result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:29.960958[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:29.962049[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:29.962076[INFO] tams_proc: [1407] trans id: 0x15
+2026-04-30 01:11:29.962082[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:29.962086[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:29.962089[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:29.962094[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.962098[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:29.962103[INFO] tams_proc: [1407] appname:test_tam sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:29.962118[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:29.964426[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGOUT
+2026-04-30 01:11:29.964439[INFO] tams_proc: [1407] session id: 0x2
+2026-04-30 01:11:29.964446[INFO] tams_proc: [1407] trans id: 0x17
+2026-04-30 01:11:29.964452[INFO] tams_proc: [1407] payload len: 40
+2026-04-30 01:11:29.964458[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req
+2026-04-30 01:11:29.964465[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 7F 43 DD 1C 7F E0 72 54 23 70 22 21 C7 8C 5C 29 57 B7 2B 32 0A 6F A4 30 3B 45 03 D2 3B 87 82 DA 
+2026-04-30 01:11:29.964488[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:11:29.964494[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:29.964501[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:29.964507[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req for device XRD_TAMDB
+2026-04-30 01:11:29.964514[INFO] tams_proc: [1407] Client Notify is not enabled.
+2026-04-30 01:11:29.964522[INFO] tams_proc: [1407] Deleting session 2 status TAM_SUCCESS
+2026-04-30 01:11:29.964529[INFO] tams_proc: [1407] Sending status response: TAM_SUCCESS (0x1)
+2026-04-30 01:11:29.964544[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:11:29.965653[INFO] tamsvcs_tamm: [1335] SELF_TEST  Test for device : XRD_TAMDB App:1 Successful 
+2026-04-30 01:11:29.968931[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:11:29.968947[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:11:29.968954[INFO] tams_proc: [1407] trans id: 0x18
+2026-04-30 01:11:29.968961[INFO] tams_proc: [1407] payload len: 347
+2026-04-30 01:11:29.968967[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:11:29.968984[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:11:29.968991[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.968998[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:11:29.969006[INFO] tams_proc: [1407] app kev_app1 number pending sessions = 1 max=5
+2026-04-30 01:11:29.969012[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:11:29.973345[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.985021[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:11:29.985042[INFO] tams_proc: [1407] session id: 0x3
+2026-04-30 01:11:29.985050[INFO] tams_proc: [1407] trans id: 0x19
+2026-04-30 01:11:29.985057[INFO] tams_proc: [1407] payload len: 87
+2026-04-30 01:11:29.985064[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:11:29.985097[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:29.985107[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:11:29.985115[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:11:29.985122[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:11:29.985130[INFO] tams_proc: [1407] app kev_app1 number sessions = 1 max=50
+2026-04-30 01:11:29.985170[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:11:29.985181[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:29.986366[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:11:29.986383[INFO] tamd_proc: [1450] trans id: 0x16
+2026-04-30 01:11:29.986390[INFO] tamd_proc: [1450] payload len: 16
+2026-04-30 01:11:29.986396[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:11:29.986403[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:11:30.289Z[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:11:30.1432Z[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:11:30.1452Z[INFO] tams_proc: [1407] trans id: 0x16
+2026-04-30 01:11:30.1459Z[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:30.1465Z[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:30.1472Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:11:30.1479Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.1485Z[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:11:30.1492Z[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app kev_app1: TAM_SUCCESS
+2026-04-30 01:11:30.1501Z[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:11:30.1519Z[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] 9B 97 05 4A 6A CB DA 49 C2 0D FA 44 B6 3B 33 D1 86 EE 1E 46 BE E8 66 15 31 E2 43 1F C9 06 3B 0A 
+2026-04-30 01:11:30.1540Z[INFO] tams_proc: [1407] Application kev_app1 authentication succeeded!
+2026-04-30 01:11:30.1547Z[INFO] tams_proc: [1407] Binding of app kev_app1 to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:11:30.1554Z[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.4020Z[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_DELETE
+2026-04-30 01:11:30.4036Z[INFO] tams_proc: [1407] session id: 0x3
+2026-04-30 01:11:30.4044Z[INFO] tams_proc: [1407] trans id: 0x1a
+2026-04-30 01:11:30.4056Z[INFO] tams_proc: [1407] payload len: 92
+2026-04-30 01:11:30.4063Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req
+2026-04-30 01:11:30.4071Z[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 9B 97 05 4A 6A CB DA 49 C2 0D FA 44 B6 3B 33 D1 86 EE 1E 46 BE E8 66 15 31 E2 43 1F C9 06 3B 0A 
+2026-04-30 01:11:30.4092Z[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 6B 65 76 5F 61 70 70 31 00 
+2026-04-30 01:11:30.4107Z[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:30.4124Z[INFO] tams_proc: [1407] Object type 0, len : 1
+2026-04-30 01:11:30.4131Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.4139Z[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:30.4146Z[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:30.4152Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req for device XRD_TAMDB
+2026-04-30 01:11:30.4187Z[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_DELETE new time: 24000 total time: 24000
+2026-04-30 01:11:30.4204Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.5344Z[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:30.5360Z[INFO] tamd_proc: [1450] trans id: 0x17
+2026-04-30 01:11:30.5368Z[INFO] tamd_proc: [1450] payload len: 84
+2026-04-30 01:11:30.5374Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req
+2026-04-30 01:11:30.5382Z[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:30.5389Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.21707Z[INFO] tamd_proc: [1450] Sending so delete result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:30.21759Z[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.22821Z[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:30.22837Z[INFO] tams_proc: [1407] trans id: 0x17
+2026-04-30 01:11:30.22844Z[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:11:30.22851Z[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:30.22857Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:30.22864Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.22870Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:30.22889Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.26434Z[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_CREATE
+2026-04-30 01:11:30.26459Z[INFO] tams_proc: [1407] session id: 0x3
+2026-04-30 01:11:30.26467Z[INFO] tams_proc: [1407] trans id: 0x1b
+2026-04-30 01:11:30.26473Z[INFO] tams_proc: [1407] payload len: 152
+2026-04-30 01:11:30.26479Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req
+2026-04-30 01:11:30.26487Z[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 9B 97 05 4A 6A CB DA 49 C2 0D FA 44 B6 3B 33 D1 86 EE 1E 46 BE E8 66 15 31 E2 43 1F C9 06 3B 0A 
+2026-04-30 01:11:30.26508Z[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 6B 65 76 5F 61 70 70 31 00 
+2026-04-30 01:11:30.26519Z[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:30.26528Z[INFO] tams_proc: [1407] Object type 1, len : 1
+2026-04-30 01:11:30.26532Z[INFO] tams_proc: [1407] Memory Flag 2, len : 1
+2026-04-30 01:11:30.26535Z[INFO] tams_proc: [1407] CSP flag 0, len : 1
+2026-04-30 01:11:30.26539Z[INFO] tams_proc: [1407] Encryption Flag 1, len : 1
+2026-04-30 01:11:30.26543Z[INFO] tams_proc: [1407] Import flag 1, len : 1
+2026-04-30 01:11:30.26546Z[INFO] tams_proc: [1407] Object size 23, len : 4
+2026-04-30 01:11:30.26550Z[INFO] tams_proc: [1407] Meta data 0x0, len : 4
+2026-04-30 01:11:30.26554Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.26559Z[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:30.26563Z[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:30.26567Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req for device XRD_TAMDB
+2026-04-30 01:11:30.26597Z[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_CREATE new time: 24000 total time: 24000
+2026-04-30 01:11:30.26609Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.28670Z[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:11:30.28701Z[INFO] tamd_proc: [1450] trans id: 0x18
+2026-04-30 01:11:30.28709Z[INFO] tamd_proc: [1450] payload len: 141
+2026-04-30 01:11:30.28716Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req
+2026-04-30 01:11:30.28724Z[INFO] tamd_proc: [1450] object_type(len): 1 1
+2026-04-30 01:11:30.28731Z[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:30.28738Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.44144Z[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 0 - 23 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 971
+2026-04-30 01:11:30.45382Z[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 23 - 23 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 984
+2026-04-30 01:11:30.63180Z[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:30.63205Z[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.65190Z[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:11:30.65211Z[INFO] tams_proc: [1407] trans id: 0x18
+2026-04-30 01:11:30.65219Z[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:30.65225Z[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:30.65231Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:11:30.65239Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.65246Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:11:30.65254Z[INFO] tams_proc: [1407] appname:kev_app1 sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:30.65275Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.67605Z[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_WRITE
+2026-04-30 01:11:30.67620Z[INFO] tams_proc: [1407] session id: 0x3
+2026-04-30 01:11:30.67627Z[INFO] tams_proc: [1407] trans id: 0x1c
+2026-04-30 01:11:30.67633Z[INFO] tams_proc: [1407] payload len: 113
+2026-04-30 01:11:30.67640Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req
+2026-04-30 01:11:30.67647Z[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 9B 97 05 4A 6A CB DA 49 C2 0D FA 44 B6 3B 33 D1 86 EE 1E 46 BE E8 66 15 31 E2 43 1F C9 06 3B 0A 
+2026-04-30 01:11:30.67669Z[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 6B 65 76 5F 61 70 70 31 00 
+2026-04-30 01:11:30.67684Z[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:30.67701Z[INFO] tams_proc: [1407] Data len : 22
+[INFO] tams_proc: [1407] 53 65 6C 66 20 74 65 73 74 20 64 61 74 61 20 63 6F 6E 74 65 6E 74 
+2026-04-30 01:11:30.67719Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.67726Z[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:30.67733Z[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:30.67739Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req for device XRD_TAMDB
+2026-04-30 01:11:30.67776Z[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_WRITE new time: 24000 total time: 24000
+2026-04-30 01:11:30.67792Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.68977Z[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:11:30.68994Z[INFO] tamd_proc: [1450] trans id: 0x19
+2026-04-30 01:11:30.69003Z[INFO] tamd_proc: [1450] payload len: 102
+2026-04-30 01:11:30.69009Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req
+2026-04-30 01:11:30.69018Z[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:30.69025Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.90101Z[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:30.90154Z[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.91216Z[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:11:30.91231Z[INFO] tams_proc: [1407] trans id: 0x19
+2026-04-30 01:11:30.91238Z[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:30.91244Z[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:30.91250Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:11:30.91256Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.91262Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:11:30.91270Z[INFO] tams_proc: [1407] appname:kev_app1 sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:30.91288Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.93903Z[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:11:30.93915Z[INFO] tams_proc: [1407] session id: 0x3
+2026-04-30 01:11:30.93919Z[INFO] tams_proc: [1407] trans id: 0x1d
+2026-04-30 01:11:30.93923Z[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:11:30.93927Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:11:30.93931Z[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 9B 97 05 4A 6A CB DA 49 C2 0D FA 44 B6 3B 33 D1 86 EE 1E 46 BE E8 66 15 31 E2 43 1F C9 06 3B 0A 
+2026-04-30 01:11:30.93943Z[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 6B 65 76 5F 61 70 70 31 00 
+2026-04-30 01:11:30.93952Z[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:30.93961Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:30.93965Z[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:30.93969Z[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:30.93973Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:11:30.94000Z[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 24000
+2026-04-30 01:11:30.94012Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:30.95172Z[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:11:30.95184Z[INFO] tamd_proc: [1450] trans id: 0x1a
+2026-04-30 01:11:30.95189Z[INFO] tamd_proc: [1450] payload len: 72
+2026-04-30 01:11:30.95193Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:11:30.95198Z[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:30.95202Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:30.111985[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:30.112039[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:11:30.113101[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:11:30.113118[INFO] tams_proc: [1407] trans id: 0x1a
+2026-04-30 01:11:30.113125[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:30.113131[INFO] tams_proc: [1407] payload len: 30
+2026-04-30 01:11:30.113137[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:11:30.113146[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.113152[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:11:30.113172[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.115475[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_DELETE
+2026-04-30 01:11:30.115490[INFO] tams_proc: [1407] session id: 0x3
+2026-04-30 01:11:30.115498[INFO] tams_proc: [1407] trans id: 0x1e
+2026-04-30 01:11:30.115505[INFO] tams_proc: [1407] payload len: 92
+2026-04-30 01:11:30.115511[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req
+2026-04-30 01:11:30.115520[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 9B 97 05 4A 6A CB DA 49 C2 0D FA 44 B6 3B 33 D1 86 EE 1E 46 BE E8 66 15 31 E2 43 1F C9 06 3B 0A 
+2026-04-30 01:11:30.115542[INFO] tams_proc: [1407] Object owner len : 9
+[INFO] tams_proc: [1407] 6B 65 76 5F 61 70 70 31 00 
+2026-04-30 01:11:30.115558[INFO] tams_proc: [1407] Object name len : 18
+[INFO] tams_proc: [1407] 53 45 4C 46 5F 54 45 53 54 5F 74 65 73 74 5F 73 6F 00 
+2026-04-30 01:11:30.115576[INFO] tams_proc: [1407] Object type 0, len : 1
+2026-04-30 01:11:30.115584[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.115597[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:30.115604[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:30.115610[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req for device XRD_TAMDB
+2026-04-30 01:11:30.115648[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_DELETE new time: 24000 total time: 24000
+2026-04-30 01:11:30.115665[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.117262[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:30.117279[INFO] tamd_proc: [1450] trans id: 0x1b
+2026-04-30 01:11:30.117287[INFO] tamd_proc: [1450] payload len: 84
+2026-04-30 01:11:30.117293[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req
+2026-04-30 01:11:30.117301[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:11:30.117308[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.133453[INFO] tamd_proc: [1450] >>>> store size: 0 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 718
+2026-04-30 01:11:30.157172[INFO] tamd_proc: [1450] Sending so delete result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:11:30.157226[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:11:30.159180[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:11:30.159214[INFO] tams_proc: [1407] trans id: 0x1b
+2026-04-30 01:11:30.159225[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:30.159232[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:30.159238[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:30.159247[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.159254[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:11:30.159261[INFO] tams_proc: [1407] appname:kev_app1 sync_staus_enable:0 notify_enable:0
+2026-04-30 01:11:30.159281[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.161555[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGOUT
+2026-04-30 01:11:30.161568[INFO] tams_proc: [1407] session id: 0x3
+2026-04-30 01:11:30.161573[INFO] tams_proc: [1407] trans id: 0x1f
+2026-04-30 01:11:30.161577[INFO] tams_proc: [1407] payload len: 40
+2026-04-30 01:11:30.161580[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req
+2026-04-30 01:11:30.161585[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 9B 97 05 4A 6A CB DA 49 C2 0D FA 44 B6 3B 33 D1 86 EE 1E 46 BE E8 66 15 31 E2 43 1F C9 06 3B 0A 
+2026-04-30 01:11:30.161598[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:11:30.161602[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:30.161606[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:30.161610[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req for device XRD_TAMDB
+2026-04-30 01:11:30.161614[INFO] tams_proc: [1407] Client Notify is not enabled.
+2026-04-30 01:11:30.161619[INFO] tams_proc: [1407] Deleting session 3 status TAM_SUCCESS
+2026-04-30 01:11:30.161623[INFO] tams_proc: [1407] Sending status response: TAM_SUCCESS (0x1)
+2026-04-30 01:11:30.161632[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:11:30.162726[INFO] tamsvcs_tamm: [1335] SELF_TEST  Test for device : XRD_TAMDB App:2 Successful 
+2026-04-30 01:11:30.164822[INFO] tamsvcs_tamm: [1335] Successfully initialized TAM device XRD_TAMDB
+2026-04-30 01:11:30.164853[INFO] tamsvcs_tamm: [1335] VUDI init: XRD_TAMDB: About to query if VUDI supported, and initialize if so
+2026-04-30 01:11:30.166137[INFO] tams_proc: [1407] cmd type: TAMM_CMD_VUDI_INIT
+2026-04-30 01:11:30.166154[INFO] tams_proc: [1407] trans id: 0x20
+2026-04-30 01:11:30.166162[INFO] tams_proc: [1407] payload len: 46
+2026-04-30 01:11:30.166168[INFO] tams_proc: [1407] Parsing TAMM_CMD_VUDI_INIT Req
+2026-04-30 01:11:30.166176[INFO] tams_proc: [1407] device_name: XRD_TAMDB
+2026-04-30 01:11:30.166183[INFO] tams_proc: [1407] VUDI pid: XRd-CP-C-01
+2026-04-30 01:11:30.166190[INFO] tams_proc: [1407] VUDI regen: 0
+2026-04-30 01:11:30.166197[INFO] tams_proc: [1407] Parsing TAMM_CMD_VUDI_INIT Req status: TAM_SUCCESS
+2026-04-30 01:11:30.166204[INFO] tams_proc: [1407] Processing TAMM_CMD_VUDI_INIT Req
+2026-04-30 01:11:30.166214[INFO] tams_proc: [1407] Send dev_vudi_init req TAMS->TAMD
+2026-04-30 01:11:30.166248[INFO] tams_proc: [1407] Record dev_vudi_init req TAMS->TAMD
+2026-04-30 01:11:30.166260[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_VUDI_INIT new time: 24000 total time: 24000
+2026-04-30 01:11:30.166278[INFO] tams_proc: [1407] Initialize VUDI pending for device 'XRD_TAMDB'
+2026-04-30 01:11:30.166287[INFO] tams_proc: [1407] Processing TAMM_CMD_VUDI_INIT Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:30.167459[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_VUDI_INIT
+2026-04-30 01:11:30.167475[INFO] tamd_proc: [1450] trans id: 0x1c
+2026-04-30 01:11:30.167483[INFO] tamd_proc: [1450] payload len: 28
+2026-04-30 01:11:30.167489[INFO] tamd_proc: [1450] Parsing TAMD_CMD_VUDI_INIT Req
+2026-04-30 01:11:30.167500[INFO] tamd_proc: [1450] PID: XRd-CP-C-01
+2026-04-30 01:11:30.167508[INFO] tamd_proc: [1450] Parsing TAMD_CMD_VUDI_INIT Req status: TAM_SUCCESS
+2026-04-30 01:11:30.167516[INFO] tamd_proc: [1450] SWTAM process VUDI initialization
+2026-04-30 01:11:30.169700[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_VUDI_INIT
+2026-04-30 01:11:30.169714[INFO] tamsvcs_tamm: [1335] trans id: 0x20
+2026-04-30 01:11:30.169719[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:30.169723[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:30.169727[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_VUDI_INIT Rsp
+2026-04-30 01:11:30.169733[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_VUDI_INIT Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.169737[INFO] tamsvcs_tamm: [1335] Rx ACK in 5ms. Waiting 300000ms for final response...
+2026-04-30 01:11:30.182460[ERR] tamd_proc: [1450] Problem retrieving VUDI: TAM_ERROR_VUDI_DNE
+2026-04-30 01:11:30.182479[INFO] tamd_proc: [1450] Initialize VUDI: no VUDI. Initializing.
+2026-04-30 01:11:30.182503[INFO] tamd_proc: [1450] VUDI generated serial number=VSN-OEVMU3R
+2026-04-30 01:11:30.203136[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 0 - 34 - 0 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 971
+2026-04-30 01:11:30.205316[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 34 - 34 - 0 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 984
+2026-04-30 01:11:30.246530[INFO] tamd_proc: [1450] Sending response TAM_SUCCESS
+2026-04-30 01:11:30.246560[INFO] tamd_proc: [1450] Processing TAMD_CMD_VUDI_INIT Req status: TAM_SUCCESS
+2026-04-30 01:11:30.247659[INFO] tams_proc: [1407] cmd type: TAMD_CMD_VUDI_INIT
+2026-04-30 01:11:30.247677[INFO] tams_proc: [1407] trans id: 0x1c
+2026-04-30 01:11:30.247685[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:30.247692[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:30.247700[INFO] tams_proc: [1407] Parsing TAMD_CMD_VUDI_INIT Rsp
+2026-04-30 01:11:30.247708[INFO] tams_proc: [1407] Parsing TAMD_CMD_VUDI_INIT Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.247716[INFO] tams_proc: [1407] Processing TAMD_CMD_VUDI_INIT Rsp
+2026-04-30 01:11:30.247739[INFO] tams_proc: [1407] Processing TAMD_CMD_VUDI_INIT Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.248857[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_VUDI_INIT
+2026-04-30 01:11:30.248873[INFO] tamsvcs_tamm: [1335] trans id: 0x20
+2026-04-30 01:11:30.248881[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:30.248888[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:30.248894[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_VUDI_INIT Rsp
+2026-04-30 01:11:30.248902[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_VUDI_INIT Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.248909[INFO] tamsvcs_tamm: [1335] Final response received. rc=0x1
+2026-04-30 01:11:30.248927[INFO] tamsvcs_tamm: [1335] cmd type: TAMM_CMD_VUDI_INIT
+2026-04-30 01:11:30.248935[INFO] tamsvcs_tamm: [1335] trans id: 0x20
+2026-04-30 01:11:30.248942[INFO] tamsvcs_tamm: [1335] status: TAM_SUCCESS
+2026-04-30 01:11:30.248948[INFO] tamsvcs_tamm: [1335] payload len: 0
+2026-04-30 01:11:30.248955[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_VUDI_INIT Rsp
+2026-04-30 01:11:30.248962[INFO] tamsvcs_tamm: [1335] Parsing TAMM_CMD_VUDI_INIT Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.248969[INFO] tamsvcs_tamm: [1335] VUDI initialization response TAM_SUCCESS
+2026-04-30 01:11:30.248977[INFO] tamsvcs_tamm: [1335] VUDI init: XRD_TAMDB: VUDI supported
+2026-04-30 01:11:30.248985[INFO] tamsvcs_tamm: [1335] VUDI init: XRD_TAMDB: About to query VUDI for file cache
+2026-04-30 01:11:30.252298[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:11:30.252311[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:11:30.252316[INFO] tams_proc: [1407] trans id: 0x21
+2026-04-30 01:11:30.252319[INFO] tams_proc: [1407] payload len: 333
+2026-04-30 01:11:30.252323[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:11:30.252334[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:11:30.252339[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:30.252343[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device 
+2026-04-30 01:11:30.252348[INFO] tams_proc: [1407] app Init number pending sessions = 1 max=5
+2026-04-30 01:11:30.252352[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:11:30.256739[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:30.268162[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:11:30.268177[INFO] tams_proc: [1407] session id: 0x4
+2026-04-30 01:11:30.268182[INFO] tams_proc: [1407] trans id: 0x22
+2026-04-30 01:11:30.268185[INFO] tams_proc: [1407] payload len: 73
+2026-04-30 01:11:30.268189[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:11:30.268195[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:11:30.268200[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device 
+2026-04-30 01:11:30.268205[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:11:30.268209[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:11:30.268214[INFO] tams_proc: [1407] app Init number sessions = 1 max=50
+2026-04-30 01:11:30.268307[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:11:30.268317[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:11:30.269406[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:11:30.269424[INFO] tamd_proc: [1450] trans id: 0x1d
+2026-04-30 01:11:30.269431[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:11:30.269437[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:11:30.269445[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:11:30.285645[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:11:30.286774[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:11:30.286791[INFO] tams_proc: [1407] trans id: 0x1d
+2026-04-30 01:11:30.286799[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:30.286806[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:11:30.286813[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:11:30.286821[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.286828[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:11:30.286835[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app Init: TAM_SUCCESS
+2026-04-30 01:11:30.286844[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:11:30.286861[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] B2 76 EC 9A 40 4B 8E 2D C3 9F C7 77 8E AA DA A9 3C 35 6C 0F 83 18 03 3C F5 37 FF 7C 2B 0D 40 65 
+2026-04-30 01:11:30.286884[INFO] tams_proc: [1407] Application Init authentication succeeded!
+2026-04-30 01:11:30.286890[INFO] tams_proc: [1407] Binding of app Init to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:11:30.286898[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.291630[INFO] tams_proc: [1407] cmd type: TAMC_CMD_UDI
+2026-04-30 01:11:30.291651[INFO] tams_proc: [1407] session id: 0x4
+2026-04-30 01:11:30.291658[INFO] tams_proc: [1407] trans id: 0x23
+2026-04-30 01:11:30.291664[INFO] tams_proc: [1407] payload len: 40
+2026-04-30 01:11:30.291670[INFO] tams_proc: [1407] Parsing TAMC_CMD_UDI Req
+2026-04-30 01:11:30.291677[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] B2 76 EC 9A 40 4B 8E 2D C3 9F C7 77 8E AA DA A9 3C 35 6C 0F 83 18 03 3C F5 37 FF 7C 2B 0D 40 65 
+2026-04-30 01:11:30.291698[INFO] tams_proc: [1407] Parsing TAMC_CMD_UDI Req status: TAM_SUCCESS
+2026-04-30 01:11:30.291705[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:30.291711[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:30.291717[INFO] tams_proc: [1407] Processing TAMC_CMD_UDI Req for device XRD_TAMDB
+2026-04-30 01:11:30.291753[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_UDI new time: 24000 total time: 24000
+2026-04-30 01:11:30.291770[INFO] tams_proc: [1407] Processing TAMC_CMD_UDI Req status: TAM_SUCCESS
+2026-04-30 01:11:30.292931[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_UDI
+2026-04-30 01:11:30.292946[INFO] tamd_proc: [1450] trans id: 0x1e
+2026-04-30 01:11:30.292953[INFO] tamd_proc: [1450] payload len: 0
+2026-04-30 01:11:30.292959[INFO] tamd_proc: [1450] Parsing TAMD_CMD_UDI Req
+2026-04-30 01:11:30.292969[INFO] tamd_proc: [1450] Parsing TAMD_CMD_UDI Req status: TAM_SUCCESS
+2026-04-30 01:11:30.311542[INFO] tamd_proc: [1450] PID = XRd-CP-C-01 SN = VSN-OEVMU3R
+2026-04-30 01:11:30.311601[INFO] tamd_proc: [1450] tam_ipc_send = TAM_SUCCESS rsp_msg=0x56152eaf01f0 rsp_msg_len= 58
+2026-04-30 01:11:30.311612[INFO] tamd_proc: [1450] Processing TAMD_CMD_UDI Req status: TAM_SUCCESS
+2026-04-30 01:11:30.312665[INFO] tams_proc: [1407] cmd type: TAMD_CMD_UDI
+2026-04-30 01:11:30.312684[INFO] tams_proc: [1407] trans id: 0x1e
+2026-04-30 01:11:30.312691[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:11:30.312697[INFO] tams_proc: [1407] payload len: 38
+2026-04-30 01:11:30.312703[INFO] tams_proc: [1407] Parsing TAMD_CMD_UDI Rsp
+2026-04-30 01:11:30.312710[INFO] tams_proc: [1407] Parsing TAMD_CMD_UDI Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.312717[INFO] tams_proc: [1407] Processing TAMD_CMD_UDI Rsp
+2026-04-30 01:11:30.312737[INFO] tams_proc: [1407] Processing TAMD_CMD_UDI Rsp status: TAM_SUCCESS
+2026-04-30 01:11:30.313928[INFO] tamsvcs_tamm: [1335] VUDI init: XRD_TAMDB: Saved VSN to cache file: /var/run/cisco/tamsvcs/tamsvcs_vsn: 'VSN-OEVMU3R'
+2026-04-30 01:11:30.315155[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGOUT
+2026-04-30 01:11:30.315171[INFO] tams_proc: [1407] session id: 0x4
+2026-04-30 01:11:30.315179[INFO] tams_proc: [1407] trans id: 0x24
+2026-04-30 01:11:30.315186[INFO] tams_proc: [1407] payload len: 40
+2026-04-30 01:11:30.315193[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req
+2026-04-30 01:11:30.315200[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] B2 76 EC 9A 40 4B 8E 2D C3 9F C7 77 8E AA DA A9 3C 35 6C 0F 83 18 03 3C F5 37 FF 7C 2B 0D 40 65 
+2026-04-30 01:11:30.315221[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:11:30.315228[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:11:30.315235[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:11:30.315241[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req for device XRD_TAMDB
+2026-04-30 01:11:30.315248[INFO] tams_proc: [1407] Client Notify is not enabled.
+2026-04-30 01:11:30.315257[INFO] tams_proc: [1407] Deleting session 4 status TAM_SUCCESS
+2026-04-30 01:11:30.315263[INFO] tams_proc: [1407] Sending status response: TAM_SUCCESS (0x1)
+2026-04-30 01:11:30.315280[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:11:30.317491[INFO] tamsvcs_tamm: [1335] TAMM init successful (1 attempt(s)).
+2026-04-30 01:11:30.317516[INFO] tamsvcs_tamm: [1335] TAM_NS: Server:tam_ns_set_service_status Entry: status:1
+2026-04-30 01:11:30.317530[INFO] tamsvcs_tamm: [1335] Starting TAM Entropy, Sync and Ownershipd process !!
+2026-04-30 01:11:30.324254[INFO] tamsvcs_tamm: [1335] Sending proc_ready....
+2026-04-30 01:12:04.237654[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:04.237683[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:12:04.237691[INFO] tams_proc: [1407] trans id: 0x1
+2026-04-30 01:12:04.237696[INFO] tams_proc: [1407] payload len: 343
+2026-04-30 01:12:04.237702[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:04.237718[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:12:04.237725[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:04.237732[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:04.237739[INFO] tams_proc: [1407] app Init number pending sessions = 1 max=5
+2026-04-30 01:12:04.237745[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:12:04.244635[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:04.264928[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:04.265011[INFO] tams_proc: [1407] session id: 0x5
+2026-04-30 01:12:04.265049[INFO] tams_proc: [1407] trans id: 0x2
+2026-04-30 01:12:04.265125[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:12:04.265165[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:04.265204[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:04.265244[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:04.265284[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:12:04.265326[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:12:04.265370[INFO] tams_proc: [1407] app Init number sessions = 1 max=50
+2026-04-30 01:12:04.265455[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:12:04.265503[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:04.267319[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:04.267348[INFO] tamd_proc: [1450] trans id: 0x2a
+2026-04-30 01:12:04.267359[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:12:04.267365[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:12:04.267374[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:04.337722[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:04.337756[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:12:04.337765[INFO] tams_proc: [1407] trans id: 0x1
+2026-04-30 01:12:04.337771[INFO] tams_proc: [1407] payload len: 343
+2026-04-30 01:12:04.337778[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:04.337795[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:12:04.337803[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:04.337810[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:04.337819[INFO] tams_proc: [1407] app Init number pending sessions = 1 max=5
+2026-04-30 01:12:04.337826[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:12:04.378798[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:04.392939[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:04.395145[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:04.395302[INFO] tams_proc: [1407] trans id: 0x2a
+2026-04-30 01:12:04.395351[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:04.395392[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:04.395426[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:04.395469[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:04.395512[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:04.395555[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app Init: TAM_SUCCESS
+2026-04-30 01:12:04.395601[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:12:04.395654[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] 31 77 8A B6 BD A1 34 DC 61 61 42 F7 24 75 FA C6 9B 5C F3 23 41 B0 3A BF 8C E4 8E AC 9A 3E 27 1F 
+2026-04-30 01:12:04.395746[INFO] tams_proc: [1407] Application Init authentication succeeded!
+2026-04-30 01:12:04.395787[INFO] tams_proc: [1407] Binding of app Init to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:12:04.395830[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:04.498131[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:04.498168[INFO] tams_proc: [1407] session id: 0x6
+2026-04-30 01:12:04.498178[INFO] tams_proc: [1407] trans id: 0x2
+2026-04-30 01:12:04.498186[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:12:04.498193[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:04.498205[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:04.498252[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:04.498263[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:12:04.498269[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:12:04.498278[INFO] tams_proc: [1407] app Init number sessions = 2 max=50
+2026-04-30 01:12:04.498326[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:12:04.498338[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:04.513898[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:04.513926[INFO] tamd_proc: [1450] trans id: 0x2b
+2026-04-30 01:12:04.513935[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:12:04.513941[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:12:04.513949[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:04.673224[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:04.675987[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:04.676022[INFO] tams_proc: [1407] trans id: 0x2b
+2026-04-30 01:12:04.676033[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:04.676040[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:04.676046[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:04.676054[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:04.676062[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:04.676070[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app Init: TAM_SUCCESS
+2026-04-30 01:12:04.676079[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:12:04.676099[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] E7 BF 43 08 31 EE B7 B7 AB 84 28 A7 62 31 AE 5F 8A 1C 2F 9C 6B F4 59 59 9D 18 43 84 E6 62 EB 1F 
+2026-04-30 01:12:04.676123[INFO] tams_proc: [1407] Application Init authentication succeeded!
+2026-04-30 01:12:04.676130[INFO] tams_proc: [1407] Binding of app Init to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:12:04.676139[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:04.681419[INFO] tams_proc: [1407] cmd type: TAMC_CMD_DEVICE_CAP
+2026-04-30 01:12:04.681450[INFO] tams_proc: [1407] session id: 0x6
+2026-04-30 01:12:04.681458[INFO] tams_proc: [1407] trans id: 0x3
+2026-04-30 01:12:04.681465[INFO] tams_proc: [1407] payload len: 52
+2026-04-30 01:12:04.681472[INFO] tams_proc: [1407] Parsing TAMC_CMD_DEVICE_CAP Req
+2026-04-30 01:12:04.681480[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] E7 BF 43 08 31 EE B7 B7 AB 84 28 A7 62 31 AE 5F 8A 1C 2F 9C 6B F4 59 59 9D 18 43 84 E6 62 EB 1F 
+2026-04-30 01:12:04.681501[INFO] tams_proc: [1407] Device Capability: 0x901
+2026-04-30 01:12:04.681509[INFO] tams_proc: [1407] Parsing TAMC_CMD_DEVICE_CAP Req status: TAM_SUCCESS
+2026-04-30 01:12:04.681516[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:04.681523[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:04.681530[INFO] tams_proc: [1407] Processing TAMC_CMD_DEVICE_CAP Req for device XRD_TAMDB
+2026-04-30 01:12:04.681574[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_CAP new time: 24000 total time: 24000
+2026-04-30 01:12:04.681594[INFO] tams_proc: [1407] Processing TAMC_CMD_DEVICE_CAP Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:04.685200[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_CAP
+2026-04-30 01:12:04.685291[INFO] tamd_proc: [1450] trans id: 0x2c
+2026-04-30 01:12:04.685343[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:12:04.685389[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_CAP Req
+2026-04-30 01:12:04.685435[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_CAP Req status: TAM_SUCCESS
+2026-04-30 01:12:04.685482[INFO] tamd_proc: [1450] Sending device cap read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:04.685558[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_CAP Req status: TAM_SUCCESS
+2026-04-30 01:12:04.689110[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_CAP
+2026-04-30 01:12:04.689141[INFO] tams_proc: [1407] trans id: 0x2c
+2026-04-30 01:12:04.689151[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:04.689158[INFO] tams_proc: [1407] payload len: 36
+2026-04-30 01:12:04.689164[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_CAP Rsp
+2026-04-30 01:12:04.689174[INFO] tams_proc: [1407] device capability: 2305
+2026-04-30 01:12:04.689181[INFO] tams_proc: [1407] device capability support: 2
+2026-04-30 01:12:04.689187[INFO] tams_proc: [1407] device capability value: 0
+2026-04-30 01:12:04.689194[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_CAP Rsp status: TAM_SUCCESS
+2026-04-30 01:12:04.689200[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_CAP Rsp
+2026-04-30 01:12:04.689223[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_CAP Rsp status: TAM_SUCCESS
+2026-04-30 01:12:04.693304[INFO] cepki: [3520] TAM_NC: tam_nc_register_service_status_cb entry
+2026-04-30 01:12:04.696387[INFO] cepki: [3520] TAM_NC: connecting to 192.0.0.4 port 7004
+2026-04-30 01:12:04.700882[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:12:04.700913[INFO] tams_proc: [1407] session id: 0x6
+2026-04-30 01:12:04.700921[INFO] tams_proc: [1407] trans id: 0x4
+2026-04-30 01:12:04.700926[INFO] tams_proc: [1407] payload len: 76
+2026-04-30 01:12:04.700931[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:12:04.700938[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] E7 BF 43 08 31 EE B7 B7 AB 84 28 A7 62 31 AE 5F 8A 1C 2F 9C 6B F4 59 59 9D 18 43 84 E6 62 EB 1F 
+2026-04-30 01:12:04.700957[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:04.700970[INFO] tams_proc: [1407] Object name len : 15
+[INFO] tams_proc: [1407] 63 65 70 6B 69 5F 73 79 6D 6D 5F 6B 65 79 00 
+2026-04-30 01:12:04.700985[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:04.700991[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:04.700997[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:04.701002[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:12:04.701048[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 24000
+2026-04-30 01:12:04.701062[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:04.702162[INFO] tamsvcs_tamm: [1335] TAM_NS: Server:CAPI connect_cb, client 0x7fac88042a90 connection accepted total clients connected = 1
+2026-04-30 01:12:04.702187[INFO] tamsvcs_tamm: [1335] TAM_NS: server: got a connection from 192.0.0.4, port = 48420
+2026-04-30 01:12:04.702360[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:04.707493[INFO] tamd_proc: [1450] trans id: 0x2d
+2026-04-30 01:12:04.707512[INFO] tamd_proc: [1450] payload len: 61
+2026-04-30 01:12:04.707522[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:12:04.707532[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:04.707541[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:04.707767[INFO] cepki: [3520] TAM_NC: Remote IP:0xc0000004 Port:7004
+2026-04-30 01:12:04.715990[INFO] tamsvcs_tamm: [1335] TAM_NS: Request received from nodeid:0
+2026-04-30 01:12:04.716136[INFO] cepki: [3520] TAM_NC: Received responce
+2026-04-30 01:12:04.863697[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:04.863894[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:04.890924[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:04.890957[INFO] tams_proc: [1407] trans id: 0x2d
+2026-04-30 01:12:04.890967[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:12:04.890974[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:04.890981[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:04.890991[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:04.890998[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:04.891021[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:04.898741[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_CREATE
+2026-04-30 01:12:04.902437[INFO] tams_proc: [1407] session id: 0x6
+2026-04-30 01:12:04.902459[INFO] tams_proc: [1407] trans id: 0x5
+2026-04-30 01:12:04.902467[INFO] tams_proc: [1407] payload len: 145
+2026-04-30 01:12:04.902474[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req
+2026-04-30 01:12:04.902482[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] E7 BF 43 08 31 EE B7 B7 AB 84 28 A7 62 31 AE 5F 8A 1C 2F 9C 6B F4 59 59 9D 18 43 84 E6 62 EB 1F 
+2026-04-30 01:12:04.902504[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:04.902519[INFO] tams_proc: [1407] Object name len : 15
+[INFO] tams_proc: [1407] 63 65 70 6B 69 5F 73 79 6D 6D 5F 6B 65 79 00 
+2026-04-30 01:12:04.902534[INFO] tams_proc: [1407] Object type 1, len : 1
+2026-04-30 01:12:04.902539[INFO] tams_proc: [1407] Memory Flag 2, len : 1
+2026-04-30 01:12:04.902545[INFO] tams_proc: [1407] CSP flag 0, len : 1
+2026-04-30 01:12:04.902551[INFO] tams_proc: [1407] Encryption Flag 1, len : 1
+2026-04-30 01:12:04.902557[INFO] tams_proc: [1407] Import flag 1, len : 1
+2026-04-30 01:12:04.902563[INFO] tams_proc: [1407] Object size 32, len : 4
+2026-04-30 01:12:04.902569[INFO] tams_proc: [1407] Meta data 0x4, len : 4
+2026-04-30 01:12:04.902577[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:04.902585[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:04.902591[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:04.902597[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req for device XRD_TAMDB
+2026-04-30 01:12:04.902646[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_CREATE new time: 24000 total time: 24000
+2026-04-30 01:12:04.902663[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:04.910266[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:12:04.910362[INFO] tamd_proc: [1450] trans id: 0x2e
+2026-04-30 01:12:04.910410[INFO] tamd_proc: [1450] payload len: 130
+2026-04-30 01:12:04.910451[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req
+2026-04-30 01:12:04.910494[INFO] tamd_proc: [1450] object_type(len): 1 1
+2026-04-30 01:12:04.910536[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:04.910580[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:04.961215[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:12:04.961252[INFO] tams_proc: [1407] session id: 0x5
+2026-04-30 01:12:04.961262[INFO] tams_proc: [1407] trans id: 0x3
+2026-04-30 01:12:04.961269[INFO] tams_proc: [1407] payload len: 75
+2026-04-30 01:12:04.961275[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:12:04.961283[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 31 77 8A B6 BD A1 34 DC 61 61 42 F7 24 75 FA C6 9B 5C F3 23 41 B0 3A BF 8C E4 8E AC 9A 3E 27 1F 
+2026-04-30 01:12:04.961304[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:04.961320[INFO] tams_proc: [1407] Object name len : 14
+[INFO] tams_proc: [1407] 54 79 70 65 36 41 63 74 69 76 65 4D 4B 00 
+2026-04-30 01:12:04.961340[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:04.961349[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:04.961361[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:04.961369[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:12:04.961413[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 48000
+2026-04-30 01:12:04.961437[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:05.90778Z[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 0 - 32 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 971
+2026-04-30 01:12:05.95783Z[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 32 - 32 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 984
+2026-04-30 01:12:05.221237[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:05.222314[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.223630[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:12:05.223655[INFO] tams_proc: [1407] trans id: 0x2e
+2026-04-30 01:12:05.223666[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:05.223673[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:05.223680[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:12:05.223688[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.223696[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:12:05.223705[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:12:05.223727[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.223837[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:05.223889[INFO] tamd_proc: [1450] trans id: 0x2f
+2026-04-30 01:12:05.223931[INFO] tamd_proc: [1450] payload len: 60
+2026-04-30 01:12:05.223973[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:12:05.224017[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:05.224061[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:05.232246[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_WRITE
+2026-04-30 01:12:05.232280[INFO] tams_proc: [1407] session id: 0x6
+2026-04-30 01:12:05.232290[INFO] tams_proc: [1407] trans id: 0x6
+2026-04-30 01:12:05.232297[INFO] tams_proc: [1407] payload len: 116
+2026-04-30 01:12:05.232304[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req
+2026-04-30 01:12:05.232313[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] E7 BF 43 08 31 EE B7 B7 AB 84 28 A7 62 31 AE 5F 8A 1C 2F 9C 6B F4 59 59 9D 18 43 84 E6 62 EB 1F 
+2026-04-30 01:12:05.232337[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:05.232355[INFO] tams_proc: [1407] Object name len : 15
+[INFO] tams_proc: [1407] 63 65 70 6B 69 5F 73 79 6D 6D 5F 6B 65 79 00 
+2026-04-30 01:12:05.232374[INFO] tams_proc: [1407] Data len : 32
+[INFO] tams_proc: [1407] 74 F6 94 1E 9E CF B0 34 40 F3 09 CC 5D 64 B8 56 93 F3 A6 72 34 82 D5 F8 76 6A F8 DB FF B6 40 49 
+2026-04-30 01:12:05.232399[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.232408[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:05.232416[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:05.232424[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req for device XRD_TAMDB
+2026-04-30 01:12:05.232470[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_WRITE new time: 24000 total time: 48000
+2026-04-30 01:12:05.232490[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.296924[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:05.296966[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:05.300211[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:12:05.300246[INFO] tamd_proc: [1450] trans id: 0x30
+2026-04-30 01:12:05.300256[INFO] tamd_proc: [1450] payload len: 101
+2026-04-30 01:12:05.300262[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req
+2026-04-30 01:12:05.300270[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:05.300277[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.300398[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:05.300415[INFO] tams_proc: [1407] trans id: 0x2f
+2026-04-30 01:12:05.300423[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:12:05.300430[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:05.300437[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:05.300479[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.300488[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:05.300512[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.331680[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:12:05.331719[INFO] tams_proc: [1407] session id: 0x5
+2026-04-30 01:12:05.331731[INFO] tams_proc: [1407] trans id: 0x4
+2026-04-30 01:12:05.331738[INFO] tams_proc: [1407] payload len: 78
+2026-04-30 01:12:05.331744[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:12:05.331752[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 31 77 8A B6 BD A1 34 DC 61 61 42 F7 24 75 FA C6 9B 5C F3 23 41 B0 3A BF 8C E4 8E AC 9A 3E 27 1F 
+2026-04-30 01:12:05.331775[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:05.331790[INFO] tams_proc: [1407] Object name len : 17
+[INFO] tams_proc: [1407] 54 79 70 65 36 41 63 74 69 76 65 4B 65 79 54 53 00 
+2026-04-30 01:12:05.331808[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:05.331816[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:05.331824[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:05.331831[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:12:05.331874[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 48000
+2026-04-30 01:12:05.331894[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:05.426807[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:05.426919[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.428012[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:12:05.428039[INFO] tams_proc: [1407] trans id: 0x30
+2026-04-30 01:12:05.428049[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:05.428056[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:05.428062[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:12:05.428070[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.428077[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:12:05.428086[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:12:05.428109[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.429138[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:05.429160[INFO] tamd_proc: [1450] trans id: 0x31
+2026-04-30 01:12:05.429168[INFO] tamd_proc: [1450] payload len: 63
+2026-04-30 01:12:05.429174[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:12:05.429182[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:05.429189[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:05.433277[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_CREATE
+2026-04-30 01:12:05.433306[INFO] tams_proc: [1407] session id: 0x6
+2026-04-30 01:12:05.433317[INFO] tams_proc: [1407] trans id: 0x7
+2026-04-30 01:12:05.433324[INFO] tams_proc: [1407] payload len: 143
+2026-04-30 01:12:05.433331[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req
+2026-04-30 01:12:05.433340[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] E7 BF 43 08 31 EE B7 B7 AB 84 28 A7 62 31 AE 5F 8A 1C 2F 9C 6B F4 59 59 9D 18 43 84 E6 62 EB 1F 
+2026-04-30 01:12:05.433364[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:05.433380[INFO] tams_proc: [1407] Object name len : 13
+[INFO] tams_proc: [1407] 63 65 70 6B 69 5F 69 76 5F 6B 65 79 00 
+2026-04-30 01:12:05.433398[INFO] tams_proc: [1407] Object type 1, len : 1
+2026-04-30 01:12:05.433405[INFO] tams_proc: [1407] Memory Flag 2, len : 1
+2026-04-30 01:12:05.433411[INFO] tams_proc: [1407] CSP flag 0, len : 1
+2026-04-30 01:12:05.433417[INFO] tams_proc: [1407] Encryption Flag 1, len : 1
+2026-04-30 01:12:05.433424[INFO] tams_proc: [1407] Import flag 1, len : 1
+2026-04-30 01:12:05.433430[INFO] tams_proc: [1407] Object size 16, len : 4
+2026-04-30 01:12:05.433437[INFO] tams_proc: [1407] Meta data 0x4, len : 4
+2026-04-30 01:12:05.433444[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.433452[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:05.433458[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:05.433465[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req for device XRD_TAMDB
+2026-04-30 01:12:05.433503[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_CREATE new time: 24000 total time: 48000
+2026-04-30 01:12:05.433520[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.504579[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:05.504698[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:05.509773[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:05.509803[INFO] tams_proc: [1407] trans id: 0x31
+2026-04-30 01:12:05.509811[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:12:05.509818[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:05.509824[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:05.509832[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.509859[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:05.509883[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.510011[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:12:05.510058[INFO] tamd_proc: [1450] trans id: 0x32
+2026-04-30 01:12:05.510091[INFO] tamd_proc: [1450] payload len: 128
+2026-04-30 01:12:05.510122[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req
+2026-04-30 01:12:05.510155[INFO] tamd_proc: [1450] object_type(len): 1 1
+2026-04-30 01:12:05.510196[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:05.510231[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.512649[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_WRITE
+2026-04-30 01:12:05.512671[INFO] tams_proc: [1407] session id: 0x5
+2026-04-30 01:12:05.512679[INFO] tams_proc: [1407] trans id: 0x5
+2026-04-30 01:12:05.512685[INFO] tams_proc: [1407] payload len: 88
+2026-04-30 01:12:05.512802[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req
+2026-04-30 01:12:05.512810[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 31 77 8A B6 BD A1 34 DC 61 61 42 F7 24 75 FA C6 9B 5C F3 23 41 B0 3A BF 8C E4 8E AC 9A 3E 27 1F 
+2026-04-30 01:12:05.512831[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:05.512845[INFO] tams_proc: [1407] Object name len : 17
+[INFO] tams_proc: [1407] 54 79 70 65 36 41 63 74 69 76 65 4B 65 79 54 53 00 
+2026-04-30 01:12:05.512865[INFO] tams_proc: [1407] Data len : 2
+[INFO] tams_proc: [1407] 30 00 
+2026-04-30 01:12:05.512879[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.512886[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:05.512892[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:05.512898[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req for device XRD_TAMDB
+2026-04-30 01:12:05.512939[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_WRITE new time: 24000 total time: 48000
+2026-04-30 01:12:05.512954[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.676595[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 32 - 16 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 971
+2026-04-30 01:12:05.710494[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 48 - 16 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 984
+2026-04-30 01:12:05.872914[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:05.873051[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.876386[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:12:05.876416[INFO] tams_proc: [1407] trans id: 0x32
+2026-04-30 01:12:05.876427[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:05.876435[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:05.876441[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:12:05.876449[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.876456[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:12:05.876465[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:12:05.876487[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:05.876612[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:12:05.876664[INFO] tamd_proc: [1450] trans id: 0x33
+2026-04-30 01:12:05.876707[INFO] tamd_proc: [1450] payload len: 73
+2026-04-30 01:12:05.876748[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req
+2026-04-30 01:12:05.877419[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:05.877471[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.879056[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_WRITE
+2026-04-30 01:12:05.879082[INFO] tams_proc: [1407] session id: 0x6
+2026-04-30 01:12:05.879089[INFO] tams_proc: [1407] trans id: 0x8
+2026-04-30 01:12:05.879096[INFO] tams_proc: [1407] payload len: 98
+2026-04-30 01:12:05.879102[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req
+2026-04-30 01:12:05.879111[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] E7 BF 43 08 31 EE B7 B7 AB 84 28 A7 62 31 AE 5F 8A 1C 2F 9C 6B F4 59 59 9D 18 43 84 E6 62 EB 1F 
+2026-04-30 01:12:05.879133[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:05.879147[INFO] tams_proc: [1407] Object name len : 13
+[INFO] tams_proc: [1407] 63 65 70 6B 69 5F 69 76 5F 6B 65 79 00 
+2026-04-30 01:12:05.879163[INFO] tams_proc: [1407] Data len : 16
+[INFO] tams_proc: [1407] A1 47 B3 AC F2 58 48 25 FA 6B AE 70 64 1B 81 81 
+2026-04-30 01:12:05.879181[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:05.879188[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:05.879195[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:05.879202[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req for device XRD_TAMDB
+2026-04-30 01:12:05.879242[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_WRITE new time: 24000 total time: 48000
+2026-04-30 01:12:05.879257[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.2959Z[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:06.3088Z[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.16308Z[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:12:06.16337Z[INFO] tams_proc: [1407] trans id: 0x33
+2026-04-30 01:12:06.16346Z[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:12:06.16352Z[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:06.16358Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:12:06.16367Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.16373Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:12:06.16396Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.16515Z[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:12:06.16569Z[INFO] tamd_proc: [1450] trans id: 0x34
+2026-04-30 01:12:06.16614Z[INFO] tamd_proc: [1450] payload len: 83
+2026-04-30 01:12:06.16657Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req
+2026-04-30 01:12:06.16703Z[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:06.16746Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.41157Z[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_CREATE
+2026-04-30 01:12:06.41192Z[INFO] tams_proc: [1407] session id: 0x5
+2026-04-30 01:12:06.41201Z[INFO] tams_proc: [1407] trans id: 0x6
+2026-04-30 01:12:06.41208Z[INFO] tams_proc: [1407] payload len: 147
+2026-04-30 01:12:06.41215Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req
+2026-04-30 01:12:06.41223Z[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 31 77 8A B6 BD A1 34 DC 61 61 42 F7 24 75 FA C6 9B 5C F3 23 41 B0 3A BF 8C E4 8E AC 9A 3E 27 1F 
+2026-04-30 01:12:06.41245Z[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:06.41261Z[INFO] tams_proc: [1407] Object name len : 17
+[INFO] tams_proc: [1407] 54 79 70 65 36 41 63 74 69 76 65 4B 65 79 54 53 00 
+2026-04-30 01:12:06.41278Z[INFO] tams_proc: [1407] Object type 1, len : 1
+2026-04-30 01:12:06.41285Z[INFO] tams_proc: [1407] Memory Flag 2, len : 1
+2026-04-30 01:12:06.41292Z[INFO] tams_proc: [1407] CSP flag 0, len : 1
+2026-04-30 01:12:06.41299Z[INFO] tams_proc: [1407] Encryption Flag 1, len : 1
+2026-04-30 01:12:06.41306Z[INFO] tams_proc: [1407] Import flag 1, len : 1
+2026-04-30 01:12:06.41312Z[INFO] tams_proc: [1407] Object size 255, len : 4
+2026-04-30 01:12:06.41317Z[INFO] tams_proc: [1407] Meta data 0x0, len : 4
+2026-04-30 01:12:06.41324Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.41331Z[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:06.41339Z[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:06.41346Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req for device XRD_TAMDB
+2026-04-30 01:12:06.41394Z[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_CREATE new time: 24000 total time: 48000
+2026-04-30 01:12:06.41413Z[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.181499[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:06.181633[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.182701[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:12:06.182727[INFO] tams_proc: [1407] trans id: 0x34
+2026-04-30 01:12:06.182737[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:06.182744[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:06.182750[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:12:06.182757[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.182763[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:12:06.182772[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:12:06.182795[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.182926[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:12:06.182983[INFO] tamd_proc: [1450] trans id: 0x35
+2026-04-30 01:12:06.183023[INFO] tamd_proc: [1450] payload len: 132
+2026-04-30 01:12:06.183061[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req
+2026-04-30 01:12:06.183102[INFO] tamd_proc: [1450] object_type(len): 1 1
+2026-04-30 01:12:06.183141[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:06.183180[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.272644[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 48 - 255 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 971
+2026-04-30 01:12:06.280239[INFO] tamd_proc: [1450] >>>> store size - object size - quota: 303 - 255 - 10485760 - crypto/tams/tamservices/device/swtam/src/swtam_object_attr.c - 984
+2026-04-30 01:12:06.356518[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:06.356660[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_CREATE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.357733[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_CREATE
+2026-04-30 01:12:06.357763[INFO] tams_proc: [1407] trans id: 0x35
+2026-04-30 01:12:06.357775[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:06.357783[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:06.357791[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:12:06.357800[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.357808[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp
+2026-04-30 01:12:06.357818[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:12:06.357844[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_CREATE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.365068[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_WRITE
+2026-04-30 01:12:06.365185[INFO] tams_proc: [1407] session id: 0x5
+2026-04-30 01:12:06.365195[INFO] tams_proc: [1407] trans id: 0x7
+2026-04-30 01:12:06.365202[INFO] tams_proc: [1407] payload len: 88
+2026-04-30 01:12:06.365209[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req
+2026-04-30 01:12:06.365217[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 31 77 8A B6 BD A1 34 DC 61 61 42 F7 24 75 FA C6 9B 5C F3 23 41 B0 3A BF 8C E4 8E AC 9A 3E 27 1F 
+2026-04-30 01:12:06.365241[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:06.365257[INFO] tams_proc: [1407] Object name len : 17
+[INFO] tams_proc: [1407] 54 79 70 65 36 41 63 74 69 76 65 4B 65 79 54 53 00 
+2026-04-30 01:12:06.365278[INFO] tams_proc: [1407] Data len : 2
+[INFO] tams_proc: [1407] 30 00 
+2026-04-30 01:12:06.365293[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.365300[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:06.365307[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:06.365314[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req for device XRD_TAMDB
+2026-04-30 01:12:06.365366[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_WRITE new time: 24000 total time: 24000
+2026-04-30 01:12:06.365385[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.366664[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:12:06.366739[INFO] tamd_proc: [1450] trans id: 0x36
+2026-04-30 01:12:06.366785[INFO] tamd_proc: [1450] payload len: 73
+2026-04-30 01:12:06.366828[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req
+2026-04-30 01:12:06.366875[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:06.366917[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.479567[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:06.479609[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_WRITE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.480744[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_WRITE
+2026-04-30 01:12:06.480768[INFO] tams_proc: [1407] trans id: 0x36
+2026-04-30 01:12:06.480777[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:06.480783[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:06.480789[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:12:06.480796[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.480802[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp
+2026-04-30 01:12:06.480811[INFO] tams_proc: [1407] appname:Init sync_staus_enable:0 notify_enable:0
+2026-04-30 01:12:06.480829[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_WRITE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.494711[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:12:06.494742[INFO] tams_proc: [1407] session id: 0x5
+2026-04-30 01:12:06.494753[INFO] tams_proc: [1407] trans id: 0x8
+2026-04-30 01:12:06.494759[INFO] tams_proc: [1407] payload len: 78
+2026-04-30 01:12:06.494766[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:12:06.494774[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 31 77 8A B6 BD A1 34 DC 61 61 42 F7 24 75 FA C6 9B 5C F3 23 41 B0 3A BF 8C E4 8E AC 9A 3E 27 1F 
+2026-04-30 01:12:06.494797[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:06.494814[INFO] tams_proc: [1407] Object name len : 17
+[INFO] tams_proc: [1407] 54 79 70 65 36 41 63 74 69 76 65 4B 65 79 54 53 00 
+2026-04-30 01:12:06.494836[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:06.494845[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:06.494853[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:06.494861[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:12:06.494931[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 24000
+2026-04-30 01:12:06.494951[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:06.497660[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:06.497688[INFO] tamd_proc: [1450] trans id: 0x37
+2026-04-30 01:12:06.497695[INFO] tamd_proc: [1450] payload len: 63
+2026-04-30 01:12:06.497701[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:12:06.497709[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:06.497715[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:06.596545[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeeff0
+2026-04-30 01:12:06.617252[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:06.618315[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:06.618340[INFO] tams_proc: [1407] trans id: 0x37
+2026-04-30 01:12:06.618348[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:06.618355[INFO] tams_proc: [1407] payload len: 10
+2026-04-30 01:12:06.618361[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:06.618369[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.618379[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:06.618399[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.797584[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_DELETE
+2026-04-30 01:12:06.797616[INFO] tams_proc: [1407] session id: 0x5
+2026-04-30 01:12:06.797624[INFO] tams_proc: [1407] trans id: 0x9
+2026-04-30 01:12:06.797629[INFO] tams_proc: [1407] payload len: 81
+2026-04-30 01:12:06.797634[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req
+2026-04-30 01:12:06.797641[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 31 77 8A B6 BD A1 34 DC 61 61 42 F7 24 75 FA C6 9B 5C F3 23 41 B0 3A BF 8C E4 8E AC 9A 3E 27 1F 
+2026-04-30 01:12:06.797658[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:06.797670[INFO] tams_proc: [1407] Object name len : 11
+[INFO] tams_proc: [1407] 54 79 70 65 36 4E 65 77 4D 4B 00 
+2026-04-30 01:12:06.797682[INFO] tams_proc: [1407] Object type 0, len : 1
+2026-04-30 01:12:06.797689[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.797695[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:06.797700[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:06.797706[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req for device XRD_TAMDB
+2026-04-30 01:12:06.797746[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_DELETE new time: 24000 total time: 24000
+2026-04-30 01:12:06.797760[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.802456[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:12:06.802545[INFO] tamd_proc: [1450] trans id: 0x39
+2026-04-30 01:12:06.802594[INFO] tamd_proc: [1450] payload len: 69
+2026-04-30 01:12:06.802638[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req
+2026-04-30 01:12:06.802683[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:06.802728[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.958480[INFO] tamd_proc: [1450] Sending so delete result back to TAMS on tam_ipc_handle=0x56152eaeef50
+2026-04-30 01:12:06.958524[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_DELETE Req status: TAM_SUCCESS
+2026-04-30 01:12:06.959632[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_DELETE
+2026-04-30 01:12:06.959660[INFO] tams_proc: [1407] trans id: 0x39
+2026-04-30 01:12:06.959671[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:12:06.959679[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:06.959686[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:12:06.959694[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:06.959702[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp
+2026-04-30 01:12:06.959724[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_DELETE Rsp status: TAM_SUCCESS
+2026-04-30 01:12:08.755064[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:08.755098[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:12:08.755109[INFO] tams_proc: [1407] trans id: 0x9
+2026-04-30 01:12:08.755117[INFO] tams_proc: [1407] payload len: 343
+2026-04-30 01:12:08.755124[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:08.755142[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:12:08.755151[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:08.755181[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:08.755194[INFO] tams_proc: [1407] app Init number pending sessions = 1 max=5
+2026-04-30 01:12:08.755202[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:12:08.763122[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:08.772895[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:08.772975[INFO] tams_proc: [1407] session id: 0x7
+2026-04-30 01:12:08.773012[INFO] tams_proc: [1407] trans id: 0xa
+2026-04-30 01:12:08.773041[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:12:08.773114[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:08.773155[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:08.773187[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:08.773220[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:12:08.773250[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:12:08.773280[INFO] tams_proc: [1407] app Init number sessions = 3 max=50
+2026-04-30 01:12:08.773345[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:12:08.773381[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:08.777249[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:08.777285[INFO] tamd_proc: [1450] trans id: 0x3a
+2026-04-30 01:12:08.777296[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:12:08.777303[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:12:08.777311[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:08.865036[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:08.866097[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:08.866122[INFO] tams_proc: [1407] trans id: 0x3a
+2026-04-30 01:12:08.866131[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:08.866137[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:08.866142[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:08.866148[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:08.866155[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:08.866163[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app Init: TAM_SUCCESS
+2026-04-30 01:12:08.866172[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:12:08.866189[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] 07 DA 76 D8 99 76 F1 06 EF 70 DC 36 1D D9 82 83 36 19 94 6E 48 ED 84 B6 CC 9D 9B BA 62 87 98 1E 
+2026-04-30 01:12:08.866209[INFO] tams_proc: [1407] Application Init authentication succeeded!
+2026-04-30 01:12:08.866215[INFO] tams_proc: [1407] Binding of app Init to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:12:08.866222[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:08.868591[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:12:08.868612[INFO] tams_proc: [1407] session id: 0x7
+2026-04-30 01:12:08.868621[INFO] tams_proc: [1407] trans id: 0xb
+2026-04-30 01:12:08.868628[INFO] tams_proc: [1407] payload len: 68
+2026-04-30 01:12:08.868634[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:12:08.868642[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 07 DA 76 D8 99 76 F1 06 EF 70 DC 36 1D D9 82 83 36 19 94 6E 48 ED 84 B6 CC 9D 9B BA 62 87 98 1E 
+2026-04-30 01:12:08.868661[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:08.868674[INFO] tams_proc: [1407] Object name len : 7
+[INFO] tams_proc: [1407] 58 52 2D 50 44 43 00 
+2026-04-30 01:12:08.868686[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:08.868693[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:08.868699[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:08.868705[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:12:08.868747[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 24000
+2026-04-30 01:12:08.868763[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:08.869959[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:08.869981[INFO] tamd_proc: [1450] trans id: 0x3b
+2026-04-30 01:12:08.869989[INFO] tamd_proc: [1450] payload len: 53
+2026-04-30 01:12:08.869995[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:12:08.870003[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:08.870010[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:08.917203[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeef50
+2026-04-30 01:12:08.917279[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:08.920839[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:08.920869[INFO] tams_proc: [1407] trans id: 0x3b
+2026-04-30 01:12:08.920879[INFO] tams_proc: [1407] status: TAM_ERROR_NO_OBJECT
+2026-04-30 01:12:08.920886[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:08.920893[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:08.920900[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:08.920907[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:08.920930[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:08.923979[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGOUT
+2026-04-30 01:12:08.924015[INFO] tams_proc: [1407] session id: 0x7
+2026-04-30 01:12:08.924027[INFO] tams_proc: [1407] trans id: 0xc
+2026-04-30 01:12:08.924036[INFO] tams_proc: [1407] payload len: 40
+2026-04-30 01:12:08.924045[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req
+2026-04-30 01:12:08.924055[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] 07 DA 76 D8 99 76 F1 06 EF 70 DC 36 1D D9 82 83 36 19 94 6E 48 ED 84 B6 CC 9D 9B BA 62 87 98 1E 
+2026-04-30 01:12:08.924085[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:12:08.924095[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:08.924104[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:08.924113[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req for device XRD_TAMDB
+2026-04-30 01:12:08.924124[INFO] tams_proc: [1407] Client Notify is not enabled.
+2026-04-30 01:12:08.924136[INFO] tams_proc: [1407] Deleting session 7 status TAM_SUCCESS
+2026-04-30 01:12:08.924144[INFO] tams_proc: [1407] Sending status response: TAM_SUCCESS (0x1)
+2026-04-30 01:12:08.924167[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGOUT Req status: TAM_SUCCESS
+2026-04-30 01:12:09.4060Z[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:09.4091Z[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:12:09.4102Z[INFO] tams_proc: [1407] trans id: 0xd
+2026-04-30 01:12:09.4110Z[INFO] tams_proc: [1407] payload len: 343
+2026-04-30 01:12:09.4117Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:09.4135Z[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:12:09.4145Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:09.4152Z[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:09.4161Z[INFO] tams_proc: [1407] app Init number pending sessions = 1 max=5
+2026-04-30 01:12:09.4168Z[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:12:09.11961Z[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:09.36216Z[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:09.37432Z[INFO] tams_proc: [1407] session id: 0x8
+2026-04-30 01:12:09.37480Z[INFO] tams_proc: [1407] trans id: 0xe
+2026-04-30 01:12:09.37512Z[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:12:09.37543Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:09.37578Z[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:09.37610Z[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:09.37641Z[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:12:09.37672Z[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:12:09.37703Z[INFO] tams_proc: [1407] app Init number sessions = 3 max=50
+2026-04-30 01:12:09.37773Z[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:12:09.37810Z[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:09.42461Z[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:09.42544Z[INFO] tamd_proc: [1450] trans id: 0x3c
+2026-04-30 01:12:09.42591Z[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:12:09.42635Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:12:09.42680Z[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:09.95509Z[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:09.97842Z[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:09.97873Z[INFO] tams_proc: [1407] trans id: 0x3c
+2026-04-30 01:12:09.97885Z[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:09.97893Z[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:09.97901Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:09.97910Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:09.97918Z[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:09.97927Z[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app Init: TAM_SUCCESS
+2026-04-30 01:12:09.97937Z[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:12:09.97957Z[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] B2 C6 CC AF F7 D3 F2 E0 13 D3 E5 8B 72 1B 93 AC 25 9E BD 39 B7 10 9B 22 94 F5 32 17 36 1C 5B EB 
+2026-04-30 01:12:09.97983Z[INFO] tams_proc: [1407] Application Init authentication succeeded!
+2026-04-30 01:12:09.97989Z[INFO] tams_proc: [1407] Binding of app Init to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:12:09.97997Z[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.219581[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:17.219606[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:12:17.219614[INFO] tams_proc: [1407] trans id: 0x1
+2026-04-30 01:12:17.219620[INFO] tams_proc: [1407] payload len: 343
+2026-04-30 01:12:17.219626[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:17.219642[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:12:17.219648[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.219654[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:17.219724[INFO] tams_proc: [1407] app Init number pending sessions = 1 max=5
+2026-04-30 01:12:17.219732[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:12:17.234668[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.248992[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:17.249094[INFO] tams_proc: [1407] session id: 0x9
+2026-04-30 01:12:17.249133[INFO] tams_proc: [1407] trans id: 0x2
+2026-04-30 01:12:17.249166[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:12:17.249197[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:17.249233[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.249276[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:17.249320[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:12:17.249362[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:12:17.249407[INFO] tams_proc: [1407] app Init number sessions = 4 max=50
+2026-04-30 01:12:17.249494[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:12:17.249538[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:17.252400[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:17.252427[INFO] tamd_proc: [1450] trans id: 0x3f
+2026-04-30 01:12:17.252437[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:12:17.252444[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:12:17.252454[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:17.316443[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:17.317535[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:17.317563[INFO] tams_proc: [1407] trans id: 0x3f
+2026-04-30 01:12:17.317571[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:17.317578[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:17.317584[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:17.317591[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.317597[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:17.317605[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app Init: TAM_SUCCESS
+2026-04-30 01:12:17.317614[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:12:17.317632[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] F2 34 5F 39 79 4D C5 6F E9 53 A0 B1 72 40 B8 58 27 FE A9 41 47 56 69 E6 0B 68 5D 97 AB B9 A4 F6 
+2026-04-30 01:12:17.317658[INFO] tams_proc: [1407] Application Init authentication succeeded!
+2026-04-30 01:12:17.317664[INFO] tams_proc: [1407] Binding of app Init to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:12:17.317672[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.321538[INFO] tams_proc: [1407] cmd type: TAMC_CMD_DEVICE_CAP
+2026-04-30 01:12:17.321577[INFO] tams_proc: [1407] session id: 0x9
+2026-04-30 01:12:17.321585[INFO] tams_proc: [1407] trans id: 0x3
+2026-04-30 01:12:17.321592[INFO] tams_proc: [1407] payload len: 52
+2026-04-30 01:12:17.321598[INFO] tams_proc: [1407] Parsing TAMC_CMD_DEVICE_CAP Req
+2026-04-30 01:12:17.321605[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] F2 34 5F 39 79 4D C5 6F E9 53 A0 B1 72 40 B8 58 27 FE A9 41 47 56 69 E6 0B 68 5D 97 AB B9 A4 F6 
+2026-04-30 01:12:17.321627[INFO] tams_proc: [1407] Device Capability: 0x901
+2026-04-30 01:12:17.321634[INFO] tams_proc: [1407] Parsing TAMC_CMD_DEVICE_CAP Req status: TAM_SUCCESS
+2026-04-30 01:12:17.321641[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:17.321648[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:17.321654[INFO] tams_proc: [1407] Processing TAMC_CMD_DEVICE_CAP Req for device XRD_TAMDB
+2026-04-30 01:12:17.321697[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_CAP new time: 24000 total time: 24000
+2026-04-30 01:12:17.321714[INFO] tams_proc: [1407] Processing TAMC_CMD_DEVICE_CAP Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:17.323056[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_CAP
+2026-04-30 01:12:17.323122[INFO] tamd_proc: [1450] trans id: 0x40
+2026-04-30 01:12:17.323157[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:12:17.323191[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_CAP Req
+2026-04-30 01:12:17.323225[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_CAP Req status: TAM_SUCCESS
+2026-04-30 01:12:17.323259[INFO] tamd_proc: [1450] Sending device cap read result back to TAMS on tam_ipc_handle=0x56152eaeef50
+2026-04-30 01:12:17.323317[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_CAP Req status: TAM_SUCCESS
+2026-04-30 01:12:17.324391[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_CAP
+2026-04-30 01:12:17.324412[INFO] tams_proc: [1407] trans id: 0x40
+2026-04-30 01:12:17.324420[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:17.324426[INFO] tams_proc: [1407] payload len: 36
+2026-04-30 01:12:17.324433[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_CAP Rsp
+2026-04-30 01:12:17.324440[INFO] tams_proc: [1407] device capability: 2305
+2026-04-30 01:12:17.324446[INFO] tams_proc: [1407] device capability support: 2
+2026-04-30 01:12:17.324453[INFO] tams_proc: [1407] device capability value: 0
+2026-04-30 01:12:17.324459[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_CAP Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.324467[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_CAP Rsp
+2026-04-30 01:12:17.324485[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_CAP Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.325653[INFO] emsd: [4937] TAM_NC: tam_nc_register_service_status_cb entry
+2026-04-30 01:12:17.326694[INFO] emsd: [4937] TAM_NC: connecting to 192.0.0.4 port 7004
+2026-04-30 01:12:17.327683[INFO] tamsvcs_tamm: [1335] TAM_NS: Server:CAPI connect_cb, client 0x7fac88049070 connection accepted total clients connected = 2
+2026-04-30 01:12:17.327705[INFO] tamsvcs_tamm: [1335] TAM_NS: server: got a connection from 192.0.0.4, port = 39300
+2026-04-30 01:12:17.327790[INFO] emsd: [4937] TAM_NC: Remote IP:0xc0000004 Port:7004
+2026-04-30 01:12:17.328121[INFO] tamsvcs_tamm: [1335] TAM_NS: Request received from nodeid:0
+2026-04-30 01:12:17.328231[INFO] emsd: [4937] TAM_NC: Received responce
+2026-04-30 01:12:17.329585[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:12:17.329608[INFO] tams_proc: [1407] session id: 0x9
+2026-04-30 01:12:17.329617[INFO] tams_proc: [1407] trans id: 0x4
+2026-04-30 01:12:17.329624[INFO] tams_proc: [1407] payload len: 76
+2026-04-30 01:12:17.329631[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:12:17.329645[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] F2 34 5F 39 79 4D C5 6F E9 53 A0 B1 72 40 B8 58 27 FE A9 41 47 56 69 E6 0B 68 5D 97 AB B9 A4 F6 
+2026-04-30 01:12:17.329667[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:17.329681[INFO] tams_proc: [1407] Object name len : 15
+[INFO] tams_proc: [1407] 63 65 70 6B 69 5F 73 79 6D 6D 5F 6B 65 79 00 
+2026-04-30 01:12:17.329698[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:17.329725[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:17.329735[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:17.329742[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:12:17.329792[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 24000
+2026-04-30 01:12:17.329813[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:17.332332[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:17.332412[INFO] tamd_proc: [1450] trans id: 0x41
+2026-04-30 01:12:17.332459[INFO] tamd_proc: [1450] payload len: 61
+2026-04-30 01:12:17.332501[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:12:17.332547[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:17.332589[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:17.429569[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeef50
+2026-04-30 01:12:17.433173[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:17.434543[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:17.434570[INFO] tams_proc: [1407] trans id: 0x41
+2026-04-30 01:12:17.434578[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:17.434584[INFO] tams_proc: [1407] payload len: 40
+2026-04-30 01:12:17.434590[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:17.434597[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.434602[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:17.434624[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.440141[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_READ
+2026-04-30 01:12:17.440171[INFO] tams_proc: [1407] session id: 0x9
+2026-04-30 01:12:17.440178[INFO] tams_proc: [1407] trans id: 0x5
+2026-04-30 01:12:17.440184[INFO] tams_proc: [1407] payload len: 74
+2026-04-30 01:12:17.440189[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req
+2026-04-30 01:12:17.440195[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] F2 34 5F 39 79 4D C5 6F E9 53 A0 B1 72 40 B8 58 27 FE A9 41 47 56 69 E6 0B 68 5D 97 AB B9 A4 F6 
+2026-04-30 01:12:17.440213[INFO] tams_proc: [1407] Object owner len : 5
+[INFO] tams_proc: [1407] 49 6E 69 74 00 
+2026-04-30 01:12:17.440225[INFO] tams_proc: [1407] Object name len : 13
+[INFO] tams_proc: [1407] 63 65 70 6B 69 5F 69 76 5F 6B 65 79 00 
+2026-04-30 01:12:17.440239[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:17.440245[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:17.440251[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:17.440256[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req for device XRD_TAMDB
+2026-04-30 01:12:17.440301[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_READ new time: 24000 total time: 24000
+2026-04-30 01:12:17.440319[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:17.441944[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:17.442008[INFO] tamd_proc: [1450] trans id: 0x42
+2026-04-30 01:12:17.442041[INFO] tamd_proc: [1450] payload len: 59
+2026-04-30 01:12:17.442071[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req
+2026-04-30 01:12:17.442102[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:17.442133[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:17.484180[INFO] tamd_proc: [1450] Sending so read result back to TAMS on tam_ipc_handle=0x56152eaeef50
+2026-04-30 01:12:17.486882[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_READ Req status: TAM_SUCCESS
+2026-04-30 01:12:17.489111[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_READ
+2026-04-30 01:12:17.489139[INFO] tams_proc: [1407] trans id: 0x42
+2026-04-30 01:12:17.489148[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:17.489155[INFO] tams_proc: [1407] payload len: 24
+2026-04-30 01:12:17.489162[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:17.489171[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.489179[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp
+2026-04-30 01:12:17.489201[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_READ Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.717950[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:17.717984[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:12:17.717995[INFO] tams_proc: [1407] trans id: 0x6
+2026-04-30 01:12:17.718003[INFO] tams_proc: [1407] payload len: 347
+2026-04-30 01:12:17.718010[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:17.718028[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:12:17.718039[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.718047[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:17.718056[INFO] tams_proc: [1407] app kev_app1 number pending sessions = 1 max=5
+2026-04-30 01:12:17.718064[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:12:17.749060[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.760945[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:17.760976[INFO] tams_proc: [1407] session id: 0xa
+2026-04-30 01:12:17.760985[INFO] tams_proc: [1407] trans id: 0x7
+2026-04-30 01:12:17.760992[INFO] tams_proc: [1407] payload len: 87
+2026-04-30 01:12:17.760999[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:17.761009[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.761016[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:17.761025[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:12:17.761031[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:12:17.761039[INFO] tams_proc: [1407] app kev_app1 number sessions = 1 max=50
+2026-04-30 01:12:17.761173[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:12:17.761186[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:17.767499[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:17.767534[INFO] tamd_proc: [1450] trans id: 0x43
+2026-04-30 01:12:17.767544[INFO] tamd_proc: [1450] payload len: 16
+2026-04-30 01:12:17.767551[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:12:17.767560[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:17.826755[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:17.828933[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:17.829023[INFO] tams_proc: [1407] trans id: 0x43
+2026-04-30 01:12:17.829066[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:17.829147[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:17.829184[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:17.829223[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.829259[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:17.829295[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app kev_app1: TAM_SUCCESS
+2026-04-30 01:12:17.829332[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:12:17.829380[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] FD A2 3D 8C 5D 35 F2 E3 2F 57 EE 3C F5 F5 BF EC 26 33 0A 08 E1 AB 3A 7C 29 30 E7 24 91 6D 3D A4 
+2026-04-30 01:12:17.829462[INFO] tams_proc: [1407] Application kev_app1 authentication succeeded!
+2026-04-30 01:12:17.829497[INFO] tams_proc: [1407] Binding of app kev_app1 to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:12:17.829534[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.833701[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:17.833792[INFO] tams_proc: [1407] session id: 0x0
+2026-04-30 01:12:17.833840[INFO] tams_proc: [1407] trans id: 0x8
+2026-04-30 01:12:17.833882[INFO] tams_proc: [1407] payload len: 343
+2026-04-30 01:12:17.833923[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:17.833976[INFO] tams_proc: [1407] credential_type: 2
+2026-04-30 01:12:17.834019[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.834060[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:17.834102[INFO] tams_proc: [1407] app Init number pending sessions = 1 max=5
+2026-04-30 01:12:17.834142[INFO] tams_proc: [1407] Received SRP message 1
+2026-04-30 01:12:17.841621[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.854826[INFO] tams_proc: [1407] cmd type: TAMC_CMD_APP_LOGIN
+2026-04-30 01:12:17.854917[INFO] tams_proc: [1407] session id: 0xb
+2026-04-30 01:12:17.854962[INFO] tams_proc: [1407] trans id: 0x9
+2026-04-30 01:12:17.855006[INFO] tams_proc: [1407] payload len: 83
+2026-04-30 01:12:17.855049[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req
+2026-04-30 01:12:17.855097[INFO] tams_proc: [1407] Parsing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS
+2026-04-30 01:12:17.855139[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req for device XRD_TAMDB
+2026-04-30 01:12:17.855179[INFO] tams_proc: [1407] Session in process
+2026-04-30 01:12:17.855226[INFO] tams_proc: [1407] Received SRP message 3
+2026-04-30 01:12:17.855268[INFO] tams_proc: [1407] app Init number sessions = 5 max=50
+2026-04-30 01:12:17.855351[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_DEVICE_BIND new time: 24000 total time: 24000
+2026-04-30 01:12:17.855393[INFO] tams_proc: [1407] Processing TAMC_CMD_APP_LOGIN Req status: TAM_SUCCESS_IN_PROCESS
+2026-04-30 01:12:17.856512[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:17.856579[INFO] tamd_proc: [1450] trans id: 0x44
+2026-04-30 01:12:17.856617[INFO] tamd_proc: [1450] payload len: 12
+2026-04-30 01:12:17.856654[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req
+2026-04-30 01:12:17.856690[INFO] tamd_proc: [1450] Parsing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:17.901086[INFO] tamd_proc: [1450] Processing TAMD_CMD_DEVICE_BIND Req status: TAM_SUCCESS
+2026-04-30 01:12:17.905105[INFO] tams_proc: [1407] cmd type: TAMD_CMD_DEVICE_BIND
+2026-04-30 01:12:17.905139[INFO] tams_proc: [1407] trans id: 0x44
+2026-04-30 01:12:17.905149[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:17.905157[INFO] tams_proc: [1407] payload len: 0
+2026-04-30 01:12:17.905163[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:17.905171[INFO] tams_proc: [1407] Parsing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.905178[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp
+2026-04-30 01:12:17.905188[INFO] tams_proc: [1407] Device XRD_TAMDB binding of app Init: TAM_SUCCESS
+2026-04-30 01:12:17.905197[INFO] tams_proc: [1407] Sending SRP message 4 (80 bytes)
+2026-04-30 01:12:17.905219[INFO] tams_proc: [1407] SRP session key (32 bytes):
+[INFO] tams_proc: [1407] CC A0 AB 37 51 0B 1F E1 E6 CE A0 9A 68 BC 63 ED 82 7A A4 2C CC C9 78 34 26 61 B7 60 A8 26 28 97 
+2026-04-30 01:12:17.905242[INFO] tams_proc: [1407] Application Init authentication succeeded!
+2026-04-30 01:12:17.905249[INFO] tams_proc: [1407] Binding of app Init to device XRD_TAMDB: TAM_SUCCESS
+2026-04-30 01:12:17.905257[INFO] tams_proc: [1407] Processing TAMD_CMD_DEVICE_BIND Rsp status: TAM_SUCCESS
+2026-04-30 01:12:17.992989[INFO] tams_proc: [1407] cmd type: TAMC_CMD_SO_LIST
+2026-04-30 01:12:17.993019[INFO] tams_proc: [1407] session id: 0xb
+2026-04-30 01:12:17.993028[INFO] tams_proc: [1407] trans id: 0xa
+2026-04-30 01:12:17.993035[INFO] tams_proc: [1407] payload len: 40
+2026-04-30 01:12:17.993041[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_LIST Req
+2026-04-30 01:12:17.993049[INFO] tams_proc: [1407] Session key len: 32
+[INFO] tams_proc: [1407] CC A0 AB 37 51 0B 1F E1 E6 CE A0 9A 68 BC 63 ED 82 7A A4 2C CC C9 78 34 26 61 B7 60 A8 26 28 97 
+2026-04-30 01:12:17.993080[INFO] tams_proc: [1407] Parsing TAMC_CMD_SO_LIST Req status: TAM_SUCCESS
+2026-04-30 01:12:17.993088[INFO] tams_proc: [1407] verifying TAMC session...
+2026-04-30 01:12:17.993095[INFO] tams_proc: [1407] verify success!
+2026-04-30 01:12:17.993102[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_LIST Req for device XRD_TAMDB
+2026-04-30 01:12:17.993143[INFO] tams_proc: [1407] dev: XRD_TAMDB cmd: TAMD_CMD_GET_SO_GET_LIST new time: 24000 total time: 24000
+2026-04-30 01:12:17.993159[INFO] tams_proc: [1407] Processing TAMC_CMD_SO_LIST Req status: TAM_SUCCESS
+2026-04-30 01:12:17.994365[INFO] tamd_proc: [1450] cmd type: TAMD_CMD_GET_SO_GET_LIST
+2026-04-30 01:12:17.994387[INFO] tamd_proc: [1450] trans id: 0x45
+2026-04-30 01:12:17.994396[INFO] tamd_proc: [1450] payload len: 25
+2026-04-30 01:12:17.994407[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_GET_LIST Req
+2026-04-30 01:12:17.994418[INFO] tamd_proc: [1450] credential_type : 2
+2026-04-30 01:12:17.994426[INFO] tamd_proc: [1450] Parsing TAMD_CMD_GET_SO_GET_LIST Req status: TAM_SUCCESS
+2026-04-30 01:12:18.19208Z[INFO] tamd_proc: [1450] object name:cepki_symm_key object_owner:Init
+object size:32 object length:32 object type:1
+meta data:0x4
+2026-04-30 01:12:18.19299Z[INFO] tamd_proc: [1450] object name:cepki_iv_key object_owner:Init
+object size:16 object length:16 object type:1
+meta data:0x4
+2026-04-30 01:12:18.19343Z[INFO] tamd_proc: [1450] object name:Type6ActiveKeyTS object_owner:Init
+object size:255 object length:2 object type:1
+meta data:0x0
+2026-04-30 01:12:18.19382Z[INFO] tamd_proc: [1450] Sending so list result back to TAMS on tam_ipc_handle=0x56152eaeef50
+2026-04-30 01:12:18.19469Z[INFO] tamd_proc: [1450] Processing TAMD_CMD_GET_SO_GET_LIST Req status: TAM_SUCCESS
+2026-04-30 01:12:18.20535Z[INFO] tams_proc: [1407] cmd type: TAMD_CMD_GET_SO_GET_LIST
+2026-04-30 01:12:18.20557Z[INFO] tams_proc: [1407] trans id: 0x45
+2026-04-30 01:12:18.20566Z[INFO] tams_proc: [1407] status: TAM_SUCCESS
+2026-04-30 01:12:18.20573Z[INFO] tams_proc: [1407] payload len: 478
+2026-04-30 01:12:18.20579Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_GET_LIST Rsp
+2026-04-30 01:12:18.20587Z[INFO] tams_proc: [1407] List size 2
+2026-04-30 01:12:18.20593Z[INFO] tams_proc: [1407] record len 144, len 4
+2026-04-30 01:12:18.20606Z[INFO] tams_proc: [1407] record len 142, len 4
+2026-04-30 01:12:18.20616Z[INFO] tams_proc: [1407] record len 146, len 4
+2026-04-30 01:12:18.20625Z[INFO] tams_proc: [1407] Parsing TAMD_CMD_GET_SO_GET_LIST Rsp status: TAM_SUCCESS
+2026-04-30 01:12:18.20632Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_GET_LIST Rsp
+2026-04-30 01:12:18.20654Z[INFO] tams_proc: [1407] Processing TAMD_CMD_GET_SO_GET_LIST Rsp status: TAM_SUCCESS

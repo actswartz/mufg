@@ -1,0 +1,2 @@
+2026/04/30 01:12:16 Certificate Manager: Atrest init status: Success
+2026/04/30 01:12:17 LoadFromFile: %s: encountered error %s /mnt/rdsfs/ems/gnsi/spiffe_user_map.json stat /mnt/rdsfs/ems/gnsi/spiffe_user_map.json: no such file or directory

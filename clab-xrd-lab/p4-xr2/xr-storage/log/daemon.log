@@ -398,3 +398,9 @@
 2026-04-30T01:12:23.664430+00:00 p4-xr2 systemd[1]: Stopped CiscoSSH sshd service.
 2026-04-30T01:12:23.666265+00:00 p4-xr2 systemd[1]: Started CiscoSSH sshd service.
 2026-04-30T01:12:23.666265+00:00 p4-xr2 systemd[1]: Started CiscoSSH sshd service.
+2026-04-30T01:17:28.013660+00:00 p4-xr2 systemd[1]: Starting Rotate log files...
+2026-04-30T01:17:28.013660+00:00 p4-xr2 systemd[1]: Starting Rotate log files...
+2026-04-30T01:17:28.040170+00:00 p4-xr2 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:17:28.040170+00:00 p4-xr2 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:17:28.040501+00:00 p4-xr2 systemd[1]: Started Rotate log files.
+2026-04-30T01:17:28.040501+00:00 p4-xr2 systemd[1]: Started Rotate log files.

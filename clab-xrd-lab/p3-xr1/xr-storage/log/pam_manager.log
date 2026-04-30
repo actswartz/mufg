@@ -24,3 +24,11 @@ Action: start
            monitor_process       running
              monitor_crash       running
                 pam_plugin       running
+===Thu Apr 30 01:16:08 UTC 2026===
+Action: start
+==========================
+      monitor_show_logging       running
+           monitor_process       running
+             monitor_crash       running
+                pam_plugin       running
+               monitor_cpu       running

@@ -52,3 +52,34 @@
 2026-04-30 01:12:26.178300 SIALOG: Upgrade license field exist
 2026-04-30 01:12:26.178308 SIALOG: SL node deactivation field exists
 2026-04-30 01:12:26.178314 SIALOG: is_node_deactivated = 0
+2026-04-30 01:17:26.158547 FCM Variant is FCM 1.0 
+2026-04-30 01:17:26.159805 SIALOG: Entering plat_sl_update_validate_collection_time_in_ts
+2026-04-30 01:17:26.159824 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:17:26.159892 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:17:26.159910 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:17:26.159930 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 16
+2026-04-30 01:17:26.159947 SIALOG: No sia reason 
+2026-04-30 01:17:26.159954 SIALOG: Updating collection time
+2026-04-30 01:17:26.159962 SIALOG: Locked by thread 140544294450944
+2026-04-30 01:17:26.160015 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:17:26.160062 SIALOG: Wrote 16
+2026-04-30 01:17:26.160345 SIALOG: Entering plat_sl_unset_ooc_status_from_ts caller plat_sl_check_and_set_sia_ooc 2671
+2026-04-30 01:17:26.160361 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:17:26.160417 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:17:26.160425 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:17:26.160442 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 16
+2026-04-30 01:17:26.160457 SIALOG: Upgrade license field exist
+2026-04-30 01:17:26.160464 SIALOG: Entering plat_sl_print_sia_ooc_reason reason 6 sys 1
+2026-04-30 01:17:26.160471 SIALOG: Locked by thread 140544294450944
+2026-04-30 01:17:26.160522 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:17:26.160554 SIALOG: Wrote 16
+2026-04-30 01:17:26.160785 SIALOG: Entering plat_sl_get_ooc_status_from_ts
+2026-04-30 01:17:26.160846 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:17:26.160854 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:17:26.160903 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 01:17:26.160911 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 01:17:26.160928 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 16
+2026-04-30 01:17:26.160950 SIALOG: Reading mdata file /etc/sl/platinfo.data size 16 16
+2026-04-30 01:17:26.160967 SIALOG: Upgrade license field exist
+2026-04-30 01:17:26.160974 SIALOG: SL node deactivation field exists
+2026-04-30 01:17:26.160981 SIALOG: is_node_deactivated = 0

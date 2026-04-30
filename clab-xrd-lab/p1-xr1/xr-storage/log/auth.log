@@ -295,3 +295,162 @@
 2026-04-30T01:14:55.984418+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Got 100/11 for keepalive
 2026-04-30T01:15:56.192819+00:00 p1-xr1 sshd[5746]: debug1: Got 100/12 for keepalive
 2026-04-30T01:15:56.192978+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Got 100/12 for keepalive
+2026-04-30T01:16:56.402706+00:00 p1-xr1 sshd[5746]: debug1: Got 100/13 for keepalive
+2026-04-30T01:16:56.402888+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Got 100/13 for keepalive
+2026-04-30T01:17:56.614210+00:00 p1-xr1 sshd[5746]: debug1: Got 100/14 for keepalive
+2026-04-30T01:17:56.614367+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Got 100/14 for keepalive
+2026-04-30T01:18:15.643740+00:00 p1-xr1 sshd[5449]: debug1: Forked child 9707.
+2026-04-30T01:18:15.643872+00:00 p1-xr1 sshd[5449]: Sending to syslog proxy : Forked child 9707.
+2026-04-30T01:18:15.644040+00:00 p1-xr1 sshd[9707]: debug1: Set /proc/self/oom_score_adj to 0
+2026-04-30T01:18:15.644080+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Set /proc/self/oom_score_adj to 0
+2026-04-30T01:18:15.644109+00:00 p1-xr1 sshd[9707]: debug1: rexec start in 10 out 10 newsock 10 pipe 12 sock 13
+2026-04-30T01:18:15.644133+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : rexec start in 10 out 10 newsock 10 pipe 12 sock 13
+2026-04-30T01:18:15.669686+00:00 p1-xr1 sshd[9707]: (sshd): Socket created, sockfd = 6
+2026-04-30T01:18:15.669767+00:00 p1-xr1 sshd[9707]: (sshd): Successfully connected to server, sockfd = 6
+2026-04-30T01:18:15.678254+00:00 p1-xr1 sshd[9707]: debug1: inetd sockets after dupping: 4, 4
+2026-04-30T01:18:15.678301+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : inetd sockets after dupping: 4, 4
+2026-04-30T01:18:15.678331+00:00 p1-xr1 sshd[9707]: debug1: thread id 140361875515136 Pid 9707 session-id 3, Oper thread created
+2026-04-30T01:18:15.678358+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : thread id 140361875515136 Pid 9707 session-id 3, Oper thread created
+2026-04-30T01:18:15.678384+00:00 p1-xr1 sshd[9707]: debug1: Connection from 172.30.30.1 port 52182 on 172.30.30.11 port 22 rdomain ""
+2026-04-30T01:18:15.678409+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Connection from 172.30.30.1 port 52182 on 172.30.30.11 port 22 rdomain ""
+2026-04-30T01:18:15.678435+00:00 p1-xr1 sshd[9707]: debug1: Local version string SSH-2.0-OpenSSH_9.6 PKIX[14.4.2]
+2026-04-30T01:18:15.678480+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Local version string SSH-2.0-OpenSSH_9.6 PKIX[14.4.2]
+2026-04-30T01:18:15.678523+00:00 p1-xr1 sshd[9707]: debug1: Remote protocol version 2.0, remote software version OpenSSH_8.9p1 Ubuntu-3ubuntu0.14
+2026-04-30T01:18:15.678569+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Remote protocol version 2.0, remote software version OpenSSH_8.9p1 Ubuntu-3ubuntu0.14
+2026-04-30T01:18:15.678615+00:00 p1-xr1 sshd[9707]: debug1: match: OpenSSH_8.9p1 Ubuntu-3ubuntu0.14 pat OpenSSH* compat 0x04000000
+2026-04-30T01:18:15.678654+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : match: OpenSSH_8.9p1 Ubuntu-3ubuntu0.14 pat OpenSSH* compat 0x04000000
+2026-04-30T01:18:15.678689+00:00 p1-xr1 sshd[9707]: debug1: x.509 compatibility rfc6187_missing_key_identifier=yes: pattern 'OpenSSH*' match 'OpenSSH_8.9p1 Ubuntu-3ubuntu0.14'
+2026-04-30T01:18:15.678720+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : x.509 compatibility rfc6187_missing_key_identifier=yes: pattern 'OpenSSH*' match 'OpenSSH_8.9p1 Ubuntu-3ubuntu0.14'
+2026-04-30T01:18:15.678772+00:00 p1-xr1 sshd[9707]: debug1: x.509 compatibility rfc6187_asn1_opaque_ecdsa_signature=yes: pattern 'OpenSSH*' match 'OpenSSH_8.9p1 Ubuntu-3ubuntu0.14'
+2026-04-30T01:18:15.678802+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : x.509 compatibility rfc6187_asn1_opaque_ecdsa_signature=yes: pattern 'OpenSSH*' match 'OpenSSH_8.9p1 Ubuntu-3ubuntu0.14'
+2026-04-30T01:18:15.678831+00:00 p1-xr1 sshd[9707]: debug1: x.509 compatibility broken list with accepted publickey algorithms=no: pattern '*' match 'OpenSSH_8.9p1 Ubuntu-3ubuntu0.14'
+2026-04-30T01:18:15.678860+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : x.509 compatibility broken list with accepted publickey algorithms=no: pattern '*' match 'OpenSSH_8.9p1 Ubuntu-3ubuntu0.14'
+2026-04-30T01:18:15.678993+00:00 p1-xr1 sshd[9707]: debug1: thread id 140361875515136, Pid 9709 Oper thread created for unpriviledged child [preauth]
+2026-04-30T01:18:15.679023+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : thread id 140361875515136, Pid 9709 Oper thread created for unpriviledged child [preauth]
+2026-04-30T01:18:15.693208+00:00 p1-xr1 sshd[9707]: debug1: permanently_set_uid: 996/995 [preauth]
+2026-04-30T01:18:15.693289+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : permanently_set_uid: 996/995 [preauth]
+2026-04-30T01:18:15.693682+00:00 p1-xr1 sshd[9707]: debug1: list_hostkey_types: ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss [preauth]
+2026-04-30T01:18:15.693734+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : list_hostkey_types: ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss [preauth]
+2026-04-30T01:18:15.693782+00:00 p1-xr1 sshd[9707]: debug1: SSH2_MSG_KEXINIT sent [preauth]
+2026-04-30T01:18:15.693823+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : SSH2_MSG_KEXINIT sent [preauth]
+2026-04-30T01:18:15.693863+00:00 p1-xr1 sshd[9707]: debug1: SSH2_MSG_KEXINIT received [preauth]
+2026-04-30T01:18:15.693903+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : SSH2_MSG_KEXINIT received [preauth]
+2026-04-30T01:18:15.693945+00:00 p1-xr1 sshd[9707]: debug1: kex: algorithm: curve25519-sha256 [preauth]
+2026-04-30T01:18:15.693990+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : kex: algorithm: curve25519-sha256 [preauth]
+2026-04-30T01:18:15.694030+00:00 p1-xr1 sshd[9707]: debug1: kex: host key algorithm: ssh-ed25519 [preauth]
+2026-04-30T01:18:15.694068+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : kex: host key algorithm: ssh-ed25519 [preauth]
+2026-04-30T01:18:15.694106+00:00 p1-xr1 sshd[9707]: debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none [preauth]
+2026-04-30T01:18:15.694151+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none [preauth]
+2026-04-30T01:18:15.694195+00:00 p1-xr1 sshd[9707]: debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none [preauth]
+2026-04-30T01:18:15.694235+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none [preauth]
+2026-04-30T01:18:15.694280+00:00 p1-xr1 sshd[9707]: debug1: expecting SSH2_MSG_KEX_ECDH_INIT [preauth]
+2026-04-30T01:18:15.694318+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : expecting SSH2_MSG_KEX_ECDH_INIT [preauth]
+2026-04-30T01:18:15.696064+00:00 p1-xr1 sshd[9707]: debug1: SSH2_MSG_KEX_ECDH_INIT received [preauth]
+2026-04-30T01:18:15.696104+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : SSH2_MSG_KEX_ECDH_INIT received [preauth]
+2026-04-30T01:18:15.699665+00:00 p1-xr1 sshd[9707]: debug1: ssh_packet_send2_wrapped: resetting send seqnr 3 [preauth]
+2026-04-30T01:18:15.699703+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : ssh_packet_send2_wrapped: resetting send seqnr 3 [preauth]
+2026-04-30T01:18:15.699729+00:00 p1-xr1 sshd[9707]: debug1: rekey out after 134217728 blocks [preauth]
+2026-04-30T01:18:15.699759+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : rekey out after 134217728 blocks [preauth]
+2026-04-30T01:18:15.699786+00:00 p1-xr1 sshd[9707]: debug1: SSH2_MSG_NEWKEYS sent [preauth]
+2026-04-30T01:18:15.699814+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : SSH2_MSG_NEWKEYS sent [preauth]
+2026-04-30T01:18:15.699838+00:00 p1-xr1 sshd[9707]: debug1: expecting SSH2_MSG_NEWKEYS [preauth]
+2026-04-30T01:18:15.699858+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : expecting SSH2_MSG_NEWKEYS [preauth]
+2026-04-30T01:18:15.699894+00:00 p1-xr1 sshd[9707]: debug1: Sending SSH2_MSG_EXT_INFO [preauth]
+2026-04-30T01:18:15.699936+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Sending SSH2_MSG_EXT_INFO [preauth]
+2026-04-30T01:18:15.706524+00:00 p1-xr1 sshd[9707]: debug1: ssh_packet_read_poll2: resetting read seqnr 3 [preauth]
+2026-04-30T01:18:15.706624+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : ssh_packet_read_poll2: resetting read seqnr 3 [preauth]
+2026-04-30T01:18:15.706659+00:00 p1-xr1 sshd[9707]: debug1: SSH2_MSG_NEWKEYS received [preauth]
+2026-04-30T01:18:15.706684+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : SSH2_MSG_NEWKEYS received [preauth]
+2026-04-30T01:18:15.706711+00:00 p1-xr1 sshd[9707]: debug1: rekey in after 134217728 blocks [preauth]
+2026-04-30T01:18:15.706735+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : rekey in after 134217728 blocks [preauth]
+2026-04-30T01:18:15.706760+00:00 p1-xr1 sshd[9707]: debug1: setting hostkey name: ssh-ed25519 [preauth]
+2026-04-30T01:18:15.706783+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : setting hostkey name: ssh-ed25519 [preauth]
+2026-04-30T01:18:15.706804+00:00 p1-xr1 sshd[9707]: debug1: hostkeyname set in state ssh-ed25519 [preauth]
+2026-04-30T01:18:15.706830+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : hostkeyname set in state ssh-ed25519 [preauth]
+2026-04-30T01:18:15.706854+00:00 p1-xr1 sshd[9707]: debug1: setting kex name: curve25519-sha256 [preauth]
+2026-04-30T01:18:15.706877+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : setting kex name: curve25519-sha256 [preauth]
+2026-04-30T01:18:15.706901+00:00 p1-xr1 sshd[9707]: debug1: KEX done [preauth]
+2026-04-30T01:18:15.706927+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : KEX done [preauth]
+2026-04-30T01:18:15.750993+00:00 p1-xr1 sshd[9707]: debug1: userauth-request for user service ssh-connection method none [preauth]
+2026-04-30T01:18:15.751060+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : userauth-request for user service ssh-connection method none [preauth]
+2026-04-30T01:18:15.751104+00:00 p1-xr1 sshd[9707]: debug1: attempt 0 failures 0 [preauth]
+2026-04-30T01:18:15.751130+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : attempt 0 failures 0 [preauth]
+2026-04-30T01:18:15.751153+00:00 p1-xr1 sshd[9707]: debug1: Sent Key request for clab
+2026-04-30T01:18:15.751174+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Sent Key request for clab
+2026-04-30T01:18:15.751360+00:00 p1-xr1 sshd[9707]: debug1: PAM: initializing for user
+2026-04-30T01:18:15.751384+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : PAM: initializing for user
+2026-04-30T01:18:15.751724+00:00 p1-xr1 sshd[9707]: debug1: PAM: setting PAM_RHOST to "172.30.30.1"
+2026-04-30T01:18:15.751768+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : PAM: setting PAM_RHOST to "172.30.30.1"
+2026-04-30T01:18:15.751798+00:00 p1-xr1 sshd[9707]: reserve - src addr: 172.30.30.1 src port: 52182, dst addr: 172.30.30.11 dst port: 22 protocol: 6, family: 2, pty id: 3
+2026-04-30T01:18:15.751835+00:00 p1-xr1 sshd[9707]: Initialized client socket 14 with path /var/run/tty-channels/client9707
+2026-04-30T01:18:15.752003+00:00 p1-xr1 sshd[9707]: debug1: PAM: setting PAM_TTY to "vty1"
+2026-04-30T01:18:15.752035+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : PAM: setting PAM_TTY to "vty1"
+2026-04-30T01:18:15.752063+00:00 p1-xr1 sshd[9707]: debug1: PAM: setting PAM_TTY_NAME: /dev/pts/3
+2026-04-30T01:18:15.752088+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : PAM: setting PAM_TTY_NAME: /dev/pts/3
+2026-04-30T01:18:15.752151+00:00 p1-xr1 sshd[9707]: debug1: userauth-request for user service ssh-connection method keyboard-interactive [preauth]
+2026-04-30T01:18:15.752189+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : userauth-request for user service ssh-connection method keyboard-interactive [preauth]
+2026-04-30T01:18:15.752214+00:00 p1-xr1 sshd[9707]: debug1: attempt 1 failures 0 [preauth]
+2026-04-30T01:18:15.752245+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : attempt 1 failures 0 [preauth]
+2026-04-30T01:18:15.752270+00:00 p1-xr1 sshd[9707]: debug1: keyboard-interactive devs  [preauth]
+2026-04-30T01:18:15.752296+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : keyboard-interactive devs  [preauth]
+2026-04-30T01:18:15.752321+00:00 p1-xr1 sshd[9707]: debug1: auth2_challenge: user=clab devs= [preauth]
+2026-04-30T01:18:15.752342+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : auth2_challenge: user=clab devs= [preauth]
+2026-04-30T01:18:15.752365+00:00 p1-xr1 sshd[9707]: debug1: kbdint_alloc: devices 'pam' [preauth]
+2026-04-30T01:18:15.752390+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : kbdint_alloc: devices 'pam' [preauth]
+2026-04-30T01:18:15.752410+00:00 p1-xr1 sshd[9707]: debug1: auth2_challenge_start: trying authentication method 'pam' [preauth]
+2026-04-30T01:18:15.752438+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : auth2_challenge_start: trying authentication method 'pam' [preauth]
+2026-04-30T01:18:15.759936+00:00 p1-xr1 sshd[9707]: debug1: auth_log: username_echo  flag 0 [preauth]
+2026-04-30T01:18:15.759983+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : auth_log: username_echo  flag 0 [preauth]
+2026-04-30T01:18:15.760013+00:00 p1-xr1 sshd[9707]: debug1: Postponed authentication for clab from 172.30.30.1 port 52182 ssh2 [preauth]
+2026-04-30T01:18:15.760040+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Postponed authentication for clab from 172.30.30.1 port 52182 ssh2 [preauth]
+2026-04-30T01:18:15.763396+00:00 p1-xr1 sshd[9707]: Permission denied for <unknown> from 172.30.30.1
+2026-04-30T01:18:15.763453+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Permission denied for <unknown> from 172.30.30.1
+2026-04-30T01:18:15.763620+00:00 p1-xr1 sshd[9707]: debug1: auth_log: username_echo  flag 0
+2026-04-30T01:18:15.763683+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : auth_log: username_echo  flag 0
+2026-04-30T01:18:15.763737+00:00 p1-xr1 sshd[9707]: Failed authentication/pam for <unknown> from 172.30.30.1 port 52182 ssh2
+2026-04-30T01:18:15.763793+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Failed authentication/pam for <unknown> from 172.30.30.1 port 52182 ssh2
+2026-04-30T01:18:15.764429+00:00 p1-xr1 sshd[9707]: debug1: userauth-request for user service ssh-connection method keyboard-interactive [preauth]
+2026-04-30T01:18:15.764458+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : userauth-request for user service ssh-connection method keyboard-interactive [preauth]
+2026-04-30T01:18:15.764484+00:00 p1-xr1 sshd[9707]: debug1: attempt 2 failures 1 [preauth]
+2026-04-30T01:18:15.764509+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : attempt 2 failures 1 [preauth]
+2026-04-30T01:18:15.764533+00:00 p1-xr1 sshd[9707]: debug1: keyboard-interactive devs  [preauth]
+2026-04-30T01:18:15.764554+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : keyboard-interactive devs  [preauth]
+2026-04-30T01:18:15.764582+00:00 p1-xr1 sshd[9707]: debug1: auth2_challenge: user=clab devs= [preauth]
+2026-04-30T01:18:15.764606+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : auth2_challenge: user=clab devs= [preauth]
+2026-04-30T01:18:15.764631+00:00 p1-xr1 sshd[9707]: debug1: kbdint_alloc: devices 'pam' [preauth]
+2026-04-30T01:18:15.764655+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : kbdint_alloc: devices 'pam' [preauth]
+2026-04-30T01:18:15.764681+00:00 p1-xr1 sshd[9707]: debug1: auth2_challenge_start: trying authentication method 'pam' [preauth]
+2026-04-30T01:18:15.764708+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : auth2_challenge_start: trying authentication method 'pam' [preauth]
+2026-04-30T01:18:15.772240+00:00 p1-xr1 sshd[9707]: debug1: auth_log: username_echo  flag 0 [preauth]
+2026-04-30T01:18:15.772325+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : auth_log: username_echo  flag 0 [preauth]
+2026-04-30T01:18:15.772385+00:00 p1-xr1 sshd[9707]: debug1: Postponed authentication for clab from 172.30.30.1 port 52182 ssh2 [preauth]
+2026-04-30T01:18:15.772426+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Postponed authentication for clab from 172.30.30.1 port 52182 ssh2 [preauth]
+2026-04-30T01:18:15.772465+00:00 p1-xr1 sshd[9707]: Connection closed by  user clab 172.30.30.1 port 52182 [preauth]
+2026-04-30T01:18:15.772513+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Connection closed by  user clab 172.30.30.1 port 52182 [preauth]
+2026-04-30T01:18:15.772566+00:00 p1-xr1 sshd[9707]: debug1: do_cleanup [preauth]
+2026-04-30T01:18:15.772610+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : do_cleanup [preauth]
+2026-04-30T01:18:15.772648+00:00 p1-xr1 sshd[9707]: debug1: Initiaiting oper thread socket cleanup [preauth]
+2026-04-30T01:18:15.772690+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Initiaiting oper thread socket cleanup [preauth]
+2026-04-30T01:18:15.772732+00:00 p1-xr1 sshd[9707]: debug1: monitor_read_log: child log fd closed
+2026-04-30T01:18:15.772773+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : monitor_read_log: child log fd closed
+2026-04-30T01:18:15.772819+00:00 p1-xr1 sshd[9707]: debug1: do_cleanup
+2026-04-30T01:18:15.772867+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : do_cleanup
+2026-04-30T01:18:15.772910+00:00 p1-xr1 sshd[9707]: debug1: Initiaiting oper thread socket cleanup
+2026-04-30T01:18:15.772955+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Initiaiting oper thread socket cleanup
+2026-04-30T01:18:15.772997+00:00 p1-xr1 sshd[9707]: debug1: PAM: cleanup
+2026-04-30T01:18:15.773039+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : PAM: cleanup
+2026-04-30T01:18:15.773107+00:00 p1-xr1 sshd[9707]: debug1: PAM: Calling pam close with delete cred for NSS_DEL
+2026-04-30T01:18:15.773162+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : PAM: Calling pam close with delete cred for NSS_DEL
+2026-04-30T01:18:15.773207+00:00 p1-xr1 PAM-XRAAA[9707]: pamxr_account: error getting session id nss delete (acct)
+2026-04-30T01:18:15.773254+00:00 p1-xr1 sshd[9707]: debug1: PAM: Requesting mnemonic unreserve for first channel
+2026-04-30T01:18:15.773299+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : PAM: Requesting mnemonic unreserve for first channel
+2026-04-30T01:18:15.773343+00:00 p1-xr1 sshd[9707]: debug1: Calling unreserve for port: 1, mnemonic: vty1
+2026-04-30T01:18:15.773385+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Calling unreserve for port: 1, mnemonic: vty1
+2026-04-30T01:18:15.773437+00:00 p1-xr1 sshd[9707]: unreserve request received for port 1
+2026-04-30T01:18:15.773483+00:00 p1-xr1 sshd[9707]: Initialized client socket 7 with path /var/run/tty-channels/client9707
+2026-04-30T01:18:15.787704+00:00 p1-xr1 sshd[9707]: debug1: Unreserve failed, mnemonic: vty1, rc: a2581600
+2026-04-30T01:18:15.787813+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Unreserve failed, mnemonic: vty1, rc: a2581600
+2026-04-30T01:18:15.787864+00:00 p1-xr1 sshd[9707]: debug1: Killing privsep child 9709
+2026-04-30T01:18:15.787909+00:00 p1-xr1 sshd[9707]: Sending to syslog proxy : Killing privsep child 9709
+2026-04-30T01:18:56.823944+00:00 p1-xr1 sshd[5746]: debug1: Got 100/15 for keepalive
+2026-04-30T01:18:56.824108+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Got 100/15 for keepalive

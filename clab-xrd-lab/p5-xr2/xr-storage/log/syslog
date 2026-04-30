@@ -229,3 +229,8 @@
 2026-04-30T01:15:01.403618+00:00 p5-xr2 CROND[6568]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
 2026-04-30T01:15:01.403748+00:00 p5-xr2 CROND[6569]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
 2026-04-30T01:16:01.430436+00:00 p5-xr2 CROND[6644]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
+2026-04-30T01:17:28.012832+00:00 p5-xr2 systemd[1]: Starting Rotate log files...
+2026-04-30T01:17:28.041141+00:00 p5-xr2 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:17:28.041493+00:00 p5-xr2 systemd[1]: Started Rotate log files.
+2026-04-30T01:18:01.441960+00:00 p5-xr2 CROND[9326]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T01:18:45.321146+00:00 p5-xr2 kernel: [1483217.929438] hrtimer: interrupt took 25109 ns

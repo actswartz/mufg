@@ -1,1 +1,2 @@
 2026-04-30T01:11:32.997202+00:00 p5-xr2 kernel: [1482785.622807] device eth0 entered promiscuous mode
+2026-04-30T01:18:45.321146+00:00 p5-xr2 kernel: [1483217.929438] hrtimer: interrupt took 25109 ns

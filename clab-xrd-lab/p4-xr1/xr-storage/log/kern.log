@@ -11,3 +11,30 @@
 2026-04-30T18:36:25.317198+00:00 p4-xr1 kernel: [1545475.063456] device vethbd480c26 left promiscuous mode
 2026-04-30T18:42:41.037163+00:00 p4-xr1 kernel: [1545850.766284] cni0: port 10(veth9b269707) entered disabled state
 2026-04-30T18:42:41.049186+00:00 p4-xr1 kernel: [1545850.775658] device veth9b269707 left promiscuous mode
+2026-04-30T18:44:50.229212+00:00 p4-xr1 kernel: [1545979.950507] device veth55a445df entered promiscuous mode
+2026-04-30T18:47:04.689209+00:00 p4-xr1 kernel: [1546114.404155] device veth64ee9893 left promiscuous mode
+2026-04-30T18:49:36.881173+00:00 p4-xr1 kernel: [1546266.588546] device veth426021c2 left promiscuous mode
+2026-04-30T18:53:48.925196+00:00 p4-xr1 kernel: [1546518.623835] cni0: port 10(vethd943054a) entered blocking state
+2026-04-30T18:53:48.925211+00:00 p4-xr1 kernel: [1546518.623841] cni0: port 10(vethd943054a) entered disabled state
+2026-04-30T18:53:48.925221+00:00 p4-xr1 kernel: [1546518.623914] device vethd943054a entered promiscuous mode
+2026-04-30T18:53:48.929195+00:00 p4-xr1 kernel: [1546518.627885] cni0: port 10(vethd943054a) entered blocking state
+2026-04-30T18:54:06.417191+00:00 p4-xr1 kernel: [1546536.111900] device vethd943054a left promiscuous mode
+2026-04-30T19:10:27.409190+00:00 p4-xr1 kernel: [1547517.062109] device veth5e44686b entered promiscuous mode
+2026-04-30T19:10:27.413183+00:00 p4-xr1 kernel: [1547517.065941] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T19:10:27.413200+00:00 p4-xr1 kernel: [1547517.066080] cni0: port 10(veth5e44686b) entered forwarding state
+2026-04-30T19:11:24.253169+00:00 p4-xr1 kernel: [1547573.900233] cni0: port 10(veth758f1cee) entered disabled state
+2026-04-30T19:26:59.033179+00:00 p4-xr1 kernel: [1548508.638893] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T19:26:59.033196+00:00 p4-xr1 kernel: [1548508.638931] IPv6: ADDRCONF(NETDEV_CHANGE): veth3abe6382: link becomes ready
+2026-04-30T19:28:42.929212+00:00 p4-xr1 kernel: [1548612.530243] cni0: port 10(veth134ade9d) entered blocking state
+2026-04-30T19:28:42.933171+00:00 p4-xr1 kernel: [1548612.535118] IPv6: ADDRCONF(NETDEV_CHANGE): veth134ade9d: link becomes ready
+2026-04-30T19:29:19.445220+00:00 p4-xr1 kernel: [1548649.042704] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T19:29:19.445237+00:00 p4-xr1 kernel: [1548649.042834] cni0: port 10(vethafa43fbb) entered blocking state
+2026-04-30T19:29:19.445238+00:00 p4-xr1 kernel: [1548649.042837] cni0: port 10(vethafa43fbb) entered forwarding state
+2026-04-30T19:29:43.453214+00:00 p4-xr1 kernel: [1548673.050027] cni0: port 10(veth7f1da43b) entered blocking state
+2026-04-30T19:29:43.453229+00:00 p4-xr1 kernel: [1548673.050033] cni0: port 10(veth7f1da43b) entered disabled state
+2026-04-30T19:30:25.317177+00:00 p4-xr1 kernel: [1548714.914354] cni0: port 10(veth9a30c452) entered blocking state
+2026-04-30T19:30:43.353159+00:00 p4-xr1 kernel: [1548732.948037] cni0: port 10(veth9a30c452) entered disabled state
+2026-04-30T19:30:52.569220+00:00 p4-xr1 kernel: [1548742.163084] cni0: port 10(veth6f7db618) entered blocking state
+2026-04-30T19:31:02.205216+00:00 p4-xr1 kernel: [1548751.800373] cni0: port 11(veth9d95a9c7) entered disabled state
+2026-04-30T19:55:27.541191+00:00 p4-xr1 kernel: [1550217.069519] cni0: port 10(veth9e910869) entered blocking state
+2026-04-30T19:55:27.545528+00:00 p4-xr1 kernel: [1550217.073506] IPv6: ADDRCONF(NETDEV_CHANGE): veth9e910869: link becomes ready

@@ -1,6 +1,7 @@
 all:
   vars:
     ansible_user: admin
+    my_variable: "Student-Pod-4"
     ansible_password: 800-ePlus
     ansible_ssh_pass: 800-ePlus
     ansible_become_pass: 800-ePlus

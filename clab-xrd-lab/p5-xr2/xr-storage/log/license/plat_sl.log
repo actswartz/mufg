@@ -440,3 +440,24 @@
 2026-04-30 18:17:25.612551 SIALOG: Locked by thread 140686381225728
 2026-04-30 18:17:25.612585 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
 2026-04-30 18:17:25.612612 SIALOG: Wrote 16
+2026-04-30 19:17:25.611081 FCM Variant is FCM 1.0 
+2026-04-30 19:17:25.612088 SIALOG: Entering plat_sl_update_validate_collection_time_in_ts
+2026-04-30 19:17:25.612103 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 19:17:25.612153 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 19:17:25.612159 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 19:17:25.612172 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 16
+2026-04-30 19:17:25.612185 SIALOG: No sia reason 
+2026-04-30 19:17:25.612190 SIALOG: Updating collection time
+2026-04-30 19:17:25.612195 SIALOG: Locked by thread 140686381225728
+2026-04-30 19:17:25.612244 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 19:17:25.612295 SIALOG: Wrote 16
+2026-04-30 19:17:25.612365 SIALOG: Entering plat_sl_unset_ooc_status_from_ts caller plat_sl_check_and_set_sia_ooc 2671
+2026-04-30 19:17:25.612374 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 19:17:25.612412 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 19:17:25.612417 SIALOG: Entering plat_sl_read_sia_mdata
+2026-04-30 19:17:25.612429 SIALOG: Reading checkpoint file /etc/sl/platinfo.data size 16
+2026-04-30 19:17:25.612440 SIALOG: Upgrade license field exist
+2026-04-30 19:17:25.612444 SIALOG: Entering plat_sl_print_sia_ooc_reason reason 6 sys 1
+2026-04-30 19:17:25.612454 SIALOG: Locked by thread 140686381225728
+2026-04-30 19:17:25.612488 SIALOG: sia_ooc_mdata_path /etc/sl/platinfo.data
+2026-04-30 19:17:25.612513 SIALOG: Wrote 16

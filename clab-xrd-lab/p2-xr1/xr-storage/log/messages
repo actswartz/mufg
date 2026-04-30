@@ -82,3 +82,21 @@
 2026-04-30T18:33:07.065214+00:00 p2-xr1 kernel: [1545276.817284] device vetha1abc13d entered promiscuous mode
 2026-04-30T18:36:25.305189+00:00 p2-xr1 kernel: [1545475.050360] cni0: port 10(vethbd480c26) entered disabled state
 2026-04-30T18:38:27.949186+00:00 p2-xr1 kernel: [1545597.689079] IPv6: ADDRCONF(NETDEV_CHANGE): veth7924acec: link becomes ready
+2026-04-30T18:49:36.869174+00:00 p2-xr1 kernel: [1546266.577477] cni0: port 10(veth426021c2) entered disabled state
+2026-04-30T18:51:33.493355+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T18:54:06.417191+00:00 p2-xr1 kernel: [1546536.111907] cni0: port 10(vethd943054a) entered disabled state
+2026-04-30T19:10:27.409190+00:00 p2-xr1 kernel: [1547517.061998] cni0: port 10(veth5e44686b) entered blocking state
+2026-04-30T19:11:05.181204+00:00 p2-xr1 kernel: [1547554.829747] IPv6: ADDRCONF(NETDEV_CHANGE): veth758f1cee: link becomes ready
+2026-04-30T19:11:05.181220+00:00 p2-xr1 kernel: [1547554.829881] cni0: port 10(veth758f1cee) entered forwarding state
+2026-04-30T19:11:33.593317+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T19:26:59.017178+00:00 p2-xr1 kernel: [1548508.624839] device veth3abe6382 entered promiscuous mode
+2026-04-30T19:27:14.085210+00:00 p2-xr1 kernel: [1548523.690542] cni0: port 10(veth3abe6382) entered disabled state
+2026-04-30T19:28:59.141241+00:00 p2-xr1 kernel: [1548628.739587] cni0: port 10(veth134ade9d) entered disabled state
+2026-04-30T19:28:59.161177+00:00 p2-xr1 kernel: [1548628.761464] device veth134ade9d left promiscuous mode
+2026-04-30T19:29:43.457176+00:00 p2-xr1 kernel: [1548673.054153] cni0: port 10(veth7f1da43b) entered blocking state
+2026-04-30T19:30:43.353159+00:00 p2-xr1 kernel: [1548732.948030] device veth9a30c452 left promiscuous mode
+2026-04-30T19:31:02.209185+00:00 p2-xr1 kernel: [1548751.805794] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T19:31:33.693372+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T19:32:04.557167+00:00 p2-xr1 kernel: [1548814.148527] IPv6: ADDRCONF(NETDEV_CHANGE): veth1d437a68: link becomes ready
+2026-04-30T19:51:33.793471+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T20:11:33.893314+00:00 p2-xr1 rsyslogd: -- MARK --

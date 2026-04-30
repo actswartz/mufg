@@ -1,0 +1,8 @@
+---
+- name: Lab 0 - Variable Test
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: variable test
+      debug:
+        msg: "variable value is -- {{ my_variable }}"

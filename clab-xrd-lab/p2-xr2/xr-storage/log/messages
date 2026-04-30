@@ -81,3 +81,20 @@
 2026-04-30T18:36:31.505190+00:00 p2-xr2 kernel: [1545481.251190] device veth38279d30 left promiscuous mode
 2026-04-30T18:37:00.433207+00:00 p2-xr2 kernel: [1545510.174653] cni0: port 10(veth631d7abb) entered disabled state
 2026-04-30T18:37:17.633211+00:00 p2-xr2 kernel: [1545527.377406] cni0: port 10(veth631d7abb) entered disabled state
+2026-04-30T18:48:57.477185+00:00 p2-xr2 kernel: [1546227.188566] cni0: port 10(veth53abda35) entered disabled state
+2026-04-30T18:51:33.333385+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T19:10:27.413183+00:00 p2-xr2 kernel: [1547517.065992] IPv6: ADDRCONF(NETDEV_CHANGE): veth5e44686b: link becomes ready
+2026-04-30T19:11:05.173213+00:00 p2-xr2 kernel: [1547554.824424] cni0: port 10(veth758f1cee) entered disabled state
+2026-04-30T19:11:05.173231+00:00 p2-xr2 kernel: [1547554.824584] device veth758f1cee entered promiscuous mode
+2026-04-30T19:11:33.433312+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T19:26:59.033179+00:00 p2-xr2 kernel: [1548508.639032] cni0: port 10(veth3abe6382) entered forwarding state
+2026-04-30T19:30:25.313204+00:00 p2-xr2 kernel: [1548714.908757] cni0: port 10(veth9a30c452) entered blocking state
+2026-04-30T19:30:52.569220+00:00 p2-xr2 kernel: [1548742.163090] cni0: port 10(veth6f7db618) entered disabled state
+2026-04-30T19:31:13.725189+00:00 p2-xr2 kernel: [1548763.319451] device veth6f7db618 left promiscuous mode
+2026-04-30T19:31:22.041184+00:00 p2-xr2 kernel: [1548771.634013] device veth9d95a9c7 left promiscuous mode
+2026-04-30T19:31:33.533434+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T19:32:04.557167+00:00 p2-xr2 kernel: [1548814.148494] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T19:32:04.557182+00:00 p2-xr2 kernel: [1548814.148608] cni0: port 10(veth1d437a68) entered forwarding state
+2026-04-30T19:51:33.633606+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T19:55:46.025166+00:00 p2-xr2 kernel: [1550235.550631] device veth9e910869 left promiscuous mode
+2026-04-30T20:11:33.733358+00:00 p2-xr2 rsyslogd: -- MARK --

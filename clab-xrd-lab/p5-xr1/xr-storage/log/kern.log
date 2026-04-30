@@ -23,3 +23,18 @@
 2026-04-30T18:37:00.437189+00:00 p5-xr1 kernel: [1545510.178898] cni0: port 10(veth631d7abb) entered blocking state
 2026-04-30T18:38:27.949185+00:00 p5-xr1 kernel: [1545597.689153] cni0: port 10(veth7924acec) entered forwarding state
 2026-04-30T18:42:41.049187+00:00 p5-xr1 kernel: [1545850.775670] cni0: port 10(veth9b269707) entered disabled state
+2026-04-30T18:49:18.341206+00:00 p5-xr1 kernel: [1546248.048885] IPv6: ADDRCONF(NETDEV_CHANGE): veth426021c2: link becomes ready
+2026-04-30T18:49:18.341224+00:00 p5-xr1 kernel: [1546248.048982] cni0: port 10(veth426021c2) entered forwarding state
+2026-04-30T18:53:48.929195+00:00 p5-xr1 kernel: [1546518.627812] IPv6: ADDRCONF(NETDEV_CHANGE): vethd943054a: link becomes ready
+2026-04-30T19:10:27.409191+00:00 p5-xr1 kernel: [1547517.062004] cni0: port 10(veth5e44686b) entered disabled state
+2026-04-30T19:27:35.881381+00:00 p5-xr1 kernel: [1548545.484998] cni0: port 10(vethc33c6955) entered forwarding state
+2026-04-30T19:29:19.445220+00:00 p5-xr1 kernel: [1548649.042743] IPv6: ADDRCONF(NETDEV_CHANGE): vethafa43fbb: link becomes ready
+2026-04-30T19:30:25.313204+00:00 p5-xr1 kernel: [1548714.909019] device veth9a30c452 entered promiscuous mode
+2026-04-30T19:46:13.393222+00:00 p5-xr1 kernel: [1549662.944550] IPv6: ADDRCONF(NETDEV_CHANGE): veth760236b5: link becomes ready
+2026-04-30T19:46:13.393241+00:00 p5-xr1 kernel: [1549662.944640] cni0: port 10(veth760236b5) entered forwarding state
+2026-04-30T19:46:31.609176+00:00 p5-xr1 kernel: [1549681.161365] cni0: port 10(veth760236b5) entered disabled state
+2026-04-30T19:54:44.537189+00:00 p5-xr1 kernel: [1550174.066955] cni0: port 10(veth546b3bb5) entered disabled state
+2026-04-30T19:55:27.545528+00:00 p5-xr1 kernel: [1550217.073591] cni0: port 10(veth9e910869) entered blocking state
+2026-04-30T19:55:27.545543+00:00 p5-xr1 kernel: [1550217.073594] cni0: port 10(veth9e910869) entered forwarding state
+2026-04-30T19:56:29.161177+00:00 p5-xr1 kernel: [1550278.687071] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T19:56:29.161193+00:00 p5-xr1 kernel: [1550278.687219] cni0: port 10(veth6164ff6f) entered forwarding state

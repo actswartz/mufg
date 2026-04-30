@@ -75,3 +75,33 @@
 2026-04-30T18:36:31.505190+00:00 p1-xr2 kernel: [1545481.251197] cni0: port 11(veth38279d30) entered disabled state
 2026-04-30T18:38:27.945196+00:00 p1-xr2 kernel: [1545597.685623] device veth7924acec entered promiscuous mode
 2026-04-30T18:42:22.597210+00:00 p1-xr2 kernel: [1545832.324658] device veth9b269707 entered promiscuous mode
+2026-04-30T18:44:50.229212+00:00 p1-xr2 kernel: [1545979.950433] cni0: port 10(veth55a445df) entered blocking state
+2026-04-30T18:46:45.689391+00:00 p1-xr2 kernel: [1546095.403830] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:46:45.689408+00:00 p1-xr2 kernel: [1546095.403890] IPv6: ADDRCONF(NETDEV_CHANGE): veth64ee9893: link becomes ready
+2026-04-30T18:46:45.689417+00:00 p1-xr2 kernel: [1546095.403982] cni0: port 10(veth64ee9893) entered blocking state
+2026-04-30T18:46:45.689418+00:00 p1-xr2 kernel: [1546095.403986] cni0: port 10(veth64ee9893) entered forwarding state
+2026-04-30T18:48:57.489175+00:00 p1-xr2 kernel: [1546227.199535] device veth53abda35 left promiscuous mode
+2026-04-30T18:49:18.333208+00:00 p1-xr2 kernel: [1546248.044175] cni0: port 10(veth426021c2) entered blocking state
+2026-04-30T18:51:33.577353+00:00 p1-xr2 rsyslogd: -- MARK --
+2026-04-30T18:53:12.449190+00:00 p1-xr2 kernel: [1546482.148799] cni0: port 10(veth3f9ff299) entered blocking state
+2026-04-30T18:53:27.653203+00:00 p1-xr2 kernel: [1546497.350502] cni0: port 10(veth3f9ff299) entered disabled state
+2026-04-30T19:11:33.677321+00:00 p1-xr2 rsyslogd: -- MARK --
+2026-04-30T19:27:35.877211+00:00 p1-xr2 kernel: [1548545.481202] cni0: port 10(vethc33c6955) entered disabled state
+2026-04-30T19:27:35.881380+00:00 p1-xr2 kernel: [1548545.484864] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T19:28:42.929211+00:00 p1-xr2 kernel: [1548612.530350] device veth134ade9d entered promiscuous mode
+2026-04-30T19:28:42.933171+00:00 p1-xr2 kernel: [1548612.535206] cni0: port 10(veth134ade9d) entered blocking state
+2026-04-30T19:29:39.245183+00:00 p1-xr2 kernel: [1548668.843400] cni0: port 10(vethafa43fbb) entered disabled state
+2026-04-30T19:30:52.569220+00:00 p1-xr2 kernel: [1548742.163183] device veth6f7db618 entered promiscuous mode
+2026-04-30T19:31:22.041184+00:00 p1-xr2 kernel: [1548771.634020] cni0: port 11(veth9d95a9c7) entered disabled state
+2026-04-30T19:31:33.777503+00:00 p1-xr2 rsyslogd: -- MARK --
+2026-04-30T19:32:04.541189+00:00 p1-xr2 kernel: [1548814.131735] cni0: port 10(veth1d437a68) entered blocking state
+2026-04-30T19:32:04.541202+00:00 p1-xr2 kernel: [1548814.131821] device veth1d437a68 entered promiscuous mode
+2026-04-30T19:32:04.557167+00:00 p1-xr2 kernel: [1548814.148605] cni0: port 10(veth1d437a68) entered blocking state
+2026-04-30T19:32:21.137173+00:00 p1-xr2 kernel: [1548830.728277] cni0: port 10(veth1d437a68) entered disabled state
+2026-04-30T19:46:13.385206+00:00 p1-xr2 kernel: [1549662.939438] cni0: port 10(veth760236b5) entered blocking state
+2026-04-30T19:46:13.385224+00:00 p1-xr2 kernel: [1549662.939444] cni0: port 10(veth760236b5) entered disabled state
+2026-04-30T19:46:13.385226+00:00 p1-xr2 kernel: [1549662.939547] device veth760236b5 entered promiscuous mode
+2026-04-30T19:51:33.877328+00:00 p1-xr2 rsyslogd: -- MARK --
+2026-04-30T19:55:27.541191+00:00 p1-xr2 kernel: [1550217.069523] cni0: port 10(veth9e910869) entered disabled state
+2026-04-30T19:55:27.545563+00:00 p1-xr2 kernel: [1550217.073456] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T20:11:33.977586+00:00 p1-xr2 rsyslogd: -- MARK --

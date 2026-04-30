@@ -876,3 +876,15 @@ Apr 30 18:37:01:575 333:150946 nvgen_subtree_query: add_regex=0, sysdb_event_fin
 Apr 30 18:37:01:575 333:150946 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
 Apr 30 18:37:01:575 333:150946 nvgen_subtree_query: No configuration item found, queries:
 Apr 30 18:37:01:576 333:150946 nvgened '0'out of '0' tuples successfully.
+Apr 30 19:32:01:822 333:159052 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 19:32:01:822 333:159052 nvgen_get_last_commitid: Not a backup request
+Apr 30 19:32:01:822 333:159052 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 19:32:01:822 333:159052 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 19:32:01:823 333:159052 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 19:32:01:823 333:159052 Querying the subtree /cfg/gl/early/
+Apr 30 19:32:01:824 333:159052 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 19:32:01:824 333:159052 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 19:32:01:824 333:159052 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 19:32:01:825 333:159052 nvgened '0'out of '0' tuples successfully.

@@ -231,3 +231,16 @@
 2026-04-30T01:20:01.208115+00:00 p1-xr1 CROND[9797]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
 2026-04-30T01:20:01.208319+00:00 p1-xr1 CROND[9798]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
 2026-04-30T01:21:01.234979+00:00 p1-xr1 CROND[9864]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
+2026-04-30T01:23:01.242686+00:00 p1-xr1 CROND[9943]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T01:23:51.259079+00:00 p1-xr1 systemd[1]: Starting Rotate log files...
+2026-04-30T01:23:51.276699+00:00 p1-xr1 systemd[1]: logrotate.service: Succeeded.
+2026-04-30T01:23:51.276866+00:00 p1-xr1 systemd[1]: Started Rotate log files.
+2026-04-30T01:25:01.319895+00:00 p1-xr1 CROND[10080]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
+2026-04-30T01:25:01.320146+00:00 p1-xr1 CROND[10081]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
+2026-04-30T01:25:58.012366+00:00 p1-xr1 systemd[1]: Starting Cleanup of Temporary Directories...
+2026-04-30T01:25:58.016143+00:00 p1-xr1 systemd-tmpfiles[10151]: /etc/tmpfiles.d/00-volatile-restore.conf:11: Line references path below legacy directory /var/run/, updating /var/run/resolv.conf → /run/resolv.conf; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:25:58.016612+00:00 p1-xr1 systemd-tmpfiles[10151]: [/usr/lib/tmpfiles.d/legacy.conf:13] Duplicate line for path "/run/lock", ignoring.
+2026-04-30T01:25:58.016691+00:00 p1-xr1 systemd-tmpfiles[10151]: /usr/lib/tmpfiles.d/sshd.conf:16: Line references path below legacy directory /var/run/, updating /var/run/sshd → /run/sshd; please update the tmpfiles.d/ drop-in file accordingly.
+2026-04-30T01:25:58.021001+00:00 p1-xr1 systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+2026-04-30T01:25:58.021448+00:00 p1-xr1 systemd[1]: Started Cleanup of Temporary Directories.
+2026-04-30T01:26:01.346883+00:00 p1-xr1 CROND[10154]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)

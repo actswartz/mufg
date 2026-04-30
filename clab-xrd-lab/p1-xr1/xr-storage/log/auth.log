@@ -460,3 +460,55 @@
 2026-04-30T01:20:57.278363+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Got 100/17 for keepalive
 2026-04-30T01:21:57.570011+00:00 p1-xr1 sshd[5746]: debug1: Got 100/18 for keepalive
 2026-04-30T01:21:57.570168+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Got 100/18 for keepalive
+2026-04-30T01:22:57.864619+00:00 p1-xr1 sshd[5746]: debug1: Got 100/19 for keepalive
+2026-04-30T01:22:57.864786+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Got 100/19 for keepalive
+2026-04-30T01:23:51.257530+00:00 p1-xr1 sshd[5746]: timeout notification rcvd. port 0
+2026-04-30T01:23:51.257723+00:00 p1-xr1 sshd[5746]: exiting thread for port 0 path /var/run/tty-channels/client_0
+2026-04-30T01:23:51.257776+00:00 p1-xr1 sshd[5746]: debug1: Received SIGCHLD.
+2026-04-30T01:23:51.257831+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Received SIGCHLD.
+2026-04-30T01:23:51.257876+00:00 p1-xr1 sshd[5746]: debug1: session_by_pid: pid 5749
+2026-04-30T01:23:51.257906+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : session_by_pid: pid 5749
+2026-04-30T01:23:51.257951+00:00 p1-xr1 sshd[5746]: debug1: session_exit_message: setting PAM_TTY_NAME: /dev/pts/2
+2026-04-30T01:23:51.257986+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : session_exit_message: setting PAM_TTY_NAME: /dev/pts/2
+2026-04-30T01:23:51.258044+00:00 p1-xr1 sshd[5746]: debug1: Calling unreserve for port: 0, mnemonic: vty0
+2026-04-30T01:23:51.258091+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Calling unreserve for port: 0, mnemonic: vty0
+2026-04-30T01:23:51.258141+00:00 p1-xr1 sshd[5746]: unreserve request received for port 0
+2026-04-30T01:23:51.258188+00:00 p1-xr1 sshd[5746]: Initialized client socket 12 with path /var/run/tty-channels/client5746
+2026-04-30T01:23:51.267513+00:00 p1-xr1 sshd[5746]: debug1: session_exit_message: session 0 channel 0 pid 5749 UNKNOWN
+2026-04-30T01:23:51.267598+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : session_exit_message: session 0 channel 0 pid 5749 UNKNOWN
+2026-04-30T01:23:51.267656+00:00 p1-xr1 sshd[5746]: debug1: session_exit_message: release channel 0
+2026-04-30T01:23:51.267695+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : session_exit_message: release channel 0
+2026-04-30T01:23:51.267883+00:00 p1-xr1 sshd[5740]: debug1: session_by_tty: session 0 tty /dev/pts/2
+2026-04-30T01:23:51.267934+00:00 p1-xr1 sshd[5740]: Sending to syslog proxy : session_by_tty: session 0 tty /dev/pts/2
+2026-04-30T01:23:51.267970+00:00 p1-xr1 sshd[5740]: debug1: session_pty_cleanup2: session 0 release /dev/pts/2
+2026-04-30T01:23:51.268004+00:00 p1-xr1 sshd[5740]: Sending to syslog proxy : session_pty_cleanup2: session 0 release /dev/pts/2
+2026-04-30T01:23:51.418051+00:00 p1-xr1 sshd[5746]: debug1: session_by_channel: session 0 channel 0
+2026-04-30T01:23:51.418146+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : session_by_channel: session 0 channel 0
+2026-04-30T01:23:51.418180+00:00 p1-xr1 sshd[5746]: debug1: session_close_by_channel: channel 0 child 0
+2026-04-30T01:23:51.418223+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : session_close_by_channel: channel 0 child 0
+2026-04-30T01:23:51.418255+00:00 p1-xr1 sshd[5746]: debug1: Close session: user clab from 47.198.1.53 port 52278 id 0
+2026-04-30T01:23:51.418281+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Close session: user clab from 47.198.1.53 port 52278 id 0
+2026-04-30T01:23:51.418307+00:00 p1-xr1 sshd[5746]: debug1: channel 0: free: server-session, nchannels 1
+2026-04-30T01:23:51.418333+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : channel 0: free: server-session, nchannels 1
+2026-04-30T01:23:51.418361+00:00 p1-xr1 sshd[5746]: debug1: session_by_channel: unknown channel 0
+2026-04-30T01:23:51.418391+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : session_by_channel: unknown channel 0
+2026-04-30T01:23:51.418419+00:00 p1-xr1 sshd[5746]: debug1: dump: used 0 next_unused -1 session 0 channel -1 pid 0
+2026-04-30T01:23:51.418444+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : dump: used 0 next_unused -1 session 0 channel -1 pid 0
+2026-04-30T01:23:51.418470+00:00 p1-xr1 sshd[5746]: debug1: channel: 0 no session to close
+2026-04-30T01:23:51.418495+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : channel: 0 no session to close
+2026-04-30T01:23:51.418521+00:00 p1-xr1 sshd[5746]: debug1: No session active
+2026-04-30T01:23:51.418545+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : No session active
+2026-04-30T01:23:51.418575+00:00 p1-xr1 sshd[5746]: debug1: Killing self
+2026-04-30T01:23:51.418603+00:00 p1-xr1 sshd[5746]: Sending to syslog proxy : Killing self
+2026-04-30T01:23:51.418639+00:00 p1-xr1 sshd[5740]: debug1: do_cleanup
+2026-04-30T01:23:51.418671+00:00 p1-xr1 sshd[5740]: Sending to syslog proxy : do_cleanup
+2026-04-30T01:23:51.418693+00:00 p1-xr1 sshd[5740]: debug1: Initiaiting oper thread socket cleanup
+2026-04-30T01:23:51.418717+00:00 p1-xr1 sshd[5740]: Sending to syslog proxy : Initiaiting oper thread socket cleanup
+2026-04-30T01:23:51.418746+00:00 p1-xr1 sshd[5740]: debug1: PAM: cleanup
+2026-04-30T01:23:51.418771+00:00 p1-xr1 sshd[5740]: Sending to syslog proxy : PAM: cleanup
+2026-04-30T01:23:51.418796+00:00 p1-xr1 sshd[5740]: debug1: PAM: Calling pam close with delete cred for NSS_DEL
+2026-04-30T01:23:51.418820+00:00 p1-xr1 sshd[5740]: Sending to syslog proxy : PAM: Calling pam close with delete cred for NSS_DEL
+2026-04-30T01:23:51.418943+00:00 p1-xr1 sshd[5740]: debug1: PAM: closing session
+2026-04-30T01:23:51.418975+00:00 p1-xr1 sshd[5740]: Sending to syslog proxy : PAM: closing session
+2026-04-30T01:23:51.419004+00:00 p1-xr1 sshd[5740]: debug1: PAM: deleting credentials
+2026-04-30T01:23:51.419030+00:00 p1-xr1 sshd[5740]: Sending to syslog proxy : PAM: deleting credentials

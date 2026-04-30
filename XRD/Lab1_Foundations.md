@@ -3,6 +3,17 @@
 ## 📖 Lab Overview
 Welcome to your first lab with **Cisco XRd** (IOS-XR in a container). In this lab, you will move beyond the traditional "classic" IOS (like IOS-XE) and learn the specialized architecture of a Service Provider operating system. 
 
+### 🗂️ Pod Assignment Table
+Identify your assigned Pod below to find your specific connection ports and node names.
+
+| Pod | Node | External Port | Internal Mgmt IP |
+| :--- | :--- | :--- | :--- |
+| **Pod 1** | p1-xr1 / p1-xr2 | 31011 / 31012 | 172.30.30.11 / 12 |
+| **Pod 2** | p2-xr1 / p2-xr2 | 31021 / 31022 | 172.30.30.21 / 22 |
+| **Pod 3** | p3-xr1 / p3-xr2 | 31031 / 31032 | 172.30.30.31 / 32 |
+| **Pod 4** | p4-xr1 / p4-xr2 | 31041 / 31042 | 172.30.30.41 / 42 |
+| **Pod 5** | p5-xr1 / p5-xr2 | 31051 / 31052 | 172.30.30.51 / 52 |
+
 By the end of this lab, you will have:
 1.  Navigated the unique XR prompt and hardware nomenclature.
 2.  Mastered the **Two-Stage Configuration Model** (Candidate vs. Running).
@@ -20,9 +31,10 @@ Unlike traditional routers, IOS-XR is built on a Linux microservices architectur
 XR was designed for "99.999% availability." By separating the operating system into distinct processes, a failure in the BGP process won't crash the entire router.
 
 ### 🛠️ Step-by-Step:
-Log into your first router using the command provided in your access guide:
+Log into your first router (**xr1**) using the port from the table above:
 ```bash
-ssh -4 -p 31011 clab@136.243.78.83
+# Replace 310XX with your Pod's xr1 port
+ssh -4 -p 310XX clab@136.243.78.83
 ```
 
 #### 🔍 Command: `show version`
@@ -66,7 +78,7 @@ Enter configuration mode:
 conf t
 ```
 
-#### 🔍 Command: `hostname p1-xr1`
+#### 🔍 Command: `hostname pX-xr1` (Replace X with your Pod number)
 Change the name of the router. 
 > **Note:** Notice that the prompt **did not change** yet! The router is still called `xr1` because the change is only in the "Candidate" buffer.
 
@@ -83,7 +95,7 @@ end
 
 #### 🔍 Command: `commit`
 This "pushes" the buffer into the running configuration.
-> **Note:** Only after this command will your prompt update to `p1-xr1`.
+> **Note:** Only after this command will your prompt update to your new hostname.
 
 ---
 
@@ -106,7 +118,7 @@ conf t
  commit
 ```
 
-Configure the IP on **Router 2** (Connect via port `31012`):
+Configure the IP on **Router 2** (Connect via your Pod's second port):
 ```ios
 conf t
  interface GigabitEthernet0/0/0/0
@@ -154,4 +166,4 @@ Success rate is 100 percent (5/5), round-trip min/avg/max = 1/2/4 ms
 - [ ] Logged into both XRd nodes.
 - [ ] Changed hostnames using the `commit` model.
 - [ ] Configured P2P IPs on `Gi0/0/0/0`.
-- [ ] Successfully pinged from `p1-xr1` to `p1-xr2`.
+- [ ] Successfully pinged between xr1 and xr2.

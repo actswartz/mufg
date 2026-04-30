@@ -1,0 +1,12 @@
+---
+- name: Lab 7 - Service Catalog Interface Update
+  hosts: routers
+  gather_facts: false
+  tasks:
+    - name: Apply standard description
+      cisco.ios.ios_interfaces:
+        config:
+          - name: "{{ target_interface }}"
+            description: "Updated via Service Portal by SX-user"
+            enabled: true
+        state: merged

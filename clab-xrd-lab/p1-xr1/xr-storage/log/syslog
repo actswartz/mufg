@@ -1879,3 +1879,7 @@
 2026-04-30T20:11:01.301058+00:00 p1-xr1 systemd[1]: Started Rotate log files.
 2026-04-30T20:11:33.733361+00:00 p1-xr1 rsyslogd: -- MARK --
 2026-04-30T20:13:01.288595+00:00 p1-xr1 CROND[166804]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T20:15:01.366998+00:00 p1-xr1 CROND[166937]: (root) CMD (/pkg/bin/monitor_coreinfo.sh)
+2026-04-30T20:15:01.367266+00:00 p1-xr1 CROND[166938]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
+2026-04-30T20:15:01.367395+00:00 p1-xr1 CROND[166939]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
+2026-04-30T20:16:01.393913+00:00 p1-xr1 CROND[167008]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)

@@ -1725,3 +1725,7 @@
 2026-04-30T18:37:00.433207+00:00 p4-xr2 kernel: [1545510.174648] cni0: port 10(veth631d7abb) entered blocking state
 2026-04-30T18:37:17.625162+00:00 p4-xr2 kernel: [1545527.366739] cni0: port 10(veth631d7abb) entered disabled state
 2026-04-30T18:38:01.984113+00:00 p4-xr2 CROND[150978]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T18:38:27.945196+00:00 p4-xr2 kernel: [1545597.685549] cni0: port 10(veth7924acec) entered disabled state
+2026-04-30T18:38:27.949186+00:00 p4-xr2 kernel: [1545597.689151] cni0: port 10(veth7924acec) entered blocking state
+2026-04-30T18:40:01.120597+00:00 p4-xr2 CROND[151430]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
+2026-04-30T18:40:01.120945+00:00 p4-xr2 CROND[151431]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)

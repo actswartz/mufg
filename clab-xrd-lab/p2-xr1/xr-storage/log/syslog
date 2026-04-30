@@ -1743,3 +1743,6 @@
 2026-04-30T18:36:01.975300+00:00 p2-xr1 CROND[150894]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
 2026-04-30T18:36:25.305189+00:00 p2-xr1 kernel: [1545475.050360] cni0: port 10(vethbd480c26) entered disabled state
 2026-04-30T18:38:01.984840+00:00 p2-xr1 CROND[150982]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T18:38:27.949186+00:00 p2-xr1 kernel: [1545597.689079] IPv6: ADDRCONF(NETDEV_CHANGE): veth7924acec: link becomes ready
+2026-04-30T18:40:01.137848+00:00 p2-xr1 CROND[151435]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)
+2026-04-30T18:40:01.138222+00:00 p2-xr1 CROND[151434]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)

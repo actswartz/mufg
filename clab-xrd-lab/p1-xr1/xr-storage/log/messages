@@ -78,3 +78,4 @@
 2026-04-30T18:32:51.469191+00:00 p1-xr1 kernel: [1545261.223324] cni0: port 11(veth9d2f97a3) entered disabled state
 2026-04-30T18:36:13.069956+00:00 p1-xr1 kernel: [1545462.816721] cni0: port 11(veth38279d30) entered blocking state
 2026-04-30T18:36:13.069966+00:00 p1-xr1 kernel: [1545462.816726] cni0: port 11(veth38279d30) entered forwarding state
+2026-04-30T18:38:45.261199+00:00 p1-xr1 kernel: [1545614.998562] cni0: port 10(veth7924acec) entered disabled state

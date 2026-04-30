@@ -1718,3 +1718,6 @@
 2026-04-30T18:36:01.954605+00:00 p1-xr2 CROND[150918]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin thinxr-logrotate-app.sh)
 2026-04-30T18:36:31.505190+00:00 p1-xr2 kernel: [1545481.251197] cni0: port 11(veth38279d30) entered disabled state
 2026-04-30T18:38:01.963403+00:00 p1-xr2 CROND[151006]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T18:38:27.945196+00:00 p1-xr2 kernel: [1545597.685623] device veth7924acec entered promiscuous mode
+2026-04-30T18:40:01.081833+00:00 p1-xr2 CROND[151587]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
+2026-04-30T18:40:01.082141+00:00 p1-xr2 CROND[151588]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)

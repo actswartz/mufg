@@ -1725,3 +1725,6 @@
 2026-04-30T18:36:13.069956+00:00 p1-xr1 kernel: [1545462.816721] cni0: port 11(veth38279d30) entered blocking state
 2026-04-30T18:36:13.069966+00:00 p1-xr1 kernel: [1545462.816726] cni0: port 11(veth38279d30) entered forwarding state
 2026-04-30T18:38:01.934960+00:00 p1-xr1 CROND[151371]: (root) CMD (/etc/xrd_filecleanup.sh 90 >/dev/null 2>&1)
+2026-04-30T18:38:45.261199+00:00 p1-xr1 kernel: [1545614.998562] cni0: port 10(veth7924acec) entered disabled state
+2026-04-30T18:40:01.039581+00:00 p1-xr1 CROND[154051]: (root) CMD (/etc/init.d/tmpdir_cleanup.sh 80 >/dev/null 2>&1)
+2026-04-30T18:40:01.039831+00:00 p1-xr1 CROND[154052]: (root) CMD (env PATH=/usr/bin:/usr/sbin:/bin:/sbin logrotate /etc/logrotate.conf)

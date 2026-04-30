@@ -13,3 +13,4 @@
 2026-04-30T18:33:07.065197+00:00 p3-xr2 kernel: [1545276.817221] cni0: port 10(vetha1abc13d) entered disabled state
 2026-04-30T18:33:35.109213+00:00 p3-xr2 kernel: [1545304.863641] device vetha1abc13d left promiscuous mode
 2026-04-30T18:36:13.069166+00:00 p3-xr2 kernel: [1545462.816393] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:38:27.949186+00:00 p3-xr2 kernel: [1545597.689041] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready

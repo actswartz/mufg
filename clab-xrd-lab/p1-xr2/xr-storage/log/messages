@@ -73,3 +73,4 @@
 2026-04-30T18:31:33.477331+00:00 p1-xr2 rsyslogd: -- MARK --
 2026-04-30T18:32:32.117201+00:00 p1-xr2 kernel: [1545241.874021] cni0: port 10(veth87fe2b93) entered disabled state
 2026-04-30T18:36:31.505190+00:00 p1-xr2 kernel: [1545481.251197] cni0: port 11(veth38279d30) entered disabled state
+2026-04-30T18:38:27.945196+00:00 p1-xr2 kernel: [1545597.685623] device veth7924acec entered promiscuous mode

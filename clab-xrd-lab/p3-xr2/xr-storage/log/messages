@@ -19,3 +19,67 @@
 2026-04-30T01:12:07.011148+00:00 p3-xr2 sshd: (sshd): Socket created, sockfd = 3
 2026-04-30T01:12:07.011250+00:00 p3-xr2 sshd: (sshd): Successfully connected to server, sockfd = 3
 2026-04-30T01:31:27.725843+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T01:51:27.825381+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T02:11:27.925332+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T02:31:28.025334+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T02:51:28.125316+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T03:11:28.225423+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T03:31:28.325314+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T03:51:28.425352+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T04:11:28.525530+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T04:31:28.625348+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T04:51:28.725405+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T05:11:28.825318+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T05:31:28.925329+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T05:51:29.025347+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T06:11:29.125317+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T06:31:29.225349+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T06:51:29.325601+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T07:11:29.425319+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T07:31:29.525406+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T07:51:29.625554+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T08:06:28.289160+00:00 p3-xr2 kernel: [1507679.770900] audit: type=1400 audit(1777536388.281:38): apparmor="DENIED" operation="capable" profile="ubuntu_pro_esm_cache" pid=2010822 comm="python3" capability=24  capname="sys_resource"
+2026-04-30T08:11:29.725344+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T08:31:29.825329+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T08:51:29.925327+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T09:11:30.025358+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T09:31:30.125455+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T09:51:30.225355+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T10:11:30.325481+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T10:31:30.425309+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T10:51:30.525336+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T11:11:30.625337+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T11:31:30.725485+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T11:51:30.825318+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T12:11:30.925305+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T12:31:31.025486+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T12:51:31.125354+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T13:11:31.225453+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T13:31:31.325327+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T13:51:31.425332+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T14:11:31.525382+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T14:31:31.625350+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T14:51:31.725366+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T15:11:31.825313+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T15:31:31.925479+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T15:51:32.025680+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T16:11:32.125350+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T16:31:32.225331+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T16:51:32.325361+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T17:11:32.425489+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T17:31:32.525362+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T17:51:32.625407+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T17:52:59.245218+00:00 p3-xr2 kernel: [1542869.108330] cni0: port 10(veth17bccf88) entered disabled state
+2026-04-30T17:53:16.905185+00:00 p3-xr2 kernel: [1542886.769696] device veth17bccf88 left promiscuous mode
+2026-04-30T18:11:32.725324+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T18:27:51.993207+00:00 p3-xr2 kernel: [1544961.760658] IPv6: ADDRCONF(NETDEV_CHANGE): veth3672a38a: link becomes ready
+2026-04-30T18:27:51.993224+00:00 p3-xr2 kernel: [1544961.760761] cni0: port 10(veth3672a38a) entered blocking state
+2026-04-30T18:28:10.249165+00:00 p3-xr2 kernel: [1544980.017794] device veth3672a38a left promiscuous mode
+2026-04-30T18:29:47.529287+00:00 p3-xr2 kernel: [1545077.291588] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:31:32.825419+00:00 p3-xr2 rsyslogd: -- MARK --
+2026-04-30T18:31:36.941220+00:00 p3-xr2 kernel: [1545186.699490] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:31:57.749179+00:00 p3-xr2 kernel: [1545207.505422] device veth66b8c1a2 left promiscuous mode
+2026-04-30T18:32:14.389206+00:00 p3-xr2 kernel: [1545224.143930] cni0: port 10(veth87fe2b93) entered blocking state
+2026-04-30T18:33:07.065197+00:00 p3-xr2 kernel: [1545276.817221] cni0: port 10(vetha1abc13d) entered disabled state
+2026-04-30T18:33:35.109213+00:00 p3-xr2 kernel: [1545304.863641] device vetha1abc13d left promiscuous mode
+2026-04-30T18:36:13.069166+00:00 p3-xr2 kernel: [1545462.816393] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready

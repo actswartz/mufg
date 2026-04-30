@@ -1,2 +1,13 @@
 2026-04-30T01:11:32.997202+00:00 p5-xr2 kernel: [1482785.622807] device eth0 entered promiscuous mode
 2026-04-30T01:18:45.321146+00:00 p5-xr2 kernel: [1483217.929438] hrtimer: interrupt took 25109 ns
+2026-04-30T17:34:37.957187+00:00 p5-xr2 kernel: [1541767.872571] device veth1fc2941d entered promiscuous mode
+2026-04-30T17:53:16.897210+00:00 p5-xr2 kernel: [1542886.760980] cni0: port 10(veth17bccf88) entered disabled state
+2026-04-30T18:20:18.933158+00:00 p5-xr2 kernel: [1544508.722592] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:27:51.985206+00:00 p5-xr2 kernel: [1544961.754872] cni0: port 10(veth3672a38a) entered blocking state
+2026-04-30T18:28:10.241211+00:00 p5-xr2 kernel: [1544980.007577] cni0: port 10(veth3672a38a) entered disabled state
+2026-04-30T18:29:47.525184+00:00 p5-xr2 kernel: [1545077.287592] cni0: port 10(veth9806b74a) entered disabled state
+2026-04-30T18:29:47.529287+00:00 p5-xr2 kernel: [1545077.291647] IPv6: ADDRCONF(NETDEV_CHANGE): veth9806b74a: link becomes ready
+2026-04-30T18:30:07.525176+00:00 p5-xr2 kernel: [1545097.288958] device veth9806b74a left promiscuous mode
+2026-04-30T18:30:19.497213+00:00 p5-xr2 kernel: [1545109.256865] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:30:19.497230+00:00 p5-xr2 kernel: [1545109.257005] cni0: port 10(veth85a09fb6) entered blocking state
+2026-04-30T18:30:19.497238+00:00 p5-xr2 kernel: [1545109.257008] cni0: port 10(veth85a09fb6) entered forwarding state

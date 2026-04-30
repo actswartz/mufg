@@ -1,2 +1,15 @@
 2026-04-30T01:11:31.457200+00:00 p3-xr2 kernel: [1482784.083181] device eth0 entered promiscuous mode
 2026-04-30T01:11:32.285238+00:00 p3-xr2 kernel: [1482784.910960] device Gi0-0-0-0 entered promiscuous mode
+2026-04-30T08:06:28.289160+00:00 p3-xr2 kernel: [1507679.770900] audit: type=1400 audit(1777536388.281:38): apparmor="DENIED" operation="capable" profile="ubuntu_pro_esm_cache" pid=2010822 comm="python3" capability=24  capname="sys_resource"
+2026-04-30T17:52:59.245218+00:00 p3-xr2 kernel: [1542869.108330] cni0: port 10(veth17bccf88) entered disabled state
+2026-04-30T17:53:16.905185+00:00 p3-xr2 kernel: [1542886.769696] device veth17bccf88 left promiscuous mode
+2026-04-30T18:27:51.993207+00:00 p3-xr2 kernel: [1544961.760658] IPv6: ADDRCONF(NETDEV_CHANGE): veth3672a38a: link becomes ready
+2026-04-30T18:27:51.993224+00:00 p3-xr2 kernel: [1544961.760761] cni0: port 10(veth3672a38a) entered blocking state
+2026-04-30T18:28:10.249165+00:00 p3-xr2 kernel: [1544980.017794] device veth3672a38a left promiscuous mode
+2026-04-30T18:29:47.529287+00:00 p3-xr2 kernel: [1545077.291588] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:31:36.941220+00:00 p3-xr2 kernel: [1545186.699490] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:31:57.749179+00:00 p3-xr2 kernel: [1545207.505422] device veth66b8c1a2 left promiscuous mode
+2026-04-30T18:32:14.389206+00:00 p3-xr2 kernel: [1545224.143930] cni0: port 10(veth87fe2b93) entered blocking state
+2026-04-30T18:33:07.065197+00:00 p3-xr2 kernel: [1545276.817221] cni0: port 10(vetha1abc13d) entered disabled state
+2026-04-30T18:33:35.109213+00:00 p3-xr2 kernel: [1545304.863641] device vetha1abc13d left promiscuous mode
+2026-04-30T18:36:13.069166+00:00 p3-xr2 kernel: [1545462.816393] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready

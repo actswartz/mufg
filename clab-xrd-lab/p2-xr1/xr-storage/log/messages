@@ -17,3 +17,67 @@
 2026-04-30T01:12:22.927714+00:00 p2-xr1 sshd: (sshd): Socket created, sockfd = 3
 2026-04-30T01:12:22.927841+00:00 p2-xr1 sshd: (sshd): Successfully connected to server, sockfd = 3
 2026-04-30T01:31:28.295530+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T01:51:28.393495+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T02:11:28.493319+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T02:31:28.593332+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T02:51:28.693324+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T03:11:28.793574+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T03:31:28.893442+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T03:51:28.993572+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T04:11:29.093319+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T04:31:29.193331+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T04:51:29.293351+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T05:11:29.393587+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T05:31:29.493323+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T05:51:29.593331+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T06:11:29.693541+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T06:31:29.793373+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T06:51:29.893328+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T07:11:29.993368+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T07:31:30.093599+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T07:51:30.193322+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T08:11:30.293312+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T08:31:30.393351+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T08:51:30.493334+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T09:11:30.593331+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T09:31:30.693328+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T09:51:30.793325+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T10:11:30.893530+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T10:31:30.993316+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T10:51:31.093332+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T11:11:31.193435+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T11:31:31.293319+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T11:51:31.393600+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T12:11:31.493360+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T12:31:31.593307+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T12:51:31.693453+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T13:11:31.793335+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T13:31:31.893317+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T13:51:31.993360+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T14:11:32.093354+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T14:31:32.193310+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T14:51:32.293537+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T15:11:32.393317+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T15:31:32.493336+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T15:51:32.593590+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T16:11:32.693549+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T16:31:32.793366+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T16:51:32.893351+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T17:11:32.993320+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T17:31:33.093309+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T17:51:33.193333+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T17:52:59.249197+00:00 p2-xr1 kernel: [1542869.114433] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T17:52:59.249218+00:00 p2-xr1 kernel: [1542869.114588] cni0: port 10(veth17bccf88) entered forwarding state
+2026-04-30T17:53:16.905185+00:00 p2-xr1 kernel: [1542886.769704] cni0: port 10(veth17bccf88) entered disabled state
+2026-04-30T18:11:33.293334+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T18:31:33.393360+00:00 p2-xr1 rsyslogd: -- MARK --
+2026-04-30T18:32:14.390464+00:00 p2-xr1 kernel: [1545224.148012] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:32:14.390474+00:00 p2-xr1 kernel: [1545224.148064] IPv6: ADDRCONF(NETDEV_CHANGE): veth87fe2b93: link becomes ready
+2026-04-30T18:32:14.390484+00:00 p2-xr1 kernel: [1545224.148154] cni0: port 10(veth87fe2b93) entered blocking state
+2026-04-30T18:32:14.390487+00:00 p2-xr1 kernel: [1545224.148157] cni0: port 10(veth87fe2b93) entered forwarding state
+2026-04-30T18:32:31.609182+00:00 p2-xr1 kernel: [1545241.366069] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:32:31.609195+00:00 p2-xr1 kernel: [1545241.366212] cni0: port 11(veth9d2f97a3) entered blocking state
+2026-04-30T18:32:31.609196+00:00 p2-xr1 kernel: [1545241.366216] cni0: port 11(veth9d2f97a3) entered forwarding state
+2026-04-30T18:33:07.065197+00:00 p2-xr1 kernel: [1545276.817217] cni0: port 10(vetha1abc13d) entered blocking state
+2026-04-30T18:33:07.065214+00:00 p2-xr1 kernel: [1545276.817284] device vetha1abc13d entered promiscuous mode
+2026-04-30T18:36:25.305189+00:00 p2-xr1 kernel: [1545475.050360] cni0: port 10(vethbd480c26) entered disabled state

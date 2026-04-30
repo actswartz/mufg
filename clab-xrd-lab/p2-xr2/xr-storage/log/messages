@@ -17,3 +17,65 @@
 2026-04-30T01:12:19.060763+00:00 p2-xr2 sshd: (sshd): Socket created, sockfd = 3
 2026-04-30T01:12:19.060934+00:00 p2-xr2 sshd: (sshd): Successfully connected to server, sockfd = 3
 2026-04-30T01:31:28.133536+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T01:51:28.233422+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T02:11:28.333349+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T02:31:28.433438+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T02:51:28.533321+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T03:11:28.633320+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T03:31:28.733334+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T03:51:28.833317+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T04:11:28.933497+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T04:31:29.033319+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T04:51:29.133346+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T05:11:29.233500+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T05:31:29.333362+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T05:51:29.433327+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T06:11:29.533318+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T06:31:29.633492+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T06:51:29.733557+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T07:11:29.833351+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T07:31:29.933447+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T07:51:30.033306+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T08:06:27.797284+00:00 p2-xr2 kernel: [1507679.282158] audit: type=1400 audit(1777536387.793:36): apparmor="DENIED" operation="capable" profile="ubuntu_pro_esm_cache" pid=2010822 comm="python3" capability=24  capname="sys_resource"
+2026-04-30T08:11:30.133433+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T08:31:30.233354+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T08:51:30.333352+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T09:11:30.433389+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T09:31:30.533578+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T09:51:30.633322+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T10:11:30.733481+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T10:31:30.833389+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T10:51:30.933427+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T11:11:31.033340+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T11:31:31.133507+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T11:51:31.233510+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T12:11:31.333472+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T12:31:31.433552+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T12:51:31.533378+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T13:11:31.633331+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T13:31:31.733345+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T13:51:31.833348+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T14:11:31.933317+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T14:31:32.033331+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T14:51:32.133325+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T15:11:32.233364+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T15:31:32.333332+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T15:51:32.433346+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T16:11:32.533353+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T16:31:32.633386+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T16:51:32.733420+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T17:11:32.833349+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T17:31:32.933354+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T17:51:33.033353+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T17:52:59.245218+00:00 p2-xr2 kernel: [1542869.108324] cni0: port 10(veth17bccf88) entered blocking state
+2026-04-30T18:11:33.133451+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T18:20:18.929211+00:00 p2-xr2 kernel: [1544508.717932] cni0: port 10(veth35d54954) entered blocking state
+2026-04-30T18:30:19.489199+00:00 p2-xr2 kernel: [1545109.252645] device veth85a09fb6 entered promiscuous mode
+2026-04-30T18:31:33.233454+00:00 p2-xr2 rsyslogd: -- MARK --
+2026-04-30T18:31:57.737178+00:00 p2-xr2 kernel: [1545207.495777] cni0: port 10(veth66b8c1a2) entered disabled state
+2026-04-30T18:32:14.389206+00:00 p2-xr2 kernel: [1545224.143936] cni0: port 10(veth87fe2b93) entered disabled state
+2026-04-30T18:32:32.129333+00:00 p2-xr2 kernel: [1545241.885942] device veth87fe2b93 left promiscuous mode
+2026-04-30T18:32:32.129347+00:00 p2-xr2 kernel: [1545241.885950] cni0: port 10(veth87fe2b93) entered disabled state
+2026-04-30T18:36:13.053179+00:00 p2-xr2 kernel: [1545462.796803] cni0: port 11(veth38279d30) entered blocking state
+2026-04-30T18:36:31.497180+00:00 p2-xr2 kernel: [1545481.241425] cni0: port 11(veth38279d30) entered disabled state
+2026-04-30T18:36:31.505190+00:00 p2-xr2 kernel: [1545481.251190] device veth38279d30 left promiscuous mode

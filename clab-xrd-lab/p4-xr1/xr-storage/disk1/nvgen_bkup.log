@@ -1,0 +1,866 @@
+Apr 30 02:06:55:695 333:14584 
+*********** RP/0/RP0/CPU0:: Starting First Backup **********
+Apr 30 02:06:55:696 333:14584 Got a request
+  request code = 17
+  query        = 'sh_admin'
+Apr 30 02:06:55:697 333:14584 nvgen_get_last_commitid: sysdb_list_next succ: commitid:'1000000002'
+Apr 30 02:06:55:697 333:14584 [Background-First-config-backup] Recieved request 17, with file option 1, Last commit ID: 1000000002
+Apr 30 02:06:55:697 333:14584 nvgen: root=cfg/ bind= cfgdir=/cfs/cfg/lr/running/nvgen/ err= query=sh_admin, admin:
+Apr 30 02:06:55:699 333:14584 nvgen_cfg_space: Handling all paritions for periodic ASCII back-u
+Apr 30 02:06:55:699 333:14584 nvgen_handle_partitions: Partition Data:0x56486402d6c0 Count:6
+Apr 30 02:06:55:699 333:14584 This is the first backup or the ASCII file got missed. All cache files need to be refreshed
+Apr 30 02:06:55:699 333:14584 Partition 'sh_admin' has changed from last backup
+Apr 30 02:06:55:699 333:14584 sh_admin Partition cache file '/cfs/cfg/lr/running/nvgen/sh_admin.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:699 333:14584 Querying the subtree gl/hwmod/;
+Apr 30 02:06:55:699 333:14584 Closed partition file (0):'/cfs/cfg/lr/running/nvgen/sh_admin.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:699 333:14584 Renamed tmp partition file (0):'/cfs/cfg/lr/running/nvgen/sh_admin.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_admin.cf', size=0 bytes
+Apr 30 02:06:55:699 333:14584 Nvgening Partition:                 sh_admin, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:699 333:14584 Partition 'sh_group' has changed from last backup
+Apr 30 02:06:55:699 333:14584 sh_group Partition cache file '/cfs/cfg/lr/running/nvgen/sh_group.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:699 333:14584 Querying the subtree gl/a/parser/;gl/a/hostname;gl/a/config-group/;gl/ag;gl/ah;gl/aaa/ord_x/;gl/aaa/default-taskgroup-name;gl/cfgmgr/;
+Apr 30 02:06:55:700 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/a/parser/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:700 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/a/parser/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:701 333:14584 nvgen_subtree_query: add_regex=1, sysdb_event_find('cfg/gl/a/hostname.*') -> rc=Success, item_count=1
+Apr 30 02:06:55:701 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/a/hostname' with event type 1
+Apr 30 02:06:55:701 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:701 333:14584 nvgen_tree_entry: Final Command: 'hostname p4-xr1 
+Apr 30 02:06:55:701 333:14584 nvgen_commit_file_write_send: Writing the command hostname p4-xr1 to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:701 333:14584 nvgen_file_put_data: Putdata:hostname p4-xr
+Apr 30 02:06:55:701 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:701 333:14584 nvgen_commit_file_write_send: Send cmd 'hostname p4-xr1' to client. req:17, fopt:
+Apr 30 02:06:55:701 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='(null)' with event type 1
+Apr 30 02:06:55:701 333:14584 nvgen_decode_tuple_list: Ordering Done: count:1 done:
+Apr 30 02:06:55:701 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/a/config-group/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:701 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/a/config-group/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:702 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/ord_x/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:702 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/ord_x/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:702 333:14584 nvgen_subtree_query: add_regex=1, sysdb_event_find('cfg/gl/aaa/default-taskgroup-name.*') -> rc=Success, item_count=0
+Apr 30 02:06:55:702 333:14584 Closed partition file (1):'/cfs/cfg/lr/running/nvgen/sh_group.cf.tmp' (size:16 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:702 333:14584 Renamed tmp partition file (1):'/cfs/cfg/lr/running/nvgen/sh_group.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_group.cf', size=16 bytes
+Apr 30 02:06:55:702 333:14584 Nvgening Partition:                 sh_group, Tuples Tried = 1, Failed = 0.
+Apr 30 02:06:55:702 333:14584 Partition 'sh_os' has changed from last backup
+Apr 30 02:06:55:702 333:14584 sh_os Partition cache file '/cfs/cfg/lr/running/nvgen/sh_os.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:702 333:14584 Querying the subtree gl/obfl/;gl/snmp/enable/traps/alarm/;gl/clock/;gl/banner/;gl/locale/;gl/pakmem/;gl/logging/;gl/service/timestamps/;
+Apr 30 02:06:55:702 333:14584 Closed partition file (2):'/cfs/cfg/lr/running/nvgen/sh_os.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:702 333:14584 Renamed tmp partition file (2):'/cfs/cfg/lr/running/nvgen/sh_os.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_os.cf', size=0 bytes
+Apr 30 02:06:55:702 333:14584 Nvgening Partition:                    sh_os, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:702 333:14584 Partition 'sh_base' has changed from last backup
+Apr 30 02:06:55:702 333:14584 sh_base Partition cache file '/cfs/cfg/lr/running/nvgen/sh_base.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:702 333:14584 Querying the subtree gl/a/nvgen/;gl/a/template/;gl/fm/;gl/if/link-status;gl/ip/services/cinetd/service/ipv4/tftp/udp;gl/ip/services/cinetd/service/ipv4/shell/tcp;gl/ip/services/cinetd/service/ipv4/small_servers/tcp;gl/ip/services/cinetd/service/ipv4/small_servers/udp;gl/ip/services/cinetd/service/ipv6/shell/tcp;gl/ip/services/cinetd/service/ipv6/small_servers/tcp;gl/ip/services/cinetd/service/ipv6/small_servers/udp;gl/ip/services/cinetd/service/tftp/vrf/.*/.*/;gl/ip/services/
+Apr 30 02:06:55:703 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/a/nvgen/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:703 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/a/nvgen/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:703 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/a/template/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:703 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/a/template/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:704 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/nacm/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:704 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/nacm/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:704 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/ldapd/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:704 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/ldapd/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:705 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/map-to/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:705 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/map-to/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:705 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/radius/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:705 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/radius/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:706 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/tacacs/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:706 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/tacacs/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:706 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/logging/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:706 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/logging/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:707 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/diameter/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:707 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/diameter/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:707 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/username/') -> rc=Success, item_count=5
+Apr 30 02:06:55:707 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/aaa/username/0x0/clab/aya' with event type 1
+Apr 30 02:06:55:707 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/aaa/username/0x0/clab/enter' with event type 1
+Apr 30 02:06:55:707 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:707 333:14584 nvgen_tree_entry: Final Command: 'username clab \n
+Apr 30 02:06:55:707 333:14584 nvgen_commit_file_write_send: Writing the command username clab to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:707 333:14584 nvgen_file_put_data: Putdata:username cla
+Apr 30 02:06:55:707 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:707 333:14584 nvgen_commit_file_write_send: Send cmd 'username clab' to client. req:17, fopt:
+Apr 30 02:06:55:708 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/aaa/username/0x0/clab/group/root-lr' with event type 1
+Apr 30 02:06:55:708 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:708 333:14584 nvgen_tree_entry: Final Command: 'username clab \ngroup root-lr  
+Apr 30 02:06:55:708 333:14584 nvgen_commit_file_write_send: Writing the command  group root-lr to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:708 333:14584 nvgen_file_put_data: Putdata: group root-l
+Apr 30 02:06:55:708 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:708 333:14584 nvgen_commit_file_write_send: Send cmd ' group root-lr' to client. req:17, fopt:
+Apr 30 02:06:55:708 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/aaa/username/0x0/clab/group/cisco-support' with event type 1
+Apr 30 02:06:55:708 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:708 333:14584 nvgen_tree_entry: Final Command: 'username clab \ngroup cisco-support 
+Apr 30 02:06:55:708 333:14584 nvgen_commit_file_write_send: Writing the command  group cisco-support to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:708 333:14584 nvgen_file_put_data: Putdata: group cisco-suppor
+Apr 30 02:06:55:708 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:708 333:14584 nvgen_commit_file_write_send: Send cmd ' group cisco-support' to client. req:17, fopt:
+Apr 30 02:06:55:708 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/aaa/username/0x0/clab/secret' with event type 1
+Apr 30 02:06:55:708 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:708 333:14584 nvgen_tree_entry: Validation Failed so the command will not be nvgened.'username clab \npassword 10000,FAIL10001,FAIL
+Apr 30 02:06:55:708 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:708 333:14584 nvgen_tree_entry: Final Command: 'username clab \nsecret 10 $6$4fzRVuTL6r30V...$PvEIVXwBk8DP8jmE3P4WXFhcMZvdr/PV3o.ZwmKp7Wzhche89Lb8GRULwTiJYRzGDiWquy/pxwxZo.YEQmrM.. 
+Apr 30 02:06:55:708 333:14584 nvgen_commit_file_write_send: Writing the command  secret 10 $6$4fzRVuTL6r30V...$PvEIVXwBk8DP8jmE3P4WXFhcMZvdr/PV3o.ZwmKp7Wzhche89Lb8GRULwTiJYRzGDiWquy/pxwxZo.YEQmrM.. to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:708 333:14584 nvgen_file_put_data: Putdata: secret 10 $6$4fzRVuTL6r30V...$PvEIVXwBk8DP8jmE3P4WXFhcMZvdr/PV3o.ZwmKp7Wzhche89Lb8GRULwTiJYRzGDiWquy/pxwxZo.YEQmrM.
+Apr 30 02:06:55:708 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:708 333:14584 nvgen_commit_file_write_send: Send cmd ' secret 10 $6$4fzRVuTL6r30V...$PvEIVXwBk8DP8jmE3P4WXFhcMZvdr/PV3o.ZwmKp7Wzhche89Lb8GRULwTiJYRzGDiWquy/pxwxZo.YEQmrM..' to client. req:17, fopt:
+Apr 30 02:06:55:708 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='(null)' with event type 1
+Apr 30 02:06:55:708 333:14584 nvgen_decode_tuple_list: Ordering Done: count:5 done:
+Apr 30 02:06:55:708 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/accounting/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:708 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/accounting/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:709 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/group-server/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:709 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/group-server/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:709 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/authorization/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:709 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/authorization/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:710 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/authentication/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:710 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/authentication/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:710 333:14584 nvgen_subtree_query: add_regex=1, sysdb_event_find('cfg/gl/aaa/admin-accounting.*') -> rc=Success, item_count=0
+Apr 30 02:06:55:711 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/accounting-update/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:711 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/accounting-update/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:711 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/mobile-accounting/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:711 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/mobile-accounting/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:712 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/aaa/authorization_nacm/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:712 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/aaa/authorization_nacm/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:712 333:14584 nvgen_subtree_query: add_regex=1, sysdb_event_find('cfg/gl/aaa/display-login-failed-users.*') -> rc=Success, item_count=0
+Apr 30 02:06:55:713 333:14584 nvgen_subtree_query: add_regex=1, sysdb_event_find('cfg/gl/aaa/enable-cert-authentication.*') -> rc=Success, item_count=0
+Apr 30 02:06:55:713 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/ems/') -> rc=Success, item_count=5
+Apr 30 02:06:55:713 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/ems/ord_A/grpc/aya' with event type 1
+Apr 30 02:06:55:713 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/ems/ord_A/grpc/port' with event type 1
+Apr 30 02:06:55:713 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:713 333:14584 nvgen_tree_entry: Final Command: 'grpc \nport 9339 
+Apr 30 02:06:55:713 333:14584 nvgen_commit_file_write_send: Writing the command ! to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:713 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:713 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:713 333:14584 nvgen_commit_file_write_send: Send cmd '!' to client. req:17, fopt:
+Apr 30 02:06:55:713 333:14584 nvgen_commit_file_write_send: Writing the command grpc to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:713 333:14584 nvgen_file_put_data: Putdata:grp
+Apr 30 02:06:55:713 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:713 333:14584 nvgen_commit_file_write_send: Send cmd 'grpc' to client. req:17, fopt:
+Apr 30 02:06:55:713 333:14584 nvgen_commit_file_write_send: Writing the command  port 9339 to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:713 333:14584 nvgen_file_put_data: Putdata: port 933
+Apr 30 02:06:55:713 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:713 333:14584 nvgen_commit_file_write_send: Send cmd ' port 9339' to client. req:17, fopt:
+Apr 30 02:06:55:713 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/ems/ord_A/grpc/notls' with event type 1
+Apr 30 02:06:55:713 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:713 333:14584 nvgen_tree_entry: Final Command: 'grpc \nno-tls 
+Apr 30 02:06:55:713 333:14584 nvgen_commit_file_write_send: Writing the command  no-tls to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:713 333:14584 nvgen_file_put_data: Putdata: no-tl
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Send cmd ' no-tls' to client. req:17, fopt:
+Apr 30 02:06:55:714 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/ems/ord_A/grpc/running' with event type 1
+Apr 30 02:06:55:714 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:714 333:14584 nvgen_tree_entry: Final Command: 'grpc \n
+Apr 30 02:06:55:714 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/ems/ord_A/grpc/address-family' with event type 1
+Apr 30 02:06:55:714 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:714 333:14584 nvgen_tree_entry: Final Command: 'grpc \naddress-family dual 
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Writing the command  address-family dual to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata: address-family dua
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Send cmd ' address-family dual' to client. req:17, fopt:
+Apr 30 02:06:55:714 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='(null)' with event type 1
+Apr 30 02:06:55:714 333:14584 nvgen_decode_tuple_list: Ordering Done: count:5 done:
+Apr 30 02:06:55:714 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/tty/template/.*/') -> rc=Success, item_count=1
+Apr 30 02:06:55:714 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/tty/template/default/connection/transport-input' with event type 1
+Apr 30 02:06:55:714 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:714 333:14584 nvgen_tree_entry: Final Command: 'line default \ntransport input ssh 
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Writing the command ! to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Send cmd '!' to client. req:17, fopt:
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Writing the command line default to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata:line defaul
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Send cmd 'line default' to client. req:17, fopt:
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Writing the command  transport input ssh to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata: transport input ss
+Apr 30 02:06:55:714 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:714 333:14584 nvgen_commit_file_write_send: Send cmd ' transport input ssh' to client. req:17, fopt:
+Apr 30 02:06:55:714 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='(null)' with event type 1
+Apr 30 02:06:55:714 333:14584 nvgen_decode_tuple_list: Ordering Done: count:1 done:
+Apr 30 02:06:55:715 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/netconf11/') -> rc=Success, item_count=3
+Apr 30 02:06:55:715 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/netconf11/aya' with event type 1
+Apr 30 02:06:55:715 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/netconf11/ssh/enable' with event type 1
+Apr 30 02:06:55:715 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:715 333:14584 nvgen_tree_entry: Final Command: 'netconf-yang agent \nssh 
+Apr 30 02:06:55:715 333:14584 nvgen_commit_file_write_send: Writing the command ! to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:715 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:715 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:715 333:14584 nvgen_commit_file_write_send: Send cmd '!' to client. req:17, fopt:
+Apr 30 02:06:55:715 333:14584 nvgen_commit_file_write_send: Writing the command netconf-yang agent to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:715 333:14584 nvgen_file_put_data: Putdata:netconf-yang agen
+Apr 30 02:06:55:715 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:715 333:14584 nvgen_commit_file_write_send: Send cmd 'netconf-yang agent' to client. req:17, fopt:
+Apr 30 02:06:55:715 333:14584 nvgen_commit_file_write_send: Writing the command  ssh to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:715 333:14584 nvgen_file_put_data: Putdata: ss
+Apr 30 02:06:55:715 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:715 333:14584 nvgen_commit_file_write_send: Send cmd ' ssh' to client. req:17, fopt:
+Apr 30 02:06:55:715 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/netconf11/enable' with event type 1
+Apr 30 02:06:55:715 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:715 333:14584 nvgen_tree_entry: Final Command: 'netconf-yang agent \n
+Apr 30 02:06:55:715 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='(null)' with event type 1
+Apr 30 02:06:55:715 333:14584 nvgen_decode_tuple_list: Ordering Done: count:3 done:
+Apr 30 02:06:55:715 333:14584 nvgen_commit_file_write_send: Writing the command ! to the cache file, fp_running=0x7ffae408b55
+Apr 30 02:06:55:715 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:715 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:715 333:14584 nvgen_commit_file_write_send: Send cmd '!' to client. req:17, fopt:
+Apr 30 02:06:55:715 333:14584 Closed partition file (3):'/cfs/cfg/lr/running/nvgen/sh_base.cf.tmp' (size:279 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:715 333:14584 Renamed tmp partition file (3):'/cfs/cfg/lr/running/nvgen/sh_base.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_base.cf', size=279 bytes
+Apr 30 02:06:55:715 333:14584 Nvgening Partition:                  sh_base, Tuples Tried = 14, Failed = 0.
+Apr 30 02:06:55:715 333:14584 Partition 'sh_base_placed' has changed from last backup
+Apr 30 02:06:55:715 333:14584 sh_base_placed Partition cache file '/cfs/cfg/lr/running/nvgen/sh_base_placed.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:715 333:14584 Querying the subtree gl/p/placed/;
+Apr 30 02:06:55:715 333:14584 Closed partition file (4):'/cfs/cfg/lr/running/nvgen/sh_base_placed.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:715 333:14584 Renamed tmp partition file (4):'/cfs/cfg/lr/running/nvgen/sh_base_placed.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_base_placed.cf', size=0 bytes
+Apr 30 02:06:55:715 333:14584 Nvgening Partition:           sh_base_placed, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:715 333:14584 Partition 'sh_p_domain_services' has changed from last backup
+Apr 30 02:06:55:715 333:14584 sh_p_domain_services Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_domain_services.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:715 333:14584 Querying the subtree gl/ip/domain/;
+Apr 30 02:06:55:715 333:14584 Closed partition file (5):'/cfs/cfg/lr/running/nvgen/sh_p_domain_services.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:715 333:14584 Renamed tmp partition file (5):'/cfs/cfg/lr/running/nvgen/sh_p_domain_services.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_domain_services.cf', size=0 bytes
+Apr 30 02:06:55:715 333:14584 Nvgening Partition:     sh_p_domain_services, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:715 333:14584 Partition 'sh_p_cdp_mgr' has changed from last backup
+Apr 30 02:06:55:715 333:14584 sh_p_cdp_mgr Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_cdp_mgr.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:715 333:14584 Querying the subtree gl/cdp/;
+Apr 30 02:06:55:715 333:14584 Closed partition file (6):'/cfs/cfg/lr/running/nvgen/sh_p_cdp_mgr.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:715 333:14584 Renamed tmp partition file (6):'/cfs/cfg/lr/running/nvgen/sh_p_cdp_mgr.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_cdp_mgr.cf', size=0 bytes
+Apr 30 02:06:55:715 333:14584 Nvgening Partition:             sh_p_cdp_mgr, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:715 333:14584 Partition 'sh_p_ip_expl_paths_daemon' has changed from last backup
+Apr 30 02:06:55:715 333:14584 sh_p_ip_expl_paths_daemon Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ip_expl_paths_daemon.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:715 333:14584 Querying the subtree gl/iep/;
+Apr 30 02:06:55:715 333:14584 Closed partition file (7):'/cfs/cfg/lr/running/nvgen/sh_p_ip_expl_paths_daemon.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:715 333:14584 Renamed tmp partition file (7):'/cfs/cfg/lr/running/nvgen/sh_p_ip_expl_paths_daemon.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ip_expl_paths_daemon.cf', size=0 bytes
+Apr 30 02:06:55:715 333:14584 Nvgening Partition:sh_p_ip_expl_paths_daemon, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:715 333:14584 Partition 'sh_p_rt_check_mgr' has changed from last backup
+Apr 30 02:06:55:715 333:14584 sh_p_rt_check_mgr Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_rt_check_mgr.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:715 333:14584 Querying the subtree gl/rcc/;
+Apr 30 02:06:55:715 333:14584 Closed partition file (8):'/cfs/cfg/lr/running/nvgen/sh_p_rt_check_mgr.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:715 333:14584 Renamed tmp partition file (8):'/cfs/cfg/lr/running/nvgen/sh_p_rt_check_mgr.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_rt_check_mgr.cf', size=0 bytes
+Apr 30 02:06:55:715 333:14584 Nvgening Partition:        sh_p_rt_check_mgr, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_p_ipv4_rib' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_p_ipv4_rib Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ipv4_rib.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/rib/;gl/iidmgr/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (9):'/cfs/cfg/lr/running/nvgen/sh_p_ipv4_rib.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (9):'/cfs/cfg/lr/running/nvgen/sh_p_ipv4_rib.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ipv4_rib.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:            sh_p_ipv4_rib, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_p_arp_gmp' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_p_arp_gmp Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_arp_gmp.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/ipv4/arp/;gl/ipv4/arp-gmp/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (10):'/cfs/cfg/lr/running/nvgen/sh_p_arp_gmp.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (10):'/cfs/cfg/lr/running/nvgen/sh_p_arp_gmp.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_arp_gmp.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:             sh_p_arp_gmp, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_p_dhcpd' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_p_dhcpd Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_dhcpd.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/dhcpd/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (11):'/cfs/cfg/lr/running/nvgen/sh_p_dhcpd.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (11):'/cfs/cfg/lr/running/nvgen/sh_p_dhcpd.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_dhcpd.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:               sh_p_dhcpd, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_p_ftp_fs' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_p_ftp_fs Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ftp_fs.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/ftp_fs/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (12):'/cfs/cfg/lr/running/nvgen/sh_p_ftp_fs.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (12):'/cfs/cfg/lr/running/nvgen/sh_p_ftp_fs.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ftp_fs.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:              sh_p_ftp_fs, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_p_bfd' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_p_bfd Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_bfd.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/snmp/enable/traps/bfd/;gl/ip_bfd/;gl/ip_sbfd/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (13):'/cfs/cfg/lr/running/nvgen/sh_p_bfd.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (13):'/cfs/cfg/lr/running/nvgen/sh_p_bfd.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_bfd.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:                 sh_p_bfd, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_p_rcp_fs' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_p_rcp_fs Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_rcp_fs.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/rcp_fs/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (14):'/cfs/cfg/lr/running/nvgen/sh_p_rcp_fs.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (14):'/cfs/cfg/lr/running/nvgen/sh_p_rcp_fs.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_rcp_fs.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:              sh_p_rcp_fs, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_p_tftp_fs' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_p_tftp_fs Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_tftp_fs.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/tftp_fs/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (15):'/cfs/cfg/lr/running/nvgen/sh_p_tftp_fs.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (15):'/cfs/cfg/lr/running/nvgen/sh_p_tftp_fs.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_tftp_fs.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:             sh_p_tftp_fs, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_early_hw_mod_cfg' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_early_hw_mod_cfg Partition cache file '/cfs/cfg/lr/running/nvgen/sh_early_hw_mod_cfg.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/early/spi/hw-module/.*/;gl/hw-module/wait-ejector-close;
+Apr 30 02:06:55:716 333:14584 Closed partition file (16):'/cfs/cfg/lr/running/nvgen/sh_early_hw_mod_cfg.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (16):'/cfs/cfg/lr/running/nvgen/sh_early_hw_mod_cfg.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_early_hw_mod_cfg.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:      sh_early_hw_mod_cfg, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_fwd_acl' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_fwd_acl Partition cache file '/cfs/cfg/lr/running/nvgen/sh_fwd_acl.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/ipv6/acl/;gl/es-acl/;gl/ipv4-acl/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (17):'/cfs/cfg/lr/running/nvgen/sh_fwd_acl.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (17):'/cfs/cfg/lr/running/nvgen/sh_fwd_acl.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_fwd_acl.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:               sh_fwd_acl, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_p_policymgr_rp' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_p_policymgr_rp Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_policymgr_rp.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/policymgr/dummy/a;gl/policymgr/display/;gl/policymgr/classmap/type/0x1/;gl/policymgr/classmap/type/0x2/;gl/policymgr/classmap/type/0x3/;gl/policymgr/policymap/type/0x1/;gl/policymgr/policymap/type/0x2/;gl/policymgr/policymap/type/0x3/;gl/policymgr/policymap/type/0x6/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (18):'/cfs/cfg/lr/running/nvgen/sh_p_policymgr_rp.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (18):'/cfs/cfg/lr/running/nvgen/sh_p_policymgr_rp.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_policymgr_rp.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:        sh_p_policymgr_rp, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'sh_fwd_qos' has changed from last backup
+Apr 30 02:06:55:716 333:14584 sh_fwd_qos Partition cache file '/cfs/cfg/lr/running/nvgen/sh_fwd_qos.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 Querying the subtree gl/qos/;
+Apr 30 02:06:55:716 333:14584 Closed partition file (19):'/cfs/cfg/lr/running/nvgen/sh_fwd_qos.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:716 333:14584 Renamed tmp partition file (19):'/cfs/cfg/lr/running/nvgen/sh_fwd_qos.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_fwd_qos.cf', size=0 bytes
+Apr 30 02:06:55:716 333:14584 Nvgening Partition:               sh_fwd_qos, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:716 333:14584 Partition 'lo_all_intf' has changed from last backup
+Apr 30 02:06:55:716 333:14584 lo_all_intf Partition cache file '/cfs/cfg/lr/running/nvgen/lo_all_intf.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:716 333:14584 nvgen_node_space_internal: 'Nvgen' Request(sdr), Using subtree: 'cfg/'
+Apr 30 02:06:55:717 333:14584 Querying the subtree if/act/.*/;if/pre/.*/
+Apr 30 02:06:55:718 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/if/act/.*/') -> rc=Success, item_count=2
+Apr 30 02:06:55:718 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/if/act/MgmtEth0_RP0_CPU0_0/ipv4/io/address/primary' with event type 1
+Apr 30 02:06:55:718 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/if/act/GigabitEthernet0_0_0_0/ord_x/im/shutdown' with event type 1
+Apr 30 02:06:55:718 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='(null)' with event type 1
+Apr 30 02:06:55:718 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:718 333:14584 Sysdb path has no unresolved objects 'if/act/MgmtEth0_RP0_CPU0_0/i
+Apr 30 02:06:55:718 333:14584 nvgen_tree_entry: Final Command: 'interface MgmtEth0/RP0/CPU0/0 \nipv4  address 172.30.30.41 255.255.255.0 
+Apr 30 02:06:55:718 333:14584 nvgen_commit_file_write_send: Writing the command interface MgmtEth0/RP0/CPU0/0 to the cache file, fp_running=0x7ffae4057b9
+Apr 30 02:06:55:718 333:14584 nvgen_file_put_data: Putdata:interface MgmtEth0/RP0/CPU0/
+Apr 30 02:06:55:718 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:718 333:14584 nvgen_commit_file_write_send: Send cmd 'interface MgmtEth0/RP0/CPU0/0' to client. req:17, fopt:
+Apr 30 02:06:55:718 333:14584 nvgen_commit_file_write_send: Writing the command  ipv4 address 172.30.30.41 255.255.255.0 to the cache file, fp_running=0x7ffae4057b9
+Apr 30 02:06:55:718 333:14584 nvgen_file_put_data: Putdata: ipv4 address 172.30.30.41 255.255.255.
+Apr 30 02:06:55:718 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:718 333:14584 nvgen_commit_file_write_send: Send cmd ' ipv4 address 172.30.30.41 255.255.255.0' to client. req:17, fopt:
+Apr 30 02:06:55:718 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:719 333:14584 Sysdb path has no unresolved objects 'if/act/GigabitEthernet0_0_0_0/i
+Apr 30 02:06:55:719 333:14584 nvgen_tree_entry: Final Command: 'interface GigabitEthernet0/0/0/0 \nshutdown 
+Apr 30 02:06:55:719 333:14584 nvgen_commit_file_write_send: Writing the command ! to the cache file, fp_running=0x7ffae4057b9
+Apr 30 02:06:55:719 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:719 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:719 333:14584 nvgen_commit_file_write_send: Send cmd '!' to client. req:17, fopt:
+Apr 30 02:06:55:719 333:14584 nvgen_commit_file_write_send: Writing the command interface GigabitEthernet0/0/0/0 to the cache file, fp_running=0x7ffae4057b9
+Apr 30 02:06:55:719 333:14584 nvgen_file_put_data: Putdata:interface GigabitEthernet0/0/0/
+Apr 30 02:06:55:719 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:719 333:14584 nvgen_commit_file_write_send: Send cmd 'interface GigabitEthernet0/0/0/0' to client. req:17, fopt:
+Apr 30 02:06:55:719 333:14584 nvgen_commit_file_write_send: Writing the command  shutdown to the cache file, fp_running=0x7ffae4057b9
+Apr 30 02:06:55:719 333:14584 nvgen_file_put_data: Putdata: shutdow
+Apr 30 02:06:55:719 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:719 333:14584 nvgen_commit_file_write_send: Send cmd ' shutdown' to client. req:17, fopt:
+Apr 30 02:06:55:719 333:14584 nvgen_decode_tuple_list: Ordering Done: count:2 done:
+Apr 30 02:06:55:719 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/if/pre/.*/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:719 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/if/pre/.*/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:719 333:14584 nvgen_commit_file_write_send: Writing the command ! to the cache file, fp_running=0x7ffae4057b9
+Apr 30 02:06:55:719 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:719 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:719 333:14584 nvgen_commit_file_write_send: Send cmd '!' to client. req:17, fopt:
+Apr 30 02:06:55:720 333:14584 Closed partition file (20):'/cfs/cfg/lr/running/nvgen/lo_all_intf.cf.tmp' (size:118 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:720 333:14584 Renamed tmp partition file (20):'/cfs/cfg/lr/running/nvgen/lo_all_intf.cf.tmp' to '/cfs/cfg/lr/running/nvgen/lo_all_intf.cf', size=118 bytes
+Apr 30 02:06:55:720 333:14584 Nvgening Partition:              lo_all_intf, Tuples Tried = 2, Failed = 0.
+Apr 30 02:06:55:720 333:14584 Partition 'sh_p_policy_repository' has changed from last backup
+Apr 30 02:06:55:720 333:14584 sh_p_policy_repository Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_policy_repository.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:720 333:14584 Querying the subtree gl/policy_lang/;
+Apr 30 02:06:55:720 333:14584 Closed partition file (21):'/cfs/cfg/lr/running/nvgen/sh_p_policy_repository.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:720 333:14584 Renamed tmp partition file (21):'/cfs/cfg/lr/running/nvgen/sh_p_policy_repository.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_policy_repository.cf', size=0 bytes
+Apr 30 02:06:55:720 333:14584 Nvgening Partition:   sh_p_policy_repository, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:720 333:14584 Partition 'sh_p_ipv4_static' has changed from last backup
+Apr 30 02:06:55:720 333:14584 sh_p_ipv4_static Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ipv4_static.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:720 333:14584 Querying the subtree gl/static/;
+Apr 30 02:06:55:721 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/static/') -> rc=Success, item_count=2
+Apr 30 02:06:55:721 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/static/router/ord_d/default/address/ipv4/unicast/ord_c/default/route/00000000/0x0/ord_x,________/nexthop/MgmtEth0_RP0_CPU0_0,ac1e1e01,________,________' with event type 1
+Apr 30 02:06:55:721 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:721 333:14584 nvgen_tree_entry: Final Command: 'router static \naddress-family ipv4 unicast \n0.0.0.0/0 MgmtEth0/RP0/CPU0/0 172.30.30.1 
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Writing the command router static to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:router stati
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Send cmd 'router static' to client. req:17, fopt:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Writing the command  address-family ipv4 unicast to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata: address-family ipv4 unicas
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Send cmd ' address-family ipv4 unicast' to client. req:17, fopt:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Writing the command   0.0.0.0/0 MgmtEth0/RP0/CPU0/0 172.30.30.1 to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:  0.0.0.0/0 MgmtEth0/RP0/CPU0/0 172.30.30.
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Send cmd '  0.0.0.0/0 MgmtEth0/RP0/CPU0/0 172.30.30.1' to client. req:17, fopt:
+Apr 30 02:06:55:721 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/static/router/ord_d/default/address/ipv6/unicast/ord_c/default/route/00000000000000000000000000000000/0x0/ord_x,________/nexthop/MgmtEth0_RP0_CPU0_0,fe8000000000000000427afffe574c96,________,________' with event type 1
+Apr 30 02:06:55:721 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:721 333:14584 nvgen_tree_entry: Final Command: 'router static \naddress-family ipv6 unicast \n::/0 MgmtEth0/RP0/CPU0/0 fe80::42:7aff:fe57:4c96 
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Writing the command  ! to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata: 
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Send cmd ' !' to client. req:17, fopt:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Writing the command  address-family ipv6 unicast to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata: address-family ipv6 unicas
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Send cmd ' address-family ipv6 unicast' to client. req:17, fopt:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Writing the command   ::/0 MgmtEth0/RP0/CPU0/0 fe80::42:7aff:fe57:4c96 to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:  ::/0 MgmtEth0/RP0/CPU0/0 fe80::42:7aff:fe57:4c9
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Send cmd '  ::/0 MgmtEth0/RP0/CPU0/0 fe80::42:7aff:fe57:4c96' to client. req:17, fopt:
+Apr 30 02:06:55:721 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='(null)' with event type 1
+Apr 30 02:06:55:721 333:14584 nvgen_decode_tuple_list: Ordering Done: count:2 done:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Writing the command  ! to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata: 
+Apr 30 02:06:55:721 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:721 333:14584 nvgen_commit_file_write_send: Send cmd ' !' to client. req:17, fopt:
+Apr 30 02:06:55:722 333:14584 nvgen_commit_file_write_send: Writing the command ! to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:722 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:722 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:722 333:14584 nvgen_commit_file_write_send: Send cmd '!' to client. req:17, fopt:
+Apr 30 02:06:55:722 333:14584 Closed partition file (22):'/cfs/cfg/lr/running/nvgen/sh_p_ipv4_static.cf.tmp' (size:175 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (22):'/cfs/cfg/lr/running/nvgen/sh_p_ipv4_static.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ipv4_static.cf', size=175 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:         sh_p_ipv4_static, Tuples Tried = 2, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_isis' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_isis Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_isis.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/isis/;gl/snmp/enable/traps/isismib;
+Apr 30 02:06:55:722 333:14584 Closed partition file (23):'/cfs/cfg/lr/running/nvgen/sh_p_isis.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (23):'/cfs/cfg/lr/running/nvgen/sh_p_isis.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_isis.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:                sh_p_isis, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_ospf' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_ospf Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ospf.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/ipv4-ospf/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (24):'/cfs/cfg/lr/running/nvgen/sh_p_ospf.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (24):'/cfs/cfg/lr/running/nvgen/sh_p_ospf.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ospf.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:                sh_p_ospf, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_ospfv3' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_ospfv3 Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ospfv3.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/snmp/enable/traps/ospfv3mib/;gl/ipv6-ospfv3/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (25):'/cfs/cfg/lr/running/nvgen/sh_p_ospfv3.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (25):'/cfs/cfg/lr/running/nvgen/sh_p_ospfv3.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ospfv3.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:              sh_p_ospfv3, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_bpm' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_bpm Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_bpm.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/asn/format;gl/snmp/enable/traps/bgp/;gl/ip-bgp/;gl/bmpsrvr/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (26):'/cfs/cfg/lr/running/nvgen/sh_p_bpm.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (26):'/cfs/cfg/lr/running/nvgen/sh_p_bpm.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_bpm.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:                 sh_p_bpm, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_fwd' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_fwd Partition cache file '/cfs/cfg/lr/running/nvgen/sh_fwd.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/tc/;gl/cef/;gl/tunnel/template/;gl/accounting/;gl/statistics/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (27):'/cfs/cfg/lr/running/nvgen/sh_fwd.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (27):'/cfs/cfg/lr/running/nvgen/sh_fwd.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_fwd.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:                   sh_fwd, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_hsrp' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_hsrp Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_hsrp.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/snmp/enable/traps/hsrp/;gl/ip-hsrp/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (28):'/cfs/cfg/lr/running/nvgen/sh_p_hsrp.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (28):'/cfs/cfg/lr/running/nvgen/sh_p_hsrp.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_hsrp.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:                sh_p_hsrp, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_vrrp' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_vrrp Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_vrrp.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/snmp/enable/traps/vrrp/;gl/ip-vrrp/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (29):'/cfs/cfg/lr/running/nvgen/sh_p_vrrp.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (29):'/cfs/cfg/lr/running/nvgen/sh_p_vrrp.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_vrrp.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:                sh_p_vrrp, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_l2vpn_mgr' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_l2vpn_mgr Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_l2vpn_mgr.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/evpn/;gl/snmp/enable/traps/vplsmib/;gl/snmp/enable/traps/l2vpnmib/;gl/l2vpn/;gl/if_list/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (30):'/cfs/cfg/lr/running/nvgen/sh_p_l2vpn_mgr.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (30):'/cfs/cfg/lr/running/nvgen/sh_p_l2vpn_mgr.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_l2vpn_mgr.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:           sh_p_l2vpn_mgr, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_lspv_server' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_lspv_server Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_lspv_server.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/mpls_lspv/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (31):'/cfs/cfg/lr/running/nvgen/sh_p_lspv_server.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (31):'/cfs/cfg/lr/running/nvgen/sh_p_lspv_server.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_lspv_server.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:         sh_p_lspv_server, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_dhcpv6d' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_dhcpv6d Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_dhcpv6d.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/ipv6-dhcpv6d/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (32):'/cfs/cfg/lr/running/nvgen/sh_p_dhcpv6d.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (32):'/cfs/cfg/lr/running/nvgen/sh_p_dhcpv6d.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_dhcpv6d.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:             sh_p_dhcpv6d, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_gmpls' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_gmpls Partition cache file '/cfs/cfg/lr/running/nvgen/sh_gmpls.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/mibs/temib/;gl/mibs/frrmib/;gl/mibs/p2mpmib/;gl/mibs/cmplsteextmib/;gl/mibs/cmplslsrstdmib/;gl/mibs/cmplsteextstdmib/;gl/snmp/enable/traps/temib/;gl/snmp/enable/traps/frrmib/;gl/snmp/enable/traps/p2mpmib/;gl/ucp-.*/;gl/mpls_te/;
+Apr 30 02:06:55:722 333:14584 Closed partition file (33):'/cfs/cfg/lr/running/nvgen/sh_gmpls.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:722 333:14584 Renamed tmp partition file (33):'/cfs/cfg/lr/running/nvgen/sh_gmpls.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_gmpls.cf', size=0 bytes
+Apr 30 02:06:55:722 333:14584 Nvgening Partition:                 sh_gmpls, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:722 333:14584 Partition 'sh_p_rsvp' has changed from last backup
+Apr 30 02:06:55:722 333:14584 sh_p_rsvp Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_rsvp.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:722 333:14584 Querying the subtree gl/snmp/enable/traps/rsvpmib/;gl/ip_rsvp/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (34):'/cfs/cfg/lr/running/nvgen/sh_p_rsvp.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (34):'/cfs/cfg/lr/running/nvgen/sh_p_rsvp.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_rsvp.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:                sh_p_rsvp, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_mpls_ldp' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_mpls_ldp Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_mpls_ldp.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/snmp/enable/traps/ldpmib/;gl/mpls_ldp/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (35):'/cfs/cfg/lr/running/nvgen/sh_p_mpls_ldp.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (35):'/cfs/cfg/lr/running/nvgen/sh_p_mpls_ldp.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_mpls_ldp.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:            sh_p_mpls_ldp, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_mpls_static' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_mpls_static Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_mpls_static.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/mpls_static/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (36):'/cfs/cfg/lr/running/nvgen/sh_p_mpls_static.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (36):'/cfs/cfg/lr/running/nvgen/sh_p_mpls_static.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_mpls_static.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:         sh_p_mpls_static, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_mpls_vpn_mib' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_mpls_vpn_mib Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_mpls_vpn_mib.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/snmp/enable/traps/l3vpnmib/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (37):'/cfs/cfg/lr/running/nvgen/sh_p_mpls_vpn_mib.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (37):'/cfs/cfg/lr/running/nvgen/sh_p_mpls_vpn_mib.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_mpls_vpn_mib.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:        sh_p_mpls_vpn_mib, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_mcast' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_mcast Partition cache file '/cfs/cfg/lr/running/nvgen/sh_mcast.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/amt/;gl/lsm/;gl/mibs/mroutemib/;gl/snmp/enable/traps/pim/;gl/snmp/enable/traps/msdp/;gl/mcast/autorp/;gl/ipv6-mld/.*/.*/;gl/ipv6-mld/ag;gl/ipv6-mld/aza;gl/ipv4-igmp/.*/.*/;gl/ipv4-igmp/ag;gl/ipv4-igmp/aza;gl/dynamic-templates/.*/.*/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (38):'/cfs/cfg/lr/running/nvgen/sh_mcast.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (38):'/cfs/cfg/lr/running/nvgen/sh_mcast.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_mcast.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:                 sh_mcast, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_ipv4_mfwd_ma' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_ipv4_mfwd_ma Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ipv4_mfwd_ma.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/mcast/ag;
+Apr 30 02:06:55:723 333:14584 Closed partition file (39):'/cfs/cfg/lr/running/nvgen/sh_p_ipv4_mfwd_ma.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (39):'/cfs/cfg/lr/running/nvgen/sh_p_ipv4_mfwd_ma.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ipv4_mfwd_ma.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:        sh_p_ipv4_mfwd_ma, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_ipv6_mfwd_ma' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_ipv6_mfwd_ma Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ipv6_mfwd_ma.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/mcast/.*/.*/;gl/mcast/ag;gl/mcast/aza;
+Apr 30 02:06:55:723 333:14584 Closed partition file (40):'/cfs/cfg/lr/running/nvgen/sh_p_ipv6_mfwd_ma.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (40):'/cfs/cfg/lr/running/nvgen/sh_p_ipv6_mfwd_ma.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ipv6_mfwd_ma.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:        sh_p_ipv6_mfwd_ma, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_msdp' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_msdp Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_msdp.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/ipv4-msdp/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (41):'/cfs/cfg/lr/running/nvgen/sh_p_msdp.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (41):'/cfs/cfg/lr/running/nvgen/sh_p_msdp.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_msdp.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:                sh_p_msdp, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_sap_listen' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_sap_listen Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_sap_listen.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/ipv4-sap/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (42):'/cfs/cfg/lr/running/nvgen/sh_p_sap_listen.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (42):'/cfs/cfg/lr/running/nvgen/sh_p_sap_listen.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_sap_listen.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:          sh_p_sap_listen, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_sr' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_sr Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_sr.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/sr/;gl/pce/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (43):'/cfs/cfg/lr/running/nvgen/sh_p_sr.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (43):'/cfs/cfg/lr/running/nvgen/sh_p_sr.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_sr.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:                  sh_p_sr, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_mgbl' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_mgbl Partition cache file '/cfs/cfg/lr/running/nvgen/sh_mgbl.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/xml/;gl/mibs/eventmib/;gl/mibs/notificationlogmib/;gl/netconf/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (44):'/cfs/cfg/lr/running/nvgen/sh_mgbl.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (44):'/cfs/cfg/lr/running/nvgen/sh_mgbl.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_mgbl.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:                  sh_mgbl, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_ospf_snmp' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_ospf_snmp Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_ospf_snmp.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/snmp/enable/traps/ospfmib/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (45):'/cfs/cfg/lr/running/nvgen/sh_p_ospf_snmp.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (45):'/cfs/cfg/lr/running/nvgen/sh_p_ospf_snmp.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_ospf_snmp.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:           sh_p_ospf_snmp, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_flowspec' has changed from last backup
+Apr 30 02:06:55:723 333:14584 sh_p_flowspec Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_flowspec.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:723 333:14584 Querying the subtree gl/flowspec/;
+Apr 30 02:06:55:723 333:14584 Closed partition file (46):'/cfs/cfg/lr/running/nvgen/sh_p_flowspec.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:723 333:14584 Renamed tmp partition file (46):'/cfs/cfg/lr/running/nvgen/sh_p_flowspec.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_flowspec.cf', size=0 bytes
+Apr 30 02:06:55:723 333:14584 Nvgening Partition:            sh_p_flowspec, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:723 333:14584 Partition 'sh_p_lldp_mgr' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_p_lldp_mgr Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_lldp_mgr.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/lldp/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (47):'/cfs/cfg/lr/running/nvgen/sh_p_lldp_mgr.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (47):'/cfs/cfg/lr/running/nvgen/sh_p_lldp_mgr.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_lldp_mgr.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:            sh_p_lldp_mgr, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_mcast_policy' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_mcast_policy Partition cache file '/cfs/cfg/lr/running/nvgen/sh_mcast_policy.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/pim/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (48):'/cfs/cfg/lr/running/nvgen/sh_mcast_policy.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (48):'/cfs/cfg/lr/running/nvgen/sh_mcast_policy.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_mcast_policy.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:          sh_mcast_policy, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_rtg_rip' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_rtg_rip Partition cache file '/cfs/cfg/lr/running/nvgen/sh_rtg_rip.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/rip/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (49):'/cfs/cfg/lr/running/nvgen/sh_rtg_rip.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (49):'/cfs/cfg/lr/running/nvgen/sh_rtg_rip.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_rtg_rip.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:               sh_rtg_rip, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_mpls_lsd' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_mpls_lsd Partition cache file '/cfs/cfg/lr/running/nvgen/sh_mpls_lsd.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/mpls_lsd/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (50):'/cfs/cfg/lr/running/nvgen/sh_mpls_lsd.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (50):'/cfs/cfg/lr/running/nvgen/sh_mpls_lsd.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_mpls_lsd.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:              sh_mpls_lsd, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_license' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_license Partition cache file '/cfs/cfg/lr/running/nvgen/sh_license.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/licensing/;gl/flexconsumption/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (51):'/cfs/cfg/lr/running/nvgen/sh_license.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (51):'/cfs/cfg/lr/running/nvgen/sh_license.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_license.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:               sh_license, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_p_lslib_server' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_p_lslib_server Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_lslib_server.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/lslib-server/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (52):'/cfs/cfg/lr/running/nvgen/sh_p_lslib_server.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (52):'/cfs/cfg/lr/running/nvgen/sh_p_lslib_server.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_lslib_server.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:        sh_p_lslib_server, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_p_mgbl_object_tracking_cfg' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_p_mgbl_object_tracking_cfg Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_mgbl_object_tracking_cfg.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/object_tracking/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (53):'/cfs/cfg/lr/running/nvgen/sh_p_mgbl_object_tracking_cfg.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (53):'/cfs/cfg/lr/running/nvgen/sh_p_mgbl_object_tracking_cfg.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_mgbl_object_tracking_cfg.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:sh_p_mgbl_object_tracking_cfg, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_early' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_early Partition cache file '/cfs/cfg/lr/running/nvgen/sh_early.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/early/dummy/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (54):'/cfs/cfg/lr/running/nvgen/sh_early.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (54):'/cfs/cfg/lr/running/nvgen/sh_early.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_early.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:                 sh_early, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_p_sr_new' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_p_sr_new Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_sr_new.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/sr_new/ord_m/srv6/;
+Apr 30 02:06:55:724 333:14584 Closed partition file (55):'/cfs/cfg/lr/running/nvgen/sh_p_sr_new.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:724 333:14584 Renamed tmp partition file (55):'/cfs/cfg/lr/running/nvgen/sh_p_sr_new.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_sr_new.cf', size=0 bytes
+Apr 30 02:06:55:724 333:14584 Nvgening Partition:              sh_p_sr_new, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:724 333:14584 Partition 'sh_base_k9sec' has changed from last backup
+Apr 30 02:06:55:724 333:14584 sh_base_k9sec Partition cache file '/cfs/cfg/lr/running/nvgen/sh_base_k9sec.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:724 333:14584 Querying the subtree gl/SSL/;gl/snmp/enable/traps/pki/enable;gl/snmp/enable/traps/ipsec/;gl/snmp/enable/traps/isakmp/;gl/crypto/ssh/;gl/crypto/cepki/ca/;gl/crypto/cepki/key/;gl/crypto/cepki/fipsmode/;gl/crypto/ipsec/;gl/client_authen/;
+Apr 30 02:06:55:725 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/crypto/ssh/') -> rc=Success, item_count=2
+Apr 30 02:06:55:725 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/crypto/ssh/server/sshd/v2' with event type 1
+Apr 30 02:06:55:725 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:725 333:14584 nvgen_tree_entry: Final Command: 'ssh server v2 
+Apr 30 02:06:55:725 333:14584 nvgen_commit_file_write_send: Writing the command ssh server v2 to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:725 333:14584 nvgen_file_put_data: Putdata:ssh server v
+Apr 30 02:06:55:725 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:725 333:14584 nvgen_commit_file_write_send: Send cmd 'ssh server v2' to client. req:17, fopt:
+Apr 30 02:06:55:725 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='cfg/gl/crypto/ssh/server/sshd/vrf-netconf/default' with event type 1
+Apr 30 02:06:55:725 333:14584 nvgen_tree_entry: File option set, Remove all taskid
+Apr 30 02:06:55:725 333:14584 nvgen_tree_entry: Final Command: 'ssh server netconf vrf default 
+Apr 30 02:06:55:725 333:14584 nvgen_commit_file_write_send: Writing the command ssh server netconf vrf default to the cache file, fp_running=0x7ffae40579c
+Apr 30 02:06:55:725 333:14584 nvgen_file_put_data: Putdata:ssh server netconf vrf defaul
+Apr 30 02:06:55:725 333:14584 nvgen_file_put_data: Putdata:
+Apr 30 02:06:55:725 333:14584 nvgen_commit_file_write_send: Send cmd 'ssh server netconf vrf default' to client. req:17, fopt:
+Apr 30 02:06:55:725 333:14584 nvgen_decode_tuple_list: sysdb_event_list_next -> tuple_name='(null)' with event type 1
+Apr 30 02:06:55:725 333:14584 nvgen_decode_tuple_list: Ordering Done: count:2 done:
+Apr 30 02:06:55:726 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/crypto/cepki/ca/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:726 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/crypto/cepki/ca/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:726 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/crypto/cepki/key/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:726 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/crypto/cepki/key/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:726 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/crypto/cepki/fipsmode/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:726 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/crypto/cepki/fipsmode/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:727 333:14584 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/crypto/ipsec/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:55:727 333:14584 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/crypto/ipsec/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:55:727 333:14584 Closed partition file (56):'/cfs/cfg/lr/running/nvgen/sh_base_k9sec.cf.tmp' (size:45 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:727 333:14584 Renamed tmp partition file (56):'/cfs/cfg/lr/running/nvgen/sh_base_k9sec.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_base_k9sec.cf', size=45 bytes
+Apr 30 02:06:55:727 333:14584 Nvgening Partition:            sh_base_k9sec, Tuples Tried = 2, Failed = 0.
+Apr 30 02:06:55:727 333:14584 Partition 'sh_p_perf_meas' has changed from last backup
+Apr 30 02:06:55:727 333:14584 sh_p_perf_meas Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_perf_meas.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:727 333:14584 Querying the subtree gl/perfmeas/;
+Apr 30 02:06:55:727 333:14584 Closed partition file (57):'/cfs/cfg/lr/running/nvgen/sh_p_perf_meas.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:727 333:14584 Renamed tmp partition file (57):'/cfs/cfg/lr/running/nvgen/sh_p_perf_meas.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_perf_meas.cf', size=0 bytes
+Apr 30 02:06:55:727 333:14584 Nvgening Partition:           sh_p_perf_meas, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:727 333:14584 Partition 'sh_early_common_drivers_psm' has changed from last backup
+Apr 30 02:06:55:727 333:14584 sh_early_common_drivers_psm Partition cache file '/cfs/cfg/lr/running/nvgen/sh_early_common_drivers_psm.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:727 333:14584 Querying the subtree gl/early/hw-module/profile/power-saving-mode/;
+Apr 30 02:06:55:727 333:14584 Closed partition file (58):'/cfs/cfg/lr/running/nvgen/sh_early_common_drivers_psm.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:727 333:14584 Renamed tmp partition file (58):'/cfs/cfg/lr/running/nvgen/sh_early_common_drivers_psm.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_early_common_drivers_psm.cf', size=0 bytes
+Apr 30 02:06:55:727 333:14584 Nvgening Partition:sh_early_common_drivers_psm, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:727 333:14584 Partition 'sh_p_auto_ip_ring' has changed from last backup
+Apr 30 02:06:55:727 333:14584 sh_p_auto_ip_ring Partition cache file '/cfs/cfg/lr/running/nvgen/sh_p_auto_ip_ring.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:727 333:14584 Querying the subtree gl/auto_ip_ring/;
+Apr 30 02:06:55:727 333:14584 Closed partition file (59):'/cfs/cfg/lr/running/nvgen/sh_p_auto_ip_ring.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:727 333:14584 Renamed tmp partition file (59):'/cfs/cfg/lr/running/nvgen/sh_p_auto_ip_ring.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_p_auto_ip_ring.cf', size=0 bytes
+Apr 30 02:06:55:727 333:14584 Nvgening Partition:        sh_p_auto_ip_ring, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:727 333:14584 Partition 'sh_yfw_snapshot' has changed from last backup
+Apr 30 02:06:55:727 333:14584 sh_yfw_snapshot Partition cache file '/cfs/cfg/lr/running/nvgen/sh_yfw_snapshot.cf.tmp' opened successfully. mode: 'w'
+Apr 30 02:06:55:727 333:14584 Querying the subtree gl/yfw/yiny/;
+Apr 30 02:06:55:727 333:14584 Closed partition file (60):'/cfs/cfg/lr/running/nvgen/sh_yfw_snapshot.cf.tmp' (size:0 bytes). stat 'Pass', rc:'Success'
+Apr 30 02:06:55:727 333:14584 Renamed tmp partition file (60):'/cfs/cfg/lr/running/nvgen/sh_yfw_snapshot.cf.tmp' to '/cfs/cfg/lr/running/nvgen/sh_yfw_snapshot.cf', size=0 bytes
+Apr 30 02:06:55:727 333:14584 Nvgening Partition:          sh_yfw_snapshot, Tuples Tried = 0, Failed = 0.
+Apr 30 02:06:55:727 333:14584 nvgened '21'out of '21' tuples successfully.
+Apr 30 02:06:55:727 333:14584 
+******** Taking ASCII Backup completed. Partitions: Changed:61, Unchanged:0********
+Apr 30 02:06:56:891 333:14595 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 02:06:56:891 333:14595 nvgen_get_last_commitid: Not a backup request
+Apr 30 02:06:56:891 333:14595 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 02:06:56:891 333:14595 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 02:06:56:892 333:14595 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 02:06:56:892 333:14595 Querying the subtree /cfg/gl/early/
+Apr 30 02:06:56:892 333:14595 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 02:06:56:892 333:14595 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 02:06:56:892 333:14595 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 02:06:56:893 333:14595 nvgened '0'out of '0' tuples successfully.
+Apr 30 03:01:57:127 333:22724 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 03:01:57:127 333:22724 nvgen_get_last_commitid: Not a backup request
+Apr 30 03:01:57:127 333:22724 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 03:01:57:127 333:22724 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 03:01:57:128 333:22724 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 03:01:57:128 333:22724 Querying the subtree /cfg/gl/early/
+Apr 30 03:01:57:129 333:22724 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 03:01:57:129 333:22724 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 03:01:57:129 333:22724 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 03:01:57:129 333:22724 nvgened '0'out of '0' tuples successfully.
+Apr 30 03:56:57:371 333:30891 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 03:56:57:371 333:30891 nvgen_get_last_commitid: Not a backup request
+Apr 30 03:56:57:371 333:30891 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 03:56:57:371 333:30891 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 03:56:57:372 333:30891 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 03:56:57:372 333:30891 Querying the subtree /cfg/gl/early/
+Apr 30 03:56:57:372 333:30891 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 03:56:57:372 333:30891 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 03:56:57:372 333:30891 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 03:56:57:373 333:30891 nvgened '0'out of '0' tuples successfully.
+Apr 30 04:51:57:657 333:39034 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 04:51:57:657 333:39034 nvgen_get_last_commitid: Not a backup request
+Apr 30 04:51:57:657 333:39034 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 04:51:57:657 333:39034 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 04:51:57:658 333:39034 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 04:51:57:658 333:39034 Querying the subtree /cfg/gl/early/
+Apr 30 04:51:57:659 333:39034 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 04:51:57:659 333:39034 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 04:51:57:659 333:39034 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 04:51:57:660 333:39034 nvgened '0'out of '0' tuples successfully.
+Apr 30 05:46:57:920 333:44597 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 05:46:57:920 333:44597 nvgen_get_last_commitid: Not a backup request
+Apr 30 05:46:57:920 333:44597 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 05:46:57:920 333:44597 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 05:46:57:921 333:44597 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 05:46:57:921 333:44597 Querying the subtree /cfg/gl/early/
+Apr 30 05:46:57:922 333:44597 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 05:46:57:922 333:44597 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 05:46:57:922 333:44597 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 05:46:57:922 333:44597 nvgened '0'out of '0' tuples successfully.
+Apr 30 06:41:58:142 333:52738 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 06:41:58:142 333:52738 nvgen_get_last_commitid: Not a backup request
+Apr 30 06:41:58:142 333:52738 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 06:41:58:142 333:52738 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 06:41:58:143 333:52738 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 06:41:58:143 333:52738 Querying the subtree /cfg/gl/early/
+Apr 30 06:41:58:144 333:52738 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 06:41:58:144 333:52738 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 06:41:58:144 333:52738 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 06:41:58:144 333:52738 nvgened '0'out of '0' tuples successfully.
+Apr 30 07:36:58:362 333:60895 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 07:36:58:362 333:60895 nvgen_get_last_commitid: Not a backup request
+Apr 30 07:36:58:362 333:60895 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 07:36:58:362 333:60895 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 07:36:58:363 333:60895 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 07:36:58:363 333:60895 Querying the subtree /cfg/gl/early/
+Apr 30 07:36:58:363 333:60895 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 07:36:58:363 333:60895 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 07:36:58:363 333:60895 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 07:36:58:364 333:60895 nvgened '0'out of '0' tuples successfully.
+Apr 30 08:31:58:588 333:69038 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 08:31:58:588 333:69038 nvgen_get_last_commitid: Not a backup request
+Apr 30 08:31:58:588 333:69038 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 08:31:58:588 333:69038 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 08:31:58:588 333:69038 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 08:31:58:588 333:69038 Querying the subtree /cfg/gl/early/
+Apr 30 08:31:58:589 333:69038 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 08:31:58:589 333:69038 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 08:31:58:589 333:69038 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 08:31:58:589 333:69038 nvgened '0'out of '0' tuples successfully.
+Apr 30 09:26:58:805 333:77211 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 09:26:58:805 333:77211 nvgen_get_last_commitid: Not a backup request
+Apr 30 09:26:58:805 333:77211 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 09:26:58:805 333:77211 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 09:26:58:806 333:77211 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 09:26:58:806 333:77211 Querying the subtree /cfg/gl/early/
+Apr 30 09:26:58:806 333:77211 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 09:26:58:806 333:77211 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 09:26:58:806 333:77211 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 09:26:58:807 333:77211 nvgened '0'out of '0' tuples successfully.
+Apr 30 10:21:59:038 333:82740 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 10:21:59:038 333:82740 nvgen_get_last_commitid: Not a backup request
+Apr 30 10:21:59:038 333:82740 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 10:21:59:038 333:82740 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 10:21:59:038 333:82740 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 10:21:59:039 333:82740 Querying the subtree /cfg/gl/early/
+Apr 30 10:21:59:039 333:82740 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 10:21:59:039 333:82740 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 10:21:59:039 333:82740 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 10:21:59:040 333:82740 nvgened '0'out of '0' tuples successfully.
+Apr 30 11:16:59:264 333:90925 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 11:16:59:265 333:90925 nvgen_get_last_commitid: Not a backup request
+Apr 30 11:16:59:265 333:90925 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 11:16:59:265 333:90925 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 11:16:59:265 333:90925 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 11:16:59:265 333:90925 Querying the subtree /cfg/gl/early/
+Apr 30 11:16:59:266 333:90925 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 11:16:59:266 333:90925 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 11:16:59:266 333:90925 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 11:16:59:267 333:90925 nvgened '0'out of '0' tuples successfully.
+Apr 30 12:11:59:487 333:99047 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 12:11:59:487 333:99047 nvgen_get_last_commitid: Not a backup request
+Apr 30 12:11:59:487 333:99047 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 12:11:59:487 333:99047 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 12:11:59:487 333:99047 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 12:11:59:487 333:99047 Querying the subtree /cfg/gl/early/
+Apr 30 12:11:59:488 333:99047 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 12:11:59:488 333:99047 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 12:11:59:488 333:99047 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 12:11:59:489 333:99047 nvgened '0'out of '0' tuples successfully.
+Apr 30 13:06:59:692 333:107223 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 13:06:59:693 333:107223 nvgen_get_last_commitid: Not a backup request
+Apr 30 13:06:59:693 333:107223 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 13:06:59:693 333:107223 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 13:06:59:693 333:107223 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 13:06:59:693 333:107223 Querying the subtree /cfg/gl/early/
+Apr 30 13:06:59:694 333:107223 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 13:06:59:694 333:107223 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 13:06:59:694 333:107223 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 13:06:59:694 333:107223 nvgened '0'out of '0' tuples successfully.
+Apr 30 14:01:59:917 333:115363 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 14:01:59:917 333:115363 nvgen_get_last_commitid: Not a backup request
+Apr 30 14:01:59:917 333:115363 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 14:01:59:917 333:115363 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 14:01:59:918 333:115363 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 14:01:59:918 333:115363 Querying the subtree /cfg/gl/early/
+Apr 30 14:01:59:919 333:115363 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 14:01:59:919 333:115363 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 14:01:59:919 333:115363 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 14:01:59:919 333:115363 nvgened '0'out of '0' tuples successfully.
+Apr 30 14:57:00:146 333:120924 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 14:57:00:146 333:120924 nvgen_get_last_commitid: Not a backup request
+Apr 30 14:57:00:146 333:120924 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 14:57:00:146 333:120924 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 14:57:00:146 333:120924 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 14:57:00:146 333:120924 Querying the subtree /cfg/gl/early/
+Apr 30 14:57:00:147 333:120924 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 14:57:00:147 333:120924 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 14:57:00:147 333:120924 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 14:57:00:148 333:120924 nvgened '0'out of '0' tuples successfully.
+Apr 30 15:52:00:388 333:129064 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 15:52:00:388 333:129064 nvgen_get_last_commitid: Not a backup request
+Apr 30 15:52:00:388 333:129064 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 15:52:00:388 333:129064 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 15:52:00:389 333:129064 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 15:52:00:389 333:129064 Querying the subtree /cfg/gl/early/
+Apr 30 15:52:00:390 333:129064 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 15:52:00:390 333:129064 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 15:52:00:390 333:129064 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 15:52:00:390 333:129064 nvgened '0'out of '0' tuples successfully.
+Apr 30 16:47:00:640 333:137224 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 16:47:00:640 333:137224 nvgen_get_last_commitid: Not a backup request
+Apr 30 16:47:00:640 333:137224 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 16:47:00:640 333:137224 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 16:47:00:641 333:137224 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 16:47:00:641 333:137224 Querying the subtree /cfg/gl/early/
+Apr 30 16:47:00:641 333:137224 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 16:47:00:641 333:137224 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 16:47:00:641 333:137224 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 16:47:00:642 333:137224 nvgened '0'out of '0' tuples successfully.
+Apr 30 17:42:00:866 333:145363 Got a request
+  request code = 11
+  query        = '/cfg/gl/early/'
+Apr 30 17:42:00:866 333:145363 nvgen_get_last_commitid: Not a backup request
+Apr 30 17:42:00:866 333:145363 [-Show-running] Recieved request 11, with file option 0, Last commit ID: None
+Apr 30 17:42:00:866 333:145363 nvgen: root=cfg/ bind= cfgdir= err= query=/cfg/gl/early/, admin:
+Apr 30 17:42:00:867 333:145363 nvgen_cfg_space: Nvgen query for:'/cfg/gl/early/
+Apr 30 17:42:00:867 333:145363 Querying the subtree /cfg/gl/early/
+Apr 30 17:42:00:867 333:145363 nvgen_subtree_query: add_regex=0, sysdb_event_find('cfg/gl/early/') -> rc='sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory', item_count=-1
+Apr 30 17:42:00:867 333:145363 nvgen_subtree_query: Unable to find sysdb data on a regexp of 'cfg/gl/early/', error: 'sysdb' detected the 'warning' condition 'A SysDB client tried to access a nonexistent item or list an empty directory
+Apr 30 17:42:00:867 333:145363 nvgen_subtree_query: No configuration item found, queries:
+Apr 30 17:42:00:868 333:145363 nvgened '0'out of '0' tuples successfully.

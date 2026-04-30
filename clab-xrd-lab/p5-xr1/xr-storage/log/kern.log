@@ -2,3 +2,19 @@
 2026-04-30T01:11:32.956003+00:00 p5-xr1 kernel: [1482785.584584] device eth0 entered promiscuous mode
 2026-04-30T01:11:32.965192+00:00 p5-xr1 kernel: [1482785.593929] device Gi0-0-0-0 entered promiscuous mode
 2026-04-30T01:11:34.801246+00:00 p5-xr1 kernel: [1482787.426999] device eth0 entered promiscuous mode
+2026-04-30T17:34:37.957187+00:00 p5-xr1 kernel: [1541767.872480] cni0: port 10(veth1fc2941d) entered disabled state
+2026-04-30T17:34:37.961180+00:00 p5-xr1 kernel: [1541767.876921] IPv6: ADDRCONF(NETDEV_CHANGE): veth1fc2941d: link becomes ready
+2026-04-30T17:34:37.961202+00:00 p5-xr1 kernel: [1541767.876993] cni0: port 10(veth1fc2941d) entered blocking state
+2026-04-30T17:34:37.961211+00:00 p5-xr1 kernel: [1541767.876996] cni0: port 10(veth1fc2941d) entered forwarding state
+2026-04-30T17:35:31.373169+00:00 p5-xr1 kernel: [1541821.285717] cni0: port 10(veth1fc2941d) entered disabled state
+2026-04-30T18:20:37.241179+00:00 p5-xr1 kernel: [1544527.027943] device veth35d54954 left promiscuous mode
+2026-04-30T18:27:51.993207+00:00 p5-xr1 kernel: [1544961.760607] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:27:51.993223+00:00 p5-xr1 kernel: [1544961.760765] cni0: port 10(veth3672a38a) entered forwarding state
+2026-04-30T18:30:19.497213+00:00 p5-xr1 kernel: [1545109.256924] IPv6: ADDRCONF(NETDEV_CHANGE): veth85a09fb6: link becomes ready
+2026-04-30T18:30:37.093180+00:00 p5-xr1 kernel: [1545126.852450] cni0: port 10(veth85a09fb6) entered disabled state
+2026-04-30T18:31:36.941217+00:00 p5-xr1 kernel: [1545186.699531] IPv6: ADDRCONF(NETDEV_CHANGE): veth66b8c1a2: link becomes ready
+2026-04-30T18:31:36.941237+00:00 p5-xr1 kernel: [1545186.699605] cni0: port 10(veth66b8c1a2) entered blocking state
+2026-04-30T18:31:36.941238+00:00 p5-xr1 kernel: [1545186.699608] cni0: port 10(veth66b8c1a2) entered forwarding state
+2026-04-30T18:36:04.057201+00:00 p5-xr1 kernel: [1545453.803893] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+2026-04-30T18:36:04.057219+00:00 p5-xr1 kernel: [1545453.804061] cni0: port 10(vethbd480c26) entered blocking state
+2026-04-30T18:36:04.057220+00:00 p5-xr1 kernel: [1545453.804065] cni0: port 10(vethbd480c26) entered forwarding state

@@ -1,6 +1,6 @@
 # AWX Lab 2: The Source of Truth (Inventory Sync & Variables)
 
-In Lab 1, you acting as `SX-user` manually typed in your router names and IPs. In this lab, you will learn how to make AWX automatically "read" your `inventory.yml` file from GitHub. This is the foundation of modern **Infrastructure as Code (IaC)**.
+In Lab 1, you acting as `S<student_id>-user` manually typed in your router names and IPs. In this lab, you will learn how to make AWX automatically "read" your `inventory.yml` file from GitHub. This is the foundation of modern **Infrastructure as Code (IaC)**.
 
 ---
 
@@ -17,21 +17,20 @@ An **Inventory Source** is a specific link between an AWX Inventory and an exter
 ### 🎯 What is the Purpose?
 The purpose is to automate the discovery of your routers. If you add a new router to your GitHub file, AWX will automatically "discover" it without you having to type anything into the UI.
 
-### Step-by-Step (As SX-user):
+### Step-by-Step (As S<student_id>-user):
 1.  In the left menu, click **Inventories**.
 2.  Click on your **Student Pod Inventory**.
 3.  Click the **Sources** tab at the top -> Click **Add**.
-4.  **Name:** 
-    ```text
-    Git Inventory Source
-    ```
+4.  **Name:** `Git Inventory Source`
 5.  **Source:** Select **Sourced from a Project**.
 6.  **Project:** Select **AAP Workshop Code**.
     > **💡 Bonus Note:** Notice we are selecting the project you created in Lab 1. AWX is now looking *inside* that project folder for your inventory data.
 7.  **Inventory file:** Click the magnifying glass and select `inventory.yml`.
-8.  **Update Options:** Check **"Overwrite"** and **"Update on Launch"**.
+8.  **Update Options:** Check **Overwrite** and **Update on Launch**.
     > **💡 Bonus Note:** "Overwrite" ensures that if you delete a router in GitHub, it also gets deleted in AWX. This keeps the two systems perfectly in sync.
 9.  Click **Save**.
+
+**✅ Success Criteria:** You have created a link between your AWX Inventory and the GitHub repository.
 
 ---
 
@@ -47,7 +46,9 @@ The purpose is to refresh the platform's knowledge. Syncing is what turns a text
 1.  On the **Sources** screen, click the **Sync All** (or circular arrow 🔄) button.
 2.  Wait for the status circle to turn **Green** (Successful).
 3.  Now click the **Hosts** tab at the top of the Inventory screen.
-    > **拋 Pro-Tip:** You should now see your routers (e.g., S1-R1, S1-R2, S1-R3) appear automatically!
+    > **💡 Pro-Tip:** You should now see your routers (e.g., S1-R1, S1-R2, S1-R3) appear automatically!
+
+**✅ Success Criteria:** Your hosts list is now populated with devices defined in the GitHub repository.
 
 ---
 
@@ -60,7 +61,7 @@ The purpose is to refresh the platform's knowledge. Syncing is what turns a text
 They allow you to use one "Generic" playbook for your entire company. The playbook says "configure an IP," and the Host Variables provide the *specific* IP for the router currently being configured.
 
 ### Step-by-Step:
-1.  Click on the name of one of your newly synced hosts (e.g., **SX-R1**).
+1.  Click on the name of one of your newly synced hosts (e.g., **S<student_id>-R1**).
 2.  Look at the **Variables** box.
 3.  You should see the YAML data from your CLI labs. It should look similar to this:
     ```yaml
@@ -69,21 +70,22 @@ They allow you to use one "Generic" playbook for your entire company. The playbo
     ```
 4.  AWX has successfully "ingested" your technical data!
 
+**✅ Success Criteria:** The host variables are correctly imported and visible in the host details.
+
 ---
 
 ## Part 4: Testing the Sync 🚀
 
 ### Step-by-Step:
 1.  Click **Templates** -> **Add** -> **Add Job Template**.
-2.  **Name:** 
-    ```text
-    02 - Configure Interface IPs
-    ```
+2.  **Name:** `02 - Configure Interface IPs`
 3.  **Inventory:** `Student Pod Inventory`.
 4.  **Project:** `AAP Workshop Code`.
 5.  **Playbook:** `lab04_interfaces.yml`.
 6.  **Credentials:** `Cisco Router Login`.
-7.  Click **Save** -> **Launch**.
+7.  Click **Save** -> **Launch** 🚀.
+
+**✅ Success Criteria:** The job template runs successfully, applying configurations to the hosts discovered during the sync.
 
 ---
 
